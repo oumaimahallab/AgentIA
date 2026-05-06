@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+venv/
+# IDE files
+.vscode/
+.idea/
+.env
+
+# Ignore any file starting with "vid"
+vid*
+data/raw_videos/data/chroma_db/chroma.sqlite3
+data/raw_videos/data/chroma_db3/*
+data/raw_videos/*
+
+# Local vector stores / Chroma persistence
+data/chroma_*/
+data/chroma_db*/
+data/**/chroma.sqlite3
+data/**/data_level0.bin
+data/**/header.bin
+data/**/length.bin
+data/**/link_lists.bin
+data/**/index_metadata.pickle

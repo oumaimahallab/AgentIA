@@ -1,0 +1,2710 @@
+[00:00 -> 00:07] En général, les clients ne laissent pas à disposition la personnalisation de l'espace,
+[00:07 -> 00:14] en tout cas la possibilité d'ajouter les brilles de compteur aux collaborateurs ou aux utilisateurs.
+[00:14 -> 00:24] Donc on peut choisir de désactiver certaines briques et donc de réduire éventuellement les anomalies.
+[00:24 -> 00:32] Et donc je ne vais voir que ces trois briques là.
+[00:32 -> 00:40] Je peux changer l'ordre des briques simplement par glisser déposé.
+[00:40 -> 00:51] Et ce que je peux faire là, je peux le faire dans l'espace mon équipe.
+[00:52 -> 00:55] Dans l'espace mon équipe, là pour l'instant je ne vois que deux briques.
+[00:55 -> 01:04] Mais si je vais dans la personnalisation, je peux voir mes emprunts, je peux voir les anomalies que je dois lever.
+[01:04 -> 01:07] Et je peux aussi ajouter les brilles de compteur.
+[01:07 -> 01:14] Alors les brilles de compteur, ça va permettre d'avoir, je crée un nouveau code de briques.
+[01:14 -> 01:21] Et maintenant je ne sais pas ma cpt, compteur, titre compteur.
+[01:21 -> 01:26] Et moi en tant que manager, ce qui m'intéresse peut-être, je vais laisser en public.
+[01:26 -> 01:32] Avec une date de référence, je vais mettre hier des compteurs valorisés pour savoir où on en est.
+[01:32 -> 01:34] Je vais enregistrer ça.
+[01:34 -> 01:42] Et ce qui m'intéresse c'est de voir peut-être où en sont mes gens de leur congé.
+[01:43 -> 01:49] Alors des RTT, sur les soldes RTT soldes actuelles par exemple.
+[01:49 -> 01:51] Je veux le plus grand report.
+[01:51 -> 01:55] Je vous l'étate leur solde de RTT à date.
+[01:55 -> 01:56] Voilà.
+[01:56 -> 01:59] Donc ça, ça m'est égal ici.
+[01:59 -> 02:06] Et puis je veux peut-être rajouter le solde de congé.
+[02:06 -> 02:10] CA solde actuel.
+[02:10 -> 02:15] Toujours pareil, un plus grand report validé.
+[02:15 -> 02:16] Voilà.
+[02:16 -> 02:26] Si j'active cette brique, du coup je vais la retrouver sur mon espace d'accueil.
+[02:26 -> 02:33] Mais vous voyez, attention aux briques parce que plus on met des briques qui font appel éventuellement à des calculs,
+[02:33 -> 02:39] plus le temps d'affichage peut être long sur cet écran d'accueil.
+[02:40 -> 02:41] Voilà.
+[02:41 -> 02:44] Les gens qui constituent mon équipe, ils en sont total.
+[02:44 -> 02:49] Ils leur restent 213 jours à apprendre et 746 jours de congé.
+[02:49 -> 02:52] Bon là j'ai tout le monde à la population.
+[02:57 -> 03:02] Donc voilà, pareil, je peux changer l'ordre d'apparition des briques.
+[03:02 -> 03:05] Si j'organise mon écran comme je veux.
+[03:05 -> 03:09] Et si je me déconnecte et que je me reconnecte, je vais retrouver cette présentation.
+[03:09 -> 03:11] Ça s'enregistre.
+[03:11 -> 03:13] C'est la personnalisation par utilisateur.
+[03:13 -> 03:16] Tout ça, c'est soumis à des habilitations.
+[03:21 -> 03:28] Oui, cette barre ici qui vous permet de sélectionner la population, de rafraîchir l'écran, etc.
+[03:28 -> 03:31] Vous avez ici, elle disparaît, vous la voyez plus.
+[03:31 -> 03:34] Si vous activez ce bouton qui vous permet d'agrandir.
+[03:35 -> 03:39] La place pour les données applicatives.
+[03:39 -> 03:50] Alors si vous voulez avoir réapparaître, vous réappuyez là-dessus pour réduire l'espace où il y a des données.
+[03:53 -> 03:58] Voilà, c'était tout pour cette cèbrique, mais je voulais quand même vous dire un mot là-dessus.
+[03:59 -> 04:10] Ensuite, on va faire un petit focus sur l'agenda.
+[04:14 -> 04:20] Alors, vite fait, je vous laisse le découvrir et j'essaierai de faire des vidéos détaillées.
+[04:21 -> 04:28] J'avais fait des vidéos pour pouvoir être consulté par les consultants et les hommes.
+[04:28 -> 04:33] Mais ces vidéos, quand je les ai faites, on était encore en version workplace avant l'UX.
+[04:33 -> 04:36] Donc le visuel des écrans était complètement différent.
+[04:36 -> 04:41] Donc il faut que je les refasse évidemment pour que ce soit plus parlant.
+[04:41 -> 04:47] Et pour les nouveaux consultants, ceux qui arrivent, évitez d'avoir à leur raconter toute l'histoire.
+[04:47 -> 04:51] Avec une bonne vidéo, on comprend très bien ce qui se passe.
+[04:51 -> 04:55] Et on n'a pas besoin de passer du temps.
+[04:55 -> 04:56] Comment ?
+[04:56 -> 04:58] C'est rempartagé avec nous.
+[04:58 -> 05:01] Oui, oui, bien sûr.
+[05:01 -> 05:03] Oui, oui, on pourra le mettre à disposition.
+[05:05 -> 05:08] On le mettra sur le drive parce que c'est lourd, mais oui.
+[05:09 -> 05:20] Donc, au niveau de l'agenda, vous avez vu déjà, on a trois types de vues qu'on a déjà aperçu aujourd'hui.
+[05:20 -> 05:24] La semaine, donc là, l'année dimanche.
+[05:24 -> 05:26] La vue mensuelle et la vue annuelle.
+[05:26 -> 05:34] Quel que soit le mode d'affichage en semaine, mois, année.
+[05:34 -> 05:43] Quand je clique sur une journée, j'ai les éléments et les actions possibles sur cette journée.
+[05:43 -> 05:44] Là, je suis sur le cimet.
+[05:44 -> 05:46] Mais voilà, il me dit journée du cimet.
+[05:46 -> 05:51] Alors, si j'ouvre, tout ça, c'est des petits leviers d'ouverture fermeture.
+[05:51 -> 05:54] Si j'ouvre la journée du cimet, je vois le détail.
+[05:57 -> 05:58] Quand il veut bien.
+[05:59 -> 06:03] Donc, l'aurait rappliqué avec ses différentes plages.
+[06:03 -> 06:08] Je vois à quel service il est affecté ce jour-là.
+[06:08 -> 06:10] Il est affecté au service production.
+[06:13 -> 06:16] Je peux avoir la consultation des soldes.
+[06:16 -> 06:19] Alors, les soldes au 30 novembre.
+[06:19 -> 06:21] Là, c'est parce qu'il y a des paramètres.
+[06:23 -> 06:25] Ici, il y a des paramètres.
+[06:29 -> 06:32] Des dates de consultation des soldes.
+[06:32 -> 06:35] Je ne vais pas vous parler aujourd'hui parce que ce serait trop précis.
+[06:35 -> 06:39] De toute façon, vous ne retiendriez pas.
+[06:39 -> 06:45] Par contre, il y a plein de paramètres qui existent qui permettent de réenseigner ces dates de consultation des soldes.
+[06:45 -> 06:49] Parce que ce qui m'intéresse souvent, c'est de voir les soldes par exemple au 31 mai.
+[06:49 -> 06:51] Ce qui concerne les congés, les soldes d'absence.
+[06:51 -> 06:54] En tout cas, en France, je ne sais pas comment vous comptez les congés au Maroc.
+[06:54 -> 06:58] Si c'est en année civile ou si c'est en décalée aussi.
+[07:02 -> 07:08] Ce qui peut être intéressant, c'est de consulter des soldes toujours à une date dernière arrêtée par exemple.
+[07:08 -> 07:11] Ou alors, de faire des consultations.
+[07:11 -> 07:14] Alors là, c'est la consultation des soldes de congés.
+[07:14 -> 07:20] Là, je vais fermer pour qu'on y voit plus clair le détail de la journée.
+[07:20 -> 07:31] Je peux aussi consulter les compteurs valorisés avec un groupe de compteurs éventuellement que je peux choisir ici.
+[07:31 -> 07:34] Ah non, je ne peux pas le choisir.
+[07:34 -> 07:36] Je ne peux pas le choisir parce que je n'en ai qu'à.
+[07:36 -> 07:44] J'ai parametré qu'à ce groupe de compteurs avec une destination, agenda, collaborateur, bloc valorisation.
+[07:45 -> 07:53] Donc, c'est pour ça que je n'ai pas le choix du groupe de compteurs.
+[07:53 -> 07:58] Mais si j'en avais paramétré plusieurs, j'aurais le choix en plus du groupe de compteurs à appliquer.
+[07:58 -> 08:00] Et puis, la date de valorisation.
+[08:00 -> 08:07] Par défaut, cette date de valorisation, elle est toujours au dernier jour de la période affichée de l'agenda.
+[08:08 -> 08:13] Donc là, vous voyez la situation et les dévalorisations au 9 mai.
+[08:16 -> 08:22] Si je change de semaine, ici, il va me proposer des valorisations au 16 mai.
+[08:27 -> 08:31] Par contre, ce qui peut m'intéresser, je peux avoir comme ça en dynamique,
+[08:31 -> 08:39] chaque fois, les valeurs de la semaine ou des valeurs de compteur à la dernière date de la période affichée.
+[08:39 -> 08:42] Ce qui peut m'intéresser aussi, c'est de figer.
+[08:42 -> 08:49] Par exemple, si je dis que je veux des valorisations au 31 décembre de l'année, je veux pouvoir figer.
+[08:49 -> 08:51] Et là, j'épingle.
+[08:51 -> 08:58] Et là, même si je me déplace, je reviens sur la période précédente, je reste à les dévalorisations au 16 mai.
+[08:58 -> 09:02] Quelle que soit la période que je suis en train de visualiser.
+[09:06 -> 09:10] Je suis visualisée la semaine du 17 au 23, mais il me fiche toujours les valeurs au 16 mai.
+[09:10 -> 09:12] Donc possibilité d'épingler.
+[09:12 -> 09:15] Si vous voulez les épingler, vous emplez ça.
+[09:17 -> 09:19] Là, on a les éléments à venir.
+[09:21 -> 09:26] Je n'ai pas d'éléments à venir, mais les éléments à venir, ça peut être des absences éventuellement
+[09:29 -> 09:35] Typiquement, là, j'ai une demande de congé naissance pour le lundi 17 mai.
+[09:40 -> 09:48] Alors là, je suis la semaine, je suis sur la journée, je suis sur le 19.
+[09:48 -> 09:55] Si je me mets sur le 19 mai dans les éléments à venir, c'est par rapport à la date du jour, les éléments à venir.
+[09:56 -> 10:01] Et ça aussi, ça se paramètre. Est-ce que je veux plus de 10 éléments ?
+[10:01 -> 10:03] Je crois qu'il y a un nombre d'éléments maxis.
+[10:03 -> 10:08] Et il y a peut-être une durée aussi maximum à prendre en compte dans le futur par rapport à la date du jour.
+[10:11 -> 10:16] Tout ça, c'est les paramètres par domaine dans les 477 qui existent.
+[10:17 -> 10:20] Alors là, je n'ai pas de notification.
+[10:20 -> 10:31] Ce qu'il faut, je vais vous montrer, vite fait, c'est que dans mon équipe, vous voyez ici, là, j'ai une brique message.
+[10:31 -> 10:41] Alors, je peux, quand je suis un gestionnaire, un responsable, et que je me mets sur un dossier, ici.
+[10:47 -> 10:52] Chez la possibilité, je suis sur le corneil, là, je prends le dossier de corneil.
+[10:52 -> 10:59] Vous voyez ici, j'ai une petite bouton qui me permet de générer un message pour les collaborateurs.
+[10:59 -> 11:09] Donc à partir d'aujourd'hui jusqu'à, par exemple, jusqu'au 11, parce qu'on se revoit le mardi, lundi 10.
+[11:09 -> 11:24] C'est-à-dire, je ne sais pas moi, penser à la visite médicale, visite médicale, le 11 mai à 16 heures.
+[11:26 -> 11:33] D'accord, et là, j'ai le choix, ou bien je lui affiche sur l'application, enfin, je lui affiche sur l'application,
+[11:33 -> 11:38] je lui ai indulé un link de message, et je peux aussi choisir de l'afficher sur le terminal de badgeage.
+[11:40 -> 11:43] Quand j'ai une badgeuse physique dans les ateliers.
+[11:43 -> 11:46] Bon, là, j'en ai pas sur l'environnement, donc je vais pas le faire.
+[11:46 -> 11:55] Voilà, je crée ce message, et du coup, maintenant, sur mon espace d'accueil, mon compte, je rafraîchis.
+[11:56 -> 12:03] Voilà, je vais arriver, mon message, et ce message va s'afficher tous les jours jusqu'au 11 mai.
+[12:04 -> 12:06] Si tu veux modifier le message.
+[12:08 -> 12:16] Si tu veux modifier le message, alors là, si tu veux modifier le message, c'est la question qui te tue.
+[12:17 -> 12:20] C'est la question que tu, c'est par le traitement collectif.
+[12:21 -> 12:30] Euh, ouais, parce que là, attends, elle est là, ici, ici.
+[12:31 -> 12:32] Il y a plus de messages.
+[12:32 -> 12:35] Il n'y a rien. Agendape, sans régule.
+[12:36 -> 12:40] Justement, c'est le grand, on a toujours le même problème avec ces messages.
+[12:42 -> 12:45] On ne peut le faire que par le traitement collectif, oui.
+[12:45 -> 12:50] Parce qu'on n'a pas accès à la gestion du message, il ne peut être qu'en création.
+[12:51 -> 12:57] Donc là, si je rajoute un message le 4 mai et que je dis bonjour.
+[13:01 -> 13:03] Ah, mais qu'est-ce qu'il va me faire ?
+[13:04 -> 13:14] Euh, là, ici, je pense qu'il va modifier mon message.
+[13:15 -> 13:17] Pour le 4.
+[13:18 -> 13:21] Ah non, il ne rajoutait.
+[13:35 -> 13:38] Et il y a des notifications que je peux faire.
+[13:39 -> 13:42] Je ne peux pas le voir sur l'agenda.
+[13:45 -> 13:50] Sur l'agenda, les notifications, alors il faut que je réfléchisse l'agenda.
+[13:54 -> 13:57] Bah, mais c'est le truc, c'était là, c'est en fait.
+[13:59 -> 14:00] Voilà.
+[14:01 -> 14:03] Je vois les deux.
+[14:04 -> 14:07] Donc on peut faire apparaître des messages sur l'espace d'accueil.
+[14:08 -> 14:10] Et on peut faire du collaborateur.
+[14:15 -> 14:17] Et enfin, dernière chose.
+[14:19 -> 14:22] Ici, dans les notifications, on peut aussi avoir les anomalies si on veut.
+[14:24 -> 14:26] Les anomalies visibles.
+[14:27 -> 14:32] Et ici, c'est le dernier point, les actions possibles.
+[14:33 -> 14:36] Ici, j'ai un bouton nouveau qui apparaît.
+[14:36 -> 14:39] Et là, si je clique sur nouveau, il me laisse le choix.
+[14:39 -> 14:42] Donc j'ai le droit de créer une absence des activités.
+[14:42 -> 14:44] Si j'en ai des badges.
+[14:44 -> 14:46] Donc là, je peux faire une demande de badges.
+[14:47 -> 14:49] Je peux faire une demande d'accès.
+[14:49 -> 14:52] Ce fameux événement, là, c'est la création d'un événement.
+[14:53 -> 14:54] Je peux créer un renouvellement de pas.
+[14:54 -> 14:55] Je peux créer une régule.
+[14:55 -> 14:56] Voilà.
+[14:56 -> 15:00] Donc si je crée absence, ça m'ouvre une pop-up de saisis d'absence.
+[15:00 -> 15:06] Je ne verrai apparaître que les motifs auxquels je suis autorisé par les habilitations.
+[15:06 -> 15:15] Je fais une demande de congé, par exemple, pour le 26 mai.
+[15:15 -> 15:17] Je peux mettre une piège jointe.
+[15:21 -> 15:23] Alors, il me fait un contrôle de droit.
+[15:23 -> 15:25] Le niveau de soldat deviendra négatif.
+[15:25 -> 15:26] C'est pas grave.
+[15:26 -> 15:27] Je passe autre.
+[15:28 -> 15:30] Et j'ai eu une absence demandée au 26 mai,
+[15:30 -> 15:35] que je ne vois pas sur cet écran-là,
+[15:35 -> 15:39] que je verrai si je passe en buman semaine.
+[15:41 -> 15:43] Dans les éléments à venir, voilà.
+[15:43 -> 15:45] Je vois arriver le 26 mai, la demande de congé annuel,
+[15:45 -> 15:47] avec l'un point d'interrogation.
+[15:47 -> 15:51] L'autre truc avant, la naissance noire sur fond noir,
+[15:51 -> 15:52] c'est top move mode.
+[15:52 -> 15:54] Franchement, c'est illésible.
+[15:58 -> 15:59] Voilà.
+[15:59 -> 16:00] Et ce qu'on peut faire aussi,
+[16:00 -> 16:04] c'est que si je sélectionne plusieurs journées avec du shift,
+[16:04 -> 16:06] je crois que...
+[16:14 -> 16:16] Non, ce n'est pas ça.
+[16:18 -> 16:22] Je fais nouveau créé absence.
+[16:22 -> 16:23] Voilà.
+[16:23 -> 16:25] J'ai sélectionné plusieurs journées,
+[16:25 -> 16:30] et là, j'ai sélectionné une plage ouverte,
+[16:30 -> 16:33] donc il me propose de saisir une absence
+[16:33 -> 16:36] de la journée de départ en heure,
+[16:36 -> 16:39] jusqu'à la journée d'arrivée en heure,
+[16:39 -> 16:43] et il me propose 13h30, 17h30.
+[16:43 -> 16:46] Donc il me propose une répétition.
+[16:46 -> 16:48] Je peux saisir en une manille.
+[16:48 -> 16:50] Par exemple, si je suis en mission ce jour-là,
+[16:51 -> 16:53] elle est où, la mission, elle est là.
+[16:59 -> 17:00] Voilà.
+[17:00 -> 17:02] Ça me permet de saisir en une manie.
+[17:02 -> 17:07] Ça, c'est parce que je l'ai fait en shift, oui.
+[17:07 -> 17:09] Et si je fais ça,
+[17:09 -> 17:11] si je sélectionne une journée,
+[17:11 -> 17:13] je ne peux pas faire ça.
+[17:14 -> 17:16] Je ne suis pas douée avec l'agenda.
+[17:16 -> 17:18] Je ne sais jamais comment on fait.
+[17:21 -> 17:23] Le motif.
+[17:23 -> 17:26] Là, il est en après-midi.
+[17:26 -> 17:28] Il me propose d'après-midi le 4 mai.
+[17:28 -> 17:30] Je ne sais pas pourquoi.
+[17:30 -> 17:31] Alors il faudrait...
+[17:31 -> 17:33] Je ne sais pas si il a bien pris mes saisis.
+[17:33 -> 17:35] Je ne suis pas une experte.
+[17:35 -> 17:36] Il faudra que je revois,
+[17:36 -> 17:38] mais on peut faire de la saisie,
+[17:38 -> 17:40] de façon assez rapide quand même,
+[17:40 -> 17:43] si je sélectionne juste une plage...
+[17:43 -> 17:44] Pardon.
+[17:44 -> 17:45] Une plage ici.
+[17:45 -> 17:46] Eh bien.
+[17:47 -> 17:48] Voilà.
+[17:48 -> 17:49] Une plage comme ça.
+[17:49 -> 17:53] Je crée un événement d'activité, par exemple.
+[17:57 -> 17:59] Il me propose de 9h à 10h.
+[17:59 -> 18:00] Je saisis l'activité.
+[18:01 -> 18:02] Voilà.
+[18:02 -> 18:03] C'est les ailes à la saisie.
+[18:03 -> 18:05] Alors ici, dans les nouveaux,
+[18:05 -> 18:06] vous avez ce menu-là,
+[18:06 -> 18:09] mais vous pourriez aussi avoir des palettes.
+[18:09 -> 18:14] Alors, les palettes de l'agenda collaborateur,
+[18:15 -> 18:19] ce ne sont pas les palettes d'un responsable.
+[18:19 -> 18:20] Ce sont des palettes
+[18:20 -> 18:21] qui sont mises à disposition
+[18:21 -> 18:23] des collaborateurs seuls.
+[18:23 -> 18:25] Là, je suis dans un espace mancompte,
+[18:25 -> 18:26] pour rappel.
+[18:26 -> 18:31] Alors que si je vais voir l'agenda de cornes,
+[18:32 -> 18:34] mais depuis l'espace mon équipe,
+[18:34 -> 18:35] en tant que manager,
+[18:45 -> 18:47] j'ai le même visuel.
+[18:47 -> 18:48] Je vois les mêmes informations.
+[18:48 -> 18:49] Normal.
+[18:49 -> 18:51] Mais quand je vois les actions possibles,
+[18:51 -> 18:53] vous voyez, je vois arriver
+[18:53 -> 18:55] une liste de palettes
+[18:55 -> 18:57] parce que j'ai accès
+[18:57 -> 18:59] aux palettes des responsables.
+[18:59 -> 19:01] C'est-à-dire les palettes,
+[19:01 -> 19:03] je ne sais pas si vous vous rappelez
+[19:03 -> 19:05] qu'on a créé ici,
+[19:05 -> 19:07] quand on a créé ici.
+[19:07 -> 19:09] C'est-à-dire que les palettes,
+[19:09 -> 19:11] je ne sais pas si vous vous rappelez
+[19:11 -> 19:13] qu'on a créé ici.
+[19:13 -> 19:15] Quand on a créé des palettes d'absence
+[19:15 -> 19:17] ou des palettes d'horaire.
+[19:19 -> 19:20] Voilà, on palette d'absence.
+[19:20 -> 19:22] On assiste celle-là.
+[19:22 -> 19:24] On palette d'horaire.
+[19:27 -> 19:29] On a fait des palettes d'horaire
+[19:29 -> 19:31] pour créer les programmes horaires,
+[19:31 -> 19:32] si vous vous rappelez.
+[19:32 -> 19:35] Donc des palettes publiques.
+[19:38 -> 19:40] Et c'est pour ça que
+[19:40 -> 19:42] quand je suis dans un agenda
+[19:42 -> 19:44] responsable,
+[19:44 -> 19:46] les palettes que je vois
+[19:46 -> 19:48] sont des palettes qui ont été créées
+[19:48 -> 19:50] dans cet espace-là.
+[19:50 -> 19:52] Je vois la palette Last Man,
+[19:52 -> 19:54] je vois la palette Exemple, etc.
+[19:54 -> 19:56] Ils me donnent les premières,
+[19:56 -> 19:58] mais avec cet île vieil,
+[19:58 -> 20:00] je peux choisir une autre palette.
+[20:00 -> 20:02] Par exemple, ma palette d'horaire
+[20:02 -> 20:04] à moi.
+[20:06 -> 20:08] C'est pareil pour les absences.
+[20:08 -> 20:10] Ah ben non, mais j'en ai qu'une palette d'absence.
+[20:11 -> 20:13] Et puis je peux faire des palettes de régularisation.
+[20:13 -> 20:14] Donc ça, c'est les palettes
+[20:14 -> 20:16] qui sont faites par la personnalisation
+[20:16 -> 20:18] de l'espace mon équipe.
+[20:18 -> 20:20] Tandis que le collaborateur,
+[20:20 -> 20:22] alors ces palettes, elles arrivent.
+[20:22 -> 20:24] Et c'est saisi, je peux les faire
+[20:24 -> 20:26] que je sois en mode semaine, en mode mois.
+[20:28 -> 20:30] On va faire en vue mensuel
+[20:30 -> 20:32] ou en vue annuel. Par exemple,
+[20:32 -> 20:34] ici, je prends le 20,
+[20:34 -> 20:36] je fais un shift jusqu'au 23,
+[20:36 -> 20:38] par exemple.
+[20:38 -> 20:40] Je peux dire, je change l'horaire
+[20:40 -> 20:42] et je vais mettre
+[20:42 -> 20:44] en CCO ici.
+[20:48 -> 20:50] A partir du 20 jusqu'au 23,
+[20:50 -> 20:52] je vais poser un auraire exceptionnel comme ça.
+[20:56 -> 20:58] Et je vous apparaît de l'horaire.
+[20:58 -> 21:00] Ici, l'horaire exceptionnel.
+[21:02 -> 21:04] Dans les paramètres d'hiver,
+[21:04 -> 21:06] et là je ne vous en parle pas non plus,
+[21:06 -> 21:08] vous avez des tas de paramètres
+[21:08 -> 21:10] qui vous permettent d'ajuster
+[21:10 -> 21:12] le visuel
+[21:12 -> 21:14] de cette agenda en vue mensuel.
+[21:16 -> 21:18] Pour la couleur des horaires,
+[21:18 -> 21:20] qu'est-ce que vous voulez voir affiché
+[21:20 -> 21:22] dans le corps de la cellule, dans l'entête de la cellule,
+[21:22 -> 21:24] est-ce que vous voulez l'abriger,
+[21:24 -> 21:26] est-ce que vous voulez le... Bref.
+[21:26 -> 21:28] Vous avez plein de paramètres possibles.
+[21:32 -> 21:34] Et si je me mets en vue annuel
+[21:34 -> 21:36] et que je fais aussi
+[21:36 -> 21:38] encore de la saisie multiple, c'est pareil.
+[21:38 -> 21:40] Je pourrais faire une saisie d'événement.
+[21:40 -> 21:42] Je ne le fais pas parce que c'est un petit plus long.
+[21:42 -> 21:44] Mais...
+[21:48 -> 21:50] Donc voilà, les palettes arrivent de la même façon
+[21:50 -> 21:52] et en vue annuel, les palettes
+[21:52 -> 21:54] arrivent de la même façon.
+[21:54 -> 21:56] Et pareil, quand je suis sur une cellule,
+[21:56 -> 21:58] j'ai le visuel de la journée.
+[21:58 -> 22:00] Si je l'ouvre, j'ai la consultation des soldes.
+[22:00 -> 22:02] J'ai les compteurs valorisés.
+[22:02 -> 22:04] Voilà.
+[22:04 -> 22:06] Ce que je n'ai pas, c'est les événements à venir.
+[22:06 -> 22:08] Il y a des points que je n'ai pas.
+[22:08 -> 22:10] Et d'ailleurs ici, vous avez un bouton
+[22:10 -> 22:12] qui s'appelle affichage
+[22:12 -> 22:14] et qui vous donne
+[22:14 -> 22:16] aussi la possibilité d'ajuster
+[22:16 -> 22:18] les événements que vous voulez voir.
+[22:18 -> 22:20] Est-ce que vous voulez voir les événements non validés ?
+[22:20 -> 22:22] Là, c'est coché. C'est pour ça que je vois
+[22:22 -> 22:24] apparaître la mission à l'état demandé.
+[22:24 -> 22:26] Si je les décoche,
+[22:26 -> 22:28] les événements qui ne sont pas encore validés,
+[22:28 -> 22:30] je ne vois plus ma mission.
+[22:32 -> 22:34] Parce que ce n'est pas encore validé
+[22:34 -> 22:36] dans le circuit de workflow.
+[22:36 -> 22:38] Je vais le réafficher
+[22:38 -> 22:40] ici.
+[22:40 -> 22:42] Je peux choisir les événements.
+[22:42 -> 22:44] Est-ce que je peux voir les absences,
+[22:44 -> 22:46] les activités, les badges, etc.
+[22:46 -> 22:48] Par exemple,
+[22:48 -> 22:50] je ne veux plus voir les absences.
+[22:50 -> 22:52] Je ne vois plus aucune absence.
+[22:52 -> 22:54] Ah si, je vais encore le télétravail.
+[22:54 -> 22:56] Ah mais c'est un horaire le télétravail.
+[22:56 -> 22:58] C'est aussi un horaire.
+[22:58 -> 23:00] Voilà.
+[23:00 -> 23:02] Je peux réafficher les absences.
+[23:02 -> 23:04] J'ai d'autres options.
+[23:04 -> 23:06] Alors les autres options.
+[23:06 -> 23:08] Voilà.
+[23:08 -> 23:10] Est-ce que les horaires,
+[23:10 -> 23:12] je veux les voir les couleurs d'horaires
+[23:12 -> 23:14] par les indicateurs de présence
+[23:14 -> 23:16] ou par la nature d'horaires ?
+[23:16 -> 23:18] Je ne sais pas si vous vous souvenez.
+[23:18 -> 23:20] Voilà.
+[23:20 -> 23:22] Par défaut, c'est selon les indicateurs de présence.
+[23:22 -> 23:24] Donc quand on a coché
+[23:24 -> 23:26] sur l'horaire journalier matin,
+[23:26 -> 23:28] soir ou horaire de nuit
+[23:28 -> 23:30] ou horaire de repos,
+[23:30 -> 23:32] là, j'affiche l'horaire
+[23:32 -> 23:34] par la couleur de la nature d'horaires
+[23:34 -> 23:36] dans lequel je lui ai affecté.
+[23:36 -> 23:38] C'est pour ça que je veux arriver
+[23:38 -> 23:40] les couleurs
+[23:40 -> 23:42] des natures.
+[23:46 -> 23:48] Voilà.
+[23:48 -> 23:50] Là, afficher la semaine de travail.
+[23:52 -> 23:54] Ça s'arrête au vendredi.
+[23:54 -> 23:56] Lundi, vendredi.
+[23:58 -> 24:00] Je ne sais pas s'il y a beaucoup de clients qui utilisent ça.
+[24:00 -> 24:02] Alors que normalement,
+[24:02 -> 24:04] j'affiche lundi, dimanche.
+[24:06 -> 24:08] Parce que par contre, en vue hebdo,
+[24:08 -> 24:10] la semaine, c'est toujours lundi, dimanche.
+[24:10 -> 24:12] On n'a pas cette notion de semaine décalée
+[24:12 -> 24:14] dimanche, samedi, etc.
+[24:14 -> 24:16] La semaine, c'est toujours lundi, dimanche.
+[24:16 -> 24:18] Sur l'agenda.
+[24:18 -> 24:20] Et puis ensuite,
+[24:20 -> 24:22] j'ai le choix
+[24:22 -> 24:24] d'afficher les totalisations
+[24:24 -> 24:26] par semaine.
+[24:26 -> 24:28] Ces fameux
+[24:28 -> 24:30] des groupes de compteurs
+[24:30 -> 24:32] dont on n'a pas compris comment c'était fait
+[24:32 -> 24:34] au niveau de la valorisation.
+[24:34 -> 24:36] Pardon. Totalisation par semaine
+[24:36 -> 24:38] puisqu'on avait des
+[24:38 -> 24:40] compteurs qui étaient curieusement
+[24:40 -> 24:42] alimentés.
+[24:44 -> 24:46] Ça va peut-être aller mieux.
+[24:48 -> 24:50] Je crois qu'il a l'air de calculer.
+[25:04 -> 25:06] Ok.
+[25:06 -> 25:08] Bon, donne des compteurs à zéro.
+[25:08 -> 25:10] Pas très normal.
+[25:10 -> 25:12] Au niveau détendu, c'est pas normal ça.
+[25:12 -> 25:14] Alors évidemment,
+[25:14 -> 25:16] les palettes, je ne vous ai pas dit,
+[25:16 -> 25:18] je prends un motif et je glisse et je le dépose
+[25:18 -> 25:20] sur une cellule sélectionnée.
+[25:20 -> 25:22] Là, ici,
+[25:22 -> 25:24] si je me mets
+[25:24 -> 25:26] ce que j'ai,
+[25:28 -> 25:30] ça me positionne l'absence.
+[25:40 -> 25:42] C'est pas tout à fait ce que je voulais faire par contre.
+[25:42 -> 25:44] Bon.
+[25:44 -> 25:46] C'est pas grave.
+[25:46 -> 25:48] C'est pour vous montrer
+[25:48 -> 25:50] l'utilisation rapide de
+[25:50 -> 25:52] sachez que vous avez aussi
+[25:52 -> 25:54] des compteurs possibles
+[25:54 -> 25:56] en bas d'agenda.
+[25:56 -> 25:58] Alors pas sur la vue mensuelle
+[25:58 -> 26:00] mais sur la vue hebdo.
+[26:00 -> 26:02] Vous pouvez afficher
+[26:02 -> 26:04] des totalisations,
+[26:04 -> 26:06] le temps travaillé de la journée,
+[26:06 -> 26:08] la pause de la journée,
+[26:08 -> 26:10] si il y a des majorations,
+[26:10 -> 26:12] vous pouvez afficher des compteurs ici
+[26:12 -> 26:14] en bas de chacune des journées.
+[26:14 -> 26:16] C'est un groupe de compteurs
+[26:16 -> 26:18] qui s'appelle
+[26:18 -> 26:20] l'écran agenda synthèse jour.
+[26:24 -> 26:26] Je vous donnerai le lien aussi
+[26:26 -> 26:28] vers des focus qui ont été faits
+[26:28 -> 26:30] sur cet agenda.
+[26:34 -> 26:36] Ici,
+[26:36 -> 26:38] vous avez masqué
+[26:38 -> 26:40] les compteurs en bas de l'écran.
+[26:46 -> 26:48] Normalement, ça affiche
+[26:48 -> 26:50] les compteurs en bas de l'écran.
+[26:50 -> 26:52] C'est ça qui permet d'afficher
+[26:52 -> 26:54] les fameux compteurs en bas d'écran
+[26:54 -> 26:56] quand il y a un groupe qui est paramétré.
+[26:56 -> 26:58] C'est un masqué.
+[26:58 -> 27:00] D'accord.
+[27:00 -> 27:02] J'affiche les compteurs en bas d'écran
+[27:02 -> 27:04] ou je les affiche pas.
+[27:04 -> 27:06] C'est ce bouton-là.
+[27:06 -> 27:08] Il n'y a pas de groupe paramétré.
+[27:08 -> 27:10] Non, il n'y a pas de groupe paramétré.
+[27:10 -> 27:12] C'est pour ça qu'il ne s'affiche pas.
+[27:12 -> 27:14] Et ici,
+[27:14 -> 27:16] j'ai un bouton qui me permet d'afficher
+[27:16 -> 27:18] le planning de mes collègues.
+[27:18 -> 27:20] Sauf qu'en 8-2,
+[27:20 -> 27:22] ce sera le cas,
+[27:22 -> 27:24] mais en version
+[27:24 -> 27:26] plan,
+[27:26 -> 27:28] en version plan qui arrive,
+[27:28 -> 27:30] on va avoir un autre affichage
+[27:30 -> 27:32] du planning de mes collègues
+[27:32 -> 27:34] de façon beaucoup plus précise.
+[27:34 -> 27:36] On va
+[27:36 -> 27:38] afficher le planning
+[27:38 -> 27:40] des collaborateurs de mes collègues.
+[27:40 -> 27:42] En fait,
+[27:42 -> 27:44] c'est parce que
+[27:44 -> 27:46] dans le type de structure,
+[27:50 -> 27:52] on retourne loin,
+[27:52 -> 27:54] dans les types de structure,
+[27:54 -> 27:56] c'est la structure administrative
+[27:56 -> 27:58] qui est utilisée pour l'institution
+[27:58 -> 28:00] des affectations des collaborateurs.
+[28:00 -> 28:02] Ce type de structure administrative,
+[28:02 -> 28:04] j'ai mon règle équipe
+[28:04 -> 28:06] qui est au niveau service.
+[28:06 -> 28:08] Cette coche,
+[28:08 -> 28:10] il faut que je choisisse un niveau
+[28:10 -> 28:12] sur lequel positionner cette coche,
+[28:12 -> 28:14] et je ne peux la mettre qu'à un niveau et un seul.
+[28:14 -> 28:16] Donc si je la mets au niveau service,
+[28:16 -> 28:18] moi, je n'ai personne dans mon équipe.
+[28:18 -> 28:20] Moi, corneille,
+[28:20 -> 28:22] je suis affectée
+[28:22 -> 28:24] à une direction de production.
+[28:24 -> 28:26] Donc là,
+[28:26 -> 28:28] si je change la coche
+[28:28 -> 28:30] et que je la remonte
+[28:30 -> 28:32] d'un niveau,
+[28:32 -> 28:34] à un autre niveau de structure,
+[28:34 -> 28:36] ce qu'est-ce que vous changez le niveau,
+[28:36 -> 28:38] oui, je veux.
+[28:38 -> 28:40] Donc j'ai remonté ma coche
+[28:40 -> 28:42] au niveau direction, mais je fais ça
+[28:42 -> 28:44] sur le type de structure.
+[28:44 -> 28:46] Ça ne me demande pas de régénération, c'est pas mal.
+[28:46 -> 28:48] Ici,
+[28:48 -> 28:50] si je réaffiche
+[28:50 -> 28:52] mon agenda,
+[28:52 -> 28:56] je pense qu'il y a d'autres personnes
+[28:56 -> 28:58] qui sont infectées à la direction de protection.
+[28:58 -> 29:00] J'espère.
+[29:06 -> 29:08] Peut-être pas d'ailleurs,
+[29:08 -> 29:10] ici.
+[29:10 -> 29:12] Oui.
+[29:16 -> 29:18] Voilà.
+[29:18 -> 29:20] Je vois le planning,
+[29:20 -> 29:22] je vois si mes collègues, ils sont en repos,
+[29:22 -> 29:24] si ils sont sur un horaire de travail
+[29:24 -> 29:26] en bleu,
+[29:26 -> 29:28] ou si ils sont éventuellement absents
+[29:28 -> 29:30] en gris soutenu.
+[29:30 -> 29:32] Je ne vois pas le motif d'absence,
+[29:32 -> 29:34] parce que dans le cadre
+[29:34 -> 29:36] d'une confidentialité,
+[29:36 -> 29:38] un collaborateur n'a pas
+[29:38 -> 29:40] a priori le droit de savoir pourquoi
+[29:40 -> 29:42] un autre collaborateur n'est pas là,
+[29:42 -> 29:44] de savoir qu'il n'est pas là,
+[29:44 -> 29:46] mais il ne peut pas savoir pourquoi.
+[29:46 -> 29:48] Donc si je reprend
+[29:48 -> 29:50] Asman Abdeshamad,
+[29:50 -> 29:52] Nicole Amel et Nourédyne,
+[29:52 -> 29:54] alors
+[29:54 -> 29:56] j'ai mis la coche au niveau direction
+[29:56 -> 29:58] et quand je reviens
+[29:58 -> 30:00] sur mon équipe,
+[30:00 -> 30:02] celui des collaborateurs,
+[30:04 -> 30:06] Abdeshamad,
+[30:06 -> 30:08] sur la structure
+[30:08 -> 30:10] administrative,
+[30:10 -> 30:12] t'es affecté la direction de production.
+[30:12 -> 30:14] Ok, donc comme moi,
+[30:14 -> 30:16] il y avait
+[30:16 -> 30:18] Amel
+[30:22 -> 30:24] qui est affecté
+[30:24 -> 30:26] à la cuisson A
+[30:26 -> 30:28] et la cuisson A,
+[30:28 -> 30:30] c'est sous la direction de production.
+[30:32 -> 30:34] Et puis,
+[30:34 -> 30:36] il y a Nourédyne
+[30:38 -> 30:40] qui est affecté aussi
+[30:40 -> 30:42] à la direction de production
+[30:42 -> 30:44] qui m'a manquée,
+[30:44 -> 30:46] mais en tout cas,
+[30:46 -> 30:48] c'est les personnes
+[30:48 -> 30:50] qui sont rattachées au même élément que moi
+[30:50 -> 30:52] qui sont affectées au même élément que moi
+[30:52 -> 30:54] plus
+[30:54 -> 30:56] les gens qui sont affectés au niveau en dessous.
+[30:58 -> 31:00] Mais quand
+[31:02 -> 31:04] quand j'avais mis
+[31:04 -> 31:06] le
+[31:06 -> 31:08] réglage
+[31:08 -> 31:10] de ce regroupement équipe
+[31:10 -> 31:12] au niveau service,
+[31:12 -> 31:14] moi j'étais rattachée
+[31:14 -> 31:16] à une direction
+[31:16 -> 31:18] donc du coup j'étais trop haute
+[31:18 -> 31:20] par rapport
+[31:20 -> 31:22] à ce regroupement équipe
+[31:22 -> 31:24] j'étais positionné trop haut
+[31:24 -> 31:26] pour pouvoir aller
+[31:26 -> 31:28] chercher les gens
+[31:28 -> 31:30] égales à mon propre
+[31:30 -> 31:32] effectation. En fait,
+[31:32 -> 31:34] ce niveau de coche,
+[31:34 -> 31:36] ça détermine la hauteur du cône,
+[31:36 -> 31:38] la hauteur du cône de recherche.
+[31:39 -> 31:41] La base de la recherche,
+[31:41 -> 31:43] ça va toujours être
+[31:43 -> 31:45] toutes les affectations
+[31:45 -> 31:47] au niveau des niveaux inférieurs
+[31:47 -> 31:49] jusqu'au plus fin.
+[31:49 -> 31:51] Mais la hauteur du cône
+[31:52 -> 31:54] elle est
+[31:54 -> 31:56] déterminée ici.
+[31:56 -> 31:58] Donc
+[31:58 -> 32:00] n'importe quelle personne affectée
+[32:00 -> 32:02] quand j'avais mis la coche au niveau service
+[32:02 -> 32:04] dès que j'étais affectée au-dessus
+[32:04 -> 32:06] d'un élément au-dessus
+[32:06 -> 32:08] d'un niveau service,
+[32:08 -> 32:10] je ne voyais personne.
+[32:13 -> 32:15] C'est quelque chose qui va évoluer
+[32:15 -> 32:17] mais que vous allez retrouver
+[32:17 -> 32:19] en UX2,
+[32:19 -> 32:21] c'est encore comme ça.
+[32:26 -> 32:28] C'est ce qui me permet
+[32:28 -> 32:30] le flanier de mes collègues
+[32:30 -> 32:32] c'est les personnes que j'arrive à afficher
+[32:32 -> 32:34] qui correspondent
+[32:34 -> 32:36] à mes collègues.
+[32:36 -> 32:38] En général
+[32:38 -> 32:40] c'est mon équipe
+[32:40 -> 32:42] mais c'est un truc qui n'est pas suffisant
+[32:42 -> 32:44] ce paramétrage là
+[32:44 -> 32:46] pour avoir un planit des collègues
+[32:46 -> 32:48] parce que ça veut dire que
+[32:48 -> 32:50] les managers
+[32:50 -> 32:52] qui sont affectés à des niveaux trop hauts
+[32:52 -> 32:54] ne peuvent pas voir
+[32:54 -> 32:56] les absences éventuelles
+[32:56 -> 32:58] de leurs pères
+[32:58 -> 33:00] et ailleurs des gens de même niveau que
+[33:00 -> 33:02] s'ils sont trop hauts
+[33:02 -> 33:04] parce que si on met la coche trop haut
+[33:04 -> 33:06] tout le monde voit tout le monde
+[33:10 -> 33:12] ça existe
+[33:12 -> 33:14] sachez que historiquement
+[33:14 -> 33:16] ça pose problème
+[33:16 -> 33:18] sur la visualisation du planning
+[33:18 -> 33:20] des collègues
+[33:20 -> 33:22] chez les clients
+[33:22 -> 33:24] et c'est pour ça qu'il y a une évolution
+[33:24 -> 33:26] qui arrive dans la prochaine version
+[33:26 -> 33:28] qui sort en jeu.
+[33:29 -> 33:31] Voilà
+[33:31 -> 33:33] et puis une dernière chose à vous dire
+[33:33 -> 33:35] il y a aussi les paramètres divers
+[33:35 -> 33:37] qui permettent de gérer ça
+[33:37 -> 33:39] et là je peux consulter ma situation
+[33:39 -> 33:41] alors là c'est des compteurs
+[33:41 -> 33:43] j'ai encore des groupes de compteurs
+[33:43 -> 33:45] qui ont en destination ma situation
+[33:45 -> 33:47] et que je peux visualiser ici.
+[33:52 -> 33:54] Mais là je pense que
+[33:54 -> 33:56] il faudra
+[33:56 -> 33:58] vous faire expliquer
+[33:58 -> 34:00] ou regarder des documents focus
+[34:00 -> 34:02] qui ont été fait justement
+[34:02 -> 34:04] sur tous les groupes de compteurs paramétrables
+[34:04 -> 34:06] leurs emplacements
+[34:06 -> 34:08] dans l'application
+[34:08 -> 34:10] ou est-ce qu'on peut les visualiser
+[34:10 -> 34:12] et comment est les paramètres
+[34:12 -> 34:14] et qu'est-ce qu'ils restent.
+[34:14 -> 34:16] Là je préfère ne pas faire le tour
+[34:16 -> 34:18] maintenant complètement
+[34:18 -> 34:20] parce que sinon je n'arriverai pas au bout
+[34:20 -> 34:22] et je vais quand même vous montrer le plan.
+[34:26 -> 34:28] Bon sur l'agenda
+[34:28 -> 34:30] il faut manipuler
+[34:30 -> 34:32] et voir éventuellement
+[34:32 -> 34:34] différents focus, je vais vous donner les liens.
+[34:36 -> 34:38] Ça va ?
+[34:40 -> 34:42] Ça va.
+[34:42 -> 34:44] Je l'ai un peu vite et vous n'avez pas le temps
+[34:44 -> 34:46] de manipuler mais vous voyez 4 jours
+[34:46 -> 34:48] c'est court, ça reste court
+[34:48 -> 34:50] avec tout ce qu'on a à voir.
+[34:50 -> 34:52] Bon maintenant on va faire
+[34:52 -> 34:54] un petit focus sur le planning.
+[34:56 -> 34:58] Alors avant de voir le planning
+[34:58 -> 35:00] je vais faire un tout petit détour
+[35:00 -> 35:02] sur les saisies de masse.
+[35:04 -> 35:06] L'option de saisies de masse
+[35:06 -> 35:08] ça permet en fait
+[35:08 -> 35:10] de faire de la saisie rapide.
+[35:10 -> 35:12] Aujourd'hui
+[35:12 -> 35:14] ce qu'on a vu c'est qu'on peut passer
+[35:14 -> 35:16] par le dossier du collaborateur
+[35:16 -> 35:18] pour faire une saisie d'absence.
+[35:18 -> 35:20] Le collaborateur il peut passer par son propre compte
+[35:20 -> 35:22] par son agendeur.
+[35:22 -> 35:24] Je peux passer par le planning
+[35:24 -> 35:26] là je pourrais faire
+[35:26 -> 35:28] de la saisie multiple
+[35:28 -> 35:30] mais je peux pas faire une saisie de masse
+[35:30 -> 35:32] dans le genre
+[35:32 -> 35:34] j'ai toute une pile dans les collectivités
+[35:34 -> 35:36] c'est ça, j'ai toute une pile
+[35:36 -> 35:38] par exemple de grève
+[35:38 -> 35:40] qui sait qu'a fait grève
+[35:40 -> 35:42] tel jour.
+[35:42 -> 35:44] J'ai peut-être 200 ou 300 fiches
+[35:44 -> 35:46] à saisir, 300 absences grèves
+[35:46 -> 35:48] à saisir et là
+[35:48 -> 35:50] je ne veux pas passer d'un dossier à l'autre
+[35:50 -> 35:52] à chaque fois que je saisir une absence grève
+[35:52 -> 35:54] pour pouvoir faire une saisie en continu.
+[35:54 -> 35:56] Donc là ce que je vais faire
+[35:56 -> 35:58] j'ai pas le motif grève ici
+[35:58 -> 36:00] mais je vais prendre
+[36:00 -> 36:02] un collaborateur par exemple
+[36:02 -> 36:04] Véronique
+[36:06 -> 36:08] voilà je prends Véronique
+[36:08 -> 36:10] je vais prendre un motif
+[36:10 -> 36:12] qui ne nécessite pas de contrôle de droit
+[36:12 -> 36:14] je vais mettre en mission
+[36:14 -> 36:16] Alors là
+[36:16 -> 36:18] je peux ne pas utiliser la souris
+[36:18 -> 36:20] le but c'est de ne pas utiliser la souris
+[36:20 -> 36:22] la grève
+[36:22 -> 36:24] donc je sais pas
+[36:24 -> 36:26] le 7-20
+[36:26 -> 36:28] ici
+[36:28 -> 36:30] heure je suis
+[36:30 -> 36:32] voilà
+[36:36 -> 36:38] oui en heure
+[36:38 -> 36:40] jusqu'au 7 juin
+[36:40 -> 36:42] et ici par exemple de 10h à midi
+[36:44 -> 36:46] voilà c'est un calcul automatiquement de durée
+[36:46 -> 36:48] l'origine je m'en fiche
+[36:48 -> 36:50] ça me pose la ligne
+[36:50 -> 36:52] ça m'affiche la ligne
+[36:52 -> 36:54] en dessous
+[36:54 -> 36:56] et puis là
+[36:56 -> 36:58] j'ai pu qu'à changer mon collaborateur
+[36:58 -> 37:00] par exemple
+[37:00 -> 37:02] moi je vais m'y mettre aussi
+[37:02 -> 37:04] là dedans
+[37:04 -> 37:06] et par exemple j'ai rien à toucher
+[37:06 -> 37:08] moi aussi je suis en mission de 10h à midi
+[37:08 -> 37:10] ce jour là
+[37:12 -> 37:14] j'aurais voulu me voir arriver un drameur
+[37:14 -> 37:16] quand même
+[37:16 -> 37:18] ah ok
+[37:18 -> 37:20] ensuite
+[37:20 -> 37:22] je vais rajouter
+[37:24 -> 37:26] nous redine
+[37:26 -> 37:28] nous redine c'est pas de 10h à 11h
+[37:28 -> 37:30] lui ça va être
+[37:30 -> 37:32] je sais pas moi de 11h à 13h
+[37:36 -> 37:38] avec des tables
+[37:38 -> 37:40] et j'enregistre
+[37:40 -> 37:42] ici
+[37:42 -> 37:44] voilà et ainsi de suite
+[37:44 -> 37:46] ça permet de faire de la saisie
+[37:46 -> 37:48] ce qu'on appelle de la saisie de masse
+[37:48 -> 37:50] alors là je suis en saisie d'absence
+[37:50 -> 37:52] et je peux être en saisie d'horaire
+[37:52 -> 37:54] etc
+[37:54 -> 37:56] quand je reviens sur l'anglais
+[37:56 -> 37:58] c'est pas parce que les affichées ici
+[37:58 -> 38:00] j'ai pas besoin de faire une validation définitive
+[38:00 -> 38:02] elles sont déjà validées ces absences
+[38:02 -> 38:04] d'ailleurs je peux les supprimer
+[38:04 -> 38:06] je peux les modifier
+[38:06 -> 38:08] voilà c'est un mode de saisie
+[38:08 -> 38:10] différent
+[38:10 -> 38:12] qui est nouveau depuis
+[38:12 -> 38:14] workplace je crois
+[38:14 -> 38:16] ou x
+[38:16 -> 38:18] je sais plus
+[38:18 -> 38:20] je sais plus
+[38:20 -> 38:22] je suis pas sûr
+[38:22 -> 38:24] alors c'est pas pareil cette saisie là
+[38:24 -> 38:26] que de faire de la saisie collective
+[38:26 -> 38:28] traitement collectif
+[38:28 -> 38:30] et de dire
+[38:30 -> 38:32] je saisis une absence
+[38:32 -> 38:34] par exemple
+[38:34 -> 38:36] ma mission là
+[38:38 -> 38:40] du
+[38:40 -> 38:42] du 2 juin
+[38:44 -> 38:46] au
+[38:46 -> 38:48] au 2 juin
+[38:48 -> 38:50] de 10 heures
+[38:50 -> 38:52] à midi
+[38:54 -> 38:56] ici donc ça déjà
+[38:56 -> 38:58] je valis la saisie c'est cette mission
+[39:00 -> 39:02] et ensuite je vais aller vérifier
+[39:02 -> 39:04] la population, les collaborateurs
+[39:04 -> 39:06] qui doivent être impactés
+[39:06 -> 39:08] par cette absence
+[39:08 -> 39:10] donc là je peux créer une nouvelle population
+[39:10 -> 39:12] etc ou alors je peux
+[39:12 -> 39:14] décocher
+[39:14 -> 39:16] décocher certaines personnes
+[39:16 -> 39:18] en rajouter d'autres
+[39:18 -> 39:20] j'applique la sélection
+[39:20 -> 39:22] et là voilà il m'a pris
+[39:22 -> 39:24] 16 collaborateurs
+[39:24 -> 39:26] et j'envoie la saisie d'absence
+[39:26 -> 39:28] c'est pas tout à fait la même chose
+[39:30 -> 39:32] puisque là en saisie de masse
+[39:32 -> 39:34] je garde toujours la main quand même
+[39:34 -> 39:36] sur les champs de saisie
+[39:36 -> 39:38] si j'ai une variation
+[39:38 -> 39:40] j'ai deux événements identifs
+[39:40 -> 39:42] je ne bouge pas les informations
+[39:42 -> 39:44] d'événements
+[39:44 -> 39:46] mais rien ne m'empêche
+[39:46 -> 39:48] de faire des modifications
+[39:48 -> 39:50] au moment de la saisie
+[39:54 -> 39:56] bon je vous montre ce plan ligne
+[39:56 -> 39:58] ah oui je ne vous ai pas parlé pardon
+[39:58 -> 40:00] des palettes de l'agenda
+[40:00 -> 40:02] les collaborateurs de l'agenda collaborateurs
+[40:02 -> 40:04] en fait ça se met dans une table
+[40:04 -> 40:06] de codification
+[40:06 -> 40:08] si vous avez besoin de mettre en place
+[40:08 -> 40:10] des palettes
+[40:10 -> 40:12] quand le collaborateur regarde
+[40:12 -> 40:14] son propre agenda
+[40:14 -> 40:16] c'est à dire quand il est dans mon compte
+[40:16 -> 40:18] puisque là l'agenda
+[40:18 -> 40:20] j'ai vu j'avais pas de palettes
+[40:20 -> 40:22] ça se passe ailleurs
+[40:22 -> 40:24] en fait on a
+[40:24 -> 40:26] une palette unique dans une table
+[40:26 -> 40:28] d'ifcode
+[40:28 -> 40:30] dans les valeurs
+[40:30 -> 40:32] par liste cette fois
+[40:32 -> 40:34] et non pas par domaine
+[40:34 -> 40:36] ces fameuses tables d'ifcodes
+[40:36 -> 40:38] ou j'ai liste des motifs
+[40:38 -> 40:40] agenda palettes de motifs d'absence
+[40:40 -> 40:42] voilà
+[40:42 -> 40:44] ben là en fait j'ai une seule palette
+[40:44 -> 40:46] là dedans je vais mettre tous les motifs
+[40:46 -> 40:48] qui sont autorisés
+[40:48 -> 40:50] par exemple j'vais avoir CA
+[40:50 -> 40:52] donc j'ai
+[40:52 -> 40:54] alors là il faut mettre les bons codes motifs d'absence
+[40:54 -> 40:56] qui sont
+[40:56 -> 40:58] qui existent
+[40:58 -> 41:00] dans le paramétrage des motifs
+[41:00 -> 41:02] je peux faire
+[41:02 -> 41:04] RTT
+[41:08 -> 41:10] et puis éventuellement
+[41:10 -> 41:12] je peux faire mission
+[41:18 -> 41:20] je mets tous les motifs
+[41:20 -> 41:22] que je veux pouvoir faire apparaître
+[41:22 -> 41:24] dans des palettes de collaborateur
+[41:24 -> 41:26] et là maintenant quand je réaffiche
+[41:26 -> 41:28] mon agenda
+[41:28 -> 41:30] collaborateur
+[41:36 -> 41:38] dans des actions possibles
+[41:38 -> 41:40] je vois apparaître
+[41:40 -> 41:42] ma palette
+[41:42 -> 41:44] alors je vois apparaître les motifs
+[41:44 -> 41:46] donc j'ai mis dans ma palette
+[41:46 -> 41:48] dans la palette globale
+[41:48 -> 41:50] et vous comprenez là par contre que j'ai une seule palette globale
+[41:50 -> 41:52] pour tous les collaborateurs
+[41:52 -> 41:54] par contre
+[41:54 -> 41:56] il y a sûrement des populations chez les incluents
+[41:56 -> 41:58] qui auront pas le rôle
+[41:58 -> 42:00] qui seront autorisés
+[42:00 -> 42:02] à saisir certains motifs d'absence
+[42:02 -> 42:04] et puis des populations qui ne seront pas autorisés
+[42:04 -> 42:06] à saisir ces mêmes motifs d'absence
+[42:06 -> 42:08] peut-être qu'il y a des gens qui
+[42:08 -> 42:10] je sais pas moi des absences
+[42:10 -> 42:12] RTT jour par jour
+[42:12 -> 42:14] par exemple peut-être qu'il y a une certaine population
+[42:14 -> 42:16] qui sera autorisée à saisir
+[42:16 -> 42:18] des RTT un jour mais que tous les gens qui sont
+[42:18 -> 42:20] à l'heure
+[42:20 -> 42:22] qu'on ne les autorisera pas à saisir des RTT un jour
+[42:22 -> 42:24] on leur fera peut-être
+[42:24 -> 42:26] saisir autre chose comme motif
+[42:26 -> 42:28] mais pas celui-là
+[42:28 -> 42:30] donc là c'est les filtres d'habitations
+[42:30 -> 42:32] ensuite
+[42:32 -> 42:34] et donc via les profils collaborateurs
+[42:34 -> 42:36] que l'on va filtrer
+[42:36 -> 42:38] les différents motifs qui vont apparaître
+[42:38 -> 42:40] effectivement dans l'agenda
+[42:40 -> 42:42] on s'appuie
+[42:42 -> 42:44] sur une liste complète
+[42:44 -> 42:46] qu'on va mettre dans
+[42:46 -> 42:48] cette fameuse table DEFCODE
+[42:48 -> 42:50] quand j'ai saisie
+[42:50 -> 42:52] dans les valeurs parlistes mes 3 motifs
+[42:52 -> 42:54] mais si je ne veux pas avoir apparaître
+[42:54 -> 42:56] la mission pour certaines populations
+[42:56 -> 42:58] je vais faire un profil et collaborateur
+[42:58 -> 43:00] pour cette population
+[43:00 -> 43:02] qui n'autorisera pas la mission
+[43:02 -> 43:04] et du coup ça va me filtrer automatiquement
+[43:04 -> 43:06] ce motif, il apparaîtra plus dans la palette
+[43:10 -> 43:12] on a le même cas d'ailleurs
+[43:12 -> 43:14] pour les palettes
+[43:14 -> 43:16] de responsable
+[43:16 -> 43:18] non c'est pas tout à fait le même cas
+[43:18 -> 43:20] parce que quand je crie une palette responsable
+[43:20 -> 43:22] je peux créer des palettes publiques
+[43:22 -> 43:24] disponibles
+[43:24 -> 43:26] à tous les managers
+[43:26 -> 43:28] donc ces managers
+[43:28 -> 43:30] ils peuvent accéder
+[43:30 -> 43:32] à ces palettes publiques
+[43:32 -> 43:34] les palettes de managers sont responsables
+[43:34 -> 43:36] mais si dans ces palettes
+[43:36 -> 43:38] il y a des motifs d'absence
+[43:38 -> 43:40] qu'ils n'ont pas eux le droit de saisir
+[43:40 -> 43:42] par les filtres d'habitations
+[43:42 -> 43:44] et donc par leur profil d'utilisateur
+[43:44 -> 43:46] envers un lundi
+[43:46 -> 43:48] c'est pas palette
+[43:48 -> 43:50] ces motifs n'apparaîtront pas dans la palette
+[43:56 -> 43:58] normalement
+[43:58 -> 44:00] en tout cas ça devrait être comme ça
+[44:06 -> 44:08] donc voilà pour la partie agenda
+[44:08 -> 44:10] à travail
+[44:10 -> 44:12] pour la partie planning
+[44:12 -> 44:14] je vais fermer tout ça
+[44:20 -> 44:22] pour la partie planning
+[44:38 -> 44:40] donc le planning
+[44:42 -> 44:44] il a plein d'actions possibles
+[44:44 -> 44:46] il y a plein de choses à visualiser
+[44:46 -> 44:48] voilà
+[44:48 -> 44:50] c'est un outil quand même
+[44:50 -> 44:52] déjà
+[44:52 -> 44:54] par défaut la période
+[44:54 -> 44:56] là je n'ai pas de préférence
+[44:56 -> 44:58] je n'ai pas de critères planning
+[44:58 -> 45:00] je n'ai rien de particulier
+[45:00 -> 45:02] par défaut il arrive à la date du jour
+[45:02 -> 45:04] il arrive en visuel
+[45:04 -> 45:06] là en visuel semaine
+[45:06 -> 45:08] et il intègre la date du jour
+[45:08 -> 45:10] donc là on est au 4 mai
+[45:10 -> 45:12] ou au 9
+[45:12 -> 45:14] si je veux changer la période
+[45:14 -> 45:16] je peux défiler comme ça
+[45:16 -> 45:18] et là je vais défiler semaine par semaine
+[45:18 -> 45:20] parce que je suis en vue semaine
+[45:22 -> 45:24] si je veux changer
+[45:24 -> 45:26] en cliquant
+[45:26 -> 45:28] sur la date
+[45:28 -> 45:30] sur la période
+[45:30 -> 45:32] j'ouvre une pop-up
+[45:32 -> 45:34] qui me permet de choisir la période
+[45:34 -> 45:36] on l'a aperçu tout à l'heure
+[45:36 -> 45:38] vous verrez les différentes
+[45:38 -> 45:40] on peut chercher le bouton radio qui va bien
+[45:40 -> 45:42] pour ensuite pouvoir saisir les informations
+[45:42 -> 45:44] qui sont dedans
+[45:44 -> 45:46] donc là je peux changer
+[45:46 -> 45:48] je peux demander la période du 18
+[45:48 -> 45:50] ou 28 mai
+[45:50 -> 45:52] donc là je décale complètement
+[45:52 -> 45:54] j'applique
+[45:54 -> 45:56] et là je verrai un fichage
+[45:56 -> 45:58] du 18 au 28 mai
+[46:00 -> 46:02] je peux demander
+[46:02 -> 46:04] une durée de
+[46:04 -> 46:06] alors c'est 6 semaines maximum
+[46:06 -> 46:08] ou
+[46:08 -> 46:10] si je veux à 742 jours
+[46:12 -> 46:14] donc 6 semaines à partir de
+[46:14 -> 46:16] par exemple à partir de la semaine dernière
+[46:30 -> 46:32] et là
+[46:32 -> 46:34] je me déplace avec l'ascenseur horizontal
+[46:34 -> 46:36] pour visualiser mes 6 semaines
+[46:40 -> 46:42] quand j'ai une grande période comme ça
+[46:42 -> 46:44] ça peut être intéressant d'avoir un visuel
+[46:44 -> 46:46] un peu plus synthétique
+[46:46 -> 46:48] et donc là on se met en vue moi
+[46:48 -> 46:50] alors on appelle ça vue moi
+[46:50 -> 46:52] en fait c'est une vue qui est synthétique
+[46:52 -> 46:54] vous allez voir les cellules
+[46:54 -> 46:56] elles sont toutes
+[46:56 -> 46:58] réduites
+[46:58 -> 47:00] et là je fonctionne avec les abrégés
+[47:00 -> 47:02] à deux caractères
+[47:02 -> 47:04] pour avoir un visuel
+[47:04 -> 47:06] restreint
+[47:06 -> 47:08] mais ça me permet de voir mes 6 semaines d'un coup
+[47:08 -> 47:10] pour le coup
+[47:12 -> 47:14] j'ai aussi la possibilité
+[47:14 -> 47:16] de voir le détail
+[47:16 -> 47:18] alors je me positionne
+[47:18 -> 47:20] sur une journée
+[47:20 -> 47:22] là je suis positionnée
+[47:22 -> 47:24] le 4
+[47:24 -> 47:26] le 4 mai
+[47:26 -> 47:28] je peux avoir la vue journée
+[47:28 -> 47:30] la vue journalière
+[47:30 -> 47:32] donc le détail
+[47:32 -> 47:34] heure par heure, plage par plage
+[47:36 -> 47:38] pour tous les collaborateurs
+[47:38 -> 47:40] avec la visualisation
+[47:40 -> 47:42] carrément du découpage horaire
+[47:42 -> 47:44] et éventuellement des événements
+[47:44 -> 47:46] qui sont plagés et qui viennent se positionner
+[47:46 -> 47:48] sur les plages
+[47:48 -> 47:50] peut-être que les ont été saisies
+[47:50 -> 47:52] ces missions
+[47:54 -> 47:56] sur cette vue journalière
+[47:56 -> 47:58] vous voyez
+[47:58 -> 48:00] que la plage
+[48:00 -> 48:02] le découpage de chaque journée
+[48:02 -> 48:04] il va de 7h à 19h
+[48:06 -> 48:08] donc je n'affiche pas
+[48:08 -> 48:10] la totalité de la journée calendaire
+[48:10 -> 48:12] et il me dit que là
+[48:12 -> 48:14] j'ai des événements après
+[48:14 -> 48:16] et j'ai des événements avant
+[48:16 -> 48:18] que je n'arrive pas à visualiser
+[48:18 -> 48:20] parce que ma plage
+[48:20 -> 48:22] elle n'est pas complètement ouverte
+[48:22 -> 48:24] donc c'est pour ça que côté
+[48:24 -> 48:26] de la vue journalière
+[48:26 -> 48:28] j'ai un petit levier
+[48:28 -> 48:30] qui me permet
+[48:30 -> 48:32] de modifier les options de la vue journalière
+[48:32 -> 48:34] alors là je dis que j'affiche 3 jours
+[48:34 -> 48:36] donc c'est bien le cas
+[48:36 -> 48:38] j'affiche 3 journées
+[48:38 -> 48:40] et je débute l'affichage de ma journée journalière
+[48:40 -> 48:42] de ma vue journalière
+[48:42 -> 48:44] un jour avant la date sélectionnée
+[48:44 -> 48:46] donc j'ai sélectionné le 4
+[48:46 -> 48:48] c'est pour ça qu'il commence à m'afficher le lundi 3
+[48:48 -> 48:50] je ne sais pas si vous voyez
+[48:50 -> 48:52] en vidéo
+[48:52 -> 48:54] vous arrivez à voir
+[48:54 -> 48:56] oui légèrement
+[48:56 -> 48:58] oui
+[48:58 -> 49:00] c'est possible mais
+[49:00 -> 49:02] ok
+[49:02 -> 49:04] bon je peux décider
+[49:04 -> 49:06] de débuter 0 jours
+[49:06 -> 49:08] avant la sélection
+[49:08 -> 49:10] et de l'afficher par exemple que 2 jours
+[49:10 -> 49:12] et puis je peux choisir
+[49:12 -> 49:14] l'enquétude de la journée
+[49:14 -> 49:16] par défaut c'est positionné
+[49:16 -> 49:18] sur les heures ouvrées 7h20h
+[49:18 -> 49:20] je dois avoir un paramètre d'hiver
+[49:20 -> 49:22] qui dit quelque part que les heures ouvrées
+[49:22 -> 49:24] qu'est-ce que c'est
+[49:24 -> 49:26] ça me paraît bizarre qu'on n'est pas un paramètre d'hiver
+[49:26 -> 49:28] mais sinon je peux dire
+[49:28 -> 49:30] je veux voir la journée complète
+[49:30 -> 49:32] ou alors je peux
+[49:32 -> 49:34] dire par exemple non je veux pas
+[49:34 -> 49:36] 7h20h je veux visualiser
+[49:36 -> 49:38] de 4h du matin à
+[49:38 -> 49:40] 23h
+[49:42 -> 49:44] et j'applique
+[49:46 -> 49:48] cette action est impossible
+[49:48 -> 49:50] car toutes les deactivations
+[49:50 -> 49:52] ne sont pas visibles sur la restitution du plan
+[49:52 -> 49:54] de journée
+[50:00 -> 50:02] je comprends pas, j'affiche 2 jours
+[50:02 -> 50:04] 0 jours avant la sélection
+[50:04 -> 50:06] bon je vais laisser comme ça
+[50:06 -> 50:08] je vais laisser comme c'était avant pour voir si je veux bien le faire
+[50:08 -> 50:10] oui
+[50:10 -> 50:12] alors il est arrivé
+[50:12 -> 50:14] 1
+[50:14 -> 50:16] 1
+[50:16 -> 50:18] 2
+[50:18 -> 50:20] 3
+[50:20 -> 50:22] 4
+[50:22 -> 50:24] 5
+[50:24 -> 50:26] 6
+[50:26 -> 50:28] 7
+[50:28 -> 50:30] 8
+[50:30 -> 50:32] 9
+[50:32 -> 50:34] 10
+[50:34 -> 50:36] 10
+[50:36 -> 50:38] il y a un planning affiché du 26 avril
+[50:38 -> 50:40] au 6 juin mais pour moi il y a un problème
+[50:40 -> 50:42] mais enfin bref
+[50:46 -> 50:48] du coup il m'affiche le 26, le 27
+[50:48 -> 50:50] et le 28
+[50:50 -> 50:52] là
+[50:52 -> 50:54] et
+[50:54 -> 50:56] il m'affiche les plages de 4h
+[50:56 -> 50:58] à 23h
+[50:58 -> 51:00] et du coup
+[51:00 -> 51:02] j'ai moins
+[51:02 -> 51:04] de 3 petits points
+[51:04 -> 51:06] j'ai encore quelque chose
+[51:06 -> 51:08] alors je sais pas pourquoi
+[51:08 -> 51:10] ici j'ai des petits points après 23h
+[51:10 -> 51:12] bon
+[51:12 -> 51:14] enfin c'est
+[51:14 -> 51:16] de l'idée
+[51:16 -> 51:18] je m'éteins pas
+[51:18 -> 51:20] je ferai vos propres jours
+[51:20 -> 51:22] avec
+[51:22 -> 51:24] vous verrez comment ça se comporte
+[51:24 -> 51:26] donc ça c'est la vue journalière
+[51:26 -> 51:28] avec les options de la vue journalière
+[51:28 -> 51:30] je vais repasser en vue semaine
+[51:30 -> 51:32] ah oui mais j'ai
+[51:32 -> 51:34] une période trop grande
+[51:34 -> 51:36] je vais prendre
+[51:36 -> 51:38] je vais prendre
+[51:38 -> 51:40] seulement
+[51:40 -> 51:42] 2 semaines
+[51:42 -> 51:44] à partir de la semaine en cours
+[51:56 -> 51:58] bon
+[51:58 -> 52:00] ici vous avez
+[52:00 -> 52:02] une possibilité d'afficher
+[52:02 -> 52:04] en multiligne parce que vous voyez que sur le planning
+[52:04 -> 52:06] là, ici vous avez des petits indicateurs
+[52:06 -> 52:08] quand vous survolez
+[52:08 -> 52:10] alors déjà pour rappel
+[52:10 -> 52:12] on voit les horaires
+[52:12 -> 52:14] quand ça a affiché en rouge
+[52:14 -> 52:16] on voit ce qu'on voit c'est les batchages
+[52:18 -> 52:20] et quand dans la même cellule
+[52:20 -> 52:22] on a dit qu'on voulait voir
+[52:22 -> 52:24] à la fois les batchages et les horaires
+[52:24 -> 52:26] c'est les batchages qui priment donc c'est pour ça que
+[52:26 -> 52:28] les batchages s'affichent en rouge
+[52:28 -> 52:30] vous voyez aussi que vous avez des indicateurs
+[52:30 -> 52:32] des petits ronds
+[52:32 -> 52:34] et au survol on voit que
+[52:34 -> 52:36] les éléments qui provoquent
+[52:36 -> 52:38] l'affichage de cet indicateur
+[52:38 -> 52:40] c'est qu'il y a une absence mission
+[52:40 -> 52:42] en heure
+[52:42 -> 52:44] dès qu'il y a une absence en heure
+[52:44 -> 52:46] elle apparaît sous la forme
+[52:46 -> 52:48] sur cette vue
+[52:48 -> 52:50] semaine, elle apparaît sous la forme
+[52:50 -> 52:52] d'un indicateur
+[52:52 -> 52:54] ici, si je regarde ça
+[52:54 -> 52:56] là aussi j'ai une absence
+[52:56 -> 52:58] j'ai une mission
+[52:58 -> 53:00] j'ai une mission en heure
+[53:00 -> 53:02] bon
+[53:02 -> 53:04] en fait ce qui m'intéresserait
+[53:04 -> 53:06] c'est de
+[53:06 -> 53:08] de ne pas avoir à faire le survol
+[53:08 -> 53:10] donc je peux faire de l'affichage multiligne
+[53:12 -> 53:14] l'affichage multiligne
+[53:14 -> 53:16] alors là
+[53:16 -> 53:18] j'ai la personnalisation de l'affichage multiligne
+[53:18 -> 53:20] ce que je dis c'est que
+[53:20 -> 53:22] sur la première ligne
+[53:22 -> 53:24] les horaires
+[53:24 -> 53:26] les badges je les veux sur la deuxième ligne
+[53:26 -> 53:28] et les absences je les veux sur la troisième ligne
+[53:28 -> 53:30] les activités et les astreintes
+[53:30 -> 53:32] je les veux derrière
+[53:32 -> 53:34] de toute façon dans cet environnement
+[53:34 -> 53:36] je n'en ai pas là pour l'instant
+[53:36 -> 53:38] voilà et l'indicateur
+[53:38 -> 53:40] je vais le positionner
+[53:40 -> 53:42] ici
+[53:44 -> 53:46] et j'applique
+[53:46 -> 53:48] alors je me suis trompée
+[53:48 -> 53:50] parce que dans le réglage
+[53:50 -> 53:52] du multiligne
+[53:52 -> 53:54] je vais monter les horaires ici
+[53:54 -> 53:56] vous voyez j'ai une ligne blanche
+[53:56 -> 53:58] en fait
+[53:58 -> 54:00] j'en veux pas de cette ligne blanche
+[54:00 -> 54:02] les activités et les astreintes
+[54:02 -> 54:04] je vais les mettre sur la même ligne
+[54:04 -> 54:06] que les absences
+[54:06 -> 54:08] et cet indicateur
+[54:08 -> 54:10] je vais le remonter aussi
+[54:10 -> 54:12] voilà
+[54:12 -> 54:14] comme ça ça va me permettre d'avoir
+[54:14 -> 54:16] une troisième ligne seulement
+[54:16 -> 54:18] par collaborateur
+[54:18 -> 54:20] donc là je vois bien la différence
+[54:20 -> 54:22] entre les horaires, les badges
+[54:22 -> 54:24] et quand je vais arriver
+[54:24 -> 54:26] sur
+[54:26 -> 54:28] Véronique
+[54:28 -> 54:30] alors j'ai toujours
+[54:30 -> 54:32] l'indicateur, les absences en heure
+[54:32 -> 54:34] elles apparaissent toujours sous la femme
+[54:34 -> 54:36] d'un indicateur mais quand j'ai une absence
+[54:36 -> 54:38] en unité
+[54:38 -> 54:40] si je double le clic
+[54:40 -> 54:42] sur cette cellule pour obtenir la vue journée
+[54:42 -> 54:44] ça c'est une absence qui est saisie
+[54:44 -> 54:46] en unité matin
+[54:48 -> 54:50] et c'est pour ça qu'elle est
+[54:50 -> 54:52] qu'elle est cadrée à gauche
+[54:52 -> 54:54] ça ce sont des absences en heure
+[54:54 -> 54:56] et
+[54:56 -> 54:58] ça c'est du télétravail
+[54:58 -> 55:00] qui est en jour
+[55:02 -> 55:04] voilà
+[55:04 -> 55:06] qui est en jour complet
+[55:08 -> 55:10] au passage quand je suis dans la vue journée
+[55:10 -> 55:12] je vois l'événement
+[55:12 -> 55:14] et si je clique sur l'événement
+[55:14 -> 55:16] ça m'ouvre la pop-up
+[55:16 -> 55:18] pour éventuellement supprimer
+[55:18 -> 55:20] modifier l'événement
+[55:20 -> 55:22] là si je fais une suppression
+[55:22 -> 55:24] si je dis c'est pas un jour complet
+[55:24 -> 55:26] mais je suis en télétravail uniquement l'après-midi
+[55:26 -> 55:28] là j'ai mon bouton enregistré ou annulé
+[55:28 -> 55:30] qui s'active
+[55:30 -> 55:32] voilà
+[55:38 -> 55:40] et ça m'a recalé mon absence
+[55:40 -> 55:42] sur la partie après-midi
+[55:42 -> 55:44] donc ça c'est pour
+[55:44 -> 55:46] l'affichage multiligne
+[55:48 -> 55:50] je peux aussi
+[55:50 -> 55:52] alors je vais retourner en monoline
+[55:52 -> 55:54] non pardon
+[55:54 -> 55:56] oui je vais retourner en monoline
+[55:56 -> 55:58] il faut les montrer
+[55:58 -> 56:00] ici je vais fermer la vue journée
+[56:00 -> 56:02] ici j'ai un autre bouton
+[56:02 -> 56:04] qui me dit
+[56:04 -> 56:06] je peux afficher des comptages
+[56:06 -> 56:08] en bas d'écran
+[56:12 -> 56:14] en bas d'écran
+[56:14 -> 56:16] ça me totalise
+[56:16 -> 56:18] les personnes en fonction
+[56:18 -> 56:20] alors ici j'ai
+[56:20 -> 56:22] une petite engrenage
+[56:22 -> 56:24] qui me dit
+[56:24 -> 56:26] ça tient compte
+[56:26 -> 56:28] des caractéristiques de présence
+[56:28 -> 56:30] des horaires journaliers
+[56:30 -> 56:32] ces fameuses couches
+[56:32 -> 56:34] quand on a défini un horaire matin
+[56:34 -> 56:36] on a coché matin
+[56:36 -> 56:38] puis on a mis les plages de l'horaire
+[56:38 -> 56:40] quand on a fait un horaire d'après-midi
+[56:40 -> 56:42] on a coché après-midi
+[56:42 -> 56:44] on a mis les plages de l'horaire
+[56:44 -> 56:46] quand on a fait un horaire de journée
+[56:46 -> 56:48] on a coché matin et après-midi
+[56:48 -> 56:50] ça tient compte des caractéristiques
+[56:50 -> 56:52] de présence des horaires journaliers
+[56:52 -> 56:54] mais je peux aussi choisir
+[56:54 -> 56:56] d'afficher
+[56:56 -> 56:58] par nature
+[57:00 -> 57:02] et là ça dépend
+[57:02 -> 57:04] de la nature d'horaire
+[57:04 -> 57:06] vous vous rappelez
+[57:06 -> 57:08] dans le référentiel des horaires
+[57:08 -> 57:10] des horaires journaliers
+[57:10 -> 57:12] ici
+[57:12 -> 57:14] les caractéristiques du présence
+[57:14 -> 57:16] c'est ça
+[57:16 -> 57:18] et les natures c'est cette information nature
+[57:18 -> 57:20] auxquelles j'ai associé
+[57:20 -> 57:22] des couleurs
+[57:22 -> 57:24] donc j'ai rangé l'horaire matin
+[57:24 -> 57:26] dans la nature matin
+[57:34 -> 57:36] voilà donc là
+[57:36 -> 57:38] ça me les totalise par nature
+[57:40 -> 57:42] et ça me comptabilise
+[57:42 -> 57:44] aussi les absents
+[57:44 -> 57:46] et
+[57:48 -> 57:50] je vais vous le montrer après
+[57:50 -> 57:52] les comptages
+[57:52 -> 57:54] je vous montre pas la comparaison au norme
+[57:54 -> 57:56] parce que c'est un autre module
+[57:56 -> 57:58] et on va pas avoir le temps de le voir maintenant
+[57:58 -> 58:00] parce que dans l'engrenage là
+[58:00 -> 58:02] quand je remonte
+[58:02 -> 58:04] je peux aussi
+[58:04 -> 58:06] quand je choisis de totaliser par nature
+[58:06 -> 58:08] je peux comparer à une norme
+[58:08 -> 58:10] à condition d'avoir des cris dans mon service
+[58:10 -> 58:12] j'ai besoin de temps de personne
+[58:12 -> 58:14] et du coup ça me calme plus de des écarts
+[58:14 -> 58:16] mais pour l'instant
+[58:16 -> 58:18] et puis je peux aussi faire par rapport
+[58:18 -> 58:20] à la nature des besoins mais c'est encore un autre module
+[58:20 -> 58:22] le module GBE donc c'est encore autre chose
+[58:24 -> 58:26] ici
+[58:26 -> 58:28] ça indique que
+[58:28 -> 58:30] c'est des totalisations valides pour tous les groupes
+[58:30 -> 58:32] mais là je suis pas en affichage groupé
+[58:32 -> 58:34] donc elles sont valides
+[58:36 -> 58:38] et ici j'ai un autre bouton
+[58:38 -> 58:40] qui me propose d'afficher les compteurs
+[58:40 -> 58:42] cette fois en la vue tout à l'heure
+[58:42 -> 58:44] je peux afficher des groupes de compteur
+[58:44 -> 58:46] et par défaut
+[58:46 -> 58:48] il va m'afficher les compteurs CET
+[58:48 -> 58:50] qui ne s'appuient pas sur le calcul prévisionnel
+[58:50 -> 58:52] et donc il calcule
+[58:54 -> 58:56] et il prend du temps
+[58:58 -> 59:00] et je peux choisir un autre groupe de compteurs
+[59:00 -> 59:02] je peux choisir des cumul
+[59:02 -> 59:04] je peux choisir une autre date
+[59:04 -> 59:06] je peux décider
+[59:06 -> 59:08] de prendre en compte ou pas les demandes d'absence
+[59:08 -> 59:10] qui sont pas encore validées
+[59:10 -> 59:12] et puis je peux choisir
+[59:12 -> 59:14] je peux avoir des groupes de compteur avec beaucoup de compteurs
+[59:14 -> 59:16] et je peux choisir
+[59:16 -> 59:18] d'afficher seulement les 3 premiers
+[59:18 -> 59:20] puis après de me balader avec
+[59:20 -> 59:22] l'ascenseur horizontal
+[59:22 -> 59:24] ou alors je peux choisir
+[59:24 -> 59:26] d'afficher tous les compteurs
+[59:28 -> 59:30] grâce j'aurais dû prendre
+[59:30 -> 59:32] un autre
+[59:32 -> 59:34] un autre groupe
+[59:34 -> 59:36] où j'ai plus de compteurs parce que là j'en ai que 3
+[59:36 -> 59:38] dans ce gros plat
+[59:44 -> 59:46] oui je vais prendre
+[59:46 -> 59:48] le groupe
+[59:48 -> 59:50] résultat de base
+[59:50 -> 59:52] c'est paris dans RTT
+[60:00 -> 60:02] en fait il va m'afficher tous les compteurs
+[60:02 -> 60:04] et du coup il va me décaler
+[60:04 -> 60:06] il va me renier
+[60:06 -> 60:08] sur
+[60:08 -> 60:10] les journées affichées
+[60:14 -> 60:16] mais non j'en ai que 3 compteurs
+[60:16 -> 60:18] d'accord
+[60:18 -> 60:20] c'est pas un bon exemple
+[60:20 -> 60:22] enfin si j'avais 20 compteurs dans mon groupe
+[60:22 -> 60:24] ils prendraient toute la place
+[60:24 -> 60:26] pour m'afficher la totalité des compteurs
+[60:26 -> 60:28] et je peux même
+[60:28 -> 60:30] avoir
+[60:30 -> 60:32] un affichage comme ça
+[60:32 -> 60:34] si je décale tout
+[60:34 -> 60:36] vous voyez j'ai un splitter là
+[60:36 -> 60:38] qui me permet d'ajuster
+[60:38 -> 60:40] et voilà
+[60:40 -> 60:42] qui me permet d'ajuster les largeurs
+[60:44 -> 60:46] bon je vais
+[60:48 -> 60:50] je vais faire des rafraîchissements
+[60:50 -> 60:52] dans ce que je vais faire c'est que je vais enlever
+[60:52 -> 60:54] des totalisations
+[60:54 -> 60:56] pour pas me bouffer
+[60:56 -> 60:58] de la performance avec ça
+[61:00 -> 61:02] ok
+[61:04 -> 61:06] alors
+[61:06 -> 61:08] ça c'est la vue journée
+[61:08 -> 61:10] mais pour ouvrir une vue journée
+[61:10 -> 61:12] il faut sélectionner une cellule
+[61:12 -> 61:14] donc là je prends
+[61:14 -> 61:16] Abdeshamad
+[61:16 -> 61:18] le 6
+[61:18 -> 61:20] et ça me permet de voir
+[61:20 -> 61:22] le détail de la vue journée
+[61:22 -> 61:24] qu'on a déjà vu
+[61:24 -> 61:26] alors sachant que vous avez un engonnage
+[61:26 -> 61:28] ici aussi qui vous permet
+[61:28 -> 61:30] de
+[61:30 -> 61:32] de paramétrer votre vue journée
+[61:34 -> 61:36] de dire que vous voulez toujours masquer par exemple
+[61:36 -> 61:38] je sais pas moi
+[61:38 -> 61:40] les anomalies
+[61:40 -> 61:42] ou les affectations j'en sais rien
+[61:42 -> 61:44] vous pouvez faire disparaître des blocs
+[61:44 -> 61:46] si je veux plus voir les affectations
+[61:48 -> 61:50] et que j'applique
+[61:50 -> 61:52] bah je vois plus les affectations ici
+[61:54 -> 61:56] l'affectation à la structure
+[62:00 -> 62:02] ça c'est la vue journée
+[62:02 -> 62:04] ensuite vous avez deux boutons
+[62:04 -> 62:06] qui vous permet de régler
+[62:06 -> 62:08] alors
+[62:08 -> 62:10] déjà
+[62:10 -> 62:12] les calques
+[62:12 -> 62:14] là vous choisissez
+[62:14 -> 62:16] pour quel type
+[62:16 -> 62:18] d'événement
+[62:18 -> 62:20] vous voulez voir arriver
+[62:20 -> 62:22] des indicateurs
+[62:22 -> 62:24] ces fameux indicateurs c'est petit rond
+[62:24 -> 62:26] donc ce qu'on appelle absence complémentaire c'est les absences en heure
+[62:26 -> 62:28] et c'est pour ça qu'on a les indicateurs
+[62:28 -> 62:30] qui arrivent quand j'ai des absences en heure
+[62:30 -> 62:32] mais si je décoche
+[62:34 -> 62:36] voilà je vois même plus qu'il y a une absence
+[62:36 -> 62:38] là
+[62:38 -> 62:40] enfin je vois même plus qu'il y a une absence en heure
+[62:40 -> 62:42] je vais la laisser
+[62:42 -> 62:44] je peux choisir
+[62:44 -> 62:46] voyons
+[62:46 -> 62:48] les indicateurs quand il y a des anomalies de valorisation
+[62:52 -> 62:54] un message
+[62:54 -> 62:56] je devrais voir la corne
+[62:58 -> 63:00] elle devrait arriver avec un message
+[63:00 -> 63:02] ici
+[63:02 -> 63:04] le 4 mai
+[63:04 -> 63:06] j'ai un message
+[63:06 -> 63:08] ici
+[63:08 -> 63:10] c'est pour ça que je veux arriver ces indicateurs
+[63:10 -> 63:12] sur toutes les journées
+[63:12 -> 63:14] c'est ce qui vous permet
+[63:14 -> 63:16] d'afficher
+[63:16 -> 63:18] les indicateurs
+[63:18 -> 63:20] par la partie d'événement
+[63:20 -> 63:22] ensuite vous pouvez dire
+[63:22 -> 63:24] est ce que je veux
+[63:24 -> 63:26] les mémo c'est nouveau
+[63:26 -> 63:28] je ne vais pas vous en parler tout de suite
+[63:28 -> 63:30] c'est bizarre d'ailleurs
+[63:30 -> 63:32] on a des mémo ici
+[63:32 -> 63:34] je ne sais pas si vous en parlez
+[63:34 -> 63:36] les absences
+[63:36 -> 63:38] non je vais prendre les horaires
+[63:38 -> 63:40] les horaires je veux voir les horaires
+[63:40 -> 63:42] mais si je décoche
+[63:42 -> 63:44] je ne vois plus les horaires
+[63:44 -> 63:46] voilà je ne vois plus que les badges
+[63:46 -> 63:48] et les absences
+[63:50 -> 63:52] donc si vous vous retrouvez
+[63:52 -> 63:54] avec des plannings comme ça vous ne voyez plus rien
+[63:54 -> 63:56] il faut les regarder dans les cadres
+[63:58 -> 64:00] et les horaires
+[64:00 -> 64:02] j'ai dit que je voulais voir afficher les plages
+[64:02 -> 64:04] et si je ne voulais pas voir afficher les plages
+[64:04 -> 64:06] je verrais les abriger
+[64:08 -> 64:10] j'ai dit que je voulais voir
+[64:10 -> 64:12] les horaires exceptionnels
+[64:12 -> 64:14] la petite astérix
+[64:14 -> 64:16] quand j'ai un horaire exceptionnel
+[64:16 -> 64:18] je peux aussi ne pas demander à les voir
+[64:18 -> 64:20] marquer les débuts de cycles
+[64:20 -> 64:22] c'est ces petits
+[64:22 -> 64:24] ces petits crochets
+[64:24 -> 64:26] qu'on a en début de programme
+[64:26 -> 64:28] ou en début de cycle appliqué
+[64:28 -> 64:30] si je ne veux pas les voir je décoche
+[64:34 -> 64:36] et ainsi de suite
+[64:36 -> 64:38] donc pour tout type d'événement
+[64:38 -> 64:40] et en plus vous voyez au survol
+[64:40 -> 64:42] vous arrivez ici
+[64:42 -> 64:44] vous voyez arriver un bouton de réglage
+[64:44 -> 64:46] et là
+[64:46 -> 64:48] par défaut les horaires de présence
+[64:48 -> 64:50] sont affichées selon les fameuses coches
+[64:50 -> 64:52] les caractéristiques de présence
+[64:52 -> 64:54] et moi je veux les voir afficher selon la nature
+[64:54 -> 64:56] d'horaires et je vais voir arriver
+[64:56 -> 64:58] un planil coloré
+[64:58 -> 65:00] avec
+[65:00 -> 65:02] la couleur des natures de chacun des horaires
+[65:12 -> 65:14] vous avez un dernier indicateur
+[65:14 -> 65:16] vous voyez quand je suis là dessus
+[65:16 -> 65:18] il y a un petit indicateur jaune
+[65:18 -> 65:20] qui se balade
+[65:22 -> 65:24] peut-être que celui-là
+[65:24 -> 65:26] on peut le voir quand
+[65:26 -> 65:28] justement quand j'ai des absences complémentaires
+[65:28 -> 65:30] alors quand j'arrive dessus
+[65:30 -> 65:32] je clique
+[65:32 -> 65:34] et du coup vous voyez ça l'a positionné
+[65:34 -> 65:36] ici
+[65:36 -> 65:38] et maintenant
+[65:38 -> 65:40] sur mes absences en heures
+[65:40 -> 65:42] j'ai plus le petit rond
+[65:42 -> 65:44] j'ai ce fameux carré jaune
+[65:46 -> 65:48] cette ce carré jaune
+[65:48 -> 65:50] je ne peux le positionner
+[65:50 -> 65:52] car il y a un seul endroit
+[65:52 -> 65:54] quand je veux mettre en évidence
+[65:54 -> 65:56] les types d'événements particuliers
+[65:56 -> 65:58] je veux mettre en évidence sur mon planil
+[66:00 -> 66:02] et au niveau des indicateurs
+[66:02 -> 66:04] quand je se revole j'ai encore un bouton de réglage
+[66:04 -> 66:06] et ça me permet par exemple
+[66:06 -> 66:08] la diode principale
+[66:08 -> 66:10] je l'ai mise blanc avec
+[66:10 -> 66:12] une bordure gris
+[66:12 -> 66:14] mais je pourrais changer la couleur
+[66:14 -> 66:16] mettre un marron ou autre chose
+[66:16 -> 66:18] voilà
+[66:18 -> 66:20] changer la bordure
+[66:20 -> 66:22] je pourrais activer l'animation
+[66:22 -> 66:24] par exemple si j'active l'animation
+[66:24 -> 66:26] sur ce carré
+[66:26 -> 66:28] ici
+[66:28 -> 66:30] et cet indicateur
+[66:30 -> 66:32] ce rond blanc
+[66:32 -> 66:34] je vais activer l'animation aussi
+[66:36 -> 66:38] alors là faut bien regarder
+[66:38 -> 66:40] faut que je fasse
+[66:44 -> 66:46] est ce que vous le voyez tourner
+[66:50 -> 66:52] pas rien
+[66:54 -> 66:56] vous le voyez pas tourner
+[66:58 -> 67:00] il tourne sur lui-même
+[67:00 -> 67:02] de droite à gauche
+[67:02 -> 67:04] comme ça dans le sens d'une montre
+[67:04 -> 67:06] ce petit carré jaune
+[67:06 -> 67:08] et si j'arrive à trouver une diode
+[67:08 -> 67:10] blanche
+[67:10 -> 67:12] ici
+[67:12 -> 67:14] elle tourne sur elle-même
+[67:14 -> 67:16] mais
+[67:16 -> 67:18] vous voyez
+[67:20 -> 67:22] elle tourne comme une pièce
+[67:22 -> 67:24] sur la tranche
+[67:26 -> 67:28] bon voilà
+[67:28 -> 67:30] donc ça c'est pour le réglage des indicateurs
+[67:44 -> 67:46] donc ça c'est pour les calques
+[67:46 -> 67:48] ici je fais des options
+[67:48 -> 67:50] des options d'affichage
+[67:50 -> 67:52] je vais pouvoir faire des accentuations
+[67:52 -> 67:54] ou des neutralisations
+[67:54 -> 67:56] par défaut ça arrive neutraliser les joueurs critères
+[67:56 -> 67:58] vous allez voir pas mal
+[67:58 -> 68:00] il y a des
+[68:00 -> 68:02] je crois que sur les versions du X
+[68:02 -> 68:04] ça arrive
+[68:04 -> 68:06] avec les journées modifiées
+[68:06 -> 68:08] de la simulation cochée
+[68:08 -> 68:10] alors je vais pas vous parler de la simulation
+[68:10 -> 68:12] parce que c'est encore un autre module
+[68:12 -> 68:14] on peut faire de la
+[68:14 -> 68:16] on fait des planning brouillons
+[68:16 -> 68:18] ça permet au planificateur
+[68:18 -> 68:20] de faire plusieurs versions
+[68:20 -> 68:22] brouillons de son planning
+[68:22 -> 68:24] sans pour autant que les événements soient vraiment saisis
+[68:24 -> 68:26] et donc visibles sur les agendas
+[68:26 -> 68:28] des collaborateurs
+[68:28 -> 68:30] donc si je coche
+[68:30 -> 68:32] j'en ai modifié la simulation
+[68:32 -> 68:34] vu qu'il n'y a rien de là je suis pas en simulation
+[68:34 -> 68:36] il n'y a pas de journée modifiée la simulation etc
+[68:36 -> 68:38] ça neutralise tout
+[68:38 -> 68:40] donc vous allez voir arriver des planning comme ça
+[68:40 -> 68:42] alors pensez à ouvrir
+[68:42 -> 68:44] les options d'affichage
+[68:44 -> 68:46] et décocher ça
+[68:46 -> 68:48] pour avoir un visuel normal
+[68:50 -> 68:52] et par défaut
+[68:52 -> 68:54] on arrive avec atténuer les jours en critères
+[68:54 -> 68:56] un jour en critères c'est un jour où
+[68:56 -> 68:58] ma personne n'est pas présente
+[68:58 -> 69:00] à l'effectif par exemple
+[69:00 -> 69:02] si Polactiv était rentré le 5 mai
+[69:02 -> 69:04] ben
+[69:04 -> 69:06] le lundi 3 et le mardi 4
+[69:06 -> 69:08] ce serait une journée des journées en critères
+[69:08 -> 69:10] si j'avais demandé
+[69:10 -> 69:12] une population
+[69:12 -> 69:14] ici
+[69:14 -> 69:16] formation avril
+[69:20 -> 69:22] et que
+[69:22 -> 69:24] cette population elle est particulière
+[69:24 -> 69:26] parce que je crois que j'avais mis une liste de matricules
+[69:26 -> 69:28] si je prends ADM CCO
+[69:32 -> 69:34] c'est encore plus réunis
+[69:34 -> 69:36] vous voyez en plus la population
+[69:38 -> 69:40] je ne me rappelle plus
+[69:42 -> 69:44] commerce
+[69:46 -> 69:48] j'ai que Véronique
+[69:48 -> 69:50] non j'ai Véronique il y a même 6
+[69:50 -> 69:52] mais si
+[69:52 -> 69:54] pardon j'ai où ça mais
+[69:54 -> 69:56] et moi et Christine
+[69:56 -> 69:58] mais si
+[69:58 -> 70:00] moi je n'étais arrivée dans cette
+[70:00 -> 70:02] je n'étais arrivée au commerce
+[70:02 -> 70:04] j'étais affectée au commerce uniquement
+[70:04 -> 70:06] à partir du 5
+[70:06 -> 70:08] je verrai ces 2 cellules là
+[70:08 -> 70:10] atténuer
+[70:10 -> 70:12] avec
+[70:14 -> 70:16] jour en critères parce que je ne fais pas partie
+[70:16 -> 70:18] de la population commerce CCO
+[70:18 -> 70:20] avant le 5 mai
+[70:22 -> 70:24] donc il y a plein d'options
+[70:24 -> 70:26] d'affichage je voulais jouer avec
+[70:26 -> 70:28] par contre je vais revenir
+[70:28 -> 70:30] dans
+[70:30 -> 70:32] dans ma population
+[70:32 -> 70:34] je vais repartir sur notre population formation
+[70:34 -> 70:36] et je veux
+[70:36 -> 70:38] par exemple
+[70:40 -> 70:42] je ne vais pas vous
+[70:42 -> 70:44] atténuer les jours calculés
+[70:44 -> 70:46] voilà
+[70:46 -> 70:48] si j'ai atténu les jours calculés
+[70:48 -> 70:50] vous voyez
+[70:50 -> 70:52] Nicole il est calculé
+[70:52 -> 70:54] jusqu'au 4
+[70:54 -> 70:56] alors que nous on a dû faire des actions
+[70:56 -> 70:58] Raleigh il est calculé jusqu'au 3
+[70:58 -> 71:00] inclus
+[71:02 -> 71:04] voilà donc là encore ces options
+[71:04 -> 71:06] d'affichage ça permet de mettre en évidence
+[71:06 -> 71:08] certaines
+[71:08 -> 71:10] certaines informations
+[71:16 -> 71:18] alors
+[71:18 -> 71:20] quand on a fait tout ça
+[71:20 -> 71:22] on s'est préparé
+[71:22 -> 71:24] un visuel
+[71:24 -> 71:26] j'aurais pu afficher des compteurs
+[71:26 -> 71:28] on s'est préparé un visuel
+[71:28 -> 71:30] avec certaines caractéristiques
+[71:30 -> 71:32] on a mis en place ces paramètres
+[71:32 -> 71:34] je peux choisir
+[71:34 -> 71:36] de faire des multilignes
+[71:36 -> 71:38] quand on a fait tout ça
+[71:38 -> 71:40] on peut enregistrer nos préférences
+[71:42 -> 71:44] par ce bouton de personnalisation
+[71:46 -> 71:48] c'est bizarre
+[71:58 -> 72:00] j'enregistre mes préférences
+[72:00 -> 72:02] j'ai le droit
+[72:02 -> 72:04] de
+[72:04 -> 72:06] parce que je suis super admine
+[72:06 -> 72:08] vous voyez vous aussi
+[72:08 -> 72:10] avec les habilitations que j'ai
+[72:10 -> 72:12] j'ai le droit
+[72:12 -> 72:14] d'enregistrer
+[72:14 -> 72:16] ce visuel
+[72:16 -> 72:18] ce mode de visualisation du planning
+[72:18 -> 72:20] avec les horaires par couleur
+[72:20 -> 72:22] les totalisations d'effectifs en bas
+[72:22 -> 72:24] tout ce que je viens de faire
+[72:24 -> 72:26] je peux l'enregistrer
+[72:26 -> 72:28] enregistrer mes préférences
+[72:28 -> 72:30] et là je peux dire
+[72:30 -> 72:32] est-ce que je le fais pour moi seulement
+[72:32 -> 72:34] ou est-ce que je peux le faire
+[72:34 -> 72:36] comme personnalisation générale
+[72:36 -> 72:38] c'est-à-dire pour tous les utilisateurs
+[72:58 -> 73:00] voilà
+[73:00 -> 73:02] et là
+[73:02 -> 73:04] si je me déconnecte
+[73:04 -> 73:06] et que je me reconnecte
+[73:06 -> 73:08] ou vous si vous
+[73:08 -> 73:10] alors je sais pas si ça fonctionne
+[73:10 -> 73:12] sans vous déconnecter
+[73:12 -> 73:14] mais si vous affichez le planning
+[73:14 -> 73:16] vous devriez avoir un visuel
+[73:16 -> 73:18] comme moi
+[73:18 -> 73:20] c'est-à-dire que la période
+[73:20 -> 73:22] c'est 2 semaines à partir de la semaine en cours
+[73:22 -> 73:24] le visuel c'est
+[73:24 -> 73:26] semaine
+[73:26 -> 73:28] on affiche les totalisations
+[73:28 -> 73:30] en bas d'écran
+[73:30 -> 73:32] et on a les horaires par couleur
+[73:32 -> 73:34] on a les petits indicateurs
+[73:34 -> 73:36] pour les absences en heure
+[73:36 -> 73:38] avec l'animation etc
+[73:38 -> 73:40] tout ce que je viens de faire
+[73:40 -> 73:42] c'est prêt aussi pour vous
+[73:48 -> 73:50] alors
+[73:50 -> 73:52] il n'y a pas que ça
+[73:52 -> 73:54] qu'on enregistre
+[73:54 -> 73:56] la différence
+[73:56 -> 73:58] là on a fait la première partie
+[73:58 -> 74:00] et la partie haute-là
+[74:00 -> 74:02] ici
+[74:02 -> 74:04] on a une deuxième ligne
+[74:04 -> 74:06] de bouton
+[74:06 -> 74:08] ou là
+[74:08 -> 74:10] déjà
+[74:10 -> 74:12] on a deux modes
+[74:12 -> 74:14] au niveau de l'utilisation des palettes
+[74:14 -> 74:16] on peut être en outils mono-domaine
+[74:16 -> 74:18] enfin mono-événement
+[74:18 -> 74:20] ou multi-événement
+[74:20 -> 74:22] si je suis en mono-événement
+[74:22 -> 74:24] c'est ça
+[74:24 -> 74:26] et là
+[74:26 -> 74:28] ça veut dire que quand je veux faire
+[74:28 -> 74:30] sélectionner une cellule par exemple
+[74:30 -> 74:32] rallye de 5
+[74:32 -> 74:34] et quand je suis au vol choisissez un outil
+[74:34 -> 74:36] il me dit qu'est-ce que vous voulez faire
+[74:36 -> 74:38] est-ce que vous voulez travailler avec les absences
+[74:38 -> 74:40] en ajout, en suppression
+[74:40 -> 74:42] ou en validation
+[74:42 -> 74:44] je peux faire de l'acceptation ou du refus
+[74:44 -> 74:46] de demande
+[74:46 -> 74:48] il me propose des activités
+[74:48 -> 74:50] il me propose vous voulez attribuer
+[74:50 -> 74:52] un ordre exceptionnel
+[74:52 -> 74:54] ou vous voulez rétablir leur erreur
+[74:54 -> 74:56] théorique
+[74:56 -> 74:58] là sur rallye il me dit c'est pas possible
+[74:58 -> 75:00] puisqu'il n'y a pas d'horaire exceptionnel
+[75:00 -> 75:02] sur cette journée
+[75:02 -> 75:04] vous voulez faire de l'ajout de régule
+[75:04 -> 75:06] ou de la suppression de régularisation
+[75:06 -> 75:08] bon ça c'est de l'activité aussi
+[75:08 -> 75:10] à noter que j'ai pas accès
+[75:10 -> 75:12] aux événements
+[75:12 -> 75:14] génériques sur le plan
+[75:14 -> 75:16] des autres événements
+[75:16 -> 75:18] j'ai accès qu'à ces types d'événements
+[75:18 -> 75:20] à
+[75:20 -> 75:22] cette écran de ces idées d'absence
+[75:22 -> 75:24] ou je peux utiliser
+[75:24 -> 75:26] la première palette
+[75:26 -> 75:28] j'ai le choix
+[75:28 -> 75:30] aussi ici de choisir éventuellement
+[75:30 -> 75:32] d'autres palettes
+[75:32 -> 75:34] j'en ai queues pour les absences
+[75:34 -> 75:36] ou alors je peux choisir un motif
+[75:36 -> 75:38] directement RTT
+[75:38 -> 75:40] dans rallye sur les motifs d'absence
+[75:40 -> 75:42] ou bien je fais du glisser déposé
+[75:42 -> 75:44] par exemple
+[75:44 -> 75:46] le 4 rallye des les maladies
+[75:48 -> 75:50] quand je fais
+[75:50 -> 75:52] cette
+[75:52 -> 75:54] cette gestion
+[75:54 -> 75:56] là
+[75:56 -> 75:58] je peux faire de la sélection
+[75:58 -> 76:00] je peux sélectionner cette cellule
+[76:00 -> 76:02] je vais fermer ma fenêtre
+[76:04 -> 76:06] ici
+[76:06 -> 76:08] je vais y arriver
+[76:08 -> 76:10] et ici je peux faire de la suppression
+[76:12 -> 76:14] et là il me dit vous voulez supprimer l'absence
+[76:14 -> 76:16] de rallye le 5 mai
+[76:18 -> 76:20] ok
+[76:20 -> 76:22] évidemment rallye il n'est pas
+[76:22 -> 76:24] malade seulement le 5
+[76:24 -> 76:26] il est malade du 4 au 6
+[76:26 -> 76:28] donc là j'ai la possibilité de faire du
+[76:28 -> 76:30] première cellule shift
+[76:30 -> 76:32] dernière plage
+[76:32 -> 76:34] du 4 au 7 par exemple
+[76:34 -> 76:36] je fais de la joue d'absence
+[76:38 -> 76:40] je prends ma maladie et je la glisse
+[76:40 -> 76:42] dépose sur la période
+[76:42 -> 76:44] là il me fait une absence
+[76:44 -> 76:46] du 4 au 7
+[76:46 -> 76:48] sur une période
+[76:52 -> 76:54] et d'ailleurs
+[76:54 -> 76:56] dans mes options d'affichage
+[76:56 -> 76:58] j'ai demandé à voir le lien
+[76:58 -> 77:00] sur les absences
+[77:00 -> 77:02] c'est pour ça que je vois que c'est qu'une seule absence
+[77:02 -> 77:04] parce que chaque journée est liée
+[77:04 -> 77:06] l'une à l'autre
+[77:06 -> 77:08] à savoir que maintenant
+[77:08 -> 77:10] on a la possibilité
+[77:10 -> 77:12] de supprimer
+[77:12 -> 77:14] une partie de l'absence
+[77:14 -> 77:16] alors ici
+[77:16 -> 77:18] si je ferme
+[77:18 -> 77:20] ça
+[77:20 -> 77:22] et que je fais suppression
+[77:22 -> 77:24] voilà
+[77:28 -> 77:30] vous voulez
+[77:30 -> 77:32] finalement rallye il n'était pas malade le 5
+[77:32 -> 77:34] donc là
+[77:34 -> 77:36] j'ai des coches qui me permettent
+[77:36 -> 77:38] d'exclure certaines absences
+[77:38 -> 77:40] ou pas, bref là je confirme
+[77:40 -> 77:42] que la suppression
+[77:42 -> 77:44] c'est une absence le 5
+[77:46 -> 77:48] et du coup
+[77:48 -> 77:50] il me somme mon absence en deux parties
+[77:50 -> 77:52] je suis maintenant absent le 4
+[77:52 -> 77:54] et je suis absente
+[77:54 -> 77:56] du 6 au 7
+[77:56 -> 77:58] ralide et absente du 6 au 7
+[77:58 -> 78:00] si j'ouvre la vie journée
+[78:02 -> 78:04] cette absence là
+[78:04 -> 78:06] c'est une absence
+[78:06 -> 78:08] du 6 au 7
+[78:12 -> 78:14] voilà
+[78:16 -> 78:18] ça c'est pas bon
+[78:18 -> 78:20] ce petit ray il devrait disparaître
+[78:20 -> 78:22] puisque je suis pas d'absence ici
+[78:22 -> 78:24] parce que celle-ci c'est une absence du 4 au 4
+[78:24 -> 78:26] voilà
+[78:26 -> 78:28] donc je peux faire de la sélection par shift
+[78:28 -> 78:30] enfin de l'affectation
+[78:30 -> 78:32] et je peux aussi faire de l'affectation multiple
+[78:32 -> 78:34] par exemple
+[78:34 -> 78:36] je sélectionne le 4
+[78:36 -> 78:38] et puis par contrôle
+[78:38 -> 78:40] je prends Véronique le 5
+[78:40 -> 78:42] et au Sam
+[78:42 -> 78:44] le 6
+[78:46 -> 78:48] je vais faire
+[78:48 -> 78:50] je vais changer d'horaire là par contre
+[78:52 -> 78:54] je vais choisir de l'horaire
+[78:54 -> 78:56] ici
+[78:56 -> 78:58] je vais prendre un auraire
+[79:04 -> 79:06] je peux choisir un auraire journalier
+[79:06 -> 79:08] je vous en parle
+[79:08 -> 79:10] par exemple je vais vous mettre tous en matin
+[79:14 -> 79:16] et j'applique
+[79:16 -> 79:18] il me récapitule
+[79:18 -> 79:20] les collaborateurs et les dates
+[79:28 -> 79:30] et je confirme
+[79:30 -> 79:32] voilà
+[79:36 -> 79:38] voilà
+[79:38 -> 79:40] je peux aussi faire
+[79:40 -> 79:42] de la
+[79:42 -> 79:44] ici vous avez vu en attribution d'horaire
+[79:44 -> 79:46] je peux choisir un code auraire qui existe déjà
+[79:46 -> 79:48] parmi les laïs et les auraires journaliers
+[79:48 -> 79:50] qui sont paramétrés d'un référentiel
+[79:50 -> 79:52] mais je peux aussi directement saisir des plages de présence
+[79:52 -> 79:54] alors là je vais créer
+[79:54 -> 79:56] à la volée un auraire
+[79:56 -> 79:58] par exemple je vais faire
+[79:58 -> 80:00] 4 heures
+[80:00 -> 80:02] 7 heures
+[80:04 -> 80:06] 8 heures
+[80:06 -> 80:08] 15 heures
+[80:08 -> 80:10] c'est un auraire qui n'existe pas
+[80:10 -> 80:12] et j'applique
+[80:12 -> 80:14] je ne sais plus si j'ai sélectionné une cellule
+[80:14 -> 80:16] j'ai les mêmes
+[80:16 -> 80:18] c'est pas ce que je veux faire
+[80:18 -> 80:20] oui il m'a gardé ma sélection
+[80:20 -> 80:22] en place
+[80:22 -> 80:24] je vais prendre
+[80:24 -> 80:26] juste Abdeshamad
+[80:26 -> 80:28] j'applique
+[80:42 -> 80:44] voilà et là j'ai créé un auraire
+[80:44 -> 80:46] complètement à la volée, j'ai saisit des plages de présence
+[80:46 -> 80:48] et c'est tout
+[80:48 -> 80:50] et dans la liste des auraires
+[80:50 -> 80:52] je crois qu'on les voit arriver
+[80:52 -> 80:54] ce sont des auraires
+[80:54 -> 80:56] qui qu'on appelle des auraires générées par le planime
+[81:02 -> 81:04] voilà au passage
+[81:04 -> 81:06] je voudrais vous faire une toute petite remarque
+[81:06 -> 81:08] quand je prends
+[81:08 -> 81:10] Osam
+[81:10 -> 81:12] c'est pas pareil
+[81:12 -> 81:14] alors je vais fermer ça
+[81:14 -> 81:16] et je vais me mettre
+[81:16 -> 81:18] en saisis d'absence
+[81:20 -> 81:22] oui, là si
+[81:22 -> 81:24] pour Osam du lundi 3
+[81:24 -> 81:26] je fais un shift
+[81:26 -> 81:28] jusqu'au mercredi 5
+[81:28 -> 81:30] et que je fais plus absence
+[81:30 -> 81:32] un RTT par exemple
+[81:36 -> 81:38] vous voyez il va me poser
+[81:38 -> 81:40] une seule absence du 3 au 5
+[81:40 -> 81:42] alors que
+[81:42 -> 81:44] si je fais
+[81:44 -> 81:46] Osam
+[81:46 -> 81:48] le 3
+[81:48 -> 81:50] contrôle
+[81:50 -> 81:52] et le 5
+[81:52 -> 81:54] toujours avec contrôle
+[81:54 -> 81:56] et que j'envoie mon RTT
+[81:56 -> 81:58] là il va me mettre
+[81:58 -> 82:00] 3 des absences
+[82:00 -> 82:02] 1 absence le 3
+[82:02 -> 82:04] 1 absence le 4
+[82:04 -> 82:06] 1 absence le 5
+[82:06 -> 82:08] au niveau de la charge en base
+[82:08 -> 82:10] c'est pas pareil
+[82:12 -> 82:14] c'est juste pour montrer la différence
+[82:20 -> 82:22] 1
+[82:26 -> 82:28] ok
+[82:30 -> 82:32] donc là c'est le monodomène
+[82:34 -> 82:36] donc à chaque fois vous voyez
+[82:36 -> 82:38] j'ouvre un petit fenêtre etc
+[82:38 -> 82:40] mais je peux passer en multidomène
+[82:40 -> 82:42] et là en multidomène
+[82:42 -> 82:44] je déroule
+[82:44 -> 82:46] les différentes palettes
+[82:46 -> 82:48] tout type d'événements
+[82:48 -> 82:50] la régularisation par exemple
+[82:50 -> 82:52] de la récup d'oresup
+[82:52 -> 82:54] là quand j'arrive au bout
+[82:54 -> 82:56] c'est que j'ai pas de choses derrière
+[82:56 -> 82:58] je peux dérouler comme ça
+[82:58 -> 83:00] ça c'est les palettes d'absence
+[83:00 -> 83:02] et ça c'est les palettes d'horaire
+[83:02 -> 83:04] alors quand je suis dans ce mode
+[83:04 -> 83:06] bah
+[83:06 -> 83:08] ici
+[83:08 -> 83:10] admettons par exemple
+[83:10 -> 83:12] je sélectionne cette cellule là
+[83:12 -> 83:14] avec contrôle
+[83:14 -> 83:16] je vais prendre celle là
+[83:16 -> 83:18] et puis
+[83:18 -> 83:20] donc le 4 pour Abdeshamad
+[83:20 -> 83:22] qui a un auraire exceptionnel
+[83:22 -> 83:24] l'oral pralide le 6
+[83:24 -> 83:26] qui a sa maladie
+[83:26 -> 83:28] et puis
+[83:28 -> 83:30] le 6 aussi qui a un auraire exceptionnel
+[83:30 -> 83:32] je fais suppression
+[83:36 -> 83:38] et là il m'envoie en recap
+[83:40 -> 83:42] les collaborateurs
+[83:42 -> 83:44] les éléments
+[83:44 -> 83:46] ce que vous voulez supprimer
+[83:46 -> 83:48] et je confirme
+[84:06 -> 84:08] au niveau de ces boutons le temps qui réaffiche
+[84:08 -> 84:10] ici ça c'est la suppression d'événements
+[84:10 -> 84:12] ça c'est la validation
+[84:12 -> 84:14] des demandes au sens workflow
+[84:14 -> 84:16] comme des demandes qui sont avalidées
+[84:16 -> 84:18] donc ça c'est de l'acceptation
+[84:18 -> 84:20] et ça c'est du refus d'événements
+[84:22 -> 84:24] je vous laisserai jouer avec aussi
+[84:24 -> 84:26] mais ça concerne les demandes
+[84:26 -> 84:28] validation, j'accepte
+[84:28 -> 84:30] ou je refuse
+[84:30 -> 84:32] et je peux l'accepter ou valider
+[84:32 -> 84:34] plusieurs demandes en même temps
+[84:36 -> 84:38] cette outil je peux le paramétrer
+[84:38 -> 84:40] c'est à dire que là j'ai les palettes d'horaire
+[84:40 -> 84:42] avant
+[84:42 -> 84:44] tiens d'ailleurs
+[84:44 -> 84:46] attendez je l'ai fermé
+[84:46 -> 84:48] votre première palette
+[84:48 -> 84:50] oui c'était celle là
+[84:50 -> 84:52] par exemple je vais ma palette d'absence
+[84:52 -> 84:54] avant la deuxième palette d'horaire
+[84:54 -> 84:56] ici
+[84:56 -> 84:58] je déroule
+[84:58 -> 85:00] je vais voir ma palette d'absence
+[85:00 -> 85:02] je vais personnaliser son emplacement
+[85:02 -> 85:04] et je vais la mettre
+[85:04 -> 85:06] avant celle de ADM Aspani
+[85:10 -> 85:12] voilà
+[85:12 -> 85:14] et là je déroulerai mes palettes comme ça
+[85:14 -> 85:16] et puis je peux rajouter des palettes
+[85:16 -> 85:18] ou supprimer des palettes
+[85:18 -> 85:20] voilà
+[85:20 -> 85:22] ça aussi, ce mode
+[85:22 -> 85:24] ça s'enregistre dans les préférences
+[85:24 -> 85:26] j'enregistre mes préférences
+[85:26 -> 85:28] et les
+[85:28 -> 85:30] j'enregistre mes préférences
+[85:30 -> 85:32] pour tous les utilisateurs
+[85:32 -> 85:34] comme ça
+[85:34 -> 85:36] donc je serai en mode multi-domaine
+[85:36 -> 85:38] avec les palettes comme ça
+[85:41 -> 85:43] ici
+[85:43 -> 85:45] je peux faire du
+[85:45 -> 85:47] je peux gérer des mémo
+[85:47 -> 85:49] je peux faire de la copie d'événement
+[85:49 -> 85:51] et du collage
+[85:51 -> 85:53] d'événement
+[85:53 -> 85:55] c'est-à-dire que là par exemple
+[85:55 -> 85:57] je vais prendre
+[85:59 -> 86:01] j'ai supprimé l'enregistre
+[86:01 -> 86:03] tiens je vais mettre une maladie
+[86:03 -> 86:05] je vais mettre une maladie
+[86:05 -> 86:07] ici
+[86:07 -> 86:09] le 7 mai
+[86:09 -> 86:11] ok
+[86:15 -> 86:17] j'ai raté ça mal
+[86:17 -> 86:19] je prends
+[86:19 -> 86:21] ces 3 cellules là
+[86:21 -> 86:23] avec shift
+[86:23 -> 86:25] je vais faire copier
+[86:25 -> 86:27] non
+[86:27 -> 86:29] je vais faire copier
+[86:29 -> 86:31] voilà
+[86:31 -> 86:33] et maintenant ça
+[86:33 -> 86:35] en fait je me suis trompée je vais le mettre sur
+[86:35 -> 86:37] la maladie
+[86:37 -> 86:39] et je vais le mettre
+[86:39 -> 86:41] à partir du lundi
+[86:41 -> 86:43] je sélectionne la cellule de début
+[86:43 -> 86:45] j'ai donc 3 journées
+[86:45 -> 86:47] et ici
+[86:47 -> 86:49] je suis en mode collé
+[86:49 -> 86:51] je peux aussi faire de la permutation
+[86:51 -> 86:53] c'est-à-dire
+[86:53 -> 86:55] transférer
+[86:55 -> 86:57] si je fais du collage
+[86:57 -> 86:59] je vais simplement remplacer
+[86:59 -> 87:01] les événements de maladie
+[87:01 -> 87:03] par la séquence que j'ai prise
+[87:03 -> 87:05] et si je fais permuter
+[87:05 -> 87:07] ici
+[87:07 -> 87:09] et là j'appuie sur permuter maintenant
+[87:09 -> 87:11] la formation
+[87:11 -> 87:13] elle va se retrouver
+[87:13 -> 87:15] il me dit
+[87:15 -> 87:17] les horaires et les absences qui vont être copiées
+[87:17 -> 87:19] Abdeshamad
+[87:25 -> 87:27] voilà
+[87:27 -> 87:29] sa situation actuelle
+[87:29 -> 87:31] et à venir
+[87:31 -> 87:33] il sera
+[87:33 -> 87:35] il aura du télétravail
+[87:35 -> 87:37] et inversement
+[87:37 -> 87:39] ça va changer
+[87:39 -> 87:41] si je confirme
+[87:47 -> 87:49] Nonédi
+[87:49 -> 87:51] il va se retrouver avec deux oreilles exceptionnelles
+[87:51 -> 87:53] le lundi et le mardi
+[87:53 -> 87:55] et une maladie le mercredi
+[87:55 -> 87:57] alors la maladie il n'était pas autorisé
+[87:57 -> 87:59] en copier collé
+[87:59 -> 88:01] parce qu'il faut que les motifs d'absence
+[88:01 -> 88:03] soient autorisés
+[88:03 -> 88:05] en copier collé
+[88:13 -> 88:15] bébé
+[88:29 -> 88:31] il n'a pas fait
+[88:49 -> 88:51] Abdeshamad
+[88:51 -> 88:53] il a bien récupéré
+[88:53 -> 88:55] pas plus la maladie
+[88:55 -> 88:57] et Nonédi
+[88:57 -> 88:59] il a récupéré les horaires exceptionnelles
+[88:59 -> 89:01] d'Abdeshamad
+[89:01 -> 89:03] mais il n'a pas copié
+[89:03 -> 89:05] la maladie
+[89:05 -> 89:07] parce qu'il était en chevauchement d'absence
+[89:07 -> 89:09] avec la formation
+[89:09 -> 89:11] c'est pour ça qu'il n'a pas fait
+[89:11 -> 89:13] mais sinon on peut faire du copier collé
+[89:13 -> 89:15] de la permutation
+[89:15 -> 89:17] on sélectionne une séquence
+[89:17 -> 89:19] on fait du copier
+[89:19 -> 89:21] et ensuite on se positionne
+[89:21 -> 89:23] sur la première cellule sur laquelle on veut
+[89:23 -> 89:25] la copie
+[89:25 -> 89:27] et on colle ou on permute
+[89:27 -> 89:29] avec ce bouton-là
+[89:33 -> 89:35] voilà
+[89:35 -> 89:37] et ici je peux gérer des mémos
+[89:37 -> 89:39] avoir que l'une sélection par exemple
+[89:39 -> 89:41] Abdeshamad le 6
+[89:41 -> 89:43] je peux
+[89:43 -> 89:45] dire par exemple
+[89:45 -> 89:47] alors là c'est un texte
+[89:47 -> 89:49] qui ne va pas être visible par le collaborateur
+[89:49 -> 89:51] comme le message qu'on a généré
+[89:51 -> 89:53] mais ça va être visible uniquement sur le planning
+[89:53 -> 89:55] par le gestionnaire
+[89:55 -> 89:57] par exemple
+[89:57 -> 89:59] je ne sais pas
+[89:59 -> 90:01] ne pas le mettre au poste
+[90:01 -> 90:03] je ne sais pas
+[90:03 -> 90:05] alors c'est un abré j'écoute
+[90:05 -> 90:07] par le poste
+[90:07 -> 90:09] 1 par exemple
+[90:11 -> 90:13] quand je laisse des activités
+[90:13 -> 90:15] c'est un texte
+[90:15 -> 90:17] pas le mettre
+[90:17 -> 90:19] au poste 1
+[90:19 -> 90:21] parce que je ne sais pas quoi
+[90:27 -> 90:29] et là du coup je vois arriver
+[90:29 -> 90:31] une petite
+[90:31 -> 90:33] petite triangle
+[90:33 -> 90:35] comme dans excel on a un commentaire
+[90:35 -> 90:37] et au survol on voit arriver
+[90:37 -> 90:39] ne pas le mettre au poste
+[90:45 -> 90:47] j'ai perdu ma totalisation
+[90:49 -> 90:51] pas
+[90:51 -> 90:53] j'ai perdu ma personnalisation
+[90:57 -> 90:59] peut-être que quelqu'un a écrasé
+[90:59 -> 91:01] ah
+[91:01 -> 91:03] peut-être que quelqu'un a fait une personnalisation
+[91:03 -> 91:05] enregistrant des préférences
+[91:05 -> 91:07] pour tout le monde
+[91:07 -> 91:09] et du coup
+[91:09 -> 91:11] parce que là j'ai tout perdu
+[91:11 -> 91:13] quelqu'un a fait ça
+[91:13 -> 91:15] moi j'ai touché
+[91:15 -> 91:17] mais j'ai fait que sur moi normalement
+[91:17 -> 91:19] je ne sais pas
+[91:19 -> 91:21] je l'ai perdu
+[91:21 -> 91:23] alors ce que je veux vous montrer
+[91:23 -> 91:25] c'est que
+[91:25 -> 91:27] au-delà de la personnalisation
+[91:27 -> 91:29] vous voyez
+[91:29 -> 91:31] maintenant j'ai manifestement
+[91:31 -> 91:33] j'ai une personnalisation générale
+[91:33 -> 91:35] alors je vais supprimer mes préférences
+[91:35 -> 91:37] à moi
+[91:39 -> 91:41] donc je veux retourner
+[91:41 -> 91:43] là je retourne à une personnalisation générale
+[91:43 -> 91:45] générale
+[91:45 -> 91:47] enregistrer une personnalisation générale
+[91:47 -> 91:49] qui n'avait pas cette tête là
+[91:49 -> 91:51] quelqu'un l'a modifié
+[91:51 -> 91:53] c'est pas grave
+[91:53 -> 91:55] ce que je veux vous montrer
+[91:55 -> 91:57] c'est que
+[91:57 -> 91:59] au-delà de la personnalisation
+[91:59 -> 92:01] ici globale
+[92:01 -> 92:03] ou pour moi l'utilisateur
+[92:03 -> 92:05] ou pour tous les utilisateurs
+[92:05 -> 92:07] je peux aussi construire des critères planiques
+[92:07 -> 92:09] c'est-à-dire que si je remets en place
+[92:09 -> 92:11] par exemple dans mes calques
+[92:11 -> 92:13] que je veux mes horaires
+[92:13 -> 92:15] avec
+[92:15 -> 92:17] la couleur de la nature
+[92:19 -> 92:21] que je veux
+[92:21 -> 92:23] mes comptages
+[92:23 -> 92:25] ils sont là
+[92:27 -> 92:29] par nature aussi
+[92:33 -> 92:35] et que
+[92:35 -> 92:37] voilà un peu importe
+[92:37 -> 92:39] tous les autres critères qu'on a vus
+[92:39 -> 92:41] et je suis en affichage
+[92:41 -> 92:43] je reviens ici
+[92:43 -> 92:45] je veux
+[92:45 -> 92:47] que ma palette d'absence
+[92:47 -> 92:49] soit
+[92:49 -> 92:51] avant
+[92:51 -> 92:53] la palette
+[92:53 -> 92:55] et que j'applique
+[92:55 -> 92:57] voilà
+[92:57 -> 92:59] je ferme
+[92:59 -> 93:01] je veux cette forme
+[93:01 -> 93:03] au-delà même d'enregistrer des préférences
+[93:03 -> 93:05] je peux enregistrer avec ce bouton
+[93:05 -> 93:07] un critère planning
+[93:07 -> 93:09] alors là j'ai pas de critères
+[93:09 -> 93:11] planning
+[93:11 -> 93:13] donc là je vais faire un enregistrer sous
+[93:13 -> 93:15] et ça me bouge
+[93:15 -> 93:17] une pop-up
+[93:17 -> 93:19] ou je veux dire c'est mon critère cco
+[93:19 -> 93:21] je vais l'appeler cco1
+[93:23 -> 93:25] cco1
+[93:25 -> 93:27] critère1
+[93:29 -> 93:31] avec les options personnalisations
+[93:31 -> 93:33] je
+[93:33 -> 93:35] j'applique
+[93:35 -> 93:37] je prends aussi les options personnalisations
+[93:37 -> 93:39] et j'enregistre
+[93:39 -> 93:41] alors au passage
+[93:41 -> 93:43] moi je suis sur un planning
+[93:43 -> 93:45] où j'ai limité l'affichage
+[93:45 -> 93:47] à la population formation avril 2021
+[93:47 -> 93:49] je vais dire
+[93:49 -> 93:51] je vais enregistrer ce critère là
+[93:51 -> 93:53] et je vais dire que c'est mon critère par défaut
+[93:53 -> 93:55] tiens
+[93:59 -> 94:01] voilà et bien
+[94:01 -> 94:03] si je ferme mon planning et que je le réouvre
+[94:03 -> 94:05] alors je vais vous montrer un truc
+[94:05 -> 94:07] ici j'ai repassé
+[94:07 -> 94:09] ouai j'ai mis des compteurs
+[94:11 -> 94:13] attendez je vais repartir
+[94:13 -> 94:15] ici je vais enlever
+[94:15 -> 94:17] cette brille des compteurs parce qu'elle me plombe
+[94:17 -> 94:19] je vais enlever les effectifs
+[94:19 -> 94:21] non
+[94:21 -> 94:23] c'est pas ça que je voulais faire
+[94:23 -> 94:25] ici
+[94:25 -> 94:27] voilà ça va aller plus vite en affichage
+[94:27 -> 94:29] je vais passer en tout collaborateur
+[94:29 -> 94:31] ici en population transverse
+[94:31 -> 94:33] ok
+[94:33 -> 94:35] et...
+[94:35 -> 94:37] là j'ouvre mon planning
+[94:39 -> 94:41] alors il me donne un premier message
+[94:41 -> 94:43] il me dit attention vous avez une population active
+[94:43 -> 94:45] la population active c'est elle
+[94:45 -> 94:47] tous les collaborateurs
+[94:47 -> 94:49] qui ne correspond pas aux critères par défaut du planning
+[94:49 -> 94:51] que vous souhaitez afficher
+[94:51 -> 94:53] oui parce que dans mon critère par défaut
+[94:53 -> 94:55] j'ai aussi enregistré son critère
+[94:55 -> 94:57] le fait que je travaille sur la population formation
+[94:57 -> 94:59] donc qu'est ce que vous voulez faire
+[94:59 -> 95:01] vous voulez mettre à jour le planning avec la population active
+[95:01 -> 95:03] donc est ce que je veux voir tous les collaborateurs
+[95:03 -> 95:05] ou est ce que je veux voir celle du planning par défaut
+[95:05 -> 95:07] je réponds non
+[95:11 -> 95:13] et du coup
+[95:13 -> 95:15] il m'a inscrit en haut d'écran
+[95:15 -> 95:17] ma population formation
+[95:17 -> 95:19] et il m'affiche mon planning
+[95:19 -> 95:21] avec tous les critères que j'ai indiqués
+[95:23 -> 95:25] les collaborateurs de la population formation
+[95:25 -> 95:27] l'affichage
+[95:27 -> 95:29] des natures par nature d'horaire
+[95:29 -> 95:31] la totalisation par nature d'horaire
+[95:31 -> 95:33] mon
+[95:33 -> 95:35] on appelle ça le carousel
+[95:35 -> 95:37] mon outil multi domaines
+[95:37 -> 95:39] peut-être que je l'ai paramétré
+[95:39 -> 95:41] et voilà et ça c'est mon critère
+[95:41 -> 95:43] à moi
+[95:43 -> 95:45] et personne ne peut le prendre
+[95:51 -> 95:53] alors il y a d'autres paramètres
+[95:53 -> 95:55] sur la critère publique privée
+[95:55 -> 95:57] en partage ou pas
+[95:57 -> 95:59] je ne peux pas vous en parler maintenant
+[95:59 -> 96:01] mais je peux aussi
+[96:01 -> 96:03] modifier par exemple
+[96:03 -> 96:05] peut-être que je veux
+[96:05 -> 96:07] aller je vais me mettre en multiligne
+[96:11 -> 96:13] oui du coup j'ai perdu mes réglages de multiligne
+[96:13 -> 96:15] donc je vais me mettre mes horaires
+[96:15 -> 96:17] mes badges argent deuxième
+[96:17 -> 96:19] mes absences activités
+[96:21 -> 96:23] mes activités
+[96:23 -> 96:25] et bien
+[96:25 -> 96:27] et mes astrates
+[96:27 -> 96:29] là haut
+[96:29 -> 96:31] mon indicateur
+[96:31 -> 96:33] ici
+[96:33 -> 96:35] j'applique
+[96:37 -> 96:39] voilà et je suis en multiligne
+[96:39 -> 96:41] et je peux modifier mon critère
+[96:41 -> 96:43] et dire que finalement mon critère cco
+[96:43 -> 96:45] je vais faire un enregistré
+[96:49 -> 96:51] et quand je réouvrirai mon planil
+[96:51 -> 96:53] alors que je leur aura fraîchis
+[96:53 -> 96:55] ou que je le
+[96:55 -> 96:57] que je le ferme et que je le réouvre
+[96:57 -> 96:59] c'est pareil
+[97:03 -> 97:05] alors là je suis pas d'accord par contre
+[97:05 -> 97:07] parce que la population active
+[97:07 -> 97:09] et la population du critère par défaut
+[97:09 -> 97:11] c'est la même
+[97:11 -> 97:13] donc je comprends pas pourquoi
+[97:13 -> 97:15] il me met ça
+[97:15 -> 97:17] et là j'affiche
+[97:17 -> 97:19] j'affiche en multiligne
+[97:19 -> 97:21] donc je vais repasser en monoline
+[97:21 -> 97:23] parce que c'est moche en multiligne
+[97:25 -> 97:27] et je vais enregistrer mon critère
+[97:33 -> 97:35] et puis j'ai d'autres choses ici
+[97:35 -> 97:37] là j'ai un affichage en mode liste
+[97:37 -> 97:39] mais je peux aussi faire
+[97:39 -> 97:41] là je peux choisir
+[97:41 -> 97:43] alors pardon
+[97:45 -> 97:47] je vais repasser en mode liste
+[97:47 -> 97:49] avec cet endonnage là vous voyez
+[97:49 -> 97:51] j'ai pas d'infos j'ai juste le nom du collaborateur
+[97:51 -> 97:53] mais je peux choisir
+[97:53 -> 97:55] les champs que je veux
+[97:55 -> 97:57] alors le libélé du métier j'ai pas
+[98:01 -> 98:03] j'ai pas mis d'informations dans les métiers
+[98:03 -> 98:05] donc le libélé du métier je m'en fiche
+[98:05 -> 98:07] par contre ce qui m'intéresse
+[98:07 -> 98:09] c'est de voir le matricule
+[98:11 -> 98:13] ou le matricule alpha peut-être
+[98:13 -> 98:15] et puis peut-être que ce qui m'intéresse aussi
+[98:15 -> 98:17] c'est de voir
+[98:17 -> 98:19] son rattachement
+[98:19 -> 98:21] son libélé du rattachement
+[98:21 -> 98:23] à ST1
+[98:23 -> 98:25] donc la structure administrative
+[98:25 -> 98:27] la première structure
+[98:27 -> 98:29] et ensuite je peux préciser
+[98:29 -> 98:31] donc là c'est les informations
+[98:31 -> 98:33] qui vont s'afficher ici et je peux préciser le tri
+[98:33 -> 98:35] là c'est trié par nom prénom
+[98:35 -> 98:37] mais en fait
+[98:37 -> 98:39] je veux trier par exemple
+[98:39 -> 98:41] par libélé du rattachement
+[98:43 -> 98:45] ici
+[98:45 -> 98:47] en ascendant
+[98:49 -> 98:51] et puis
+[98:51 -> 98:53] ensuite
+[98:53 -> 98:55] par matricule
+[98:55 -> 98:57] je peux mettre
+[98:57 -> 98:59] plusieurs critères de tri
+[98:59 -> 99:01] toujours en ascendant
+[99:03 -> 99:05] j'ai supprimé le nom prénom
+[99:05 -> 99:07] en critères de tri alors pour supprimer
+[99:07 -> 99:09] il faut cliquer ici
+[99:09 -> 99:11] et ça ouvre la pop-up
+[99:11 -> 99:13] de suppression
+[99:15 -> 99:17] et quand j'applique
+[99:17 -> 99:19] ça va me changer
+[99:19 -> 99:21] non seulement ça va me changer l'ordre des gens
+[99:21 -> 99:23] mais en plus
+[99:23 -> 99:25] je vois apparaître et leur matricule
+[99:25 -> 99:27] et le libélé
+[99:27 -> 99:29] du rattachement
+[99:31 -> 99:33] et ça c'est juste
+[99:33 -> 99:35] je fais davantage
+[99:35 -> 99:37] d'informations
+[99:37 -> 99:39] et je vais modifier le tri
+[99:41 -> 99:43] et puis
+[99:43 -> 99:45] j'ai aussi un autre mode d'affichage
+[99:45 -> 99:47] là je peux passer en mode groupé
+[99:47 -> 99:49] alors là c'est pareil
+[99:49 -> 99:51] si j'enregistre mon critère
+[99:51 -> 99:53] ici
+[99:53 -> 99:55] j'enregistre
+[99:55 -> 99:57] ça prend ça aussi en compte
+[99:57 -> 99:59] si je réfléchis mon planime il va me l'afficher comme ça
+[100:01 -> 100:03] sauf le speeder
+[100:03 -> 100:05] il va me le ramener
+[100:05 -> 100:07] je vais vérifier quand même ici
+[100:07 -> 100:09] ça marche bien au passage
+[100:09 -> 100:11] donc là je suis pas d'accord
+[100:11 -> 100:13] j'ai pas de différence de population
+[100:13 -> 100:15] c'est un bug ça
+[100:17 -> 100:19] voilà et là je vois bien qu'ils sont trillés
+[100:19 -> 100:21] dans l'ordre que j'ai prévu
+[100:21 -> 100:23] et que j'ai les informations qui vont bien
+[100:23 -> 100:25] le tri d'ailleurs
+[100:25 -> 100:27] si je reviens sur mon grenade
+[100:27 -> 100:29] vous pouvez même faire un tri
+[100:29 -> 100:31] là j'ai fait un tri par critère
+[100:31 -> 100:33] et vous pouvez faire un tri personnalisé
+[100:33 -> 100:35] c'est à dire que là vous avez la liste
+[100:35 -> 100:37] des personnes
+[100:37 -> 100:39] que je clique sur
+[100:39 -> 100:41] corne par exemple
+[100:41 -> 100:43] et que je vais mettre corne
+[100:43 -> 100:45] avant
+[100:45 -> 100:47] une wedding par exemple
+[100:47 -> 100:49] voilà j'applique
+[100:51 -> 100:53] voilà ça me change
+[100:53 -> 100:55] et ça aussi ça s'enregistre
+[100:57 -> 100:59] et puis je peux aussi ici
+[100:59 -> 101:01] j'ai un autre bouton qui me permet de faire
+[101:01 -> 101:03] de faire un affichage groupé
+[101:03 -> 101:05] alors là
+[101:11 -> 101:13] quand je fais un affichage groupé
+[101:15 -> 101:17] ça me regroupe les collaborateurs
+[101:17 -> 101:19] par rapport à un critère
+[101:19 -> 101:21] que j'ai défini comme étant un critère
+[101:21 -> 101:23] de regroupement
+[101:23 -> 101:25] donc là on voit qu'on a 2 groupes
+[101:25 -> 101:27] on a les non-cadres et on a les cadres
+[101:29 -> 101:31] si je vais dans l'engrenage maintenant
+[101:33 -> 101:35] dans mon engrenage
+[101:35 -> 101:37] la partie haute
+[101:37 -> 101:39] même si je fais des modifications
+[101:39 -> 101:41] dans cette partie haute
+[101:41 -> 101:43] ça va s'appliquer dans les 2 modes
+[101:43 -> 101:45] que ce soit en mode groupé ou en mode liste
+[101:45 -> 101:47] donc les informations
+[101:47 -> 101:49] que je vais voir arriver sur les collaborateurs
+[101:49 -> 101:51] par contre la partie basse
+[101:51 -> 101:53] se change
+[101:53 -> 101:55] là je précise les niveaux de tri et de regroupement
+[101:55 -> 101:57] le métier
+[101:57 -> 101:59] je m'en fiche
+[102:03 -> 102:05] par contre là c'est trié
+[102:05 -> 102:07] par libellé du contrat
+[102:07 -> 102:09] alors je vais supprimer ça
+[102:09 -> 102:11] et je vais dire
+[102:13 -> 102:15] que moi je veux des groupes
+[102:15 -> 102:17] par libellé de rattachement
+[102:17 -> 102:19] donc je vais rajouter
+[102:19 -> 102:21] le libellé du rattachement ST1
+[102:25 -> 102:27] sans du tri
+[102:27 -> 102:29] et non seulement je tri
+[102:29 -> 102:31] mais est-ce que j'en fais
+[102:31 -> 102:33] un élément de regroupement
+[102:33 -> 102:35] je vais dire oui
+[102:37 -> 102:39] et là le tri
+[102:39 -> 102:41] il faut que je l'enlève
+[102:41 -> 102:43] enfin
+[102:43 -> 102:45] c'est pas qu'il faut que je l'enlève
+[102:47 -> 102:49] c'est qu'il faut que je tri après
+[102:49 -> 102:51] je tri d'abord par libellé de rattachement
+[102:51 -> 102:53] puis par non prénom
+[102:53 -> 102:55] j'applique
+[102:57 -> 102:59] et là maintenant je vois mes libellés de rattachement
+[102:59 -> 103:01] mes gens
+[103:03 -> 103:05] et tous ceux qui sont sous la société 1
+[103:05 -> 103:07] j'ai personne
+[103:07 -> 103:09] j'ai personne sous la société 1
+[103:09 -> 103:11] et tout ça ça s'enregistre
+[103:21 -> 103:23] alors le seul truc
+[103:23 -> 103:25] au niveau de l'enregistrement
+[103:25 -> 103:27] c'est que
+[103:27 -> 103:29] si je ferme et que je réouvre le planning
+[103:29 -> 103:31] là vous voyez je demande
+[103:31 -> 103:33] un visuel en mode groupé
+[103:33 -> 103:35] en vue groupé
+[103:35 -> 103:37] ici si je réouvre le planning
+[103:43 -> 103:45] il ne les ouvre pas
+[103:45 -> 103:47] mes groupes
+[103:47 -> 103:49] je suis obligé de les ouvrir
+[103:49 -> 103:51] alors je peux tous les ouvrir
+[103:51 -> 103:53] tous les fermer
+[103:53 -> 103:55] ou les ouvrir un par un
+[103:59 -> 104:01] ça c'est une limite
+[104:01 -> 104:03] je comprends pas
+[104:03 -> 104:05] on sait pas afficher directement
+[104:05 -> 104:07] les informations
+[104:07 -> 104:09] enfin on a choisi de pas afficher directement
+[104:09 -> 104:11] les groupes ouverts quand on ouvre le plan
+[104:11 -> 104:13] bon
+[104:15 -> 104:17] au passage
+[104:17 -> 104:19] tant qu'on est dans les groupes
+[104:19 -> 104:21] ici
+[104:21 -> 104:23] vous voyez
+[104:23 -> 104:25] les totalisations collectives
+[104:25 -> 104:27] elles sont valides pour tous les groupes
+[104:27 -> 104:29] donc que les groupes soient
+[104:29 -> 104:31] ouverts ou fermés
+[104:35 -> 104:37] quand je clique
+[104:37 -> 104:39] dans le bouton de réglage
+[104:39 -> 104:41] en affichage groupé je peux dire
+[104:41 -> 104:43] est-ce que les totalisations, les comptages d'effectifs
+[104:43 -> 104:45] que j'ai là
+[104:45 -> 104:47] je veux que ce soit vrai pour tous les groupes
+[104:47 -> 104:49] des pliers ou des pliers
+[104:49 -> 104:51] donc j'aurais toujours un total général
+[104:51 -> 104:53] de ma population
+[104:53 -> 104:55] ou alors est-ce que je veux uniquement
+[104:55 -> 104:57] les groupes des pliers
+[104:57 -> 104:59] et quand je veux uniquement
+[104:59 -> 105:01] les groupes des pliers
+[105:03 -> 105:05] alors là
+[105:05 -> 105:07] j'ai l'impression
+[105:09 -> 105:11] que j'ai 4 personnes
+[105:11 -> 105:13] j'en ai un repos
+[105:13 -> 105:15] un en soir
+[105:15 -> 105:17] 1, 2, 3, 4
+[105:17 -> 105:19] mais tous les horaires ne sont pas dans les natures
+[105:19 -> 105:21] ce que je vais faire
+[105:21 -> 105:23] c'est que je vais demander
+[105:23 -> 105:25] par caractéristique de présence
+[105:25 -> 105:27] les totalisations
+[105:31 -> 105:33] voilà
+[105:33 -> 105:35] là c'est valide
+[105:35 -> 105:37] ce que je vois c'est valide pour les groupes des pliers
+[105:37 -> 105:39] maintenant
+[105:39 -> 105:41] 6 jours pour la direction administrative maintenant
+[105:41 -> 105:43] il m'a pas changé
+[105:43 -> 105:45] les totalisations
+[105:45 -> 105:47] par contre il moit un point d'interrogation
+[105:47 -> 105:49] dedans
+[105:49 -> 105:51] et il me dit attention à réévaluer
+[105:51 -> 105:53] parce qu'il y a des groupes qui ont été dépliés
+[105:53 -> 105:55] mais on n'a pas automatiquement recalculé
+[105:55 -> 105:57] donc là
+[105:57 -> 105:59] on clique là dessus
+[105:59 -> 106:01] et ça va réévaluer les totalisations
+[106:05 -> 106:07] il fait la même chose si je demande
+[106:07 -> 106:09] une totalisation par nature
+[106:09 -> 106:11] et quand je recris un groupe
+[106:11 -> 106:13] il m'a pas changé mes totalisations
+[106:13 -> 106:15] il me remet un point d'interrogation
+[106:15 -> 106:17] là je clique dessus pour rafraîchir
+[106:17 -> 106:19] les valeurs de totalisation qui sont en bas
+[106:25 -> 106:27] et puis il y a un dernier petit bouton
+[106:27 -> 106:29] ça c'est lié
+[106:29 -> 106:31] c'est lié au module de prêt en print
+[106:33 -> 106:35] de remplacement de collaborateur
+[106:35 -> 106:37] mais ça c'est un module à part
+[106:37 -> 106:39] ce bouton là
+[106:39 -> 106:41] qui permet de créer
+[106:41 -> 106:43] des collaborateurs virtuels directement
+[106:43 -> 106:45] à partir du planning
+[106:45 -> 106:47] plutôt que de passer dans le suivi des collaborateurs
+[106:47 -> 106:49] gérer, créer, collaborateur virtuel etc
+[106:51 -> 106:53] c'est tout
+[106:53 -> 106:55] donc je ne reviens pas là dessus
+[106:55 -> 106:57] c'est une fiche de collaborateur virtuel
+[106:57 -> 106:59] c'est une création de collaborateur virtuel
+[107:01 -> 107:03] il est 6h30
+[107:03 -> 107:05] je suis désolée, j'ai complètement débordé
+[107:05 -> 107:07] mais bon
+[107:07 -> 107:09] voilà
+[107:09 -> 107:11] c'est une présentation du planning
+[107:11 -> 107:13] avec toutes les possibilités qu'il offre
+[107:15 -> 107:17] donc voilà c'est à prendre en main
+[107:17 -> 107:19] et à utiliser
+[107:19 -> 107:21] je peux repasser ici un mode list
+[107:21 -> 107:23] en cliquant sur ce bouton là
+[107:23 -> 107:25] je peux passer de là à l'autre
+[107:27 -> 107:29] comme je veux
+[107:35 -> 107:37] je ne sais pas vous demander si vous avez des questions
+[107:45 -> 107:47] c'est riche
+[107:47 -> 107:49] oui
+[107:55 -> 107:57] tu me poses une question
+[107:57 -> 107:59] non non je dis c'est riche
+[107:59 -> 108:01] ah oui pardon
+[108:05 -> 108:07] et évidemment
+[108:07 -> 108:09] si je passe en mode synthétique
+[108:09 -> 108:11] quand j'affiche que deux semaines
+[108:11 -> 108:13] une semaine seulement
+[108:13 -> 108:15] oui j'affiche qu'une semaine
+[108:15 -> 108:17] oui parce qu'il y a quelqu'un qui a modifié les personnalisations
+[108:17 -> 108:19] donc je suis reporté là dessus
+[108:19 -> 108:21] mais voilà
+[108:21 -> 108:23] donc
+[108:23 -> 108:25] il y a plein d'infos
+[108:25 -> 108:27] évidemment
+[108:27 -> 108:29] là si je passe en une petite ligne
+[108:29 -> 108:31] voilà j'y vois un petit peu plus clair
+[108:31 -> 108:33] mais je vois que les abrégés des horaires
+[108:33 -> 108:35] je vois les horaires exceptionnelles
+[108:35 -> 108:37] je vois pas même les mémo
+[108:37 -> 108:39] je vois les absences
+[108:39 -> 108:41] je vois les absences en dehors
+[108:45 -> 108:47] donc voilà pour cette présentation
+[108:47 -> 108:49] du planning
+[108:49 -> 108:51] alors
+[108:51 -> 108:53] à savoir quand même
+[108:53 -> 108:55] je vous fais une dernière remarque
+[108:55 -> 108:57] vous avez lu qu'on avait
+[108:58 -> 109:01] vous avez lu qu'on peut enregistrer le visuel du planning
+[109:01 -> 109:03] ou bien via les préférences
+[109:03 -> 109:05] ici en haut
+[109:05 -> 109:07] pardon par cet engrenage
+[109:07 -> 109:09] par la personnalisation
+[109:09 -> 109:11] ou bien par les critères
+[109:11 -> 109:13] alors ce qu'il faut savoir c'est que
+[109:15 -> 109:17] si j'ai un critère
+[109:17 -> 109:19] alors déjà
+[109:19 -> 109:21] dans les préférences je n'enregistrerai
+[109:21 -> 109:23] jamais la population du planning
+[109:23 -> 109:25] dans les préférences
+[109:25 -> 109:27] je n'ai que
+[109:27 -> 109:29] des actions
+[109:29 -> 109:31] des visualisations
+[109:31 -> 109:33] monome, multidomaine
+[109:33 -> 109:35] vue mensuel, jour, période
+[109:35 -> 109:37] je n'ai que des informations comme ça
+[109:37 -> 109:39] mais la population du planning
+[109:39 -> 109:41] je ne l'enregistre pas sous les préférences
+[109:41 -> 109:43] jamais
+[109:43 -> 109:45] par contre si je veux enregistrer
+[109:45 -> 109:47] un planning pour la population du service
+[109:47 -> 109:49] x
+[109:49 -> 109:51] et un autre planning
+[109:51 -> 109:53] pour une population du service y
+[109:53 -> 109:55] je vais passer par les critères
+[109:55 -> 109:57] pour enregistrer un planning
+[109:57 -> 109:59] avec une population
+[109:59 -> 110:01] je passe par le critère
+[110:01 -> 110:03] si au niveau du critère
+[110:03 -> 110:05] quand je fais un enregistré
+[110:07 -> 110:09] je n'ai pas coché
+[110:09 -> 110:11] avec les options de personnalisation
+[110:11 -> 110:13] ça veut dire que quand
+[110:13 -> 110:15] sous le critère je n'ai enregistré
+[110:15 -> 110:17] que la population
+[110:17 -> 110:19] et que dans ce cas
+[110:19 -> 110:21] quand je veux ouvrir mon planning
+[110:21 -> 110:23] il va me positionner
+[110:23 -> 110:25] la population du critère
+[110:25 -> 110:27] si j'applique le critère
+[110:27 -> 110:29] ou si c'est un critère par défaut
+[110:29 -> 110:31] il va m'appliquer la population du critère
+[110:31 -> 110:33] mais il va prendre
+[110:33 -> 110:35] les options de personnalisation
+[110:35 -> 110:37] issu de la personnalisation
+[110:37 -> 110:39] qui a été faite ici
+[110:41 -> 110:43] sachant que cette personnalisation
+[110:43 -> 110:45] elle peut être
+[110:45 -> 110:47] ou pour moi seulement
+[110:47 -> 110:49] ou pour tout le monde
+[110:49 -> 110:51] donc
+[110:51 -> 110:53] j'ai plein de niveaux
+[110:53 -> 110:55] j'ai plein d'amplissements
+[110:55 -> 110:57] de personnalisation
+[110:57 -> 110:59] qui peuvent se produire
+[110:59 -> 111:01] si j'ai un critère planning
+[111:01 -> 111:03] qui enregistre donc une population
+[111:03 -> 111:05] et qui a aussi enregistré
+[111:05 -> 111:07] les options de personnalisation
+[111:07 -> 111:09] sous ce critère
+[111:09 -> 111:11] si ce critère est appliqué
+[111:11 -> 111:13] j'oublie complètement les préférences
+[111:13 -> 111:15] en général ou les préférences utilisateurs
+[111:17 -> 111:19] si par contre j'applique un critère
+[111:19 -> 111:21] qui n'a enregistré que la population
+[111:21 -> 111:23] sans les options de personnalisation
+[111:23 -> 111:25] je vais appliquer
+[111:25 -> 111:27] la population du critère
+[111:27 -> 111:29] mais je vais prendre en priorité
+[111:29 -> 111:31] mes préférences
+[111:31 -> 111:33] à moins si elles existent
+[111:33 -> 111:35] si elles existent pas
+[111:35 -> 111:37] je vais prendre les préférences générales
+[111:37 -> 111:41] si j'ai une personnalisation en général
+[111:43 -> 111:45] et si j'ai pas du tout de critères
+[111:45 -> 111:47] si j'applique pas de critères
+[111:47 -> 111:49] en premier lieu
+[111:49 -> 111:51] si j'ai des préférences
+[111:51 -> 111:53] pour moi utilisateurs uniquement
+[111:53 -> 111:55] je vais les utiliser
+[111:55 -> 111:57] et si j'en ai pas
+[111:57 -> 111:59] je vais utiliser les préférences
+[111:59 -> 112:01] de la personnalisation en général
+[112:09 -> 112:11] il y a une cascade
+[112:11 -> 112:13] en général
+[112:13 -> 112:15] dès qu'il y a un critère
+[112:15 -> 112:17] on se focalise sur la population
+[112:17 -> 112:19] qui est portée par le critère
+[112:19 -> 112:21] celle-ci va être appliquée
+[112:21 -> 112:23] dans tous les cas
+[112:23 -> 112:25] et si il y a des options de personnalisation
+[112:25 -> 112:27] qui ont été enregistrées ici
+[112:27 -> 112:29] alors là appliquer à tous les utilisateurs
+[112:29 -> 112:31] j'ai un doute sur cette action
+[112:31 -> 112:33] sur cette poche j'ai un doute
+[112:41 -> 112:43] tout va falloir que je creuse
+[112:43 -> 112:45] je me souviens plus
+[112:49 -> 112:51] alors je vous ai pas indiqué
+[112:51 -> 112:53] mais ici là sur ce critère
+[112:53 -> 112:55] je peux définir plein de critères
+[112:55 -> 112:57] moi en utilisateur
+[112:57 -> 112:59] quand j'ai pas un enregistre essou
+[112:59 -> 113:01] je peux très bien dire que c'est pas un critère par défaut
+[113:03 -> 113:05] celui-là je vais faire
+[113:05 -> 113:07] une toute petite modif
+[113:07 -> 113:09] je vais dire que je veux une vue
+[113:09 -> 113:11] de semaine et je vais l'enregistrer
+[113:11 -> 113:13] cette fois
+[113:13 -> 113:15] enregistrer essou
+[113:15 -> 113:17] je vais faire un critère
+[113:17 -> 113:19] cco2
+[113:21 -> 113:23] il n'y a toujours pas un critère par défaut
+[113:23 -> 113:25] peu importe
+[113:25 -> 113:27] quand je ferme mon planning
+[113:27 -> 113:29] et que je le réouvre
+[113:31 -> 113:33] ici
+[113:33 -> 113:35] j'ai pas de critères par défaut
+[113:39 -> 113:41] ici quand je survole
+[113:41 -> 113:43] je vois si j'ai un critère qui est appliqué
+[113:43 -> 113:45] là j'en ai pas
+[113:47 -> 113:49] et par contre si je clique
+[113:49 -> 113:51] là
+[113:51 -> 113:53] j'ai le choix
+[113:53 -> 113:55] d'appliquer les critères
+[113:57 -> 113:59] un des deux critères
+[114:05 -> 114:07] donc vous voyez d'ailleurs
+[114:07 -> 114:09] c'est intéressant parce que
+[114:09 -> 114:11] sans appliquer le critère planning
+[114:11 -> 114:13] je ne vais pas laisser s'afficher
+[114:13 -> 114:15] il va afficher les
+[114:15 -> 114:17] voilà je vais faire mes plannings
+[114:17 -> 114:19] quand je le réouvre
+[114:19 -> 114:21] comme je n'ai pas de critère par défaut
+[114:21 -> 114:23] il n'applique pas un critère
+[114:27 -> 114:29] et il me donne bien la personnalisation
+[114:29 -> 114:31] que j'avais faite à l'origine
+[114:31 -> 114:33] que j'ai enregistré
+[114:33 -> 114:35] ici dans les préférences
+[114:37 -> 114:39] pour moi et que j'avais enregistré aussi
+[114:39 -> 114:41] pour tous les utilisateurs
+[114:43 -> 114:45] mais il y a quelqu'un qui a
+[114:45 -> 114:47] modifié
+[114:47 -> 114:49] pour tous les utilisateurs
+[114:49 -> 114:51] du coup il y a quelqu'un qui a modifié
+[114:51 -> 114:53] la personnalisation générale
+[114:53 -> 114:55] mais moi mes préférences à moi elles sont restées en place
+[114:57 -> 114:59] puisque je vois bien mon planning
+[114:59 -> 115:01] tel que j'avais prévu qui s'affiche
+[115:03 -> 115:05] alors maintenant si je supprime mes préférences
+[115:07 -> 115:09] non, c'est pas ça que je voulais faire
+[115:09 -> 115:11] si je supprime mes préférences
+[115:11 -> 115:13] euh
+[115:13 -> 115:15] eh ben
+[115:15 -> 115:17] ici
+[115:21 -> 115:23] bah pourquoi il ne propose pas de supprimer mes préférences
+[115:23 -> 115:25] si je supprime mes préférences
+[115:35 -> 115:37] maintenant si j'essaie d'enregistrer mes préférences
+[115:37 -> 115:39] il me propose de les supprimer
+[115:41 -> 115:43] après suppression vous utiliserez les préférences générales
+[115:53 -> 115:55] donc
+[115:59 -> 116:01] bon non
+[116:01 -> 116:03] parce que là
+[116:05 -> 116:07] en fait c'est bien les préférences générales
+[116:07 -> 116:09] que j'ai essayé
+[116:09 -> 116:11] bah je sais pas ce qui s'est passé
+[116:11 -> 116:13] pourquoi j'ai perdu le fil
+[116:13 -> 116:15] parce que les préférences générales elle sont comme ça
+[116:19 -> 116:21] je ne sais pas pourquoi je me suis retrouvée un moment donné
+[116:21 -> 116:26] perdu mes totalisations et je ne sais pas comment c'est possible, vu que mes préférances
+[116:26 -> 116:34] générales elles sont bien comme ça ou alors j'avais dû enregistrer je ne sais pas, j'étais
+[116:34 -> 116:39] enregistré les préférences pour moi uniquement avec une totalisation qui était différente
+[116:39 -> 116:45] en enlevant les totalisations mais je ne me souviens pas d'avoir fait ça, bon écoutez
+[116:45 -> 116:55] je ne vais pas vous retarder plus quand même parce qu'il est tard mais bon le principe que je vous
+[116:55 -> 117:05] dédonnais est juste c'est les préférances générales arrivent en dernière position en fait c'est si
+[117:05 -> 117:10] je n'ai pas trouvé de critères avec les options de personnalisation et si je n'ai pas trouvé de
+[117:10 -> 117:21] préférence propre à l'utilisateur je vais appliquer les préférences générales. Petite
+[117:21 -> 117:32] question Christine, si j'enregistre de mes préférences et que quelqu'un réapplique des, enfin
+[117:32 -> 117:38] enregistre des préférences pour tout le monde et préférence que j'ai enregistré auparavant
+[117:38 -> 117:48] sont écrasés. Non, si c'était préférence à toi si tu les as enregistrés pour toi, pour moi uniquement
+[117:48 -> 117:53] elles sont liées à ton utilisateur et elles ne seront pas écrasées. D'accord, justement c'est
+[117:53 -> 117:59] l'intérêt. Donc en clair c'est que pour les personnes qui n'ont pas enregistré de préférence
+[117:59 -> 118:08] sur leur profil, que cette manie plus beau en fait. Que cette personnalisation générale va s'en
+[118:08 -> 118:15] utiliser. Alors en exploitation on ne laisse pas le droit à les utilisateurs lambda, à les managers de
+[118:15 -> 118:24] gérer la personnalisation générale c'est une habilitation particulière. Par contre je ne sais
+[118:24 -> 118:28] pas si on a le droit je crois pas qu'on ait le droit d'enlever la possibilité de
+[118:28 -> 118:40] d'enregistrer ses propres préférences. Ça je suis pas sûre. On regardera lundi. Et ce que je voulais
+[118:40 -> 118:44] vous montrer là c'est que ses préférences sur le planning. Je vous les ai montrés sur le
+[118:44 -> 118:53] planning mais dans l'agenda j'ai oublié vous en parler. Dans l'agenda j'ai aussi un bouton
+[118:53 -> 118:59] de personnalisation qui me permet d'enregistrer mes préférences. C'est-à-dire que mon agenda si
+[118:59 -> 119:10] je préfère l'afficher en vue mensuel avec je ne sais pas moi un affichage je ne sais pas de
+[119:10 -> 119:33] compte. Je vais plutôt rester. Je vais reparser en plus semaine et par contre moi je veux voir
+[119:33 -> 119:38] systématiquement l'affichage de mes collègues, du planning de mes collègues. Bah cette vue-là
+[119:38 -> 119:44] je peux l'enregistrer en tant que préférence. Et là c'est toujours pareil. Est-ce que j'enregistre
+[119:44 -> 119:49] ses préférences ? Alors moi en tant que super utilisateur, super admin etc. j'ai tous les droits.
+[119:49 -> 119:54] Donc là il me pose la question est-ce que vous voulez enregistrer pour vous uniquement pour l'espace,
+[119:54 -> 120:00] quand vous regardez l'agenda depuis l'espace non compte et est-ce que vous voulez faire
+[120:00 -> 120:05] ce même visuel quand vous gérer les collaborateurs de votre équipe. Alors pour gérer les
+[120:05 -> 120:13] collaborateurs de mon équipe ça n'intéresse pas en fait. Mais est-ce que vous voulez enregistrer
+[120:13 -> 120:20] ses préférences en tant que personnalisation générale ? Pour tout le monde, quand ils regardent
+[120:20 -> 120:27] leur agenda, eux pour leur propre compte depuis l'espace non compte et où pour gérer les
+[120:27 -> 120:31] collaborateurs de leurs équipes si c'est des managers. Donc pour gérer les collaborateurs de
+[120:31 -> 120:35] leurs équipes, je laisse tomber, je n'en veux pas non plus. Et ça c'est parce que j'ai tous les droits.
+[120:35 -> 120:40] Un collaborateur lambda, il pourra enregistrer ses préférences pour son propre compte, c'est tout.
+[120:40 -> 120:47] Pour que lui, quand il se connecte et quand il ouvre son agenda, il est visuel qu'il a envie de voir.
+[120:47 -> 120:57] Maintenant si vous en tant que collaborateur, vous ouvrez votre agenda depuis l'espace non compte
+[120:57 -> 121:01] et vous ouvrez votre agenda, normalement vous devriez voir arriver le planning de votre équipe.
+[121:01 -> 121:07] En tout cas pour Nicole, Nourédyne et Md Samad.
+[121:07 -> 121:29] Je vais vous envoyer pour préparer la journée de lundi, le support de formation à l'administration pour
+[121:29 -> 121:35] que vous ayez et au workflow, pour que vous preniez le temps de le lire avant qu'on fasse la formation.
+[121:35 -> 121:41] Ça vous permettra quand même de vous familiariser avec le processus et la terminologie qu'on en pourra,
+[121:41 -> 121:47] quand on gère les habilitations, parce qu'en une journée on va avoir pas mal de choses à voir aussi.
+[121:47 -> 121:52] Et donc ce serait bien que, si vous pouvez prendre un tout petit peu d'avance dans la compréhension, ce serait bien.
+[121:52 -> 122:04] Je vais vous envoyer ça ce soir, les supports. Ce soir ou demain matin.
+[122:04 -> 122:11] Je ne travaille pas, je suis en congé demain après-demain. Je suis là avant le dix matin et je vais vous envoyer le support
+[122:11 -> 122:15] au plus tôt, au plus tard demain matin, pour que vous puissiez vous préparer un petit peu.
+[122:15 -> 122:22] Bonne soirée à tous.
+[122:22 -> 122:25] Bonne soirée à tous, je suis désolée de vous avoir mis...
+[122:25 -> 122:26] Bonne soirée, merci.
+[122:26 -> 122:29] Bonne soirée, merci beaucoup.
+[122:29 -> 122:33] Bonne soirée, et puis à très bientôt.
+[122:33 -> 122:34] Merci.
+[122:34 -> 122:37] Et bientôt, salut.
+[122:37 -> 122:40] Bonne soirée, au revoir.
+[122:40 -> 122:42] Salut.

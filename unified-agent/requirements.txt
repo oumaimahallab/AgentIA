@@ -1,0 +1,152 @@
+# Requirements for Unified Intelligent Agent
+# Python 3.14 Compatible - MINIMAL SETUP
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+
+python-dotenv>=1.0.0
+
+# ============================================================================
+# LLM & EMBEDDINGS
+# ============================================================================
+
+groq>=0.7.0
+sentence-transformers>=2.3.0
+torch>=2.0.0
+
+# ============================================================================
+# VECTOR SEARCH & RETRIEVAL
+# ============================================================================
+
+faiss-cpu>=1.13.2
+rank-bm25>=0.2.2
+
+# ============================================================================
+# DOCUMENT PROCESSING
+# ============================================================================
+
+PyPDF2>=3.0.0
+python-pptx>=0.6.0
+Pillow>=10.0.0
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+
+numpy>=1.24.0
+pydantic>=2.0.0
+requests>=2.31.0
+
+# ============================================================================
+# OPTIONAL (disable for Python 3.14 compatibility)
+# ============================================================================
+
+# pdfplumber>=0.10.0  # Has pandas dependency - skip for Python 3.14
+# openai-whisper>=20231117  # Optional: for audio transcription
+# redis==5.0.0  # Optional: for distributed caching
+
+# Chromadb (Optional alternative to FAISS - from ChronoBrain)
+# chromadb==0.4.0
+
+# ============================================================================
+# DATA PROCESSING
+# ============================================================================
+
+pandas==2.1.0
+numpy==1.26.0
+scipy==1.11.0
+scikit-learn==1.3.0
+
+# ============================================================================
+# LLamaIndex (Optional - if keeping ChronoBrain components)
+# ============================================================================
+
+# llama-index-core==0.11.23
+# llama-index-readers-file
+# llama-index-llms-ollama
+# llama-index-embeddings-ollama
+# llama-index-embeddings-huggingface
+# llama-index-vector-stores-chroma
+
+# ============================================================================
+# API & WEB
+# ============================================================================
+
+# FastAPI REST API
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP requests
+requests==2.31.0
+aiohttp==3.9.0
+
+# ============================================================================
+# LOGGING & MONITORING
+# ============================================================================
+
+python-json-logger==2.0.7
+structlog==24.1.0
+loguru==0.7.0
+
+# ============================================================================
+# TESTING
+# ============================================================================
+
+pytest==7.4.0
+pytest-asyncio==0.23.0
+pytest-cov==4.1.0
+faker==21.0.0
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+
+# Type hints
+typing-extensions==4.8.0
+
+# Path handling
+pathlib2==2.3.0
+
+# Hashing
+hashlib  # Built-in
+
+# Date/Time
+python-dateutil==2.8.2
+pytz==2023.3
+
+# ============================================================================
+# DEVELOPMENT (Optional)
+# ============================================================================
+
+# Code quality
+black==23.12.0
+flake8==6.1.0
+isort==5.13.0
+mypy==1.7.0
+
+# Documentation
+sphinx==7.2.0
+sphinx-rtd-theme==2.0.0
+
+# ============================================================================
+# NOTES
+# ============================================================================
+
+# GPU Support (Optional):
+# Replace: faiss-cpu with faiss-gpu
+# Add: cuda dependencies if using GPU
+
+# Tesseract OCR:
+# Windows: Download installer from https://github.com/UB-Mannheim/tesseract/wiki
+# Linux: sudo apt-get install tesseract-ocr
+# Mac: brew install tesseract
+
+# Ollama (Optional local LLM):
+# Install from: https://ollama.ai
+# Then: ollama pull llama2
+
+# CUDA (Optional for faster inference):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118

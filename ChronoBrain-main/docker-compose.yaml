@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # Base de données pour permettre le parallélisme (LocalExecutor)
+  postgres:
+    image: postgres:13
+    container_name: chronobrain_postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  airflow-webserver:
+    build: .
+    env_file:
+      - .env
+    container_name: chronobrain_airflow
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      # Connexion à Postgres au lieu de SQLite
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      # Activation du parallélisme
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__WEBSERVER__WEB_SERVER_WORKER_TIMEOUT=600
+      - AIRFLOW__CORE__KILLED_TASK_CLEANUP_TIME=600
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
+      - ./data:/opt/airflow/data
+    ports:
+      - "8080:8080"
+    # Initialisation de la DB Postgres, création de l'user et lancement
+    command: bash -c "airflow db init && airflow users create --username admin --firstname admin --lastname admin --role Admin --email admin@example.com --password admin && airflow standalone"

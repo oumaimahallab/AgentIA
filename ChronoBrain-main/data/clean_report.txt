@@ -1,0 +1,18 @@
+ChronoBrain Data Cleaning Report
+========================================
+(streaming — updated after every chunk)
+
+PER-CHUNK DETAIL
+----------------------------------------
+[8fe54ee4cf] KEEP         [rule      ] formation_chrono_1.txt  |  Règle pour utiliser les sélectes avec la règle du calcul dans Chronotime | Struc
+
+========================================
+FINAL SUMMARY
+Total chunks processed : 13
+  KEPT                 : 1
+  REWRITTEN            : 0
+  NOISE (dropped)      : 12
+  DUPLICATE (dropped)  : 0
+  INCOMPLETE (failed)  : 0
+  SKIPPED (LLM error)  : 0
+QA pairs generated     : 0

@@ -1,0 +1,37 @@
+psycopg2-binary
+faster-whisper==1.0.3
+llama-index-core==0.11.23
+llama-index-readers-file
+llama-index-llms-ollama
+llama-index-embeddings-ollama
+chromadb
+llama-index-vector-stores-chroma
+requests 
+
+sentence-transformers
+transformers
+torch
+faiss-cpu
+rank-bm25
+langchain
+langchain-community
+numpy
+
+llama-index
+llama-index-embeddings-huggingface 
+chromadb
+pytesseract
+ragas
+dataclasses
+langdetect 
+rank-bm25
+python-dotenv 
+requests
+pip uninstall -y transformers sentence-transformers accelerate torch
+pip install sentence-transformers
+pip install pandas openpyxl
+pip install pyannote.audio
+pip install llama-index
+
+
+pip install pymupdf python-pptx pytesseract Pillow pandas tqdm openpyxl langdetect

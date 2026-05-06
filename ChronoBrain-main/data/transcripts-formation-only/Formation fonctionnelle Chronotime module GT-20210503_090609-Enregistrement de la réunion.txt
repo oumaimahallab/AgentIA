@@ -1,0 +1,740 @@
+[00:00 -> 00:07] Bon, on a fait la semaine dernière une première approche, on a vu déjà quand même pas mal
+[00:07 -> 00:17] de choses. On a vu dans les quatre espaces, donc l'espace manquante, là c'est un collaborateur
+[00:17 -> 00:24] géré dans ChronoTime qui peut agir pour son propre compte, c'est-à-dire poser ses
+[00:24 -> 00:30] demandes d'absence, poser ses demandes de régularisation, faire des demandes de badgeage, badger ici,
+[00:30 -> 00:43] aller voir son agenda, consulter sa fiche. On a l'espace mon équipe, là c'est un espace de
+[00:43 -> 00:51] responsable, de gestionnaire, c'est-à-dire un utilisateur qui va pouvoir gérer voir d'autres
+[00:51 -> 01:00] personnes que lui. Lui y compris, éventuellement, c'est une partie de la même population. On a l'espace
+[01:00 -> 01:07] référentiel, où là on a la codification de toutes les tables de base, tout le référentiel, donc
+[01:07 -> 01:17] dans ce référentiel on a fait un focus sur, dans le menu organisation, les structures on les a
+[01:17 -> 01:26] pas vus, on a vu les données collaborateurs avec la notion de contrat type. Le contrat type,
+[01:26 -> 01:33] si vous vous souvenez, c'est un ensemble d'informations qui sont plutôt d'ordre contractuel, avec le taux
+[01:33 -> 01:41] d'activité, si c'est cadre ou pas, le nombre d'heures par semaine, annuel, annuel, et puis
+[01:41 -> 01:47] éventuellement d'autres informations, des informations complémentaires, que l'on peut paramétrer en
+[01:47 -> 01:56] plus pour enrichir les formulaires, que l'on paramètre, il faut faire un petit rappel, dans le
+[01:56 -> 02:05] référentiel paramètre définition des caractéristiques paramétrables. Là on a un groupe d'informations
+[02:05 -> 02:11] complémentaires paramétrables pour chacune des entités qui peuvent être concernées par l'ajout
+[02:11 -> 02:23] d'informations, justement. On a dit qu'on va revenir au calendrier. Oui, alors on va venir au
+[02:23 -> 02:28] calendrier effectivement, donc ici on a vu, je refais un petit tour sur toutes ces tables,
+[02:29 -> 02:38] ici les contrats types, les catégories, les métiers sont des tables simples. On a vu la notion
+[02:38 -> 02:45] d'horaire, les découpages journaliers, que l'on associe au sein de programmes,
+[02:45 -> 02:53] programmes que l'on associe au sein de cycles éventuellement. Les horaires de référence qu'on
+[02:53 -> 03:00] affecte sur l'affiche collaborateur, c'est ou un programme horaire hebdomadaire ou programme en jour
+[03:00 -> 03:12] ou un cycle, cycle de programme hebdomadaire ou cycle de programme en jour. Et les horaires journaliers,
+[03:12 -> 03:18] ce sont les découpages d'une journée et ces horaires, on va pouvoir les utiliser ou bien
+[03:18 -> 03:23] pour constituer des horaires de référence, programme en cycle ou bien affecter directement
+[03:23 -> 03:27] ces horaires sur des collaborateurs en tant que horaires exceptionnelles.
+[03:27 -> 03:38] Bon, on a une petite notion, on a vu un petit peu ce qui se passait avec les régularisations,
+[03:38 -> 03:50] on y reviendra si besoin. Et on a vu une information, une action importante,
+[03:50 -> 03:57] c'est les valeurs, tous les paramètres par domaine, nos 477 paramètres qui permettent
+[03:57 -> 04:02] d'ajuster le comportement de l'application sur tout un tas de points. On a vu qu'il y a
+[04:02 -> 04:08] beaucoup de paramètres qui permettent de faire fonctionner l'appli un peu différemment.
+[04:08 -> 04:18] Alors, ce qu'on avait dit ici, est-ce qu'on a récupéré du monde là ? On a récupéré
+[04:18 -> 04:27] Khalid, bonjour Khalid, Nicolas. Bonjour. Bonjour Christine, bonjour Rathaus.
+[04:27 -> 04:37] Bonjour Rathaus. Il nous manque Deloade et M6, on verra, de toute façon, comme c'est
+[04:37 -> 04:42] enregistré, on va pouvoir revenir, il faut revoir le début du passage.
+[04:42 -> 04:53] Et au niveau des utilisateurs, on a fait un premier tour sur les utilisateurs, c'est-à-dire
+[04:53 -> 05:00] qu'on a vu que quand on crée un collaborateur, ça crée automatiquement l'utilisateur associé,
+[05:00 -> 05:05] parce que le paramètre par domaine crée user dit que quand je crée un collaborateur,
+[05:05 -> 05:10] je crée automatiquement l'utilisateur associé, mais que cet utilisateur,
+[05:10 -> 05:14] pour lui donner des droits d'accès à l'application, il faut lui rajouter un ou
+[05:14 -> 05:20] plusieurs profils d'utilisateurs, appuyer sur une configuration de navigation. Et c'est ça
+[05:20 -> 05:24] qui va lui donner le droit de se connecter à l'application et d'aller
+[05:24 -> 05:28] faire certaines actions sur certaines populations.
+[05:28 -> 05:42] Alors, on est allé dans le détail de la gestion d'horaires, dans la constitution des horaires,
+[05:42 -> 05:47] horaires, programmes et cycles. On a affecté des horaires journaliers en tant qu'horreur
+[05:47 -> 05:51] exceptionnel à des collaborateurs. C'est ce qui fait que dans le planning,
+[05:51 -> 06:02] ou dans les différents écrans, l'horaire, il arrive avec une petite astérique se devant.
+[06:02 -> 06:21] On a vu aussi qu'on pouvait créer des populations ici et que quand on crée une
+[06:21 -> 06:28] population, on peut ensuite l'utiliser pour l'appliquer à la session,
+[06:28 -> 06:34] enfin à l'écran visualisé. Il y a tout l'espace mon équipe parce que c'est une population transversée.
+[06:34 -> 06:42] Et là, j'essaie de voir mes horaires exceptionnelles et j'en vois pas, ah si j'en ai un ici, voilà.
+[06:42 -> 06:53] Osam, son prénom, c'est Osam ou M6 ? Je n'ai rien de doute là, c'est Osam ? Normalement, c'est Osam.
+[06:53 -> 07:03] Je tiens, c'est Osam. Bonjour. Donc voilà, on voit que ce petit astérique s'indique que
+[07:03 -> 07:09] c'est un horaire exceptionnel, donc c'est venu surcharger la journée avec cet horaire.
+[07:09 -> 07:23] Et quand j'ouvre la vue journée avec ce petit bouton, ici, et que je survole l'horaire,
+[07:23 -> 07:31] je vois que son horaire de référence indique que c'est l'horaire du mercredi du programme
+[07:31 -> 07:37] numéro 1 à semaine admine, du programme hebdomadaire. Donc il devrait prendre l'horaire du mercredi,
+[07:37 -> 07:43] l'horaire numéro 3, la journée admine, et je vois que en haut de l'infobule, j'ai
+[07:43 -> 07:46] horaire exceptionnelle, horaire matin, Osam. Donc c'est l'horaire exceptionnel qui a été posé.
+[07:46 -> 07:53] Et si je veux, je clique sur l'horaire, si je veux revenir à l'horaire théorique,
+[07:53 -> 08:01] j'appuie sur ce bouton, sinon je peux aussi changer ici, si je supprime.
+[08:01 -> 08:10] Ça ne vous fait rien, oui. Aussi, un horaire obligatoire. Alors, oui, pour revenir,
+[08:10 -> 08:15] ou alors, pardon, je peux surcharger par un autre horaire aussi.
+[08:15 -> 08:29] Ah bon. Qu'est-ce qu'il me fait ?
+[08:29 -> 08:47] Qu'est-ce qu'il me fait ? Si je fais ça, je vais faire établir l'horaire théorique,
+[08:47 -> 08:53] ça va me supprimer cette horaire-là, mais je devrais pouvoir choisir un autre horaire exceptionnel,
+[08:53 -> 09:01] par exemple celui-là. Et là, il me propose d'enregistrer. Donc je peux changer l'horaire
+[09:01 -> 09:11] exceptionnelle que j'ai posé sur cette journée. Bon, peu importe. Voilà, sur ces horaires de
+[09:11 -> 09:17] référence, c'est les horaires exceptionnels qui viennent s'appliquer si je les saisis en surcharge.
+[09:17 -> 09:26] Maintenant, ce qu'on va voir aujourd'hui, c'est l'utilisation. Alors, qu'est-ce que j'ai ici ?
+[09:26 -> 09:49] Excusez-moi, j'ai 14h05. Je ne vais pas répondre à ça. Alors, ce qu'on va voir, c'est quand
+[09:49 -> 09:54] quelqu'un a un horaire de référence qui dit, je travaille du lundi au vendredi et puis le samedi
+[09:54 -> 10:05] le dimanche, je suis en repos, c'est vrai sur une semaine normale. Et on peut considérer que si j'ai
+[10:05 -> 10:11] un jour exceptionnel, si j'ai un jour ferrier qui survient sur cette semaine-là, par exemple un
+[10:11 -> 10:19] horaire, un jour ferrier qui survient le mardi, peut-être que je vais avoir un comportement de mon
+[10:19 -> 10:23] horaire attendu différent. Peut-être que je vais être en repos ferrier, peut-être que je ne vais
+[10:23 -> 10:28] pas travailler le jour ferrier. Peut-être que je vais travailler malgré tout, mais peut-être sur
+[10:28 -> 10:35] un horaire différent. Donc, je vais avoir un comportement de mon horaire attendu qui peut varier en fonction
+[10:35 -> 10:42] de la journée, de l'outil de journée sur lequel je suis. Si c'est un jour ferrier, si c'est un jour
+[10:42 -> 10:50] exceptionnel, voilà, il ne faut pas avoir une variation. Alors, pour gérer ça, on passe par
+[10:50 -> 11:00] les calendriers des jours ferriers exceptionnels. Là, on est dans le référentiel des calendriers.
+[11:00 -> 11:15] Bonjour. Pas de soucis, bonjour. Alors, avant de vous montrer les calendriers,
+[11:15 -> 11:23] j'irviendrai, je vais vous montrer comme ça. Donc, au niveau des calendriers, j'ai plusieurs
+[11:23 -> 11:27] types de calendriers et entre autres, j'ai le calendrier des jours ferriers exceptionnels.
+[11:27 -> 11:38] Alors, si j'ouvre ce menu, j'ai trois actions possibles et on va déjà voir la liste détaillée.
+[11:38 -> 11:43] Non, pardon. La définition, excusez-moi. La définition des jours ferriers exceptionnels.
+[11:43 -> 12:00] Pour cette action, elle m'ouvre le calendrier annuel et elle m'indique sur ce calendrier les
+[12:00 -> 12:07] jours ferriers ou exceptionnels qui surviennent pendant cette année. Alors, vous voyez, là,
+[12:07 -> 12:15] j'ai l'année 2021. On verra structure administrative. Là, j'ai structure complète. On ira un petit
+[12:15 -> 12:22] peu plus loin ensuite sur cette notion de structure. Mais vous voyez que, alors là, on est sur un
+[12:22 -> 12:31] calendrier français. C'est-à-dire qu'on a comme jour ferrier le 1er janvier, le 1er mai,
+[12:31 -> 12:43] le 8 mai, le 13 mai, c'est l'ascension. On a le 5 avril, c'est pas qu'on a le 14 juillet,
+[12:43 -> 12:54] la fête nationale, le 15 août, encore une fête religieuse, le 11 novembre, donc notre fête de
+[12:55 -> 13:04] l'armistice, le 1er novembre et le 25 décembre pour Noël. Donc là, on a les jours ferriers légaux
+[13:04 -> 13:19] en France. Si je me positionne sur 2022 ici et que j'actualise le calendrier. J'ai un calendrier qui
+[13:19 -> 13:31] est vide. Pour mettre en place, pour indiquer en fait les jours ferriers légaux, je peux le faire
+[13:31 -> 13:37] ou bien à la main. C'est-à-dire que je me positionne sur le 1er janvier, sur la série du
+[13:37 -> 13:46] 1er janvier et je double-clique. Et ça m'ouvre une pop-up qui me dit, qui me demande la nature
+[13:46 -> 13:50] du jour. Est-ce que c'est un jour ferrier ? Est-ce que c'est un jour normal ? Est-ce que j'ai un jour
+[13:50 -> 13:55] ferrier ou est-ce que c'est un jour exceptionnel ? Parce que dans une organisation, je peux avoir des
+[13:55 -> 14:00] jours exceptionnels. Par exemple, dans les collectivités, on a la journée du maire. Le maire,
+[14:00 -> 14:09] il donne une journée de congé à ses agents. On a dans une entreprise privée, peut-être qu'il
+[14:09 -> 14:16] y a des entreprises qui ferment la société certains ponts. Par exemple, entre le 1er mai,
+[14:16 -> 14:24] enfin, s'il y a un jour ferrier qui occasionne un pont avec un weekend. Un jour de l'inventaire.
+[14:24 -> 14:32] Le jour d'inventaire, absolument. Je ferme l'entreprise. J'ai pas des horaires habituelles,
+[14:33 -> 14:41] mais les gens vont avoir peut-être des horaires différents. Donc, je vais dire, le 1er janvier,
+[14:41 -> 14:52] c'est un jour ferrier. Et puis, là, je vais donner, qu'est-ce que je fais en global majoritairement ?
+[14:52 -> 14:59] Qu'est-ce que je fais pour les horaires des gens le 1er janvier ? Est-ce que je maintiens l'horaire ?
+[14:59 -> 15:05] Je laisse l'horaire normale. Où est-ce que je remplace l'horaire ? Par un horaire journalier. Et
+[15:05 -> 15:10] là, je choisis l'horaire journalier que je vais appliquer. Par exemple, je vais mettre tout le
+[15:10 -> 15:21] monde en repos, en repos ferrier. Ou alors, j'ai une troisième solution qui est de dire, là, si vous
+[15:21 -> 15:28] voulez, si je fais ça, ça va mettre tout le monde en repos ferrier dans l'organisation le 1er janvier.
+[15:28 -> 15:38] Et puis, je peux aussi avoir le choix de dire, j'ai des personnes qui vont être en repos,
+[15:38 -> 15:44] effectivement, mais j'ai certains services qui doivent continuer à travailler. Et là,
+[15:44 -> 15:51] du coup, je vais dire que c'est un type de jour exceptionnel et je vais typer mon jour exceptionnel.
+[15:52 -> 15:56] Je veux dire, par exemple, c'est un ferrier de type ferrier.
+[16:03 -> 16:12] Voilà. Alors, généralement, ce qu'on trouve, vous voyez que si ici, je me mets en 2021 et que
+[16:12 -> 16:22] j'actualise le horaire journalier, en fait, tous mes jours ferriers légaux sont avec cette
+[16:22 -> 16:31] information unique. C'est-à-dire qu'ils sont tous, si je double clique, en 2021, ils sont tous
+[16:31 -> 16:39] codifiés comme ça, jour ferrier et ils ont tous un type de jour exceptionnel ferrier. Si je me
+[16:39 -> 16:53] remets en 2022, en fait, je vais supprimer, je vais revenir à ma situation initiale, c'est-à-dire
+[16:53 -> 17:00] mon calendrier vide. Comme les jours les ferriers légaux, l'outil les connaît pour la France. Je
+[17:00 -> 17:08] peux utiliser ce bouton, ce lien, générer les ferriers légaux. Et ça, se générer les ferriers
+[17:08 -> 17:17] légaux. Pour l'année 2022, tous les ferriers légaux qui sont connus dans le chrono-time,
+[17:17 -> 17:26] qui sont les jours français, on va dire, c'est comme si on disait, ici, c'est les ferriers
+[17:26 -> 17:34] de type F1. Et je génère. Et du coup, ça va aller me positionner ce type de ferrier F1 sur
+[17:35 -> 17:40] cette notion d'unique sur tous les jours ferriers légaux. Mais je pourrais aussi dire,
+[17:40 -> 17:49] ok, je type, enfin, je veux générer mes jours ferriers légaux sur mon calendrier parce que je
+[17:49 -> 17:54] veux pouvoir les repérer après dans les règles de calcul et dans les écrans. Mais par contre,
+[17:54 -> 17:59] moi, dans mon organisation, ferrier pas ferrier, les gens, majoritairement, ils bossent tous.
+[17:59 -> 18:04] Donc du coup, je pourrais très bien dire, je maintiens le rayon normal. Ou encore,
+[18:04 -> 18:11] je pourrais très bien dire, là, par défaut, les gens ils bossent pas. Donc je les mets tous en
+[18:11 -> 18:20] repos ferriers. Il y a des gens qui ont fait des trucs dans l'omple du temps.
+[18:20 -> 18:48] Voilà, c'est l'on de trucs que j'aime beaucoup, ça. Ok. Ça veut dire que ici, je ne vais pas pouvoir
+[18:48 -> 18:59] faire ça. Si je dis ferrier, je ne peux pas générer. Génial. Génial. Bon, alors, je vais essayer.
+[18:59 -> 19:08] Christine, c'est pas lié à la structure organisationnelle. Non, non, non, non, ça dit que c'est parce
+[19:08 -> 19:11] qu'il y a des événements qui sont déjà issus de l'emploi du temps, des emplois du temps,
+[19:11 -> 19:16] c'est une action qu'on n'a pas vue encore, qui me permet de générer des événements en fait
+[19:16 -> 19:30] de façon récurrente sur une période future. Et c'est ça qui nous me bloque, là. Je vais le faire
+[19:30 -> 19:38] sur 2023. Je devrais y arriver. Si j'essaie de générer, je vais refaire les go. Sur 2023,
+[19:38 -> 19:52] je vais dire que je vais mettre tout le monde en recours ferrier ici. Voilà, en 2023, il veut bien
+[19:52 -> 19:57] parce que j'ai pas d'événements issus de la génération de l'emploi du temps. Voilà,
+[19:57 -> 20:02] et vous voyez que là, pour le coup, je ne vois pas arriver unique, je vois arriver horaire.
+[20:02 -> 20:17] Alors ça, quand je double-click sur une journée pour voir le détail, je vois que c'est un jour ferrier
+[20:17 -> 20:25] et que l'horaire à appliquer, c'est un repos ferrier. Maintenant, si je reviens sur 2022,
+[20:25 -> 20:31] je ne parviens pas à faire ça à cause des événements qui sont générés issus de l'emploi
+[20:31 -> 20:37] du temps. Comme je ne peux pas utiliser ce lien complet, là, ça veut dire qu'il va falloir que je
+[20:37 -> 20:47] me les farcisse tous à la mime. Voilà, je vais dire, ici, je peux dire que c'est un repos ferrier,
+[20:47 -> 21:15] etc. Le 1er janvier, le 1er mai, ici. Bon, je ne vais pas les faire tous. Enfin, c'est l'idée.
+[21:15 -> 21:25] Ce lien pour les Français, ça permet de générer automatiquement les jours ferriers légaux sur
+[21:25 -> 21:35] un calendrier, sur l'année à venir, pour qu'il soit mis en place, parce que certes, on pourrait nous
+[21:35 -> 21:39] dire, oui, mais on peut les générer, il n'y a qu'à les mettre automatiquement les jours ferriers,
+[21:39 -> 21:49] puisqu'on les connaît. C'est un calendrier des jours ferriers pour l'année 2021. On peut étendre
+[21:49 -> 21:57] cette affectation pour l'année 2022, toujours à travers les boutons gérés des jours légaux,
+[21:57 -> 22:04] les ferriers légaux. Mais les ferriers légaux, les ferriers légaux que vous avez, le lien,
+[22:04 -> 22:14] ils vous génèrent vos jours ferriers à vous ? Je pense à la question. Justement. Aujourd'hui,
+[22:14 -> 22:23] on ne sait pas générer des jours ferriers légaux sur un pays hors France. Vous êtes obligé,
+[22:23 -> 22:28] vous ne pouvez pas utiliser ce lien. Vous êtes obligé de vous les positionner un par un sur le
+[22:28 -> 22:38] calendrier. Donc en traite, année par année ? Voilà, année par année et date par date. Par exemple,
+[22:38 -> 22:46] je ne sais pas, le premier jour ferrier, sur 2022, pour vous, c'est quoi ? On a aussi le jour de l'an,
+[22:46 -> 22:54] peut choisir, par exemple, le 6 novembre. Le 6 novembre, oui. C'est un jour ferrier pour nous.
+[22:54 -> 23:00] Et vous maitriez, ça dépend, ça dépend de l'organisation.
+[23:00 -> 23:05] Survey 1, pas exemple. Survey 1. Ok, d'accord.
+[23:05 -> 23:16] Ok, donc vous voyez, sur 2022, j'ai une différence entre la gestion du 6 novembre,
+[23:16 -> 23:23] qui est un jour ferrier légal, mais avec un type de jour ferrier. Et sur ces deux journées là,
+[23:23 -> 23:30] où j'ai dit que c'est un ferrier légal, mais je remplace par un horaire journalier repos ferriers,
+[23:30 -> 23:45] horaire numéro 2. Et on va voir la différence. Alors, la différence, je vais me positionner sur le
+[23:45 -> 24:02] planit. Toujours sur ma population d'avril. Et ici, je vais me mettre au 1er janvier 2022.
+[24:02 -> 24:21] Voilà. Et oui, pour tout le monde, alors je vais prendre une période un petit peu plus,
+[24:21 -> 24:30] je vais me prêter ici. On va prendre la dernière semaine. Et puis, je vais aller jusqu'au 9.
+[24:30 -> 24:46] Voilà. Je vais vous montrer, c'est que vous voyez, là je consulte le planning à fin décembre 2021,
+[24:46 -> 24:51] début 2022. J'ai mes horaires issus de l'horaire de référence qui est positionné sur les fiches.
+[24:52 -> 25:03] Et le 1er janvier, normalement, on devrait être, a priori, en repos hebdo. C'est pas sûr d'ailleurs,
+[25:03 -> 25:11] que Nicole n'est pas ici. Quand je survole, voilà. Quand je survole, je vois que l'horaire issu de
+[25:11 -> 25:15] l'horaire de référence, ça devrait être le repos hebdo. Mais qu'en fait, l'horaire appliquée,
+[25:15 -> 25:26] c'est le repos ferrier. Parce que, sur le 1er janvier, j'ai dit, je remplace l'horaire de référence
+[25:26 -> 25:39] par l'horaire numéro 2 qui est le repos ferrier. Automatiquement. Maintenant,
+[25:39 -> 25:57] si je me positionne au 6 novembre 2022, j'espère que je vais pouvoir y aller,
+[25:57 -> 26:02] que ce n'est pas trop loin dans le passé, dans le futur. Sinon, le 1er janvier 2022.
+[26:09 -> 26:15] Voilà. Je prends une période d'un taux qui ne peut plus large. C'est le dimanche.
+[26:28 -> 26:34] Voilà. Là, je vois que j'ai mes horaires de référence, mes horaires journalistiques issus de l'horaire de
+[26:34 -> 26:42] référence qui arrive. Mais que le 6 novembre, cette fois, j'ai pas un repos ferrier, j'ai rien.
+[26:42 -> 26:51] J'ai rien du tout. Et si je calcule la journée, bon, je suis dans le futur là, donc je
+[26:51 -> 26:55] peux pas la calculer, mais j'aurai une anomalie parce qu'il ne veut pas d'une journée où je
+[26:55 -> 27:03] n'ai pas d'horaires. Alors pourquoi j'ai pas d'horaires ? Parce que quand je dis au niveau du
+[27:03 -> 27:17] calendrier que mon type de jour, mon type d'horaire, j'ai un bug là.
+[27:17 -> 27:34] C'est un ancien bug. On l'a constaté sur les anciennes versions.
+[27:34 -> 27:53] Donc là, au 1er janvier, il prend l'horaire de repos ferrier puisque c'est ce que je lui ai mis.
+[27:53 -> 28:01] Par contre, là, sur unique, j'ai dit que c'est un type de jour ferrier. Dans ces cas-là,
+[28:01 -> 28:09] ce qui fait, c'est que ça dépend du programme de référence, du programme affecté à la personne.
+[28:09 -> 28:21] Alors là, si je remonte la piste, le problème, c'est que justement, sur cette journée,
+[28:21 -> 28:25] je ne peux pas avoir, comme je n'ai pas d'horaires, je n'ai même pas de visuel,
+[28:25 -> 28:30] je n'ai pas d'infobules pour voir quel est l'horaire de référence de Abdeshamad ce jour-là.
+[28:30 -> 28:37] Donc je vais être obligé de mettre sur une autre journée. Je mets sur la veille, le 5,
+[28:37 -> 28:44] et quand je survole, là, cette horaire, je vois que son horaire de référence,
+[28:44 -> 28:50] c'est le programme semaine admine. Et c'est un programme hebdo, semaine admine, le programme 1.
+[28:50 -> 29:01] Donc là, je vais dans le référentiel, je vais voir le programme 1, semaine admine.
+[29:01 -> 29:08] Vous vous rappelez qu'on l'a constitué le programme avec les différents découpages
+[29:08 -> 29:14] journalistiques. Mais là, on n'est pas allé voir, on a d'autres volets, on a deux autres volets,
+[29:15 -> 29:25] notamment l'horaire des jours exceptionnels. Et dans ce volet, j'indique quel est le comportement
+[29:25 -> 29:31] des horaires du programme quand on rencontre un jour ferrier. Quand ce programme est associé à
+[29:31 -> 29:37] quelqu'un et que sur la date il y a un jour ferrier, qu'est-ce que je fais ? Et bien là,
+[29:37 -> 29:46] comme le type de jour et de type ferrier, il va prendre l'horaire indiqué sur la ligne du type
+[29:46 -> 29:52] de jour exceptionnel F1. Et comme j'ai rien mis, eh bien il ne sait pas par quoi remplacer. Donc là,
+[29:52 -> 30:04] je mets sur ma ligne, il faut que je remplace ici, je vais dire peut-être que je ne sais pas,
+[30:04 -> 30:16] peut-être que ce jour-là, je travaille que le matin ou je vais prendre en retien un test
+[30:16 -> 30:21] formation Philippe, c'est juste pour exemple. Pour vous montrer qu'on peut mettre un horaire
+[30:21 -> 30:26] ferrier, enfin un horaire de repos, puis on peut aussi mettre un horaire de travail. Mais on
+[30:26 -> 30:50] met un code horaire. Et là maintenant, si je reviens sur mon planie. J'espère que ça va suffire de
+[30:50 -> 31:07] rafraîchissement, que je me positionne sur la période. Ah, il est le 1er novembre.
+[31:07 -> 31:32] Voilà, maintenant le 6 novembre, il a bien trouvé l'horaire de remplacement à appliquer. Quand je
+[31:32 -> 31:40] survole cet horaire-là, il a bien mis comme horaire test formation Philippe. Il voit que l'horaire issu du
+[31:40 -> 31:47] programme Semaine admine, c'était l'horaire de repos Hebdo, mais il a remplacé automatiquement par
+[31:47 -> 31:55] l'horaire 55 test formation Philippe. Parce que le programme Semaine Hebdo indique que quand le
+[31:55 -> 32:05] type de jour ferrier, c'est un ferrier, je vais appliquer cet horaire-là. Et là, je n'ai pas d'horaire
+[32:05 -> 32:15] exceptionnel. C'est un horaire de remplacement. Et si je vais sur les autres, sur Khalid, j'ai aussi
+[32:15 -> 32:20] l'horaire de remplacement, l'horaire test formation Philippe, parce que j'ai aussi le programme
+[32:20 -> 32:29] Semaine admine, c'est doit être vrai pour Osam et pour Nurétine. Voilà, j'ai un programme Semaine admine
+[32:29 -> 32:37] et Nurétine, j'ai aussi un programme Semaine admine. Par contre, pour ceux qui n'ont pas d'horaire de
+[32:37 -> 32:47] remplacement, Véronique, si je me mets sur la veille pour Véronique, je vois que son horaire, c'est le
+[32:47 -> 32:58] programme horaire Véro, le 710. Et le programme horaire Véro, et bien, sur son paramétrage du volet
+[32:58 -> 33:03] des comportements des jours ferriers, il n'y a pas d'horaire de remplacement indiqué sur le type ferrier.
+[33:03 -> 33:15] Ça doit être vrai aussi pour Christian Korn. Moi, je suis sur le cycle CCO formes cycle
+[33:15 -> 33:21] PG, et donc là, c'est le programme CCO, programme en jour, et j'ai sûrement pas mis d'horaire de
+[33:21 -> 33:36] remplacement sur le type F1. Normalement, pourquoi il n'y a plus le repos hebdo, l'horaire hebdomadaire,
+[33:36 -> 33:43] parce qu'au moins, sur la partie blanche, au moins, il devrait avoir l'initial, non ? Alors il ne fait
+[33:43 -> 33:53] pas comme ça, il ne fait pas comme ça. Il l'applique. Quand il est sur une journée pour rechercher
+[33:53 -> 34:00] l'horaire, le planning ou la vue journée, enfin, la première chose qu'il fait, c'est qu'il regarde
+[34:00 -> 34:05] s'il y a un horaire exceptionnel, il surcharge d'un horaire journalier sur la journée. Il y en a,
+[34:06 -> 34:16] il n'y en a pas. S'il y en a un, c'est celui-là qu'il applique. S'il n'y en a pas, il regarde l'horaire
+[34:16 -> 34:23] de référence, c'est-à-dire le programme qui s'applique ce jour-là et le code horaire journalier
+[34:23 -> 34:29] qui devrait s'appliquer ce jour-là. Mais il regarde aussi en fonction du type de jour,
+[34:30 -> 34:36] s'il y a un horaire de remplacement qui doit être posé par le calendrier, et c'est ce qui
+[34:36 -> 34:41] prime, en fait. S'il y a un horaire de remplacement qui doit être posé, parce que ce jour-là,
+[34:41 -> 34:48] le type de rinvaux, c'est un jour exceptionnel ou un jour ferrier, il prend l'horaire de
+[34:48 -> 34:52] remplacement ou bien il prend le code horaire journalier qui est indiqué, le repos ferrier,
+[34:52 -> 34:59] comme j'ai mis dans le calendrier, ou bien il va chercher l'horaire qui est indiqué sur la ligne
+[34:59 -> 35:06] F1, parce que si j'ai mis un type de jour ferrier F1. Et s'il ne trouve pas cet horaire, il ne m'est rien,
+[35:06 -> 35:16] mais voilà, c'est son fonctionnement. C'est pour éviter qu'il y ait justement une non gestion,
+[35:16 -> 35:20] enfin une non maîtrise, parce que là, quand il n'y a pas d'horaire, on le voit. On voit qu'il y a
+[35:21 -> 35:27] un problème sur le programme. Le programme, il lui manque un truc. On a dit au niveau du calendrier,
+[35:27 -> 35:37] ce type de jour, ce jour-là, ce jour ferrier, ça dépend du programme et comme des programmes,
+[35:37 -> 35:40] je peux en avoir plusieurs, je peux en avoir plusieurs différents affectés aux personnes.
+[35:40 -> 35:50] Je suis obligé de dire sur chacun des programmes, sur ce programme-là, c'est ça qui doit se passer.
+[35:50 -> 35:58] Je dois être en repos ou je dois maintenir mon horaire de travail ou voilà. Je suis obligé de le dire.
+[35:58 -> 36:14] Donc là, Véronique, Nicole, moi, on rajoute sur le programme,
+[36:14 -> 36:35] si je vais prendre mon compte. Ici, c'est le programme en jour 5.
+[36:45 -> 36:53] Voilà. Sur ce volet, sur l'horaire des jours exceptionnels, j'ai rien mis sur la ligne F1,
+[36:53 -> 37:02] donc il ne se passe rien. Alors sur ce volet, là, si je mets quelque chose sur la ligne ferrier 2,
+[37:03 -> 37:06] ça va être sans impact sur le 6 novembre.
+[37:06 -> 37:22] Par exemple, je vais dire que tu es ici. Je suis de matin. Le ferrier 2. Le ferrier 1.
+[37:22 -> 37:30] Je vais dire que je suis en télétravail.
+[37:30 -> 37:47] Et maintenant sur mon calendrier, si je dis que le 1er mars, je vais mettre sur la même période.
+[37:47 -> 37:58] Je vais dire que le 7 novembre, c'est un jour exceptionnel et que c'est un jour exceptionnel
+[37:58 -> 38:09] de type ferrier 2. Voilà. Il met une différence de couleur entre le ferrier et le exceptionnel.
+[38:09 -> 38:13] Et que je reviens sur le plan Y.
+[38:39 -> 39:07] Je fais ça pour aller plus vite. Ici, ici, c'est plein de ligne.
+[39:07 -> 39:35] Voilà. Alors,
+[39:37 -> 40:06] je vais dire que c'est un jour exceptionnel de type ferrier 2.
+[40:06 -> 40:17] Je suis en 2022, novembre.
+[40:17 -> 40:34] Je me demande si tu n'as pas changé de programme entre les deux.
+[40:34 -> 40:52] Je comprends. Si tu n'étais pas sur cinq jours, là.
+[40:53 -> 41:02] Oui, parce que c'est un cycle. On ne sait pas le bon programme que j'ai modifié.
+[41:02 -> 41:13] C'est le suivant qu'il faut modifier. C'est sur cinq jours et le petit truc qui commence le
+[41:13 -> 41:17] mardi, là, c'est plus quante, donc deux jours, ça fait cinq, on arrive en septembre.
+[41:18 -> 41:22] Oui, et je dois enchaîner sur le suivant. Et comme je ne vois pas,
+[41:22 -> 41:30] c'est celui-là qu'il faut que je regarde. Voilà, c'est le 66.
+[41:30 -> 41:42] Vous avez compris la remarque de Sophie. En fait, mon horaire de référence,
+[41:42 -> 41:53] c'est un cycle de programme en jour. Et ici, je vois que le mardi 8,
+[41:53 -> 42:05] je suis sur le programme numéro 2 de mon cycle, le code de 66. Et là, je ne peux pas le voir.
+[42:05 -> 42:23] Et ici, avec le cycle, je suis sur le programme 66. Et ici, je ne peux pas le voir,
+[42:23 -> 42:32] mais si je me mets ici, je suis sur le programme. Le premier programme de mon cycle,
+[42:32 -> 42:40] c'est-à-dire le programme de code 5. Et c'est un programme de cinq jours et il doit sûrement
+[42:40 -> 42:49] s'arrêter. Il démarre ici, c'est mon début de cycle. Je ne sais pas quel début de cycle. Est-ce
+[42:49 -> 42:56] que c'est vraiment le mardi, le début du... Ah ben si, parce que je vois le petit créneau.
+[42:56 -> 43:07] C'est le début du cycle. C'est le début du cycle. Quand j'ai un cycle, c'est le début du cycle,
+[43:07 -> 43:18] ce n'est pas le début du programme du cycle. Pardon ? Je me demande si tu regardes comment
+[43:18 -> 43:31] c'est composé de ton cycle. Oui, oui, mais ça doit être ça. Au niveau de mon cycle horaire,
+[43:31 -> 43:44] c'était, je crois que c'est celui-là. Voilà, chez ce programme 5 et ce programme 66. Et ce sont tous les
+[43:44 -> 43:53] deux des programmes de cinq jours. Effectivement, c'est comme ça. Moi, j'ai modifié le programme 5,
+[43:53 -> 44:03] le volet des jours exceptionnels du programme 5. Mais en fait, ça me dit, je suis sur le programme
+[44:03 -> 44:18] 66. Je passe au programme 66. Donc le programme 66 ici. Alors ici, je ne sais plus ce que j'avais mis.
+[44:18 -> 44:38] Enferrier 1, je crois que j'avais mis teletravail. Et enferrier 2, je vais mettre un matin 6-13.
+[44:38 -> 44:57] Je vérifie mes horaires initiaux. Voilà. J'ai des journées administratives. Alors là,
+[44:57 -> 45:04] je comprends pas par contre. J'ai un horaire teletravail là-dessus. Déjà. Il ne faut pas que je prenne
+[45:04 -> 45:19] cette horaire là. Ça va, on va se mélanger les pinceaux. Donc on va prendre celui-là.
+[45:19 -> 45:34] Testamel et matin. Enferrier 1 et enferrier 2. Donc je reprend ici. Celui-là, le 6, c'est
+[45:34 -> 45:44] un ferrier 1. Le 7, c'est un ferrier 2. Sur mon programme, j'ai le testamel, enferrier 1 et
+[45:44 -> 45:55] matin enferrier 2. Donc je reviens sur le planning. Il faut que je réfléchisse.
+[46:14 -> 46:32] Voilà. Là maintenant, j'ai mes horaires de remplacement. En place. Donc ça, c'est mon premier programme,
+[46:32 -> 46:38] ce fameux programme 5. 1, 2, 3, 4, 5 jours. Et là, je démarre le deuxième programme du cycle
+[46:38 -> 46:45] sur 5 jours, 3 et 2, 5. Et là, si je double-clique sur cette vue journée.
+[46:45 -> 46:59] Voilà. Je vois que l'horaire normal issu du programme de référence, ce serait l'horaire
+[46:59 -> 47:06] numéro 3, la journée admine. Mais que l'horaire de remplacement, c'est testamel. C'est-à-dire
+[47:06 -> 47:22] l'horaire qui est positionnée sur le ferrier 1. Non. Si, c'est ça, sur le ferrier 1. Et cette journée-là,
+[47:22 -> 47:34] il prend l'horaire matin parce que je l'ai positionnée sur le type ferrier 2 et que le 7 novembre,
+[47:34 -> 47:36] c'est un jour exceptionnel de type ferrier 2.
+[47:36 -> 47:56] Alors, vous voyez, il y a plusieurs couches ici. Sur cette journée, c'est pas parce que j'ai
+[47:56 -> 48:03] un horaire de remplacement. Par exemple, si je prends le 6 novembre sur ce type ferrier 1. Je me
+[48:03 -> 48:08] positionne sur l'horaire. Je vois que j'ai un horaire de remplacement issu du calendrier
+[48:08 -> 48:15] des ferriers, ce fameux testamel. Et ça ne m'empêche pas de mettre un horaire exceptionnel.
+[48:15 -> 48:37] Il ne veut pas que je fasse une saisie aussi loin. Alors 2021, ce que je vais faire, c'est que je vais
+[48:37 -> 48:43] augmenter le paramètre qui me permet de faire de la saisie dans le futur.
+[48:43 -> 48:59] Les paramètres par domaine. C'est un futur, je ne sais pas lequel. Profondeur de saisie dans le futur.
+[48:59 -> 49:08] Ici, je suis à 400 jours pour aller jusqu'à fin 2022. Je vais me mettre à 900, pour exemple.
+[49:08 -> 49:20] Tu ne peux pas modifier la date du système pour se positionner sur l'exercice ou sur la date
+[49:20 -> 49:29] 2022 par exemple. Ah non, non. Moi, je ne me lance pas là-dedans. Je ne suis pas capable de bricoler
+[49:29 -> 49:34] ce genre de trucs. Non, non. Or technique. La question, c'est vraiment fonctionnel. C'est
+[49:34 -> 49:43] pas possible. Ah non, non, non. Donc là, je vais autoriser une profondeur dans le futur plus large.
+[49:43 -> 49:52] Et là, si je reviens sur mon planning, il va surtout m'en faire voir que je recharge.
+[50:34 -> 50:48] Ici, oui, je voulais vous montrer ça. Donc maintenant, je double-clique sur la cellule pour
+[50:48 -> 50:57] voir la vue journée. Je positionne sur l'horaire. Rien ne m'empêche de surcharger ici par repos ferrier.
+[51:04 -> 51:10] Voilà.
+[51:10 -> 51:25] Maintenant, on voit que c'est un horaire exceptionnel, le repos ferrier.
+[51:25 -> 51:37] C'est lui qui prend la main. Donc en priorité, il prend l'horaire exceptionnel. S'il n'y a pas,
+[51:37 -> 51:42] il prend l'horaire de remplacement éventuellement issu du calendrier des jours ferriers.
+[51:42 -> 51:54] Et si ce n'est pas un jour ferrier qui n'y a pas d'horaire de remplacement à chercher à appliquer,
+[51:54 -> 52:01] il prend l'horaire de référence, l'horaire journalier issu du programme de référence du
+[52:01 -> 52:12] collaborateur. Alors, attention. Lâche surcharge d'un horaire exceptionnel,
+[52:12 -> 52:24] par un horaire exceptionnel. Si maintenant, je modifie mon comportement au niveau des jours
+[52:24 -> 52:37] exceptionnels du calendrier et je dis que le 6 là, ce n'est pas un type de jour exceptionnel
+[52:37 -> 52:53] ferrier 1, mais que c'est un type de jour exceptionnel ferrier 2. J'applique.
+[52:53 -> 53:05] Alors quand je modifie les calendriers, moi je recharge parce que c'est des choses qui sont
+[53:05 -> 53:15] chargées assez haut dans le cache. Donc si je réouvre le planille.
+[53:36 -> 53:44] Sur ce dimanche là, ça ne change rien. Ça ne change rien parce que mon horaire exceptionnel
+[53:44 -> 53:48] y prime. En tout cas pour les calculs de la journée, ça ne va rien changer puisque
+[53:48 -> 53:54] c'est mon horaire exceptionnel qui est prioritaire. Par contre, si j'ai rétabli l'horaire théorique,
+[53:54 -> 54:15] l'horaire théorique, c'est l'horaire de remplacement du type ferrier 2. L'horaire théorique,
+[54:15 -> 54:18] c'est pas, vous comprenez là, c'est pas forcément la journée admine de l'horaire
+[54:18 -> 54:25] de référence 1. Là, ça va prendre l'horaire de remplacement qui est positionné sur la ligne
+[54:25 -> 54:36] type ferrier 2. De ce programme de 66 puisque j'ai dit maintenant que ceci novembre c'est
+[54:36 -> 54:53] plus un type ferrier 1, c'est un type ferrier 2. Alors on s'est positionné, est-ce que au niveau
+[54:53 -> 55:05] de la logique, c'est compris ? Est-ce que c'est un peu touchy mais ça va ? On va se positionner
+[55:05 -> 55:18] sur une période plus proche dans le planning. On est en mai, alors on est en mai. On va se
+[55:18 -> 55:29] positionner ici. On va dire deux semaines. Alors le planning pour l'afficher, on peut
+[55:29 -> 55:45] afficher jusqu'à six semaines, pas plus. On va dire six semaines à partir de la semaine dernière.
+[55:59 -> 56:13] Alors ce qui est vrai pour 2022 est vrai pour 2021. Le samedi premier et le dimanche 2,
+[56:13 -> 56:23] alors quelles sont sur 2021 ? Les jours ferriers qui sont positionnés. On va revenir à 2021.
+[56:23 -> 56:41] Vous allez voir comment ça s'applique pour vos collaborateurs. Là, les jours ferriers ils sont,
+[56:41 -> 56:51] alors vas-y mon dernier, 1, 2, 3, 4, 5, 6, ça va limiter, 6. Alors j'aurai quand même ces deux-là.
+[56:51 -> 57:01] Je vais plus tôt. Donc vous voyez, les mois d'avril et mai là, c'est des uniques types
+[57:01 -> 57:21] F1, F1, F1 et F1 partout. Donc ici je vais prendre six semaines à partir du mois dernier.
+[57:31 -> 57:39] Et pour le coup, il y en a un seul qui n'a pas d'horaire de remplacement, c'est Nicole.
+[57:39 -> 57:58] Parce que si je prends Véronique. Sur la semaine admise, elle est tuée en semaine admise. Donc du
+[57:58 -> 58:02] coup, ça a pris l'horaire de remplacement, test de formation Philippe qu'on a mis, que j'ai mis sur
+[58:02 -> 58:09] le type ferrier. Par contre, il n'y a pas quelqu'un d'autre qui avait un autre, il y avait moi,
+[58:09 -> 58:16] puis il y avait, qui sait qu'il était sur un autre programme que la semaine admise.
+[58:16 -> 58:32] Alors vous êtes tous, il n'y a que Nicole qui a un programme différent.
+[58:32 -> 58:57] C'est un programme en jour. Alors, Nicole, si tu modifies ton programme en jour,
+[58:57 -> 59:04] puisque c'est en horaire de référence et que tu mets effectivement un horaire de
+[59:04 -> 59:14] remplacement sur le type ferrier, tu vas récupérer un horaire de remplacement.
+[59:27 -> 59:41] Tu me dis quand c'est fait? La Christine, peut-être que j'ai raté une petite phase,
+[59:41 -> 59:54] mais pourquoi pour Nicole, il sera un horaire différent? Il pourra avoir un horaire différent,
+[59:54 -> 59:59] oui, un horaire de remplacement différent. Non, parce que tu n'as pas fait le fait de remplacer
+[59:59 -> 60:09] l'horaire X par Y. C'est-à-dire est-ce que tu as précisé par rapport au l'horaire précédent,
+[60:09 -> 60:20] celui de Admin, que voilà l'horaire remplacement. Ah oui, alors ici, vous avez tous un 9h17,
+[60:20 -> 60:29] vous avez un 9h17. Moi, j'ai un 9h20, 18h. Nicole, il n'a rien parce que vous,
+[60:29 -> 60:35] vous êtes en programme en horaire de référence semaine Admin.
+[60:35 -> 60:41] Et justement, c'est la question, est-ce que c'était en remplacement à l'horaire Admin?
+[60:42 -> 60:51] Oui, oui. Ici, vous avez normalement l'horaire du lundi, c'est journée Admin 3 et vous avez
+[60:51 -> 60:56] un horaire test formation Philippe 55, parce que vous êtes dans le programme semaine Admin.
+[60:56 -> 61:11] Et si je regarde le programme semaine Admin. Le programme semaine Admin sur les jours exceptionnels,
+[61:11 -> 61:18] sur le ferrier, il a test formation Philippe. Ok, donc je n'ai pas vu que tu avais modifié
+[61:18 -> 61:28] sur semaine Admin. Je croyais que c'était sur CCOPG, d'accord. Nicole, il est sur le cycle de
+[61:28 -> 61:37] 7 jours d'ENJ. Tu ne l'as pas modifié encore, Nicole? Je suis en train de chercher le endroit,
+[61:37 -> 61:45] je fais ça. C'est dans référentiel, gestion des temps, programme horaire.
+[61:45 -> 61:52] Et dans programme horaire, on est, quand on arrive sur les programmes horaires, on est sur les caractéristiques
+[61:52 -> 61:59] principales. Et il faut aller dans le volet des horaires des jours exceptionnels.
+[61:59 -> 62:11] Et mettre un horaire ici, en double-cliquant, mettre un horaire, l'horaire de ton choix,
+[62:11 -> 62:26] l'horaire de remplacement. Moi, j'ai un horaire à 9h28h, parce que je suis,
+[62:26 -> 62:39] alors, ce n'est pas ça. Je refis-moi sur le panning, ici.
+[62:39 -> 62:52] Alors, j'ai un horaire de remplacement test-amel, parce que je suis sur le programme 66, plan 9,
+[62:52 -> 63:10] que je le vois dans la fobule. Alors, je regarde le programme 66. Mon horaire de remplacement sur les
+[63:10 -> 63:27] fériéens, c'est test-amel. T'as pas mis d'horaire encore, Nicole ?
+[63:27 -> 63:40] Je ne dois pas s'insombrer comme il faut, mais je ne vois pas où aller cette option-là.
+[63:40 -> 63:43] Partage ton écran. Partage ton écran.
+[63:43 -> 64:01] Donc là, je suis dans les programmes horaires.
+[64:01 -> 64:09] Le programme qui est appliqué ce jour-là, c'est lequel ?
+[64:09 -> 64:14] Il faut que tu regardes dans le planning.
+[64:31 -> 64:41] Applique la population réduite en planning. Applique la population chronotime.
+[64:41 -> 65:02] Alors, mets-toi. Attends, je ne comprends pas. T'es sur quel jour-là ? Ah oui,
+[65:02 -> 65:09] t'es sur le 5. Mets-toi sur une autre journée, sur le lendemain.
+[65:09 -> 65:19] Et sur vol. Voilà, ton programme, c'est le DNJ cycle 7 jours.
+[65:32 -> 65:51] Là, tu vas dans le volet des horaires des jours exceptionnels. C'est le petit levier,
+[65:51 -> 65:55] le petit trian qui est à gauche de programme horaire du titre.
+[65:55 -> 66:11] Et là, sur férié 1, il faut que tu donnes le code horaire que tu veux utiliser pour ce programme
+[66:11 -> 66:16] quand tu rencontres un jour serréé. Tu doubles-cliques.
+[66:16 -> 66:45] Prends une équipe de jour, là, le 12 heures. Le code horaire 10.
+[66:45 -> 66:59] Tu enregistres avec la petite disquette. Sur la ligne, t'as la disquette.
+[66:59 -> 67:06] Voilà. Et maintenant, si tu reprends ton planning.
+[67:45 -> 67:55] Donc le 5, voilà, tu as un horaire de journée étendue, là, 5 heures 30, 18 heures 30.
+[67:55 -> 68:18] Donc vous voyez que le calendrier, il dit, vous dites sur le calendrier, vous dites pour
+[68:18 -> 68:23] les journées qui sont des jours fériés, légaux ou des jours exceptionnels, vous dites si c'est
+[68:23 -> 68:32] un jour férié ou un jour exceptionnel ou un jour normal et vous dites en même temps quel
+[68:32 -> 68:38] type d'horaire vous allez utiliser pour le remplacement quand vous allez, quand le planning
+[68:38 -> 68:41] va arriver sur une date comme celle-là, sur un jour comme ça.
+[68:41 -> 68:46] Quel horaire vous prenez ? Ou bien vous dites, je maintiens l'horaire normal,
+[68:46 -> 68:54] issu de la référence, ou bien je remplace directement par un code horaire figé.
+[68:54 -> 69:03] Quand je dis, je remplace avec l'horaire férié, bon, tout le monde va être remplacé avec
+[69:03 -> 69:10] un horaire férié, ou bien vous dites, ça dépend du programme et du coup, là, je vous
+[69:10 -> 69:18] indique quel type de férié, quel type de jour c'est de façon à pouvoir indiquer sur chacun
+[69:18 -> 69:23] des programmes le code horaire pour ce programme-là.
+[69:23 -> 69:40] Je vais reprendre la main et je vais vous montrer que vous voyez dans le menu des
+[69:40 -> 69:48] calendriers. Dans le jour exceptionnel, j'ai trois options, j'ai la définition, donc ça c'est le
+[69:48 -> 69:56] calendrier qu'on peut là, mais j'ai aussi les types de jours exceptionnels.
+[69:56 -> 70:03] Quand on installe l'application en standard, on installe ces quatre codes en type de jour,
+[70:04 -> 70:11] le F1, le F2, le F3, on propose trois types de jours différents, et puis on propose le code F.
+[70:11 -> 70:17] Alors, ce que je vous montrerai, c'est que cette table est installée comme ça au départ et c'est
+[70:17 -> 70:25] pour ça que quand on est dans le calendrier ici, on a dans la liste de choix des types
+[70:25 -> 70:33] de jours exceptionnels. On a ces quatre codes, mais rien n'empêche d'en créer d'autres.
+[70:33 -> 70:42] Ici, je peux créer par exemple un jour de pont, un type de jour, un jour de pont,
+[70:42 -> 71:00] un jour, et je vais mettre horaire unique. Et du coup, quand je vais revenir maintenant dans
+[71:00 -> 71:11] mon calendrier, il faut sûrement que je recharge. Je peux dire que le 8 mai par exemple,
+[71:11 -> 71:31] le 14 mai, je vais dire que c'est un jour exceptionnel. Et dans le type de jour,
+[71:31 -> 71:39] je vois apparaître ce nouveau type de jour exceptionnel, donc je vais dire que c'est un jour de
+[71:39 -> 71:53] pont. Et du coup maintenant dans mes programmes, si je réfléchis, si je reprends mon programme CCO,
+[71:53 -> 72:05] programme en jour, ici dans les ordres exceptionnels, je vois arriver une nouvelle ligne, jour de
+[72:05 -> 72:14] pont. Et là, je dois indiquer qu'est-ce que je fais comme horaire quand j'arrive sur ce type de jour.
+[72:14 -> 72:24] Donc je peux enrichir, parce que dans une organisation, on peut avoir certaines journées où personne ne va
+[72:24 -> 72:30] travailler. Par exemple, en général le 1 mai, par exemple chez nous, personne ne travaille. Mais bon,
+[72:30 -> 72:36] il y a quand même des gens qui travaillent. Donc bon, on verra cette chose-là après. Mais je peux avoir des
+[72:36 -> 72:43] types de jour où généralement les gens ne travaillent pas. Et puis il y a d'autres types de jour où il y a
+[72:43 -> 72:46] des gens qui vont travailler, d'autres qui ne vont pas travailler, d'autres qui vont travailler sur
+[72:46 -> 72:54] des horaires différents. Donc je peux enrichir ma façon de procéder pour avoir des remplacements
+[72:54 -> 73:07] automatiques d'horaires. Par exemple, je vais dire, ici je vais mettre un matin comme ça.
+[73:07 -> 73:20] Où là ? Alors, qui s'est fait ça là ?
+[73:20 -> 73:37] À la boche, on ne fait qu'un seul. J'ai essayé d'en créer un. En je dis pont, il n'a pas voulu.
+[73:37 -> 73:49] Et après, j'ai essayé de créer le mien. Tu n'as pas pu créer un jippon vu que je venais de le créer.
+[73:49 -> 73:56] Justement, il m'a refusé. Donc du coup, je l'ai changé et j'ai juste créé des dnjp.
+[73:56 -> 74:03] Alors toi, tu as créé un dnjp. Mais dans l'horaire attaché, tu as mis horaire selon le jour.
+[74:03 -> 74:12] Alors ça, c'est quelque chose qu'on n'a pas vu encore. Mais qu'on voit apparaître pour le coup,
+[74:12 -> 74:23] parce que tu as créé ce code là. Ça, ça veut dire que quand je dis que le jour de pont,
+[74:23 -> 74:32] moi, mon code jour de pont, je remplace par un horaire matin, cette horaire là. Je vais faire ça.
+[74:32 -> 74:39] Enfin, l'outil va prendre cette horaire de remplacement, quelle que soit le jour de la semaine sur lequel je
+[74:39 -> 74:47] reviens ce jour de pont. Je fais pas de distinction sur le jour de la semaine, si c'est lundi,
+[74:47 -> 74:56] mardi, mercredi, etc. Quand on met sur un type de jour, ce qui a été fait là, horaire selon le jour,
+[74:56 -> 75:03] et c'est le cas aussi pour ce fameux code F, horaire d'un jour exceptionnel, on a mis horaire
+[75:03 -> 75:12] selon le jour. En fait, ça permet de mettre un horaire de remplacement différent en fonction
+[75:12 -> 75:24] du jour sur lequel survient le ferrier, le ferrier ou le jour exceptionnel. Si mon horaire, si mon jour
+[75:24 -> 75:34] exceptionnel, là sur DNJP, si le jour exceptionnel, c'est un programme de cinq jours sur ce CCO,
+[75:34 -> 75:40] si le jour exceptionnel survient le premier jour du programme, alors c'est difficile d'expliquer sur
+[75:40 -> 75:46] un programme en jour, mais peut-être qu'il faudrait prendre un programme hebdo, tiens, ma semaine
+[75:46 -> 75:52] admise. Vous voyez, ces codes sont transverses, les types de jour exceptionnels sont transverses
+[75:52 -> 76:02] maintenant à tous les programmes. Donc, vous voyez, cette semaine admise, c'est une semaine hebdo,
+[76:02 -> 76:15] lundi, dimanche. Et bien, il me dit, comment ça c'est, pourquoi je ne vois pas, excusez-moi,
+[76:15 -> 76:20] je vais juste vérifier un truc sur ce programme semaine admise. Oui, c'est bien une semaine de
+[76:20 -> 76:31] sept jours, ok. Donc, ici je prends ça, si le jour ferrier survient un lundi, le jour exceptionnel
+[76:31 -> 76:37] survient un lundi. Peut-être que je suis en repos. Bon, je vais mettre repos ferrier, peu importe.
+[76:37 -> 76:48] Si ce type de jour DNJP on survient un mardi, ben peut-être que je vais avoir, je vais me mettre
+[76:48 -> 77:00] sur cette horaire-là. Si ça survient à un mercredi, je vais peut-être éventuellement être ennuie.
+[77:00 -> 77:08] Et puis peut-être que les jours suivants, dans les autres cas, je serai en repos aussi.
+[77:08 -> 77:22] Je vais mettre en repos et deux. Ça me permet de faire varier l'horaire de remplacement en fonction
+[77:22 -> 77:34] du jour sur lequel survient le jour exceptionnel type DNJP. Alors, c'est très rare, on utilise ça.
+[77:34 -> 77:42] Et je peux même avoir une variation pour des types de jours de type F. Je peux avoir une variation
+[77:42 -> 77:50] différente. Je peux vraiment faire varier énormément mes horaires de remplacement en fonction des
+[77:50 -> 77:59] types de jours du calendrier. Et bon, moi franchement, chez les clients, cette variation des horaires
+[77:59 -> 78:06] de remplacement en fonction du numéro de jour sur lequel survient le jour exceptionnel, je l'ai
+[78:06 -> 78:13] pratiquement jamais vu. La plupart du temps, les clients utilisent le ferrier 1, éventuellement le
+[78:13 -> 78:20] ferrier 2. Éventuellement, ils ont des codes jour de pont, jour des numères, jour des solidarités,
+[78:20 -> 78:26] des choses comme ça. Mais ils n'utilisent pas cette variation d'horaires en fonction du numéro
+[78:26 -> 78:30] de jour sur lequel survient le jour exceptionnel, le jour ferrier.
+[78:30 -> 78:48] Mais concrètement, alors si ce n'est pas très utilisé, mais le cas le plus concret, ça
+[78:48 -> 78:55] serait quoi alors ? Le cas le plus concret, c'est le jour exceptionnel. Les jours, ils sont
+[78:55 -> 79:01] positionnés ici en unique. La plupart du temps, vous allez trouver ça. Vous allez trouver des jours
+[79:01 -> 79:10] ferriers ou exceptionnels en unique avec des types F1 ou éventuellement ici avec des types de
+[79:10 -> 79:16] jours exceptionnels F1. Donc, avec des horaires de remplacement qui dépendent des programmes et
+[79:16 -> 79:24] un code horaire à indiquer sur chaque programme. Et éventuellement, vous allez avoir des jours
+[79:24 -> 79:35] exceptionnels comme ça avec des types de jours jour de pont ou jour des numères,
+[79:35 -> 79:54] jour des solidarités. D'accord. D'accord. Sachant que au niveau des programmes, vous avez
+[79:54 -> 80:02] une information en haut d'écran sur ce volet des gens exceptionnels. Vous avez une première
+[80:02 -> 80:10] information qui dit, est-ce que ce programme est insensible au jour exceptionnel ? Par défaut,
+[80:10 -> 80:16] ils le sont. Par défaut, quand on crée un programme, ce n'est pas coché. Donc par défaut,
+[80:16 -> 80:22] ça va être sensible au jour exceptionnel des finis dans le calendrier, donc au processus de
+[80:22 -> 80:33] remplacement prévu par la définition des journées dans le calendrier. Mais je peux cocher. Et si je
+[80:33 -> 80:42] coche insensible au jour ferrier, vous voyez, ça neutralise. Ça garde les informations quand même
+[80:42 -> 80:48] pour ne pas les perdre au cas où on est besoin de réactiver la sensibilité. Mais ça neutralise
+[80:48 -> 80:54] cette partie-là. Et dire qu'un programme est insensible au jour exceptionnel, ça veut dire
+[80:54 -> 81:04] que dans le planning, les personnes qui ont ce programme vont conserver leur horaire. Le horaire normal.
+[81:19 -> 81:27] Des coups, ça sert à quoi ? C'est un recoursier rapide pour désactiver l'horaire exceptionnel.
+[81:27 -> 81:35] Allô, ça sert à quoi ? Ça sert à, justement, dans le calendrier, dans une organisation,
+[81:35 -> 81:43] je vais avoir sur les horaires ferriers, enfin sur les jours ferriers, je veux dire que la règle,
+[81:44 -> 81:54] peut-être dans l'organisation du client, c'est que les gens ne travaillent pas. Les gens ne
+[81:54 -> 81:59] travaillent pas, mais j'ai quand même des services, par exemple en production ou je ne sais pas,
+[81:59 -> 82:06] qui conservent leur horaire. Ferrier ou pas ferrier, ils continuent à travailler sur certains
+[82:06 -> 82:15] services pour certaines personnes qui ont certains programmes horaires. Du coup, sur le
+[82:15 -> 82:24] calendrier, je veux dire, je vais déclarer tous mes jours ferriers en FA, donc je vais aller chercher
+[82:24 -> 82:34] l'horaire de remplacement indiqué sur les programmes. Et puis, là, j'ai plusieurs possibilités ou
+[82:34 -> 82:47] bien pour les programmes, j'ai deux possibilités, ou bien pour les programmes, je vais dire que l'horaire
+[82:47 -> 82:59] de remplacement, c'est le même horaire que ce que j'ai dans les caractéristiques principales,
+[82:59 -> 83:07] mais comme j'ai un horaire identique du lundi au vendredi, puis après je suis en repos, donc il
+[83:07 -> 83:12] faut bien que je distingue l'horaire journalier. Donc ici, sur l'horaire des jours exceptionnels,
+[83:12 -> 83:21] je peux pas, la seule façon que j'ai d'indiquer que je maintiens l'horaire prévu ce jour-là,
+[83:21 -> 83:28] c'est de dire que je suis insensible. En fait, ça permet à tous les programmes
+[83:28 -> 83:35] qui vont être sensibles au jour ferrier d'avoir par exemple ici un horaire de repos,
+[83:35 -> 83:45] j'en prendrai un autre, le CCO administratif. Je veux dire par exemple que là, je suis en repos ferrier,
+[83:45 -> 83:56] mais donc tout ceux qui ont ce programme CCO administratif, quand ils vont arriver sur un type
+[83:56 -> 84:01] ferrier, ils vont être effectivement en repos, mais par contre pour ceux qui ont des programmes
+[84:01 -> 84:10] liés à des postes de production, etc., je vais dire que non cela, ils conservent l'horaire. Donc
+[84:10 -> 84:16] je vais pas mettre ces indications-là et je vais dire que c'est insensible. Et donc quelqu'un qui
+[84:16 -> 84:22] sera à l'administratif et qui aura le programme administratif, il sera en repos et quelqu'un
+[84:22 -> 84:28] qui aura un programme de prod, un programme en jour, ce programme-là, son horaire sera maintenu,
+[84:28 -> 84:34] ce sera simple. Parce que dans le calendrier des ferriers, je donne une seule information sur le type
+[84:34 -> 84:42] de jour. Je dis, c'est un jour ferrier et je veux l'horaire de type ferrier. Pour tous les programmes,
+[84:42 -> 84:47] pour tous les programmes qui sont sensibles au jour ferrier. Donc je vais pouvoir distinguer ceux
+[84:47 -> 84:58] qui ne le sont pas. D'accord. J'ai l'impression que c'est un moyen de désactiver à la dernière minute.
+[84:58 -> 85:08] C'est un moyen de passer outre l'application d'un horaire de remplacement que je ne veux pas faire
+[85:08 -> 85:10] pour certains programmes. D'accord.
+[85:10 -> 85:35] Alors, si je reviens sur le planning, ici,
+[85:40 -> 85:59] j'ai verronique. Il n'y a pas d'horaire de remplacement de bimaire. Il y a le premier maire.
+[86:10 -> 86:38] Véronique, elle est sur… ce programme horaire verraux qui n'a pas d'horaire de remplacement,
+[86:38 -> 87:04] mais c'est normal parce que c'est un programme qui est insensible au ferrier et que je réaffiche
+[87:04 -> 87:24] mon planning. Je suis là, ici. Voilà. Maintenant, Véronique, le 8 mai. Elle est censée être en repos
+[87:24 -> 87:36] le samedi, mais elle est en repos. Elle est retrouvée un horaire correct. C'est son horaire de référence.
+[87:36 -> 88:03] Donc voilà au niveau du calendrier. Donc les types de jours exceptionnels que l'on peut étoffer
+[88:03 -> 88:11] si besoin pour le client. La différence entre horaire unique et horaire selon le jour, horaire
+[88:11 -> 88:15] unique, c'est quel que soit le jour de la semaine ou le numéro de jour du programme sur lequel
+[88:15 -> 88:25] survient le ferrier de façon générique, un ferrier exceptionnel. Donc quel que soit le
+[88:25 -> 88:32] jour sur lequel survient ce ferrier. J'ai le même horaire qui sera appliqué que je vais
+[88:32 -> 88:43] positionner ici sur le type de jour. Je prendrai la ligne du type de jour et je prendrai l'horaire
+[88:43 -> 88:51] indiquée ici, comment avoir de remplacement. Et si ces variables horaires selon le jour,
+[88:51 -> 88:59] ça dépend du numéro de jour sur lequel survient le ferrier dans le programme. Là,
+[88:59 -> 89:11] vous voyez sur cet exemple, c'était un programme de 14 jours. ESA, je ne sais pas qui c'est,
+[89:11 -> 89:23] a choisi d'utiliser, enfin de mettre un type de jour horaire, un type F en ferrier. Et là,
+[89:23 -> 89:31] du coup, il est obligé de mettre repos ferrier 2 sur les 14 lignes de son programme qui fait 14 jours.
+[89:31 -> 89:39] Bon, il aurait pu être, puisque c'est la même chose pour ce programme. Alors ça dépense,
+[89:39 -> 89:50] oui, si aucun programme n'a besoin de ça, on aurait pu mettre sur le calendrier des jours ferriers
+[89:50 -> 89:56] un type F1 par exemple, il est passé par le type F1. On n'était pas bougé de passer par là. Enfin,
+[89:56 -> 90:02] on a des possibilités de variation assez larges. Mais bon, je ne veux pas trop insister là-dessus
+[90:02 -> 90:10] parce qu'il faut le voir à l'usage. La plupart du temps, c'est vous dire ferrier 1 ou même horaire de
+[90:10 -> 90:16] remplacement systématique. Alors ferrier 1 ou bien programme insensible au jour exceptionnel.
+[90:32 -> 90:42] Vous voyez qu'il y a une notion de structure là, mais je ne peux pas vous parler de la notion de
+[90:42 -> 90:49] structure tout de suite parce que là, il faut qu'on les voit les structures pour le coup et pour qu'on
+[90:49 -> 90:54] y voit plus clair. Est-ce que ça va ? Est-ce que vous avez des questions ? Est-ce que c'est à peu
+[90:54 -> 91:08] près clair ? Je ne vous dis pas que vous êtes en maîtrise. Il y a une vraie gestion des horaires
+[91:08 -> 91:15] de remplacement sur les jours ferriers exceptionnels. Il y a une vraie gestion des horaires de
+[91:15 -> 91:22] remplacement à partir de ce calendrier et éventuellement des programmes horaires et de ce volet
+[91:22 -> 91:32] horaires des jours exceptionnels. Sans qu'on ait besoin de faire quoi que ce soit d'autre,
+[91:32 -> 91:35] uniquement en paramétrage. Est-ce que vous avez des questions ?
+[91:35 -> 92:00] Bon. Alors un dernier, je ne sais pas si je vous l'ai montré l'autre jour. Ici vous avez un volet
+[92:00 -> 92:06] aussi autre caractéristique qui vous permet d'ajouter des caractéristiques complémentaires toujours
+[92:06 -> 92:16] pareil dans référentiels paramètres, définitions des caractéristiques paramétrables. C'est-à-dire
+[92:16 -> 92:25] que sur les programmes horaires et sur les cycles, sur les programmes et sur les cycles,
+[92:25 -> 92:32] j'ai aussi à disposition des champs complémentaires pour enrichir le référentiel des programmes et
+[92:32 -> 92:41] c'est pareil pour les cycles. C'est pareil pour les cycles horaires, autre caractéristique.
+[92:41 -> 92:48] J'ai aussi des caractéristiques complémentaires parce que j'ai un groupe horaire cycle,
+[92:48 -> 92:58] donc toujours pareil, 5 alphas, 5 numériques à disposition pour enrichir le référentiel des cycles.
+[92:58 -> 93:28] Alors il est moins 20. Je vais vous faire une intro sur les structures. D'abord je vais
+[93:28 -> 93:36] vous parler juste d'en gestion des temps puisqu'on est dans les horaires et qu'on finit avec ça. Vous
+[93:36 -> 93:42] avez la notion d'horreur automatique. Donc vous aurez la journalie, les programmes, les cycles et
+[93:42 -> 93:51] puis vous avez la notion d'horreur automatique. Je vous en parle très rapidement. Un horaire
+[93:51 -> 93:56] automatique c'est la possibilité. Juste à présent on a vu qu'on infecte automatiquement un
+[93:56 -> 94:02] horaire de référence à un collaborateur au moment où on crée sa fiche et puis ensuite on peut
+[94:02 -> 94:07] éventuellement lui poser des horaires exceptionnelles. Cette horaire de référence peut éventuellement
+[94:07 -> 94:12] être impactée par le calendrier des jours ferriers si j'ai des horaires de remplacement en cas de
+[94:12 -> 94:18] jours ferriers et je peux par-dessus encore rajouter donc un horaire exceptionnel si je
+[94:18 -> 94:23] saisis un horaire journalier sur une journée particulière pour un collaborateur. Tout ça
+[94:23 -> 94:33] c'est de la saisie. L'horaire, il y a quelqu'un qui fait une action d'affecter un horaire à quelqu'un.
+[94:33 -> 94:42] L'horaire automatique, ça permet d'attribuer automatiquement un horaire exceptionnel à quelqu'un
+[94:42 -> 94:51] en fonction du badgeage, du premier badgeage de la journée. En fonction de son premier badgeage
+[94:51 -> 95:01] physique, j'entends à la badgeuse ou badgeage virtuel si je bade via l'écran. Là par exemple,
+[95:01 -> 95:08] ça dit si le maire redit je bade entre 11h et 11h30 et du coup je vais appliquer l'horaire
+[95:08 -> 95:28] 15h00, je vais affecter l'horaire 20 qui a cet séplage là, 13h30, 14h30, 19h00. Si je bade
+[95:28 -> 95:33] entre midi et midi et demi, là j'affecte un horaire de repos et si je bade entre 19h00 et 20h00,
+[95:33 -> 95:40] j'affecte automatiquement un horaire d'une nuit. Ça permet d'attribuer automatiquement,
+[95:40 -> 95:45] d'affecter automatiquement un horaire exceptionnel en fonction du premier badgeage de la journée.
+[95:45 -> 95:53] Je vous en parlerai très rapidement, ça a été fait parce qu'il y avait des clients,
+[95:53 -> 95:58] gestors qui migraient en chrono-time et qui avaient la possibilité de faire ça. Je ne sais plus si
+[95:58 -> 96:06] c'est gestor ou gestor 5 d'ailleurs, parmi ceux qui connaissent gestors, peut-être que vous pouvez
+[96:06 -> 96:26] me dire. C'est quelque chose d'une fonctionnalité qui est prévue, moi je l'ai très peu mise en place.
+[96:26 -> 96:33] C'est par rapport au profil ou par rapport au badgeage initial de la journée ?
+[96:33 -> 96:38] Non, c'est par rapport au profil. Désolé, Christine, je pense que Réli
+[96:38 -> 96:43] pouvait répondre parce que moi je n'ai travaillé que sur gestor net et c'est une fonctionnalité qui
+[96:43 -> 96:49] existe. C'est par rapport au badgeage ?
+[96:49 -> 96:57] Oui, c'est toujours par rapport au premier badgeage de la journée.
+[96:57 -> 96:58] C'est ça.
+[96:58 -> 97:02] Donc ce n'est pas par rapport au collaborateur VIP ?
+[97:02 -> 97:08] En fait, ce qu'on fait quand on crée des horaires automatiques,
+[97:08 -> 97:20] et je dis ça jour par jour. Là, je dis ça pour le mercredi et le jeudi, mais je pourrais
+[97:20 -> 97:25] dire sur toutes les journées de la semaine. Et puis, qu'est-ce qui se passe quand je suis
+[97:25 -> 97:29] sur un jour de pont ? Un jour de pont, si je badge entre 8h et 9h, c'est que j'applique
+[97:29 -> 97:38] tel horaire, etc. Au fernier 1, fernier 2. Donc je crée un ensemble d'horaires exceptionnels
+[97:38 -> 97:46] possibles en fonction des plages de badgeage, du premier badgeage de la journée. Et ça,
+[97:46 -> 97:58] je l'affecte sur la fiche du collaborateur. Par exemple, Rallied. Quand je suis sur
+[97:58 -> 98:06] le volet horaire de référence, en partie haute, j'ai l'horaire de référence. Donc ça,
+[98:06 -> 98:12] c'est obligatoire en saisie de la fiche. Mais en partie basse, je peux dire, est-ce que Rallied
+[98:12 -> 98:20] il est soumis aussi à une affectation automatique d'horaires automatiques en fonction de ces
+[98:20 -> 98:31] badgeages. Et là, je pourrais dire, par exemple, je ne sais jamais ici, il doit suivre le test
+[98:31 -> 98:43] Philippe. Et du coup, l'horaire de référence va s'appliquer dès lors que l'horaire automatique
+[98:43 -> 98:47] ne doit pas s'appliquer. C'est-à-dire que si l'horaire automatique, je n'ai rien dit
+[98:47 -> 98:56] sur le lundi, le lundi, il prendra toujours l'horaire de référence issu de la semaine admine. Mais si le
+[98:56 -> 99:05] mardi, j'ai dit que si je badge entre 9h et 10h, j'applique un horaire X, il prendra. Et si il
+[99:05 -> 99:12] badge entre 9h et 10h, il prendra l'horaire qui est positionné sur le mardi sur cette plage-là.
+[99:13 -> 99:22] C'est déjà testé chez vous, Christine, les horaires automatiques. Parce qu'on les a testés
+[99:22 -> 99:28] seulement avec gestornette. Mais pas encore avec chrono-thème. Je ne sais pas comment ça va
+[99:28 -> 99:39] fonctionner. Donc ça reste à tester. Ça marche bien. La limite, c'est que c'est vraiment le
+[99:39 -> 99:45] premier badge-age effectif de la journée. Quand je dis effectif, c'est le badge-age physique. C'est-à-dire
+[99:45 -> 99:52] que j'appuie sur un bouton, je badge ou je passe mon badge devant la badgeuse. C'est-à-dire que si je
+[99:52 -> 100:01] saisis un badge-age via la saisie de badge-age, via le planning ou l'agenda ou n'importe quoi,
+[100:01 -> 100:10] ça ne fonctionne pas. Si je saisis sur Hallyl, si je saisis un badge-age à 8h30, ça ne va pas
+[100:10 -> 100:15] générer automatiquement l'horaire exceptionnel. L'horaire automatique. Donc tout ce qui est
+[100:15 -> 100:22] badge-age physique, normalement ça ne doit pas fonctionner. Badge-age physique, ça fonctionne.
+[100:22 -> 100:38] Alors, pour vous introduire,
+[100:38 -> 100:59] la notion de structure. C'est dans le référentiel de l'organisation. On a vu les données collaborateurs,
+[100:59 -> 101:05] mais on n'a pas vu les structures hors dans la fiche du collaborateur. Quand on crée une fiche,
+[101:05 -> 101:15] on a vu que si je reviens sur situation, on avait la structure administrative. Alors d'ailleurs,
+[101:15 -> 101:20] je ne me rappelle plus, elle est obligatoire ou elle n'est pas obligatoire. Oui, il y a une
+[101:20 -> 101:26] série d'ambigatoires. Je ne peux pas créer une fiche si je ne renseigne pas son rattachement à
+[101:26 -> 101:34] la structure administrative. Et ce rattachement à la structure administrative, je vois à la date
+[101:34 -> 101:41] du jour, un ou trois mai. Là, j'ouvre et je vois l'organisation, l'arboréissance de la structure
+[101:41 -> 101:48] avec les différents éléments qui la composent. Et puis, je choisis un des éléments pour affecter le
+[101:48 -> 101:59] collaborateur. Alors, la création des structures, ça se fait ici dans l'organisation de structure
+[101:59 -> 102:05] et on a trois actions. On a les structures organisationnelles, les types de structures et les
+[102:05 -> 102:14] structures d'exploitation. Alors, déjà en premier lieu, pour créer une structure, on crée un type
+[102:14 -> 102:28] de structure. Sur le type de structure, on va dire plein de choses. On va définir le type de structure
+[102:28 -> 102:36] et définir comment elle va fonctionner cette structure. On va la caractériser. Alors, on lui donne
+[102:36 -> 102:45] un identifiant, un libellé, un abrégé, c'est obligatoire. Là, on a des coches que je vais vous
+[102:45 -> 102:55] indiquer ensuite, une date de validité. Moi, quand je crée les types de structures, je vous suggère
+[102:55 -> 103:02] de ne pas mettre date de validité, ce n'est pas d'intérêt. Ce n'est pas ce qui est intéressant.
+[103:02 -> 103:07] Par contre, dans les écrans, on décide d'afficher libellés codes entre parenthèses ou codes libellés
+[103:07 -> 103:12] ou rien que les libellés, rien que les codes. Bon, ça, c'est un choix d'affichage. Et ensuite,
+[103:12 -> 103:20] on va dire, est-ce que cette structure, elle autorise, je reviendrai là-dessus sur ces
+[103:20 -> 103:27] différentes coches, mais est-ce qu'elle autorise le rattachement des collaborateurs? Et là, le type
+[103:27 -> 103:32] de structure administrative, on a dit, ça intéresse. Oui, ça autorise le rattachement des
+[103:32 -> 103:38] collaborateurs et en plus, de façon systématique. Et c'est pour ça que, quand je crée une fiche
+[103:38 -> 103:42] collab, je suis obligée de mettre le rattachement à la structure administrative. Si j'avais
+[103:42 -> 103:51] mis au choix, j'aurais pu le faire. Je peux rattacher le collaborateur à allément les structures,
+[103:51 -> 103:56] mais ce n'est pas obligatoire. Bon, je ne veux pas faire de modif là-dessus. Pour l'instant,
+[103:56 -> 104:01] on va laisser comme ça. Et puis, je peux aussi créer des types de structure où les collaborateurs ne
+[104:01 -> 104:06] sont pas concernés par le type de structure. Ça, on fait ça quand on fait de la gestion
+[104:06 -> 104:10] d'activité, on a la possibilité de faire des types de structure qui ne sont pas en
+[104:10 -> 104:16] lien directement avec les collables. En tout cas, la première info qui est importante, c'est celle-là.
+[104:16 -> 104:29] Et ensuite, je donne les différents niveaux qui vont caractériser ma structure.
+[104:29 -> 104:33] Il y a peut-être que mon organisation administrative, là, dans l'occurrence,
+[104:34 -> 104:42] mes éléments de premier niveau, c'est la notion de groupe. Ensuite, en deuxième niveau,
+[104:42 -> 104:47] j'aurai des éléments sociétés. Et puis ensuite, en troisième niveau, j'aurai les établissements.
+[104:47 -> 104:52] Et sous les établissements, j'aurai les différentes directions. Et sous chaque direction,
+[104:52 -> 104:57] j'aurai les différents services. Et puis, sous les différents services, j'aurai les notions d'équipe.
+[104:57 -> 105:08] Et puis, là, j'ai des niveaux 7, 8, 9, 10. Je peux rajouter d'autres niveaux. Et je peux aussi
+[105:08 -> 105:14] en supprimer. Alors, là, j'ai indiqué sur ces niveaux qu'il ne fallait pas les supprimer.
+[105:14 -> 105:21] Je vais vous expliquer après pourquoi. Mais je peux faire une arborescence à n niveaux.
+[105:21 -> 105:25] Et je ne suis pas limitée dans le nombre de niveaux de mon arborescence. Je peux aller
+[105:25 -> 105:40] jusqu'à 99. En profondeur, c'est jamais le cas. Et sur chaque niveau, je donne à libérer un abrégé.
+[105:40 -> 105:46] Et je dis, est-ce que j'autorise le rattachement des collaborateurs aux éléments de ce niveau-là ?
+[105:46 -> 105:52] Parce que là, j'autorise le rattachement des collaborateurs à cette structure. Mais je peux
+[105:52 -> 105:59] choisir les niveaux auxquels j'ai le droit de rattacher les collaborateurs. Par exemple, jusqu'à
+[105:59 -> 106:05] présent, dans le chronogestor, dans le produit historique, on ne pouvait rattacher, on avait
+[106:05 -> 106:12] que 6 niveaux possibles. Et on ne pouvait rattacher les collaborateurs qu'au niveau 6. On
+[106:12 -> 106:20] avait pas le droit de les rattacher à un niveau supérieur. Donc là, maintenant, on choisit les
+[106:20 -> 106:25] niveaux sur lesquels on peut rattacher les collaborateurs. On va avoir le même choix de rattachement
+[106:25 -> 106:30] d'activité. Je passe, puisque ça ne concerne pas la formation-là. Cette coche reg-équipe,
+[106:30 -> 106:36] je vous en parlerai après. Et puis cette coche sélection de population, c'est en lien
+[106:36 -> 106:43] avec cette coche-là qui s'appelle pour la sélection transverse de la population.
+[106:43 -> 106:57] Vous n'y voyez peut-être pas très bien. Peut-être que je zoom un peu. Et là, c'est mieux. Voilà.
+[106:57 -> 107:09] Donc, c'est parce que j'ai défini ce type de structure-là que ensuite, je ne vais pas faire de
+[107:09 -> 107:18] mises à jour si je ferme. Et que je reviens dans l'organisation structure-organisationnelle cette
+[107:18 -> 107:28] fois. J'ai pu renseigner. Alors ici, en haut de l'écran, j'ai le choix du type de structure.
+[107:28 -> 107:34] J'en ai qu'un pour l'instant dans cet environnement. Donc la structure administrative. Et puis,
+[107:34 -> 107:38] dans cette structure, j'ai déjà rajouté. Alors là, le premier élément que je vois,
+[107:38 -> 107:45] c'est la racine. Quand on a décroché comme ça, ça veut dire qu'on est à la racine de l'arborescence,
+[107:45 -> 107:51] en fait, de la structure administrative. Et puis là, j'ai un groupe GDO. Et puis,
+[107:51 -> 107:59] j'ouvre. Et sous le groupe GDO, j'ai les sociétés 1 et 2. Et puis, sous la société 1 et 2,
+[107:59 -> 108:05] enfin sous la société 1, pardon, j'ai un établissement 1 et un établissement 2. Et
+[108:05 -> 108:13] puis dans l'établissement 1, j'ai une direction administrative commerciale et une direction
+[108:13 -> 108:18] de production. J'ai pas fait de sous-niveau sous la direction commerciale, mais par contre,
+[108:18 -> 108:26] sous la direction administrative, j'ai le service finance, le service formation et puis le service
+[108:26 -> 108:35] ressources humaines. Et dans le service ressources humaines, ici, j'ai les équipes,
+[108:35 -> 108:47] compétences, gestion des compétences, la paix et le recrutement. Voilà. Et vous voyez,
+[108:47 -> 108:54] quand je suis sur un élément, quand je clique sur un élément établissement, sur la partie droite,
+[108:54 -> 109:03] il me dit établissement avec son emplacement, donc son chemin, son arboréissance. Et il me donne les
+[109:03 -> 109:10] éléments qui sont rattachés à l'établissement 1. Et les éléments qui sont rattachés à l'établissement
+[109:10 -> 109:19] 1, ce sont des directions. J'ai trois directions. Ça, c'est le titre du niveau. Par contre,
+[109:19 -> 109:29] si je me mets sur cette fois ressources humaines, par exemple, sous les ressources humaines, j'ai trois
+[109:29 -> 109:36] équipes. Ça, c'est un service. Et dans les ressources humaines, j'ai trois équipes, les compétences,
+[109:36 -> 109:45] la gestion des compétences, la paix et le recrutement. Sur cet écran-là, je suis sur les
+[109:45 -> 109:50] éléments rattachés. En ressources humaines, les éléments rattachés, ce sont des équipes. Mais
+[109:50 -> 109:59] j'ai un autre volet qui me donne les rattachements. Et ça, c'est la vue inverse. Ça me dit,
+[109:59 -> 110:06] les ressources humaines, c'est rattaché, son parent, c'est la direction administrative.
+[110:06 -> 110:14] Ici, parce qu'il y avait dans la direction administrative.
+[110:14 -> 110:33] J'ai un volet aussi propriété. Et dans propriété, j'ai
+[110:33 -> 110:43] une information qui est très importante pour notamment les imports. Parce que ces
+[110:43 -> 110:51] structures organisationnelles, à plupart du temps, elles ne sont pas saisies. Dans la gestion des
+[110:51 -> 111:00] temps, elles sont issues, elles sont importées du système RH. Souvent, elles sont importées.
+[111:00 -> 111:06] Ce code externe, c'est ce qui va permettre de garantir l'unicité, enfin, c'est ce qui va
+[111:06 -> 111:12] permettre de faire le lien entre l'élément qui m'est transmis par l'interface d'un port et
+[111:12 -> 111:17] l'élément de la structure, l'élément RH, connu dans ChronoTime.
+[111:17 -> 111:36] Je ne vais pas aller plus loin avant 13 heures parce qu'on a pas mal de choses à voir. Il faut qu'on
+[111:36 -> 111:52] creuse ces structures. Une structure organisationnelle, c'est un type de structure organisation,
+[111:52 -> 111:59] c'est un type de structure qui donne des éléments de définition de la structure et ensuite des éléments
+[111:59 -> 112:10] qui vont être importés ou mis à jour. Admettons par exemple que là, sur la racine,
+[112:10 -> 112:16] je veux rajouter un nouveau groupe.
+[112:29 -> 112:42] Je suis sur la racine dans les éléments rattachés. Je vois qu'à la racine,
+[112:42 -> 112:48] j'ai le groupe GEDO qui est rattaché. Je vais rajouter un nouvel élément que je vais appeler
+[112:48 -> 113:02] formation G-Form. Je ne vais pas mettre de date début de rattachement. Pour l'instant, je vais laisser
+[113:02 -> 113:10] comme ça. Et là, je viens de voir arriver un nouveau groupe. Quand je me positionne sur le groupe,
+[113:10 -> 113:28] je vais pouvoir rattacher les différentes sociétés du groupe. Et une deuxième société.
+[113:28 -> 113:35] Je me mets sur la société. Je peux rajouter les établissements.
+[113:40 -> 114:01] Et je peux descendre plusieurs établissements. Je peux mettre les directions de l'établissement.
+[114:01 -> 114:21] FTA-A. Servis, équipe, etc.
+[114:21 -> 114:31] Une fois que j'ai complété ou importé de nouveaux éléments dans ma structure,
+[114:31 -> 114:58] je fais générer. Et là, j'arrive. Il me génère les structures d'exploitation.
+[114:59 -> 115:10] Je suis là dans ce menu structure d'exploitation. Pourquoi ? Parce que quand j'informe le type de
+[115:10 -> 115:17] structure, quand j'informe les différents éléments qui vont composer la structure et qui,
+[115:17 -> 115:25] du coup, décrivent une arborescence, je ne crée que des liens par an-enfant direct.
+[115:25 -> 115:35] Et pour que tout ça s'est stocké dans des tables avec des liens par an-enfant. Et ensuite,
+[115:35 -> 115:40] il faut que je reconstruise, il faut que je mette à jour les structures d'exploitation pour constituer
+[115:40 -> 115:46] des tables et des vues qui vont être utilisables plus facilement en exploitation pour réduire
+[115:46 -> 115:50] les temps de réponse, pour améliorer les performances. Donc là, je mets à jour,
+[115:50 -> 116:00] dans la mise à jour des structures d'exploitation, des tables un peu plus à plat,
+[116:00 -> 116:06] des tables et des vues complètes qui vont permettre d'aller plus vite. Donc la structure d'exploitation
+[116:06 -> 116:11] ne fait rien d'autre. L'option ici, mise à jour des structures d'exploitation,
+[116:11 -> 116:14] ne fait rien d'autre que de la mise à jour de table, en fait.
+[116:14 -> 116:27] Si je refermis ici et que je reviens sur les structures organisationnelles et que je dis
+[116:27 -> 116:38] que dans mon groupe formation, je vais ouvrir ici, je vais aller sur ma direction administrative et
+[116:38 -> 117:01] je vais lui ajouter un service. Voilà, je ne veux pas générer, je ne veux pas générer.
+[117:01 -> 117:06] Donc là, j'ai fait une mise à jour, c'est comme si j'avais fait un import,
+[117:06 -> 117:10] d'un nouvel élément ou que je fais une mise à jour, je n'ai pas voulu générer les structures
+[117:10 -> 117:15] d'exploitation automatiquement. Quand je vais dans structure d'exploitation, ici,
+[117:15 -> 117:20] je vois que j'ai modifié un élément, oui, j'en ai ajouté un. Donc ça veut dire que,
+[117:20 -> 117:25] du coup, cette structure, j'ai un écart entre ma structure organisationnelle,
+[117:25 -> 117:30] donc les éléments qu'il a constitué, son arbre recense et les tables qui vont servir à
+[117:30 -> 117:35] l'exploitation. Donc là, il faut que je fasse la mise à jour des structures d'exploitation.
+[117:35 -> 117:42] Ça ne m'empêche pas de repartir dans structure organisationnelle et de voir que je vais chercher
+[117:42 -> 118:01] service. Je le vois, mon élément service X, il est là, mais il n'est pas utilisable en
+[118:01 -> 118:07] exploitation. Et donc ça peut casser toutes mes structures. Donc là, je me mets en structure,
+[118:07 -> 118:12] je vois que j'ai modifié un élément, je peux sélectionner ma structure et lancer la mise à jour.
+[118:12 -> 118:28] Et là, je lance la mise à jour des structures d'exploitation. Voilà.
+[118:32 -> 118:40] Donc ce qu'on va faire, bon, on va déjeuner, sachant qu'on peut créer, donc quand je définis
+[118:40 -> 118:46] un type de structure, je donne toutes ces informations-là. J'ai pas de limitation dans le
+[118:46 -> 118:51] nombre de niveaux, enfin 99, on peut considérer que ce n'est pas limité. Et j'ai pas non plus de
+[118:51 -> 118:58] limitation dans le nombre de structures. En théorie, c'est-à-dire que je peux aller
+[118:58 -> 119:05] jusqu'à 99 structures, je ne suis pas limité. En vrai, pour les performances, on verra qu'on
+[119:05 -> 119:10] essaie de limiter le nombre de structures qui autorisent le rattachement des collaborateurs,
+[119:10 -> 119:16] parce que si j'ai trop de types de structures différents sur les collaborateurs, ça peut me
+[119:16 -> 119:22] plomber sensiblement les temps de réponse. Donc il y a des précaux et des paramètres qui
+[119:22 -> 119:26] permettent de limiter un peu quand même le nombre de structures qu'on met à l'oeuvre. Mais
+[119:26 -> 119:30] en théorie, on n'est pas limité. Donc cet après-midi, quand on va se retrouver,
+[119:30 -> 119:34] on va créer d'autres types de structures. Vous avez les chacres à créer d'autres types
+[119:34 -> 119:45] de structures. Et on va voir comment ça se paramètre, on va voir les impacts et voilà.
+[119:45 -> 120:03] Ok, ça marche. Ça marche. On en dit 14 heures 5 si vous avez parfait. Ok. Bon appétit. Bon appétit.
+[120:03 -> 120:07] Merci. Bon appétit. Merci.

@@ -1,0 +1,1128 @@
+[00:00 -> 00:05] Bonjour.
+[00:05 -> 00:06] Bonjour.
+[00:06 -> 00:07] Bonjour.
+[00:07 -> 00:10] Est-ce qu'il nous manque quelqu'un?
+[00:10 -> 00:11] Nicole.
+[00:11 -> 00:12] Tu vas voir.
+[00:12 -> 00:13] Bon.
+[00:13 -> 00:14] Ah!
+[00:14 -> 00:18] Vous avez démarré dans l'enviens-instrument.
+[00:18 -> 00:19] Ok.
+[00:20 -> 00:21] Bon.
+[00:21 -> 00:22] Ah!
+[00:22 -> 00:25] Vous avez démarré dans l'enviens-instrument.
+[00:25 -> 00:26] Ok.
+[00:34 -> 00:35] Alors.
+[00:41 -> 00:44] On va revenir sur cette fiche collaborateur.
+[00:44 -> 00:48] Est-ce que vous avez des questions par rapport à ce qu'on a vu tout à l'heure?
+[00:48 -> 00:49] Non.
+[00:49 -> 00:50] C'est bon.
+[00:50 -> 00:51] Non.
+[00:51 -> 00:56] Au niveau du riz, au niveau de ce qu'on voit, est-ce que ça vous voit?
+[00:56 -> 00:58] Vous arrivez à suivre?
+[00:58 -> 01:00] C'est pas trop lent?
+[01:00 -> 01:01] Ça va.
+[01:01 -> 01:02] Oui, ça va.
+[01:02 -> 01:07] Il faut juste qu'on essaie de garder en tête le plan de formation.
+[01:07 -> 01:10] Comme ça, on peut voir tout.
+[01:10 -> 01:11] Voilà.
+[01:11 -> 01:13] On va focaliser sur la fiche.
+[01:14 -> 01:21] Voilà, on va focaliser sur la fiche de collaborateur, sur les informations qu'elle contient.
+[01:21 -> 01:29] Et sur l'impact que ça va avoir dans les calculs.
+[01:29 -> 01:40] Après, la distance, c'est pas forcément facile à suivre parce qu'il y a les supports.
+[01:40 -> 01:45] Vous ne pouvez pas avoir le support sous les yeux.
+[01:45 -> 01:48] Moi, je travaille avec un seul écran.
+[01:48 -> 01:52] Quand je vous propose de faire des exercices, des actions.
+[01:52 -> 01:54] Il faut que vous les fassiez.
+[01:54 -> 01:56] Je ne sais pas si vous avez deux écrans.
+[01:56 -> 01:57] Il faut que vous les fassiez.
+[01:57 -> 01:59] Du coup, vous voyez plus que je fais.
+[02:01 -> 02:05] Bon, c'est pas un petit peu en mode dégradé.
+[02:05 -> 02:13] C'est pour ça qu'on dit-moi si on peut améliorer quelque chose.
+[02:23 -> 02:24] Bon, on va démarrer.
+[02:29 -> 02:31] Alors, au niveau de cette fiche.
+[02:36 -> 02:41] On parlera après de ça, si je reprend ma fiche.
+[02:46 -> 02:49] Je vais vous parler des collaborateurs virtuels, mais après.
+[02:49 -> 02:56] On va d'abord commencer par voir le contenu de la fiche en détail et ses impacts.
+[02:56 -> 03:02] Ensuite, on parlera des collaborateurs virtuels et de la fusion.
+[03:03 -> 03:06] Je vais vous parler de ce menu-là, de cet écran-là.
+[03:08 -> 03:14] Quand on ouvre, quand on est sur le suivi des collaborateurs et quand on se positionne sur un collaborateur.
+[03:17 -> 03:28] On a, par défaut, on voit la synthèse des informations du collaborateur à la date de consultation.
+[03:28 -> 03:30] C'est-à-dire à la date du jour.
+[03:32 -> 03:34] On peut très bien...
+[03:34 -> 03:38] Les informations de ce collaborateur, elles peuvent évoluer dans le temps.
+[03:40 -> 03:46] Tout à l'heure, je crois que je me suis mis ici, quand je suis mis en direction administrative.
+[03:46 -> 03:51] J'étais rattachée à la direction administrative jusqu'au 31 mars 2021.
+[03:51 -> 03:55] Et depuis le 1er avril, je suis rattachée à la direction de production.
+[03:55 -> 03:58] La structure est une immense direction de production.
+[03:58 -> 04:04] Si je reviens dans la situation, quand je consulte au 28 avril, il m'affiche bien direction de production.
+[04:04 -> 04:06] Mais si je consulte...
+[04:06 -> 04:18] Alors, il me montre là, par cette petite flèche, que j'ai une situation précédente et que ma période précédente s'arrête au 31 mars.
+[04:18 -> 04:23] Et si je clique, il va me donner mes informations à la date du 31 mars.
+[04:24 -> 04:27] Et là, je suis bien rattachée à la direction administrative.
+[04:29 -> 04:32] Voilà.
+[04:32 -> 04:35] Donc là, il me donne par contre la valeur suivante.
+[04:35 -> 04:40] Et puis je peux aussi, si je m'interroge, comment était mon salarié,
+[04:40 -> 04:43] à quel été ses affectations, son mode de badge, etc.
+[04:43 -> 04:51] La date du 28 janvier, je sais, j'ai une date dans le calendrier.
+[04:51 -> 04:54] Et il va m'afficher la situation au 28 janvier.
+[04:54 -> 04:57] D'où le terme situation.
+[04:58 -> 05:08] Ensuite, cette synthèse, vous avez vu que sur les entêtes des champs, ce sont des liens.
+[05:08 -> 05:19] En fait, et que chaque lien, un clic, ouvre le volet relatif aux informations sous ce lien, derrière ce lien.
+[05:19 -> 05:23] Et là, en l'occurrence, c'est le volet période de présence.
+[05:24 -> 05:28] Alors, si je reviens sur les informations des périodes de présence.
+[05:28 -> 05:33] L'entrée, la date d'entrée et de la sortie.
+[05:33 -> 05:37] Généralement, on met la date d'entrée réelle.
+[05:41 -> 05:45] Noretine, tu avais mis toi en 2011, je crois.
+[05:46 -> 05:51] C'était ta date d'entrée réelle, peut-être dans CGFI.
+[05:51 -> 05:54] Oui, c'est la date réelle.
+[05:57 -> 06:00] C'est assez proche de la date d'ancienneté.
+[06:03 -> 06:06] D'ailleurs, que je ne retrouve pas sur cet écran-là.
+[06:06 -> 06:09] Pourquoi est-ce que je croyais qu'elle était sur cet écran ?
+[06:09 -> 06:11] La date d'ancienneté.
+[06:16 -> 06:18] Contra.
+[06:18 -> 06:20] Dans l'état civil.
+[06:20 -> 06:24] La date d'ancienneté, elle est dans le volet contrat.
+[06:24 -> 06:26] D'accord.
+[06:26 -> 06:29] Parce que souvent, la date d'ancienneté, c'est la date d'entrée.
+[06:29 -> 06:33] Mais quand on a des mutations d'une société à l'autre, à l'intérieur d'un groupe,
+[06:33 -> 06:40] ou parfois on peut négocier, en fait, de conserver son ancienneté acquise précédemment.
+[06:41 -> 06:45] C'est un élément contractuel négocié.
+[06:45 -> 06:48] Et c'est pour ça que je pense qu'elle apparaît dans le volet contrat.
+[06:50 -> 06:52] Par défaut, elle est à la date d'entrée.
+[06:52 -> 06:55] Sauf si je peux la modifier là.
+[06:55 -> 06:58] Je peux dire que, par exemple, moi, j'avais négocié, je ne sais pas,
+[06:58 -> 07:01] le 1er janvier 2019.
+[07:10 -> 07:21] Pour revenir sur mes périodes de présence, je suis obligée de repasser par situation.
+[07:21 -> 07:27] Voilà, si je reviens sur ma période de présence, j'ai donc mes dates d'entrée et de sortie.
+[07:27 -> 07:30] Éventuellement, je peux associer un motif.
+[07:30 -> 07:33] On a une liste des codes motifs.
+[07:33 -> 07:39] Enfin, on peut codifier des motifs d'entrée et des motifs de sortie.
+[07:40 -> 07:45] Pour compléter ces informations là, mais ce n'est pas obligatoire.
+[07:45 -> 07:51] Et la date de début de gestion, ça va être la date à laquelle je veux commencer
+[07:51 -> 07:55] à gérer ce collaborateur dans Chronotime.
+[08:01 -> 08:06] J'ai un client que je vais mettre en exploitation au 1er janvier 2022.
+[08:07 -> 08:15] Au moment de la mise en production, les dossiers, ils auront des dates de présence
+[08:15 -> 08:18] dans leur organisation, dans leur entreprise.
+[08:18 -> 08:22] Leur date de présence réelle, il y a des gens qui sont là depuis 10, 20 ans.
+[08:22 -> 08:27] Mais par contre, en date de début de gestion, on mettra le 1er janvier 2022.
+[08:27 -> 08:31] Parce que sur la période antérieure, à cette date-là,
+[08:31 -> 08:34] je ne vais pas faire de contrôle, c'était géré dans un autre système,
+[08:34 -> 08:36] je ne reviens pas à quoi.
+[08:36 -> 08:39] Je ne vais commencer à contrôler, à calculer les dossiers,
+[08:39 -> 08:41] qu'à partir du 1er janvier 2022.
+[08:41 -> 08:43] Donc ça, c'est la date de début de gestion.
+[08:55 -> 09:00] Ensuite, vous voyez, souvent, il y a une petite incompréhension.
+[09:00 -> 09:03] Quand on voit sur date de début de gestion, ici, ça, c'est pas un lien.
+[09:04 -> 09:09] C'est parce que cette date de début de gestion, elle est embarquée dans ce volet-là,
+[09:09 -> 09:11] période de présence.
+[09:11 -> 09:13] C'est pour ça que je n'ai pas de lien.
+[09:13 -> 09:16] Il faut que j'y aille par le volet-period de présence.
+[09:20 -> 09:22] Ensuite, on a le métier.
+[09:22 -> 09:26] C'est une table qu'on a dans le référentiel,
+[09:26 -> 09:30] dans le référentiel organisation Donné Collaborateur.
+[09:31 -> 09:33] On a la table des métiers.
+[09:34 -> 09:36] Et là, c'est libre.
+[09:36 -> 09:38] C'est un code, un libellé,
+[09:38 -> 09:42] éventuellement un numéro d'ordre quand on veut faire des ordres d'affichage.
+[09:42 -> 09:44] C'est tout.
+[09:44 -> 09:46] C'est libre pour le client.
+[09:49 -> 09:51] Ensuite,
+[09:52 -> 09:56] on a le code contrat.
+[10:00 -> 10:02] Quand je clique sur ce lien,
+[10:03 -> 10:04] contrat,
+[10:07 -> 10:12] je vois, c'est un volet qui concerne les changements de contrat.
+[10:13 -> 10:16] Éventuellement, je rentre dans une entreprise en tant que
+[10:16 -> 10:18] employé.
+[10:18 -> 10:21] Et puis, à un moment donné, je vais peut-être passer l'agent de maîtrise
+[10:21 -> 10:23] et puis, je vais peut-être ensuite passer cadre
+[10:23 -> 10:27] avec des modalités de calcul et de contrôle différentes.
+[10:28 -> 10:31] Donc, si j'ai des changements en contrat actuel,
+[10:31 -> 10:34] je peux faire évoluer les types de contrats,
+[10:34 -> 10:36] le type de contrat, le code contrat
+[10:36 -> 10:38] que je positionne sur le collaborateur.
+[10:39 -> 10:42] Mais cet enregistrement,
+[10:43 -> 10:46] quand j'informe le code contrat,
+[10:48 -> 10:51] je ne sais jamais comment le faire.
+[10:51 -> 10:53] Voilà, on fait un clic.
+[10:55 -> 10:57] Alors, vous voyez,
+[10:57 -> 11:01] j'ai essayé de modifier cet enregistrement.
+[11:01 -> 11:03] Et il me dit ce message,
+[11:03 -> 11:04] vous l'aurez souvent,
+[11:04 -> 11:07] modification non autorisée, date trop ancienne.
+[11:07 -> 11:11] Alors, une des raisons pour laquelle j'ai ce message,
+[11:11 -> 11:13] et là, en l'occurrence,
+[11:13 -> 11:16] c'est la raison pour laquelle j'ai ce message,
+[11:16 -> 11:19] c'est que j'essaie de modifier une période
+[11:19 -> 11:21] qui démarre au 1er décembre 2020.
+[11:23 -> 11:25] Ça parce que je me suis mis
+[11:25 -> 11:27] une date
+[11:27 -> 11:29] de...
+[11:29 -> 11:31] une période de présence
+[11:31 -> 11:33] et je me suis mis
+[11:33 -> 11:35] une date de présence
+[11:36 -> 11:38] à cette date-là.
+[11:39 -> 11:41] Non, je ne l'avais pas mis.
+[11:41 -> 11:43] Je l'avais changé.
+[11:44 -> 11:46] Je vérifie la présence.
+[11:46 -> 11:48] Oui, c'est ça.
+[11:48 -> 11:50] Au 1er décembre 2020.
+[11:50 -> 11:52] Mais j'ai une date de début de gestion
+[11:52 -> 11:54] au fin décembre.
+[11:54 -> 11:56] Alors, le système,
+[11:56 -> 11:58] il ne veut pas qu'on fasse des modifications
+[11:58 -> 12:00] sur une période antérieure
+[12:00 -> 12:02] à la date de début de gestion.
+[12:05 -> 12:07] C'est pour ça qu'il me dit
+[12:07 -> 12:09] que vous ne pouvez pas modifier
+[12:09 -> 12:11] l'information
+[12:11 -> 12:13] ici, l'enregistrement du 1er décembre,
+[12:13 -> 12:15] la situation du 1er décembre au 31 décembre.
+[12:15 -> 12:17] Alors, là, j'ai deux solutions.
+[12:17 -> 12:19] En fait,
+[12:19 -> 12:21] la situation avant
+[12:21 -> 12:23] le 20 décembre,
+[12:23 -> 12:25] avant la date de début de gestion,
+[12:25 -> 12:27] en termes de contrat, elle ne m'intéresse pas,
+[12:27 -> 12:29] puisque je ne vais pas le contrôler,
+[12:29 -> 12:31] je ne vais pas le gérer, je ne vais pas le calculer.
+[12:31 -> 12:33] Ça m'est égal.
+[12:33 -> 12:35] C'est de créer une nouvelle période
+[12:35 -> 12:37] à partir du 20 décembre.
+[12:39 -> 12:41] Je vais dire que, par exemple,
+[12:41 -> 12:43] je vais passer en
+[12:43 -> 12:45] 28 heures, par exemple,
+[12:45 -> 12:47] c'est n'importe quoi.
+[12:47 -> 12:49] Éventuellement, je vais lui mettre
+[12:49 -> 12:51] une catégorie différente,
+[12:51 -> 12:53] un statut différent,
+[12:53 -> 12:55] on est terminé, on peut me porter.
+[12:59 -> 13:01] Voilà, donc là, il m'a autorisé
+[13:01 -> 13:03] à créer un nouvel enregistrement
+[13:03 -> 13:05] à partir du 20 décembre.
+[13:05 -> 13:07] Si j'avais essayé de créer une période à partir du 19 décembre,
+[13:07 -> 13:09] il m'aurait dit que vous ne pouvez pas,
+[13:09 -> 13:11] parce que c'est antérieur à la date
+[13:11 -> 13:13] de début de gestion.
+[13:13 -> 13:15] Et l'autre solution,
+[13:17 -> 13:19] ici,
+[13:19 -> 13:21] alors, on clique sur le début de la ligne,
+[13:21 -> 13:23] je supprime cette
+[13:23 -> 13:25] période
+[13:25 -> 13:27] que je viens de
+[13:27 -> 13:29] rajouter.
+[13:29 -> 13:31] Je repars
+[13:33 -> 13:35] sur mon volet
+[13:35 -> 13:37] période de présence.
+[13:37 -> 13:39] Je modifie ma date de début de gestion
+[13:39 -> 13:41] au 1er décembre
+[13:41 -> 13:43] temporairement.
+[13:49 -> 13:51] Et là, maintenant,
+[13:51 -> 13:53] si je retourne
+[13:53 -> 13:55] sur mon volet contrat,
+[13:55 -> 13:57] je pourrai modifier directement
+[13:57 -> 13:59] cet enregistrement.
+[13:59 -> 14:01] Par exemple,
+[14:01 -> 14:03] je vais me mettre en encadre.
+[14:15 -> 14:17] Et ensuite,
+[14:17 -> 14:19] si je veux ramener ma date de début de gestion
+[14:19 -> 14:21] au 20 décembre,
+[14:21 -> 14:23] je peux le faire.
+[14:23 -> 14:25] Ça, c'est souvent des choses qu'on a
+[14:25 -> 14:27] au début des projets
+[14:27 -> 14:29] quand on crée
+[14:29 -> 14:31] des dossiers.
+[14:31 -> 14:33] En général, on ne sait pas trop
+[14:33 -> 14:35] vraiment la date à laquelle on veut faire
+[14:35 -> 14:37] démarrer les dossiers en recettes, etc.
+[14:37 -> 14:39] Et souvent, on importe
+[14:39 -> 14:41] les périodes de présence.
+[14:41 -> 14:43] On joue l'import
+[14:43 -> 14:45] avec les périodes de présence réelle
+[14:45 -> 14:47] des personnes.
+[14:47 -> 14:49] Et après, on met
+[14:49 -> 14:51] en place la date
+[14:51 -> 14:53] de début de gestion. Par exemple, on veut commencer
+[14:53 -> 14:55] à faire, à calculer des trucs
+[14:55 -> 14:57] à partir du 1er mars 2021
+[14:57 -> 14:59] pour la recette.
+[15:01 -> 15:03] Et pendant la recette, on veut modifier
+[15:03 -> 15:05] des informations, des fiches collaborateurs,
+[15:05 -> 15:07] des informations de leurs dossiers.
+[15:07 -> 15:09] C'est là qu'on rencontre ce type de difficulté.
+[15:09 -> 15:11] C'est pour ça que je vous le présente.
+[15:11 -> 15:13] Excuse
+[15:13 -> 15:15] moi Christine.
+[15:15 -> 15:17] C'est une règle de gestion
+[15:17 -> 15:19] normalement.
+[15:19 -> 15:21] Si c'est la date
+[15:21 -> 15:23] de gestion qui prime
+[15:23 -> 15:25] pourquoi
+[15:25 -> 15:27] autoriser
+[15:27 -> 15:29] date de présence avant date
+[15:29 -> 15:31] de gestion ?
+[15:31 -> 15:33] Parce que
+[15:33 -> 15:35] on veut quand même avoir
+[15:35 -> 15:37] l'information de la présence réelle.
+[15:37 -> 15:39] On peut très bien imaginer que
+[15:39 -> 15:41] le manager
+[15:41 -> 15:43] ça l'intéresse
+[15:43 -> 15:45] enfin le gestionnaire, ça l'intéresse
+[15:45 -> 15:47] de savoir que la personne n'allait
+[15:47 -> 15:49] rentrer en réalité dans la boîte
+[15:49 -> 15:51] en 2012
+[15:51 -> 15:53] la vraie présence
+[15:53 -> 15:55] c'est
+[15:55 -> 15:57] la période de présence. D'ailleurs souvent elle est
+[15:57 -> 15:59] importée du SIRH
+[15:59 -> 16:01] et
+[16:01 -> 16:03] c'est complètement aveugle tu vois
+[16:03 -> 16:05] sur l'ancienneté de la personne
+[16:05 -> 16:07] et puis il peut y avoir
+[16:07 -> 16:09] des règles de gestion
+[16:11 -> 16:13] sur le nombre d'années de présence
+[16:13 -> 16:15] je ne sais pas.
+[16:15 -> 16:17] Parce que justement le mot présence
+[16:17 -> 16:19] ça induit un erreur parce que ça
+[16:19 -> 16:21] reflète pour moi le badgeage
+[16:21 -> 16:23] pour moi date d'entrée
+[16:23 -> 16:25] c'est plus pratique que présence
+[16:25 -> 16:27] alors d'accord
+[16:27 -> 16:29] oui je comprends ces périodes de présence
+[16:29 -> 16:31] en fait il manque un terme
+[16:31 -> 16:33] ces présences à l'effectif
+[16:33 -> 16:35] dans la société
+[16:35 -> 16:37] voilà
+[16:37 -> 16:39] parce que présence puisqu'on partait si longtemps
+[16:41 -> 16:43] comment ?
+[16:43 -> 16:45] justement le mot présence
+[16:45 -> 16:47] pour moi c'est à l'opposé
+[16:47 -> 16:49] d'absence donc
+[16:49 -> 16:51] quand j'entends présence
+[16:51 -> 16:53] ça reflète lié avec le badgeage
+[16:53 -> 16:55] avec
+[16:55 -> 16:57] la gestion de temps
+[16:57 -> 16:59] mais là j'en comprends
+[16:59 -> 17:01] parce que c'est sous-entendant
+[17:01 -> 17:03] dans chrono-time
+[17:03 -> 17:05] on a cette situation
+[17:05 -> 17:07] cette notion de présence
+[17:07 -> 17:09] alors présence
+[17:09 -> 17:11] le contraire de l'absence
+[17:11 -> 17:13] présence
+[17:13 -> 17:15] au niveau de l'horaire
+[17:15 -> 17:17] et on a la présence à l'effectif
+[17:17 -> 17:19] et c'est vrai qu'il n'y a pas de distinction
+[17:19 -> 17:21] on utilise toujours le terme présent
+[17:21 -> 17:23] mais c'est la période
+[17:23 -> 17:25] de présence à l'effectif
+[17:25 -> 17:27] par exemple tu vois ici
+[17:27 -> 17:29] alors ça me fait justement
+[17:29 -> 17:31] rebondir sur une notion
+[17:31 -> 17:33] dans les collaborateurs
+[17:33 -> 17:35] qui sont là
+[17:35 -> 17:37] je vois tous les présents
+[17:37 -> 17:39] à l'effectif
+[17:39 -> 17:41] admettons que
+[17:41 -> 17:43] Adèle
+[17:43 -> 17:45] Martin
+[17:45 -> 17:47] elle est rentrée
+[17:47 -> 17:49] le 29 mars 2021
+[17:49 -> 17:51] et en fait
+[17:51 -> 17:53] ici
+[17:53 -> 17:55] je vais revenir sur sa situation
+[17:55 -> 17:57] et
+[17:59 -> 18:01] je vais aller dans sa période de présence
+[18:01 -> 18:03] et je vais dire
+[18:03 -> 18:05] tiens elle est sortie
+[18:07 -> 18:09] elle est sortie le 15 avril
+[18:11 -> 18:13] il y a pas de motif là
+[18:13 -> 18:15] n'importe importe
+[18:15 -> 18:17] voilà
+[18:17 -> 18:19] elle disparaît de ma liste
+[18:21 -> 18:23] elle est plus là Martin
+[18:25 -> 18:27] par défaut
+[18:27 -> 18:29] la liste des collaborateurs qui sont affichés là
+[18:29 -> 18:31] dans le suivi des collaborateurs
+[18:31 -> 18:33] ce sont les présents à l'effectif
+[18:33 -> 18:35] par défaut
+[18:35 -> 18:37] la liste des collaborateurs qui sont affichés là
+[18:37 -> 18:39] dans le suivi des collaborateurs
+[18:39 -> 18:44] à l'effectif. Donc à la date, puisque je consulte là aujourd'hui à la date du 28 avril,
+[18:44 -> 18:50] eh bien je ne la vois pas dans mon effectif au 28 avril. Par contre si je fais inclure les
+[18:50 -> 18:59] noms présents, elle va réapparaître. A ce titre d'ailleurs Christine, est-ce qu'on peut renseigner
+[18:59 -> 19:06] une date de sortie avant la sortie du collaborateur en clair, là on est le 28 avril. Si on sait
+[19:06 -> 19:12] qu'un collaborateur sort par exemple fin mai, est-ce qu'on peut la renseigner dans le système ? Oui,
+[19:12 -> 19:22] d'accord. Et donc du coup, comme le filtre je pense est fait par rapport à la date du jour,
+[19:22 -> 19:29] quand on n'est pas à la date du 31 mai, donc du coup on verra toujours cette personne dans la liste.
+[19:29 -> 19:35] C'est ça. Et ce qui peut se passer, ce qui peut se produire, c'est que le RH il va certainement
+[19:35 -> 19:43] faire des corrections sur son dossier etc. Si elle sort le 31 mai par exemple, il va peut-être faire des
+[19:43 -> 19:48] corrections de son dossier ou des ajustements après sa sortie, en fin du moment de sa sortie,
+[19:48 -> 19:56] il va les faire le 2 ou 3 juin et il ne la verra pas par défaut quand il va dans sa liste. Il faudra
+[19:56 -> 20:02] qu'il dise inclure les noms présents pour qu'elles apparaissent. D'accord. Ou alors,
+[20:02 -> 20:07] j'ai l'association de dire que j'inclure les noms présents, ou alors je dis que je veux la situation par
+[20:07 -> 20:13] exemple au 14 avril. Si je fais une situation au 14 avril, là je ne suis plus en date du jour
+[20:13 -> 20:18] en consultation, je vois mes gens et je vois Martin parce que Martin est toujours là au 14 avril.
+[20:18 -> 20:29] Donc on a deux possibilités de voir justement ces noms présents. Là c'est vrai pour une personne
+[20:29 -> 20:35] sortie, mais je peux très bien importer des dossiers avec des gens qui rentrent dans un mois,
+[20:35 -> 20:41] et qui ont une date d'entrée le 1 juin par exemple, et je ne les verrai pas dans ma liste, il faudra
+[20:41 -> 20:47] que je mette inclure les noms présents, ou alors une date au 1 juin pour voir les nouvelles entrées.
+[20:47 -> 20:56] Parce que du coup ça fonctionne aussi pour les personnes qui rentrent à date différée.
+[20:56 -> 21:11] C'est ça. Alors une précision sur ces dates, enfin sur ces présences, quand on met inclure
+[21:11 -> 21:15] les noms présents, là c'est les noms présents à l'effectif à la date du jour. On ne parle
+[21:15 -> 21:24] pas d'horaire là. Là c'est hors contrat en gros, ils ne sont pas dans les contrats.
+[21:24 -> 21:32] Ici vous avez en haut de l'écran, vous avez une sélection possible, par défaut vous voyez
+[21:32 -> 21:42] on voit tous les collaborateurs. Avec cette petite flèche je peux choisir de filtrer et de ne
+[21:42 -> 21:47] pas voir tous les collaborateurs, mais de voir des populations, je vous en parlerai un peu plus tard,
+[21:47 -> 21:56] ou une population plus réduite, ou alors je peux même choisir un collaborateur. Et bien dans le
+[21:56 -> 22:07] choix d'un collaborateur, si je cherche Martin, il ne me la trouve pas. Ça c'est une limite du produit.
+[22:08 -> 22:17] On aimerait bien avoir ici une coche qui dise, est-ce que j'inclus les noms présents ? Est-ce que je
+[22:17 -> 22:23] cherche parmi les noms présents en fait ? Et par défaut ce choix de collaborateur il est dans les
+[22:23 -> 22:29] présents à l'effectif à la date du jour. Donc je n'ai pas la possibilité de travailler sur le dossier
+[22:29 -> 22:37] de Martin en passant par cette option là. Je vais être obligé de le faire par là,
+[22:37 -> 22:44] de choisir Martin par exemple, et puis de dire je veux la situation, je veux incurler dans
+[22:44 -> 23:09] la date du jour, et en appliquant je vais la voir. Donc ça c'est important pour les
+[23:09 -> 23:15] dates pour la recherche, pour comprendre que par défaut ce sont les présents à l'effectif qu'on
+[23:15 -> 23:27] a ici. Si je cherche, si je réapplique, si j'en ai tout. Alors là j'ai enlevé les critères 1 par 1,
+[23:27 -> 23:32] j'ai décoché, j'ai enlevé le nom Martin, je peux aussi faire ça, ça m'efface tous mes critères de
+[23:32 -> 23:42] recherche et ça me donne la liste complète par rapport à la population qui est là. Par contre
+[23:42 -> 23:51] ici j'ai choisi un collaborateur de Bardin par exemple. Il me donne Bardin, il n'y a pas de souci
+[23:51 -> 23:58] parce qu'il est présent, il est présent à l'effectif celui-là. Ça me permet de filtrer
+[23:58 -> 24:03] ma liste, alors vous voyez ça me fait filtrer ma liste à gauche et ça me m'indique ici sur
+[24:03 -> 24:15] quelles collaborateurs je travaille. Ce choix ici tant que je suis, il est transverse à tout l'espace
+[24:15 -> 24:22] mon équipe. Là dans celui des collaborateurs je suis dans l'espace mon équipe et j'ai toutes les actions
+[24:22 -> 24:36] de menu. Quand je consulte, par exemple quand je fais des consultations, je ne sais pas, j'ai regardé le
+[24:36 -> 24:46] planning, j'ouvre le planning, dans mon planning je n'aurai que Bardin. Pour avoir tout le monde,
+[24:46 -> 24:51] il faut que je change la population ici, que je repasse un peu collaborateur. Là il va me les
+[24:51 -> 25:02] afficher tous. C'est pour vous indiquer que cette population, enfin ce choix ici, il est transverse
+[25:02 -> 25:28] à tout l'espace. Donc pour toutes ces actions. Ok, là si je veux réduire les choix, voilà. Ensuite
+[25:32 -> 25:48] je reviens sur cette notion de contrat. Donc là je choisis, dans ce volet changement de contrat,
+[25:48 -> 26:00] j'ai des informations ici. Le contrat type parmi une liste de choix, de contrat type que j'ai
+[26:00 -> 26:09] prédéfinie, mais ça c'est selon les besoins du client. Et j'indique les catégories, les statuts,
+[26:09 -> 26:17] des autres informations. Là moi je n'en ai pas créé sur cet environnement. Enfin très peu. Je peux
+[26:17 -> 26:22] éventuellement mettre la convention collective, la société d'intervime. Mais qu'est-ce que c'est
+[26:22 -> 26:31] qu'un type de contrat ? Un type de contrat dans le référentiel, dans les données collaborateurs,
+[26:31 -> 26:39] j'ai la notion de contrat type. Et la liste des contrats qui est proposée, c'est la liste des
+[26:39 -> 26:48] contrats type qui a été créé ici. Le contrat type c'est un lot d'informations,
+[26:48 -> 26:55] une ensemble d'informations qui vont toutes être appliquées si le collaborateur a ce contrat 35
+[26:55 -> 26:59] l'heure non cadre. Et bien du coup on va lui appliquer toutes les informations qui sont portées
+[26:59 -> 27:06] par le contrat. Ce n'est pas un cadre, il est à 100% en taux d'activité. On a des notions de
+[27:06 -> 27:12] motivation mais pas utilisées. On a le nombre d'heures hebdo, le nombre de jours hebdo,
+[27:12 -> 27:19] le nombre de renomments suels annuels, éventuellement un nombre de jours annuels. Des bases de calculs,
+[27:19 -> 27:26] mais là je parlerai juste pour les personnes qui vont travailler sur la France parce que vous
+[27:26 -> 27:36] n'êtes pas, vous n'utilisez pas ces notions au Maroc. Tu m'arrêtes, Rally, si je dis une bêtise,
+[27:36 -> 27:42] mais je pense que vous n'utilisez pas ça. Oui, bien c'est vrai. Vous faites tout par les règles de
+[27:42 -> 27:51] calcul. Et ici le type de synoptique. Dans le type de synoptique je vais vous montrer en fait ça
+[27:51 -> 27:57] permet de faire la distinction quand on regarde son agenda annuel et les compteurs qui sont affichés
+[27:57 -> 28:08] sur cet agenda annuel. Quand j'ai des cadres en forfait jour, ça ne m'intéresse pas d'avoir des
+[28:08 -> 28:14] compteurs en heure. J'ai des compteurs en jour. Et par contre pour les gens qui batch ou qui sont
+[28:14 -> 28:18] gérés en heure, là ça m'intéresse d'avoir des compteurs en heure. Donc je vais avoir deux
+[28:18 -> 28:23] types de synoptiques à minima. Je vais avoir un synoptique pour les cadres en forfait jour et
+[28:23 -> 28:31] un synoptique pour les personnes qui sont gérées en heure. Et donc c'est par cette codification que
+[28:31 -> 28:36] j'affecte un type de synoptique particulier en fonction du contrat type parce que si c'est un
+[28:36 -> 28:42] contrat cadre en forfait jour, je vais certainement lui mettre un synoptique avec des compteurs en
+[28:42 -> 28:54] jour. Donc le contrat type c'est l'ensemble de ces informations. J'ai d'autres informations.
+[28:54 -> 29:00] J'ai aussi des champs personnalisables. Qu'est-ce que j'ai fait ? Vous voulez voir,
+[29:00 -> 29:04] j'ai fait des motifs.
+[29:13 -> 29:19] Là ce sont des informations complémentaires qui sont ajoutées au contrat type. Et là on a deux
+[29:19 -> 29:30] informations complémentaires. Est-ce que c'est un forfait jour ou pas ? Et est-ce que ce contrat
+[29:30 -> 29:38] donne droit à une prime panier ? Oui non. Ces champs personnalisables,
+[29:38 -> 29:48] ce sont des informations qui, comment dire, sur toutes les entités fonctionnelles dont on
+[29:48 -> 29:54] opame les contrats types, les horaires, les motifs d'absence, l'activité, les personnes, les
+[29:54 -> 30:04] personnels. On a à disposition tous les champs qu'on voit dans les écrans. Par exemple la fiche
+[30:04 -> 30:09] collaborateur, on a le mode de batchage, le rattachement à la structure, le métier, le code du
+[30:09 -> 30:16] contrat etc. Mais on peut rajouter des informations complémentaires en fonction des besoins clients.
+[30:16 -> 30:27] C'est complètement libre. Ces champs complémentaires sont paramétrés dans le référentiel. Dans le
+[30:27 -> 30:38] référentiel, c'est paramètres, c'est définition, caractéristique paramétrable.
+[30:38 -> 30:52] Là, on choisit d'abord quel type d'entité je veux compléter en fait. Et par exemple,
+[30:52 -> 31:01] pour les contrats types, je vais demander un type de contrat personnel contrat.
+[31:09 -> 31:22] Voilà. Et dans personnel contrat, je vois que j'ai à disposition 20 champs, j'en ai 20, oui, j'ai 20 champs
+[31:22 -> 31:30] alpha numérique et j'en ai 20 numériques disponibles. Et quand je veux caractéristique, quand je veux
+[31:30 -> 31:40] personnaliser, donner une information supplémentaire, je prends un des champs, le premier champ disponible
+[31:40 -> 31:50] alpha numérique par exemple et j'ai dit, je l'intitule forfait et je contrôle la saisie de cette
+[31:50 -> 31:59] information par une table de codification, oui non. Et puis j'ai choisi le cinquième champ, j'ai dit
+[31:59 -> 32:06] que c'était prime panier et là aussi, je contrôle avec une table de codification interne. Je vous
+[32:06 -> 32:15] montrerai ces tables-là. Et donc, c'est pour ça que dans le contrat type, je vois apparaître
+[32:15 -> 32:19] ces deux informations complémentaires parce qu'elles ont été, que je peux renseigner. Ah oui,
+[32:19 -> 32:33] oui ou non. Par exemple forfait et non, et prime panier, non. Et j'aurais pu en définir d'autres.
+[32:33 -> 32:42] Donc c'est un ensemble d'informations, le contrat type. Et quand je vais affecter ce contrat type
+[32:42 -> 32:49] à quelqu'un, un collaborateur, cette personne, elle va hériter de l'ensemble des informations
+[32:49 -> 33:14] portées par le contrat type. Je vais réfléchir. Le contrat en encadre. Si je regarde le changement
+[33:14 -> 33:27] de contrat, c'est ça. Et si je regarde le détail du contrat. Alors, pardon. Pour regarder le détail
+[33:27 -> 33:36] du contrat, faut que je regarde la loupe. Et là, je vois que pour qu'on aille Christine,
+[33:37 -> 33:45] mon type de contrat, c'est ce fameux 35 encadre. Et du coup, c'est pas un cadre. J'ai un taux d'activité à 100.
+[33:45 -> 33:53] J'ai pas de modulation. J'ai un nombre d'heures à 35 heures en abdo, en anselle, en annuel. Un nombre
+[33:53 -> 34:00] de jours par semaine. Les bases de calculs, j'ai rien. Et ici, je vois arriver non et non en prime
+[34:01 -> 34:10] et en forfait. C'est les heures, les jours ouvrables avec les heures mentionnées. C'est ça? Oui.
+[34:10 -> 34:18] D'accord. Il déduit les jours fériés systématiquement. Ça dépend juste de calcul qui est mis en
+[34:18 -> 34:23] annuellement. Alors, c'est ailleurs. Ça, c'est la semaine, je dirais, c'est une semaine normale.
+[34:24 -> 34:30] Elle doit faire 35 heures, 1607 heures en annuel. Voilà. Je travaille cinq jours par semaine.
+[34:30 -> 34:38] D'accord. C'est vrai. On n'est pas du tout encore dans la gestion de défrailler, etc.
+[34:38 -> 34:50] C'est la base contractuelle. Alors, je peux afficher, vous voyez, les valeurs du contrat type.
+[34:50 -> 34:59] Et il m'aumait idem. On m'aura enseigné quand il n'y a rien qui est positionné sur le
+[34:59 -> 35:07] contrat type. Par contre, peut-être que moi, finalement, je ne vais pas faire 35 heures.
+[35:07 -> 35:13] Je vais en faire 37 heures 30, ou je vais en faire 36. Je vais dire, cette personne-là,
+[35:13 -> 35:19] elle fait 36 heures abdo. Elle fait peut-être 160 heures par semaine. Je le fais à la louche.
+[35:19 -> 35:30] Et 1650 heures par mois. Donc, je surcharge.
+[35:30 -> 35:41] Et là, je vois que j'ai les mêmes valeurs ici. Mais quand j'affiche les valeurs du contrat type,
+[35:41 -> 35:44] le contrat type, lui, il n'a pas bougé. Il est toujours une valeur en 35 heures.
+[35:44 -> 35:49] Mais, par contre, pour cette personne-là, mon nombre de rate d'eau, c'est pas 35, c'est 36.
+[35:49 -> 35:58] Donc, j'affecte un contrat type à quelqu'un. Il érite des informations du contrat type.
+[35:58 -> 36:04] Mais si je surcharge le détail de ces informations pour cette personne,
+[36:04 -> 36:08] eh bien, c'est ça qui va prendre le pas, quoi, qui va être prioritaire.
+[36:08 -> 36:17] Donc, dans les calculs et tout, si je m'applique à regarder, à tester le nombre d'heures,
+[36:17 -> 36:20] à utiliser le nombre d'heures hebdo ou mensuels pour faire les calculs ou je ne sais quoi,
+[36:20 -> 36:26] il s'appuiera là-dessus. Et pour revenir au valeur du contrat,
+[36:26 -> 36:34] mais c'est pas pareil de saisir 35 heures que de supprimer carrément ces 36.
+[36:34 -> 36:42] Là, si j'enregistre, je reviens effectivement au valeur du contrat.
+[36:42 -> 36:50] Mais ça, c'est parce que ça vient, c'est parce que j'ai supprimé l'information surchargée.
+[36:50 -> 37:01] Alors que là, si je mets 151h40 ici et que j'enregistre, donc je mets la même chose
+[37:01 -> 37:09] que ce que porte le contrat, il m'affiche les deux. Et quand il m'affiche les deux,
+[37:09 -> 37:13] ça veut dire que oui, c'est peut-être pareil, mais pas tout à fait parce que là,
+[37:13 -> 37:20] c'est pas un héritage. Là, j'ai forcé la valeur. Et que ça peut avoir comme impact ?
+[37:20 -> 37:26] C'est que si j'ai forcé la valeur sur la personne et que dans un autre temps,
+[37:26 -> 37:32] je modifie la valeur du contrat type, portée par le contrat type,
+[37:32 -> 37:39] je vais récupérer, je vais conserver mes 151h40. Je ne vais pas hériter de la nouvelle valeur du contrat type.
+[37:57 -> 37:58] Ça va ?
+[38:01 -> 38:10] Ce que j'ai compris, c'est que les heures du contrat type, ils priment. Si je ne personnalise pas avec d'autres heures,
+[38:10 -> 38:16] donc en cas de personnalisation, en cas d'ajout, c'est celle de dernière qui prime.
+[38:16 -> 38:17] Ce n'est pas le contrat type.
+[38:17 -> 38:18] Oui.
+[38:19 -> 38:20] D'accord.
+[38:20 -> 38:21] C'est ça.
+[38:27 -> 38:32] Alors, ça peut avoir des impacts.
+[38:32 -> 38:37] Ce qu'il faut comprendre, c'est que historiquement, ce contrat type, il a été fait pourquoi ?
+[38:37 -> 38:43] Parce que ChronoTime est issu de ChronoGestore, est issu de P2.
+[38:43 -> 38:49] Si on reprend l'historique du produit, ça fait une quinzaine d'années, donc il existe un peu plus.
+[38:50 -> 38:54] Initialement, il n'y avait pas énormément d'import.
+[38:54 -> 38:56] On ne faisait pas beaucoup d'interface.
+[38:56 -> 39:02] Il n'y avait pas beaucoup d'import des systèmes de paye vers la gestion des temps.
+[39:02 -> 39:09] Il y avait des clients qui fonctionnaient avec la gestion des temps.
+[39:09 -> 39:13] Ensuite, on faisait des extractions, je ne sais pas comment Excel ou je ne sais quoi,
+[39:13 -> 39:17] pour y récupérer les heures et y recéliser en paye.
+[39:17 -> 39:21] Bref, il n'y avait pas beaucoup d'automatisation.
+[39:21 -> 39:27] Du coup, quand on avait des changements réglementaires,
+[39:27 -> 39:32] par exemple, quand on est passé de 40h à 39h et puis à 35h,
+[39:32 -> 39:41] au niveau législatif, au niveau national, au niveau légal, disons,
+[39:43 -> 39:48] cette notion de contrat type, ça a évité de repasser sur toutes les fiches collaborateurs
+[39:48 -> 39:55] pour dire, cette personne-là, non, elle ne doit plus faire 40h, elle ne doit plus en faire que 35h.
+[39:55 -> 40:03] C'est pour ça qu'on a fait ces agrégats d'information sous les codes contrat types,
+[40:03 -> 40:07] parce qu'ensuite, il suffisait de changer juste la valeur du contrat type,
+[40:07 -> 40:11] le nombre d'heures sur les contrats types et ça s'implutait sur les gens.
+[40:11 -> 40:15] Automatiquement, c'était pris en compte pour les personnes.
+[40:15 -> 40:23] Maintenant, c'est plus tout à fait vrai. Maintenant, en fait, les imports sont pratiquement systématiques.
+[40:23 -> 40:30] Donc, les informations, elles sont généralement produites par le SIRH
+[40:30 -> 40:35] et elles sont intégrées dans la gestion des temps par interface.
+[40:35 -> 40:38] Donc, on a moins besoin de cette notion.
+[40:39 -> 40:42] Je ne sais pas si vous l'utilisez beaucoup d'ailleurs, Khalid,
+[40:42 -> 40:46] sur vos clients marocains, cette notion de contrat type.
+[40:46 -> 40:49] Je ne sais pas si c'est là beaucoup d'intérêt.
+[40:49 -> 40:54] Oui, bien, c'est un relais de l'utilisation, bien sûr.
+[40:54 -> 40:56] Donc, c'est l'une d'informations qui est obligatoire.
+[40:56 -> 40:58] Donc, on ne peut pas passer à côté.
+[40:58 -> 41:00] On est obligé de créer au moins un contrat type pour l'affecter à quelqu'un
+[41:00 -> 41:02] ou pour l'affecter aux collaborateurs,
+[41:02 -> 41:05] puisque c'est une notion, c'est un champ obligatoire dans la fiche personnelle.
+[41:05 -> 41:10] Et par contre, on peut très bien imaginer de créer un seul contrat type
+[41:10 -> 41:13] d'affecter le même contrat à tout le monde.
+[41:13 -> 41:17] Alors, ce qui est intéressant quand même, c'est de voir d'emblée au niveau du contrat
+[41:17 -> 41:21] si c'est un cadre, si ce n'est pas un cadre, si son nom d'heure,
+[41:21 -> 41:25] enfin, c'est quand même intéressant.
+[41:25 -> 41:28] Mais on peut très bien imaginer d'avoir un seul contrat type
+[41:28 -> 41:33] et puis ensuite de fonctionner uniquement par surcharge,
+[41:33 -> 41:37] et d'importer directement les informations.
+[41:37 -> 41:42] Est-ce que c'est un cadre, son taux d'activité, le nombre d'heures
+[41:42 -> 41:45] et les informations qui sont personnalisées derrière.
+[41:45 -> 41:49] Parce que généralement, le SRH, il a ses infos.
+[41:51 -> 41:55] On n'aurait pas franchement besoin de passer par les contrats.
+[41:55 -> 42:00] Mais bon, ça reste une information obligatoire.
+[42:04 -> 42:06] On ne peut pas y couper.
+[42:09 -> 42:14] Alors, la particularité de ces contrats types, c'est qu'ils peuvent
+[42:20 -> 42:22] évoluer dans le temps.
+[42:24 -> 42:28] Vous voyez, par exemple ici, alors là, il y a un bug écran.
+[42:29 -> 42:31] Il y a un bug écran.
+[42:31 -> 42:34] Je ne devrais pas avoir cette flèche parce que j'ai qu'une seule période
+[42:34 -> 42:36] en fait de situation là.
+[42:39 -> 42:41] Donc, ce n'est pas normal.
+[42:41 -> 42:45] Mais par contre, imaginons que la législation change
+[42:45 -> 42:48] et que les contrats 35 heures,
+[42:48 -> 42:51] ce type de contrat qui est affecté à beaucoup de gens,
+[42:53 -> 42:55] il évolue.
+[42:56 -> 42:59] Et que, par exemple, à partir du 1er avril,
+[43:07 -> 43:11] je vais passer à 37 heures, par exemple.
+[43:11 -> 43:15] Tox, par exemple, on va passer à 37 heures.
+[43:25 -> 43:28] Voilà, toujours 5 jours par semaine.
+[43:31 -> 43:35] 37 heures, je ne sais pas, 165 heures, je ne sais pas.
+[43:37 -> 43:41] Heure et en annuel 1700, je ne sais pas, j'en ai au pif.
+[43:41 -> 43:43] Tox.
+[43:47 -> 43:49] Voilà.
+[43:49 -> 43:51] Je n'ai pas changé de code du contrat.
+[43:51 -> 43:53] C'est le même contrat type.
+[43:54 -> 43:57] Et vous voyez, là, maintenant, il me dit
+[43:57 -> 44:00] situation à partir du 1er avril.
+[44:00 -> 44:03] Et au survol, j'ai eu une valeur précédente au 31 mars.
+[44:03 -> 44:07] Donc là, à partir du 1er avril, c'est bien les informations que je viens lui donner.
+[44:07 -> 44:10] Et si je consulte la période précédente.
+[44:14 -> 44:20] Ah, le libellé, il n'est pas historisé, le libellé.
+[44:24 -> 44:27] C'est pas très puissant.
+[44:29 -> 44:31] C'est pas très puissant.
+[44:32 -> 44:34] C'est pas très puissant.
+[44:34 -> 44:36] Peut-être réelumie.
+[44:36 -> 44:38] Peut-être réelumie du temps pour le rafraîchissement.
+[44:38 -> 44:40] Parce que tu te rappelles,
+[44:40 -> 44:43] l'utilisateur Gaudrière David
+[44:43 -> 44:46] il a apparu dans la liste des collaborateurs.
+[44:46 -> 44:49] Alors tout à l'heure, il avait disparu.
+[44:49 -> 44:57] On a un petit bug là parce que l'heure précédente, là l'écran est juste, j'ai
+[44:57 -> 45:02] réfléchi l'écran, l'écran est juste puisqu'il me donne la situation à la date du jour on est
+[45:02 -> 45:08] le 28 avril donc il me donne la situation à partir du 1er avril c'est normal et il me met bien
+[45:08 -> 45:14] valeur précédente, j'ai une période qui s'arrête au 31 mars et là il me dit bien situation
+[45:14 -> 45:21] jusqu'au 31 mais avec les valeurs effectivement du 31 mais par contre on dirait que le libellé il
+[45:21 -> 45:31] n'est pas historisé le libellé, c'est la dernière mise à jour qui vaut, c'est pas grave,
+[45:31 -> 45:43] je suis dans un contexte un peu bidon mais il garde le libellé il n'est pas historisé par
+[45:43 -> 45:49] contre les valeurs ne sont, alors maintenant j'ai fait cette modification du contrat type et que
+[45:49 -> 45:58] donc je l'ai fait évoluer dans le temps, si je me viens sur ma fiche, que je réfléchis ma fiche
+[45:58 -> 46:17] collable, voilà donc au 28 avril il me dit le contrat qui est affecté c'est celui-là,
+[46:17 -> 46:22] bon il me prend le libellé et si je regarde les caractéristiques, alors je vais d'abord
+[46:22 -> 46:36] regarder les changements de contrat, voilà maintenant il me donne deux périodes alors qu'avant je
+[46:36 -> 46:45] n'en ai qu'une et ces deux périodes en fait j'ai le même code contrat, j'ai les mêmes catégories,
+[46:45 -> 46:53] les mêmes statuts et pourtant il me donne deux périodes différentes et il m'indique changement et
+[46:53 -> 47:00] quand je survole changement il me dit voilà la valeur contrat du collaborateur c'est 151h
+[47:00 -> 47:08] alors oui il me donne la valeur du contrat type à 165 heures puisque je suis passée à 165 heures
+[47:08 -> 47:17] mensuelle et en annuel 1700 heures et il me donne les valeurs du contrat du collaborateur au passage
+[47:17 -> 47:27] parce que je l'avais surchargé, si je survole ici les heures annuelles elles sont à 167 heures
+[47:27 -> 47:39] et 1650 valeur contrat collaborateur, pour y voir un peu plus clair, je vais, je regarde le détail
+[47:39 -> 47:48] des informations, voilà au 1er avril, c'est la situation en partie de le 1er avril, j'ai bien mon
+[47:48 -> 48:00] code contrat et les informations du contrat, alors j'affiche les valeurs du contrat et ici
+[48:00 -> 48:08] comme j'avais surchargé mes heures mensuelles, vous voyez que mon contrat, mes valeurs contrats à
+[48:08 -> 48:13] 165 heures là de mon nouveau contrat et bien ça n'a pas été pris en compte pour le collaborateur
+[48:13 -> 48:19] puisqu'il est surchargé à 151h40 et que les 107 heures annuelles elles ne viennent pas prendre
+[48:19 -> 48:26] elles vont pas être lues puisque il va garder les 1650 heures qui étaient positionnées pour revenir
+[48:26 -> 48:46] au valeur du contrat, il faut que je supprime, voilà et là il m'indique les valeurs du contrat affectées
+[48:46 -> 48:52] au collaborateur mais il m'aide parce qu'il a pris les valeurs du contrat et si je regarde la période
+[48:52 -> 49:03] précédente au 31 mars, il a gardé les informations du premier contrat, c'est la situation du 1er décembre
+[49:03 -> 49:13] au 31 mars et là il m'a gardé les valeurs du contrat initial et les valeurs surchargées sur ce
+[49:13 -> 49:25] collaborateur là, donc là la situation de ce collaborateur a changé parce que les valeurs
+[49:25 -> 49:38] du contrat type ont changé mais je peux aussi pour ce collaborateur dire que j'introduis un nouveau
+[49:38 -> 49:47] changement, j'ajoute un changement que pour ce collaborateur là, par exemple à partir du 15 avril
+[49:47 -> 50:04] je vais rester sur le même contrat mais je vais dire cette fois que je donne droit au panier
+[50:04 -> 50:14] c'est une autre modification des informations contrats et maintenant j'ai
+[50:20 -> 50:25] alors j'ai la période du 15 avril, pourquoi je dis 15 avril
+[50:34 -> 50:50] ah oui quand j'ai fait la modification le changement attendez je vais refaire la
+[50:50 -> 50:58] je vais refaire la manip, je reviens sur mes changements de contrat, voilà maintenant j'ai fait un changement
+[50:58 -> 51:07] juste pour le 15 avril donc ce changement là je l'enlève, voilà je reviens à ma situation initiale
+[51:07 -> 51:18] enfin ma situation où j'ai comment dire j'ai une modification des valeurs du contrat à partir
+[51:18 -> 51:27] du 1er avril d'où cette nouvelle situation là, si je vais sur cette période et cette ce
+[51:27 -> 51:41] contrat là et que je dis qu'à partir du 15 avril, quand on sait bien ce que j'ai fait
+[51:41 -> 51:59] ça c'est juste, voilà j'introduis une nouvelle période à partir du 15 avril jusqu'à l'infini
+[51:59 -> 52:13] et là je dis je passe à la prime panier oui, j'espère qu'il n'y a pas de bug, là j'ai une situation
+[52:13 -> 52:26] au 14 où je suis encore en prime panier non, valeurs suivantes au 15 avril, voilà là c'est mieux
+[52:26 -> 52:39] et là j'ai appris une panier oui et si je reviens sur la liste des changements de contrat en fait
+[52:39 -> 52:45] maintenant j'ai trois lignes, ces deux lignes là elles sont issues de l'évolution même du contrat
+[52:45 -> 52:54] les valeurs du contrat et cette ligne là elle est venue d'un nouveau changement pas du code
+[52:54 -> 52:59] contrat ni des informations du code contrat mais pour ce collaborateur là et uniquement celui là je
+[52:59 -> 53:11] décide qu'il a droit au panier donc c'est la difficulté enfin c'est la subtilité des contrats type c'est
+[53:11 -> 53:16] que le contrat il peut avoir sa propre vie évolué dans le temps et donc générer des situations
+[53:17 -> 53:24] évolutives pour les collaborateurs auquel ils sont il est affecté et en même temps les
+[53:24 -> 53:35] collaborateurs ils peuvent aussi avoir des évolutions de situation sans pour autant qu'on soit obligé de
+[53:35 -> 53:41] modifier les valeurs du contrat type quoi chaque collaborateur peut évoluer lui-même unitèrement
+[53:41 -> 53:53] là là est-ce que tu as utilisé ces différents types de contrat c'est juste pour les
+[53:53 -> 54:01] l'objectif de la formation ou c'est carrément carrément le parce que pour au moins un contrat
+[54:01 -> 54:06] si on voit le contrat de type légal chaque collaborateur standard il a un seul contrat
+[54:06 -> 54:13] ou c'est carrément c'est un moyen de gérer le paramétrage pour gérer ces différentes
+[54:13 -> 54:22] particularités ben un collaborateur n'a qu'un seul contrat à un moment donné à une date
+[54:22 -> 54:28] donné mais son contrat peut évoluer dans le temps voilà c'est la mobilité ou un changement
+[54:28 -> 54:35] c'est ça donc on l'utilise pour pour ce genre de cas c'est ça d'accord c'est ça en fait on
+[54:35 -> 54:42] met dans ces informations contractuelles entre guillemets tout un tas de paramètres qui qui peuvent
+[54:42 -> 54:49] évoluer dans le temps et qui sont plutôt d'ordre contractuel d'accord donc c'est une flexibilité
+[54:49 -> 55:05] de paramètres que permet ce type de contrat d'accord est-ce que ça va c'est un peu
+[55:05 -> 55:20] j'insiste un peu je mets un peu le point là dessus parce que souvent au bataille un petit peu sur cette
+[55:20 -> 55:28] notion de contrat quand on n'a pas l'habitude d'abord à quoi ça sert c'est juste un voilà un
+[55:28 -> 55:33] aglomerat un aglomerat d'information qui sont plutôt d'ordre contractuel et qu'on regroupe
+[55:33 -> 55:40] sous des codes contrat type qui sont à la main du client généralement client il fait un contrat
+[55:40 -> 55:47] non cadre ou un contrat employé un contrat maîtrise un contrat cadre éventuellement des contrats
+[55:47 -> 55:54] impartiels bon mais on peut très bien comme je vous expliquais on peut très bien dire bon
+[55:54 -> 55:59] bah j'ai un compte faire un minimum de contrat deux ou trois contrats et puis après on fait
+[55:59 -> 56:07] varier les taux d'activité on fait varier les informations sur les personnes c'est au choix c'est
+[56:07 -> 56:24] libre Christine bon même si ça n'a pas d'intérêt mais on est d'accord que les options qu'on met
+[56:24 -> 56:35] dans le créé dans les contrats n'aura pas de champ dans lequel
+[56:35 -> 56:48] enfin d'un paramètre x individuel pour attacher un champ mais qui peut reprendre la même la même
+[56:48 -> 57:05] option ah alors est ce que ta question c'est ça là ces informations effectivement elles sont celles
+[57:05 -> 57:11] que je vous ai montré elles sont dans le volet contrat je sais pas si je réponds à ta question
+[57:11 -> 57:17] je vais essayer tu vas me dire si ça répond et on a vu que dans le contrat on pouvait rajouter des
+[57:17 -> 57:23] informations supplémentaires comme la prime panier la notion de forfait mais ça c'est libre c'est
+[57:23 -> 57:29] au choix du client ok et on met ça dans le volet contrat maintenant on a aussi la possibilité de
+[57:29 -> 57:35] rajouter des informations complémentaires qui sont qui sont des informations complémentaires
+[57:35 -> 57:41] personnelles et qui arrivent donc dans un autre volet dans ce volet informations complémentaires
+[57:41 -> 57:50] ou là j'ai la date de la date de quand j'ai paternité quand j'ai bonnifié alors ces informations
+[57:50 -> 57:53] complémentaires j'ai un lot d'informations complémentaires qui ne sont pas historisées
+[57:53 -> 57:59] qu'on appelle caractéristiques diverses et puis j'ai un lot d'informations complémentaires qui
+[57:59 -> 58:05] elles sont historisées et là typiquement par exemple on a mis l'éthique est ce que j'ai droit
+[58:05 -> 58:12] d'étiquer restaurant et est ce que je peux bénéficier je peux bénéficier de don de jour
+[58:12 -> 58:22] on peut se donner des congés ou des RTT là voilà sont certaines situations ces informations
+[58:22 -> 58:28] complémentaires elles sont absolument libres et elles sont paramétrés dans le référentiel
+[58:28 -> 58:34] on est allé tout à l'heure voir les paramètres les caractéristiques pour en épreuve et cette
+[58:34 -> 58:40] fois on va pas prendre le groupe type contrat on va prendre personnel alors vous avez informations
+[58:40 -> 58:46] complémentaires et informations complémentaires historisées en dessous donc ça c'est les
+[58:46 -> 58:50] deux lot d'informations complémentaires qu'on a à disposition et qu'on peut caractériser
+[58:50 -> 59:00] là on a choisi d'utiliser alors on n'a pas beaucoup de champs là on a cinq alphas cinq dates et cinq
+[59:00 -> 59:05] numériques et on a choisi de dire est ce que j'ai droit à des congés paternité ou non et est ce
+[59:05 -> 59:12] que j'ai droit à des congés bonifiés avec une date sur les congés bonifiés et puis les
+[59:12 -> 59:17] informations complémentaires historisées ici c'est là que je retrouve j'ai caractérisé
+[59:17 -> 59:22] bénéfices dont deux jours ou il n'en est plus un peu plus bas je dois voir je ne l'ai pas vu passer
+[59:22 -> 59:29] ticket restaurant ou il n'en vous voyez dans les informations complémentaires historisées j'en ai
+[59:29 -> 59:33] beaucoup plus par contre j'ai 30 alphas et 30 numériques alors j'ai quand même de quoi compléter
+[59:33 -> 59:39] la fiche du collaborateur donc si ta question c'est ça c'est que je peux très bien finalement
+[59:39 -> 59:44] mettre dans une information complémentaire une information qui serait d'ordre contractuel mais
+[59:44 -> 59:51] que je choisis de mettre dans les informations complémentaires accessible par ce volet là
+[59:51 -> 59:57] tu n'entends pas
+[59:57 -> 60:10] désolé je donne un petit coup dans mon micro et voilà non en fait c'était pas c'est pas par rapport
+[60:10 -> 60:16] à ça même si je ne savais pas que ça existait mais tout à l'heure tu nous a montré à un endroit
+[60:16 -> 60:28] où vous pouvez définir des des des champs personnalisables enfin je ne sais même pas
+[60:28 -> 60:35] si ça se dit comme ça mais c'était pas à ce niveau là c'était à autrement je confond avec
+[60:35 -> 60:47] les champs ou les vales les options parce qu'il y en avait près de 200 300 ça c'était les paramètres
+[60:47 -> 60:58] divers ah oui bon enfin voilà ah non mais je crois que c'était ça non mais c'était pas
+[60:58 -> 61:04] plutôt par rapport à ça en fait c'est fait mes paramètres par domaine valeur paramètres par
+[61:04 -> 61:14] domaine c'est là qu'on a l'occasion voilà c'est ça voilà et là ben là non ça c'est déjà
+[61:14 -> 61:22] défini en fait c'est des choses que même le client s'il veut il enfin soit on les ajoute mais ça
+[61:22 -> 61:29] sera une évolution oui en tout cas ça c'est une liste définie absolument d'accord celle ci c'est
+[61:29 -> 61:37] elle est elle est prévue elle est livrée elle est installée et et on n'a pas on peut pas ancrer
+[61:37 -> 61:45] d'autres sauf à faire ce qu'il faut derrière pour l'utiliser parce que voilà rien nous empêche
+[61:45 -> 61:54] d'en créer mais de toute façon si c'est pas lui par si c'est lui par rien ok d'ailleurs je
+[61:54 -> 62:01] sais pas si on n'a pas quelque part dans ces paramètres une valeur par défaut si je fais contrats
+[62:01 -> 62:13] voilà la valeur par défaut du contrat annuel mais 607 valeurs par défaut du contrat d'eau
+[62:13 -> 62:23] récine oui ce qu'il y a un autre paramètre qui est qui peut autoriser au nom qui peut dire
+[62:23 -> 62:31] par exemple que ce contrôle par exemple sera informatif ou bloquant un contrôle bloquant
+[62:31 -> 62:38] mais à quel niveau contrôle bloquant pour par exemple les droits droits en compte j'ai par
+[62:38 -> 62:46] exemple pour le solde ah oui oui oui alors ça c'est dans les c'est dans les paramétrages des
+[62:46 -> 62:53] motifs d'absence d'accord c'est dans le paramétrage des motifs d'absence je te montre vite fait c'est
+[62:53 -> 62:59] rallye d'un oui ouais je te montre vite fait hop j'ai sur des temps absence motifs
+[62:59 -> 63:10] ici ça doit être dans valorisation et contrôle voilà par défaut ils sont bloqués en saisis
+[63:10 -> 63:16] si droit suffisant on peut décocher pour laisser juste un message d'information et que la personne
+[63:16 -> 63:21] elle a le choix de confirmer ou pas donc on a gardé le même paramètre asus ah oui ça change
+[63:21 -> 63:34] pas ça voilà en fait ces valeurs par défaut des paramètres par domaine là en fait ça va servir
+[63:34 -> 63:39] à quoi quand je vais créer un contrat type bien ça va me mettre automatiquement ces valeurs là
+[63:39 -> 63:45] pour ne pas que j'ai allé renseigner si je vais créer contrat voilà il propose ces valeurs
+[63:45 -> 63:55] ça sert uniquement à ça c'est pas leur paramètre par domaine là il faut que c'est tout
+[63:55 -> 64:17] j'étais sur la fiche donc voilà ce que je vous disais c'est que autant je peux rajouter des
+[64:17 -> 64:22] caractéristiques des informations complémentaires sur le volet contrat autant je peux rajouter des
+[64:22 -> 64:29] informations complémentaires aussi directement sur la fiche de la personne non historisé historisé
+[64:29 -> 64:39] ici voilà et donc je peux faire évolver la situation de la personne par la valeur de ces
+[64:39 -> 64:49] informations complémentaires si je repars en situation alors pour les informations complémentaires
+[64:49 -> 64:59] historisées ça va se passer comme ça par exemple je veux dire que à partir du 1er avril
+[64:59 -> 65:03] j'ai droit au petit restaurant
+[65:03 -> 65:16] voilà je suis sur le volet informations complémentaires et je vois que j'ai une valeur précédente
+[65:16 -> 65:24] qui s'arrête au 31 mars ou les valeurs là par contre là je n'ai pas droit au petit restaurant
+[65:24 -> 65:34] voilà pour les différentes informations complémentaires
+[65:34 -> 65:47] de la même façon que je n'ai pas de lien direct pour accéder à la date de début de gestion là
+[65:47 -> 65:52] vous voyez c'est pas un lien je passe par période de présence je n'ai pas de lien pour modifier le
+[65:52 -> 65:58] taux d'activité parce que le taux d'activité est porté dans le contrat en fait c'est dans le volet
+[65:58 -> 66:05] contrat que le taux d'activité ici et c'est là que je peux changer
+[66:05 -> 66:16] les options de manière on va dire plus globale les options où on a un lien direct se passer
+[66:16 -> 66:25] parce qu'elles ne sont pas gérées par elles ne sont pas gérées ailleurs imaginons que le taux
+[66:25 -> 66:33] d'activité était dans un dans un autre registre dans un autre sous domaine spécifique mais qui ne
+[66:33 -> 66:41] correspondrait pas au contrat il aurait son lien en fait peut-être oui s'il était s'il avait
+[66:41 -> 66:48] sa propre son propre volet oui oui mais là c'est pas le cas il est embarqué dans le volet
+[66:48 -> 66:56] contrat voilà on ne donne pas de lien direct le mode de bâtage le numéro de battre par exemple
+[66:56 -> 67:02] je n'ai rien par contre le mode de bâtage parce qu'il est en lien avec le volet mode de bâtage
+[67:02 -> 67:14] en mode de bâtage j'ai dit que je bâtrais pas et puis je veux dire tiens à partir on est le
+[67:14 -> 67:25] début de semaine c'était quand début de semaine c'était le 26 à partir du 26 avril
+[67:25 -> 67:37] je veux dire que je bâche cette fois cette fois je suis obligé de bâcher du coup j'ai une
+[67:37 -> 67:41] aucent de sites de bâtage de sites de bâtage ça permet de regrouper des bâtages et le droit
+[67:41 -> 67:48] de bâcher sur telle usine par exemple mais pas sur tel autre où j'ai le droit de bâcher sur telle
+[67:48 -> 67:53] zone de l'atelier mais pas sur d'autres zones donc on regroupe en fait on peut regrouper des
+[67:53 -> 67:58] terminaux bâcheur je ne vous parlerai pas du paramétrage des bâcheuses mais on a on a la
+[67:58 -> 68:04] possibilité de regrouper des terminaux de bâcheuses sous un code et d'appeler ça site
+[68:04 -> 68:09] de bâtage et de donner du coup d'autoriser des collaborateurs à bâtage sinon si je donne
+[68:09 -> 68:14] des sites un site de bâtage je ne suis autorisé à bâcher que sur ce site
+[68:14 -> 68:21] le site de téléphone ça n'a pas mis en oeuvre et ici dès lors que je dis que je bâche il me
+[68:21 -> 68:32] faut un numéro de bâche alors le numéro de bâche il est comment dire il est il est unique et on
+[68:32 -> 68:38] vérifie l'unicité du numéro de bâche affecté à la personne à une date donnée et un bâche
+[68:38 -> 68:46] peut être une personne à un bâche elle sort le 30 le 30 avril le 2 mai je donne son bâche à
+[68:46 -> 68:53] quelqu'un d'autre qui rentre le 2 mai on sait faire on sait contrôler que le numéro de bâche
+[68:53 -> 68:57] qu'il était utilisé jusqu'au 30 maintenant c'est quelqu'un d'autre qui utilise ok très bien
+[68:57 -> 69:16] voilà donc ça le mode de bâtage peut évoluer et je n'ai pas l'information parce que j'ai une
+[69:16 -> 69:29] situation donc au 26 avril maintenant voilà ou j'ai un numéro de bâche je bâche avec ce numéro de
+[69:29 -> 69:34] bâche là l'horaire de référence on va y revenir les horaires automatiques je vous en reparlais
+[69:34 -> 69:41] l'emploi du temps aussi et puis il y a le rattachement à la structure vous avez compris le
+[69:41 -> 69:48] principe la structure va y revenir en détail aussi sur l'organisation mais bon l'idée c'est que mon
+[69:48 -> 69:57] mon client il l'organiser en société établissement direction service équipe etc et que c'est toute son
+[69:57 -> 70:02] organisation qui est décrite dans les structures dans la structure organisationnelle à savoir que
+[70:02 -> 70:07] je peux en avoir plusieurs en parallèle je peux organiser mon client il peut être organisé
+[70:07 -> 70:13] en structure administratif par exemple les services les établissements les services etc mais il peut
+[70:13 -> 70:18] être aussi organisé en mode géographique sur le plan géographique c'est-à-dire qu'il peut avoir des
+[70:18 -> 70:23] établissements dans différents pays dans différentes régions dans différentes villes donc là je
+[70:23 -> 70:28] pourrais avoir une structure géographique je vais avoir les pays les régions les villes
+[70:28 -> 70:37] etc et autant de structures si je fais plusieurs types de structures je vais pouvoir rattacher mon
+[70:37 -> 70:42] collaborateur et à la structure administratif et à la structure géographique et éventuellement
+[70:42 -> 70:48] une troisième structure qui sont une structure maladériale ou autre je que j'ai pas de limite
+[70:48 -> 70:54] je peux créer je peux faire des rattachements multiples ce que je ne sais pas faire sans le
+[70:54 -> 70:59] module gma dont on parlait ce matin le petit affectation c'est que je ne sais pas à une même
+[70:59 -> 71:07] structure affecté à une même date le collaborateur sur deux éléments de la structure différents de
+[71:07 -> 71:18] service de établissement différents de plusieurs d'ailleurs de plusieurs si je peux pas de je
+[71:18 -> 71:23] peux pas aimer oui mais je veux dire si on a le bon module par contre on n'est pas limité à
+[71:23 -> 71:30] deux structures enfin de juste ça de structure quoi on est limité on va être limité à
+[71:30 -> 71:40] non enfin non on n'est pas limité mais par contre on est limité par le temps parce qu'on ne peut
+[71:40 -> 71:46] faire de la multi-effectation que par unité de temps c'est à dire je peux si j'ai quelqu'un
+[71:46 -> 71:53] qui est à une autre structure il faut que je l'affecte en bien de matin ou bien l'après-midi
+[71:53 -> 72:01] bien premier bien d'être complète donc je ne vais pas avoir 40 possibilités sur une
+[72:01 -> 72:10] même journée je vais pouvoir après faut cloner cloner non mais c'est une boutade
+[72:10 -> 72:26] alors juste pour finir le tour de cette écran des structures je vais revenir sur les horaires
+[72:26 -> 72:33] ici vous avez l'écran d'état civil et vous les états civils portent le matricule donc les
+[72:33 -> 72:39] matricules on a déjà parlé les informations d'état civil nombre et non sexe abrégé
+[72:39 -> 72:45] éventuellement nom de jeune fille et la date de naissance et éventuellement ici alors on
+[72:45 -> 72:50] voit pas ce qu'il y a mais en fait c'est la possibilité de rajouter les enfants
+[72:50 -> 73:02] parce que pour calculer les droits enfants malades par exemple c'est utile d'avoir
+[73:02 -> 73:14] une notion handicapée à charge parce que ça rentre dans le calcul des droits à congés
+[73:14 -> 73:19] pas des droits à congés enfants malades en bref l'import prévoit aussi qu'on puisse importer
+[73:19 -> 73:27] les enfants donc les enfants ils sont là les informations de contacts
+[73:27 -> 73:34] alors téléphone adresse postale généralement c'est les informations qui sont vides parce
+[73:34 -> 73:41] qu'à priori on n'a pas assez des renseignements privés et la gestion des temps n'a pas récupéré
+[73:41 -> 73:47] ce type de choses souvent les clients ils veulent pas qu'on ait sa disposition par contre
+[73:47 -> 73:51] dans certains cas quand même le téléphone ça peut être utile quand on a besoin de
+[73:52 -> 74:00] les gens c'est un bref bon ça existe bon j'en dis pas plus par contre ce qui est intéressant c'est
+[74:00 -> 74:15] l'adresse mail parce que l'adresse mail si je fais comme inetom.fr je ne veux pas
+[74:15 -> 74:27] une adresse mail qui fonctionne. Je viens de modifier l'adresse mail sur le collaborateur
+[74:27 -> 74:42] corne ah tiens je vais aller voir l'utilisateur corne alors l'utilisateur associé au collaborateur
+[74:42 -> 74:48] corne c'est UX nommé d'utile c'est ce que j'ai fait ce matin je me suis amusé à relier le compte
+[74:48 -> 74:57] super admin ce point utilisateur je me suis je l'ai rattaché à mon collaborateur et là
+[74:57 -> 75:04] quand je regarde UX nommé d'utile et bien je vois arriver le mail du collaborateur corneil
+[75:04 -> 75:17] alors la particularité de cette adresse vous voyez que et là si je modifie
+[75:17 -> 75:33] si je modifie le mail et que je reviens sur mon collaborateur ici je réfléchis
+[75:33 -> 75:52] voilà le mail a été modifié que je passe par un écran ou par l'autre c'est vraiment une
+[75:52 -> 76:00] mise à jour comment on appelle ça c'est un croat quoi mais d'abord ça fait appel au même
+[76:00 -> 76:09] change pense et ben non ça va dire ah bon et ben non parce qu'en fait j'ai deux tables j'ai la
+[76:09 -> 76:16] table users des utilisateurs et d'un autre côté j'ai la table perses des collaborateurs du
+[76:16 -> 76:27] personnel et bien cette adresse elle est dans les deux tables et bon la mise à jour dans une
+[76:27 -> 76:34] table mais à jour du coup l'autre table voilà en fait alors pourquoi elle est prévue dans les deux
+[76:34 -> 76:40] tables justement parce que un utilisateur peut ne pas avoir de collaborateur associé et pourtant on
+[76:40 -> 76:44] veut pouvoir lui envoyer des notifications donc on doit pouvoir lui mettre un mail
+[76:44 -> 76:50] on est dans ce cas là ça risque d'être une boîte mail générique en plus
+[76:50 -> 76:58] si on raison cette cohérence non non pourquoi générique pas enfin imaginons que ça c'est un
+[76:58 -> 77:06] utilisateur qui est utilisé par plusieurs personnes administrateur par exemple alors non
+[77:06 -> 77:11] la règle maintenant chez les clients ça se fait pas comme ça c'est que maintenant avec les règles
+[77:11 -> 77:22] de sécurité généralement la plupart de nos clients ils veulent un utilisateur unique par par
+[77:22 -> 77:34] bus des comptes les comptes partagés là c'est plus tendance quoi oui ok ça peut arriver mais c'est
+[77:34 -> 77:42] pas généralement pas très pas trop fait quoi c'est plus dans les usages voilà on tend de plus en
+[77:42 -> 77:48] plus vers un compte unique par par quelqu'un et donc voyez cette adresse mail elle est mise à jour en
+[77:48 -> 77:53] synchronise enfin on mène exactement en même temps dans les deux tables mais c'est de quand même
+[77:53 -> 78:01] deux tables différentes et donc deux informations séparées et pourquoi je dis ça parce que
+[78:01 -> 78:09] ça m'est arrivé de rencontrer des soucis et que vous rencontrerez peut-être c'est que quand on fait
+[78:09 -> 78:17] de la recette et notamment de la recette par rapport au circuit de validation etc avec les
+[78:17 -> 78:24] mails qui sont envoyés aux différents valideurs collaborateurs et tout il y a certains clients
+[78:24 -> 78:34] qui ont la bonne idée de de mettre le de d'enlever les adresses mail dans certaines tables
+[78:34 -> 78:41] par script carrément enfin par recette et ils le font que dans une table alors ils les remettent
+[78:41 -> 78:47] que dans une table là du coup autant en nous quand on passe par l'ihm ou par l'import c'est
+[78:47 -> 78:53] complètement synchro autant dès qu'on fait des scripts comme ça là ça l'est plus et quand on
+[78:53 -> 79:03] a par exemple dans la table des utilisateurs on a les mails mais dans la table des perses des
+[79:03 -> 79:07] collaborateurs on les a pas et bah du coup le mail il n'est pas trouvé parce que par défaut quand
+[79:07 -> 79:13] le mail est différent entre les deux tables et bah le mail il on prend celui du collaborateur
+[79:13 -> 79:22] bon moi j'aurais plutôt fait l'inverse j'aurais pris celui de l'utilisateur mais bon
+[79:22 -> 79:32] c'est fait comme ça on prend celui du collaborateur donc ça peut arriver si vous rencontrez
+[79:32 -> 79:42] ce type vous demandez poser la question donc dans tous les cas s'il y a par défaut
+[79:42 -> 79:52] ou par défaut on prend le mail du collaborateur c'est ça c'est celui là qui prime quand il
+[79:52 -> 79:55] tchèque une différence quand il vérifie quand il voit qu'il y a une différence entre les deux mails
+[79:55 -> 79:57] il prend celui du collaborateur
+[80:02 -> 80:19] voilà ensuite les informations complémentaires on a vu ainsi toutes ces caractéristiques complémentaires
+[80:19 -> 80:27] qu'on peut paramétrer par amètre les caractéristiques paramétrables et on a alors qui qu'on
+[80:27 -> 80:36] s'est alors on a l'information zone scolaire par défaut on n'a pas on n'est pas de rattachement
+[80:36 -> 80:46] une zone scolaire mais on peut la zone scolaire chez nous à baisser ici d'ailleurs ici il
+[80:46 -> 80:52] va pas vouloir que je fasse la modification si j'y descends par exemple je suis en zone
+[80:52 -> 81:04] 1 oui donc il peut bien ok donc ça permet dans certains cas enfin je vous expliquerai par rapport
+[81:04 -> 81:08] aux structures on n'est pas obligé de renseigner cette zone de scolaire mais si elle est renseignée
+[81:08 -> 81:14] au niveau du collaborateur c'est elle qui prime sur toute autre affectation parce qu'on
+[81:14 -> 81:18] peut mettre les zones scolaire sur les dans les éléments de structure aussi de l'organisation
+[81:18 -> 81:27] que ce soit lié à l'établissement ou à la au lieu géographique si j'ai une structure géographique
+[81:27 -> 81:34] donc un collaborateur il peut se retrouver dans une zone géographique de part son rattachement à la
+[81:34 -> 81:40] structure et pourtant avoir une zone scolaire précisé directement sur sa fiche et si c'est
+[81:40 -> 81:57] le cas c'est celle là qui qui prime c'est vrai pour les gens qui sont en bordure de régions qui
+[81:57 -> 82:02] travaillent dans une région enfin dans une zone et qui habitent dans une autre zone en fait
+[82:02 -> 82:10] t'as pas arrivé donc dans des zones à limiter off
+[82:10 -> 82:25] ici ce qui concerne les compétences les inaptitudes et les récapitulatives d'activité ça les options
+[82:25 -> 82:29] apparaissent ici parce que j'ai le module activité j'ai les modules d'activité qui sont sur certain
+[82:29 -> 82:33] environnement mais sur un module où il n'y a pas de gestion d'activité ça n'apparaît pas ça
+[82:33 -> 82:39] dont j'en parle pas je vais pas en parler dans cette formation à savoir quand même qu'il y a
+[82:39 -> 82:45] certains clients qui nous disent ouais j'aimerais bien gérer les compétences des gens ah oui mais
+[82:45 -> 82:51] vous n'avez pas acheté le module activité donc c'est pas possible voilà ça n'est lié qu'au
+[82:51 -> 83:02] module activité ensuite on a vu l'option de changer de matricule tout à l'heure qui permet
+[83:02 -> 83:07] de renouement été complètement endossié et bien de la même façon on a l'option de supprimer on
+[83:07 -> 83:17] peut si je supprime la corneille christine je vais supprimer et sa fiche et tous les événements liés
+[83:17 -> 83:24] à cette fiche si j'ai désolé j'ai dit des absences des horaires fait des calculs etc tout
+[83:24 -> 83:33] est vidé c'est une suppression complète et définitive donc évidemment à ne pas mettre
+[83:33 -> 83:37] en toutes les mains c'est une habilitation particulière qui permet de supprimer les dossiers
+[83:37 -> 83:49] donc généralement ou rh et aux gens qui sont susceptibles de modifier des fiches on leur met
+[83:49 -> 84:08] pas ces deux habilitations là tiens d'ailleurs par rapport à ce que tu viens de dire christine
+[84:08 -> 84:16] ce qui est fait donc plus communément plus couramment parmi les clients c'est plutôt qu'on
+[84:16 -> 84:21] met une date de sortie au collaborateur et en fait c'est juste qu'il disparaît de la liste
+[84:21 -> 84:26] des présents et c'est tout absolument on supprime pas les dossiers oui parce qu'on a un devoir de
+[84:26 -> 84:33] conservation historique je crois que c'est cinq ans cinq ou dix plus je sais pas exactement
+[84:33 -> 84:38] enfin il y a plusieurs niveaux d'information qui ont une durée de conservation obligatoire donc
+[84:38 -> 84:56] les entreprises elles sont tenues de conserver d'accord alors juste ici on est à la situation vous
+[84:56 -> 85:03] savez quand je clique sur un volet je j'ai le lien situation qui revient pour revenir à la
+[85:03 -> 85:10] synthèse mais on a prévu ce petit levier là mais ce petit levier ça donne accès à différentes
+[85:10 -> 85:17] données du collaborateur sa fiche et quand je clique quand je suis sur la fiche ça m'ouvre les
+[85:17 -> 85:23] différents volets situation et ta civile contact on a des références j'ai des sous volets les
+[85:23 -> 85:27] changements de contrats les caractéristiques du contrat les rattachements aux structures
+[85:27 -> 85:35] activités information complémentaire voilà j'ai différents volets qui sont accessibles aussi ici
+[85:35 -> 85:44] donc ça c'est les volets de la fiche collaborateur et puis si je reviens là ici ben j'ai accès à la
+[85:44 -> 85:49] vue journée j'ai accès à ses agendas son agenda hebdo mensuel annuel à toutes ses absences à
+[85:49 -> 85:57] toutes ses régularisations ses activités à ses anomalies etc. sont soldes de ces droits
+[85:57 -> 86:10] c'est des légations etc. c'est tous en dossier quoi alors il qu'un autre en tuit
+[86:10 -> 86:23] est ce que il y a des questions est ce que c'est à peu près c'est compris c'est clair ce qu'on a vu là
+[86:23 -> 86:39] pour l'instant oui oui ça va on va faire avant la pause on va faire une petite pause quand même
+[86:39 -> 86:49] et ce qu'on va faire avant la pause c'est que vous êtes tous donc vous vous êtes tous créés ce que
+[86:49 -> 86:54] je vais vous montrer c'est qu'en suivi des collaborateurs là bon là je suis des collaborateurs
+[86:54 -> 87:02] mais si je reviens sur mon menu ici j'ai une option vous avez vu quand bon j'ai fait valoriser pour
+[87:02 -> 87:07] calculer mais vous avez fait valoriser sans doute pour calculer votre dossier on peut aussi
+[87:07 -> 87:12] cette valorisation là alors on l'a fait de façon unitaire sur un dossier je suis sur un dossier
+[87:12 -> 87:20] je vais réaliser ça calcule ok on le calcule il contrôle et il alimente des y génère éventuellement
+[87:20 -> 87:27] des anomalies et il alimente des compteurs de résultats ce calcul je ne suis pas obligé de
+[87:27 -> 87:36] passer par dossier par dossier alors contrairement à gestor pour ceux qui arrivent de gestor il
+[87:36 -> 87:41] n'y a pas d'automatisation du calcul dès que je saisis un événement dès que je saisis un
+[87:41 -> 87:48] nouvel événement sur un collaborateur dans le passé si je veux mettre à jour ces compteurs
+[87:48 -> 87:53] etc. si je veux tout mettre à jour il faut que je lance justement l'action de valoriser
+[87:53 -> 88:02] c'est pas quelque chose d'automatique dans chrono dans chrono time alors plutôt que de
+[88:02 -> 88:06] passer dossier par dossier parce que ça pourrait être un peu pénible on a les traitements collectifs
+[88:06 -> 88:14] les traitements collectifs donc pour tous les collaborateurs donc la population transverse qui
+[88:14 -> 88:19] est là parce qu'elle est dans l'espace mon équipe j'ai la possibilité de faire pas mal de choses et
+[88:19 -> 88:25] entre autres j'ai la possibilité de calculer donc là je vais lancer le calcul c'est comme si
+[88:25 -> 88:30] j'ai appuyé sur le bouton valoriser mais pour tous les collaborateurs que j'ai sélectionné dans
+[88:30 -> 88:34] cette population et puis j'ai la notion est ce que je veux calculer les valorisations
+[88:34 -> 88:42] prévisionnelles je vous en parlerai j'exécute et ça me calcule tout le monde
+[88:50 -> 88:51] ça va pas être trop loin j'ai pas grand monde
+[89:04 -> 89:17] j'ai une petite question par rapport à ce que tu nous montres comme fonctionnalité
+[89:17 -> 89:26] imaginons qu'on est deux responsables qui ont un souleur responsabilité donc une
+[89:26 -> 89:31] cinquantaine voire un peu plus de personnes qui lance en même temps le cas ce calcul là
+[89:31 -> 89:38] c'est fait en même temps c'est fait par ordre d'arrivée enfin ça se passe comment alors
+[89:38 -> 89:50] c'est fait en parallèle c'est fait en même temps mais je vais vous expliquer comment fonctionne
+[89:50 -> 89:56] le calcul pour comprendre ce qui se passe en fait et pour comprendre qu'il peut pas y avoir de a priori il
+[89:56 -> 90:02] peut pas y avoir de chocs il peut pas y avoir de contre indication vous allez comprendre pourquoi
+[90:02 -> 90:11] donc là alors si je regarde le résultat il me donne un compte rendu des gens qui sont calculés et si
+[90:11 -> 90:18] je regarde les gens qui sont calculés donc nicole t'es calculé jusqu'au 27 avril 2021 c'est moche
+[90:18 -> 90:21] c'est visuel je peux pas
+[90:21 -> 90:35] alors nicole as ou sam
+[90:35 -> 90:45] si ralide nous rétigne
+[90:45 -> 90:53] ce qui est active et moi je me suis arrêté au 25 avril
+[90:53 -> 91:10] alors je vous explique c'est que quand je lance le calcul il prend il commence par
+[91:10 -> 91:14] prendre le premier matricule de la population qu'il a traité bon là je l'ai demandé tout le monde
+[91:14 -> 91:20] donc il a commencé par moment je crois qu'il le fait par ordre de matricule matricule numérique
+[91:20 -> 91:27] donc il prend le premier matricule il regarde quelle est sa date de dernier calcul validé c'est à
+[91:27 -> 91:33] dire cette date là valorisé jusqu'au quand on a valorisé jusqu'au c'est que le calcul c'est bien
+[91:33 -> 91:39] déroulé sans anomalie jusqu'à cette date là cette date là comprise et que donc les résultats
+[91:40 -> 91:46] qui sont accessibles sont valides sur la période précédente et jusqu'au 27 avril inclus
+[91:46 -> 91:52] donc il prend le premier matricule il calcule depuis cette dernière date alors je sais pas
+[91:52 -> 91:59] où on était calculé avant mais il fait première journée alors il prend la date de dernier calcul
+[91:59 -> 92:06] validé autrement dit la démage c'est le nom du chant vous entendrez beaucoup parler de la démage c'est
+[92:06 -> 92:11] voilà on appelle comme ça depuis la démage plus un donc il prend la première journée qui suit
+[92:11 -> 92:17] la démage il calcule la journée il n'a pas de problème il stocke les résultats il fait plus un jour
+[92:17 -> 92:23] plus un il n'a pas de problème il stocke le résultat etc et il avance date par date jusqu'à
+[92:23 -> 92:31] ou bien qu'il rencontre une anomalie bloquante et là du coup il s'arrête et il passe au matricule
+[92:31 -> 92:38] suivant ou bien jusqu'au dernier horaire achevée c'est à dire la dernière date dont l'horaire
+[92:38 -> 92:46] est achevée et que donc je peux calculer c'est pour ça qu'il s'arrête ailleurs sauf si j'avais
+[92:46 -> 92:52] un horaire de matin aujourd'hui il est 15h45 si j'avais un horaire aujourd'hui qui se termine
+[92:52 -> 92:58] à midi et ben il aurait pu calculer enfin si c'est le vie du pont on avait un horaire qui se termine
+[92:58 -> 93:07] à midi il aurait pu calculer le 28 et il m'aurait calculé jusqu'au 28 et puis quand il a fini de
+[93:07 -> 93:14] calculer voilà au 27 il passe au matricule suivant et ainsi de suite ce qui fait que quand vous avez
+[93:14 -> 93:20] deux responsables qui lancent le calcul en même temps il fait le job mais de toute façon comme les
+[93:20 -> 93:29] mises à jour se font au fur et à mesure la démage elle avance au fur et à mesure en fait il va pas
+[93:29 -> 93:35] calculer deux fois la même chose parce que vraiment la première mise à jour va du coup limiter le
+[93:35 -> 93:42] travail du second calcul puisque le calcul il va déjà trouver la date calculée donc il ne va pas la
+[93:42 -> 93:55] calculer d'accord donc il n'y a pas de risque de fin il y a un peu de risque de problème on n'a pas
+[93:55 -> 94:09] rencontré c'est pas quelque chose même dans le cas de salarié mis sur plusieurs entités en même temps
+[94:09 -> 94:18] ah oui non il n'y a pas de soucis parce que la troisième chose en fait c'est que les calculs
+[94:18 -> 94:25] comme ça ils sont très rarement lancés via l'écran les calculs groupes les calculs de plusieurs
+[94:25 -> 94:33] matricules en fait on a ou bien le rh il travaille sur un dossier et il est sur une
+[94:33 -> 94:38] sur un dossier collaborateur et il fait une manip et il veut valoriser pour voir tout de suite pour
+[94:38 -> 94:47] ce collaborateur si ce qu'il a fait c'est correct et ok ou bien généralement il se passe des tas
+[94:47 -> 94:51] de choses la journée les gens ils battent ils posent des demandes il y a des demandes qui sont
+[94:51 -> 94:58] validées etc il y a des tas d'événements qui se produisent tout ça sa vie au cours de journée il n'y
+[94:58 -> 95:07] a pas de valorisation automatique et immédiate lors de ces événements mais par contre toutes les
+[95:07 -> 95:14] nuits il y a dans les travaux de nuit le calcul est lancé pour tous les collaborateurs et donc on
+[95:14 -> 95:20] rec on calcule tout le monde pour justement mettre à jour et prendre en compte dans les
+[95:20 -> 95:25] résultats et dans les anomalies les les évolutions enfin les événements qui ont eu lieu dans la journée
+[95:25 -> 95:32] de façon à ce que le matin quand le manager il arrive ou le rh arrive il a une situation à jour de
+[95:32 -> 95:40] tout ce qui s'est fait la veille et ce calcul et ce calcul là c'est personnalisable ou planifiable
+[95:41 -> 95:51] oui enfin par défaut c'est fait avec le client ça se passe comment on a en livre une procédure
+[95:51 -> 95:59] on installe une procédure de une une procédure de qu'on appelle les traitements de nuit et
+[95:59 -> 96:06] ces traitements de nuit ils intègrent toutes les étapes nécessaires c'est à dire arrêt des services
+[96:06 -> 96:20] sauvegarde puis redémarrage et puis import calcul alors je sais plus exactement l'ordre il y a une
+[96:20 -> 96:28] séquence qui est cohérente par rapport à ce qui doit être fait et on fait des traitements de relance
+[96:28 -> 96:34] quand les managers ne valide pas les workflow par exemple les demandes en attente on fait des
+[96:34 -> 96:39] notifications par mail on fait des acceptations automatiques de demande si c'est prévu par les
+[96:39 -> 96:45] circuits on fait des tas de choses cette procédure elle est écrite elle est mise en place chez les
+[96:45 -> 96:53] clients et ensuite elle est adaptée si vraiment il y a des besoins particuliers le manière générale
+[96:53 -> 96:57] cette procédure là on la retrouvera chez quasiment tous les clients à part exception
+[96:57 -> 97:04] ah oui oui ok alors il y a certains clients qui préfèrent moi j'avais rencontré des clients qui
+[97:04 -> 97:13] préféraient sous une x ils planifient leur tâche de façon différente en fait donc ils n'utilisent pas
+[97:13 -> 97:20] cette procédure ils le font autrement mais bon voilà ça c'est en lien avec les installateurs les
+[97:20 -> 97:26] installateurs chez nous ils aident à justement à mettre en oeuvre les travaux de nuit comme
+[97:26 -> 97:31] ils doivent être fait par le fil mais ils partent toujours de toute façon de cette procédure et
+[97:31 -> 97:37] cette de cette procédure est écrite qui existe qui existe déjà ok
+[97:44 -> 97:53] donc voilà pour le calcul le calcul que je que je calcul une personne ou plusieurs c'est toujours
+[97:53 -> 97:58] le même principe je prends le matricule je regarde sa démage date de dernier calcul valide
+[97:58 -> 98:05] je fais plus un et je calcule toutes les journées jusqu'à ce que je rencontre une anomalie bloquante
+[98:05 -> 98:15] ou bien jusqu'au dernier horaire à chever par rapport à la date du jour et je passe au matricule suivant
+[98:15 -> 98:25] quand je dis que le calcul s'arrête dès qu'il trouve une anomalie bloquante
+[98:25 -> 98:34] dans les paramètres par domaine toujours nos fameux paramètres d'hiver nos 477 paramètres
+[98:34 -> 98:49] on a quand même un paramètre qui dit à blocs à nos blocs
+[98:49 -> 98:58] voilà ce paramètre il dit est ce que je bloque le calcul c'est à dire est ce que j'arrête le
+[98:58 -> 99:02] calcul d'un matricule quand je trouve une anomalie bloquante dès que je trouve la première
+[99:02 -> 99:08] anomalie bloquante par défaut nous on le met à un c'est à dire que oui le calcul s'arrête après
+[99:08 -> 99:15] anomalie bloquante mais il ya certains clients pour certains clients c'est possible de dire bah
+[99:15 -> 99:23] non je bloque pas mais par contre je vais garder en mémoire que ma date de dernier calcul valider c'est
+[99:23 -> 99:28] par exemple le 15 avril le 16 j'ai rencontré une anomalie bloquante j'ai continué à calculer
+[99:28 -> 99:34] malgré tout et à alimenter les anomalies et les compteurs mais par contre mon dernier calcul
+[99:34 -> 99:41] valide il est bien au 15 et les résultats qui sont derrière je ne garantis pas puisque j'ai une anomalie
+[99:41 -> 99:49] au 16 et que donc les calculs qui sont derrière je suis pas sûr qu'il soit juste pas mais il y a
+[99:49 -> 99:53] des clients qui peuvent faire ça quand même ça arrivera rarement mais ça peut arriver
+[99:58 -> 100:09] alors on s'est pas remettrable j'ai dit il s'arrête à la première anomalie bloquante ou pas
+[100:09 -> 100:15] ou le dernier en recache chevée ou dès qu'il a atteint le nombre de jours qu'on a vu tout
+[100:15 -> 100:29] à l'heure ce max gical qui était à 90 et que j'ai passé à 300 c'est pour ça que tout à l'heure
+[100:29 -> 100:34] quand je lançais la première valorisation il s'était arrêté au 20 mars parce que rentrer le 20
+[100:34 -> 100:40] décembre il est arrivé à 90 jours donc il s'est arrêté et il est passé il aurait pu pas il
+[100:40 -> 100:47] serait passé au matricule suivant sinon et la valeur max c'est mal ici on peut mettre on peut mettre
+[100:47 -> 100:59] on peut mettre 3000 il n'y a pas de valeur max la valeur max c'est la date du jour qui va la définir
+[100:59 -> 101:12] en fait oui mais oui mais ça dépend d'où tu viens ah oui ça dépend d'où tu viens
+[101:12 -> 101:19] tiens d'ailleurs à ce propos christine du coup vu que tu dis ça comme ça est-ce que c'est arrivé
+[101:19 -> 101:24] que dans certains systèmes bon là on a vu des dates de gestion assez récentes mais est-ce
+[101:24 -> 101:32] qu'on peut envisager je vais dire une bêtise si le client bien sûr à réussir à exporter
+[101:32 -> 101:42] importe plutôt les données de son ancien si RH vers chrono-time de faire donc des calculs par exemple
+[101:42 -> 101:49] je vais dire une bêtise de l'année précédente et avec l'année en cours par exemple oui ça peut
+[101:49 -> 101:58] arriver ok ça peut arriver mais là on a des d'autres paramètres d'hiver ici par exemple on a
+[101:58 -> 102:06] le f-max alors ce qu'il faut comprendre c'est que quand je calcule comme je pars toujours de la
+[102:06 -> 102:10] démage du matricule que je suis en train de calculer donc de la dernière date de calcul
+[102:10 -> 102:19] validé quelque part je ne recalcule jamais ce que j'ai déjà calculé une période antérieure
+[102:19 -> 102:30] quand je calcule quand je fais valoriser je calcule toujours à partir de la démage donc je ne
+[102:30 -> 102:33] repars pas dans le passé par contre parfois j'ai besoin de repartir dans le passé
+[102:33 -> 102:43] alors il y a des événements par exemple je saisis j'ai oublié lui saisir une absence j'avais
+[102:43 -> 102:49] calculé jusqu'à hier jusqu'au 20 sept avril et puis j'ai oublié lui saisir une absence il était
+[102:49 -> 102:53] absent le 15 avril par exemple et j'ai oublié lui saisir donc là je lui saisis l'absence
+[102:53 -> 103:02] bien automatiquement le fait de saisir l'absence au 15 avril va reculer sa démage au 14 avril
+[103:02 -> 103:09] d'accord pour ce collaborateur de façon à ce que quand je revalorise forcément j'aurais pas sur
+[103:09 -> 103:14] cette date du 15 avril parce que il y a de nouveaux éléments à prendre en compte et là je vais
+[103:14 -> 103:29] recalculer le 15 le 16 et c'est-à-dire c'est pour le calcul prévisionnel oui ça permet de faire
+[103:29 -> 103:40] ce type de calcul oui à dire dans le futur oui oui oui est-ce qu'il est un paramètre à
+[103:40 -> 103:45] activer ou quoi bien sûr mais là je vais pas vous en parler maintenant mais oui
+[103:45 -> 103:49] je vais essayer de vous en parler du calcul prévisionnel ouais c'est intéressant oui oui
+[103:49 -> 104:00] donc voilà toutes ces six d'événements sur un collaborateur va reculer la démage à la veille
+[104:00 -> 104:06] de cet événement pour être sûr que la prochaine valorisation va prendre la modification que je
+[104:06 -> 104:19] viens de faire et c'est pour ça d'ailleurs que ici quand je fais démage non c'est pas ça
+[104:19 -> 104:29] je vais faire ça je vais faire ça voilà j'ai tout un tas de paramètres là dans ces paramètres
+[104:29 -> 104:35] pardonnes qui me dit est-ce que je recule la démage quand je modifie alors là le recul de la
+[104:35 -> 104:39] démage c'est quand je modifie la fiche du collaborateur pour la saisie d'événement c'est
+[104:39 -> 104:48] c'est obligatoire dès que je fais une modification de batchage d'activité d'absence d'événement
+[104:48 -> 104:54] je recule la démage à la veille de l'événement mais quand je modifie la fiche je peux très
+[104:54 -> 104:58] bien modifier la fiche du collaborateur et ça peut entraîner si je modifie ses valeurs de
+[104:58 -> 105:06] contrat ses valeurs d'eau sont on aurait attendu plein de choses ça peut modifier les résultats du
+[105:06 -> 105:11] calcul ça peut avoir un impact sur ses résultats de calcul donc du coup c'est pour ça qu'on a un tas
+[105:11 -> 105:16] de paramètres qui dit quand je modifie je sais pas moi le mode de le motif de batchage quand je
+[105:16 -> 105:21] modifie le batchage le mode de batchage est-ce que je recule la démage oui on a tout mis un
+[105:21 -> 105:27] oui par défaut on considère que dès qu'on fait une modification dans la fiche potentiellement
+[105:27 -> 105:37] ça peut avoir un impact sur les résultats de calcul donc on les a mis à oui mais pour limiter
+[105:37 -> 105:42] quand même parce que parfois on a des imports on a des clients qui nous importent des choses à des
+[105:42 -> 105:49] dates en tédiluvienne qui nous importe des trucs en 2000 en 2010 là c'est pas possible on veut pas
+[105:49 -> 105:53] reculer la démage à ce point là on peut pas revenir 20 en arrière enfin 10 ans en arrière
+[105:53 -> 106:05] quoi donc c'est pour ça qu'on a un autre paramètre le fmax et le fmax ça dit là on est à 400 jours
+[106:05 -> 106:12] ça veut dire que quelle que soit l'action que je fais que ce soit en schizide un événement ou en
+[106:12 -> 106:17] modification d'une fiche je ne peux pas faire une modification à une date antérieure à la date
+[106:17 -> 106:25] du jour moins 400 donc je reviendrai un an etc alors je suis des clients il y en a qui vont
+[106:25 -> 106:30] jusqu'à 1000 dans le fmax ils acceptent qu'on revienne mais généralement on est plutôt dans les
+[106:30 -> 106:38] 365 par deux ça fait 700 dans les 800 900 jours au maxi quoi
+[106:38 -> 106:44] ok
+[106:44 -> 106:55] est-ce qu'il y a un paramètre qui ne permet de de bloquer par exemple la remontée des anomalies
+[106:55 -> 106:57] dont le passé par exemple
+[106:57 -> 107:11] et je comprends pas tout à fait la question c'est quoi c'est quoi la situation le problème c'est
+[107:11 -> 107:17] quoi le problème c'est que sur chrono term je parle bien sûr des anciennes versions de
+[107:17 -> 107:25] point trois on a on a un problème que pour le pour un de nos clients c'est la remontée
+[107:25 -> 107:35] de des anomalies sur toute la période des passé jusqu'à aujourd'hui on veut bloquer on veut bloquer
+[107:35 -> 107:42] on veut bloquer la remontée de la remontée par exemple des de ce type d'anomalies sur
+[107:42 -> 107:50] sur sur le passé par exemple pour ne remonter qu'à partir d'une date précise
+[107:50 -> 108:04] j'ai pas l'impression à quoi que attend attend attend depuis ce qu'il y a un paramètre
+[108:04 -> 108:16] non parce que ça ça c'est pour les relances anomalies repos je parle pas de purges des
+[108:16 -> 108:27] données oui oui je vois je vois ce que tu veux dire mais parce que le fait de le fait de le fait
+[108:27 -> 108:34] de le fait de remonter toutes les anomalies du passé donc ça va alors dire bien sûr le
+[108:34 -> 108:40] traitement de de la machine oui mais c'est des anomalies de quel type c'est des anomalies
+[108:40 -> 108:48] persistantes de tu type tu type d'anomalies oui mais ce que veut dire christine c'est que ces
+[108:48 -> 108:53] anomalies là peu importe le moment où tu les lances elles vont revenir systématiquement
+[108:53 -> 108:59] exactement oui donc en clair moi enfin si j'ai bien compris la situation si j'ai bien compris
+[108:59 -> 109:06] comment ça se paramètre ça serait de réduire le délai dans lequel tu remontes dans le temps si
+[109:06 -> 109:12] je vais dire pardon exactement oui donc dans ce cas là c'est le paramètre je crois que christine
+[109:12 -> 109:18] a monté tout à l'heure où tu dis à l'application bah tu remontes pas avant tant de jours dans le
+[109:18 -> 109:26] passé si j'ai bien compris les anomalies elle remonte ralide parce que parce que le calcul a
+[109:26 -> 109:35] été relancé oui ben oui mais ça ça y a pas moyen si le calcul a été relancé les anomalies
+[109:35 -> 109:40] elles reviennent alors pour enlever toutes les anomalies non bloquantes il suffit de relancer
+[109:40 -> 109:46] le calcul elles vont disparaître automatiquement et pour supprimer les anomalies persistantes
+[109:46 -> 109:52] il faut les viser mais si quoi que normalement alors le problème c'est que si elles ont déjà
+[109:52 -> 110:03] été visées elles ne devraient pas réapparaître d'accord oui quand on les vise on conserve
+[110:03 -> 110:13] en base le fait que l'anomalie sur ce matricule tel jour elle a été visée et donc si on recalcule
+[110:13 -> 110:19] on ne si on efface et qu'on recalcule on ne retrouve pas cette anomalie d'accord je vais essayer
+[110:19 -> 110:25] quand même parce que s'il y a un effacement recalcule sur dans le dans le passé dans le
+[110:25 -> 110:31] mois dans le passé et les anomalies elles sont générées et ça on n'y peut rien mais les
+[110:31 -> 110:34] persistantes ne devraient pas réapparaître si elles réapparaissent c'est quelque chose
+[110:34 -> 110:46] c'est quelque chose ne marche pas bien et là il faut voir mais excusez moi d'insister quand on lance
+[110:46 -> 110:54] un recalcule on lui donne bien une une fin un point max vers lequel remonter et après il refait
+[110:54 -> 111:00] le calcul à partir de cette date là mais si les anomalies sont identifiées qu'elles
+[111:00 -> 111:09] ici sont persistantes pourquoi on ne remonte pas un petit peu ce ce paramètre de date pour
+[111:09 -> 111:15] justement éviter cette zone où on sait qu'il y a des anomalies et quoi qu'on fasse elles sont là
+[111:15 -> 111:26] parce que si on remonte la date si on la met trop court la date on pourra jamais effacer et recalculer à
+[111:26 -> 111:36] partir de on pourra jamais effacer en dessous de cette date en fait le paramètre dont je parle
+[111:36 -> 111:43] c'est c'est c'est jusqu'où je m'autorise à faire un effacement recalcule et j'évite de mettre
+[111:43 -> 111:50] 5000 jours je vais me retrouver 10 ans en arrière c'est juste pas possible oui ok d'accord donc c'est
+[111:50 -> 111:58] juste ça donne une plage sur laquelle je vais remonter mais ça ne enfin en aucun cas on ça
+[111:58 -> 112:05] peut être utilisé pour éviter justement une plage de date où on sait que potentiellement il
+[112:05 -> 112:10] y a des anomalies qui donc ça peut bloquer non non c'est pas fait pour ça encore non mais
+[112:10 -> 112:25] je réponds c'est moi c'est pour ça ok pour les personnes en départ s'il vous plaît pour les
+[112:25 -> 112:30] personnes des personnes en départ avec une date de sortie normalement leurs anomalies ne doivent
+[112:30 -> 112:42] pas remonter une personne qui est sortie dans le passé oui oui normalement les anomalies doivent
+[112:42 -> 112:50] pas remonter oui pour toi on a ce type de problème sur les anciennes versions malgré qu'on a eu un
+[112:50 -> 112:56] correctif envoyé par le dev mais ça n'a pas résolu effectivement le problème
+[112:56 -> 113:12] là il faut voir faut voir faut voir en précisément à l'époque ça peut être lié aux données ça peut
+[113:12 -> 113:18] être lié à je sais pas quoi je sais pas il y a eu un problème je sais que vous avez souffert avec
+[113:18 -> 113:24] ça avec ses anomalies d'ailleurs au début il y a eu des bugs sur ces anomalies qui
+[113:24 -> 113:31] remontaient systématiquement ça a été corrigé après coups mais oui il y a eu des soucis là
+[113:31 -> 113:37] dessus mais je ne saurais pas dire où on est normalement elles doivent paraître c'est
+[113:37 -> 113:41] corrigé donc sur le x à normalement c'est corrigé sur le x ouais
+[113:41 -> 113:51] ah oui oui c'est corrigé sur le bon moment c'est vrai que vous avez des versions vous avez des vieilles
+[113:51 -> 114:05] versions en fait encore en espagnol c'est ça voyons bon niveau du calcul pour l'instant niveau
+[114:05 -> 114:09] des dates oui ce que je voudrais vraiment vous compreniez c'est que quand on saisit un événement
+[114:09 -> 114:16] une absence une régule on modifie un horaire sur un collaborateur etc ça et face à des mages à
+[114:16 -> 114:24] la veille quand vous faites une modification de la fiche du personnel ça et face à des mages et
+[114:24 -> 114:28] c'est pour ça que vous avez retrouvé à des dossiers qui étaient calculés et puis vous
+[114:28 -> 114:32] faites une modif sur votre fiche collaborateur et puis à un moment donné bon vous faites pas
+[114:32 -> 114:37] gaffe vous relancez vous relancez pas le calcul et puis vous vous rendez compte que tiens vous
+[114:37 -> 114:43] êtes plus du tout calculé à la veille bon que vous êtes revenu à votre date d'origine c'est parce
+[114:43 -> 114:50] que ben voilà vous avez fait une modif sur votre fiche mais ce qui est très très important c'est que
+[114:50 -> 114:57] quand on fait des modifications de paramètres par exemple si on modifie un de ces paramètres
+[114:57 -> 115:04] par domaine notamment le le le anneau bloc c'est à dire je bloque le calcul dès que je trouve une
+[115:04 -> 115:08] anomalie bloquante si je modifie le paramètres et je dis finalement je bloque pas le calcul
+[115:08 -> 115:14] ben en fait pour que ce soit pris en compte il n'y a pas d'effacement automatique des dossiers
+[115:14 -> 115:21] là donc c'est pour ça que dans mon équipe on va dans les traitements collectifs et là on
+[115:21 -> 115:29] passe par un effacement d'abord des collaborateurs on les efface si je veux recalculer j'ai fait des
+[115:29 -> 115:35] modifications dans mes paramétrages des motifs d'absence dans mes règles de calcul dans voilà
+[115:35 -> 115:38] tout ça pourquoi j'ai plus que deux collaborateurs moi
+[115:38 -> 115:52] c'est
+[115:52 -> 116:22] Alors, je peux recalculer depuis le début de l'année.
+[116:22 -> 116:36] Je veux vraiment, j'ai fait une modif dans mes paramétrages et je veux appliquer ces
+[116:36 -> 116:43] modifs pour recalculer les résultats qui ont déjà été calculés puisque les dossiers
+[116:43 -> 116:50] sont déjà calculés. Donc là, ça m'oblige à effacer et je dis, je lance ce calcul après
+[116:50 -> 116:55] l'effacement éventuellement calculé en prévisionnel. On va le lancer, mais je pense qu'il n'est pas paramétré.
+[116:55 -> 117:02] Voilà, là il me dit j'en ai 15 parce que j'en ai 15 qui ont une date de calcul validé qui vont au
+[117:02 -> 117:09] delà du 1er mars. Voilà. Quand il efface, le fait d'effacer les valorisations, ça n'efface pas les
+[117:09 -> 117:14] compteurs, ça n'efface pas les résultats, ça n'efface pas les anneaux, ça ne fait rien d'autre que de
+[117:14 -> 117:27] remettre la démage sur ces matricules à 28. Donc à la veille de la date que l'on met en fait.
+[117:27 -> 117:34] C'est ça. Ça recule la démage et ensuite je lance le calcul et comme le calcul il s'appuie toujours
+[117:34 -> 117:41] sur la démage plus 1, je recalcule les gens et je les calcule avec les nouveaux paramétrages qui
+[117:41 -> 117:59] sont en place. Je l'ai remarqué pour notre client orange et c'est au Maroc. Quand on lance un
+[117:59 -> 118:07] effacement des valorisations, ça se fait par période de 3 mois. Eh ben parce qu'ils ont un max
+[118:07 -> 118:18] jical à 90. C'est le paramètre max jical que j'ai montré. Je l'ai passé à 300 et c'est
+[118:18 -> 118:22] vrai que c'est pénible parce que du coup 3 mois pour un peu c'est court. On est obligé de relancer le
+[118:22 -> 118:40] calcul pour finir. Et donc ils sont tous calculés jusqu'au 27 avril sauf moi qui me suis arrêtée
+[118:40 -> 118:46] au 25. Mais parce que je me suis mis en badge à partir du 26 avril et que je n'ai pas vagé le 26.
+[118:46 -> 118:56] Du coup je ne suis pas là, je suis absente. On va le voir ensuite. On fait une petite pause ça vous dit
+[118:56 -> 119:07] ou pas ? Oui. On se prend 10 minutes ? Ok ça marche. A tout de suite, après 10 minutes.
+[119:16 -> 119:18] A tout de suite.
+[119:46 -> 119:48] A tout de suite.
+[120:16 -> 120:18] A tout de suite.
+[120:46 -> 120:48] A tout de suite.
+[121:16 -> 121:18] A tout de suite.
+[121:46 -> 121:48] A tout de suite.

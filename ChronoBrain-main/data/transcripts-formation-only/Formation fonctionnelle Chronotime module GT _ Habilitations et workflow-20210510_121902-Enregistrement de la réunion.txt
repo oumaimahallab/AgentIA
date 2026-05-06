@@ -1,0 +1,1032 @@
+[00:00 -> 00:04] Vire un fichier Excel.
+[00:04 -> 00:08] Ah ben ça on peut le faire.
+[00:08 -> 00:12] Sur la fiche Collab.
+[00:12 -> 00:16] Sur la fiche Collab.
+[00:16 -> 00:20] Oui c'est ça.
+[00:20 -> 00:24] Maintenant.
+[00:24 -> 00:28] Ici.
+[00:28 -> 00:32] Dans les paramètres.
+[00:32 -> 00:36] Par domaines.
+[00:36 -> 00:40] On a le bxl.
+[00:40 -> 00:44] Et ça.
+[00:44 -> 00:48] Et ça.
+[00:48 -> 00:52] Et ça.
+[00:53 -> 00:56] Et donc quand je lance une édition.
+[00:56 -> 01:00] Non c'est pas au niveau des éditions.
+[01:00 -> 01:04] Qu'on vous passe par exemple sur la fiche Collab.
+[01:04 -> 01:08] Et que vous allez sur la vie.
+[01:08 -> 01:12] La vie journée.
+[01:12 -> 01:16] La vie journée.
+[01:16 -> 01:20] On est n'importe qui par exemple.
+[01:20 -> 01:24] La vie journée.
+[01:24 -> 01:28] Oui donc vous choisissez par exemple.
+[01:28 -> 01:32] Donc un groupe de compteur qui est illustré sur.
+[01:32 -> 01:36] Donc valorisation c'est le petit bouton là qui est à côté de valorisation.
+[01:36 -> 01:40] Donc si vous choisissez par exemple une période.
+[01:40 -> 01:44] Ben n'importe le groupe.
+[01:44 -> 01:48] Par exemple les domaines d'air.
+[01:48 -> 01:51] Donc nous n'avons pas ici un bouton pour pouvoir extraire.
+[01:51 -> 01:54] Exporter ça sur la fiche.
+[01:54 -> 01:58] Ça c'est aussi important.
+[01:58 -> 02:01] Oui mais là il faut.
+[02:01 -> 02:04] Il faut avoir un état de résultats.
+[02:04 -> 02:07] Qui demande les groupes de les compteurs.
+[02:07 -> 02:10] Oui qui veut que qu'on veut.
+[02:10 -> 02:13] En fait il faut passer par l'état de résultats quoi.
+[02:13 -> 02:16] Oui oui mais juste ici.
+[02:16 -> 02:19] Il y a un extrait qu'on peut faire.
+[02:19 -> 02:22] Mais non ça n'existe pas.
+[02:22 -> 02:25] Oui je sais.
+[02:25 -> 02:28] Il y a aussi les états.
+[02:28 -> 02:31] Sur la partie workflow.
+[02:31 -> 02:34] Parce qu'il n'y a aucun état aujourd'hui.
+[02:34 -> 02:37] Au niveau de l'évolution des demandes workflow.
+[02:37 -> 02:40] Où est-ce qu'il est arrivé.
+[02:40 -> 02:43] Aujourd'hui il n'y a pas d'états qui illustrent.
+[02:43 -> 02:46] Donc les évolutions sur le workflow.
+[02:46 -> 02:49] Une absence c'est où est-ce qu'il est arrivé.
+[02:49 -> 02:52] Il n'y a que les états du type rapport.
+[02:52 -> 02:55] Absence.
+[02:55 -> 02:58] Oui.
+[02:58 -> 03:01] Et tu as des absences en prison.
+[03:01 -> 03:04] Mais on ne sait pas donc.
+[03:04 -> 03:07] Si je peux choisir l'état de demande qui sont en cours.
+[03:07 -> 03:10] Par exemple qui sont validées ou refusées.
+[03:10 -> 03:13] Il n'y a pas.
+[03:13 -> 03:16] Oui.
+[03:16 -> 03:19] Oui.
+[03:19 -> 03:22] Oui.
+[03:22 -> 03:25] Oui mais ça c'est des demandes.
+[03:25 -> 03:28] Voilà.
+[03:28 -> 03:31] Si vous les avez fait passer par Osny.
+[03:31 -> 03:34] Et que ça ne remonte pas ou que ce n'est pas prioritisé.
+[03:34 -> 03:37] Je ne sais pas ce que Osny en fait.
+[03:37 -> 03:40] Je ne sais pas si vous avez fait ça.
+[03:40 -> 03:43] Pour rousser les demandes.
+[03:43 -> 03:46] Pour que ce soit pris en compte.
+[03:46 -> 03:49] Ça c'est parmi les demandes.
+[03:49 -> 03:52] Il y en a beaucoup.
+[03:52 -> 03:55] Il n'y a pas que ça donc il y a beaucoup de.
+[03:55 -> 03:58] Des choses qu'on aimerait bien sûr participer.
+[03:58 -> 04:01] Sur la rendement de produits.
+[04:01 -> 04:04] Oui mais alors c'est.
+[04:04 -> 04:07] Oui.
+[04:07 -> 04:10] Ça se passe pas à un niveau.
+[04:10 -> 04:13] La priorisation des évolutions.
+[04:13 -> 04:16] Ce qu'on prend mais nous c'est pareil.
+[04:16 -> 04:19] Moi j'ai des demandes depuis longtemps qui ne passent pas.
+[04:19 -> 04:22] Pourtant je suis proche d'Eric.
+[04:22 -> 04:25] Et voilà.
+[04:25 -> 04:28] Si ce n'est pas retenu par le comité produit.
+[04:28 -> 04:31] Par le comité roadmap.
+[04:32 -> 04:35] D'accord.
+[04:35 -> 04:38] Donc on va continuer.
+[04:38 -> 04:41] Sur les habilitations.
+[04:41 -> 04:44] Ce que je voulais vous montrer tout à l'heure.
+[04:44 -> 04:47] Quand on.
+[04:47 -> 04:50] J'ai un feedback là.
+[04:50 -> 04:53] J'ai de l'écho.
+[04:53 -> 04:56] Comment ça se fait que j'ai de l'écho.
+[04:56 -> 04:59] C'est bon je crois.
+[04:59 -> 05:02] Ce que je voulais vous montrer donc.
+[05:02 -> 05:05] Quand on est dans la création des habilitations.
+[05:05 -> 05:07] Quand on.
+[05:07 -> 05:10] Ces fameux filtres et les entités fonctionnelles.
+[05:10 -> 05:13] Pour savoir quels sont les entités.
+[05:13 -> 05:16] Qui impactent les fonctionnalités.
+[05:16 -> 05:19] On a le choix de passer les requêtes sur la base de données.
+[05:19 -> 05:22] Donc que je voulais montrer dans le support de formation.
+[05:22 -> 05:24] Ou alors.
+[05:24 -> 05:26] Ou alors on peut aller consulter.
+[05:26 -> 05:28] Directement.
+[05:28 -> 05:30] L'excel qui s'appelle support à l'audit.
+[05:30 -> 05:32] Tabilitation.
+[05:32 -> 05:34] Vous avez dû la voir.
+[05:34 -> 05:36] Rachid et.
+[05:36 -> 05:38] Rally de.
+[05:38 -> 05:40] Cette matrice.
+[05:40 -> 05:42] En fait ça.
+[05:42 -> 05:44] Ça décrit.
+[05:44 -> 05:46] L'ensemble des fonctionnalités.
+[05:46 -> 05:48] De l'application.
+[05:48 -> 05:50] Ranger dans les groupes de fonctionnalités.
+[05:50 -> 05:52] Modèle.
+[05:52 -> 05:54] Et dans.
+[05:54 -> 05:56] Une bonne entité pour les filtres.
+[05:56 -> 05:58] On met pour chaque fonctionnalité les entités.
+[05:58 -> 06:00] Qui sont.
+[06:00 -> 06:02] Qui impactent.
+[06:02 -> 06:04] En fait la fonctionnalité en question.
+[06:04 -> 06:06] Par exemple.
+[06:06 -> 06:08] Si je prends.
+[06:08 -> 06:10] Dans les fonctionnalités.
+[06:10 -> 06:12] De validation.
+[06:12 -> 06:14] Voilà.
+[06:14 -> 06:16] Valider les demandes d'absence.
+[06:16 -> 06:18] C'est l'entité absence.
+[06:18 -> 06:20] Valider les souhaits.
+[06:20 -> 06:22] C'est l'entité absence.
+[06:22 -> 06:24] Valider les souhaits.
+[06:24 -> 06:26] C'est l'entité absence.
+[06:26 -> 06:28] Valider les batchage.
+[06:28 -> 06:30] C'est l'entité batchage.
+[06:30 -> 06:32] Etc.
+[06:32 -> 06:34] Et sur ces fonctionnalités.
+[06:34 -> 06:36] Sur cette taux support à l'audit.
+[06:36 -> 06:38] On indique aussi sur la partie droite.
+[06:38 -> 06:40] Les licences.
+[06:40 -> 06:42] Qui sont nécessaires pour voir paraître.
+[06:42 -> 06:44] La fonctionnalité.
+[06:44 -> 06:46] En quelle version la fonctionnalité apparaît.
+[06:46 -> 06:48] Le nom de la fonctionnalité.
+[06:48 -> 06:50] Et puis.
+[06:50 -> 06:52] Sur la partie droite.
+[06:52 -> 06:54] On a aussi des commentaires.
+[06:54 -> 06:56] Et notamment.
+[06:56 -> 06:58] On met le préalable.
+[06:58 -> 07:00] Par exemple.
+[07:00 -> 07:02] Pour.
+[07:02 -> 07:04] Gérer la fiche.
+[07:04 -> 07:06] Pour voir la fiche du collaborateur.
+[07:06 -> 07:08] Il faut avoir au préalable.
+[07:08 -> 07:10] Gérer les collaborateurs.
+[07:10 -> 07:12] Il faut avoir la fonctionnalité.
+[07:12 -> 07:14] Gérer les collaborateurs.
+[07:14 -> 07:16] Pour voir la fiche.
+[07:16 -> 07:18] Donc ça donne un accès en visualisation.
+[07:18 -> 07:20] Sur la fonctionnalité.
+[07:20 -> 07:22] Et sur la fonctionnalité lancée des états.
+[07:22 -> 07:24] Alors on a les codes imprimantes.
+[07:24 -> 07:26] Qui est présente dans le bandeau.
+[07:26 -> 07:28] Et on a l'état du personnel.
+[07:28 -> 07:30] Qui peut être imprimé.
+[07:30 -> 07:32] Donc ça donne des commentaires.
+[07:32 -> 07:34] Sur chaque une des fonctionnalités.
+[07:34 -> 07:36] Donc.
+[07:36 -> 07:38] Si on revient.
+[07:38 -> 07:40] Sur les habilitations.
+[07:40 -> 07:42] Un profil.
+[07:42 -> 07:44] C'est donc.
+[07:44 -> 07:46] Appuyer sur.
+[07:46 -> 07:48] Un ou plusieurs rôles.
+[07:48 -> 07:50] En l'occurrence par exemple.
+[07:50 -> 07:52] Sur le profil collaborateur.
+[07:52 -> 07:54] Il est appuyé sur un seul rôle.
+[07:54 -> 07:56] Sur un seul rôle.
+[07:56 -> 07:58] Collaborateur badger.
+[07:58 -> 08:00] Ce rôle.
+[08:00 -> 08:02] Ce rôle.
+[08:02 -> 08:04] Il va.
+[08:04 -> 08:06] C'est le.
+[08:06 -> 08:08] Un regroupement des groupes.
+[08:08 -> 08:10] De fonctionnalité.
+[08:10 -> 08:12] Suivant les fonctionnalités transverses utilisateurs.
+[08:12 -> 08:14] Dans lesquelles on a mis affichée le calendrier.
+[08:14 -> 08:16] Afficher l'aide.
+[08:16 -> 08:18] Changer son mot de passe.
+[08:18 -> 08:20] Gérer ses propres absences.
+[08:20 -> 08:22] Voire gérer les demandes d'absence.
+[08:22 -> 08:24] Gérer ses propres activités.
+[08:24 -> 08:26] Gérer ses propres badges.
+[08:26 -> 08:28] Là on a mis les fonctionnalités.
+[08:28 -> 08:30] Badger par toutes les fonctions.
+[08:30 -> 08:32] Gérer ses propres régularisations.
+[08:32 -> 08:34] Gérer ses propres événements génériques.
+[08:34 -> 08:36] Gérer son propre compte.
+[08:36 -> 08:38] Ou là on a toutes les fonctionnalités.
+[08:38 -> 08:40] Autre que gérer les types d'événements.
+[08:40 -> 08:42] Modifier ma photo.
+[08:42 -> 08:44] Réactiver mes briques d'accueil.
+[08:44 -> 08:46] Etc.
+[08:46 -> 08:48] Alors.
+[08:48 -> 08:50] Si je reviens.
+[08:50 -> 08:52] Sur un profil.
+[08:52 -> 08:54] Gestionnaire.
+[08:54 -> 08:56] Celui qu'on a fait là.
+[08:56 -> 08:58] Le super administrateur.
+[08:58 -> 09:00] Exemple.
+[09:00 -> 09:02] Là on a posé des filtres.
+[09:02 -> 09:04] Mais on a la possibilité aussi.
+[09:04 -> 09:06] De poser des périmètres.
+[09:08 -> 09:10] Alors.
+[09:10 -> 09:12] Si je prends un gestionnaire d'équipe par exemple.
+[09:12 -> 09:14] Un gestionnaire d'écrit.
+[09:14 -> 09:16] D'équipe.
+[09:16 -> 09:18] C'est celui qu'il a.
+[09:18 -> 09:20] Le gestionnaire d'équipe c'est le manager standard.
+[09:20 -> 09:22] C'est-à-dire qu'il a le droit de voir.
+[09:22 -> 09:24] Et de gérer les événements du collaborateur.
+[09:24 -> 09:26] Généralement.
+[09:26 -> 09:28] Il a le droit de voir la fiche.
+[09:28 -> 09:30] Mais pas de faire des modifications dessus.
+[09:30 -> 09:32] Voilà.
+[09:32 -> 09:34] Il a le droit de voir le résultat.
+[09:34 -> 09:36] Il a le droit de lancer le calcul aussi.
+[09:40 -> 09:42] Mais on pourrait imaginer que.
+[09:42 -> 09:44] Le gestionnaire d'équipe.
+[09:44 -> 09:46] Alors ici.
+[09:46 -> 09:48] C'est un profil.
+[09:48 -> 09:50] Oui.
+[09:50 -> 09:52] Je vais faire le gestionnaire d'équipe.
+[09:52 -> 09:54] Par exemple.
+[09:54 -> 09:56] Il a le droit de voir les philatèmes.
+[09:56 -> 09:58] De la direction administrative.
+[09:58 -> 10:00] Ici.
+[10:00 -> 10:02] Je peux lui associer des filtres.
+[10:02 -> 10:04] Et je peux lui associer des périmètres.
+[10:04 -> 10:06] Donc il va avoir le droit là.
+[10:10 -> 10:12] Je vais pas prendre ce test de formation.
+[10:12 -> 10:14] Mettre un périmètre collaborateur.
+[10:14 -> 10:16] J'ai le droit.
+[10:16 -> 10:18] De définir des périmètres.
+[10:20 -> 10:22] Alors là.
+[10:22 -> 10:27] dans cet environnement un petit test pour faire un périmètre sur le test de formation si je crée
+[10:27 -> 10:36] un périmètre et que je veux le périmètre de la direction administrative. J'ai le choix quand
+[10:36 -> 10:42] je crée un type de périmètre, un périmètre, de dire quel est son type, c'est-à-dire est-ce que
+[10:42 -> 10:46] je fais un périmètre de type population ou un périmètre de type utilisateur. Si je fais
+[10:46 -> 10:51] un périmètre de type population, dans mon périmètre je vais avoir un ensemble de collaborateurs.
+[10:52 -> 10:56] Si je fais un périmètre de type utilisateur, dans mon périmètre je vais avoir un ensemble de
+[10:56 -> 11:04] comptes utilisateurs. C'est la différence entre les deux. Donc si je fais un périmètre de type
+[11:04 -> 11:09] population, je vais avoir les critères qui me sont proposés sont les critères de l'affiche du
+[11:09 -> 11:17] personnel. Par exemple, si je veux faire le périmètre de la direction administrative, ici je vais
+[11:17 -> 11:30] prendre la structure administrative, elle est là. Je vais dire tous ceux qui sont infectés directement
+[11:30 -> 11:43] à l'élément dans le groupe GEDO de la société 1 sur l'établissement 1, la direction administrative.
+[11:43 -> 11:56] Si je ne l'ai pas. J'ai oublié que je l'avais rattaché à l'établissement 2. Donc je vais
+[11:56 -> 12:08] prendre la direction administrative ici. C'est comme ce que j'ai fait la semaine dernière quand j'ai créé
+[12:08 -> 12:16] une population de collaborateurs dans l'espace mon équipe. Ici, c'est comme si je faisais ça,
+[12:16 -> 12:29] sauf que là je ne vais pas créer une population. Alors je crois que j'avais fait ça. J'avais fait...
+[12:29 -> 12:38] J'avais pris la structure DNJ, c'en était une autre. Mais c'est comme si je faisais ça,
+[12:38 -> 12:45] quand j'ai fait une population, j'ai choisi un élément de la fiche du collaborateur. Là,
+[12:45 -> 12:50] en l'occurrence, on avait pris la structure DNJ. On dit rattaché à l'élément. Donc là,
+[12:50 -> 12:55] je ne veux pas seulement les gens qui sont directement infectés à administrative. Je
+[12:55 -> 12:59] veux les gens qui sont rattachés à qui sont infectés à administrative, plus éventuellement les
+[12:59 -> 13:14] éléments en dessous. Mais c'est le même principe. Donc je crée avec mon critère dans mon périmètre là,
+[13:14 -> 13:18] quand je prends ma structure administrative, égal à l'élément direction administrative,
+[13:18 -> 13:23] j'ai pris les gens qui sont directement infectés à cet élément là. Et ce périmètre maintenant,
+[13:23 -> 13:26] si je le mets sur le profil de gestionnaire d'équipe,
+[13:39 -> 13:51] voilà, que je m'affecte ce profil à mon utilisateur. Je l'avais déjà,
+[13:51 -> 14:07] le gestionnaire d'équipe. Alors, comme j'ai changé, j'ai modifié directement le périmètre. Je ne suis pas
+[14:07 -> 14:12] certaine que ça va fonctionner. Il faut peut-être que je me déconnecte. Avant, je n'allais pas de
+[14:12 -> 14:24] périmètre. Donc là, il me désactive ici. Je vais passer dans mon équipe, gérer, suivi des
+[14:24 -> 14:33] collaborateurs. Voilà, j'ai des gens qui n'ont rien à faire avec ma direction administrative. Il faut donc
+[14:33 -> 14:59] que je me déconnecte et que je me reconnecte. Je n'oublie pas d'appliquer le profil courant
+[14:59 -> 15:04] gestionnaire d'équipe seulement. Et là, si je vais dans suivi des collaborateurs,
+[15:04 -> 15:16] je ne sais plus que ces personnes-là. Elles sont toutes affectées à la direction administrative.
+[15:16 -> 15:35] Donc ça permet le périmètre. Ça va permettre de... Alors, je vais changer de profil parce que là,
+[15:35 -> 15:40] je n'ai pas accès aux habilitations du gestionnaire d'équipe. Je vais prendre celui-là.
+[15:48 -> 15:55] Ce profil du gestionnaire d'équipe, il ne me donne donc que les collaborateurs qui sont
+[15:55 -> 16:11] affectés directement à la direction administrative. Mais peut-être que je veux pouvoir gérer les gens
+[16:11 -> 16:16] qui sont directement affectés à la direction administrative. Mais peut-être que même si
+[16:16 -> 16:21] ce n'est pas moi qui gère les gens qui sont de niveau en dessous, peut-être que je veux pouvoir les
+[16:21 -> 16:38] voir quand même. Alors là, si je fais un périmètre... Alors, ici, je vais l'appeler égal, c'est-à-dire direction
+[16:38 -> 16:55] administrative, comment dire ? Direction administrative. Ça, c'est l'égalité. C'est les gens qui sont dans le
+[16:55 -> 17:09] service à direction administrative. Et je vais dupliquer ce périmètre et je vais l'appeler les rattacher à la direction
+[17:09 -> 17:18] administrative. Je veux non seulement les gens de la direction administrative, mais aussi tous les gens qui
+[17:18 -> 17:28] sont affectés aux éléments en dessous. Là, il me reprend. Je fais de l'alluplication, donc il me reprend le même
+[17:28 -> 17:33] critère, le même opérateur. Mais là, je vais demander rattacher à l'élément. Alors, il m'enlève
+[17:33 -> 17:52] l'élément de recherche et là, je vais dire que je veux ça. Et dans mon profil, ce que j'ai le droit de
+[17:52 -> 18:00] faire, c'est de rajouter... Alors, je pourrais mettre plusieurs périmètres ici sur la ligne du
+[18:00 -> 18:08] rôle. Comme je veux mettre plusieurs filtres qui vont du coup se cumuler avec des... qui vont rassembler les
+[18:08 -> 18:21] éléments issus des différents filtres, et bien là, si je mets plusieurs périmètres, ça va me ramener les
+[18:21 -> 18:30] populations des différents périmètres en les ajoutant et en allouant les doublons. Parce que là,
+[18:30 -> 18:34] dans ces deux périmètres, j'ai des doublons. Ceux qui sont directement affectés à la direction
+[18:34 -> 18:44] administrative, ils sont aussi dans ce périmètre là. Donc si je fais ça, du coup, cette fois,
+[18:44 -> 18:50] j'ai le droit de gérer et les gens qui sont affectés directement à DRM et les gens qui sont
+[18:50 -> 19:19] rattachés à dire ADM. On vérifie. J'applique le gestionnaire d'équipe.
+[19:19 -> 19:36] Et maintenant, quand je vais dans le suivi des pollabes. Ici, j'ouvre. Et ce que je vois, c'est les
+[19:36 -> 19:43] gens qui sont attaqués à la direction administrative. Mais la ressource humaine, c'est un souz élément,
+[19:43 -> 19:49] enfin c'est un élément qui est rattaché à dire ADM. La formation ensuite, voilà,
+[19:49 -> 19:53] je ne vois plus les gens de la direction production. Je vois bien les gens qui sont que dans le,
+[19:53 -> 20:05] dans la branche. On va voir ici, les ressources humaines, c'est rattaché à dire ADM.
+[20:05 -> 20:25] Oui, c'est la direction administrative. Je ne sais plus qui s'était affecté à autre chose que la
+[20:25 -> 20:33] direction administrative, c'était formation, je ne sais plus. Voilà, recrutement, c'est
+[20:33 -> 20:41] encore un souz élément de ressources humaines. Donc on est bien en dessous de la direction administrative ou
+[20:41 -> 20:50] égal. Et là, si je laissais de faire une saisie d'absence sur cette personne, il n'y a pas de,
+[20:50 -> 21:03] je vais pas être bloqué. Pourquoi je peux saisir que de la mission ? Parce que la mission,
+[21:03 -> 21:11] j'ai mis le filtre sur la fonctionnalité et du coup, ça me limite à la mission. Ici, le 12 mai,
+[21:11 -> 21:29] on m'atteint. Voilà, je peux saisir un événement sur cette personne-là. Vous voyez pourquoi il
+[21:29 -> 21:37] m'a proposé que la mission en saisit ? Pour rappel, c'est parce que dans le profil de,
+[21:37 -> 21:49] il faut que je repasse. Oui, j'avais un filtre quand je regarde le profil de gestionnaire d'équipe
+[21:49 -> 21:59] que j'ouvre. J'ai pas mis de filtre sur le rôle. Et par contre, dans la gestion des événements,
+[21:59 -> 22:05] j'embarque un filtre que j'avais posé les absences missions, que j'avais posé sur gérer les absences
+[22:05 -> 22:10] des collaborateurs. Donc, il s'applique. C'est pour ça que ça m'a filtré les absences missions.
+[22:10 -> 22:22] Et maintenant, si je reviens sur ce profil-là, plutôt que de mettre que de j'ai les droits,
+[22:22 -> 22:28] alors je cherche un endroit parce que si je clique sur un filtre, etc., il faut que je
+[22:28 -> 22:34] cherche un endroit libre en termes de lien et je double le clic. Là, j'enlève le périmètre,
+[22:35 -> 22:39] le deuxième périmètre, celui qui me prend tous les collaborateurs affectés en dessous.
+[22:39 -> 22:44] Parce qu'en fait, j'ai pas vraiment le droit de les gérer. C'est pas mon rôle de les gérer. Par
+[22:44 -> 22:51] contre, j'aimerais bien pouvoir les voir et voir s'il se passe pour eux. Et bien, je peux rajouter sur
+[22:51 -> 22:57] voir les fiches sur le groupe de fonction... Je peux rajouter des périmètres sur le groupe de
+[22:57 -> 23:05] fonctionnalité. Par exemple, voir les événements décollables, je double le clic. J'ai un champ qui
+[23:05 -> 23:17] apparaît et qui me permet de mettre un périmètre en plus sur cette fonctionnalité. Admettons que
+[23:17 -> 23:32] je veux voir les événements, que je veux voir les résultats. Et puis que je peux voir les fiches.
+[23:32 -> 23:41] Donc là, je peux faire groupe de fonctionnalité par groupe de fonctionnalité. Là encore,
+[23:41 -> 23:45] j'ai mis qu'un seul périmètre, mais je pourrai mettre plusieurs. Et si j'en ai plusieurs,
+[23:45 -> 23:53] c'est la somme des collaborateurs issus de chaque périmètre en enlevant les doublons. Et si je fais
+[23:53 -> 24:06] ça, là, je vais avoir le droit de voir tout le monde, enfin les gens qui sont rattachés à dire ADM,
+[24:06 -> 24:13] plus évidemment ceux qui sont directement affectés. Mais j'aurais pas le droit de gérer
+[24:13 -> 24:24] les événements sur les rattachés, ceux qui sont de niveau inférieur. Alors si je me déconnecte.
+[24:43 -> 24:55] Je sélectionne mon profil courant, gestionnaire d'équipe. Je vais dans le suivi des collaborateurs.
+[24:55 -> 25:07] Si j'allais dans le planning, j'aurais une liste pareille. Je vais aller les mêmes. Là,
+[25:07 -> 25:15] je vois bien tous mes collaborateurs qui sont dans l'arborécence d'IrADM directement sur d'IrADM ou
+[25:15 -> 25:32] en dessous. Mais si je prends par exemple ici, voilà, si j'essaie de lui saisir une absence, lui, il est
+[25:32 -> 25:38] affecté, la direction administrative. Donc là, je vais pouvoir lui saisir la mission.
+[25:51 -> 25:57] Et je vais prendre quelqu'un qui n'est pas affecté à dire ADM, mais en dessous, il faut que je revienne
+[25:57 -> 26:17] sur situation. Lui, il est aussi... Ah non, pardon, j'ai une bêtise. Voilà. Etan, il n'est pas affecté
+[26:17 -> 26:24] directement à dire ADM, il est en dessous. Donc là, lui, si je sais lui saisir une absence,
+[26:24 -> 26:41] alors là, il va me bloquer à la fin, à l'enregistrement. Voilà. Il me dit que j'ai pas les
+[26:41 -> 26:55] droits. Alors évidemment, on préférerait tous que ici, quand je suis sur Etan, j'ai pas le bouton
+[26:55 -> 27:05] créé absence, puisqu'en fait, j'ai pas l'habitation pour le faire. Mais tel que c'est fait, tel que c'est
+[27:05 -> 27:13] construit, en fait, les habilitations arrivent après coup. Donc elles sont vérifiées, elles sont
+[27:13 -> 27:19] toujours vérifiées, mais là, elles arrivent un peu tard. On va être bloqué, mais on a toujours la
+[27:19 -> 27:24] possibilité. On a toujours le bouton activé et on peut saisir l'événement jusqu'à le valider. Et
+[27:24 -> 27:36] c'est la validation qui nous léra, non. Voilà. C'est le limite là. Donc vous voyez que au niveau
+[27:36 -> 27:51] du profil, si je reviens ici, je peux mettre des périmètres. Comme je peux mettre plusieurs
+[27:51 -> 28:02] filtres, je peux mettre plusieurs périmètres sur la ligne du rôle et ou sur les groupes de
+[28:02 -> 28:11] fonctionnalité. Alors, vous voyez, quand je fais ça, transverse utilisateur, il me propose aucun
+[28:11 -> 28:19] périmètre parce que dans les groupes de fonctionnalité qui sont embarqués dans le groupe
+[28:19 -> 28:26] fonctionnalité transverse utilisateur, je n'ai pas de fonctionnalité qui peuvent être impactées par
+[28:26 -> 28:33] un périmètre. Changer mon mode passe, afficher l'aide, afficher le calendrier. Il n'y a pas de notion
+[28:33 -> 28:39] derrière le périmètre collaborateur, le périmètre population ou utilisateur. C'est des fonctionnalités
+[28:39 -> 28:45] qui n'ont pas, qui sont sans périmètre. Pareil pour les fonctionnalités transverses du gestionnaire,
+[28:45 -> 28:50] si j'essaie d'affecter un périmètre sur les fonctionnalités transverses du gestionnaire,
+[28:50 -> 29:01] il me propose aucun périmètre parce que dans ce groupe-là, je n'ai aucune fonctionnalité qui
+[29:01 -> 29:13] sont impactables, enfin qui sont impactées par un éventuel périmètre. Par contre, si je me mets
+[29:13 -> 29:20] sur un groupe de fonctionnalités, gérer les résultats. Déjà je vois les petits points, le périmètre que
+[29:20 -> 29:27] j'ai positionné ici, il s'applique à gérer les résultats et vous voyez quand je regarde les
+[29:27 -> 29:34] trois groupes où j'ai rajouté le périmètre dire ADM rattaché, je vois que le périmètre
+[29:34 -> 29:44] affecté s'applique parce que j'ai trois petits points ici et en plus j'ai le périmètre dérattaché.
+[29:44 -> 29:54] Ces groupes de fonctionnalités, si dans les groupes de fonctionnalités il y a une fonctionnalité qui
+[29:54 -> 30:01] prévoit que éventuellement ça peut être impacté par un périmètre, donc limiter la population
+[30:01 -> 30:09] visualisée ou gérer, on peut saisir un périmètre ou plusieurs périmètres supplémentaires.
+[30:09 -> 30:23] D'ailleurs si je reviens sur le profil collaborateur, vous voyez sur le profil collaborateur badger,
+[30:23 -> 30:29] vous avez un périmètre là qui ne me propose pas la saisie de périmètre parce que dans le
+[30:29 -> 30:37] profil collaborateur badger, je n'ai que des fonctionnalités qui ne me concerne que moi ou alors des actions
+[30:37 -> 30:46] standard comme afficher le calendrier, afficher l'aide, changer mon mot de passe, badger, ça
+[30:46 -> 30:54] nécessite pas de périmètre. Les fonctionnalités qui sont dans ce rôle ne concerne qu'un collaborateur
+[30:54 -> 30:59] unique, c'est celui qui est connecté, donc il n'y a pas besoin de notion de périmètre et c'est
+[30:59 -> 31:11] pour ça que c'est non applicable. Pour vous préciser cette notion de périmètre, si je vais cette fois
+[31:11 -> 31:17] dans les groupes de fonctionnalités, admettons je crée un nouveau groupe de fonctionnalités,
+[31:17 -> 31:22] je vais mettre un IXF, peu importe, je me fiche du libellé, je ne vais pas le conserver.
+[31:22 -> 31:31] Plutôt que de fonctionner par duplication des groupes déjà existants qui sont proposés
+[31:31 -> 31:36] dans les modèles, rien ne m'empêche de créer de nouveaux groupes de fonctionnalités que je vais
+[31:36 -> 31:44] faire pour le client. La première fonctionnalité, donc je demande un code à un libellé,
+[31:44 -> 31:48] un identifiant à libellé, et ensuite il me propose de rajouter les fonctionnalités qui vont
+[31:48 -> 31:56] constituer le groupe. Quand j'appuie sur la look de recherche, il me propose 457 fonctionnalités.
+[31:56 -> 32:06] Là il me les propose toutes. Je vais en prendre une au hasard, par exemple je veux dire que je vais voir
+[32:07 -> 32:19] les titres de structure, pour paramétrer les titres de structure organisationnelle. J'enregistre.
+[32:19 -> 32:33] J'essaie d'en ajouter une autre, il devrait en théorie m'en proposer 406 puisque j'en ai déjà appris une.
+[32:33 -> 32:42] Il m'en propose plus que 285 parce que par rapport à la première fonctionnalité que j'ai
+[32:42 -> 32:49] mise dans mon groupe, il considère que le groupe de fonctionnalités justement ne va être sans
+[32:49 -> 32:54] périmètres. Voir les types de structure ça nécessite pas de périmètres, c'est de périmètres
+[32:54 -> 33:01] collaborateurs ou utilisateurs, c'est une fonctionnalité de paramétrage. Donc il n'y
+[33:01 -> 33:08] a pas de périmètres. Du coup il me propose 285 fonctionnalités. Ça veut dire que en tout j'ai 286
+[33:08 -> 33:16] fonctionnalités qui sont non impactées par des périmètres, que ce périmètre soit utilisateur
+[33:16 -> 33:25] ou collaborateur. Quand je regarde là, changer mon mot de passe, l'aide, choisir son profil courant,
+[33:25 -> 33:30] sélectionner son profil, gérer les circuits workflow etc. Tout ça c'est des paramétrages
+[33:30 -> 33:39] d'étables de base ou de l'administration. Je supprime cette fonctionnalité. Donc je me
+[33:39 -> 33:47] retrouve maintenant avec un groupe de fonctionnalités qui est vide à nouveau. Cette fois je vais
+[33:47 -> 33:55] prendre gérer les utilisateurs. Alors il m'a proposé 400 cette fonctionnalité puisque j'ai un groupe
+[33:55 -> 34:03] vide donc il n'a pas de référence. J'ai pris gérer les utilisateurs et si j'essaie
+[34:03 -> 34:13] cette fois de rajouter une nouvelle fonctionnalité, il ne m'en propose plus que 5 voir les utilisateurs,
+[34:13 -> 34:17] gérer les habilitations des utilisateurs, gérer les mots de passe, consulter les droits,
+[34:17 -> 34:23] déléguer les droits. Donc j'ai dans l'application 6 fonctionnalités qui sont
+[34:23 -> 34:28] potentiellement impactées par un périmètre de type utilisateur.
+[34:28 -> 34:46] Les périmètres de type utilisateur ici, je n'ai pas fait d'exemple mais ici si je crée un périmètre
+[34:46 -> 35:04] utile. Les critères qui sont à ma disposition, je n'en ai pas énormément. Je peux choisir l'identifiant,
+[35:04 -> 35:16] c'est le compte utilisateur. Je n'ai pas d'épargne en plus. Je vais faire par exemple
+[35:16 -> 35:36] A100, mon compte de connexion ou bien un identifiant. Je vais faire O ici, ou je ne sais pas qu'est-ce qu'on
+[35:36 -> 35:58] avait nommé d'utile. Les utilisateurs, je n'ai rien invité de nommé d'utile, c'est ça.
+[35:58 -> 36:09] Là, je viens de créer un périmètre utilisateur où je ne vais prendre en compte que ces deux
+[36:09 -> 36:21] comptes utilisateurs-là. Et ce périmètre utilisateur, je ne pourrai le mettre que sur
+[36:21 -> 36:29] un groupe de fonctionnalités dans un profil qui a des fonctionnalités qui peuvent être
+[36:29 -> 36:34] filtrées par un périmètre utilisateur. Par exemple, si je prends toujours mon profil d'exemple,
+[36:34 -> 36:47] la consultation seul, le rôle de gestion, j'ai ici administré les utilisateurs. Si je prends
+[36:47 -> 36:54] administré l'application, j'ai un enapplicable en termes de périmètre parce que je n'ai pas
+[36:54 -> 36:59] de fonctionnalités qui concernent les utilisateurs, la gestion des utilisateurs. Par contre, là,
+[36:59 -> 37:04] je ne vois aucun périmètre associé. Là, si je double-clique et que j'ouvre ma pop-up,
+[37:04 -> 37:08] il ne me propose que le périmètre utilisateur que je viens de créer. Il ne me propose pas
+[37:08 -> 37:17] les autres périmètres collaborateurs parce que je n'ai pas dans ce groupe-là de fonctionnalités
+[37:17 -> 37:29] hautes. Voilà, je n'ai que des fonctionnalités qui gèrent les utilisateurs. Si je reviens sur
+[37:29 -> 37:36] mon groupe de fonctionnalités, là, j'ai géré ce utilisateur. Donc, j'annule ça. Je supprime
+[37:36 -> 37:42] cette fois gérer les utilisateurs. Et puis là, maintenant, dans mon groupe de fonctionnalités,
+[37:42 -> 37:51] je repart d'une liste vide. J'ai mes 407 fonctionnalités et je vais en prendre une qui concerne les
+[37:51 -> 38:00] fonctionnalités responsables. Voilà, par exemple, gérer les collaborateurs typiquement. Je vais
+[38:00 -> 38:06] prendre celle-ci. Mais je vous réprime n'importe quelle autre fonctionnalité responsable. C'était
+[38:06 -> 38:16] bon aussi. Et quand je rajoute la prochaine fonctionnalité, il me propose 114. C'est-à-dire que j'ai 115
+[38:16 -> 38:24] fonctionnalités qui peuvent être impactées par des périmètres de type population, population de
+[38:24 -> 38:31] collaborateurs. Par exemple, voir les fiches, créer une fiche collab, supprimer une fiche collab,
+[38:31 -> 38:52] etc. Définir des populations. Voilà. Et du coup, 286 plus 6 plus 115, ça fait 292, 297, 307, 407.
+[38:52 -> 39:00] Ça fait bien les 407 fonctionnalités au total. Donc, vous voyez qu'à l'intérieur d'un groupe de
+[39:00 -> 39:06] fonctionnalités, on ne peut pas mettre à la fois des fonctionnalités de périmètres de type
+[39:06 -> 39:10] différents. J'ai obligé de faire des groupes de fonctionnalités. Petit, quand je crée un groupe
+[39:10 -> 39:14] de fonctionnalités, je ne peux pas mettre deux fois la même fonctionnalité dans le même groupe.
+[39:14 -> 39:21] Et ensuite, je ne peux pas mixer au sein d'un même groupe des fonctionnalités qui
+[39:21 -> 39:26] pourraient être impactées par un périmètre utilisateur, plus des fonctionnalités qui pourraient
+[39:26 -> 39:34] être sans périmètre ou des fonctionnalités qui pourraient être avec des périmètres collaborataires,
+[39:34 -> 39:43] des périmètres population. C'est pour ça que, si ça peut vous arriver, quand vous
+[39:43 -> 39:47] constituez un groupe, vous voulez pouvoir mettre dans le même groupe de fonctionnalités des
+[39:47 -> 39:52] fonctionnalités. Je vais pouvoir changer mon mot de passe, je vais pouvoir gérer des
+[39:52 -> 39:57] collaborateurs. Vous ne pouvez pas mettre n'importe quoi à l'intérieur des groupes. C'est
+[39:57 -> 40:04] une limite historique du produit parce qu'au départ, on ne pouvait pas mettre les périmètres
+[40:04 -> 40:09] directement sur la ligne du rôle. On était obligé de les mettre sur chacun des groupes
+[40:09 -> 40:13] de fonctionnalités, ce qui était un peu lourd parce qu'on était obligé de mettre le
+[40:13 -> 40:18] périmètre sur chaque groupe de fonctionnalités alors qu'on mettait le même périmètre
+[40:18 -> 40:25] pratiquement à chaque fois. Maintenant qu'on peut le mettre directement sur la ligne
+[40:25 -> 40:34] du rôle, on pourrait très bien se passer, il sait très bien faire un périmètre appliqué
+[40:34 -> 40:39] sur une fonctionnalité qui n'attend pas de périmètre, la fonctionnalité n'attend
+[40:39 -> 40:42] pas de périmètre pendant qu'elle s'exécute sans périmètre, ce n'est pas un problème.
+[40:42 -> 40:49] Ça pourrait ne pas être un problème, mais c'est resté comme ça. On ne peut pas, là,
+[40:49 -> 40:54] sur la ligne du rôle, on va mettre tous les périmètres. Si le rôle, par exemple, ici,
+[40:54 -> 41:05] rien ne m'empêche sur la ligne du rôle de mettre un périmètre direct. Là, les directeurs,
+[41:05 -> 41:11] enfin, les gens qui sont affectés à dire ADM sur le superadmire, sur l'administrateur général,
+[41:11 -> 41:21] et puis de mettre aussi un périmètre de type utilisateur. Si je mets ce périmètre là,
+[41:21 -> 41:31] il ne m'empêche pas de le faire. Et il va savoir quand j'ouvre le détail que le périmètre,
+[41:31 -> 41:38] voilà, utilisateur, là, je l'avais rajouté. Alors, vous voyez, j'ai les trois petits points,
+[41:38 -> 41:43] là, c'est le même périmètre. Le fait d'avoir mis le même périmètre sur la ligne du rôle et sur le
+[41:43 -> 41:47] groupe de fonctionnalité, ce n'est pas un problème. Il va faire la somme des deux, il va enlever
+[41:47 -> 41:52] les doublons, donc il me donnera le périmètre utilisateur tel que je l'ai construit. Il me donnera
+[41:53 -> 42:01] à 100 et ils se donnent au maire d'utile. Ici, je peux l'enlever, il ne me sert plus à rien,
+[42:01 -> 42:12] ici directement sur le groupe de fonctionnalité. Ça, ça ne me va pas, par contre. Il faut que je
+[42:12 -> 42:37] réfléchisse. Alors ça, ça me paraît très bizarre. J'ai bien mis deux périmètres ici qui ont été
+[42:37 -> 42:47] posés sur le rôle. Voilà, ça y est, ça m'a remis à jour. C'est-à-dire que là maintenant,
+[42:47 -> 42:53] on voit les trois petits points qui arrivent sur le groupe administré utilisateur. C'est parce que
+[42:53 -> 42:59] le périmètre utilisateur, là, évidemment, il s'applique sur ce groupe de fonctionnalité puisque
+[42:59 -> 43:06] il a dedans des fonctionnalités qui sont impactées par un périmètre de type utilisateur.
+[43:06 -> 43:13] Et si je descends ici sur gérer la file des collaborateurs, j'ai des petits points aussi,
+[43:13 -> 43:18] mais là, c'est le périmètre d'IRADM affecté qui s'applique sur ces groupes-là et sur les
+[43:18 -> 43:26] fonctionnalités qu'elles comportent. Et sûrement, c'est les interfaces. Christine, quand t'as
+[43:26 -> 43:41] déployé à administrer les utilisateurs, c'est-à-dire si tu déploies ou on voit ENA. Oui, alors l'écran,
+[43:41 -> 43:48] il est fait comme ça. En fait, et si je déploie gérer les événements, par exemple, les événements,
+[43:48 -> 43:55] je vois que le périmètre s'applique, mais si j'ouvre, je vois ENA partout. Alors bon,
+[43:56 -> 44:05] c'est vrai qu'en termes de restitution, c'est moyen parce qu'en fait, le périmètre s'applique sur
+[44:05 -> 44:13] ces fonctionnalités et sur ces fonctionnalités-là. En fait, non-implicable, c'est parce qu'en
+[44:13 -> 44:17] sens de l'écran, on ne peut pas mettre un périmètre directement sur une fonctionnalité,
+[44:17 -> 44:27] mais c'est pas très heureux. On ne peut pas mettre de périmètre sur une fonctionnalité.
+[44:27 -> 44:37] Non, on ne peut pas la mettre directement là. On ne peut pas la mettre dans les groupes de
+[44:37 -> 44:42] fonctionnalités, dans l'écran groupes de fonctionnalités. Ah non, les groupes de
+[44:42 -> 44:46] fonctionnalités, non, je n'ai pas d'endroit où je peux mettre un périmètre. Je peux mettre que des filtres.
+[44:46 -> 44:57] Oui, je peux mettre que des filtres. C'est pas très heureux. Moi, je suis d'accord. C'est troublant
+[44:57 -> 45:07] de voir ENA. Là, quand on voit ça, le périmètre, là, il va s'appliquer sur toutes les fonctionnalités
+[45:07 -> 45:16] qui sont là. Alors, à noter qu'autant je peux rajouter des périmètres sur un groupe de fonctionnalités,
+[45:16 -> 45:28] autant je ne peux pas rajouter directement des filtres sur des groupes de fonctionnalités. Voilà, c'est
+[45:28 -> 45:39] comme ça. Les périmètres, je les pose ou sur le rôle ou sur les groupes de fonctionnalités et ou sur les
+[45:39 -> 45:46] groupes de fonctionnalités à intérieur du rôle, donc directement sur la ligne des groupes de
+[45:46 -> 45:53] fonctionnalités. Les filtres, je les mets ou sur la ligne du rôle ou alors je suis obligée d'aller
+[45:53 -> 46:00] les mettre à l'intérieur du groupe de fonctionnalités ici sur la fonctionnalité qui m'intéresse.
+[46:00 -> 46:10] Voilà, je n'ai pas la possibilité de faire en double clic là, de rajouter des filtres pour un groupe de
+[46:10 -> 46:11] fonctionnalités particuliers.
+[46:23 -> 46:30] Alors, maintenant que j'ai fait ça,
+[46:53 -> 47:13] je vais voir, alors je vais appliquer mon profil super admin, ce exemple de filtre.
+[47:14 -> 47:24] Et quand je vais voir les utilisateurs maintenant, je ne vois plus que les deux utilisateurs que
+[47:24 -> 47:31] j'ai indiqués dans mon périmètre parce que mon profil super admin, je lui ai mis là un périmètre
+[47:31 -> 47:41] utilisateur. Et quand je vais sur la gestion des collables,
+[47:41 -> 47:50] normalement je crois que j'en suis ou je n'ai plus que les dires ADM.
+[47:50 -> 47:56] Alors, j'ai tout le monde.
+[47:56 -> 48:06] Là, j'ai récupéré tout le monde. Oui, alors j'ai récupéré tout le monde parce que ce profil,
+[48:06 -> 48:11] il prévoit la consultation pour tout le monde.
+[48:11 -> 48:21] Ici, je vous le remontre le profil ici. Il est appuyé sur le rôle de consultation qui me permet
+[48:21 -> 48:27] de voir les collaborateurs, les événements, les résultats, les fiches, sans périmètre.
+[48:27 -> 48:33] Donc quand je n'ai pas de filtre ou quand je n'ai pas de périmètre, ça veut dire que je ne
+[48:33 -> 48:36] filtre pas, je ne filtre pas, je prends tout.
+[48:36 -> 48:46] Donc là, je vois tout le monde et par le rôle de consultation, donc je vois tout le monde
+[48:46 -> 48:55] et par le rôle de gestion, je ne pourrai gérer en tant que collaborateur que les gens qui
+[48:55 -> 48:57] sont directement affectés à dire ADM.
+[48:57 -> 49:02] Pourquoi par consultation, je ne vois pas tous les utilisateurs, parce que dans mon rôle
+[49:02 -> 49:08] de consultation seule pour gestionnaire d'équipe, je n'ai pas d'accès à des fonctionnalités
+[49:08 -> 49:10] de visualisation des utilisateurs.
+[49:10 -> 49:17] Je n'ai que des groupes qui concernent la gestion des collaborateurs, la visualisation
+[49:17 -> 49:19] ou la gestion des collaborateurs.
+[49:19 -> 49:23] En général, un manager d'équipe, la gestion d'équipe, on ne lui donne pas l'accès
+[49:23 -> 49:26] à l'administration des utilisateurs de l'appli.
+[49:26 -> 49:45] Et donc là, si je reviens dans mon équipe, je vois tout le monde, j'étais là, voilà,
+[49:45 -> 50:11] mais si j'essaie de saisir quelque chose sur Christine Korn, ici, j'ai pris ma TCT.
+[50:11 -> 50:28] Voilà, il me dit que je ne suis pas autorisé à chérer ce collaborateur, j'ai pas les
+[50:28 -> 50:48] droits, alors que si je prends la granite, je ne sais plus si c'est ça ou c'est ça.
+[50:48 -> 50:58] Voilà, je suis sous la direction de production, voilà, et Véronique, et là je vais pouvoir
+[50:58 -> 51:03] lui saisir un événement.
+[51:03 -> 51:32] C'est un problème.
+[51:32 -> 51:42] Est-ce que ça va ? Est-ce que c'est à peu près vu la façon dont ça se construit ? Donc
+[51:42 -> 51:48] les filtres, ça permet en fonction de l'entité de filtrer certains types d'événements.
+[51:48 -> 51:59] Les périmètres, ça permet de filtrer des populations de collaborateurs ou de filtrer
+[51:59 -> 52:00] des utilisateurs.
+[52:00 -> 52:06] Et ces filtres et ces périmètres ne se posent pas forcément au même endroit, enfin ils peuvent
+[52:06 -> 52:13] se poser directement sur la ligne du rôle et du coup ils vont dans le profil, ils vont s'appliquer
+[52:13 -> 52:21] à toutes les fonctionnalités concernées par l'entité du filtre et ou par le périmètre,
+[52:21 -> 52:31] le type de périmètre, population ou utilisateur et voilà, c'est comme ça qu'on le met en forme.
+[52:31 -> 52:46] Christine, chez des grands clients par exemple qui ont un set de complexité pour la gestion
+[52:46 -> 52:53] de des filtres et tout ça, comment on le fait toujours complètement chez des grands
+[52:53 -> 52:59] clients ? Est-ce que ça, vous le créez manuellement ? Est-ce que c'est ce que ça fait aujourd'hui ?
+[52:59 -> 53:08] Maintenant je vous ai mis dans le doc aussi, je peux faire des périmètres, c'est surtout
+[53:08 -> 53:12] pour les périmètres que ça se joue parce que quand il y a des gros clients, il y a
+[53:12 -> 53:19] peut-être des milliers de managers et donc faire 1000 périmètres pour définir quelle est
+[53:19 -> 53:26] la population que peut gérer le manager etc. donc créer 1000 périmètres, créer 1000 profils
+[53:26 -> 53:29] pour affecter le bon périmètre ou le bon profil, ça peut devenir vite très lourd.
+[53:29 -> 53:34] C'est pour ça que maintenant on a la possibilité de créer des périmètres qu'on appelle dynamique.
+[53:35 -> 53:40] Alors on va dire par exemple, égale à mon élément, égale à moi,
+[53:40 -> 53:48] égale à mon élément,
+[53:48 -> 54:01] égale à mon élément d'affectation. Je vous le créez comme ça pour que ce soit clair.
+[54:01 -> 54:06] Là c'est un périmètre de type population parce que là je vais gérer des collaborateurs,
+[54:06 -> 54:15] je veux une liste de collaborateurs et là je vais dire que par exemple sur la structure
+[54:15 -> 54:20] administrative, si je prends la structure administrative, je vais prendre l'opérateur
+[54:20 -> 54:28] égale à mon élément et c'est tout ce que je mets. Je ne donne pas l'élément,
+[54:28 -> 54:32] je ne dis pas quel élément. Jusqu'à présent quand je faisais un périmètre sur la DIRADM,
+[54:32 -> 54:36] je disais je veux les gens affecter à DIRADM. Là je ne cite rien.
+[54:42 -> 54:46] Je crée un périmètre comme ça, je vais créer un profil
+[54:46 -> 55:04] que je vais appeler je vais l'appeler mon équipe.
+[55:04 -> 55:22] Alors je ne peux pas encore autoriser la sélection. Là je vais l'appuyer sur le rôle de gestionnaire
+[55:22 -> 55:32] d'équipe, on a fait là par exemple et en périmètre cette fois je vais dire égale à mon élément
+[55:32 -> 55:38] d'affectation et je ne vais pas mettre de filtre pour l'instant. Je m'en fiche.
+[55:46 -> 55:49] Je vais rendre ce profil sélectionnable et j'en parle après.
+[55:49 -> 56:13] Ce profil je vais me l'appliquer un mois utilisateur à sang. Ici je vais dire que je suis aussi
+[56:13 -> 56:24] gestionnaire d'équipe comme celui-là. J'ai un problème là.
+[56:24 -> 56:30] Il ne s'appelait pas mon équipe. Oui justement, il faut juste réfléchir ça,
+[56:30 -> 56:39] rajouter. Il était en bas. Mon équipe.
+[56:39 -> 56:56] Je me déconnecte. Moi je suis rattachée à la cuisson B, donc à sang.
+[57:09 -> 57:22] Mon équipe, j'ai d'abord appliqué mon profil parce que là j'ai tous mes profils qui sont
+[57:22 -> 57:40] toujours appliqués. Je vais prendre, je vais appliquer ce profil là. Et dans le périmètre,
+[57:40 -> 57:46] mon équipe égale à mon affectation, je n'ai que moi. Ça veut dire que dans l'environnement là,
+[57:46 -> 57:53] personne d'autre n'est affecté à la cuisson B parce que moi, j'ai dit, je veux tous les
+[57:53 -> 57:58] gens, en fait, ce que je fais quand j'écris ça. Je regarde le compte utilisateur qui est connecté.
+[57:58 -> 58:06] C'est à sang. Je vais chercher le collaborateur qui est en lien avec ce utilisateur-là. Et le
+[58:06 -> 58:15] collaborateur qui est en lien, c'est Corne. Je vais regarder à quel élément je suis affecté.
+[58:16 -> 58:21] Moi je suis affecté par la structure administrative. Dans la structure administrative,
+[58:21 -> 58:27] je suis affecté à la cuisson B. Et du coup, je vais chercher tous les gens qui sont aussi
+[58:27 -> 58:34] affectés à la cuisson B. Et je ne trouve personne d'autre que moi. Alors je vais faire une petite
+[58:34 -> 58:41] manip. Je vais repasser ici. Je vais changer de profil. Je vais mettre en gestionnaire d'équipe,
+[58:41 -> 58:46] par exemple. Là, j'ai droit à tout le monde. Je vais dire que, par exemple,
+[58:46 -> 59:00] alors je vais faire un traitement collectif. Je vais aller saisir. J'ai pas donné collaborateur,
+[59:00 -> 59:03] là. Oui, parce que je suis en gestionnaire d'équipe. Je n'ai pas le droit. Alors,
+[59:03 -> 59:24] je vais mettre en superannmine. Voilà, donné collaborateur. Dans le doute,
+[59:24 -> 59:29] je vais mettre en superannmine GFI parce que je ne sais plus si j'ai le droit de gérer des données
+[59:29 -> 59:37] collaborateurs avec le profil de particulier que j'ai fait. Donc je vais choisir structure
+[59:37 -> 59:45] organisationnelle. Et je vais muter des gens sur cuisson B en administrative.
+[59:45 -> 59:55] Ils sont d'atelier P. Je vais dire que je vais faire ça à partir d'aujourd'hui,
+[59:55 -> 60:06] à partir du 10 mai. Et quand on va être de faim, je vais les mettre au 31 mai 2021.
+[60:06 -> 60:12] Je valide la saisie. Je n'ai pas peur parce qu'ils me disent tous les collaborateurs,
+[60:12 -> 60:19] mais en fait, je vais les choisir ma population. Et là, je vais faire ça juste. Je vais tout
+[60:19 -> 60:24] décocher et puis je vais choisir mes gens. Je vais prendre poll actives. Je vais prendre des
+[60:24 -> 60:33] samades et puis éteindre par exemple. Je l'applique. Christine, je pense qu'il y a un petit décalage
+[60:33 -> 60:39] entre le sang et l'affichage de l'écran. Je ne sais pas ce que c'est pour les autres ou juste.
+[60:39 -> 60:57] Vous avez du décalage? Non, c'est bon. Peut-être trop maroc, je ne sais pas. Peut-être c'est moi.
+[60:57 -> 61:07] Je suis en Maroc et je n'ai pas de décalage. D'accord. Ok. Je vais avec l'est après.
+[61:07 -> 61:15] Ok. Merci. Donc là, j'exécute l'affectation. Et donc ces trois personnes, le 10 mai au 31 mai,
+[61:15 -> 61:22] je les ai mis sur la cuisson. Et maintenant, si je rafraîchis, alors je vais repasser
+[61:22 -> 61:33] à mon équipe avec mon opérateur dynamique. Je vois que maintenant, je vois Paul Tessama
+[61:33 -> 61:46] d'Edan. Donc ça, c'est une façon et ce profil. Excuse-moi, Christine, après l'enseignement
+[61:46 -> 61:54] des exhibitions, tu es allé à quel chemin pour constater cette nouvelle population? Ah ben,
+[61:54 -> 62:01] je suis revenu simplement sur le suivi des collaborateurs. En fait, si tu veux, là, j'ai pas eu besoin de me
+[62:01 -> 62:05] déconnecter parce que j'ai juste fait une mutation des collaborateurs. Donc je les ai affectées
+[62:05 -> 62:10] à un autre élément. Je les ai affectées à cuisson B dans leur fiche. Et j'ai juste rafraîchie
+[62:10 -> 62:16] le suivi des collaborateurs quand j'avais appliqué l'espace mon équipe. En appliquant
+[62:16 -> 62:23] l'espace mon équipe, le suivi des collaborateurs, ils me donnent bien la liste à rafraîchir des
+[62:23 -> 62:41] gens qui sont affectés aux mêmes éléments que moi. Et ce profil, si vous vous l'affectez à votre
+[62:41 -> 62:52] utilisateur, votre propre utilisateur, ce même profil, si vous vous l'affectez à votre utilisateur,
+[62:52 -> 62:57] vous n'oubliez pas d'enregistrer, vous vous déconnectez, vous vous reconnectez, vous n'allez pas
+[62:57 -> 63:05] trouver le même résultat que moi parce que vous êtes affecté à un élément différent. Donc faites-le
+[63:05 -> 63:16] et vous allez voir l'impact que ça. On peut faire similaire à mon élément comme
+[63:16 -> 63:28] similaire à l'élément de quelqu'un d'autre. C'est un autre profil. Je parle de traitement
+[63:28 -> 63:33] massif. Je prévois qu'il y a un égal à un autre élément. C'est pour cela.
+[63:33 -> 63:46] Je comprends pas, Nouréline. Lorsque tu as configuré le traitement massif, le traitement
+[63:46 -> 63:57] collectif. Parce que tu as créé ce basant sur la structure, tu as fait un égal à mon élément.
+[63:57 -> 64:08] Quand j'ai fait ce traitement collectif, je les ai affectés à la structure administrative cuisson
+[64:08 -> 64:19] B. C'est ça que j'ai dit. Je les met, je les affecte à la cuisson B sur la période du 10 août
+[64:19 -> 64:25] 31 mai. Je me suis mis pour faire ça avec un profil qui avait tous les droits sur tout le monde
+[64:25 -> 64:38] pour ne pas être bloqué. Sur les populations, j'ai choisi ces trois personnes-là. J'avais décoché les
+[64:38 -> 64:52] autres et je n'ai choisi que celles-là. C'est pour ça que je me retrouve. L'action s'est faite sur
+[64:52 -> 64:57] ces trois personnes-là. Et du coup, comme ils appartiennent maintenant, ils sont affectés à la
+[64:57 -> 65:05] cuisson B, je les vois dans mon suivi collab quand j'applique le profil mon équipe. Parce que là,
+[65:05 -> 65:11] si je reviens sur suivi des collaborateurs, je suis super administrateur. J'ai effet. Si je
+[65:11 -> 65:18] réfléchis l'écran, j'ai tout le monde puisque j'ai tous les droits. J'ai pas de périmètre
+[65:18 -> 65:28] quand je suis super amine, j'ai effet. Et si je prends mon équipe, ça me limite automatiquement
+[65:28 -> 65:32] aux gens qui sont affectés à cuisson B.
+[65:48 -> 65:52] Vous vous l'êtes affectée ? À vous, à votre utilisateur.
+[66:18 -> 66:46] Oui, non ?
+[66:46 -> 66:53] Qu'est-ce que tu obtiens, Nicole ? Qu'est-ce que tu obtiens ?
+[66:53 -> 67:03] Je n'ai pas encore affecté de personne par contre. Non mais justement, toi, si tu veux,
+[67:03 -> 67:12] à ce stade, là, moi, je vais repasser en super amie de JFI. Je vais voir Nicole Duvin
+[67:12 -> 67:21] ici. Toi, tu es affectée à la dire progne. Donc quand tu te déconnectes et que tu reconnectes
+[67:21 -> 67:26] avec ton compte et que tu appliques ce profil mon équipe, qui est-ce que tu vois ?
+[67:26 -> 67:32] Je ne sais pas. Je ne suis pas encore arrivé jusque là. Je ne veux pas compris qu'il fallait faire ça.
+[67:32 -> 67:43] Non, c'est bon. J'ai juste pas compris qu'il fallait faire ça, donc du coup, là, je me suis déconnecté.
+[67:43 -> 68:07] Je me reconnecte. Après, je partage tout. Que je partage, là, je viens de me déconnecter,
+[68:07 -> 68:20] reconnecter. Je vais changer mon profil. Je passe à mon équipe. Et là, si je vais dans
+[68:20 -> 68:33] du collaborateur, là, j'ai du monde. Tu te vois et tu vois Christophe et Nourédyne.
+[68:33 -> 68:59] Parce que Christophe Bardin, il est bien affecté à la dire progne. Nourédyne, il est affecté à la dire progne
+[68:59 -> 69:12] depuis le 14 novembre et Christophe Bardin. Alors lui, il a deux périodes. Ah ben ça, c'est bizarre.
+[69:12 -> 69:25] Attends, je regarde ton écran. Tu vois arriver Christophe Bardin. Pourtant, si tu visualises,
+[69:25 -> 69:35] si tu descends, là, il est affecté à l'aérache quand tu survols. Il ne m'aime pas chez moi.
+[69:35 -> 69:51] Il n'appartient pas à ce tour d'ennemi. Oui, m'attendons. Et attends, si tu cliques sur
+[69:51 -> 69:56] structure administrative, sur le lien, pour ouvrir le détail de la structure administrative.
+[69:56 -> 70:00] Non, tu n'es affecté qu'à la dire progne. Et pourquoi il te sort Christophe Bardin ?
+[70:00 -> 70:16] Ça, ce n'est pas normal. Tu regardes Christophe Bardin. Il y a une affectation secondaire.
+[70:16 -> 70:26] Il y a une affectation secondaire. Ah oui. C'est parce qu'il y a une affectation secondaire.
+[70:26 -> 70:31] Oui, alors là, je suis très étonnée parce que normalement, il y a que les affectations principales
+[70:31 -> 70:40] qui sont prises en compte. Alors ça a dû évoluer. Parce que jusqu'à moi, jusqu'à ce que je savais,
+[70:40 -> 70:47] enfin, que je sache, seul les affectations principales étaient prises en compte. Les
+[70:47 -> 70:51] affectations secondaires et les prêts n'étaient pas prises en compte, mais ça a peut-être évolué.
+[70:51 -> 71:01] Il me semblait qu'on les voyait dans celui collable. Les prêts, les affectations secondaires,
+[71:01 -> 71:09] je ne sais pas trop là. Oui, mais c'est comme en termes. C'est les opérateurs dynamiques.
+[71:09 -> 71:12] Je parle des opérateurs dynamiques. Quand je dis égale à mon élément,
+[71:12 -> 71:17] je n'étais censée utiliser que les affectations principales. Pas les
+[71:17 -> 71:28] affectations secondaires. Donc, je suis étonnée de le voir arriver. Je suis étonnée de les voir
+[71:28 -> 71:38] arriver. Je vais pas reprendre le lendemain si tu veux, Christian. Ok. Je vais partager. Bon,
+[71:38 -> 71:44] je ne vais pas vous engouiller avec ça, parce qu'on ne voit pas le module des affectations
+[71:44 -> 71:51] secondaires et des prêts, mais je suis très étonnée. Ce n'est rien sans c'est, je note,
+[71:51 -> 72:01] être prise en compte par les opérateurs dynamiques.
+[72:01 -> 72:19] Christian, par contre, ce fonctionnement, c'est valable dans toutes les versions de chrono-time ou
+[72:19 -> 72:26] c'est à partir d'une certaine version que ça a été mis en place. Les opérateurs dynamiques?
+[72:26 -> 72:38] Non, la possibilité de récupérer, via le filtre, mon élément, des salariés ou autre.
+[72:38 -> 72:43] Oui, ça, c'est un opérateur dynamique, égale à mon élément.
+[72:43 -> 72:47] Je ne sais pas comment ça s'appelle. D'accord. Ce opérateur dynamique,
+[72:47 -> 72:53] et ça, ça a été mis en place, quand alors? Ça a été mis en place à partir de la version 3,
+[72:53 -> 73:03] à peu près, mais ça n'a pas très bien fonctionné et c'est corrigé. Ça n'a été
+[73:03 -> 73:08] pu utilisé par les projets. On avait des problèmes dans les délégations, etc. Et
+[73:08 -> 73:14] maintenant, normalement, c'est censé à partir de la UX fonctionner correctement.
+[73:14 -> 73:28] En place depuis la version 3, à peu près, mais vraiment opérationnelle en version UX.
+[73:28 -> 73:39] Parce que, il faut que je regarde mes tickets que j'ai par rapport à ça, justement. Ok, merci.
+[73:39 -> 74:03] Alors, parmi ces opérateurs dynamiques, je vais repasser en superanmine JLFI. Parmi ces
+[74:03 -> 74:12] opérateurs dynamiques périmètres ici, je vous ai fait l'exemple des gens qui sont égales à mon élément
+[74:12 -> 74:21] d'affectation. Je peux dupliquer ça et je peux prendre les gens qui sont rattachés à mon élément
+[74:21 -> 74:31] d'affectation. Donc là, la même chose, mais je vais prendre l'arborésoir sans dessous. C'est
+[74:31 -> 74:39] le même principe que rattacher à mon élément d'affectation. Je vais faire la même manip. L'utilisateur
+[74:39 -> 74:45] connecté, quel est le collaborateur en lien avec cet utilisateur, ce collaborateur à quel élément
+[74:45 -> 74:52] il est affecté. Et je vais prendre tous les gens qui sont directement affectés à cet élément
+[74:52 -> 75:00] et les gens qui sont affectés aux éléments en dessous de cet élément. Donc là, j'ai un
+[75:00 -> 75:21] opérateur qui dit rattacher à mon élément. Et là, peut-être Nicole, si tu t'affectes ce
+[75:21 -> 75:30] profil là, comme tu es rattaché à la dire prod, tu vas voir apparaître d'autres gens, les gens qui
+[75:30 -> 75:42] sont affectés aux ateliers ou je ne sais quoi. Moi, si je m'affecte celui là, ce profil rattaché à
+[75:42 -> 76:03] mon élément sur le A100. Je ne sais pas si c'est normal, mais quand je suis dans l'onglet de
+[76:03 -> 76:13] l'administration auquel je n'ai pas de droit avec mon équipe, je ne peux pas changer le, comment dire ça,
+[76:13 -> 76:22] le... Enfin, c'est bizarre. Ça apparaît. Tout à l'heure, je pouvais pas choisir un autre profil en fait.
+[76:22 -> 76:39] Tu es où ? Tu dis que tu es où ? En fait, j'étais avec le profil mon équipe.
+[76:39 -> 76:55] Je voulais dans... Enfin, j'avais sélectionné administration. Oui. Et je voulais un échanger le
+[76:55 -> 77:01] profil, mais là, c'est bon. Avec le profil mon équipe, tu peux pas, parce que le profil mon équipe,
+[77:01 -> 77:06] il est appuyé sur un rôle de gestionnaire d'équipe. Et le rôle de gestionnaire d'équipe n'embarque
+[77:06 -> 77:16] pas d'action possible sur la gestion des utilisateurs. C'est pour ça que quand on est avec un profil mon
+[77:16 -> 77:22] équipe dans administration, il vous dit la sélection du profil courant impose la fermeture, donne-moi un
+[77:22 -> 77:28] écran ouvert. Là, j'ai le paramétrage des périmètres. Or, dans mon équipe, je n'ai pas le droit de faire
+[77:28 -> 77:33] des périmètres, de faire des profils ou d'appliquer des droits à des utilisateurs. Donc, c'est pour ça
+[77:33 -> 77:41] qu'ils me grisent à ces données-là. Elles sont plus accessibles. J'ai rien dans le référentiel
+[77:41 -> 77:54] non plus. Je peux faire des choses que dans mon équipe. Donc, ces périmètres, ces opérateurs
+[77:54 -> 77:59] dynamiques. Alors, je n'avais pas d'autre truc parce que, ici, je vais repasser en super amie.
+[77:59 -> 78:12] Super amie, j'ai fait ici. Donc, je veux faire un profil qui s'appellera...
+[78:12 -> 78:19] Christian, le profil est créé là ? Non, le profil rataquement naîtible n'est pas créé. J'ai
+[78:19 -> 78:34] oublié. Donc, je vais faire créer profil à mon élément. Donc, c'est mon équipe. Je vais l'appeler
+[78:34 -> 78:49] étendu, c'est-à-dire avec l'arboréissance en dessous. Ici, je l'appuie sur un rôle de
+[78:49 -> 79:04] consultation seule, par exemple. Sur le périmètre, des gens qui sont rattachés à mon élément d'affectation,
+[79:04 -> 79:22] je le rend sélectionnable, je me déconnecte et je me reconnecte. Alors, moi, je suis rattachée à la
+[79:22 -> 79:29] cuisson B, donc ça ne va pas changer grand-chose pour moi parce qu'il n'y a pas de niveau en dessous.
+[79:29 -> 79:33] Ça va changer des choses pour les gens qui sont rattachés plus haut.
+[79:33 -> 79:48] C'est un peu... Par contre, Christian, j'ai une question. Quand on... Pour mon élément tout
+[79:48 -> 79:54] à l'heure, ça regarde toutes les structures qui me sont attribuées.
+[79:54 -> 80:02] Parce qu'on est d'accord que si je suis dans ma fiche collaborateur,
+[80:02 -> 80:06] j'ai du fait qu'on a créé plusieurs structures dans ce référentiel-là.
+[80:06 -> 80:13] Quand j'ai mis l'opérateur égal à mon élément ou rattaché à mon élément,
+[80:13 -> 80:19] j'ai dit quelles structures... Pour quelles types de structures, je vous laisse ça.
+[80:19 -> 80:25] Oui, j'ai dit ça, oui.
+[80:25 -> 80:37] Ici, sur ce périmètre, égal à mon élément d'affectation, j'ai dit structure administrative
+[80:37 -> 80:48] égal à mon élément. Et pour rattacher, structure administrative rattachée à mon élément.
+[80:48 -> 80:53] Oui.
+[80:53 -> 81:05] Non, en fait, là, tu l'as rattaché à une structure en particulier.
+[81:05 -> 81:15] Et dans cette structure-là, c'est sûr que cette structure-là, que je veux faire le test,
+[81:15 -> 81:19] que je veux, que je m'en occupe.
+[81:19 -> 81:25] En clair, on ne peut pas laisser cette partie-là. Il faut forcément, quand on va mettre en place
+[81:25 -> 81:32] ce filtre, qu'on définisse la structure sur laquelle on veut filtrer.
+[81:32 -> 81:34] Absolument.
+[81:34 -> 81:40] Je n'avais pas compris ça. J'ai focalisé sur mon élément,
+[81:40 -> 81:43] mais je n'avais pas pensé que c'était lié aussi à la structure,
+[81:43 -> 81:44] à laquelle appartenait cet élément.
+[81:44 -> 81:46] Oui.
+[81:46 -> 81:50] Donc là, je m'applique mon équipe étendue.
+[82:13 -> 82:41] Et si j'applique cette fois mon équipe étendue et rattaché, ça me rafraîchit.
+[82:41 -> 82:45] Je n'en ai toujours que quatre, mais parce qu'on est tous sur la cuisson B,
+[82:45 -> 82:49] et c'est un des niveaux le plus fins.
+[82:49 -> 82:57] Donc là, ce que je vais faire, je vais faire une petite manie en traitement collectif.
+[82:57 -> 82:58] Je ne peux pas.
+[82:58 -> 83:02] Ah oui, parce qu'en tant que là, je ne peux pas gérer la fiche.
+[83:02 -> 83:04] Je vais repartir.
+[83:04 -> 83:07] Si tu te déplace toi.
+[83:07 -> 83:11] Oui, mais je ne peux pas me déplacer.
+[83:11 -> 83:13] Oui, oui, je n'aurais plus pu me déplacer moi.
+[83:13 -> 83:18] Oui, parce que je suis gestionnaire.
+[83:18 -> 83:20] Oui, t'as raison.
+[83:20 -> 83:23] Je vais me déplacer moi seulement.
+[83:23 -> 83:28] Je vais mettre ici plutôt que de me rattacher à la cuisson B.
+[83:28 -> 83:30] Je vais me rattacher.
+[83:30 -> 83:32] Je vais enlever ça.
+[83:32 -> 83:35] Je vais enlever cette période.
+[83:35 -> 83:37] Donc du coup, je vais me retrouver attaché à la dire production.
+[83:37 -> 83:40] Je vais remonter de deux ou trois niveaux.
+[83:42 -> 83:45] Voilà.
+[83:45 -> 83:59] Alors là, par contre, je pense qu'il faut peut-être voir quand même que je me déconnecte.
+[83:59 -> 84:03] D'abord, je vais repasser en mon équipe tout court.
+[84:03 -> 84:08] Je vais voir si ça change ici.
+[84:09 -> 84:13] Ça n'a pas changé.
+[84:13 -> 84:16] Je pense qu'il faut que je me déconnecte.
+[84:38 -> 85:07] Ça va changer, mais je n'ai plus de genre attaché à la cuisson D.
+[85:07 -> 85:30] Donc là mon équipe est tendue, je vois les gens qui sont, moi maintenant je suis affecté
+[85:30 -> 85:37] à la direction de production, donc Korn, du coup en tant que, avec le profil mon équipe est tendu,
+[85:37 -> 85:44] je vois les gens qui sont affectés à la dire prod, donc les quatre, Nourétine, Nicole et
+[85:44 -> 85:50] Bardin-Christophe à cause de son affectation secondaire, et maintenant avec le profil
+[85:50 -> 85:55] est tendu, je vois aussi les gens qui sont affectés, Paul Active, Appté Samad que j'avais
+[85:55 -> 85:59] mis à la cuisson B, et je vois aussi Miramel qui est à la cuisson A, parce que tout ça,
+[85:59 -> 86:10] c'est les sous-services de la direction de production. Et sur ces collaborateurs, je vais
+[86:10 -> 86:30] fermer la fenêtre. Il y a des choses que je vais pouvoir faire sur, par exemple, Nicole qui est affectée
+[86:30 -> 86:37] aussi à la direction de production, donc Nicole, j'ai pouvoir lui saisir une absence.
+[86:41 -> 86:42] Je peux pas.
+[86:42 -> 87:07] Lors
+[87:07 -> 87:23] Ah oui, pardon, parce que mon profil, mon équipe est endue, il ne peut faire que de la consultation.
+[87:23 -> 87:29] Oui oui, c'est pour ça que je ne peux pas faire de saisi, je ne sais pas de bouton de création
+[87:29 -> 87:35] possible, parce que mon profil, mon équipe est endue, il ne peut faire que de la consultation lui.
+[87:35 -> 87:48] Mon équipe est endue, il est appuyé sur un rôle de consultation seul.
+[87:48 -> 87:58] Par contre si mon équipe est endue, je lui rajoute le rôle de gestionnaire d'équipe
+[87:58 -> 88:13] sur le périmètre égal à mon élément d'affectation. Là cette fois je vais pouvoir faire les deux choses.
+[88:13 -> 88:24] Donc là je peux faire de la gestion sur les gens qui sont affectés directement à la dire prode
+[88:24 -> 88:31] et je peux faire de la consultation sur les gens qui sont en dessous. Je peux faire aussi de la
+[88:31 -> 88:37] consultation sur la dire prode, mais je l'aurai déjà ici. Donc là je me déconnecte et je me
+[88:37 -> 89:02] reconnecte, je sens. Mon équipe est endue.
+[89:02 -> 89:16] Ici je vais voir ma petite liste de personnes, voilà, dont certains sont affectés à la dire prode
+[89:16 -> 89:23] et pas les autres. Et quand je suis sur Miramel par exemple qui est à l'atelier A,
+[89:23 -> 89:31] je peux consulter ces informations, je peux voir ses absences. J'ai ce boit
+[89:31 -> 89:40] fameux bouton créer absences, mais normalement il va me virer à la validation.
+[89:40 -> 89:48] Voilà, je n'ai pas les droits parce qu'elle n'est pas directement affectée à dire prode.
+[89:48 -> 89:55] Et par contre sur, je crois que c'était Noïdine qui était à dire prode, je ne vais pas avoir de soucis.
+[89:55 -> 90:21] Donc si je repasse,
+[90:21 -> 90:30] donc sur ce profil dont maintenant mon équipe est endue, il est appuyé sur un premier rôle sur
+[90:30 -> 90:39] lequel j'ai posé le perimètre élargi dynamique, tous ceux qui sont rattachés à mon élément.
+[90:39 -> 90:45] Il a un deuxième rôle de gestion cette fois où je peux gérer les gens qui sont directement
+[90:45 -> 90:52] affectés au mauvais élément que moi et je peux mixer les deux. Alors souvent ce qui se passe dans
+[90:52 -> 91:06] ma vraie vie, c'est que dans la gestion, si je reviens, alors là je suis super amine,
+[91:06 -> 91:16] non je suis pas super amine, je vais me remettre en super amine. Dans la vraie vie, ce qui se
+[91:16 -> 91:25] passe, c'est que quand je fais un périmètre et quand je dis que je veux les gens qui sont
+[91:25 -> 91:30] égales à mon élément, la plupart du temps c'est pour gérer les gens qui sont affectés
+[91:30 -> 91:39] dans le même service que moi, je ne veux pas pouvoir me gérer moi-même. Je n'ai pas le droit de me
+[91:39 -> 91:44] gérer moi-même, de me valider mes absences, de me saisir des événements. Je ne suis pas mon
+[91:44 -> 91:49] propre gestionnaire de moi-même. Si je suis un manager, il y a quelqu'un d'autre qui me valide
+[91:49 -> 91:54] mes trucs. Donc là je veux non seulement pouvoir gérer les gens qui sont affectés au
+[91:54 -> 92:08] même élément que moi et je veux que le matric ne soit pas égal à moi. Ça c'est un autre opérateur
+[92:08 -> 92:13] dynamique qui dit est-ce que c'est égal à moi ou est-ce que c'est égal ou c'est différent de moi.
+[92:13 -> 92:21] Donc là je vais avoir en gestion, je vais avoir le droit de gérer les gens de dire prode, de dire
+[92:21 -> 92:35] ADM. Ah non, pardon, je suis en train de modifier. Égal à mon élément d'affectation, c'est celui-là
+[92:35 -> 92:41] qu'il faut que je bouge. Voilà, structure administrative égale à mon élément. Et matric,
+[92:41 -> 92:48] et que ce ne soit pas moi, moi, utilisateur connecté, utilisateur, collaborateur connecté.
+[92:48 -> 92:53] Donc là avec le « et », il faut que les deux conditions soient réunies.
+[92:53 -> 93:05] Alors comme j'ai fait une modification sur les périmètres, je me déconnecte et je me reconnecte.
+[93:18 -> 93:32] Si je prends mon équipe appuyé sur ce périmètre égal à moi, sauf moi, enfin égal à mon
+[93:32 -> 93:44] affectation sauf moi, là je ne le vois plus dans la liste. Là j'ai choisi le profil qui n'a
+[93:44 -> 93:51] que de la gestion d'équipe sur le périmètre, les gens qui sont égal à mon affectation sauf moi.
+[93:51 -> 94:02] Par contre si je prends mon équipe étendue, puisque je suis incluse dans le périmètre dynamique
+[94:02 -> 94:10] en consultation seul, je me vois apparaître. Par contre je ne pourrai pas me saisir d'événement,
+[94:10 -> 94:17] en tout cas pas en tant que gestionnaire. Là j'ai droit au bouton, mission, etc. date,
+[94:17 -> 94:25] mais il va m'éjecter à la validation. Voilà, il n'est pas à la droite.
+[94:25 -> 94:33] Par contre je peux me voir parce que dans la drivie un manager, il veut pouvoir se voir dans le
+[94:33 -> 94:37] planning avec ses collaborateurs, les collaborateurs qu'il gère, mais il n'a pas le droit de se
+[94:37 -> 94:46] gérer lui-même. Voilà, ça c'était pour répondre à ta question, c'est tout ce qu'on
+[94:46 -> 94:54] sait faire. Alors on est en train, on va faire passer quand même pour la version rachide, pas pour la
+[94:54 -> 95:05] version plainte, mais pour la version suivante. On va ajouter une autre, j'ai de l'écho là,
+[95:05 -> 95:13] je ne sais pas pourquoi. On va rajouter, on va faire une évolution, je ne sais pas,
+[95:13 -> 95:17] est-ce que vous utilisez les structures STMNG au Maroc, à Chile ?
+[95:17 -> 95:30] Oui, parce que au range évidemment, ils avaient beaucoup de monde. Nous on va faire un sort, oui.
+[95:30 -> 95:47] Alors cette structure STMNG, le principe c'est qu'on importe une structure où les
+[95:47 -> 95:53] éléments sont des matricules et où chaque matricule, je vous en ai parlé pendant la formation,
+[95:53 -> 96:00] les affectations aux structures, et du coup à partir de cette structure organisationnelle qui
+[96:00 -> 96:06] est une arborescence finalement d'éléments qui sont des matricules, il y a un script qui a été
+[96:06 -> 96:16] fait par le service projet qui génère automatiquement tous les périmètres et tous les profils pour
+[96:16 -> 96:25] chacun de ces nœuds de l'arborescence qui sont des managers en fait, et qui affectent
+[96:25 -> 96:32] automatiquement les profils en question aux utilisateurs, aux bons utilisateurs,
+[96:32 -> 96:40] aux utilisateurs qui représentent ces managers. Le fait que ce script ne soit pas standard et que
+[96:40 -> 96:47] cette structure pose des problèmes en projet, pose régulièrement des problèmes, on va faire
+[96:47 -> 96:53] passer une autre évolution qui va permettre de gérer automatiquement ça, c'est-à-dire de pouvoir
+[96:53 -> 96:58] faire une apportation d'éléments de structure qui seraient effectivement des matricules numériques
+[96:58 -> 97:05] ou alpha en fonction du besoin du client, et ensuite avec les opérateurs dynamiques, on
+[97:05 -> 97:13] aurait de nouveaux opérateurs dynamiques qui nous permettraient de dire, ben je veux comment
+[97:13 -> 97:20] dire, mon périmètre, moi l'utilisateur connecté, je suis un utilisateur connecté, voilà,
+[97:21 -> 97:29] je vais voir quel est le collaborateur qui est lié à mon utilisateur, quel collaborateur je suis,
+[97:29 -> 97:36] donc je vais aller chercher mon matricule, je vais aller chercher dans cette structure quel élément
+[97:36 -> 97:46] contient mon matricule, l'item code mon matricule, et je vais prendre tous les gens qui sont
+[97:46 -> 97:53] égales, qui sont affectés à cet élément là, donc les gens qui me sont affectés à moi,
+[97:53 -> 98:01] bon c'est une évolution qui va intervenir non pas dans pleine, mais dans la future version,
+[98:01 -> 98:12] mais ça n'essayera, oui on a demandé une autre aussi, c'est de pouvoir s'arrêter à un niveau,
+[98:12 -> 98:23] mais ça nécessitera en tout cas de faire un importe des structures de matricule en fait,
+[98:23 -> 98:26] bon ça peut être intéressant parce que souvent les clients ils savent qu'il y a le majeur du qui
+[98:26 -> 98:41] est quoi. Donc voilà pour ces profils et ces opérateurs dynamiques, est-ce que c'est à peu
+[98:41 -> 98:55] près clair ? Bon il faut jouer avec, il faut, je n'ai pas le temps de vous faire trop d'exo,
+[98:55 -> 99:04] enfin j'espérais que vous auriez pris connaissance du doc avant et que vous seriez déjà un peu
+[99:04 -> 99:11] familiarisé, mais bon manifestement, voilà j'ai dû reprendre l'explication et voilà
+[99:11 -> 99:18] c'est pas possible, en une journée c'est dur, en plus à distance c'est vraiment dur. Donc il faut
+[99:18 -> 99:22] se familiariser avec les choses, lentement le support est vraiment, vous pouvez vous appuyer
+[99:22 -> 99:29] sur le support parce qu'il est quand même relativement précis et il met en évidence les
+[99:29 -> 99:35] différentes choses trappent, les différentes alertes, les différentes fautes à ne pas faire,
+[99:35 -> 99:44] bref les cas un peu particuliers. Une chose sur les profils, il faut quand même que je vous parle,
+[99:44 -> 99:52] ici on va vite fait c'est si je vais dans super admin, alors je suis en codification des profils,
+[99:52 -> 100:04] utilisateur, j'ai cette coche sélection, alors si je prends par exemple
+[100:05 -> 100:11] ces profils, mon équipe, mon équipe est tendu, tous les profils, là souvent je les mets en
+[100:11 -> 100:18] sélection autorisée. Alors première chose, quand je crée un profil avec un code, un libelé n'importe
+[100:18 -> 100:24] quel et que j'essaie de dire d'emblée sélection autorisée, vous allez voir il va vous jeter à
+[100:24 -> 100:29] l'enregistrement, il va vous dire pour pouvoir rendre ce profil sélectionnable, il lui doit au
+[100:29 -> 100:34] moins avoir un rôle induisant une fonctionnalité autre que bref, il attend certaines types de
+[100:34 -> 100:39] fonctionnalité pour que ce profil soit sélectionnable, donc vous ne pouvez pas le rendre sélectionnable
+[100:39 -> 100:47] avant d'avoir dit ce que vous allez mettre dedans. Voilà, vous allez d'abord l'appuyer sur un rôle,
+[100:47 -> 100:52] et ensuite si vous prenez un rôle, alors si je prends un rôle d'administrateur Badgeuse,
+[100:52 -> 101:02] Badgeuse par exemple, et que j'enregistre ça, ok, si j'essaie de l'enregistrer, là il veut bien,
+[101:02 -> 101:12] c'est à dire que ce profil va, si je l'applique, alors le fait de rendre un profil sélectionnable,
+[101:12 -> 101:25] ça veut dire que si je l'applique à un utilisateur, ici, alors il y a un nom tout pourri là, celui-là,
+[101:25 -> 101:38] au passage, au passage, non je vais laisser ça comme ça, ici, mais en fait ce profil-là,
+[101:38 -> 101:46] ce nouveau profil que je me suis fait, parce qu'il est sélectionnable, il va être affiché dans la liste des
+[101:46 -> 101:56] profils qui me sont infectés et que je peux choisir ici. Je verrai arriver, bon je ne vais pas me
+[101:56 -> 102:03] déconnecter et reconnecter, mais vous verrez arriver une nouvelle ligne, VKD, FULM là,
+[102:03 -> 102:09] et je pourrais sélectionner ce profil qui me permet de faire de l'administration des Badgeuse,
+[102:09 -> 102:14] donc du paramètre à acheter Badgeuse et de la com-Badgeuse, et je pourrais le choisir et
+[102:14 -> 102:20] seul ce profil serait appliqué à ma session, comme ce que je fais quand je dis je sélectionne
+[102:20 -> 102:26] mon équipe, je ne vais pas faire ça, je vais m'enlever ce profil-là, ça ne sert à rien.
+[102:26 -> 102:35] Donc un profil sélectionnable, c'est un profil qui va apparaître dans cette liste-là,
+[102:35 -> 102:41] pour être sélectionné comme profil courant. Ça, ça n'est possible que quand je vous ai mis
+[102:41 -> 102:49] les paramètres divers dans le support de formation, que si j'active dans l'environnement la gestion
+[102:49 -> 102:57] multiprofil, on a une batterie de paramètres, est-ce que j'active l'exploitation par profil?
+[102:57 -> 103:04] Si c'est à zéro, si ce paramètre je passe à zéro et que je me déconnecte et que je me
+[103:04 -> 103:11] reconnecte à l'application, je ne verrai plus ici, je n'aurai plus accès à mon choix de profil
+[103:11 -> 103:22] appliqué. Tous mes profils seront appliqués en même temps. Tous les profils seront appliqués en
+[103:22 -> 103:29] même temps, c'est-à-dire que sur mon utilisateur A100, j'ai cinq ou six profils, ils seront
+[103:29 -> 103:34] appliqués, ils seront tous appliqués en même temps. Dans mes listes, comme j'ai un super admin,
+[103:34 -> 103:39] j'aurai des listes complètes, sur certaines actions, en l'occurrence là je pourrais tout faire sur
+[103:39 -> 103:43] tout le monde parce que celui qui va prendre le pas, pour le coup, comme j'aurai le droit de tout faire
+[103:43 -> 103:49] sur tout le monde, même si j'ai des profils par moments plus restrictifs, par des filtres ou
+[103:49 -> 103:58] par des périmètres, j'ai celui-là qui me donne tous les droits sur tout le monde,
+[103:58 -> 104:03] donc du coup, je pourrais tout faire sur tout le monde. Tous mes profils vont s'appliquer en même temps.
+[104:03 -> 104:18] Vous voyez au passage que dans la liste des profils qui est là, je ne vois pas le profil
+[104:18 -> 104:29] collaborateur Badger et pourtant, c'est un profil qui m'est affecté. Ici,
+[104:29 -> 104:34] j'ai le profil de collaborateur Badger et je vois arriver les cinq profils,
+[104:34 -> 104:40] un autre quatre, cinq profils qui sont là, mais je ne vois pas arriver collaborateur Badger. Alors,
+[104:40 -> 104:45] ça aussi, je vous l'ai mis dans le support. Un profil collaborateur, typiquement qui ne contient
+[104:46 -> 104:50] que des fonctionnalités de l'espace moncompte, des fonctionnalités collaborateurs,
+[104:50 -> 104:58] un profil collaborateur est toujours appliqué. Je ne peux pas désactiver l'application de mon
+[104:58 -> 105:04] profil collaborateur, c'est-à-dire que quel que soit le profil que je choisis ici en partie droite,
+[105:04 -> 105:10] même si je choisis tous mes profils ou un profil qui n'a pas de fonctionnalité collaborateur,
+[105:10 -> 105:15] l'espace moncompte, il sera toujours actif parce que j'appliquerai toujours les fonctionnalités
+[105:15 -> 105:26] collaborateurs. Donc ça, c'est toujours activé, c'est le profil. Ce qu'il faut savoir aussi,
+[105:26 -> 105:37] c'est qu'un profil qui n'est pas sélectionnable. Alors, comment je vais faire ça ? Je vais vous montrer.
+[105:37 -> 105:54] Le gestionnaire d'équipe, là, je l'ai. Si je le rend des sélectionnables, non sélectionnables,
+[105:54 -> 106:02] alors je l'ai dans ma liste. Le gestionnaire d'équipe, c'est ça. Le gestionnaire d'équipe,
+[106:02 -> 106:13] je l'ai dans comme profil d'ici. Si je rend mon profil non sélectionnable ici et que je
+[106:13 -> 106:37] vous déconnecte et que je vous reconnecte. Ici, quand je vous ouvre là, je ne le
+[106:37 -> 106:42] vois plus arriver dans ma liste de sélection. Donc je ne peux plus appliquer le profil gestionnaire
+[106:42 -> 106:47] d'équipe seul. Mais pour autant, ce n'est pas pour ça qu'il n'est pas appliqué. C'est-à-dire qu'il
+[106:47 -> 106:53] est systématiquement appliqué. Le profil de gestionnaire d'équipe est systématiquement appliqué.
+[106:53 -> 107:02] Alors, par défaut, c'est tous mes profils. Donc dans l'exemple, si vous voulez, je vais avoir tous
+[107:02 -> 107:06] les droits sur tout le monde parce que parmi tous mes profils, je suis super amine, j'ai
+[107:06 -> 107:11] celui-là dans tous mes droits, ce qui mule sur tout le monde et donc du coup, j'ai le droit de tout
+[107:11 -> 107:16] faire. Mais vraiment, je vous le dis, le profil de gestionnaire d'équipe, là en ce moment, il est
+[107:16 -> 107:20] appliqué à ma session. Je ne vois pas qu'il est appliqué à ma session, mais il l'est parce qu'il
+[107:20 -> 107:26] fait partie de mes profils qui me sont affectés à mon utilisateur. Et du coup, je ne peux pas
+[107:26 -> 107:30] sélectionner pour pas réduire son application comme profil courant, mais il est appliqué.
+[107:31 -> 107:36] Ce profil-là, je dirais invisible, donc c'est pour un besoin spécifique.
+[107:36 -> 107:44] Oui, en général, c'est très particulier. C'est difficile de le tracer si on ne le voit pas.
+[107:44 -> 107:53] Oui. On fait ça pour des cas très particuliers. Mais sachez-le, c'est juste que pour que vous
+[107:53 -> 107:57] ayez ça en mémoire, il y a un truc au niveau de la sélection. Si un profil n'est pas sélectionnable,
+[107:57 -> 108:00] vous ne le verrez pas arriver dans la liste-là. Mais pour autant, il est appliqué.
+[108:00 -> 108:07] C'est pour ça qu'en général, mettez-les sélectionnables. Et c'est pour ça que je vous le dis,
+[108:07 -> 108:13] j'insiste là-dessus. Parce que quand vous créez un profil, c'est très courant comme erreur. Vous
+[108:13 -> 108:16] créez un profil, vous ne pouvez pas dire automatiquement en sélection autorisée.
+[108:16 -> 108:25] Et par défaut, ça arrive en sélection non autorisée. Donc il est fréquent qu'on crée le
+[108:25 -> 108:30] profil et puis on rajoute les rôles et puis on oublie ensuite de le modifier en sélection autorisée.
+[108:30 -> 108:38] Et du coup, ce profil, il n'apparaît pas dans la liste. Il faut penser à créer le profil,
+[108:38 -> 108:48] ne pas cocher sélection autorisée parce que je n'ai pas le droit. Il ne sait pas encore ce qu'il
+[108:48 -> 108:57] y a dedans, donc il ne veut pas lui prendre un rôle n'importe lequel, là, enregistrer ici.
+[108:57 -> 109:02] Et puis voilà, c'est enregistré. Il faut penser à sélection autorisée et le ré-enregistrer.
+[109:02 -> 109:10] Ça sera mieux des pratiques, c'est d'avoir un obligatoire avec un oui ou non.
+[109:10 -> 109:24] C'est la majorité de temps, il est utilisé, il est coché.
+[109:24 -> 109:36] Christine, ça veut dire que si on veut en retirer un profil, vraiment un utilisateur,
+[109:36 -> 109:42] il faut vraiment le supprimer de sa liste de profils. C'est ça, supprimer des profils qui lui
+[109:42 -> 109:46] sont associés ou alors lui mettre une date de fin, puisque tu peux mettre une date de fin.
+[109:46 -> 109:55] En tout cas, il va falloir bien jouer à un moment donné ou à un autre pour que ces droits là
+[109:55 -> 110:01] ne soient plus appliquables parce que par défaut, que l'élément ça sélectionne à un nom,
+[110:01 -> 110:08] les droits par contre s'appliquent. Si tu as affecté le profil à un utilisateur,
+[110:08 -> 110:15] ces droits s'appliquent. Alors après, si tu sélectionnes, par exemple, si tu décides là,
+[110:15 -> 110:20] si je décide, je ne vois pas tous mes profils, je décide d'appliquer mon équipe et ce qui va
+[110:20 -> 110:25] s'appliquer vraiment, c'est mon équipe, ce profil là plus gestionnaire d'équipe.
+[110:25 -> 110:31] Et plus, enfin le profil par défaut qui est collaborateur.
+[110:31 -> 110:34] Plus le profil collaborateur qui lui est toujours appliqué.
+[110:34 -> 110:47] Et d'ailleurs, quoi qu'il arrive, ce profil collaborateur là ne peut être retiré.
+[110:47 -> 110:55] Bah si, il peut être retiré de la même façon en lui mettant une date de fin d'application.
+[110:55 -> 111:09] Ah on peut même l'enlever alors. Alors, l'enlever, non parce qu'il y a des choses ici si j'essaie
+[111:09 -> 111:14] d'enregistrer, j'ai fait des choses en tant que collaborateur. Ah si, il s'en fiche de l'enlever.
+[111:15 -> 111:19] Ouais, moi j'aurais tendance plutôt à lui mettre une date de fin d'application.
+[111:19 -> 111:23] Si à un moment donné un collaborateur n'est plus habilité à un profil,
+[111:23 -> 111:26] je préfère lui mettre une date de fin d'application.
+[111:26 -> 111:34] Par exemple, ici on est 10 mai, je vais lui mettre au 9 mai, au 9 mai 2021.
+[111:34 -> 111:44] Et là, si je me déconnecte et que je reconnecte, je vais plus avoir l'espace mon compte.
+[111:59 -> 112:01] Voilà, j'ai plus mon compte.
+[112:02 -> 112:04] Ok.
+[112:11 -> 112:13] Je vais me remettre.
+[112:22 -> 112:24] Oh là, qu'est-ce qu'il a?
+[112:25 -> 112:27] Ah bon.
+[112:29 -> 112:35] Ensuite, je ne voulais pas parler des profils hiérarchiques, je vais me parler très rapidement.
+[112:35 -> 112:39] Vous regarderez dans la doc en fait comment ça se passe.
+[112:39 -> 112:43] C'est cette notion de, alors justement dans l'espace référentiel, pardon.
+[112:44 -> 112:54] Ici, art référentiel, paramètres valeurs par domaine, tous ces paramètres.
+[113:02 -> 113:08] Donc ça, très important pour avoir la sélection de profils courants disponibles.
+[113:09 -> 113:11] Ici.
+[113:12 -> 113:19] Est-ce que je n'autorise ou pas, ici, si je passe le paramètre à zéro,
+[113:23 -> 113:26] je n'autorise pas la sélection de tous profils.
+[113:26 -> 113:28] Alors quand je fais ça,
+[113:39 -> 113:43] voilà, il ne m'applique plus tous les profils en même temps.
+[113:43 -> 113:47] Il m'applique le premier qui trouve, le premier qui m'est affecté.
+[113:47 -> 113:53] Et quand je clique là-dessus, je n'ai plus accès à tous appliquer tous mes profils à la fois.
+[113:53 -> 113:58] Voilà, là il me choisit, il m'en choisit un au hasard, le premier de la liste.
+[114:00 -> 114:05] Et je peux, moi je ne sais pas, je ne sais pas.
+[114:06 -> 114:14] Et je peux, moi en tant qu'utilisateur, alors admettons que ici je reviens,
+[114:14 -> 114:17] ici sur utilisateur, sur mon utilisateur.
+[114:20 -> 114:25] Vous voyez, j'ai une coche principale, je peux choisir un profil,
+[114:25 -> 114:29] par exemple en tant que profil principal, je vais choisir mon équipe.
+[114:35 -> 114:37] Je me déconnecte.
+[114:58 -> 115:03] Ici, c'est mon équipe qui s'est appliqué par défaut.
+[115:03 -> 115:08] Là, il n'a plus pris le super admin GFL, le premier de la liste, il a pris mon équipe.
+[115:10 -> 115:14] Voilà, il me met une petite étoile pour m'indiquer que c'est mon profil principal.
+[115:14 -> 115:23] Et si je regarde dans l'espace mon équipe, les gens qui correspondent à ce profil, mon équipe.
+[115:23 -> 115:28] Ah oui, sachant que j'ai quand même toujours mon profil de gestionnaire d'équipe qui n'est pas sélectionnable.
+[115:28 -> 115:30] Et du coup, ça me ramène des gens.
+[115:31 -> 115:35] Pour que ce soit plus clair, il faudrait que je l'enlève.
+[115:39 -> 115:42] Excusez-moi, je vais le mettre ici.
+[115:48 -> 115:54] Je vais m'enlever le profil de gestionnaire d'équipe qui est toujours appliqué.
+[115:54 -> 115:56] Ou alors je vais le rendre sélectionnable.
+[115:56 -> 115:58] Bon, ce ne sera peut-être plus...
+[115:58 -> 116:02] Je vais vraiment le profil de gestionnaire d'équipe.
+[116:02 -> 116:06] Je vais le rendre sélectionnable pour ne pas qu'il soit automatiquement appliqué.
+[116:08 -> 116:11] Je pense qu'il faut que je me déconnecte.
+[116:26 -> 116:29] Donc mon profil principal, c'est toujours mon équipe.
+[116:29 -> 116:36] Quand je vais dans mon équipe gérer, là je vois bien que les gens qui sont affectés au même élément que moi.
+[116:38 -> 116:42] Et puis moi, ce qui m'intéresse en fait, en tant qu'utilisateur,
+[116:42 -> 116:45] ce n'est pas d'arriver sur mon équipe.
+[116:45 -> 116:47] Qu'est-ce qu'il y a ?
+[116:57 -> 116:59] Pourquoi il m'a mis sur mon équipe étendue ?
+[117:02 -> 117:04] Bon, je vais sélectionner mon équipe étendue.
+[117:06 -> 117:11] Voilà, qui me permet de gérer et de voir les gens de niveau en dessous.
+[117:11 -> 117:15] Et là, une fois que j'ai appliqué ce profil, mon équipe étendue,
+[117:16 -> 117:20] je vais dire, moi je le définis comme étant mon profil par défaut.
+[117:20 -> 117:23] Donc j'ai un profil principal qui est mon équipe.
+[117:23 -> 117:26] Et je vais définir mon équipe étendue par défaut.
+[117:27 -> 117:29] Et bien là, quand je vais me reconnecter,
+[117:32 -> 117:34] il va arriver sur mon profil étendu.
+[117:48 -> 117:49] Voilà.
+[117:54 -> 117:55] Donc...
+[117:58 -> 118:00] On peut définir un profil par...
+[118:00 -> 118:03] L'utilisateur, il peut définir pour lui-même un profil par défaut.
+[118:03 -> 118:04] Et ce profil,
+[118:08 -> 118:11] il va être stocké, ce profil par défaut.
+[118:11 -> 118:15] Il va être stocké dans les paramètres utilisateurs.
+[118:16 -> 118:17] Il va sur le compte utilisateur.
+[118:17 -> 118:19] Quand je regarde mon compte,
+[118:19 -> 118:21] le corned Christine, le Hassan,
+[118:21 -> 118:23] dans les paramètres particuliers,
+[118:24 -> 118:26] on les a vus un peu la semaine dernière.
+[118:27 -> 118:29] Voilà, j'ai un profil par défaut.
+[118:29 -> 118:32] Il m'a inséré cette ligne là, profil par défaut utilisateur.
+[118:32 -> 118:35] C'est la valeur alpha numérique, rateme,
+[118:35 -> 118:39] c'est le code du profil, mon équipe étendue.
+[118:39 -> 118:43] Alors je peux supprimer ce profil par défaut,
+[118:43 -> 118:45] par cette... par l'administration,
+[118:45 -> 118:47] pendant que j'ai son des utilisateurs.
+[118:47 -> 118:50] Et si je supprime ce profil par défaut,
+[118:50 -> 118:51] ou je le modifie,
+[118:51 -> 118:54] eh bien à la prochaine connexion de ce compte-là,
+[118:54 -> 118:59] j'arriverai sur le profil principal, si j'en ai un.
+[118:59 -> 119:01] Donc mon équipe.
+[119:01 -> 119:03] Et si j'ai pas le profil principal,
+[119:03 -> 119:06] j'arriverai ou sur tous mes profils,
+[119:06 -> 119:08] ou sur le premier profil qui m'est affecté
+[119:08 -> 119:10] en fonction du paramètre d'hiver,
+[119:10 -> 119:12] PRF tous.
+[119:12 -> 119:17] Je vous les mets dans le support, ça.
+[119:31 -> 119:33] Donc là, j'ai dit que je...
+[119:33 -> 119:35] je n'autorisais pas la sélection tout profil.
+[119:35 -> 119:38] Du coup, il va me prendre.
+[119:38 -> 119:39] Si j'ai pas de profil...
+[119:39 -> 119:41] Moi, j'ai un profil principal,
+[119:41 -> 119:42] donc il va m'afficher...
+[119:42 -> 119:43] à la prochaine connexion,
+[119:43 -> 119:45] il arrivera sur mon équipe.
+[119:45 -> 119:47] Mais si j'avais pas mis profil principal,
+[119:47 -> 119:49] j'arriverai sur Superamidjfi,
+[119:49 -> 119:52] c'est le premier profil qui m'a été appliqué,
+[119:52 -> 119:54] qui m'a été affecté.
+[119:57 -> 120:00] Et puis je vous dis un mot sur les profils hiérarchiques.
+[120:00 -> 120:02] Vous voyez, quand on fait les profils,
+[120:02 -> 120:05] non, c'est pas ici, c'est profil.
+[120:05 -> 120:09] Quand on crée les profils...
+[120:09 -> 120:12] Ah, mais non, je ne le vois pas ici.
+[120:12 -> 120:15] Ah, il m'a vifié ça, c'est bien.
+[120:17 -> 120:20] Est-ce que je vous en parle?
+[120:20 -> 120:22] On n'a pas énormément de temps.
+[120:28 -> 120:30] Non, je vous laisse regarder le support.
+[120:30 -> 120:32] Je ne vous en parle pas maintenant,
+[120:32 -> 120:34] parce que sinon, ça va être trop court.
+[120:34 -> 120:36] Vous voulez faire une petite pause?
+[120:37 -> 120:39] Oui.
+[120:39 -> 120:44] On se prend 10 minutes et on enchaîne.
+[120:44 -> 120:46] C'est le workflow, c'est ça?
+[120:46 -> 120:48] Sur le workflow.
+[120:48 -> 120:50] D'accord, ça marche.
+[120:50 -> 120:53] Tout à l'heure à 16h30.
+[120:53 -> 120:55] OK.
+[120:55 -> 120:57] À tout de suite.

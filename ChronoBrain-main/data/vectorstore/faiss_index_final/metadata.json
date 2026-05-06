@@ -1,0 +1,1394 @@
+[
+  {
+    "chunk_id": "doc_0",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 1",
+    "text": "Guide utilisateur Chronotime 2 \u000bApprobateurs\nGroup IT Change Management\u000b2026"
+  },
+  {
+    "chunk_id": "doc_1",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 2",
+    "text": "Sommaire\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n1\n\nIntroduction\nLes fonctionnalités migrées vers Chronotime\nLes bénéfices\nCe que change pour vous\n\nAccéder à Chronotime\nAfficher les demandes d’approbation de mes collaborateurs\n3\n\nApprobation des activités\nActivités normales\nAstreintes, interventions, heures supplémentaires et badgeage\nCompensations Borloo\nVentilation manuelle des heures supplémentaires\nRégularisations\nBonnes pratiques de validation\nGestion des Anomalies bloquantes\n7\n\nReporting\nLancer et suivre les états \nListe des rapports\n8\n\nSupport\nEt si j’ai besoin d’aide ?\nGlossaire\n9\n\nAnnexes\nType de contrat\nModalités du contrat\nPrime Panier\nAutres Anomalies\nDétails des droits d’absences exceptionnelles\n4\n\nApprobation des absences\nDemande d’absences\nArrêt maladie (CPAM)\nAbsences exceptionnelles \nAbsences complémentaires (grève)\n5\n\nSaisie à la place du collaborateur\nActivités, Astreintes, Interventions\nCompensation Borloo\nTélétravail\nRégularisations\nDemande d’absence\n6\n\nDélégation\nDéléguer mes actions d’approbation\n2"
+  },
+  {
+    "chunk_id": "doc_2",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 3",
+    "text": "Introduction\n01\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_3",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 4",
+    "text": "Inetum simplifie la gestion des temps et sécurise la paie\nChronotime 2 héberge désormais les fonctionnalités auparavant \u000bgérées dans le CRA35 et transmet en fin de mois les éléments à la paie\n\nLes bénéfices\nLes fonctionnalités migrées \u000bvers Chronotime"
+  },
+  {
+    "chunk_id": "doc_4",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 5",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nCe qui change pour vous"
+  },
+  {
+    "chunk_id": "doc_5",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 6",
+    "text": "Ce qui reste inchangé\n\nLa saisie des activités \nLa saisie des absences \n\n    Dans le respect du calendrier de fast-closing\n\n\n1. Les impacts pour les collaborateurs\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nCe qui est nouveau\n\nLa déclaration du télétravail\nLa saisie du client principal\nL’ajout d’une attestation de véhicule\nL’ajout d’une demande de prise en charge de transport\nLa déclaration des heures de compensation Borloo\nLa saisie des astreintes et interventions\nLa saisie des heures supplémentaires\nSaisie dans un seul outil\nFacilite la collecte des informations\n\nVision en temp réel\nAccès à différents compteurs en temps réel\nCongés normaux\nCongés d’ancienneté\nRTT Employeur\nRTT Salarié\nRappel des bénéfices"
+  },
+  {
+    "chunk_id": "doc_6",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 7",
+    "text": "2. Les impacts pour les responsables de projet et les managers\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\n\nCe qui reste inchangé\nCe qui est nouveau\n\n\nLa validation des activités administratives ou projet selon mon rôle et les absences des collaborateurs de mon périmètre dans le respect du calendrier de fast-closing\nJe corrige les erreurs du mois en cours avant J-4\nLe manager hiérarchique approuve\nLes demandes de compensation Borloo\nLes demandes d’arrêt de travail\nVérification et validation dans un seul outil\nLes validations se font uniquement dans Chronotime, au fil de l’eau, durant le mois  \nPas d’approbation mensuelle globale du Chronotime\n\nPas besoin d’approuver\nLes jours de télétravail\nLe client principal\n\nRappel des bénéfices\nLe responsable de projet\nvalide les astreintes\nValide les interventions sur astreintes\nTraitent les anomalies bloquantes sur les saisies des collaborateurs"
+  },
+  {
+    "chunk_id": "doc_7",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 8",
+    "text": "3. Les impacts pour les ADVs et les ADAs\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\nCe qui reste inchangé\nCe qui est nouveau\n\n\nLe contrôle des activités et des absences des collaborateurs \u000bde son périmètre à partir de J-5 \nLa correction des erreurs des mois clôturés si nécessaire\nL’ADV ou l’ADA contrôle les pièces justificatives pour : \nLes absences CPAM (maladie, maternité)\nLes congés exceptionnels\nVérification et validation \u000bdans un seul outil\n\n\nMoins de charge de travail pour répondre aux questions des collaborateurs\nL’accès des collaborateurs aux compteurs de congés en temps réel réduit le besoin de solliciter ADV /ADA\nRappel des bénéfices"
+  },
+  {
+    "chunk_id": "doc_8",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 9",
+    "text": "4. Les impacts pour les RH\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\n\nLes mêmes activités de contrôle, de suivi et d’information sont effectuées seulement dans l’outil Chronotime\nContrôle et validation dans un seul outil\n\nAllègement de la gestion administrative\nMise en place de nombreux contrôles automatiques\n\nSécurisation des données\nVia l’automatisation des flux\nGestionnaire de paie\u000b\nValider les absences CPAM.\nGérer Les modifications rétroactives en lien avec les ADV/ADA.\nValider les demandes de prise en charge de transport\nValider les attestations véhicule\nHRBP\u000b\nConsulter et analyser les données de l’application.\nSuivre les anomalies et alertes sur les temps de travail et absences CPAM.\nAssister et suivre les différents utilisateurs RH, les collaborateurs et les valideurs.\nAdministrateurs de paie\nParamétrer les horaires,\nParamétrer les programmes horaires, \netc.\nRappel des bénéfices"
+  },
+  {
+    "chunk_id": "doc_9",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 10",
+    "text": "Accéder à Chronotime\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nVous pouvez accéder à Chronotime via Inetum France,  depuis la rubrique CRA – Déclaration des activités et des frais > Chronotime. Vous n’avez pas besoin d’identifiants.\nAccueil\nDescendez sur la page et cliquez sur Chronotime"
+  },
+  {
+    "chunk_id": "doc_10",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 11",
+    "text": "Approbation des activités\nActivités normales\nAstreintes, interventions, heures supplémentaires et badgeage\nVentilation manuelle des heures supplémentaires\nCompensations Borloo\nRégularisations\n03\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_11",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 12",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n3.1. Approuver des activités normales"
+  },
+  {
+    "chunk_id": "doc_12",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 13",
+    "text": "Approbation des activités\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur          .\nToutes les demandes saisies par mon équipe seront affichées.\nCliquez sur Validations.\nTous les éléments à valider seront affichés.\nDans l’onglet Activités, Cliquez sur             pour sélectionner la ou les activités à valider .\nVous pouvez également  chercher les activités par typologie ou par collaborateur spécifique en utilisant la barre de recherche. \nCliquez sur Confirmer.\nSi vous sélectionnez plusieurs activités, vous devez saisir un commentaire Global.\n1\n2\n3\n\n\n4\n5\n\n6\n5\nMode opératoire\n7\n\nEvitez la validation en masse!\n\n!\nSi les activités ne sont pas affichées, sélectionnez  le rôle (Responsable équipe/Valideur). Si vous avez un seule rôle cette option ne sera pas affichée."
+  },
+  {
+    "chunk_id": "doc_13",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 14",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n3.2. Approuver des astreintes, interventions, heures supplémentaires et badgeage"
+  },
+  {
+    "chunk_id": "doc_14",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 15",
+    "text": "Saisie et validation des astreintes et interventions\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSaisie des astreintes, des interventions et des badgeages\nValidation par le responsable de projet\nTraitement des Anomalies\nMise à jour des Compteurs\nÉtape 2\nLe collaborateur saisit\nses heures d’astreintes,\nses interventions, \nson badgeage (Entrée / Sortie)\nÉtape 3\nLe CP/DP (partenaire du projet) valide \nles heures d’astreintes,\nles interventions\nles badgeages\nÉtape 4\nEn cas d’anomalie,\nex. heures non validées\n\nCelle-ci doit être corrigée impérativement par le collaborateur ou le manager\u000b\u000b avant le fast closing\nÉtape 5\nLes compteurs de récupération et de paiement sont mis à jour en fonction des validations\n\nCréation d’un élément d’OTP\u000bdédié dans SAP et \u000baffectation d’un \u000bcollaborateur\nÉtape 1\nLe responsable projet créé dans SAP 1 eOTP dédié aux astreintes et aux interventions\n\nIl y affecte le collaborateur\n\nIntégration en paye\n\nLes compteurs de paiement  sont envoyés directement dans l’interface pour intégration automatique en paye\nÉtape 6\n*OTP = Organigramme Technique de Projet, l’equivalent SAP du WBS (Work Breakdown Structure)\nLe badgeage sert à confirmer les interventions.   Lors de la validation il est impératif de vérifier la cohérence entre les différents saisies.\nProcessus général"
+  },
+  {
+    "chunk_id": "doc_15",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 16",
+    "text": "Saisie et validation des heures supplémentaires\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSaisie des heures supplémentaires et badgeages\nValidation par le Manager\nValidation des Régularisations\nTraitement des Anomalies\nMise à jour des Compteurs\nÉtape 2\nLes collaborateurs saisissent leurs heures  supplémentaires  et leurs badgeages dans Chronotime.\nÉtape 3\nLe manager approuve les heures supplémentaires et les  badgeages.\nÉtape 4\nLe manager décide de la ventilation avec récupération ou paiement\nÉtape 5\nEn cas d’anomalie,\nex. heures non validées\n\ncelle-ci doit être corrigée impérativement par le collaborateur ou le manager\u000b\u000b avant le fast closing\nÉtape 6\nLes compteurs de récupération et de paiement sont mis à jour en fonction des validations.\nLe badgeage sert à confirmer les heures supplémentaires. Lors de la validation il est impératif de vérifier la cohérence entre les différents saisies.\n\nCréation d’une activité dédiée dans SAP et \u000baffectation d’un \u000bcollaborateur\nÉtape 1\nLe manager créé dans SAP 1 activité dédiée aux heures supplémentaires\n\nIl y affecte le collaborateur\n\nIntégration en paye\nLes compteurs de paiement  sont envoyés directement dans l’interface pour intégration automatique en paye\nÉtape 7\n\nProcessus général"
+  },
+  {
+    "chunk_id": "doc_16",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 17",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nL'astreinte est une période pendant laquelle un salarié, sans être sur son lieu de travail et sans être à la disposition permanente de l'employeur, doit être en mesure d'intervenir pour accomplir un travail au service de l'entreprise. \n\nLes périodes d'astreinte sont planifiées à l'avance et peuvent inclure des interventions en dehors des heures normales de travail.\nLa validation des astreintes, interventions, heures supplémentaires et badgeage horaire suit le même mode opératoire de validation d’une activité normale décrite dans le slide « Approbation des activités.\nIl est important d’examiner les détails de la demande, y compris la raison, la durée et toute la documentation jointe. Assurez-vous que la demande est conforme aux politiques de l'entreprise et aux exigences légales.\nApprobation des astreintes, interventions, heures supplémentaires et badgeage\n\n\nEn cas d’approbation, le statut Approuvé apparaît sur l’agenda du collaborateur.\nEn cas de rejet, fournir une raison pour le rejet, qui sera communiquée à l'employé."
+  },
+  {
+    "chunk_id": "doc_17",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 18",
+    "text": "Les 4 types d’heures supplémentaires\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_18",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 19",
+    "text": "Principe \nEn complément de la saisie de l’activité à l’origine des interventions et heures supplémentaires, celles-ci doivent être confirmées par des saisies de badgeage à l’entrée et à la sortie via la fonction « Validations / Badgeages »  (voir slides 20 à 21).\n\nPrincipe et application du badgeage\nLe badgeage est le système par lequel un salarié enregistre ses heures de travail (arrivée, départ, pauses) à l’aide d’un badge, d’un terminal ou d’un outil numérique (Chronotime). \nIl permet de suivre précisément le temps de présence et de travail réel d’un salarié.\nLe badgeage est essentiel pour:\nDéclencher automatiquement le calcul des heures supplémentaires (après validation du manager, CP/EM).\nJustifier les dépassements d’horaires contractuels.\nConfirmation des interventions et heures supplémentaires\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\n⚠️   Attention\n\nLe badgeage saisi dans Chronotime doit être utilisé afin de confirmer l’enregistrement des heures de travail effectuées en dehors des horaires habituels (week-ends, nuits, jours fériés), et ce, uniquement sur demande de votre responsable.\n\nCela inclut également :\nles heures supplémentaires ;\nles interventions réalisées dans le cadre des astreintes."
+  },
+  {
+    "chunk_id": "doc_19",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 20",
+    "text": "Approbation des  badgeages\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n4\n5\n6\nAvant de valider les badgeages, vous pouvez consulter la valorisation des heures supplémentaires (voir le slide prochain).\nSoyez vigilant aux doublons de saisie car vous êtes sur une approbation de masse : une erreur est vite arrivée !\nA partir de la page d’accueil cliquez sur          .\nToutes les demandes saisies par mon équipe seront affichées.\nCliquez sur Validations.\nTous les éléments à valider seront affichés.\nDans l’onglet Badgeages, Cliquez sur           pour  sélectionner le ou \nles badgeages à valider .\nVous pouvez également chercher les badgeages par collaborateur spécifique en utilisant la barre de recherche. \nCliquez sur Confirmer.\nAvant de valider, vous pouvez cliquez sur chaque ligne pour voir les détails.\nEvitez la validation en masse, si vous sélectionnez plusieurs badgeages, vous devez saisir un commentaire Global.\nMode opératoire\n1\n2\n3\n7\n8"
+  },
+  {
+    "chunk_id": "doc_20",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 21",
+    "text": "Consultation des heures  supplémentaires\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur            .\nCliquez sur Gérer/Suivi de collaborateurs.\nSélectionnez un collaborateur.\nCliquez dans la petite flèche à côté de la vue Journée/ Situation pour afficher les autres options de vues.\nSélectionnez la vue Résultats individuels.\nModifier les filtres afin d’obtenir les résultats souhaités, puis cliquez sur APPLIQUER. \n\nLes heures supplémentaires sont calculées automatiquement lors du badgeage selon les prérequis et règles de calcul pré-configurés dans Chronotime. Les mises à jour sont faites toutes les nuits. \u000b Pour voir une mise à jour de la journée en cours, vous pouvez cliquer sur VALORISER.\n1\n\n\n\n2\n3\n\n4\n5\n6\nMode opératoire\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_21",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 22",
+    "text": "La ventilation manuelle des heures supplémentaires\nLa ventilation fait partie intégrante du processus de validation des heures supplémentaires. Elle permet d’indiquer si les heures doivent être récupérées ou payées.\n➡️ Sans ventilation, le processus n’est pas finalisé et une anomalie sera automatiquement générée.\nLes demandes de régularisation doivent être créées chaque fin de semaine, sur la journée du dimanche.\n\n🔧 Comment ventiler les heures supplémentaires ?\nLa ventilation s’effectue via la création d’une demande de régularisation (Récupération ou Paiement).\nVous pouvez y accéder depuis plusieurs chemins dans Chronotime :\nPage d’accueil < Mon Équipe < Anomalies à lever < Anomalies persistantes < Anomalie < Événements < Régularisation (détails dans le slide suivante)\nPage d’accueil < Mon Équipe < Gérer < Anomalies < Anomalie < Régularisation\nPage d’accueil < Mon Équipe < Gérer < Fiche du collaborateur < Anomalie < Créer < Régularisation\nPage d’accueil < Mon Équipe < Gérer < Fiche du collaborateur < Anomalie < Événements < Régularisation\nDepuis l’agenda (processus plus long avec plusieurs étapes)\n\n\n\n\n\n\n\n\n\nLa ventilation fait partie du processus de validation des heures supplémentaires. \nSi les heures supplémentaires ne sont pas ventilées, le processus de validation n’est pas complété et une anomalie sera remonté.\n\nLa ventilation est faite à partir de la création d’une demande de régularisation (récupération ou paiement)\n Vous avez plusieurs façons pour ventiler:\nA partir de la page d’accueil/Mon Equipe/Anomalies à  lever/Anomalies persistantes/Anomalie/Evénements/Régularisation (détails dans le slide suivant) \nA partir de la page d’accueil/Mon Equipe/Gérer/Anomalies/Anomalie/ Régularisation \nA partir de la page d’accueil/Mon Equipe/Gérer/Fiche du Collaborateur/Anomalie/Créer/Régularisation \nA partir de la page d’accueil/Mon Equipe/Gérer/Fiche du Collaborateur/Anomalie/ Evénements /Régularisation \nA partir de l’agenda (option avec plus d’étapes)\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_22",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 23",
+    "text": "A partir de la page d’accueil<Mon Equipe<Anomalies à lever, cliquez sur Anomalies persistantes\nDans la ligne concernant l’anomalie Hrs Supplémentaires constatées, cliquez sur la date de l’anomalie\nA partir de l’anomalie, cliquez sur Evénements<+<Régularisation\nCréez la demande de régularisation pour ventiler en sélectionnant Récupération ou Paiement, saisissez la date, la valeur et cliquez sur Enregistrer\nUne anomalie sera générée si :\n\nVous dépassez le nombre d’heures à ventiler ou s’il reste des heures à ventiler\nVous ne ventilez pas l’ensemble des heures supplémentaires (processus incomplet)\nLes demandes de régularisation doivent saisies chaque fin de semaine  sur la journée du dimanche\nComment ventiler les heures supplémentaires\n\n\n\nNom des collaborateurs\n\n\nNom du collaborateur\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_23",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 24",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n3.3. Approbation des demandes de compensation Borloo"
+  },
+  {
+    "chunk_id": "doc_24",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 25",
+    "text": "Compensation Borloo\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nLa Compensation Borloo est une indemnité forfaitaire versée aux salariés pour compenser les temps de trajet professionnels inhabituels, en application de la loi Borloo (article L3121-4 du Code du Travail). \nElle est une contrepartie financière versée lorsque les trois conditions suivantes sont réunies :\nCette indemnité est déclarée dans Chronotime, vérifiée par l’ADV/ADA, validée par le manager, et versée avec la paie du mois suivant.\nElle ne se cumule pas avec d'autres indemnités de déplacement ayant le même objet.\nIl s’agit d’un trajet inhabituel \n\n Un trajet effectué depuis le domicile vers un client ou une agence différente de celle de rattachement.\nLa durée du trajet > 1h30 \n\nPar trajet et non par jour.\nLe trajet est  effectué en dehors du temps de travail.\nSi ces  trois conditions sont remplies, le salarié reçoit :\n\n7,5 € bruts par trajet inhabituel\nPlafonné à 15 € bruts par semaine civile"
+  },
+  {
+    "chunk_id": "doc_25",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 26",
+    "text": "Approbation des compensations Borloo\nLa validation des compensations Borloo suit le même mode opératoire de validation d’une activité normale décrite dans le slide 13.\nC’est important d’examiner les détails de la demande, y compris la raison, la durée et toute la documentation jointe. Assurez-vous que la demande est conforme aux politiques de l'entreprise et aux exigences légales.\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nSi la demande répond à tous les critères, cliquez sur le bouton Approuver. Cela mettra à jour le statut de la demande à Approuvée et notifiera l'employé. (sera affichée dans son agenda)\nSi la demande ne répond pas aux critères, cliquez sur le bouton Rejeter. Fournissez une raison pour le rejet, qui sera communiquée à l'employé."
+  },
+  {
+    "chunk_id": "doc_26",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 27",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n3.4. Approbation des régularisations"
+  },
+  {
+    "chunk_id": "doc_27",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 28",
+    "text": "Approbation des régularisations\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur mon équipe\nToutes les demandes saisies pour mon équipe seront affichées.\nCliquez sur Validations.\nTous les éléments à valider seront affichés.\nDans l’onglet Régularisations, cliquez sur          pour  sélectionner la \nou les régularisations à valider .\nVous pouvez également chercher les régularisations par collaborateur spécifique en utilisant la barre de recherche. \n Cliquez sur Confirmer.\nEvitez la validation en massa, si vous sélectionnez plusieurs régularisations, vous devez saisir un commentaire global.\n\n\n1\n3\n\n2\nMode opératoire\n4\n5\n6\n\n7\n8\n\nSi les événements à valider ne sont pas affichés, sélectionnez  le rôle (Responsable équipe/Valideur)\nSi vous avez un seule rôle cette option ne sera pas affichée et les événements seront affichés directement."
+  },
+  {
+    "chunk_id": "doc_28",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 29",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n3.5. Bonnes pratiques de validation"
+  },
+  {
+    "chunk_id": "doc_29",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 30",
+    "text": "Principes\nÉvitez la validation en masse, car cela peut entraîner des erreurs si les saisies ne sont pas soigneusement vérifiées.\nAssurez-vous qu'il n'y ait qu'une seule saisie par jour et par collaborateur.\nExemple : doublons de saisie.\nPour certains types d'activités ou d'absences, les pièces jointes sont obligatoires. Cliquez sur            pour les consulter avant d’approuver la demande.\nLors de la validation des heures supplémentaires, astreintes, interventions et pointages, il est important de vérifier la cohérence entre les différentes saisies.\nExemples \nSi vous validez une intervention, vérifiez également la présence d’une astreinte ainsi que les saisies de badgeage d’entrée et de sortie correspondant à la même période.\nSi vous validez des heures supplémentaires, assurez-vous aussi que les pointages d’entrée et de sortie couvrent la même plage horaire.\nBonnes pratiques de validation\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nLa saisie de télétravail est une saisie déclarative et ne nécessite pas de validation. \nElle sera saisie ensemble avec une autre activité administrative ou de projet. Attention lors de la validation de l’activité."
+  },
+  {
+    "chunk_id": "doc_30",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 31",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n3.6. Gestion des anomalies"
+  },
+  {
+    "chunk_id": "doc_31",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 32",
+    "text": "Gestion des anomalies\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nAfin de garantir la fiabilité des données de présence et d’assurer un Fast Closing (Clôture anticipée mensuelle) fluide chaque mois, il est essentiel que l’ensemble des équipes respecte les dates limites de correction des anomalies dans Chronotime.\n\nLa qualité du suivi des temps dépend directement de la rapidité avec laquelle les anomalies sont corrigées. Tout retard peut avoir un impact sur la paie, les absences, les compteurs RH et le pilotage administratif.\n\n⚠️ Points de vigilance – À ne pas manquer\n\nJ‑6 : clôture des corrections par les collaborateurs\u000b→ Les collaborateurs doivent vérifier et régulariser l’ensemble de leurs anomalies (pointages, absences, justificatifs…).\nJ‑4 : corrections finales par les managers\u000b→ Les managers doivent impérativement valider les corrections, traiter les anomalies restantes et s’assurer que les équipes sont à jour.\n\n🚨 Alerte importante\n\nTout défaut de correction dans les délais entraîne :\n\ndes données incomplètes ou erronées dans Chronotime,\ndes retards dans le Fast Closing,\ndes risques d’erreurs de paie ou de suivi des absences,\nune surcharge de traitement en fin de mois pour les équipes RH.\nAttention!\nUne demande avec une anomalie bloquante ne remonte pas dans les interfaces de paie."
+  },
+  {
+    "chunk_id": "doc_32",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 33",
+    "text": "Les anomalies bloquantes à corriger en priorité\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_33",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 34",
+    "text": "Approbation des absences\nDemande d’absence\nArrêt maladie (CPAM)\nAbsences exceptionnelles\nAbsences complémentaires (grève)\n04\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_34",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 35",
+    "text": "Approbation des absences\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur         .\nToutes les demandes saisies pour mon équipe seront affichées.\nCliquez sur Validations.\nTous les éléments à valider seront affichés.\nDans l’onglet Absences, Cliquez sur            pour sélectionner la ou \nles absences à valider .\nVous pouvez également chercher les absences par collaborateur spécifique en utilisant la barre de recherche. \nPour certains types d’absences,  les pièces jointes  sont obligatoires. Cliquez sur       pour les consulter avant d’approuver la demande d’absence.\nCliquez sur Confirmer.\nSi vous sélectionnez plusieurs absences, vous devez saisir un commentaire Global.\n1\n2\n3\n\n4\n5\n5\n\n7\n6\nMode opératoire\nEvitez la validation en masse!\n\n!\n\n\n8"
+  },
+  {
+    "chunk_id": "doc_35",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 36",
+    "text": "La nouveauté concerne le collaborateur\nElle/il doit désormais joindre son arrêt de travail lors de la déclaration de son absence.\nValidation des absences CPAM\n\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\nLe Collaborateur saisit l’absence en sélectionnant le motif maladie\nL’ADV/ADA vérifie la présence du justificatif et valide sa cohérence\nContrôle final par le gestionnaire de paie avant passage en paie\nLes absences CPAM ont un Workflow spécifique de validation\n\nRappel du Workflow\nEvitez la validation en masse !\n\nLe système n’empêche pas la validation mais crée des anomalies qui vont impacter les compteurs et empêcher le transfert en paie\nSpeaker : N. Vasseur"
+  },
+  {
+    "chunk_id": "doc_36",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 37",
+    "text": "Les absences pour Congés Exceptionnels / Evénements familiaux se valident toute de la même façon\nLa nouveauté concerne le collaborateur\nElle/il doit désormais joindre son justificatif lors de la déclaration de son absence.\nValidation des absences exceptionnelles\n\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n\nLe Collaborateur saisit l’absence en sélectionnant le motif ex. mariage\nLe Manager valide la période (uniquement les dates).\nL’ADV/ADA vérifie la présence du justificatif, le respect des droits (ex : 5 jours pour un mariage) et effectue la validation finale.\nPassage en paie sans nouvelle vérification, car tout est validé en amont.\nLes absences CPAM et Congés Exceptionnels se valident toutes de la même façon \nRappel du Workflow\nSpeaker N. Vasseur\n\nL’approbation des absences exceptionnelles, et des absences complémentaires (grève) suit le même processus que pour une absence classique. Toutefois, le manager et l’ADV doivent exercer une vigilance accrue lors de la vérification des justificatifs et respects des droits. Il est fortement recommandé d’éviter toute validation en masse.."
+  },
+  {
+    "chunk_id": "doc_37",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 38",
+    "text": "Saisie à la place du collaborateur\nActivités, Astreintes, interventions\nCompensation Borloo\nTélétravail\nRégularisations\nDemande d’absence\n05\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nCas particulier en absence du collaborateur"
+  },
+  {
+    "chunk_id": "doc_38",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 39",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n5.1. Saisie des activités, astreintes, interventions, compensations Borloo, télétravail et régularisations"
+  },
+  {
+    "chunk_id": "doc_39",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 40",
+    "text": "Saisie des activités à la place du collaborateur 1/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur          \nPuis, cliquez sur Gérer/Suivi des collaborateurs.\nSélectionnez un collaborateur de la liste ou utiliser la barre de recherche pour chercher un collaborateur spécifique.\nCliquez sur Vue Journée/Agenda/Mensuel.\n1\n2\n3\n3\n4\nMode opératoire\n\n\nCollab 1\nCollab 1\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_40",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 41",
+    "text": "Saisie des activités à la place du collaborateur 2/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de son agenda, cliquez sur le jour souhaité pour faire la saisie.\nCliquez sur Actions Possibles/Nouveau/Créer activités/ Interventions.\nSélectionnez l’activité réalisée.\nRenseignez la date.\nRenseignez l’heure.\nSélectionnez l’origine (optionnel).\nRenseignez des informations complémentaires (optionnel). \nAjouter une pièce jointe (optionnel).\nCliquez sur Enregistrer.\n5\n6\n\n8\n7\n9\n10\n11\n12\n\nCollab 1\nCollab 1\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_41",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 42",
+    "text": "Saisie des astreintes à la place du collaborateur\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la agenda  du collaborateur sélectionné (slide 38), cliquez sur le jour souhaité pour faire la saisie.\nCliquez sur Actions Possibles/Nouveau/Créer astreintes.\nSélectionnez l’astreinte prévue.\nRenseignez la date.\nRenseignez l’heure.\nSélectionnez l’origine (optionnel).\nAjoutez des informations complémentaires (optionnel).\nAjoutez des pièces jointes (optionnel).\nCliquez sur Enregistrer.\nRÈGLE POUR LES ASTREINTES\n\nVous ne devez jamais saisir plus de 8h par jour d’astreinte.\n\nLa paie est plafonnée à un forfait de 8h par jour\n\nLe fait de renseigner plus de 8 heures, par exemple 24h, génère des erreurs dans les rapports d’activité.\nMode opératoire\nLa saisie des compensations Borloo, télétravail,  régularisation et demande d’absence suis le même process et doit être fait à partir de l’agenda du collaborateur.\n5\n6\n\n\nAstreinte UAT\n8\n7\n9\n10\n11\n12\nCollab 1\nCollab 1\n\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_42",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 43",
+    "text": "©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n5.2. Saisie des demandes d’absence"
+  },
+  {
+    "chunk_id": "doc_43",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 44",
+    "text": "Saisie des absences à la place du collaborateur 1/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur            \nPuis, cliquez sur Gérer/Suivi des collaborateurs.\nSélectionnez un collaborateur de la liste ou utiliser la barre de recherche pour chercher un collaborateur spécifique.\nCliquez sur Vue Journée/Agenda/Mensuel.\n1\n2\n3\n4\nMode opératoire\nCollab 1\n\n\n\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_44",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 45",
+    "text": "Saisie des absences à la place du collaborateur 2/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de son agenda, cliquez sur Actions Possibles/Nouveau/Créer absence.\nSélectionnez le Motif.\nRenseignez la période en sélectionnant une date à partir du calendrier.\nSélectionnez l’origine et la saisir.\nSaisissez un commentaire (optionnel).\nCliquez sur Enregistrer.\n6\n7\n8\n9\n5\n\nCollab 1\nCollab 1\n\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_45",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 46",
+    "text": "Consultation du solde des congés du collaborateur 1/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\n1\n2\n3\n3\n4\nA partir de la page d’accueil cliquez sur            \nPuis, cliquez sur Gérer/Suivi des collaborateurs.\nSélectionnez un collaborateur de la liste ou utiliser la barre de recherche pour chercher un collaborateur spécifique.\nCliquez sur Vue Journée/Agenda/Mensuel.\nMode opératoire\nCollab 1\nCollab 1\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_46",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 47",
+    "text": "Consultation du solde des congés du collaborateur 2/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nCliquez sur SITUATION.\nVous pouvez changer la date si vous souhaitez consulter la situation dans une date future.\n5\n6\n6\n\nCollab 1\nCollab 1\nCollab 1"
+  },
+  {
+    "chunk_id": "doc_47",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 48",
+    "text": "Délégation\nDéléguer mes actions d’approbation\n06\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_48",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 49",
+    "text": "Délégation\nLes principes\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nLe manager hiérarchique veut déléguer la validation \u000bdes activités administratives et des absences de ses collaborateurs\nÀ qui déléguer ?\nQuelles actions ?\nLes contraintes\nEn principe, à qui on veut\nChronotime vous permet de déléguer à une ou plusieurs vos droits d’approbation\n\nParamétrez vos choix dans Chronotime  \nPersonnes, dates et actions à déléguer\nSélectionner la personne à qui déléguer\nSélectionner le périmètre à déléguer\nUn seul périmètre est délégable\nVous ne pouvez pas différencier les actions de délégation entre vos délégataires. Ex. par centre de coûts\nChronotime\nRappel \nLa délégation de la validation des activités \u000bdes projets se fait directement dans SAP \n\n\nA noter \nLa mise en place est immédiate\u000b(connexion/déconnexion)"
+  },
+  {
+    "chunk_id": "doc_49",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 50",
+    "text": "Paramétrage des délégations\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nA partir de la page d’accueil cliquez sur la petite flèche à côté du profil utilisateur.            \nPuis, cliquez sur Droits et délégations.\nSaisissez une date de début et fin pour la délégation.\nSélectionnez  un collaborateur de la liste comme délégataire.\nAjoutez un commentaire – optionnel.\nCochez l’option Rétrocession autorisée – optionnel.\nSélectionnez les droits non délégués – optionnel. Par défaut, le délégué pourra saisir et valider toutes les activités à votre place sur une durée déterminée sur tout votre périmètre. Si vous souhaitez, vous pouvez marquer les droits non délégués.\nCliquez sur Créer, Supprimer ou Dupliquer.\n1\n2\nVotre délégataire pourra \nsupprimer une activité acceptée, \nvalider une activité \nmodifier une activité en attente de validation.\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_50",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 51",
+    "text": "Créer, Dupliquer ou Supprimer une délégation\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nAprès avoir complété les paramètres nécessaires, cliquez sur Créer.\nVérifiez les informations, puis cliquez sur Enregistrer.\nPour dupliquer une délégation, sélectionnez la délégation à partir du historique,  puis cliquez sur Dupliquer.\nVérifiez les informations, puis cliquez sur Enregistrer. Notez que la date sera mise à jour selon la date du jour, mais vous pouvez la modifier.\nPour supprimer une délégation, sélectionnez la délégation à partir du historique,  puis cliquez sur Supprimer.\nCliquez sur Oui pour confirmer.\n1\n2\n3\n4\n5\n6\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_51",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 52",
+    "text": "Reporting\n07\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_52",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 53",
+    "text": "1. Lancement des états\nLancer les états\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nCliquer sur \nImprimer pour générer un fichier .pdf \nou \nExporter pour générer un fichier .xls\nACCEDER ET LANCER\nPour accéder aux reports, cliquez sur l’icone imprimante en haut à droite de l’écran\n\n\n\n\nCliquez sur Lancement d’un état\nChoisissez le libellé Mon Compte (COLLAB)\n\n\n\n\n\nComplétez le champ Libelle avec un mot-clé pertinent ou consultez la liste des reports disponibles. Puis cliquez sur Appliquer\n1\n2\n3\nEcran de choix du report\n4\n5"
+  },
+  {
+    "chunk_id": "doc_53",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 54",
+    "text": "Suivre les états\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nACCEDER ET METTRE A JOUR\nPour mettre à jour les reports que vous avez préalablement créés, cliquez sur l’icone imprimante en haut à droite de l’écran.\n\n\n\n\nCliquez sur Suivi des états puis sur  Rafraichir (les reports sont mis à jour)\nCliquez sur l’icône du ficher dans la colonne Résultat pour ouvrir le fichier du report que vous avez généré.\n2. Suivi des états\n1\n2\n2\n3"
+  },
+  {
+    "chunk_id": "doc_54",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 55",
+    "text": "Liste de rapports spécifiques\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_55",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 56",
+    "text": "Support\nEt si j’ai besoin d’aide ?\nGlossaire\n08\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_56",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 57",
+    "text": "Et si j’ai besoin d’aide ?\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nEn cas de question\nJe consulte ce guide utilisateur (Utilise Ctrl + F pour rechercher par mot clé)\nSi vous avez encore des questions, une rubrique Aide en ligne est accessible directement depuis l’outil.\n\n\n\n\n\n\n\nSi vous rencontrez une difficulté ou un incident, vous pouvez ouvrir un ticket sur GSC : \nSélectionnez la catégorie : Application métier\nSélectionnez la sous-catégorie : Chronotime\nSélectionnez la 2ème sous-catégorie souhaitée"
+  },
+  {
+    "chunk_id": "doc_57",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 58",
+    "text": "Glossaire 1/3\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nTermes clés"
+  },
+  {
+    "chunk_id": "doc_58",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 59",
+    "text": "Glossaire 2/3\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nTermes clés"
+  },
+  {
+    "chunk_id": "doc_59",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 60",
+    "text": "Glossaire 3/3\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nTermes clés"
+  },
+  {
+    "chunk_id": "doc_60",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 61",
+    "text": "Annexes\nType de contrat\nModalités de contrat\nPrime Panier\nAutres anomalies\nDétails des droits d’absences exceptionnelles\n09\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_61",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 62",
+    "text": "Type de contrat\nCritères\n\n📌 Détails complémentaires\nModalité 1 :\nUtilisée pour les salariés en horaires classiques.\nPeut inclure ou non des RTT selon le programme horaire.\nCompatible avec les règles de déclenchement des heures supplémentaires.\nModalité 2 :\nSalariés en horaires étendus (38h30/semaine).\nSouvent utilisés dans des contextes de production ou de services continus.\nModalité 3 :\nSalariés au forfait jours.\nCompteurs valorisés en jours (journée = 1j, demi-journée = 0.5j).\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_62",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 63",
+    "text": "Modalités de contrat\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_63",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 64",
+    "text": "Prime Panier\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nNature et conditions d’attribution\nLa prime panier est une indemnité forfaitaire de 6 € par jour versée aux salariés qui ne peuvent pas prendre leur repas à domicile ou en cantine, en raison de conditions spécifiques (travail de nuit entre 21h et 6h, horaires atypiques, durée minimale de travail > 3h). Elle est calculée automatiquement dans Chronotime et transmise à la paie via la rubrique ADP.\n\nCritères et points de vigilance\n Les critères incluent horaires atypiques, absences partielles (qui déduisent la prime), choix figé entre ticket restaurant et prime panier, et absence de justificatif obligatoire. La prime est cumulable avec majorations (nuit, dimanche, férié) et heures supplémentaires.\n\nRôle du manager et impact paie\nLe manager doit contrôler et valider les présences/absences qui conditionnent l’attribution. En cas d’anomalie (ex. journée partielle, grève), il doit échanger avec la paie pour ajuster les compteurs. Une erreur de validation peut entraîner non-paiement ou mauvaise valorisation.\nLe manager ne valide pas formellement la prime panier mais doit contrôler et valider la saisie des présences et absences qui conditionnent l’attribution de cette prime."
+  },
+  {
+    "chunk_id": "doc_64",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 65",
+    "text": "Autres anomalies 1/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_65",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 66",
+    "text": "Autres anomalies 2/2\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_66",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 67",
+    "text": "Détails des droits d’absences exceptionnelles\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs"
+  },
+  {
+    "chunk_id": "doc_67",
+    "source_file": "Approbateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 68",
+    "text": "Valorisation\n©2026 Inetum  |  internal |  S4INETUM FRANCE_Chronotime 2_Approbateurs\nDans Chronotime, l’action Valoriser permet de forcer la mise à jour des compteurs, en particulier :\n\nle compteur d’heures supplémentaires,\nles jours de RTT générées,\nle solde de récupération,\nles compteurs liés aux absences valorisées.\nLa valorisation applique immédiatement les règles de calcul associées (majorations, droits, régularisations) et met à jour les compteurs visibles dans Chronotime.\u000b\nElle est utile lorsqu’une modification semble ne pas avoir été prise en compte ou lorsque les compteurs ne sont pas encore actualisés automatiquement.\n\n✔ Valoriser = garantir la mise à jour immédiate des compteurs\nCertains compteurs (heures sup, JRTT, récupérations…) ne se mettent pas toujours à jour instantanément.\u000bValoriser force cette synchronisation."
+  },
+  {
+    "chunk_id": "doc_69",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 1",
+    "text": "Guide utilisateur Chronotime 2 \u000bCollaborateur\nGroup IT Change Management\u000b2026"
+  },
+  {
+    "chunk_id": "doc_70",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 2",
+    "text": "Sommaire\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n1\n\nIntroduction\nLes fonctionnalités migrées vers Chronotime\nLes bénéfices\nCe que change pour vous\n\nAccéder à Chronotime\nVue Agenda\n3\n\nSaisir votre activité hebdomadaire\nRègles de saisie et fast-closing\nSaisir l'activité de la semaine\nDéclarer les activités normales\nDéclarer et confirmer les astreintes et les interventions\nDéclarer et confirmer les heures supplémentaires\nSaisir des demandes de compensation Borloo\nSaisir des jours de télétravail\n7\n\nReporting\nLancer et suivre les états\nListe des rapports\n8\n\nSupport\nEt si j’ai besoin d’aide ?\nGlossaire\n9\n\nAnnexes\nLes différents types d’heures supplémentaires\nAutres anomalies\nDétails des droits d’absences exceptionnelles\n4\n\nVos absences\nSaisir une demande d’absence\nSaisir un Saisir des congés exceptionnels\narrêt maladie\nSaisir une absence complémentaire \nConsulter votre solde de congés\n5\n\nAutres Evénements\nAttestation véhicule\nClient principal\nPrise en charge du transport et des surcoûts\n6\n\nMes  Régularisations\nConsultation\nDemande\nGérer mes anomalies\n2"
+  },
+  {
+    "chunk_id": "doc_71",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 3",
+    "text": "Introduction\n01\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_72",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 4",
+    "text": "Inetum simplifie la gestion des temps et sécurise la paie\nChronotime 2 héberge désormais les fonctionnalités auparavant \u000bgérées dans le CRA35 et transmet en fin de mois les éléments à la paie\n\nLes bénéfices\nLes fonctionnalités migrées \u000bvers Chronotime"
+  },
+  {
+    "chunk_id": "doc_73",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 5",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nCe qui change pour vous"
+  },
+  {
+    "chunk_id": "doc_74",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 6",
+    "text": "Ce qui reste inchangé\n\nLa saisie des activités \nLa saisie des absences \n\n    Dans le respect du calendrier de fast-closing\n\n\n1. Les impacts pour les collaborateurs\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nCe qui est nouveau\n\nLa déclaration du télétravail\nLa saisie du client principal\nL’ajout d’une attestation de véhicule\nL’ajout d’une demande de prise en charge de transport\nLa déclaration des heures de compensation Borloo\nLa saisie des astreintes et interventions\nLa saisie des heures supplémentaires\nSaisie dans un seul outil\nFacilite la collecte des informations\n\nVision en temp réel\nAccès à différents compteurs en temps réel\nCongés normaux\nCongés d’ancienneté\nRTT Employeur\nRTT Salarié\nRappel des bénéfices"
+  },
+  {
+    "chunk_id": "doc_75",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 7",
+    "text": "2. Les impacts pour les responsables de projet et les managers\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\n\nCe qui reste inchangé\nCe qui est nouveau\n\n\nLa validation des activités administratives ou projet selon mon rôle et les absences des collaborateurs de mon périmètre dans le respect du calendrier de fast-closing\nJe corrige les erreurs du mois en cours avant J-4\nLe manager hiérarchique approuve\nLes demandes de compensation Borloo\nLes demandes d’arrêt de travail\nVérification et validation dans un seul outil\nLes validations se font uniquement dans Chronotime, au fil de l’eau, durant le mois  \nPas d’approbation mensuelle globale du Chronotime\n\nPas besoin d’approuver\nLes jours de télétravail\nLe client principal\n\nRappel des bénéfices\nLe responsable de projet\nvalide les astreintes\nValide les interventions sur astreintes\nTraitent les anomalies bloquantes sur les saisies des collaborateurs"
+  },
+  {
+    "chunk_id": "doc_76",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 8",
+    "text": "3. Les impacts pour les ADVs et les ADAs\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\nCe qui reste inchangé\nCe qui est nouveau\n\n\nLe contrôle des activités et des absences des collaborateurs \u000bde son périmètre à partir de J-5 \nLa correction des erreurs des mois clôturés si nécessaire\nL’ADV ou l’ADA contrôle les pièces justificatives pour : \nLes absences CPAM (maladie, maternité)\nLes congés exceptionnels\nVérification et validation \u000bdans un seul outil\n\n\nMoins de charge de travail pour répondre aux questions des collaborateurs\nL’accès des collaborateurs aux compteurs de congés en temps réel réduit le besoin de solliciter ADV /ADA\nRappel des bénéfices"
+  },
+  {
+    "chunk_id": "doc_77",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 9",
+    "text": "4. Les impacts pour les RH\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\n\nLes mêmes activités de contrôle, de suivi et d’information sont effectuées seulement dans l’outil Chronotime\nContrôle et validation \u000bdans un seul outil\n\nAllègement de la gestion administrative\nMise en place de nombreux contrôles automatiques\n\nSécurisation des données\nVia l’automatisation des flux\nGestionnaire de paie\u000b\nValider les absences CPAM.\nGérer Les modifications rétroactives en lien avec les ADV/ADA.\nValider les demandes de prise en charge de transport\nValider les attestations véhicule\nHRBP\u000b\nConsulter et analyser les données de l’application.\nSuivre les anomalies et alertes sur les temps de travail et absences CPAM.\nAssister et suivre les différents utilisateurs RH, les collaborateurs et les valideurs.\nAdministrateurs de paie\nParamétrer les horaires,\nParamétrer les programmes horaires, \netc.\nRappel des bénéfices"
+  },
+  {
+    "chunk_id": "doc_78",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 10",
+    "text": "Accéder à Chronotime\nVue Agenda\n02\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_79",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 11",
+    "text": "Accéder à Chronotime\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nAccueil\nVous pouvez accéder à Chronotime via Inetum France, depuis la rubrique CRA – Déclaration des activités et des frais > Chronotime. Vous n’avez pas besoin d’identifiants.\nChaque collaborateur a son espace dédié dans l’outil. \nLa page d’accueil > Mon compte vous donne une vue globale de votre actualité."
+  },
+  {
+    "chunk_id": "doc_80",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 12",
+    "text": "Vue agenda\nVue agenda Chronotime\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nNous vous recommandons d’afficher la VUE MENSUELLE pour ne pas oublier d’imputer des jours\nLa vue agenda vous donne une vision exhaustive et en couleur sur les  : \nJours d’activité déclarés\nJours d’absences\nJours sans activité (vides)\n\n\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_81",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 13",
+    "text": "Vue Agenda\nVotre agenda Chronotime\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nLa colonne de droite de l’agenda vous permet de :\nCréer des demandes d’absence, déclarer des activités, des astreintes, des badgeages, des demandes de compensation Borloo, des demandes de régularisation et des jours de télétravail\nConsulter des informations sur votre journée : horaires et affectation \nConsulter le solde de vos congés\nConsulter votre situation :  nombre de jours de congés restants à une date donnée\nConsulter les éléments à venir (congés, etc.)\nConsulter les notifications d'anomalies\n2\n3\n6\n1\n5\n4\n3\n2\n6\n4\n5\n1\nMode opératoire –\nSuite\n1"
+  },
+  {
+    "chunk_id": "doc_82",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 14",
+    "text": "Saisir l’activité de la semaine\n03\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_83",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 15",
+    "text": "Activités et absences\nLes règles de saisie des temps\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nQue se passe-t-il si je suis absent en fin de mois ?\n\nEn cas d’absence en fin de mois, vous pouvez saisir votre activité dans Chronotime avant votre départ. \nVous pouvez saisir votre activité jusqu’à 4 semaines à l’avance\nChaque semaine\nLes activités de la semaine doivent être saisies et validées dans Chronotime chaque vendredi\nLe collaborateur doit déclarer a minima toutes les journées du lundi au vendredi. \nEn fin de mois\nAfin de pouvoir réaliser la facturation mensuelle, toutes les activités doivent être  saisies et approuvées avant le dernier jour ouvré du mois\n6 jours ouvrés avant, pour  la saisie\n5 jours ouvrés avant,  pour l’approbation\nCalendrier du fast-closing \u000bClôture mensuelle accélérée\nN’hésitez pas à afficher la vue mensuelle dans Chronotime pour revérifier vos saisies, si nécessaire.\nDétail des règles"
+  },
+  {
+    "chunk_id": "doc_84",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 16",
+    "text": "Vous pouvez être affecté à plusieurs activités d’un projet. \nDans ce cas, vous verrez une ligne pour chacune de ces tâches dans Chronotime : les imputations sont réalisées au niveau d’une activité de projet et non au niveau du projet global.\nEx : vous êtes affecté à la phase de Conception ET à la phase de Réalisation d’un projet. Vous verrez alors 2 lignes pour le même projet dans Chronotime. \u000bA noter : seuls les 28 premiers caractères du nom du projet s’affichent\n\nIl existe 4 types d’activité différents dans le système : \nLes heures normales\nLes heures non-ouvrées : dimanches et jours fériés\nLes heures supplémentaires (classiques,  complémentaires, structurelles et excédentaires) – voir glossaire\nLes astreintes (prévues et réalisées) – voir glossaire\nProjets et types d’heures\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nS’il est prévu dans SAP qu’un collaborateur travaille en heures non ouvrées, il verra \u000bdans Chronotime \nune ligne pour les heures normales.\nune autre ligne pour les heures non ouvrées \nIdem pour les heures supplémentaires réalisées entre 21h et 6h\n\n\nJe dois travailler le dimanche et ne vois pas de ligne correspondante dans Chronotime\nRapprochez vous de votre chef de projet ou de son ADV\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_85",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 17",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3.1. Déclarer des activités normales"
+  },
+  {
+    "chunk_id": "doc_86",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 18",
+    "text": "Saisie des activités de la semaine 1/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\nOU\n1\n\nMode opératoire\nVous avez deux façons d’accéder à la saisie des activités:\n\nA partir de la page d’accueil Mon Compte : \n\nCliquez sur le + de la tuile Activités > ACTIVITES.\n\nOU\n\nSélectionnez  Agenda > Nouveau > Créer activités / interventions.\n\n2\n\n\nLes activités réalisées correspondent aux activités administratives ou aux projets sur lesquels vous êtes affecté par votre responsable (Manager / CP / DP)"
+  },
+  {
+    "chunk_id": "doc_87",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 19",
+    "text": "Sélectionnez l’activité réalisée.\nVia la loupe de recherche\nOu en recherchant directement dans le          champ de saisie. Chronotime vous proposera les activités ADM ou les projets dès la saisie des premières lettres\nRenseignez la répétition ou la date.\nChoisir à partir du calendrier.\nRenseignez l’unité ou la durée en heures.\nRenseignez l’origine en sélectionnant l’option Collaborateur (optionnel).\nAjoutez des informations complémentaires (optionnel).\nAjoutez des Pièces jointes (optionnel).\n\nCliquez sur Enregistrer.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nSi vous travaillez le week-end, heures supplémentaires ou un jour férié, vous devez saisir en DUREE.\nSaisie des activités de la semaine 2/3\n\n6\n3\n4\n5\n7\n8\n4\n5\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_88",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 20",
+    "text": "Une fois l’activité enregistrée, l’Agenda se met à jour automatiquement. \nL’activité passe au statut Demandé \nUn « ? » s’affiche sur l’agenda tant qu’elle n’est pas validée.\nL’activité passe au statut Accepté après la validation par le responsable.\nSaisie des activités de la semaine 3/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nApprobation / Refus de votre responsable\nSi votre responsable valide, le « ? » disparaît. Vous ne serez pas notifié par e-mail.\nSi votre responsable refuse, vous recevrez une notification par e-mail  et l’activité refusée sera supprimée de votre agenda Chronotime\nRègle de validation\nAttention : pas de badgeage pour les heures normales !\nSeules vos interventions et heures supplémentaires doivent être badgées !\nPas besoin de badger vos heures normales !\nChronotime valide automatiquement votre journée normale de travail.\nSeules vos interventions et heures supplémentaires doivent être badgées !\nRègles du badgeage"
+  },
+  {
+    "chunk_id": "doc_89",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 21",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3.2. Déclarer des astreintes et des interventions"
+  },
+  {
+    "chunk_id": "doc_90",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 22",
+    "text": "Saisie des astreintes et interventions\nPrincipe et application\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n1re étape: Saisissez vos astreintes et vos interventions\nLa saisie des astreintes et interventions s’effectue selon le même processus qu’une activité standard via la fonction « Activités / Interventions » (voir slides 18 et 19), mais, avec un eOTP* spécifique, différent de celui utilisé pour les l’activités standard.\n👉 Les données sont remontées dans SAP pour la facturation. \n\n2e étape: Confirmez vos interventions via le badgeage\nPour cela, il est nécessaire d’effectuer au minimum une saisie de badgeage à l’Entrée et une saisie de badgeage à la Sortie (fonction \u000b« Badgeage ». \n👉 Ces données seront ainsi envoyées à  la paie.\n\n3e étape : Vérifiez vos anomalies\nEn cas d’anomalie, vérifiez vos saisies et corrigez-les erreurs pour éviter de bloquer facturation client et/ou paiement de vos heures supplémentaires\nEn cas d’impossibilité de réaliser la saisie et/ou le badgeage, veuillez contacter votre responsable de projet ou votre ADV / ADA.\n*eOTP = Element d’OTP (Organigramme Technique de Projet), l’equivalent SAP du WBS (Work Breakdown Structure)"
+  },
+  {
+    "chunk_id": "doc_91",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 23",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nVous avez deux façons d’accéder à la saisie des astreintes:\n\nA partir de la page d’accueil Mon Compte : \nCliquez sur le + de la tuile Activités > ASTREINTES.\nOU\nSélectionnez Agenda > Nouveau > Créer astreintes.\nOU\nLe vocabulaire des astreintes\nAstreinte \n     Astreinte prévue / passive / planifiée\nIntervention\u000bAstreinte réalisée\nMode opératoire\nSaisir des astreintes prévues 1/2\n\n2\n\nVeuillez noter que la saisie des astreintes et des interventions ne vous sera proposée dans Chronotime que si celle-ci a été  configurée dans SAP.\nEn cas d'impossibilité de saisie, merci de vous rapprocher : \nde vos ADV / CP / EM pour les projets clients\nde votre manager pour les projets internes"
+  },
+  {
+    "chunk_id": "doc_92",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 24",
+    "text": "Sélectionnez l’astreinte prévue.\nLes astreintes prévues correspondent aux astreintes planifiées sur lesquels vous êtes affecté par votre responsable (Manager / CP / DP)\nRenseignez la date ou la répétition.\nVous pouvez sélectionner à partir du calendrier.\nRenseignez l’unité ou la durée en heures.\nRenseignez l’origine en sélectionnant l’option Collaborateur (optionnel).\nAjoutez des informations complémentaires (optionnel).\nAjoutez des Pièces jointes (optionnel).\n\nCliquez sur Enregistrer.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nSaisir des astreintes prévues 2/2\n6\n3\n4\n5\n7\n8\n4\n5\nSi vous travaillez le week-end, en heures supplémentaires ou un jour férié, vous devez saisir en DUREE.\nMode opératoire\nSuite"
+  },
+  {
+    "chunk_id": "doc_93",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 25",
+    "text": "Il s’agit des interventions réalisées au cours des astreintes planifiées\nSaisie des interventions sur astreinte 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nDepuis l’écran de l’Agenda : \n\nCliquez sur Nouveau > Créer activités / interventions.\n\nVeuillez noter que la saisie des astreintes et des interventions ne vous sera proposée dans Chronotime que si celle-ci a été  configurée dans SAP.\nEn cas d'impossibilité de saisie, merci de vous rapprocher de vos ADV / CP / EM ou de votre responsable hiérarchique pour les projets internes\nMode opératoire\n1"
+  },
+  {
+    "chunk_id": "doc_94",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 26",
+    "text": "Renseignez l’intervention réalisée pendant la durée de l’astreinte.\nRenseignez la date.\nRenseignez l’heure de début et l'heure de fin.\nSélectionnez l’origine (optionnel).\nAjoutez des informations complémentaires (optionnel).\nAjoutez des pièces jointes (optionnel).\nCliquez sur Enregistrer.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n2\n3\n4\n5\n6\n7\nSaisie des interventions sur astreinte 2/2\n\nSi vous travaillez le week-end, en heures supplémentaires ou un jour férié, vous devez saisir en DUREE.\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_95",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 27",
+    "text": "Les interventions planifiées\n\nUne intervention d’astreinte est strictement encadrée, dépend d’une astreinte existante, déclenche des contrôles, des anomalies spécifiques et alimente des compteurs particuliers.\nUne intervention planifiée est similaire à une intervention d’astreinte, mais, sans astreinte.\nSpécificité:  Une anomalie (Intervention hors astreinte) persistante non bloquante sera affiché sera affiché lors de la saisie comme forme d’alerte.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nv\n\nUtilisez cette option même si vous n’avez pas d’astreinte\n\nCliquez Ok pour confirmer la saisie de votre intervention,"
+  },
+  {
+    "chunk_id": "doc_96",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 28",
+    "text": "À partir de la page d’accueil > Mon compte\n\nCliquez sur le +  de la tuile Badgeage.\nOU\n\nÀ partir de la page d’accueil > Agenda\nCliquez sur Nouveau > Créer badgeage.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nMode opératoire\nConfirmez les interventions effectuées 1/2\nOU\n1\nCette étape de badgeage remplace la confirmation des heures de dépassement auparavant saisies et approuvées dans CRA 35.\n\n Le badgeage sert à identifier les éléments de rémunération à payer au collaborateur\n2\nCRA 35"
+  },
+  {
+    "chunk_id": "doc_97",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 29",
+    "text": "Renseignez la date ou sélectionnez-la à partir du calendrier.\nRenseignez  l’heure.\nSélectionnez le sens à partir de la liste déroulante (Entrée / Sortie).\nSélectionnez le motif à partir de la liste déroulante (optionnel).\nInformez la fonction (optionnel).\nAjoutez un commentaire (optionnel).\nCliquez sur Enregistrer\n\n-> Le badgeage sera affiché dans votre agenda\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3\n4\n5\n6\n7\n8\nConfirmez les interventions effectuées 2/2\nVigilance constante !\nIl faudra créer un badgeage pour l’entrée et un autre pour la sortie. \nSoyez attentif afin de ne pas créer de doublons.\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_98",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 30",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3.3. Déclarer des heures supplémentaires"
+  },
+  {
+    "chunk_id": "doc_99",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 31",
+    "text": "Saisie des Heures Supplémentaires\nPrincipe et application\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nEn cas d’impossibilité de réaliser la saisie et/ou le badgeage, veuillez contacter votre responsable de projet ou ADV / ADA.\n1re étape : Saisissez vos heures supplémentaires\nLa saisie des heures supplémentaires s’effectue selon le même processus qu’une activité standard via la fonction « Activités / Interventions » (voir slides 18 et 19), mais avec une activité spécifique différente de l’activité standard.\n👉  Les données sont remontées dans SAP après la validation du responsable projet pour la facturation. \n\n2e étape : Confirmez vos heures sup’ via le badgeage\nPour cela, il est nécessaire d’effectuer au minimum une saisie de badgeage à l’Entrée et une saisie de badgeage à la Sortie (fonction « Badgeage » – voir slides 32-33). \n👉   Ces données seront ainsi envoyées à  la paie après la validation  de votre manager hiérarchique\n\n3e étape : Vérifiez vos anomalies\nEn cas d’anomalie, vérifiez vos saisies et corrigez-les erreurs pour éviter de bloquer facturation client et/ou paiement de vos heures supplémentaires"
+  },
+  {
+    "chunk_id": "doc_100",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 32",
+    "text": "À partir de la page d’accueil > Mon compte\n\nCliquez sur le +  de la tuile Badgeage.\nOU\n\nÀ partir de la page d’accueil > Agenda\nCliquez sur Nouveau > Créer badgeage.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nMode opératoire\nConfirmez les interventions ou heures supplémentaires effectuées 1/2\nOU\n1\nCette étape de badgeage remplace la confirmation des heures de dépassement auparavant saisies et approuvées dans CRA 35.\n\n Le badgeage sert à identifier les éléments de rémunération à payer au collaborateur\n2\nCRA 35"
+  },
+  {
+    "chunk_id": "doc_101",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 33",
+    "text": "Renseignez la date ou sélectionnez-la à partir du calendrier.\nRenseignez  l’heure.\nSélectionnez le sens à partir de la liste déroulante (Entrée / Sortie).\nSélectionnez le motif à partir de la liste déroulante (optionnel).\nInformez la fonction (optionnel).\nAjoutez un commentaire (optionnel).\nCliquez sur Enregistrer\n\n-> Le badgeage sera affiché dans votre agenda\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3\n4\n5\n6\n7\n8\nConfirmez les interventions ou heures supplémentaires effectuées 2/2\nVigilance constante !\nIl faudra créer un badgeage pour l’entrée et un autre pour la sortie. \nSoyez attentif afin de ne pas créer de doublons.\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_102",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 34",
+    "text": "A partir de l’Agenda.\n\nPosez la souris sur le jour à consulter\n\nLe détail du badgeage sera affiché dans votre agenda\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nMode opératoire\nConsultation du badgeage"
+  },
+  {
+    "chunk_id": "doc_103",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 35",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3.4. Saisie des demandes de compensation Borloo"
+  },
+  {
+    "chunk_id": "doc_104",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 36",
+    "text": "Compensation Borloo\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nLa Compensation Borloo est une indemnité forfaitaire versée aux salariés pour compenser les temps de trajet professionnels inhabituels, en application de la loi Borloo (article L3121-4 du Code du Travail). \nElle est une contrepartie financière versée lorsque les trois conditions suivantes sont réunies :\n\n\n\n\n\n\n\n\n\n\nCette indemnité est déclarée dans Chronotime, vérifiée par l’ADV / ADA, validée par le manager, et versée avec la paie du mois suivant.\nElle ne se cumule pas avec d'autres indemnités de déplacement ayant le même objet.\nIl s’agit d’un trajet inhabituel \n\n Un trajet effectué depuis le domicile vers un client ou une agence différente de celle de rattachement.\nLa durée du trajet > 1h30 \n\nPar trajet et non par jour.\nLe trajet est  effectué en dehors du temps de travail.\nSi ces  trois conditions sont remplies, le salarié reçoit :\n\n7,5 € bruts par trajet inhabituel\nPlafonné à 15 € bruts par semaine civile"
+  },
+  {
+    "chunk_id": "doc_105",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 37",
+    "text": "Saisie des compensations Borloo 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\nOU\n1\n\nMode opératoire\nVous avez deux façons d’accéder à la saisie d’activités : \n\nA partir de la page d’accueil Mon Compte : \n\nCliquez sur le + de la tuile Activités > COMPENSATION BORLOO. \n\nOU\n\nSélectionnez  Agenda > Nouveau > Créer compensation Borloo.\n\n2"
+  },
+  {
+    "chunk_id": "doc_106",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 38",
+    "text": "Sélectionnez l’item Compensation Borloo réalisée.\nRenseignez la date.\nRenseignez l’heure.\nSélectionnez l’origine (optionnel).\nAjoutez des informations complémentaires (optionnel).\nAjoutez des Pièces jointes  (optionnel).\nRenseignez le Lieu Départ / Arrivée.\n\nCliquez sur Enregistrer.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n9\n3\n4\n5\n6\n7\n8\nSaisie des compensations Borloo 2/2\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_107",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 39",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3.5. Saisie des jours de télétravail"
+  },
+  {
+    "chunk_id": "doc_108",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 40",
+    "text": "Saisie du télétravail 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\nOU\n1\n\nMode opératoire\nVous avez deux façons d’accéder à la saisie de télétravail :\n\nA partir de la page d’accueil Mon Compte :\n\nCliquez sur le + de la tuile Activités > TELETRAVAIL. \n\nOU\n\nSélectionnez Agenda > Nouveau > Créer télétravail.\n\n2"
+  },
+  {
+    "chunk_id": "doc_109",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 41",
+    "text": "Sélectionnez l’activité télétravail réalisée.\nRenseignez la date (Répétition possible).\nRenseignez l’unité.\nSélectionnez l’origine (optionnel).\nAjoutez des informations complémentaires (optionnel).\nAjoutez des Pièces jointes (optionnel).\nCliquez sur Enregistrer.\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n3\n4\n5\n6\n7\n8\nSaisie du télétravail 2/2\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_110",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 42",
+    "text": "Vos absences\nSaisir une demande d’absence\nSaisir un arrêt maladie \nSaisir une absence complémentaire \nSaisir des congés exceptionnels\nConsulter votre solde de congés\n04\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_111",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 43",
+    "text": "Saisir une demande d’absence 1/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nDepuis la colonne\u000bde droite de l’agenda\nDepuis la page \u000b« Mon compte »\nDepuis la page \u000bGérer Absences & Evénements\n\n\n\nVous avez plusieurs façons d’accéder et de faire une demande d’absence :"
+  },
+  {
+    "chunk_id": "doc_112",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 44",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nSélectionnez le motif\n\n\n\nSélectionnez la période et l’unité de temps afférente\n\n\nCliquez sur Enregistrer\nMotifs d’absence\nCalendrier\nUnité de temps\nSaisir une demande d’absence 2/3\n…"
+  },
+  {
+    "chunk_id": "doc_113",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 45",
+    "text": "Saisir une demande d’absence 3/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nSi votre manager valide : le « ? » disparaît. Vous serez notifié par email.\nSi votre manager refuse : vous recevrez un email de refus et le jour refusé sera supprimé de votre agenda Chronotime.\n\nL’agenda se met à jour automatiquement"
+  },
+  {
+    "chunk_id": "doc_114",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 46",
+    "text": "Arrêt Maladie : En cas d’une absence liée à un problème de santé, vous devez saisir sous 48h une absence avec le motif Maladie (MA) afin de justifier votre absence.\nSaisir un arrêt maladie\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nDepuis la page d’accueil, Mon Agenda ou Gérer Absences & Evénements, cliquez sur Créer absence. \nSélectionnez le motif Maladie (MA).\nSélectionnez la période et l’unité de temps\nAjouter la date de l’arrêt de travail.\nAjoutez un justificatif.\nCliquez sur Enregistrer.\nMode opératoire\n2\n3\n5\n6\n\n\n\n4\n  Un email vous sera automatiquement envoyé par Chronotime dès la validation de votre demande\n  En cas d’inaccessibilité à Chronotime, prévenez  votre ADA/ADV (voir annuaire) ou votre manager (voir votre profil SuccessFactors)"
+  },
+  {
+    "chunk_id": "doc_115",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 47",
+    "text": "Saisir des congés exceptionnels\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nWorkflow d’approbation des congés exceptionnels\nLe Collaborateur saisit l’absence en sélectionnant le motif \u000b(ex : mariage).\nLe Manager valide la période (uniquement les dates).\nL’ADV / ADA contrôle en cas d’anomalie, vérifie la présence du justificatif, du respect des droits (ex : 5 jours pour un mariage) et effectue la validation finale.\n Intégration en paie sans nouvelle vérification, car tout est validé en amont.\n👉   Les justificatifs sont obligatoires\n👉   Certains droits comme paternité, naissance, etc.) seront disponibles seulement après la mise à jour de vos données dans SuccessFactors  suite à  la déclaration de vos enfants.\nEvénement familial"
+  },
+  {
+    "chunk_id": "doc_116",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 48",
+    "text": "Grève : En cas de grève, vous devez saisir une absence complémentaire afin de justifier votre absence.\nSaisir une absence complémentaire\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nDepuis la page d’accueil, Mon Agenda ou Gérer Absences & Evénements, cliquez sur Créer absence. \n\nSélectionnez le motif Grève.\n\nSélectionnez la période et l’unité de temps afférente.\n\nCliquez sur Enregistrer.\nMode opératoire\n2\n3\n4\nLa procédure est identique à celle d’une absence classique.\nConsultez les slides 43, 44, 45 pour le détail."
+  },
+  {
+    "chunk_id": "doc_117",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 49",
+    "text": "De nouveaux compteurs de congés\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n\nDepuis la colonne de gauche de la page d’accueil, dans le menu Gérer > Absences & Evénements\n\nConsulter son solde de congés\nDéfinitions des compteurs\n\n\nASTUCE 1\n\tPensez à ajuster la date du compteur pour \u000bprendre en compte les derniers jours posés.\n\n\n\nConsultez le statut de ses demandes de congés\nDemandé\nAccepté\nRefusé\n\n\n\nNouveaux compteurs\n* RSR = Reliquat des RTT de l’exercice précédente (RTT Employeur + RTT salarié fusionnés dans les RSS)\n**  RSS = ancien RS (RTT Salarié)\n*** RCE = ancien TC"
+  },
+  {
+    "chunk_id": "doc_118",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 50",
+    "text": "Autres Evénements\nAttestation Véhicule\nClient Principal\nPrise en Charge Transport et Surcoûts\n05\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_119",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 51",
+    "text": "Déclaration d’attestation de véhicule\nAttestation de Véhicule 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nA partir de la page d’accueil / Mon Compte.\nDans Autre événement, cliquez sur +/ATTESTATION DE VEHICULE.\n1\n2\n\n\nMode opératoire\n\nPour les personnes habitant dans une commune hors d'une autorité organisatrice de mobilité (AOM), l'utilisation du véhicule est autorisée et une partie des frais est remboursable.\nAfin de déclarer l'utilisation de son véhicule, une attestation doit être fournie par le collaborateur qui doit faire la déclaration dans Chronotime, accompagnée d'une photocopie de sa carte grise.\nLa demande doit être validée par le gestionnaire de paie.\nSi la demande n'est pas validée par le service paie, le collaborateur devra refaire sa demande pour le mois en cours."
+  },
+  {
+    "chunk_id": "doc_120",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 52",
+    "text": "Déclaration d’attestation de véhicule\nAttestation de Véhicule 2/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nRenseignez la date de création de l’attestation (Vous pouvez saisir ou sélectionner à partir du calendrier).\nRenseignez les informations complémentaires (optionnel).\nAjoutez une Pièce jointe (obligatoire).\nRenseignez la date de début d’attestation.\nRenseignez la date de fin d’attestation.\nRenseignez la distance Km domicile-travail.\n\nCliquez sur Enregistrer.\n3\n4\n5\n6\n7\n8\n\nMode opératoire \u000bsuite\n\nLa copie de la carte grise et l’attestation sur\nl'honneur sont obligatoires!  \n\nL’attestation sur l'honneur est gérée en dehors\nde Chronotime\nDes informations complémentaires sont à venir"
+  },
+  {
+    "chunk_id": "doc_121",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 53",
+    "text": "Consultation de l’historique\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nEn cas de rejet de demande d'attestation véhicule, le collaborateur peut consulter l’historique pour voir le commentaire laissé par le gestionnaire de paie pour motiver son refus.\nA partir de Mon Compte > Autre événement, cliquez sur VOIR MES AUTRES EVENEMENTS\nDans l’historique, cliquez sur l'horloge pour ouvrir la fenêtre et voir le commentaire laissé par le gestionnaire de paie.\n1\n2"
+  },
+  {
+    "chunk_id": "doc_122",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 54",
+    "text": "Déclaration du Client Principal\nClient Principal 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nA partir de la page d’accueil/Mon Compte.\n\nDans Autre événement, cliquez sur +/CLIENT PRINCIPAL.\n\n1\n2\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_123",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 55",
+    "text": "Déclaration du client principal\nClient Principal 2/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nRenseignez la date de création du client principal (Vous pouvez saisir ou sélectionner à partir du calendrier).\nRenseignez les informations complémentaires (optionnel).\nAjoutez une Pièce jointe.\nRenseignez le Nom du client.\nRenseignez le Lieu de travail.\nIl est important d’ajouter l’adresse du client principal. \nCliquez sur Enregistrer.\n3\n4\n5\n6\n7\nLors de la première saisie d'activité ou d'absence, si aucun client principal n'est renseigné pour le mois en cours, une anomalie non bloquante s'affiche. \nLe mois suivant, un événement \"Client principal\" est automatiquement créé le premier jour ouvré. \nUne anomalie mensuelle rappelle au collaborateur de vérifier ces informations lors de sa première saisie.\nAttention!\n\nLa saisie du Client Principal est obligatoire. Vous devez modifier le client principal pour le mois en cours seulement si vous avez changé de client. Si vous êtes sur plusieurs clients, renseignez celui ou vous passez plus de temps.\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_124",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 56",
+    "text": "Demande de Prise en Charge du Transport\nPrise en Charge de Transport 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nA partir de la page d’accueil/Mon Compte.\nDans Autre événement, cliquez sur +/PRISE EN CHARGE TRANSPORT.\nObligation de l'employeur : financer partiellement les abonnements de transport public ou de location de vélos pour les trajets domicile-travail. \nLe salarié doit fournir son justificatif. \nPendant la validité d’une attestation véhicule, la prise en charge des transports est interdite, sous peine d’erreur bloquante.\n\n1\n2\n\n\nMode opératoire"
+  },
+  {
+    "chunk_id": "doc_125",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 57",
+    "text": "Demande de Prise en Charge du Transport\nPrise en Charge de Transport 2/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nRenseignez la date de création de la demande (Vous pouvez saisir ou sélectionner à partir du calendrier).\nRenseignez les informations complémentaires (optionnel).\nAjoutez des Pièces jointes.\nSélectionnez le type d’abonnement.\nRenseignez la date de début d’abonnement.\nRenseignez la date de fin d’abonnement.\nRenseignez le montant d’abonnement.\nRenseignez le montant domicile-agence.\nCliquez sur Enregistrer.\nEn cas de rejet de la demande de prise en charge du transport, le collaborateur peut consulter l’historique pour voir le commentaire laissé par le gestionnaire de paie pour motiver son refus (Slide 51).\n3\n4\n5\n6\n7\n8\n9\n10\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_126",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 58",
+    "text": "Mes Régularisations\nDemande /Consultation\nGestion des anomalies\n06\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_127",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 59",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n6.1. Demande / Consultation"
+  },
+  {
+    "chunk_id": "doc_128",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 60",
+    "text": "Demandes de régularisation possible\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nDemande d'abondement RTT (352)\nPermet au collaborateur d'acquérir des JRTT supplémentaire. Les demandes sont envoyées au manager pour une première validation puis à la paie pour la validation finale.\n\nLes demandes peuvent être faite au début de la période de référence (Juin) pour 4, 8 ou 12 jours et seront ajoutés au solde RTTS.\n\nRécupération vers paiement TEA (1236)\nLe collaborateur peut demander le paiement des heures de récupération"
+  },
+  {
+    "chunk_id": "doc_129",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 61",
+    "text": "Consultation\nMes régularisations 1/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nA partir de la page d’accueil / Mon Compte.\n\nDans Régularisation, cliquez sur VOIR MES REGULARISATIONS.\nMode opératoire\n2\n\n1"
+  },
+  {
+    "chunk_id": "doc_130",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 62",
+    "text": "Création\nMes régularisations 2/2\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nCliquez sur Créer.\nSélectionnez le motif.\nRenseignez la période.\nRenseignez la valeur selon le motif.\nRenseignez l’origine (optionnel).\nAjoutez des commentaires (optionnel)\nCliquez sur Enregistrer.\n3\n4\n5\n6\n7\n8\n\n\n\nMode opératoire \u000bsuite"
+  },
+  {
+    "chunk_id": "doc_131",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 63",
+    "text": "©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\n6.2. Gestion des anomalies"
+  },
+  {
+    "chunk_id": "doc_132",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 64",
+    "text": "Gestion des anomalies\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nLa qualité du suivi des temps dépend directement de la rapidité avec laquelle les anomalies sont corrigées. Tout retard peut avoir un impact sur la paie, les absences, les compteurs RH et le pilotage administratif.\n\n\n⚠️ Points de vigilance – À ne pas manquer\n\nJ‑6 : clôture des corrections par les collaborateurs\u000b→ Les collaborateurs doivent vérifier et régulariser l’ensemble de leurs anomalies (pointages, absences, justificatifs…).\nJ‑4 : corrections finales par les managers\u000b→ Les managers doivent impérativement valider les corrections, traiter les anomalies restantes et s’assurer que les équipes sont à jour.\n\n🚨 Alerte importante\n\nTout défaut de correction dans les délais entraîne :\n\ndes données incomplètes ou erronées dans Chronotime,\ndes retards dans le Fast Closing,\ndes risques d’erreurs de paie ou de suivi des absences,\nune surcharge de traitement en fin de mois pour les équipes RH.\nAttention!\n\nUne demande avec une anomalie bloquante ne remonte pas dans les interfaces de paie."
+  },
+  {
+    "chunk_id": "doc_133",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 65",
+    "text": "Les anomalies bloquantes à corriger en priorité\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_134",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 66",
+    "text": "Reporting\nLancer et suivre des états\nListe des rapports\n07\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_135",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 67",
+    "text": "1. Lancement des états\nLancer les états\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nCliquez sur \nImprimer pour générer un fichier .pdf \nou \nExporter pour générer un fichier .xls\nACCEDER ET LANCER\nPour accéder aux reports, cliquez sur l’icone imprimante en haut à droite de l’écran\n\n\n\n\nCliquez sur Lancement d’un état\nChoisissez le libellé Mon Compte (COLLAB)\n\n\n\n\n\nComplétez le champ Libelle avec un mot-clé pertinent ou consultez la liste des reports disponibles. Puis cliquez sur Appliquer\n1\n2\n3\nEcran de choix du report\n4\n5"
+  },
+  {
+    "chunk_id": "doc_136",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 68",
+    "text": "Suivre les états\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nACCEDER ET METTRE A JOUR\nPour mettre à jour les reports que vous avez préalablement créés, cliquez sur l’icone imprimante en haut à droite de l’écran.\n\n\n\n\nCliquez sur Suivi des états puis sur  Rafraichir (les reports sont mis à jour)\nCliquez sur l’icône du ficher dans la colonne Résultat pour ouvrir le fichier du report que vous avez généré.\n2. Suivi des états\n1\n2\n2\n3"
+  },
+  {
+    "chunk_id": "doc_137",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 69",
+    "text": "Liste de rapports spécifiques\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_138",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 70",
+    "text": "Support\nEt si j’ai besoin d’aide ?\nGlossaire\n08\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_139",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 71",
+    "text": "Et si j’ai besoin d’aide ?\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nEn cas de question\nJe consulte ce guide utilisateur (Utilise Ctrl + F pour rechercher par mot clé)\nSi vous avez encore des questions, une rubrique Aide en ligne est accessible directement depuis l’outil.\n\n\n\n\n\n\n\nSi vous rencontrez une difficulté ou un incident, vous pouvez ouvrir un ticket sur GSC : \nSélectionnez la catégorie : Application métier\nSélectionnez la sous-catégorie : Chronotime\nSélectionnez la 2ème sous-catégorie souhaitée"
+  },
+  {
+    "chunk_id": "doc_140",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 72",
+    "text": "Glossaire 1/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nTermes clés"
+  },
+  {
+    "chunk_id": "doc_141",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 73",
+    "text": "Glossaire 2/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nTermes clés"
+  },
+  {
+    "chunk_id": "doc_142",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 74",
+    "text": "Glossaire 3/3\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nTermes clés"
+  },
+  {
+    "chunk_id": "doc_143",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 75",
+    "text": "Annexes\nLes différents types d’heure supplémentaires\nAutres anomalies\nDétails des droits d’absences exceptionnelles\n09\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_144",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 76",
+    "text": "Les différents types d’heures supplémentaires\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_145",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 77",
+    "text": "Autres anomalies\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_146",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 78",
+    "text": "Pose des congés\nIl est fortement recommandé de posez vos congés dans l’ordre suivante:\n\n\n\n\nCongé d’ancienneté (CANC)\nCongés payés (CP)\nRTT Salarié Reliquat (RSR)\nRTT Salarié Solde ( RSS)\nRTT Employeur (RE)\nRepos Compensateur de Nuit (RCN)\nRepos Compensateur Equivalent (RCE)\nTranche Exceptionnelle d’activité (TEA)\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_147",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 79",
+    "text": "Détails des droits d’absences exceptionnelles\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_148",
+    "source_file": "Collaborateur - Guide utilisateur Chronotime 2.pptx",
+    "location": "slide 80",
+    "text": "Règles d’or du badgeage\n©2026 Inetum  |  Internal |  S4inetum France_Guide utilisateur_Chronotime 2_Collaborateurs\nLe badgeage doit être utilisé uniquement pour confirmer :\nles heures supplémentaires,\nles interventions sur astreinte.\nLe système génère automatiquement les badgeages pour les activités normales :\u000b👉 aucun badgeage manuel n’est nécessaire pour ces activités.\nNe créez pas de badgeage distinct juste avant ou juste après vos heures normales de travail.\u000b👉 Dans ce cas, créez un badgeage d’entrée le matin et un badgeage de sortie le soir.\u000b(La pause déjeuner est déduite automatiquement selon votre contrat.)\n\u000b⚠️ Points de vigilance\nChaque intervention doit comporter deux badgeages :\n1 badgeage d’entrée\n1 badgeage de sortie\nPour une astreinte : on badge chaque intervention, pas toute la période.\nSi vous avez 2 interventions des différentes natures que se suivent, pas besoin de les badger séparément. Voir les exemples:\nSoyez attentif afin de ne pas créer de doublons.\n Exemple de badgeage pour ces 3 interventions:\n\nLe vendredi (les deux plages d’intervention se suivent, pas besoin de séparer par nature ) \nUne saisie de badgeage d’entrée à de 20h30\nUne saisie de badgeage de sortie à 22h30\nLe dimanche \nUne saisie de badgeage d’entrée à 14h00\nUne saisie de badgeage de sortie à 15h30\n Exemples de saisie d’intervention d’astreinte du vendredi 18h00 au lundi 07h00 :\n\nUne saisie d’intervention le vendredi de 20h30 à 20h59\n      Nature : JOUR EN SEMAINE et SAMEDI  de 6h à 21h\nUne saisie d'intervention le vendredi de 21h00 à 22h30\n      Nature : NUIT EN SEMAINE et SAMEDI de 21h à 6h\nUne saisie d’intervention le dimanche de 14h00 à 15h30\n      Nature : DIMANCHE ET/OU JOUR FERIE"
+  },
+  {
+    "chunk_id": "doc_150",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 1",
+    "text": "— \nwww.gfi.fr \n \n \nCHRONOTIME Workplace \nSUPPORT Habilitations \n \n \n \n \n \n \n \nGFI Informatique est certifié ISO 9001 :2008 pour ses activités de : \n- Conception, réalisation et intégration de systèmes informatiques. \n - Maintenance de systèmes informatiques. - Management de systèmes (Infogérance) \n - Edition et distribution de progiciels et prestations associées (Conseil et Services) \nLe libellé complet du certificat est disponible sur le site www.gfi.fr (activités certifiées et détail des sites pour chaque activité)."
+  },
+  {
+    "chunk_id": "doc_151",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 2",
+    "text": "CHRONOTIME V2.1 \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2012 – Gfi Chrono Time \n2 / 27 \n \nPack Chronotime \nSupport de formation Administration fonctionnelle \n \n \n \n \n \n \n \nFiche de suivi \nRévisions \nVersion \nDate \nObjet \n1.00 \n14/11/2019 \nCréation du document  \n \n \n \n \n \n \n \n \n \n \n \nVisas \n \nResponsable \nDate \nVisa \nRédaction \nChristine CORNEILLE \n14/11/2019 \nCCO \nRédaction \n \n \n \nApprobation"
+  },
+  {
+    "chunk_id": "doc_152",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 3",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n3 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \nSommaire \n1. \nObjectif .......................................................................................................................................... 4 \n1.1 \nSchéma fonctionnel ............................................................................................................... 4 \n2. \nPrésentation générale .................................................................................................................. 5 \n3. \nParamétrage .................................................................................................................................. 6 \n3.1 \nCréer un utilisateur ................................................................................................................ 6 \n3.2 \nAttribuer des droits à un utilisateur ..................................................................................... 6 \n3.3 \nCréer un profil utilisateur ...................................................................................................... 8 \n3.3.1 \nCréer / modifier un groupe de fonctionnalités ...................................................... 8 \n3.3.2 \nCréer / modifier un rôle ......................................................................................... 11 \n3.3.3 \nCréer un profil utilisateur ...................................................................................... 12 \n3.3.4 \nCréer un périmètre et l’appliquer dans un profil, sur un rôle ou un groupe .... 12 \n3.3.5 \nCréer un filtre et l’appliquer sur un rôle dans un profil ..................................... 15 \n3.3.6 \nAppliquer un filtre sur une fonctionnalité à l’intérieur d’un groupe ................. 17 \n3.3.7 \nLien fonctionnalités, filtres et entités fonctionnelles ......................................... 18 \n3.3.8 \nCréer un profil utilisateur multi-rôles .................................................................. 20 \n3.3.9 \nProfil sélectionnable ou non ................................................................................ 20 \n3.3.10 \nProfil parent : hiérarchie de profils ...................................................................... 22 \n3.4 \nSynthèse ............................................................................................................................... 24 \n3.4.1 \nCréation des profils ............................................................................................... 24 \n3.4.2 \nAffectation des profils et application à la session ............................................. 24 \n4. \nANNEXES .................................................................................................................................... 26 \n4.1 \nLes opérateurs dynamiques en création de périmètres de type « population » ........... 26 \n4.2 \nOpérateurs de sélection sur les Structures : …Chemin ou Elément .............................. 27"
+  },
+  {
+    "chunk_id": "doc_153",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 4",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n4 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n1. Objectif \n \n1.1 Schéma fonctionnel \n \n \n \n \n \n \n \n \n \nRappel : \n• \nChaque collaborateur, rattaché à son contexte (organisation, modèles horaires, type de contrat de \ntravail, réglementaire GT...), est à l'origine d'événements (pointages, demandes d'absences et de \nrégularisations) qui sont traités par Chronotime pour fournir des résultats (compteurs de \ntemps/d'absences, anomalies de calcul) \n• \nCes résultats et évènements sont traités par les différents acteurs intervenant selon leurs \nhabilitations \n• \nUne partie de ces résultats alimente le SIRH (Système d'informations Ressources Humaines) via une \ninterface. \n \nCe support de formation concerne le paramétrage à mettre en œuvre pour les Acteurs, utilisateurs de \nl’application : \n \n• \nDifférencier les différents profils d’utilisateurs \n• \nPréciser, pour chacun d’entre eux, les droits d’actions, sur quels collaborateurs et sur quels types de \ndonnées  \n• \nAttribuer les profils aux utilisateurs \n \n \n \n \n \n \n \n \n \nActeurs \nInterfaces \nContexte \nEvénements \nRésultats \nCollaborateur"
+  },
+  {
+    "chunk_id": "doc_154",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 5",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n5 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n2. Présentation générale \nLes habilitations sont les autorisations d'accès à Chronotime, attribuées aux utilisateurs de l'application. Elles \ndéterminent « qui fait quoi, sur quelles données, pour quelle population ». \n \n \n \n \nAdministration / Utilisateurs / Utilisateurs \nUtilisateurs  \n \n \n \n  \n \n \n \n \n \nDéfinition des droits d’accès dans Chronotime \n \n Administration \\ Utilisateurs \\ Profils  \n \n \nActuellement seuls 3 profils sont proposés en standard (les périmètres étant toujours particuliers à l’organisation) : collaborateur badgeur, \ncollaborateur non badgeur, ainsi que le profil Super administrateur, lequel a tous les droits sur l’ensemble des agents. \nLe fichier xls ci-dessous propose les rôles pré-paramétrés en standard. La personnalisation consiste à vérifier les actions proposées, et \ndéfinir les filtres et périmètres à appliquer pour la création des profils nécessaires dans l’organisation. \n_CT_Support à \nl'audit_Habilitations (V \nHabiliter un utilisateur, c’est lui donner \ndes droits en lien avec les tâches qu’il \ndoit réaliser \nCes actions autorisées (y compris \ncelles liées au workflow) sur des \npopulations définies, sont regroupées \nau sein de Profils Utilisateurs (un profil \ncorrespond \ngénéralement \nà \nune \nfonction dans l’organisation) \nUn utilisateur peut avoir plusieurs \nfonctions, \nil \nest \ndonc \npossible \nd’attribuer un ou plusieurs profil(s) à un \nutilisateur. Cette attribution peut être \nprécisée pour une période. \nCes profils s’appuient obligatoirement \nsur une Configuration de navigation \n \nLes profils utilisateurs doivent être définis et paramétrés (certains sont disponibles en standard ou pré-paramétrés) \nA renseigner \nUn Profil, c’est une ou plusieurs combinaison(s)  \n• \nd’actions autorisées (Fonctionnalités), \nregroupées en Groupes de fonctionnalités, eux-\nmêmes regroupés dans un Rôle \n• \npour certaines données (Filtre) \n• \net pour certains agents (Périmètre) \nDans l’exemple ci-contre :  \nle profil Service RH s’appuie sur ces deux rôles"
+  },
+  {
+    "chunk_id": "doc_155",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 6",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n6 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3. Paramétrage \n3.1 \nCréer un utilisateur \nA la création d’un collaborateur réel, un compte utilisateur est automatiquement créé si le paramètre par \ndomaine FP_user = 1 (identifiant de l’utilisateur = matricule auxiliaire du collaborateur).  \nUn utilisateur peut aussi être créé via  \n Administration / Utilisateurs / Utilisateurs \n \n3.2 \nAttribuer des droits à un utilisateur \nLa création d’un utilisateur ne donne lui aucun droit d’accès à l’application. Pour cela, il faut lui attribuer un \nou plusieurs profils utilisateurs, ainsi que la configuration de navigation (en partie basse de l’écran) :  \n \n \nUne fois ces informations renseignées, ne pas oublier d’enregistrer en global  \n \n \n \n \n  \nUn compte utilisateur ne peut être rattaché qu’à un \nseul collaborateur (le rattachement n’est pas \nobligatoire) \nL’adresse mail est mise à jour en simultané sur le \ncompte utilisateur et sur la fiche collaborateur  \nNéanmoins, s’il y a une différence entre les 2 \nadresses, c’est celle du collaborateur qui sera \nutilisée par l’application \nCliquer sur Ajouter pour attribuer un ou \nplusieurs utilisateurs (les dates d’application \nne sont pas obligatoires) \nCliquer \nsur \nAjouter \npour \naffecter \nune \nconfiguration \nde \nnavigation \n(les \ndates \nd’application ne sont pas obligatoires) \nNOTE : un collaborateur hors période de présence \nne pourra pas se connecter à l’application, même \nsi son compte semble actif (par ses dates)"
+  },
+  {
+    "chunk_id": "doc_156",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 7",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n7 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \nLes droits sont désormais attribués à l’utilisateur \n \n \nLe détail peut être consulté via le volet Droits  \n \n \n \nEn cliquant sur le levier pour ouvrir un groupe, on obtient le détail des fonctionnalités qui le composent. \n \n \n \nCoche « Principal »  \nSi le paramètre par domaine prfActiv=1, \nl’utilisateur peut choisir, après sa connexion à \nChronotime, le profil à appliquer (parmi ceux \nqui \nlui \nsont \nattribués \net \nqui \nsont \nsélectionnables). Le profil coché « principal » \nest le profil qui sera appliqué lors de la \nconnexion (à condition que l’utilisateur n’ait \npas désigné un autre profil par défaut) \nSi le paramètre prfActiv= 0 ou qu’aucun profil \nprincipal ou par défaut n’est renseigné, ce \nsont tous les profils attribués qui seront \nappliqués en même temps  \n Le profil « Informatique » \nest constitué des groupes \nde fonctionnalités ci-contre.  \nCertains de ces groupes \nsont impactés du périmètre \nInformatique  \nCertains groupes sont sans \npérimètre \n Même chose pour le profil \nService RH et desc, dont \ncertains \ngroupes \nsont \nimpactés \ndu \npérimètre \nService RH et desc"
+  },
+  {
+    "chunk_id": "doc_157",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 8",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n8 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.3 \nCréer un profil utilisateur  \nCréer un profil utilisateur nécessite de paramétrer au préalable les éléments qui le constituent : groupes de \nfonctionnalités et rôles, périmètres et filtres. \n3.3.1 Créer / modifier un groupe de fonctionnalités  \n Administration / Utilisateurs / Groupes de fonctionnalités \n \n \nPar la loupe de recherche, on obtient la popup où l’ensemble des fonctionnalités sont proposées (404) \n \nEn sélectionnant « Afficher le calendrier » puis Appliquer, on obtient  \n \n \n \n \nEn cliquant à nouveau sur Ajouter, par la loupe de recherche, on obtient seulement 283 fonctionnalités \nCliquer sur Créer, renseigner l’identifiant et le \nlibellé puis Enregistrer \nCliquer ensuite sur Ajouter"
+  },
+  {
+    "chunk_id": "doc_158",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 9",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n9 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n  \nEn effet, la fonctionnalité Afficher le calendrier n’est pas impactée par un périmètre. C’est le cas par exemple \nde toutes les fonctionnalités de paramétrage du référentiel, de paramétrage des habilitations (création de \nfiltres, profils, rôles, etc…), de paramétrage des bagdeuses ou d’autres fonctionnalités diverses. \n \nAinsi, l’écran propose les fonctionnalités de même type de périmètre que la 1ère fonctionnalité du groupe (ici, \nhors périmètre) et qui n’ont pas encore été sélectionnées pour ce groupe (une fonctionnalité ne peut pas \nexister plusieurs fois au sein d’un même groupe) → les fonctionnalités hors périmètre sont au nombre de 284 \n \nEn revenant à une liste vide, puis en choisissant comme 1ère fonctionnalité : Voir les utilisateurs … \n \n…le prochain ajout propose la liste suivante  \n \nEnfin, à partir d’une liste vide et en choisissant comme 1ère fonctionnalité : Valider les demandes de badgeage \nSeules 6 fonctionnalités sont impactées \npar des périmètres de type Utilisateur \n \nUn \npérimètre \nde \ntype \nUtilisateur \nappliqué à ces fonctionnalités permet \nde limiter les utilisateurs qui peuvent \nêtre vus ou gérés par celles-ci"
+  },
+  {
+    "chunk_id": "doc_159",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 10",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n10 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n \n…le prochain ajout propose la liste suivante  \n \nEn synthèse :  \nIl n’est pas possible d’introduire au sein d’un même groupe, des fonctionnalités d’un type de périmètre \ndifférent. C’est la raison pour laquelle, en modification d’un groupe (pour ajouter par exemple une nouvelle \nfonctionnalité), la liste des fonctionnalités disponibles peut ne pas proposer celle qu’on souhaite ajouter. \n \nConstituer la liste des fonctionnalités du groupe, puis ajuster si besoin les colonnes Ajout / Modif / Supp (les \ncoches sont accessibles en double-cliquant sur la ligne) \n \n  \n \n \n114 fonctionnalités sont impactées par des \npérimètres \nde \ntype \nPopulation \n(i.e. \npérimètres de collaborateurs) \n \nUn périmètre de type Population, appliqué \nà ces fonctionnalités, permet de limiter les \ncollaborateurs qui peuvent être vus ou \ngérés par celles-ci \nLa colonne Vue n’est pas modifiable par la coche. \n \nElle permet seulement de visualiser si un ou \nplusieurs filtres ont été posés, en partie basse de \nl’écran, pour cette fonctionnalité. \n \nVoir plus bas les § Créer et Appliquer un filtre"
+  },
+  {
+    "chunk_id": "doc_160",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 11",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n11 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.3.2 Créer / modifier un rôle  \n Administration / Utilisateurs / Rôles \n \n \n \n \n \nCliquer sur CREER  \nRenseigner l’identifiant et le libellé du rôle à créer \n \nPuis accéder à la liste de groupes de fonctionnalités \ndisponibles via la loupe de recherche \nCocher les groupes qui vont constituer le rôle \n puis Appliquer   \npuis Enregistrer   \nRenseigner les profils de Workflow  \nLe 2ème volet affiche les fonctionnalités Gérer et \nValider des évènements pouvant être concernés \npar le workflow, et incluses dans les groupes qui \nconstituent le rôle.  \nDouble-cliquer sur celles dont le type d’évènement \nest activé pour le workflow … (visible via  \nAdministration/Workflow/Evènements \n  ) \n…et renseigner le profil de workflow \nGénéralement une action « responsable » a un \nprofil RESP, tandis qu’une action « collaborateur » \na un profil COLLAB \nVoir plus précisément le fonctionnement des profils \net circuits de workflow \nIMPORTANT : si le profil de workflow est mal renseigné, le message \n« Le paramétrage de votre rôle est incomplet : Veuillez contacter votre \nAdministrateur » bloque l’action Gérer ou Valider l’évènement \nPour supprimer un des groupes qui constituent le \nrôle, cliquer sur X puis Enregistrer"
+  },
+  {
+    "chunk_id": "doc_161",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 12",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n12 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.3.3 Créer un profil utilisateur \nA partir de ce rôle, il est possible de créer un profil utilisateur  \n Administration / Utilisateurs / Profils \n \n \n \n \n \n3.3.4 Créer un périmètre et l’appliquer dans un profil, sur un rôle ou un groupe  \n \nEn double-cliquant sur la ligne du Rôle et en cliquant sur +, ou via Administration / Utilisateurs / Périmètres, \n \n  \nOn accède en création de périmètre\n \nRappel :  \nUn périmètre de type Population va définir un groupe de collaborateurs (gérés dans l’application) \nUn périmètre de type Utilisateur va définir un groupe d’utilisateurs (ayant accès à l’application) \n \nCliquer sur CREER  \nRenseigner l’identifiant et le libellé du profil à créer \nNe pas renseigner Profil parent ni Sélection (cf § \n3.3.9 et 3.3.10) \nPuis Enregistrer  \nCliquer ensuite sur le bouton Ajouter  \nChoisir le rôle (via la loupe par ex) et enregistrer \nLe profil peut être attribué aux utilisateurs. \nA ce stade il ne comporte aucun périmètre ni filtre  \n→ Les actions incluses dans ce profil sont autorisées sur \ntous les collaborateurs et pour tous les motifs \n(d’absences, de régularisations, etc…) \n \nPour limiter les collaborateurs visualisés et/ou gérés, il \nfaut lui appliquer un ou plusieurs périmètres \nPour limiter les motifs d’évènements parmi les absences, \nrégularisations, … il faut appliquer un ou plusieurs filtres \n \nRenseigner l’identifiant \net le libellé, puis choisir \nPopulation dans le type"
+  },
+  {
+    "chunk_id": "doc_162",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 13",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n13 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \nPuis on décrit les critères à tester (Structure ou toute autre information de la fiche collaborateur), l’opérateur \nà utiliser pour le test (égal à l’élément, …) et la valeur (ou une liste de valeurs) \n \n \n \nNote sur les opérateurs relatifs aux structures :  \n• \nRattaché à l’élément → la 1ère ligne fournit les collabs affectés à l’élément de structure ServRH, ainsi \nque tous les collabs affectés aux éléments des niveaux en-dessous (IRP et PAIE) et autres éventuels \nsous-niveaux  \n• \nEgal à l’élément → la 2ème ligne fournit uniquement les collabs affectés à l’élément ServInfo (sans \nchercher ceux affectés aux éléments en-dessous (ASSIST, ETUDE, …) \n \nComme les 2 lignes sont liées par la condition OU, le périmètre regroupe les collabs issus de la ligne 1 et les \ncollabs issus de la ligne 2 (avec une condition ET, le périmètre ne fournirait aucun collaborateur). \n \nOn peut alors poser le périmètre sur la ligne du rôle (en construction du profil) \n \nAutre possibilité pour obtenir un résultat identique : on fait 2 périmètres distincts   \nVoir aussi en annexe (chapitre 4)  \n• \nla différence entre les opérateurs « Egal à \nl’élément » et « Egal au chemin »  \n• \nla différence entre « Rattaché à l’élément » \net « Rattaché au chemin »  \n• \nles \nparticularités \ndes \nopérateurs \ndynamiques (Egal ou Rattaché à mon \nélément, Egal ou Différent de moi-même"
+  },
+  {
+    "chunk_id": "doc_163",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 14",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n14 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n• \nUn périmètre Management RH \n \n• \nEt un périmètre Informatique \n \nEt on pose ces 2 périmètres sur la ligne du rôle (en construction du profil) \n \n \nQuand (ce ou) ces périmètres sont posés sur le rôle, ils s’appliquent à toutes les fonctionnalités incluses dans \nle rôle et impactées par des périmètres de type « population ». \n \n \n \nIl est possible de poser des périmètres sur un niveau plus fin : les groupes de fonctionnalités \nExemple :  \nCe profil doit pouvoir voir et gérer l’ensemble des évènements pour les collaborateurs de l’informatique et du \nManagement RH, mais en ce qui concerne les fiches collaborateurs, il ne doit pouvoir modifier que celles des \ncollaborateurs de l’Informatique. \n \nEn construction du profil, les 2 périmètres sont \nposés sur la ligne du rôle  \n \nCes périmètres s’appliquent automatiquement à \ntous les groupes contenant des fonctionnalités \nimpactées \npar \ndes \npérimètres \nde \ntype \n« population »  \n→ n/a indique que le groupe ne contient aucune \nfonctionnalité impactée par les périmètres posés \nsur le rôle \n→ Les pointillés qui apparaissent à droite du \ngroupe indique que le groupe est impacté"
+  },
+  {
+    "chunk_id": "doc_164",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 15",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n15 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n \n \n3.3.5 Créer un filtre et l’appliquer sur un rôle dans un profil \nEn double-cliquant sur la ligne du Rôle et en cliquant sur +, ou via Administration / Utilisateurs / Filtres, \n \n \nOn accède en création de filtre \n \nExemple :  \nCe profil doit pouvoir saisir, sur les collaborateurs qu’il gère, les absences Mission, Formation, Réunion ainsi \nque toutes les absences congés. On choisit donc l’entité fonctionnelle Absences. Les critères disponibles et \nles opérateurs permettent de construire le filtre comme ci-dessous : \n \n \nSur le rôle, on applique le seul périmètre Informatique \n \nPuis, en double-cliquant sur chaque ligne des groupes \n(sauf Gérer la fiche des collabs), on ajoute le périmètre \nManagement RH → les actions de ces groupes \npourront être faites sur la population Informatique \n(représentée par les pointillés) et sur la population \nManagement RH  \n \nLa gestion des fiches ne pourra être faite que sur la \npopulation Informatique \n \nRenseigner l’identifiant \net le libellé, puis choisir \nl’entité \nfonctionnelle \nsur laquelle le filtre va \ns’appuyer"
+  },
+  {
+    "chunk_id": "doc_165",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 16",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n16 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \nAutre possibilité pour obtenir un résultat identique : on fait 2 filtres distincts   \n• \nUn filtre Absences congés  \n \n• \nEt un filtre Absences formation, mission et réunion \n \n \nEt on pose ce(s) filtre(s) sur la ligne du rôle (en construction du profil)  \n \n \nQuand (ce ou) ces filtres sont posés sur le rôle (en construction d’un profil), ils s’appliquent à toutes les \nfonctionnalités incluses dans le rôle et impactées par des filtres créés sur l’entité fonctionnelle « Absences ». \n \n \n \n \n \nPour voir les fonctionnalités impactées par \nles filtres posées sur le rôle, il faut ouvrir \nles groupes  \n→ « Aucun filtre associé » indique que la \nfonctionnalité \npeut \nêtre \nfiltrée \nmais \nqu’aucun filtre ne lui est appliqué \n→ Les pointillés qui apparaissent dans la \ncolonne filtre indique que la fonctionnalité \nest filtrée par les filtres posés sur le rôle \n→ n/a indique que la fonctionnalité ne peut \npas être filtrée \n→ n/a apparaît toujours sur la ligne du \ngroupe : en effet les filtres ne s’appliquent \njamais à un groupe mais toujours sur un \nrôle, ou directement sur une fonctionnalité \n(ce point est décrit dans la suite du §) \n→ Dans cet exemple, on constate que les \nfiltres \nposés \nimpactent \naussi \nla \nfonctionnalité Voir les absences. Ce profil \nne verra donc que les absences congés et \nformation, mission et réunion. \nOr ce n’est pas forcément ce qu’on \nsouhaite : généralement un manager voit \ntoutes les absences de ses collaborateurs, \nmême s’il ne peut saisir ou valider que \ncertaines d’entre elles  \nCi-dessous les 2 solutions (§ 3.3.6 et \n3.3.8)  pour affiner l’impact des filtres sur \nun profil"
+  },
+  {
+    "chunk_id": "doc_166",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 17",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n17 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.3.6 Appliquer un filtre sur une fonctionnalité à l’intérieur d’un groupe  \nDans le cas décrit au § précédent, les filtres sur l’entité Absences sont appliqués seulement sur le rôle, et \naucun filtre n’a été appliqué à l’intérieur des groupes  \n Administration/Utilisateurs/Groupes de fonctionnalités  \n \n \nIl faut créer le filtre au préalable  \n Administration/Utilisateurs/Filtres  \n \nPuis l’appliquer sur la fonctionnalité Voir les absences, à l’intérieur du groupe de fonctionnalités \n \n \nIci la colonne « Vue = Non » \nsignifie qu’aucun filtre n’est \nappliqué \nAinsi seuls les filtres posés sur le \nrôle (qui est construit à partir de \nces groupes) vont s’appliquer \n \nEn créant un filtre propre à la \nvisualisation des absences, et \nen le posant directement sur la \nfonctionnalité Voir (à l’intérieur \ndu groupe), ce filtre s’appliquera \nen amont, i.e. à tous les rôles \nutilisant ce groupe (et donc à \ntous les profils appuyés sur ces \nrôles)  \nOn utilise une information et un \nopérateur qui permet d’inclure \ntoutes les absences (cf exemple \nci-contre) \nSe positionner sur la ligne de la \nfonctionnalité à filtrer  \n \nPuis cliquer sur Ajouter  \n \nChoisir le(s) filtre(s) à appliquer à \ncette fonctionnalité et Enregistrer"
+  },
+  {
+    "chunk_id": "doc_167",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 18",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n18 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n \n \nRésultat de cette action sur le profil  \n Administration/Utilisateurs/Profils \n \n \n \n3.3.7 Lien fonctionnalités, filtres et entités fonctionnelles  \n \nEn création d’un filtre, il s’agit de répondre à la question : quelle entité fonctionnelle choisir ? \nEn visualisation des filtres posés sur un rôle (en consultation ou gestion des profils utilisateurs), quelles sont \nles fonctionnalités pouvant être impactées par ces filtres ? \nPour exemple :  \nPour filtrer les absences des collaborateurs en gestion ou en visualisation, il faut appliquer un filtre créé sur \nl’entité Absences \nPour filtrer les soldes d’absences en visualisation, il faut appliquer un filtre créé sur l’entité Motifs d’absences \nCe même filtre, créé sur Motifs d’absence, s’appliquera aussi sur les fonctionnalités Voir / Gérer les motifs du \nréférentiel, si ces fonctionnalités sont incluses dans le rôle filtré  \n \nLa colonne « Vue = Oui » indique à \nprésent qu’au moins un filtre existe \nsur cette fonctionnalité dans ce \ngroupe \n \nEn se positionnant sur la ligne de \ncette fonctionnalité, on voit le(s) \nfiltre(s) en bas d’écran  \nLes filtres sont toujours en place sur le rôle \n \nSeuls ces 2 filtres s’appliquent à la \nfonctionnalité Gérer les absences, ce profil \nn’a ainsi accès en saisie qu’à ces seuls \nmotifs   \nSur la fonctionnalité « Voir les absences »  \nLes 2 filtres du rôle sont appliqués (vu par \nles pointillés à droite) \nLe filtre « Toutes absences », issu du groupe \nlui-même, s’applique également  \nToutes les absences sont ainsi visibles par \nce profil"
+  },
+  {
+    "chunk_id": "doc_168",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 19",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n19 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \nLa table HAB_FONCFLT contient, pour chaque fonctionnalité filtrable, les seules entités fonctionnelles \nutilisables (si une fonctionnalité n’existe pas dans cette table, elle n’est pas prévue pour être filtrée).   \nLa requête suivante fournit l’ensemble des entités concernées par fonctionnalité : \nselect a.hab_fonctid, b.hab_fonctlib, a.entfoncid, c.entfonclib   \nfrom hab_foncflt a, hab_fonct b, entfonc c  \nwhere a.hab_fonctid=b.hab_fonctid \nand c.entfoncid=a.entfoncid \nand a.entfoncid in (select entfoncid from entfonc)  \norder by b.hab_fonctlib, a.entfoncid \n \nExtrait des résultats :  \n \n \nA l’inverse, si on veut les fonctionnalités impactées par des filtres créés par entité fonctionnelle  \nselect a.hab_fonctid, b.hab_fonctlib, a.entfoncid, c.entfonclib   \nfrom hab_foncflt a, hab_fonct b, entfonc c  \nwhere a.hab_fonctid=b.hab_fonctid \nand c.entfoncid=a.entfoncid \nand a.entfoncid in (select entfoncid from entfonc)  \norder by a.entfoncid, b.hab_fonctlib \n \nCi-dessous un extrait des résultats obtenus :"
+  },
+  {
+    "chunk_id": "doc_169",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 20",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n20 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.3.8 Créer un profil utilisateur multi-rôles  \n \nPour répondre au besoin décrit dans notre exemple, une autre solution consiste à distinguer le rôle de \nvisualisation et le rôle de gestion, pour les associer ensuite au sein du profil utilisateur. \n \n \n \n \n3.3.9 Profil sélectionnable ou non  \n \nSi le paramètre par domaine prfActiv=1, et à condition que l’utilisateur ait l’habilitation nécessaire (Choisir son \nprofil courant), il peut choisir d’appliquer un profil à sa session, à partir des profils qui lui sont attribués et qui \nsont eux-mêmes sélectionnables. \n \nExemple :  \nL’utilisateur LAY Gilles a 4 profils, contenant la fonctionnalité « Choisir son profil courant » \n Administration/Utilisateurs/Utilisateurs \n \nSur le rôle de Consultation seule, on \npose les 2 périmètres Informatique et \nManagement RH, et aucun filtre → les \nfiches \ncollaborateurs \net \ntous \nles \névènements (absences, …) seront \nvisibles pour les collaborateurs de ces \n2 périmètres. \nSur le rôle de gestion (Exemple pour \nformation), on \npose \nle \npérimètre \nInformatique et les filtres pour limiter la \ngestion des absences à ces seuls \nmotifs. Puis on ajoute le périmètre \nManagement RH sur les groupes de \ngestion \nLes groupes Voir ne sont pas utiles ici \npuisqu’ils sont inclus dans le rôle de \nconsultation"
+  },
+  {
+    "chunk_id": "doc_170",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 21",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n21 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n \nIl peut choisir d’appliquer temporairement un seul de ces profils à sa session  \n \n \nSi on décoche Sélection pour le profil Service RH et desc \n \n \n \n \n \n \n \n \n \n \nCes 4 profils sont cochés « sélection autorisée »  \n \nAdministration/Utilisateurs/Profils  \n \nSi prfTous=1 on peut choisir de les appliquer tous \nL’étoile permet de distinguer le profil principal   \n \nCliquer sur un des profils pour l’appliquer  \nOn peut ensuite choisir ce profil comme étant le profil \npar défaut (appliqué par défaut à la prochaine connexion \nen lieu et place du profil principal) \n \nCe profil n’apparaît plus dans la liste  \nOn ne peut pas le sélectionner pour l’appliquer seul  \nIl est cependant toujours et systématiquement \nappliqué (même si on choisit un autre profil à \nappliquer) \nNOTE :  \nUn profil collaborateur, i.e. ayant au moins une fonctionnalité générant l’affichage de l’espace Mon compte, est toujours appliqué"
+  },
+  {
+    "chunk_id": "doc_171",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 22",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n22 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.3.10 Profil parent : hiérarchie de profils \n \nSi le paramètre prfHierar = 1, on peut organiser le référentiel des profils utilisateurs sous forme de hiérarchie.  \nExemple sans hiérarchie :  \n Administration/Utilisateurs/Profils \n \nExemple avec hiérarchie :  \n On crée un profil DRH, sans filtre ni périmètre, avec tous les droits en visu/gestion sur les collaborateurs. \n \n \n \n \n \n \n  \n \n \n \nTout profil, qu’il soit un profil « tête » de hiérarchie ou un profil « fils », peut être affecté à un utilisateur. \n \n \nLa liste des profils n’indique \naucune arborescence  \n \nLe \nprofil \nparent \nn’est \nindiqué \nsur \naucun \ndes \nprofils créés \nOn rattache des profils à ce profil DRH, en positionnant \ncelui-ci comme profil parent : ci-contre le rattachement \ndu profil « RH et Informatique » au profil DRH \nOn rattache par ailleurs « Informatique » au profil « RH \net Informatique »   \nOn obtient une arborescence à plusieurs niveaux \nTout profil, qu’il soit un profil \n« tête » de hiérarchie ou un \nprofil « fils », peut être affecté à \nun utilisateur."
+  },
+  {
+    "chunk_id": "doc_172",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 23",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n23 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n \n \n \n \nExemple :  \n \n \n \nL’utilisateur \nLAY \npeut \nchoisir \nd’appliquer un des profils qui lui est \ndirectement affecté, dont DRH, … \n… ou un des profils « fils » dans \nl’arborescence DRH \nDans ce cas, les droits du profil choisi s’appliquent à \nla session (+ les droits d’éventuels profils non \nsélectionnables qui lui seraient affectés) \nDans ce cas, les droits du profil choisi s’appliquent à la \nsession (+ les droits d’éventuels profils non sélectionnables \nqui lui seraient affectés), notamment en ce qui concerne la \npopulation visualisée et/ou gérée, mais les filtres appliqués \nsont ceux du profil « tête de hiérarchie » (ici, DRH) \nUn profil « fils » ne peut pas être défini par défaut → c’est le profil affecté à \nl’utilisateur (« tête » de hiérarchie) qui est enregistré comme profil par défaut"
+  },
+  {
+    "chunk_id": "doc_173",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 24",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n24 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n3.4 \nSynthèse  \nLe paramétrage des habilitations consiste à créer des profils utilisateurs, à affecter ensuite aux utilisateurs. \n \n3.4.1 Création des profils  \n \nUn profil est créé à partir d’un ou de plusieurs rôles.  \n \nChaque rôle est construit à partir des groupes de fonctionnalités. \n \nChaque groupe de fonctionnalités est constitué de fonctionnalités distinctes et homogènes au sens du \ntype de périmètre applicable (sans périmètre applicable ou périmètre de type « Utilisateur » ou \n« Population »). \n \nUn périmètre définit une liste d’utilisateurs (si type « utilisateur ») ou de collaborateurs (si type \n« population »), pour lesquels les fonctionnalités sont autorisées. \n \nEn construction d’un profil, les périmètres (un ou plusieurs) peuvent être posés sur le(s) rôle(s) et/ou sur \nles groupes de fonctionnalités issus du rôle. \n \nDans tous les cas, si le paramétrage prévoit plusieurs périmètres devant s’appliquer sur une fonctionnalité, \non fait la somme de chacun d’entre eux (ex. : P1 fournit une liste 1 de collaborateurs, P2 fournit une liste 2 \nde collaborateurs, si P1 et P2 sont prévus sur le rôle et/ou les groupes de fonctionnalités, on prend en compte \nListe 1 + Liste 2 moins les éventuels doublons). \n \nUn filtre définit une liste d’évènements ou autres éléments, pour lesquels certaines fonctionnalités sont \nautorisées : chaque filtre est construit à partir d’une entité fonctionnelle en lien avec les fonctionnalités \nsur lesquelles il pourra s’appliquer.  \n \nEn construction d’un profil, les filtres (un ou plusieurs) peuvent être posés sur le(s) rôle(s) et/ou, en amont, \nsur les fonctionnalités à l’intérieur des groupes de fonctionnalités. \n \nSi des filtres sont appliqués directement sur des fonctionnalités à l’intérieur d‘un groupe, ils sont appliqués à \ntous les profils utilisant, via leurs rôles, ce même groupe de fonctionnalités. \n \nDans tous les cas, si le paramétrage prévoit plusieurs filtres _ de même entité fonctionnelle _ devant \ns’appliquer sur une fonctionnalité, on fait la somme de chacun d’entre eux (ex. : F1 est un filtre créé sur \nl’entité Absences et fournit une liste 1 d’éléments absences, F2 est un filtre créé sur l’entité Absences et \nfournit une liste 2 d’éléments, si F1 et F2 sont prévus sur le rôle et/ou une fonctionnalité, on prend en compte \nListe 1 + Liste 2 moins les éventuels doublons). \n \n \n \n3.4.2 Affectation des profils et application à la session"
+  },
+  {
+    "chunk_id": "doc_174",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 25",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n25 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \nOn peut affecter un ou plusieurs profils à un utilisateur, appuyés sur une configuration de navigation.  \n \nL’application de ces profils lors de la connexion se fait de la façon suivante :  \n \n➢ Sans activer la gestion multi-profils (prfActiv=0) :  \n \nTous les profils qui lui sont affectés s’appliquent en même temps, pas de choix d’un profil à appliquer  \n \n➢ En activant la gestion multi-profils (prfActiv=1) :  \n \nL’utilisateur peut choisir d’appliquer à sa session un seul de ses profils (parmi ceux qui sont \nsélectionnables), ou tous ses profils à la fois (si prfTous = 1) \n \nA la connexion, si l’utilisateur a choisi précédemment un profil par défaut (géré dans le volet Administration / \nUtilisateurs / Utilisateurs – Paramètres particuliers), c’est ce profil par défaut qui s’applique \n \nSi aucun profil par défaut n’a été défini, et si un de ses profils qui lui sont affectés est coché Principal, c’est \nce profil principal qui s’applique  \n \nSi aucun profil par défaut ni aucun profil principal, c’est le profil par défaut défini en global (paramètre par \ndomaine prfUti) qui s’applique (en standard, ce paramètre a pour valeur TOUS_LES_PROFILS, donc tous \nles profils sont appliqués en même temps) \n \nDans tous les cas, les profils non sélectionnables, affectés à l’utilisateur, sont appliqués à sa session, \nainsi que tous ses droits « collaborateurs » (ceux qui concernent l’espace Mon compte)."
+  },
+  {
+    "chunk_id": "doc_175",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 26",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n26 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n4. ANNEXES \n4.1 Les opérateurs dynamiques en création de périmètres de type « population » \n \nPlutôt que de créer autant de périmètres que de « services » (ou éléments de structure) et en fonction de \nl’organisation, il est possible de créer des périmètres dits « dynamiques ». Les opérateurs sont les suivants :  \n• \nEgal à mon élément \n• \nEgal à mon chemin \n• \nRattaché à mon élément  \n• \nRattaché à mon chemin \n• \nEgal à moi-même  \n• \nDifférent de moi-même \n \nPrincipe de fonctionnement :  \n \nL’utilisateur (responsable) connecté doit être géré dans Chronotime, i.e. avoir une fiche collaborateur en lien \navec son compte utilisateur \nSi ce n’est pas le cas, ou s’il n’a pas de rattachement valide à la structure testée par l’opérateur, aucune \npopulation n’est retournée, même si d’autres conditions du périmètre peuvent s’exécuter  \n \nLes opérateurs Egal à moi-même et Différent de moi-même sont proposés quand le critère choisi est \nMatricule  \n• \nEgal à moi-même → ajoute à la population le collaborateur en lien avec l’utilisateur connecté  \n• \nDifférent de moi-même → exclut le collaborateur en lien avec l’utilisateur connecté \n \nLes 4 autres opérateurs sont proposés quand le critère choisi est une structure autorisant le rattachement \ndes collaborateurs  \nComportement sur une structure « administrative » composée des éléments ci-dessous : \n \n \n \n \n \n \n \n \n \n \n \n \nLe responsable Coll 1 est l’utilisateur connecté, et ce collaborateur est rattaché à la Dir Adm :  \n• \nSi son profil a un périmètre « Egal à mon élément », seuls les collaborateurs rattachés directement \nà l’élément Dir Adm constitueront sa population  \n• \nSi son profil a un périmètre « Rattaché à mon élément », sa population sera l’ensemble des \ncollaborateurs rattachés à Dir Adm ou Services A ou B, ou Equipes 1 et 2 \n• \nMême principe avec Egal ou Rattaché à mon chemin (voir § suivant pour la différence entre \nélément et chemin) \n \n \n \n \n \n \n \nSociété S \nService A \nService C \nEquipe E1 \nDir Adm \nService B \nDir Prod \nEquipe E2 \nColl 1 \nNOTE : Les affectations secondaires et les affectations exceptionnelles (prêts) ne \nsont pas prises en compte, seul le rattachement principal à la structure est utilisé pour \nrechercher la population par ces opérateurs \nNOTE : En cas de délégation d’un profil avec un périmètre dynamique, ce sont toujours \nles caractéristiques du déléguant qui sont prises en compte, et non celles du délégué qui \nreçoit cette délégation"
+  },
+  {
+    "chunk_id": "doc_176",
+    "source_file": "CT V4- Support de formation Habilitations (1).pdf",
+    "location": "page 27",
+    "text": "CHRONOTIME Workplace \nSUPPORT DE FORMATION GESTIONNAIRES \n© 2014 – Gfi Chrono Time \n27 / 27 \nPack Standard  \nSupport de Gestionnaires Administration fonctionnelle \n  \n \n \n \n \n4.2 Opérateurs de sélection sur les Structures : …Chemin ou Elément \n \nA un instant T …. \n \n \n \nSTRUCTURE ORGANISATIONNELLE \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nIntervient un changement dans l’organisation, IDF3 n’est plus rattaché à IDF mais à SUD-OUEST… \n \nA un instant T’ après le changement d’organisation \nSTRUCTURE ORGANISATIONNELLE \n \nSUD-OUEST \nIDF \nIDF3 \nST DENIS \nST OUEN \nElodie \n \nJean \nEgal à l’élément ou au \nchemin IDF/IDF3 → \nseulement les personnes \ndirectement rattachées \n(Adèle et Eric) \nRattaché à l’élément  ou au chemin IDF/IDF3 → \ntout ce qui est rattaché directement (Adèle et \nEric) ou indirectement (Elodie et Jean)  \nINFORM \nAdèle \nEric \nSUD-OUEST \nIDF \nIDF3 \nST DENIS \nST OUEN \nAdèle \nEric \nElodie \n \nJean \nEgal à l’élément IDF/IDF3 → pas de \nchangement (Adèle et Eric) \nINFORM \nMais \nEgal au chemin IDF/IDF3 et \nRattaché au chemin IDF/IDF3 → \nplus personne, ce chemin n’est \nplus opérationnel à l’instant T’  \nRattaché à l’élément IDF3 → pas de changement \n(Adèle, Eric, Elodie et Jean)"
+  },
+  {
+    "chunk_id": "doc_177",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 1",
+    "text": "Guide utilisateur Chronotime \nRapports de suivi adaptés \n(Mon équipe)\n02/09/2021  |  ©2020 Inetum  | Internal : \nPrésentation Managers BU S4Inetum"
+  },
+  {
+    "chunk_id": "doc_178",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 2",
+    "text": "2\n30\nIndex\nCRA Collaborateurs ADV/CP/RESP\nCRA Collab consolidé\nEtat récapitulatif des absences\nEtat de situation des absences\n1\n2\n3\n4\n5\nLancement et suivi des états"
+  },
+  {
+    "chunk_id": "doc_179",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 3",
+    "text": "3\n30\n1. Lancement et suivi des états (1/2)\n▪En tant que manager, ADV ou CP vous avez accès au reporting de votre équipe en utilisant le chemin \nindiqué ci-dessous :\n▪\nCertains états vous sont proposés par \ndéfaut selon votre profil sur Chronotime. \n(Il est donc possible que vous n’ayez pas un \ndes états cités dans le MODOP)\n▪\nEn les déroulant, vous pourrez accéder \naux données de votre périmètre\n▪\nRenseignez les données obligatoires \n(« * ») et cliquez sur imprimer \n(génération d’un PDF) ou exporter (en \nformat Excel)"
+  },
+  {
+    "chunk_id": "doc_180",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 4",
+    "text": "4\n30\n1. Lancement et suivi des états (2/2)\n▪Pour accéder à votre report, cliquez sur l’imprimante. Le document sera téléchargé.\n▪La fonction « Suivi des états » vous permet de consulter les états et de retrouver directement la \nfenêtre ci-dessus"
+  },
+  {
+    "chunk_id": "doc_181",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 5",
+    "text": "5\n30\n2. CRA Collaborateurs ADV ou CP (1/2)\nUne fois lancé, il faut renseigner les \nchamps de requête suivants :\n1. Le mois souhaité\n2. Le matricule si besoin d’un seul \ncollaborateur\n3. Le centre de profit pour une \nextraction par Cost.\n4. Puis Exporter pour éditer le \ndocument Excel sous la forme \nindiquée sur le slide 2.\n02/09/2021  |  ©2020 Inetum  | Internal : \nPrésentation Managers BU S4Inetum\nParmi les rapports disponibles, vous disposez selon votre profil du « CRA Collaborateurs » Resp, ADV ou CP \nauquel vous pouvez accéder comme indiqué précédemment."
+  },
+  {
+    "chunk_id": "doc_182",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 6",
+    "text": "6\n30\n2. CRA Collaborateurs ADV ou CP (2/2)\n02/09/2021  |  ©2020 Inetum  | Internal : \nPrésentation Managers BU S4Inetum\n˃\nLe rapport CRA Collaborateur permet d’extraire par Cost, par  matricule l’ensemble des saisies sur \nChronotime ainsi que les écarts sur les jours non encore saisis.\n˃\nLes activités ou absences s’affichent selon les droits du lanceur (exp: Les CPs ne visualisent que les \nactivités liées aux projets qu’ils gèrent )\n˃\nLes saisies comprennent les libellés des absences/activités, la date de saisie, l’état et l’arborescence du \nCost auquel le collaborateur appartient."
+  },
+  {
+    "chunk_id": "doc_183",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 7",
+    "text": "7\n30\n3. CRA Collab consolidé\n˃\nLe rapport « CRA collab consolidé » permet de reporter par Cost et par \nCollaborateur une consolidation des temps saisis en termes de nature \npour des fins de vérifications préfacturation.\n˃\nIl est nécessaire de choisir une période\n˃\nLes absences sont regroupées en 3 grandes catégories à savoir CP / \nRTT et Autres.\n02/09/2021  |  ©2020 Inetum  | Internal : \nPrésentation Managers BU S4Inetum"
+  },
+  {
+    "chunk_id": "doc_184",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 8",
+    "text": "8\n30\n4. Etat récapitulatif des absences\n˃\nLe rapport rassemble les temps saisis en absences par type d’absence sur 12 \nmois maximum à partir d’une date début (par défaut 01/01/202x). \n˃\nLes 12 mois peuvent concerner l’historique comme le prévisionnel.\n˃\nIl est possible de lancer l’extraction pour un Cost comme pour un collaborateur.\n02/09/2021  |  ©2020 Inetum  | Internal : \nPrésentation Managers BU S4Inetum"
+  },
+  {
+    "chunk_id": "doc_185",
+    "source_file": "ModOp Rapports Timereport V2.pdf",
+    "location": "page 9",
+    "text": "9\n30\n5. Etat de situation des absences\n02/09/2021  |  ©2020 Inetum  | Internal : \nPrésentation Managers BU S4Inetum\n˃\nLe rapport fournit le détail des absences des collaborateurs par type tout en \nprécisant le statut.\n˃\nIl est possible de préciser une date début et une date fin qui peuvent futures.\n˃\nIl est possible de lancer l’extraction pour un Cost comme pour un collaborateur"
+  },
+  {
+    "chunk_id": "doc_186",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 1",
+    "text": "Guide utilisateur \u000bChronotime V2 - Collaborateur\u000bSaisie des activités/absences\nEquipe Change Management\u000b2025"
+  },
+  {
+    "chunk_id": "doc_187",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 2",
+    "text": "01\nProcessus de saisie et d'approbation\nActivités\nAbsences \nFrais\n03\nSaisir votre activité hebdomadaire\nRègles de saisie et fast-closing\nSaisir votre activité de la semaine\nSaisie des activités\nSaisie des astreintes et interventions\nSaisie des  compensations Borloo\nSaisie de télétravail\n02\nAccéder à Chronotime\nVue Agenda\n04\nVos absences\nSaisir une demande d’absence\nConsulter votre solde de congés\n09\nSatisfaction\nEt si j’ai besoin d’aide ?\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\n05\nReporting\n\nLancement et suivi des états\nSuivi des demandes d’absence\n08\n06\nAutres Evénements\nAttestation Véhicule\nClient Principal\nPrise en Charge Transport\n07\nMes Régularisations\nConsultation\nDemande\nSupport\nFormulaire de satisfaction"
+  },
+  {
+    "chunk_id": "doc_188",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 3",
+    "text": "01\nProcessus de saisie \u000bet d’approbation \u000b- Activités \u000b- Absences \u000b- Frais\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_189",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 4",
+    "text": "©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_190",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 5",
+    "text": "Processus global de saisie et d’approbation\nActivités, Absences, Frais\nApprobation\nJe suis affecté à des projets client (en heures normales, supp…) et je déclare le temps passé\n\nJe réalise des activités administratives ou je interviens sur de projet en interne et je déclare le temps passé\n\nJe réalise des activités en télétravail et je déclare le temps passé\n\nJe déclare mon client principal\n\n J’ajoute une attestation de véhicule\n\nJ’ajoute ma demande de prise en charge de transport\n\nJe déclare les heures de compensation, Borloo\n\nJe demande un changement d’horaire\n\nJe demande une régularisation\n\nJe dois m’absenter (congés, RTT, absence…)\n\nSi j’utilise VIGICRA, j’y déclare mes activités client qui remontent automatiquement dans Chronotime\n\n\nJ’ai engagé des frais dans le cadre de mes missions professionnelles\nEn tant que responsable de projet (CP/DP), je valide/refuse les activités déclarées par le collaborateur dans le cadre du projet sur le mois en cours.\n\nEn tant que manager hiérarchique, je valide/refuse les activités administratives ou demandes d’absence des collaborateurs sous ma responsabilité sur le mois en cours.\n\nEn tant que responsable de projet (CP/DP), je j’approuve/refuse les frais déclarés par les collaborateurs qui interviennent dans mes projets ou sous ma responsabilité sur le mois en cours.\n\nEn tant que manager hiérarchique, j’approuve/refuse les demandes de changement d’horaire et régularisations (avec le support et consultation ADV/RH)\nDéclaration\n1\n2\n\n\nNouvelles\nfonctionnalités dans Chronotime V2 (faites dans le CRA35 avant)\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nEn tant que manager hiérarchique, j’approuve/refuse les frais engagés sur mon périmètre de responsabilité"
+  },
+  {
+    "chunk_id": "doc_191",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 6",
+    "text": "02\nAccéder à Chronotime et afficher votre agenda\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_192",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 7",
+    "text": "Accéder à Chronotime\nVous pouvez accéder à Chronotime via l’intranet, depuis la rubrique CRA, pas besoin d’identifiants\nChaque collaborateur a son espace dédié dans l’outil. \nLa page d’accueil/Mon compte, vous donne une vue globale de votre actualité\nAccueil\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_193",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 8",
+    "text": "Votre agenda Chronotime\nLa vue agenda vous donne une vue exhaustive et en couleur sur les  : \nJours sans activité (vides)\nJours d’activité déclarés\nJours d’absences\nVue agenda\nNous vous recommandons d’afficher la VUE MENSUELLE pour ne pas oublier d’imputer des jours\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_194",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 9",
+    "text": "Votre agenda Chronotime\nLa colonne de droite vous donne la possibilité de :\n\nCréer des demandes d’absences, des activités, des astreintes, des compensations borloo, des régularisations et télétravail\nConsulter des informations sur votre affectation \nConsulter le solde de vos congés\nConsulter votre situation cad le nombre de jours de congés restants à une date précise\nConsulter les éléments à venir\nConsulter les notifications des anomalies\nVue agenda\n5\n4\n3\n1\n2\n6\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_195",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 10",
+    "text": "03\nSaisir votre activité hebdomadaire\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_196",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 11",
+    "text": "Règles de saisie\nChaque semaine\nLes activités de la semaine doivent être saisies et validées  dans Chronotime chaque vendredi\nLe collaborateur doit déclarer a minima toutes les journées du lundi au vendredi. \nEn fin de mois\nAfin de pouvoir réaliser la facturation mensuelle, toutes les activités doivent être  saisies / approuvées avant le dernier jour ouvré du mois\n6 jours ouvrés avant, pour  la saisie \n5 jours ouvrés avant,  pour l’approbation\nSaisie des activités\nQue se passe-t-il si je suis absent en fin de mois ?\nEn cas d’absence en fin de mois, vous pouvez compléter votre Chronotime avant votre départ. \nVous pouvez compléter votre activité jusqu’à 4 semaines à l’avance\nN’hésitez pas à afficher la vue mensuelle sur Chronotime pour revérifier vos saisies si nécessaire.\nCalendrier du fast-closing \u000bClôture mensuelle accélérée\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_197",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 12",
+    "text": "La saisie des activités dans Chronotime est utilisée pour:\nla gestion et le pilotage budgétaire des projets \nainsi que pour la facturation des clients. \ngestion du temps de travail\ninterface avec le logiciel de paie\nVous devez, maintenant, saisir dans Chronotime \nvos absences\nvos activités\nvos astreintes/heures supplémentaires\nvos compensations Borloo\nvos jours télétravaillés\nvos attestions de véhicule\nvos demandes de prise en charge de transport\nTransfert des informations\nLes activités seront saisies directement dans Chronotime. \n Si vous êtes affectés à un projet, le projet doit être créé d’abord dans SAP puis remonté dans Chronotime pour que vous puissiez saisir vos activités. \nEn fin de mois\nVos activités, jours télétravaillés et heures supplémentaires seront déjà dans chronotime.\n\nRÈGLE POUR LES ASTREINTES\n\nVous ne devez jamais saisir plus de 8h par jour d’astreinte.\n\nLa paie est plafonnée à un forfait de 8h par jour\n\nLe fait de renseigner plus de 8 heures, par exemple 24h, génère des erreurs dans les reportings d’activité.\nRègles de saisie\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_198",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 13",
+    "text": "Saisie des activités de la semaine 1/3\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSaisie des activités de la semaine\n\n\nA partir de la page d’accueil/Mon Compte.\nCliquez sur +/ACTIVITES ou sélectionnez  Agenda/Nouveau/Créer activités.\n\n\n\n\nOu\n1\n2\n2"
+  },
+  {
+    "chunk_id": "doc_199",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 14",
+    "text": "Saisie des activités de la semaine 2/3\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSélectionnez l’activité réalisée.\n\nLes activités réalisées correspondent aux activités des projets sur lesquelles vous êtes affecté par votre responsable de projet\nVia la loupe de recherche\nEn recherchant directement dans le champ de saisie. Chronotime vous proposera les projets dès la saisie des premières lettres\n\nInformez la période en sélectionnant à partir du calendrier.\n\nSélectionnez Unité ou Durée.\n\nInformez la unité en sélectionnant une des options de la lista ou saisissez la durée en heures.\n\nInformez l’origine en sélectionnant l’option Collaborateur (optionnel).\n\nAjoutez des informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes (optionnel).\n\nCliquez sur Enregistrer.\n3\n4\n5\n7\n8\n9\nSi vous travaillez le week-end ou un jour férié, vous devez saisir en DUREE.\n6"
+  },
+  {
+    "chunk_id": "doc_200",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 15",
+    "text": "Saisie des activités de la semaine 3/3\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nUne fois enregistré, l’Agenda se met à jour automatiquement. (vous pouvez aussi rafraîchir en haut à droite de la page      )\n\nL’activité passe en statut demandé et un « ? » s’affiche sur l’agenda tant qu’elle n’est pas validée. \n\nApprobation / Refus de votre responsable\nSi votre responsable valide, le « ? » disparaît. Vous ne serez pas notifié par email.\nSi votre responsable refuse, vous recevrez une notification par email  et l’activité refusée sera supprimée de votre agenda Chronotime"
+  },
+  {
+    "chunk_id": "doc_201",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 16",
+    "text": "Astreintes et interventions\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nLe prérequis pour la saisie des astreintes, comme pour d’autres activités niveau projet, c’est la création et affectation dans SAP. La création et affectation du collaborateur sera faite au niveau de l’activité. Pour l’astreinte et l’intervention.\n. Dans SAP, la nouveauté, c’est l’ajout de la nature de l’activité dans la Zone Utilisateurs que n’existait pas avant.  \nValeurs:\nEMPTY pour les activités normales\nASTREINTES pour les activités astreintes\nINTERV. pour les interventions astreintes\nIl faudra créer systématiquement une activité d’astreinte et une activité d’intervention."
+  },
+  {
+    "chunk_id": "doc_202",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 17",
+    "text": "Saisie des astreintes 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSaisie des astreintes\n\n\nA partir de la page d’accueil/Mon Compte.\n\nCliquez sur +/ASTREINTES ou sélectionnez  Agenda/Nouveau/Créer astreintes.\n\n\n\n\nOu\n1\n2\n2"
+  },
+  {
+    "chunk_id": "doc_203",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 18",
+    "text": "Saisie des astreintes 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSélectionnez l’astreinte prévue.\n\nRenseignez la date.\n\nRenseignez l’heure.\n\nSélectionnez l’origine (optionnel).\n\nAjoutez des informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes.\n\nCliquez sur Enregistrer.\n5\n3\n4\n5\n7\n9\n6\n8\n3"
+  },
+  {
+    "chunk_id": "doc_204",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 19",
+    "text": "Consultation des saisies des astreintes\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nConsultation des saisies des astreintes\n\n\nA partir de la page d’accueil/Mon Compte.\n\nCliquez sur Agenda.\n\nPositionnez la souris sur le jour a consulter et vous verrez les astreintes avec le statut « demandé ».\n\n\n\nOu\n1\n2"
+  },
+  {
+    "chunk_id": "doc_205",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 20",
+    "text": "Saisie des interventions 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSaisie des astreintes\n\n\nA partir de la page d’accueil/Mon Compte.\n\nCliquez sur +/ASTREINTES ou sélectionnez  Agenda/Nouveau/Créer astreintes.\n\n\n\n\nOu\n1\n2\n2"
+  },
+  {
+    "chunk_id": "doc_206",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 21",
+    "text": "Saisie des interventions 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nPar défaut, l’option Astreinte prévue est affichée. Cliquez sur la petite flèche bleue et sélectionnez l’astreinte réalisée.\n\nSélectionnez l’astreinte réalisée.\n\nRenseignez la date.\n\nRenseignez l’heure.\n\nSélectionnez l’origine (optionnel).\n\nAjoutez des informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes.\n\nCliquez sur Enregistrer.\n\n3\n4\n5\n6\n7\n8\n9\n4\nRemarque: La consultation peut être faite de la même manière des astreintes, à partir de l’agenda."
+  },
+  {
+    "chunk_id": "doc_207",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 22",
+    "text": "Saisie des compensation Borloo 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSaisie des compensations Borloo\n\n\nA partir de la page d’accueil/Mon Compte.\n\nCliquez sur +/COMPENSATION BORLOO ou sélectionnez  Agenda/Nouveau/Créer compensation borloo.\n\n\n\n\nOu\n1\n2\n2"
+  },
+  {
+    "chunk_id": "doc_208",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 23",
+    "text": "Saisie des compensations Borloo 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSélectionnez la compensation Borloo réalisée.\n\nRenseignez la date.\n\nRenseignez l’heure.\n\nSélectionnez l’origine (optionnel).\n\nAjoutez des informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes (optionnel).\n\nRenseignez le Lieu Départ/Arrivée.\n\nCliquez sur Enregistrer.\n9\n3\n3\n4\n5\n6\n7\n8"
+  },
+  {
+    "chunk_id": "doc_209",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 24",
+    "text": "Saisie de télétravail 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSaisie de télétravail\n\n\nA partir de la page d’accueil/Mon Compte.\n\nCliquez sur +/TELETRAVAIL ou sélectionnez  Agenda/Nouveau/Créer télétravail.\n\n\n\n\nOu\n1\n2\n2"
+  },
+  {
+    "chunk_id": "doc_210",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 25",
+    "text": "Saisie de télétravail 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nSélectionnez l’activité télétravail réalisée.\n\nRenseignez la date.\n\nRenseignez l’unité.\n\nSélectionnez l’origine (optionnel).\n\nAjoutez des informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes.\n\nCliquez sur Enregistrer.\n3\n3\n4\n5\n6\n7\n8\n9"
+  },
+  {
+    "chunk_id": "doc_211",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 26",
+    "text": "Projets et types d’heures\nVous ne visualisez dans Chronotime que les projets ou activités ADMIN auxquels vous avez été affectés.\nSi vous ne les visualisez pas, rapprochez-vous de votre CP ou de votre ADV \n\nVous pouvez être affecté à plusieurs activités d’un projet. \nDans ce cas, vous verrez une ligne pour chacune de ces tâches dans Chronotime : les imputations sont réalisées au niveau d’une activité de projet et non au niveau du projet global.\nEx : vous êtes affecté à la phase de Conception ET à la phase de Réalisation d’un projet. Vous verrez alors 2 lignes pour le même projet dans Chronotime. \u000bA noter : seuls les 28 premiers caractères du projet s’affichent\n\nIl existe 4 types d’activité différents dans le système\nS’il est prévu dans SAP qu’un collaborateur travaille en heures non ouvrées, il verra \u000bune ligne dans Chronotime pour les heures non ouvrées (Dimanche et jours fériés) et une autre ligne pour les heures normales.\n Idem pour les heures complémentaires réalisées entre 21h et 6h\n\n\n\nJe dois travailler le dimanche et ne vois pas de ligne correspondante dans Chronotime\nRapprochez vous de votre chef de projet ou de son ADV\nHeures normales\nHeures non ouvrées\nHeures complémentaires\nAstreintes (8h par jour max.)\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_212",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 27",
+    "text": "04\nDemandes et suivi \u000bde vos absences\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_213",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 28",
+    "text": "Saisir une demande d’absence 1/3\nDepuis la colonne\u000bde droite de l’agenda\nDepuis la page \u000b« Mon compte »\nDepuis la page \u000bGérer Absences & Evénements\n\n\n\n\n\nVous avez plusieurs façons d’accéder et de faire une demande d’absence :\n©2025 -  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_214",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 29",
+    "text": "Saisir une demande d’absence 2/3\nSélectionnez le motif\n\n\n\nSélectionnez la période et l’unité de temps afférente\n\n\nCliquez sur Enregistrer\nMotifs d’absence\nCalendrier\nUnité de temps\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_215",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 30",
+    "text": "Saisir une demande d’absence 3/3\nSi votre manager valide : le « ? » disparaît. Vous serez notifié par email.\nSi votre manager refuse : vous recevrez un email de refus et le jour refusé sera supprimé de votre agenda Chronotime.\n\nL’agenda se met à jour automatiquement\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_216",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 31",
+    "text": "Consulter votre solde de congés\nIl existe plusieurs façons de consulter le solde de vos congés\nCompteur de vos demandes d’absence\n2. Depuis la colonne de droite\u000b de l’agenda\n1. Depuis la page « Gérer », Absences & Evénements\n\nSur cette page vous pouvez aussi voir le statut de vos demandes\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_217",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 32",
+    "text": "05\nReporting\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_218",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 33",
+    "text": "Lancement et suivi des états\nACCEDER ET LANCER\nPour accéder aux reports, cliquez sur l’icone imprimante en haut à droite de l’écran\n\n\n\nCliquez sur Lancement d’un état\nChoisissez le libellé Mon Compte (COLLAB)\n\n\n\n\n\nComplétez le champ Libelle avec un mot-clé pertinent ou consultez la liste des reports disponibles. Puis cliquez sur Appliquer\n1. Lancement des états\nEcran de choix du report\nCliquer sur \nImprimer pour générer un fichier .pdf \nou \nExporter pour générer un fichier .xls\n1\n2\n3\n4\n5\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_219",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 34",
+    "text": "Lancement et suivi des états\nACCEDER ET METTRE A JOUR\nPour mettre à jour les reports que vous avez préalablement créés, cliquez sur l’icone imprimante en haut à droite de l’écran.\n\n\n\n\nCliquez sur Suivi des états puis sur  Rafraichir (les reports sont mis à jour)\nCliquez sur l’icône du ficher dans la colonne Résultat pour ouvrir le fichier du report que vous avez généré.\n2. Suivi des états\n1\n2\n2\n3\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_220",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 35",
+    "text": "06\nAutres Evènements\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_221",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 36",
+    "text": "Attestation de Véhicule 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nDéclaration d’attestation de véhicule\n\nDéclaration d’attestation véhicule\n\n\nA partir de la page d’accueil/Mon Compte.\n\nDans Autre événement, cliquez sur +/ATTESTATION DE VEHICULE.\n1\n2"
+  },
+  {
+    "chunk_id": "doc_222",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 37",
+    "text": "Attestation de Véhicule 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nDéclaration d’attestation de véhicule\nRenseignez la date de création de l’attestation (Vous pouvez saisir ou sélectionnez à partir du calendrier).\n\nRenseignez les informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes (optionnel).\n\nRenseignez la date de début d’attestation.\n\nRenseignez la date de fin d’attestation.\n\nRenseignez la distance Km domicile-travail.\n\nCliquez sur Enregistrer.\n\n\nLe collaborateur doit fournir une attestation pour l'utilisation de son véhicule, accompagnée d'une photocopie de sa carte grise.\nLa demande doit être validée par le manageur ainsi que par le gestionnaire de paie \nSi la demande n'est pas validée par le service paie, le collaborateur devra refaire sa demande pour le mois en cours.\n3\n4\n5\n6\n7\n8\n9"
+  },
+  {
+    "chunk_id": "doc_223",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 38",
+    "text": "Client Principal\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nDéclaration du Client Principal\n\nDéclaration du Client Principal\n\nA partir de la page d’accueil/Mon Compte.\n\nDans Autre événement, cliquez sur +/CLIENT PRINCIPAL.\n1\n2"
+  },
+  {
+    "chunk_id": "doc_224",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 39",
+    "text": "Client Principal 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nDéclaration du client principal\nRenseignez la date de création du client principal(Vous pouvez saisir ou sélectionnez à partir du calendrier).\n\nRenseignez les informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes (optionnel).\n\nRenseignez le Nom du client.\n\nRenseignez le Lieu  de travail.\n\nCliquez sur Enregistrer.\n\nLors de la première saisie d'activité ou d'absence, si aucun client principal n'est renseigné pour le mois en cours, une anomalie non bloquante sera générée avec le message \"Aucun client principal trouvé. Vous devez renseigner votre client principal en date du [premier jour ouvré du mois] . \"\nLe mois suivant, une règle serveur créera automatiquement l'événement générique \"Client principal\" en reprenant les informations précédemment saisies. Cet événement sera généré le premier jour ouvré du mois.\nUne anomalie persistante à la saisie sera générée une fois par mois pour rappeler au collaborateur de vérifier les informations générées automatiquement. Cette anomalie apparaîtra lors de la première saisie d'une activité ou d'une absence chaque mois.\n3\n4\n5\n6\n7\n8"
+  },
+  {
+    "chunk_id": "doc_225",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 40",
+    "text": "Prise en Charge de Transport 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nDemande de Prise en Charge de Transport\n\nDemande de Prise en Charge de Transport\n\nA partir de la page d’accueil/Mon Compte.\n\nDans Autre événement, cliquez sur +/PRISE EN CHARGE TRANSPORT.\n1\n2"
+  },
+  {
+    "chunk_id": "doc_226",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 41",
+    "text": "Prise en Charge de Transport 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nDemande de prise en charge de transport\nRenseignez la date de création de la demande (Vous pouvez saisir ou sélectionnez à partir du calendrier).\n\nRenseignez les informations complémentaires (optionnel).\n\nAjoutez des Pièces jointes (optionnel).\n\nSélectionnez le type d’abonnement.\n\nRenseignez la date de début d’abonnement.\n\nRenseignez la date de fin d’abonnement.\n\nRenseignez le montant d’abonnement.\n\nRenseignez le montant domicile-agence.\n\nCliquez sur Enregistrer.\n\n\nLe manager doit approuver la demande initiale.\nLe gestionnaire de paie doit valider la demande pour que celle-ci soit prise en compte dans le traitement de la paie.\nSi la demande n'est pas validée par le service paie, le collaborateur devra refaire sa demande pour le mois en cours .\n3\n4\n5\n6\n7\n8\n9"
+  },
+  {
+    "chunk_id": "doc_227",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 42",
+    "text": "07\nMes régularisations\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_228",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 43",
+    "text": "Mes régularisations 1/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nConsultation\nConsultation et création de régularisation\n\nA partir de la page d’accueil/Mon Compte.\n\nDans Régularisation, cliquez sur VOIR MES REGULARISATIONS.\n1\n2"
+  },
+  {
+    "chunk_id": "doc_229",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 44",
+    "text": "Mes régularisations 2/2\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs\nCréation\nCliquez sur Créer.\n\nSélectionnez le Motif.\n\nRenseignez le période.\n\nRenseignez la valeur selon le motif.\n\nRenseignez l’origine (optionnel).\n\nAjouter des commentaires (optionnel)\n\nRenseignez l’ID horaire demandé. \n\nRenseignez l’horaire précédent (optionnel).\n\nCliquez sur Enregistrer.\n3\n4\n5\n6\n7\n8\n9\nLes étapes 9 et 10 sont exclusives de la demande de  changement d’horaire.\nLe étape 8 ne fait pas partie de la demande de changement d’horaire.\n4\n5\n6\n7"
+  },
+  {
+    "chunk_id": "doc_230",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 45",
+    "text": "08\nSatisfaction\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_231",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 46",
+    "text": "Formulaire de satisfaction\n\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_232",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 47",
+    "text": "09\nSupport\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  },
+  {
+    "chunk_id": "doc_233",
+    "source_file": "S4inetum France_Guide utilisateur_ChronotimeV2_Collaborateur_2025 (1).pptx",
+    "location": "slide 48",
+    "text": "Et si j’ai besoin d’aide ?\nEn cas de question\nJe consulte ce guide utilisateur\nSi vous avez encore des questions, une rubrique Aide en ligne est accessible directement depuis l’outil.\n\n\n\nSi vous rencontrez une difficulté ou un incident, vous pouvez ouvrir un ticket sur Service Now \nSélectionnez la catégorie : Application métier\nSélectionnez la sous-catégorie : Chronotime\nSélectionnez la 2ème sous-catégorie souhaitée\n©2025 Inetum  |  internal |  S4INETUM FRANCE_Chronotime V2_Collaborateurs"
+  }
+]

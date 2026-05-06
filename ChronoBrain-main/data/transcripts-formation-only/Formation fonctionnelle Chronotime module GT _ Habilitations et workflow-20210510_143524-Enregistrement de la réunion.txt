@@ -1,0 +1,2128 @@
+[00:00 -> 00:11] Mais avant, c'est historique, pourquoi on pouvait poser des filtres sur les fonctionnalités à l'intérieur des groupes de fonctionnalités.
+[00:11 -> 00:16] C'est parce qu'on ne pouvait pas faire autrement à l'origine, on ne pouvait pas poser les filtres directement.
+[00:16 -> 00:23] Quand je constituais un profil, j'indiquais le rôle, mais il fallait que mes filtres, donc ça embarquait les fonctionnalités,
+[00:23 -> 00:28] mais il fallait que mes fonctionnalités soient filtrées au préalable à l'intérieur des groupes.
+[00:28 -> 00:37] Donc vous vous rendez compte, quand j'avais plusieurs centaines de familles, d'établissements, je ne sais quoi,
+[00:37 -> 00:44] avec des filtres apposés par établissements, j'étais obligé de démultiplier les groupes de fonctionnalités,
+[00:44 -> 00:52] pour pouvoir démultiplier les rôles et ensuite pouvoir faire les profils sur les périmètres volus,
+[00:52 -> 00:57] mais je ne pouvais pas poser les filtres directement sur les profils, donc c'était vraiment très très lourd.
+[00:57 -> 01:03] Mais maintenant, la précoce, c'est qu'on préfère poser les filtres directement sur la ligne du rôle.
+[01:03 -> 01:15] Donc on va voir que les rôles portent aussi la notion de profil de workflow, c'est-à-dire quelles casquettes j'ai au sens du workflow
+[01:15 -> 01:19] quand j'applique un rôle d'habitation.
+[01:19 -> 01:26] Les associations des événements au circuit et puis qu'elles sont les valeurs d'une population de collaborateur.
+[01:26 -> 01:30] Et alors on verra ensuite comment on active le workflow, comment on historique,
+[01:30 -> 01:35] qu'est-ce que la processaire pour l'historisation de l'événement,
+[01:35 -> 01:38] l'historisation des révisions de circuit, etc.
+[01:42 -> 01:48] Alors, au niveau du workflow, on va se poser la question
+[01:49 -> 01:53] comment on met en oeuvre les paramétrages pour répondre aux questions.
+[01:53 -> 01:58] Par type d'événement et éventuellement par code d'événement, on entend par type d'événement,
+[01:58 -> 02:04] absence, régularisation, activité, batchage, pré-emprunt, etc.
+[02:04 -> 02:06] si les modules sont en place.
+[02:06 -> 02:10] Et dire ça c'est le type d'événement, mais éventuellement,
+[02:10 -> 02:18] toutes les motifs d'absence ne vont pas suivre le même circuit.
+[02:18 -> 02:22] Peut-être que pour certaines personnes, certains motifs doivent suivre
+[02:22 -> 02:25] un seul niveau de validation par le manager par exemple.
+[02:25 -> 02:29] Et puis peut-être qu'il y a d'autres demandes, d'autres motifs d'absence
+[02:29 -> 02:34] qui doivent être validés par le manager et un responsable de niveau 2
+[02:34 -> 02:38] ou par une cellule de validation en particulier chez les clients.
+[02:38 -> 02:43] On peut avoir tous les besoins possibles.
+[02:43 -> 02:47] Donc c'est déjà par type d'événement et éventuellement par code d'événement
+[02:47 -> 02:49] quel circuit de validation doit être suivi.
+[02:49 -> 02:54] Et ensuite par profil utilisateur via son zéro, donc ses actions autorisées
+[02:54 -> 03:00] quel niveau de validation ce profil utilisateur a dans le circuit appliqué.
+[03:00 -> 03:04] Donc on ne va pas aller jusqu'à la réalisation de circuit.
+[03:04 -> 03:07] Je voulais montrer, mais on n'ira pas jusqu'à la création de circuit.
+[03:07 -> 03:12] Ça fait l'objet d'une formation d'experts.
+[03:12 -> 03:18] Alors donc les habilitations permettent de définir
+[03:18 -> 03:21] ce que chaque utilisateur a le droit de faire ou non
+[03:21 -> 03:25] en termes de fonctionnalité, en termes de navigation dans les écrans d'applications
+[03:25 -> 03:30] en termes de ressources des données vues et des ressources données gérées.
+[03:30 -> 03:33] Les ressources ce sont les agents ou les collaborateurs
+[03:33 -> 03:38] les données ce sont les absences, les batchages, les horaires etc.
+[03:38 -> 03:42] Donc on décrit tous ces éléments dans les profils utilisateurs
+[03:42 -> 03:47] et on a vu que chacun des profils était appuyé sur un ou plusieurs rouges
+[03:47 -> 03:54] auxquels on applique des périmètres, collaborateurs ou utilisateurs et des filtres
+[03:54 -> 03:57] et on peut effectuer plusieurs profils à un utilisateur.
+[03:57 -> 04:01] Alors déjà les types d'événement qui sont pris en charge par le workflow
+[04:01 -> 04:04] ce sont tous ceux-là.
+[04:04 -> 04:09] Donc les absences, les activités unitaires, les événements génériques,
+[04:09 -> 04:11] les autres événements, ce qu'on appelle autres événements,
+[04:11 -> 04:15] les batchages, les prêts, les récats d'activité quand on a le module des activités,
+[04:15 -> 04:17] les régularisations et les souhaits d'absence.
+[04:17 -> 04:21] En GT on s'intéresse, avec le module de base on s'intéresse aux absences,
+[04:21 -> 04:25] aux autres événements, au batchage, aux régularisations
+[04:25 -> 04:29] et aux souhaits si on décide d'activer la gestion des souhaits.
+[04:29 -> 04:32] Je ne vous en ai pas parlé de la gestion des souhaits.
+[04:32 -> 04:34] Très peu.
+[04:34 -> 04:41] Alors remarque, on a précisé dans le support qu'il n'est pas prévu de soumettre
+[04:41 -> 04:46] la saisie d'horaire à un circuit de validation, la saisie des auraires exceptionnelles.
+[04:50 -> 04:57] Parce que la saisie d'horaire n'est pas possible par un collaborateur.
+[04:57 -> 05:02] Un collaborateur ne peut pas faire une demande de « demain je veux travailler de tel heure à tel heure ».
+[05:02 -> 05:03] Voilà.
+[05:03 -> 05:05] Ça a été demandé par des clients.
+[05:05 -> 05:07] Il y a des clients qui auraient besoin de ça.
+[05:07 -> 05:11] Et ça fait partie des évolutions à venir dans les roadmaps futurs.
+[05:11 -> 05:13] Mais pour l'instant, ce n'est pas fait.
+[05:13 -> 05:19] Donc la saisie des auraires exceptionnelles, c'est vraiment une fonctionnalité responsable.
+[05:21 -> 05:23] Et elle n'est pas soumise à voir.
+[05:24 -> 05:31] Les actions qui vont être impactées par le workflow, c'est la gestion des demandes.
+[05:31 -> 05:37] Donc quand on parle de gestion, c'est ces ajouts, modifications, suppression d'une demande,
+[05:37 -> 05:41] d'absence ou souhait, de régule, de batchage, d'activité.
+[05:41 -> 05:43] Bref, partie des événements.
+[05:45 -> 05:50] Là, on parle d'actions, de gérer mes propres demandes, moi en tant que collaborateur.
+[05:51 -> 05:55] Il y a les fonctionnalités de gestion des événements pour les collaborateurs.
+[05:55 -> 05:59] Quand je suis un gestionnaire, je peux modifier, ajouter, supprimer des absences,
+[05:59 -> 06:04] des souhaits, des régules, des batchages sur les collaborateurs que je gère.
+[06:05 -> 06:08] Et l'action de validation.
+[06:08 -> 06:10] Là, j'ai un collaborateur qui me fait une demande.
+[06:10 -> 06:13] Si son manager, c'est moi qui doit valider sa demande,
+[06:13 -> 06:15] j'ai une action qui dit « je valide ».
+[06:16 -> 06:19] Valider, ça veut dire accepter ou refuser.
+[06:20 -> 06:26] Alors, les acteurs.
+[06:31 -> 06:39] Donc là, on va s'attacher au rôle et donc au profil de workflow qui sont portés dans les rôles.
+[06:39 -> 06:41] Alors je vous le montre.
+[06:42 -> 06:51] Ici, quand je suis sur le profil, sur un profil de gestionnaire d'équipe,
+[06:51 -> 06:54] par exemple, ce profil de gestionnaire d'équipe,
+[06:54 -> 06:58] il est appuyé sur un rôle qu'on a appelé un rôle de gestionnaire d'équipe.
+[06:58 -> 07:00] Et quand je clique sur le rôle gestionnaire d'équipe,
+[07:01 -> 07:04] j'ai un premier volet qu'on a aperçu.
+[07:04 -> 07:07] Là, on a vu qu'on embarque des groupes de fonctionnalité.
+[07:07 -> 07:09] On a une liste de groupes de fonctionnalité.
+[07:09 -> 07:15] Mais j'ai un deuxième volet qui m'indique les fonctionnalités
+[07:15 -> 07:18] qui sont embarquées parmi celles qui sont dans ces groupes,
+[07:18 -> 07:22] qui sont concernées par le workflow potentiellement.
+[07:22 -> 07:25] Donc cet écran, ce volet,
+[07:25 -> 07:30] il reprend pour ce rôle de gestionnaire d'équipe,
+[07:30 -> 07:32] dans ce rôle de gestionnaire d'équipe.
+[07:33 -> 07:38] Là, dans le groupe de fonctionnalité gérer les événements,
+[07:38 -> 07:40] tout ça,
+[07:40 -> 07:44] j'ai les fonctionnalités gérer les souhaits d'absence,
+[07:44 -> 07:46] gérer les absences décollables, les activités prévues,
+[07:46 -> 07:48] les récapes, les régules, les absences, etc.
+[07:48 -> 07:50] Donc j'ai toutes ces fonctionnalités
+[07:50 -> 07:52] qui sont incluses dans ce groupe de fonctionnalités
+[07:52 -> 07:54] gérer les événements décollables.
+[07:54 -> 07:56] J'ai toutes ces fonctionnalités qui sont là.
+[07:56 -> 08:00] Et quand je double clique sur une ligne,
+[08:00 -> 08:04] je ne peux pas changer le groupe de fonctionnalité et la fonctionnalité.
+[08:04 -> 08:07] Ça, c'est quelque chose qui est induit
+[08:07 -> 08:10] par mon premier volet des caractéristiques principales.
+[08:10 -> 08:12] C'est parce que j'ai ce groupe de fonctionnalité
+[08:12 -> 08:14] que j'ai la fonctionnalité.
+[08:14 -> 08:16] Je ne vais pas prendre gérer les prêts,
+[08:16 -> 08:19] ça ne m'intéresse pas, je vais gérer les événements génériques par exemple.
+[08:19 -> 08:21] Je ne peux rien faire là-dessus.
+[08:21 -> 08:23] Par contre, ce que je peux faire,
+[08:23 -> 08:26] c'est changer le profil de workflow.
+[08:26 -> 08:28] Alors là, par défaut sur les modèles,
+[08:28 -> 08:30] on y met le profil de workflow REST.
+[08:30 -> 08:32] Vous voyez que j'ai une liste de profils de workflow.
+[08:32 -> 08:34] Ce ne sont pas des profils d'utilisateur.
+[08:34 -> 08:37] On distingue bien la notion de profil de workflow.
+[08:37 -> 08:41] Et là, je dis que c'est le responsable d'équipe.
+[08:41 -> 08:43] C'est un profil de workflow responsable d'équipe.
+[08:49 -> 08:51] Pourquoi je ne peux pas enregistrer ?
+[08:52 -> 08:55] Pourquoi il ne voulait pas que j'enregistre ?
+[08:55 -> 08:57] Cette liste...
+[08:57 -> 09:00] Priscine, je pense que ce n'est pas parce que le responsable
+[09:00 -> 09:02] était déjà sélectionné à la base.
+[09:02 -> 09:06] Il doit faire l'enregistrement que si tu changes le profil.
+[09:12 -> 09:14] Oui, mais c'est vrai.
+[09:14 -> 09:16] Bon.
+[09:16 -> 09:18] C'est bizarre, mais bon, c'est...
+[09:18 -> 09:20] Voilà.
+[09:20 -> 09:22] Je vais le laisser en responsable d'équipe.
+[09:22 -> 09:24] Au passage, je vous montre
+[09:24 -> 09:26] quand je suis là,
+[09:26 -> 09:30] quand on a fait le CL Administrateur Général complet,
+[09:30 -> 09:32] si je clique sur ce rôle...
+[09:34 -> 09:36] Alors, je pense que j'ai du travailler
+[09:36 -> 09:39] par duplication du super-admin,
+[09:39 -> 09:41] par exemple,
+[09:41 -> 09:43] par exemple,
+[09:43 -> 09:47] par duplication du super-admin GFI,
+[09:47 -> 09:50] du Administrateur Général GFI complet.
+[09:50 -> 09:53] Et c'est pour ça que j'ai des profils de workflow
+[09:53 -> 09:55] ici et je vois qu'il m'en manque.
+[09:57 -> 09:59] Bon, ça, c'est parce que ce n'est pas prévu.
+[09:59 -> 10:01] Sur l'installe, elles ont dû être oubliées
+[10:01 -> 10:06] dans le modèle général.
+[10:06 -> 10:09] Alors, on les a mis à jour, mais ce n'est pas...
+[10:09 -> 10:11] Je passe.
+[10:14 -> 10:17] Ces profils de workflow qu'on voit là.
+[10:17 -> 10:19] Alors, le workflow, ça se paramètre
+[10:19 -> 10:22] d'un administration et vous avez là ici
+[10:22 -> 10:25] un sous-menu qui s'appelle workflow.
+[10:27 -> 10:29] Avec une première entrée
+[10:29 -> 10:32] qui sont la définition des profils de workflow.
+[10:32 -> 10:34] Par défaut,
+[10:34 -> 10:36] en standard, on installe ça.
+[10:36 -> 10:39] On installe ces profils de workflow.
+[10:39 -> 10:42] Rien ne m'empêche d'en créer un autre.
+[10:44 -> 10:47] Je ne sais pas si c'est haut, mais n'importe quoi.
+[10:47 -> 10:50] Bon, ça ne va pas tout casser.
+[10:50 -> 10:52] Simplement, ce profil de workflow,
+[10:52 -> 10:55] il existe dans la table de base,
+[10:55 -> 10:58] mais il n'est pas utilisé
+[10:58 -> 11:00] dans les rôles.
+[11:00 -> 11:02] Tant qu'il n'est pas utilisé quelque part,
+[11:02 -> 11:04] c'est une boîte vide.
+[11:04 -> 11:06] C'est une étiquette vide.
+[11:06 -> 11:08] En tout cas, ça se met à jour ici.
+[11:09 -> 11:11] Si je reviens
+[11:11 -> 11:14] sur le support pour rester dans la notion du support,
+[11:14 -> 11:16] voilà.
+[11:18 -> 11:20] Ce qu'on voit aussi,
+[11:20 -> 11:22] c'est que, toujours dans le menu
+[11:22 -> 11:24] des workflows, ici, j'ai les profils
+[11:24 -> 11:27] et d'emblée, j'arrive sur les circuits.
+[11:29 -> 11:32] Alors, on va regarder
+[11:32 -> 11:35] comment est fait un circuit
+[11:35 -> 11:38] pour comprendre
+[11:38 -> 11:41] où interviennent les profils de workflow.
+[11:42 -> 11:45] Donc, si je prends celui-là,
+[11:45 -> 11:47] ce circuit-là, il s'appelle,
+[11:47 -> 11:50] c'est le V1N-Notif,
+[11:50 -> 11:53] validation par exemple dans sa directe, plus mail
+[11:53 -> 11:55] au moment de la demande
+[11:55 -> 11:57] et de la validation.
+[11:57 -> 11:59] Alors,
+[11:59 -> 12:01] ici, j'ai, sur cet écran,
+[12:01 -> 12:03] l'identifiant,
+[12:04 -> 12:07] et ensuite, j'ai un premier panneau
+[12:07 -> 12:10] qui me dit quelles sont les profils,
+[12:10 -> 12:12] et là, on entend profils de workflow,
+[12:12 -> 12:14] pouvant utiliser le circuit
+[12:14 -> 12:16] par ordre de priorité.
+[12:16 -> 12:19] Donc là, on a la liste des profils de workflow
+[12:19 -> 12:22] et on a les profils qui sont autorisés
+[12:22 -> 12:24] à rentrer dans ce circuit.
+[12:26 -> 12:29] Si j'essaie de rentrer par un profil
+[12:29 -> 12:31] RESP2,
+[12:31 -> 12:33] dans la liste,
+[12:33 -> 12:35] ou CCO,
+[12:35 -> 12:37] si j'essaie de rentrer par CCO
+[12:37 -> 12:39] ou par RESP2,
+[12:39 -> 12:42] il va me donner un message
+[12:42 -> 12:44] comme pourquoi je ne suis pas habilitée
+[12:44 -> 12:46] à utiliser le circuit.
+[12:46 -> 12:48] Au moment où je vais pouvoir saisir,
+[12:48 -> 12:50] modifier une demande, valider une demande,
+[12:50 -> 12:52] voilà.
+[12:52 -> 12:55] Donc déjà, d'emblay qui fait un premier contrôle,
+[12:55 -> 12:57] il regarde,
+[12:57 -> 12:59] je suis un utilisateur,
+[12:59 -> 13:02] je me connecte avec un profil appuyé sur un rôle.
+[13:02 -> 13:04] Je veux faire une action
+[13:04 -> 13:06] de gestion d'absence.
+[13:06 -> 13:08] Il va d'abord regarder
+[13:08 -> 13:10] quel est le rôle
+[13:10 -> 13:13] et le profil de workflow
+[13:13 -> 13:16] qui est paramétré sur le rôle
+[13:16 -> 13:18] qui est appliqué.
+[13:20 -> 13:22] Et ce profil de workflow,
+[13:22 -> 13:24] il va vérifier
+[13:24 -> 13:26] qu'il fait partie de la liste
+[13:26 -> 13:28] de ce circuit,
+[13:28 -> 13:30] si je dois appeler le circuit.
+[13:32 -> 13:34] Et puis ensuite,
+[13:37 -> 13:39] dans le circuit lui-même,
+[13:39 -> 13:41] là on a un point de début,
+[13:41 -> 13:43] un point d'arrivée.
+[13:45 -> 13:47] Ici,
+[13:47 -> 13:49] on a des transitions
+[13:49 -> 13:51] et sur cette branche par exemple,
+[13:51 -> 13:53] vous voyez que je crange sur vol,
+[13:53 -> 13:55] je ne sais pas si vous le voyez assez clair,
+[13:57 -> 13:59] peut-être faire ça,
+[13:59 -> 14:01] si c'est mieux.
+[14:01 -> 14:03] Là, quand je survole,
+[14:03 -> 14:05] c'est mieux là.
+[14:05 -> 14:07] Voilà.
+[14:07 -> 14:09] Là,
+[14:09 -> 14:11] ma condition de transition,
+[14:11 -> 14:13] je ne prends cette branche
+[14:13 -> 14:15] que si mon profil demandeur,
+[14:15 -> 14:17] mon profil à l'origine de la saisie,
+[14:17 -> 14:19] c'est un profil collable.
+[14:19 -> 14:21] Donc collable,
+[14:21 -> 14:23] généralement,
+[14:23 -> 14:25] on essaie
+[14:25 -> 14:27] sur le profil et le rôle collaborateur,
+[14:27 -> 14:29] ou non,
+[14:29 -> 14:31] collaborateur, celui qui ouvre droit aux actions de bon compte.
+[14:31 -> 14:33] Donc si le profil
+[14:33 -> 14:35] qui est à l'origine de la demande,
+[14:35 -> 14:37] c'est un profil collable, je passe dans cette branche.
+[14:37 -> 14:39] J'envoie un mail
+[14:39 -> 14:41] au responsable.
+[14:41 -> 14:43] Ensuite,
+[14:43 -> 14:45] j'ai eu une autre transition
+[14:45 -> 14:47] qui est neutre,
+[14:47 -> 14:49] je n'ai pas de test particulier,
+[14:49 -> 14:51] et je passe en attente de validation
+[14:51 -> 14:53] avec un profil
+[14:53 -> 14:55] de workflow attendu qui est RESP,
+[14:55 -> 14:57] responsable d'équipe.
+[14:57 -> 14:59] Pour sortir
+[14:59 -> 15:01] de cette boîte de validation,
+[15:01 -> 15:03] là, je reste en attente.
+[15:03 -> 15:05] Donc un
+[15:05 -> 15:07] utilisateur avec un profil
+[15:07 -> 15:09] de workflow RESP,
+[15:09 -> 15:11] donc un rôle de valideur
+[15:11 -> 15:13] avec un profil de workflow RESP,
+[15:13 -> 15:15] ne valide pas ma demande
+[15:15 -> 15:17] ou un refus,
+[15:17 -> 15:19] je ne sors pas de la boîte d'attente.
+[15:19 -> 15:21] Et quand je sors de la boîte d'attente,
+[15:21 -> 15:23] que ce soit une validation ou un refus,
+[15:23 -> 15:25] j'envoie un mail au collaborateur
+[15:25 -> 15:27] et j'ai terminé.
+[15:27 -> 15:29] Donc si c'est une validation,
+[15:29 -> 15:31] mon demande est acceptée
+[15:31 -> 15:33] et mon événement, si c'est une absence par exemple,
+[15:33 -> 15:35] mon absence est
+[15:35 -> 15:37] valide, créé,
+[15:37 -> 15:39] définitive.
+[15:39 -> 15:41] Si j'ai refusé, j'ai pas d'absence
+[15:41 -> 15:43] et créé, créé
+[15:43 -> 15:45] ma demande est refusée.
+[15:45 -> 15:47] De
+[15:47 -> 15:49] cette, du point de départ, j'ai aussi une branche
+[15:49 -> 15:51] qui part et là, ma transition
+[15:51 -> 15:53] j'écris
+[15:53 -> 15:55] si le profil qui est à l'origine de la demande
+[15:55 -> 15:57] profil de workflow, toujours,
+[15:57 -> 15:59] n'est pas collab. Donc ça veut dire
+[15:59 -> 16:01] que je suis en train de faire une saisie par le responsable.
+[16:01 -> 16:03] À ce moment-là,
+[16:03 -> 16:05] je notifie, j'envoie un mail au collaborateur
+[16:05 -> 16:07] et puis
+[16:07 -> 16:09] ma saisie, elle est directement validée.
+[16:09 -> 16:11] Je ne passe pas par une boîte d'attente.
+[16:12 -> 16:14] C'est enregistré définitivement.
+[16:14 -> 16:16] Et quand je survole les transitions,
+[16:16 -> 16:18] si je double-clique
+[16:18 -> 16:20] sur la transition, c'est là que je mets
+[16:20 -> 16:22] les termes de ma condition.
+[16:24 -> 16:26] Je mets un libélé
+[16:26 -> 16:28] et puis je mets les termes de ma, les conditions de
+[16:28 -> 16:30] transition. Alors je vous donnerai
+[16:30 -> 16:32] pour ceux qui voudront
+[16:32 -> 16:34] faire la formation expert sur les circuits
+[16:34 -> 16:36] de workflow, je vous donnerai
+[16:36 -> 16:38] les documents qui permettent
+[16:39 -> 16:41] de savoir
+[16:41 -> 16:43] quelles sont les variables
+[16:43 -> 16:45] qui sont disponibles,
+[16:45 -> 16:47] l'écriture des conditions de transition, etc.
+[16:47 -> 16:49] C'est assez proche de ce qu'on trouve
+[16:49 -> 16:51] dans les règles de calcul. Le égal égal
+[16:51 -> 16:53] pour tester l'égalité,
+[16:53 -> 16:55] le point d'exclamation égal
+[16:55 -> 16:57] pour tester l'inégalité,
+[16:57 -> 16:59] le différent d'eux.
+[17:02 -> 17:04] Donc voilà.
+[17:04 -> 17:06] Estine, une question.
+[17:06 -> 17:08] Est-ce que la notification
+[17:08 -> 17:10] est instantanée
+[17:10 -> 17:12] vers la responsable ?
+[17:12 -> 17:14] C'est comme on veut
+[17:14 -> 17:16] par défaut, non ?
+[17:16 -> 17:18] C'est quoi exactement le paramètre
+[17:18 -> 17:20] pour toucher, pour que
+[17:20 -> 17:22] la notification soit instantanée ?
+[17:22 -> 17:24] Et bien c'est là que c'est plus compliqué
+[17:24 -> 17:26] parce que là, on ne peut pas y aller
+[17:26 -> 17:28] par l'HM et il faut faire des modifications
+[17:28 -> 17:30] en base. Et ça fait partie
+[17:30 -> 17:32] de la formation expert. C'est-à-dire
+[17:32 -> 17:34] que je vous montre là dans les tables
+[17:34 -> 17:36] d'agir pour justement
+[17:36 -> 17:38] changer ce type de choses.
+[17:38 -> 17:40] Donc par défaut
+[17:40 -> 17:42] au principe, c'est le soir.
+[17:42 -> 17:44] C'est ça, les notifications ?
+[17:44 -> 17:46] Oui.
+[17:46 -> 17:48] Après le...
+[17:48 -> 17:50] Mais ça peut changer.
+[17:50 -> 17:52] Si on a le temps, je te montre.
+[17:52 -> 17:54] D'accord.
+[17:54 -> 17:56] Merci.
+[17:58 -> 18:00] Si je vous montre
+[18:00 -> 18:02] quand même un tout petit détail.
+[18:02 -> 18:04] Vous voyez les conditions de transition.
+[18:04 -> 18:06] Une boîte de notifications,
+[18:06 -> 18:08] par exemple, la boîte de notifications.
+[18:08 -> 18:10] Si je double le clic sur la boîte de notifications,
+[18:10 -> 18:12] je vois que en fonction
+[18:12 -> 18:14] du type d'événement, parce que
+[18:14 -> 18:16] un circuit workflow peut traiter
+[18:16 -> 18:18] n'importe quel type d'événement.
+[18:18 -> 18:20] Si tous mes événements, par exemple,
+[18:20 -> 18:22] tous mes types d'événements sont toujours
+[18:22 -> 18:24] directement validés par le manager
+[18:24 -> 18:26] direct, et puis
+[18:28 -> 18:30] et tout, ou par
+[18:30 -> 18:32] éventuellement un plus d'eux, peu importe.
+[18:32 -> 18:34] Enfin bref, si tous les types d'événements suivent le même circuit
+[18:34 -> 18:36] en même processus
+[18:36 -> 18:38] de validation, ben c'est pas la peine
+[18:38 -> 18:40] de faire autant de circuits que de types d'événements.
+[18:40 -> 18:42] Un même circuit va pouvoir gérer
+[18:42 -> 18:44] les demandes d'absence, de régule,
+[18:44 -> 18:46] de batchage, etc.
+[18:46 -> 18:48] Donc c'est pour ça qu'on voit
+[18:48 -> 18:50] dans les caractéristiques
+[18:50 -> 18:52] les boîtes de notifications,
+[18:52 -> 18:54] les boîtes de génération des mails.
+[18:54 -> 18:56] On voit
+[18:56 -> 18:58] que pour les types d'événements
+[18:58 -> 19:00] c'est pour les types d'absence.
+[19:00 -> 19:02] Si mon acte fonctionnel
+[19:02 -> 19:04] c'est une demande de suppression
+[19:04 -> 19:06] qui est faite par le collaborateur,
+[19:06 -> 19:08] eh bien je vais envoyer
+[19:08 -> 19:10] un mail dont le modèle
+[19:10 -> 19:12] est demande de suppression
+[19:12 -> 19:14] d'une absence validée par le collaborateur.
+[19:18 -> 19:20] Et ce modèle de mail
+[19:20 -> 19:22] par défaut, alors ces modèles
+[19:22 -> 19:24] les actes fonctionnels
+[19:24 -> 19:26] ça, on peut pas changer
+[19:26 -> 19:28] les produits, les types d'événements
+[19:28 -> 19:30] on peut pas changer.
+[19:30 -> 19:32] Mais les modèles de notification
+[19:32 -> 19:34] c'est aussi, alors
+[19:34 -> 19:36] il est fortement préconisé
+[19:36 -> 19:38] si vous voulez modifier
+[19:38 -> 19:40] un mail
+[19:40 -> 19:42] de ne pas modifier directement
+[19:42 -> 19:44] le modèle du mail
+[19:44 -> 19:46] mais de créer un modèle de mail
+[19:46 -> 19:48] spécifique pour le client
+[19:48 -> 19:50] et de dire que
+[19:50 -> 19:52] finalement pour l'absence
+[19:52 -> 19:54] là, si je double clique
+[19:54 -> 19:56] je peux choisir
+[19:56 -> 19:58] un modèle de mail différent
+[19:58 -> 20:00] si je l'ai fait
+[20:00 -> 20:02] des modèles de mail spécifiques
+[20:02 -> 20:04] ils apparaîtraient dans cette liste et je pourrais choisir
+[20:04 -> 20:06] le modèle de mail que veut le client
+[20:10 -> 20:12] et c'est le modèle de mail
+[20:12 -> 20:14] qui porte
+[20:14 -> 20:16] l'information
+[20:16 -> 20:18] de quand il doit être envoyé
+[20:18 -> 20:20] s'il est envoyé en immédiat
+[20:20 -> 20:22] ou s'il est envoyé
+[20:22 -> 20:24] en différé
+[20:24 -> 20:26] parce que souvent les responsables ils veulent pas
+[20:26 -> 20:28] avoir les mails au fur et à mesure
+[20:28 -> 20:30] des demandes, ils veulent pas avoir toute la journée
+[20:30 -> 20:32] des mails qui arrivent, ils préfèrent avoir un mail
+[20:32 -> 20:34] récap en fin de journée ou en début de journée suivante
+[20:34 -> 20:36] de l'ensemble des demandes des collaborateurs
+[20:36 -> 20:38] qu'ils ont à valider
+[20:40 -> 20:42] donc par acte fonctionnel
+[20:42 -> 20:44] j'ai le modèle de mail associé
+[20:44 -> 20:46] et ça on fournit le modèle
+[20:46 -> 20:48] de mail standard
+[20:48 -> 20:50] modification soumise
+[20:50 -> 20:52] à validation du demande par le collaborateur
+[20:52 -> 20:54] ça c'est si
+[20:54 -> 20:56] un collaborateur modifie
+[20:56 -> 20:58] un événement validé
+[20:58 -> 21:00] et puis pose une nouvelle demande
+[21:00 -> 21:02] ça c'est la création d'une nouvelle demande
+[21:02 -> 21:04] je l'ai partie d'un événement donc j'ai des activités
+[21:04 -> 21:06] j'ai les badges
+[21:06 -> 21:08] j'ai les régules
+[21:08 -> 21:10] donc là je dis quel est le modèle
+[21:10 -> 21:12] de mail je veux
+[21:12 -> 21:14] envoyer
+[21:14 -> 21:16] et ici en bas de la popup
+[21:16 -> 21:18] je dis à qui je veux envoyer
+[21:18 -> 21:20] et dans le acquis
+[21:20 -> 21:22] je précise
+[21:22 -> 21:24] alors j'ai le choix
+[21:24 -> 21:26] de dire je veux envoyer au profil de workflow
+[21:26 -> 21:28] responsable d'équipe
+[21:28 -> 21:30] c'est logique parce qu'après je vais me mettre en attente
+[21:30 -> 21:32] d'un profil
+[21:32 -> 21:34] de workflow responsable d'équipe ailleurs
+[21:34 -> 21:36] donc c'est bien de lui envoyer un mail avant
+[21:36 -> 21:38] je pourrais très bien dire
+[21:38 -> 21:40] que j'envoie aussi un mail
+[21:40 -> 21:42] je vais pas modifier ça
+[21:42 -> 21:44] je peux mettre plusieurs destinataires
+[21:44 -> 21:46] je peux envoyer un mail
+[21:46 -> 21:48] au collaborateur qui est concerné
+[21:48 -> 21:50] par l'événement
+[21:50 -> 21:52] le collaborateur de l'événement
+[21:52 -> 21:54] je peux le mettre en copie
+[21:54 -> 21:56] pour qu'il ait une trace
+[21:56 -> 21:58] de la demande qu'il a faite
+[21:58 -> 22:00] même s'il l'aura dans l'appli
+[22:00 -> 22:02] et puis enfin s'il y a
+[22:02 -> 22:04] s'il y a une autre cellule
+[22:04 -> 22:06] le client il veut par exemple
+[22:06 -> 22:08] que la RH elle soit informée
+[22:08 -> 22:10] donc il y a peut-être qu'il veut que la RH
+[22:10 -> 22:12] qu'il ait un mail à la RH qui reçoit
+[22:12 -> 22:14] toutes les demandes
+[22:14 -> 22:16] je pourrais rajouter
+[22:16 -> 22:18] aussi
+[22:18 -> 22:20] comment dire
+[22:20 -> 22:22] une adresse mail carrément
+[22:22 -> 22:24] ou un utilisateur nommé
+[22:24 -> 22:26] là on mettrai le compte de l'utilisateur
+[22:30 -> 22:32] on met
+[22:32 -> 22:34] les destinataires du mail
+[22:36 -> 22:38] donc dans une boîte de notification
+[22:38 -> 22:40] on donne les modèles
+[22:40 -> 22:42] qui doivent être utilisés en fonction
+[22:42 -> 22:44] par l'événement et de l'acte fonctionnel
+[22:44 -> 22:46] et les destinataires
+[22:46 -> 22:48] des mails
+[22:50 -> 22:52] dans la boîte d'attente
+[22:52 -> 22:54] on met juste un libélé
+[22:54 -> 22:56] puis ensuite on dit
+[22:56 -> 22:58] à quel profil de workflow
+[22:58 -> 23:00] on attend
+[23:00 -> 23:02] pour valider
+[23:08 -> 23:10] je pense que ça n'a pas changé
+[23:10 -> 23:12] et puis là on notifie
+[23:12 -> 23:14] l'acceptation ou le refus
+[23:14 -> 23:16] là typiquement si je double clique là-dessus
+[23:16 -> 23:18] absence
+[23:18 -> 23:20] il m'a automatiquement généré les actes fonctionnels
+[23:20 -> 23:22] en cohérence avec l'endroit où il se trouve
+[23:22 -> 23:24] dans le circuit
+[23:24 -> 23:26] c'est lui qui me propose pour les absences
+[23:26 -> 23:28] quand vous acceptez
+[23:28 -> 23:30] la demande de suppression
+[23:30 -> 23:32] quand vous refusez la demande de suppression
+[23:32 -> 23:34] on propose des modèles différents
+[23:34 -> 23:36] validation d'une absence
+[23:36 -> 23:38] acceptation finale
+[23:38 -> 23:40] il sait que c'est une acceptation finale
+[23:40 -> 23:42] parce que
+[23:42 -> 23:44] il voit que derrière
+[23:44 -> 23:46] dans le circuit
+[23:46 -> 23:48] j'ai pas d'autres botes d'attente
+[23:48 -> 23:50] donc
+[23:50 -> 23:52] là j'ai terminé
+[23:54 -> 23:56] voilà donc
+[23:58 -> 24:00] si je prends
+[24:00 -> 24:02] ce circuit là
+[24:02 -> 24:04] ce circuit c'est
+[24:04 -> 24:06] une validation pas responsable direct
+[24:06 -> 24:08] puis par un
+[24:12 -> 24:14] comment dire
+[24:14 -> 24:16] par un responsable de niveau 2
+[24:16 -> 24:18] là
+[24:18 -> 24:20] les profils autorisés
+[24:20 -> 24:22] on autorise les profils
+[24:22 -> 24:24] de workflow admis
+[24:24 -> 24:26] RESP2
+[24:26 -> 24:28] RESP et collab
+[24:28 -> 24:30] vous notez que c'est toujours dans le sens
+[24:30 -> 24:32] décroissant de priorité
+[24:32 -> 24:34] c'est à dire qu'on met en premier
+[24:34 -> 24:36] le profil de workflow
+[24:36 -> 24:38] de plus haut niveau de validation
+[24:38 -> 24:40] l'administrateur on considère que quand il finit saisi
+[24:40 -> 24:42] il n'y a pas de validation derrière
+[24:42 -> 24:44] c'est directement validé
+[24:46 -> 24:48] ensuite on va mettre le RESP2
+[24:48 -> 24:50] le RESP2 il est de niveau
+[24:50 -> 24:52] supérieur au RESP
+[24:52 -> 24:54] pour un circuit de validation à 2 niveaux
+[24:54 -> 24:56] et le collab est
+[24:56 -> 24:58] au niveau le plus bas
+[24:58 -> 25:00] puisque à l'origine c'est lui qui va faire une demande
+[25:00 -> 25:02] il attendra
+[25:02 -> 25:04] une validation du premier niveau
+[25:04 -> 25:06] mais si je rentre
+[25:06 -> 25:08] avec un profil
+[25:08 -> 25:10] comme je peux avoir
+[25:10 -> 25:12] plusieurs profils utilisateurs
+[25:12 -> 25:14] et donc
+[25:14 -> 25:16] plusieurs rôles
+[25:16 -> 25:18] et donc si j'applique tout mes profils
+[25:18 -> 25:20] en même temps
+[25:20 -> 25:22] en début d'après-midi
+[25:22 -> 25:24] si j'applique
+[25:24 -> 25:26] tous mes profils à la fois
+[25:26 -> 25:28] tous mes rôles
+[25:28 -> 25:30] et donc tous mes profils de workflow
+[25:30 -> 25:32] peuvent être
+[25:32 -> 25:34] actifs
+[25:34 -> 25:36] en même temps
+[25:40 -> 25:42] quand je suis dans ma session
+[25:42 -> 25:44] quand je rentre
+[25:44 -> 25:46] dans
+[25:46 -> 25:48] quand je fais une saisi d'événements
+[25:48 -> 25:50] dans l'espace
+[25:50 -> 25:52] gestionnaire par exemple
+[25:52 -> 25:54] dans l'espace responsable
+[25:54 -> 25:56] en équipe
+[25:56 -> 25:58] si j'ai les deux profils
+[25:58 -> 26:00] de workflow
+[26:00 -> 26:02] il va considérer
+[26:02 -> 26:04] que c'est comme si j'étais RESP2
+[26:04 -> 26:06] il va prendre le plus haut niveau
+[26:06 -> 26:08] et il va se dire
+[26:08 -> 26:10] puisque vous êtes RESP2
+[26:10 -> 26:12] je ne vais pas me mettre en attente
+[26:12 -> 26:14] je ne vais pas mettre votre demande en attente
+[26:14 -> 26:16] d'un RESP ou d'un RESP2
+[26:16 -> 26:18] puisque vous êtes déjà RESP2
+[26:18 -> 26:20] donc on va la valider tout de suite la demande
+[26:22 -> 26:24] je vous le montre
+[26:24 -> 26:26] j'insiste sur cette priorité
+[26:26 -> 26:28] et ensuite quand je fais
+[26:28 -> 26:30] modifier le schéma
+[26:30 -> 26:32] et que je regarde le détail
+[26:32 -> 26:34] du circuit
+[26:34 -> 26:36] ici
+[26:36 -> 26:38] au début
+[26:38 -> 26:40] si je suis saisi par un collaborateur
+[26:40 -> 26:42] donc là je teste le profil
+[26:42 -> 26:44] du demandeur
+[26:44 -> 26:46] à l'origine de la saisi
+[26:46 -> 26:48] c'est collab
+[26:48 -> 26:50] c'est un collaborateur qui fait une saisi
+[26:50 -> 26:52] je notifie
+[26:52 -> 26:54] un responsable et je me mets en attente
+[26:54 -> 26:56] d'un responsable de premier niveau
+[26:56 -> 26:58] là si ma demande est acceptée
+[26:58 -> 27:00] si ma demande est refusée
+[27:00 -> 27:02] ici
+[27:02 -> 27:04] donc là
+[27:04 -> 27:06] je teste la nature de la validation
+[27:08 -> 27:10] si la nature de la validation
+[27:10 -> 27:12] c'est un refus
+[27:12 -> 27:14] là je notifie le refus
+[27:14 -> 27:16] au collaborateur et j'ai terminé
+[27:16 -> 27:18] la demande est refusée
+[27:18 -> 27:20] par contre si la demande est acceptée
+[27:20 -> 27:22] là je teste le nadval égal acceptation
+[27:24 -> 27:26] je notifie le reste de 2
+[27:26 -> 27:28] j'envoie un mail au responsable
+[27:28 -> 27:30] deuxième niveau et au collaborateur
+[27:32 -> 27:34] voilà donc j'envoie au collaborateur
+[27:34 -> 27:36] de l'événement et au responsable
+[27:36 -> 27:38] de niveau 2 et vous voyez
+[27:38 -> 27:40] en acte fonctionnel
+[27:40 -> 27:42] il me génère automatiquement
+[27:42 -> 27:44] le fait que c'est une validation intermédiaire
+[27:44 -> 27:46] parce qu'il sait que derrière
+[27:46 -> 27:48] j'ai une autre boîte d'attente
+[27:50 -> 27:52] donc je notifie
+[27:52 -> 27:54] j'envoie un mail au responsable de deuxième niveau
+[27:54 -> 27:56] comme quoi il y a une demande qui a été saisie
+[27:56 -> 27:58] surtout qui vient d'être validée par un responsable
+[27:58 -> 28:00] de premier niveau et je passe
+[28:00 -> 28:02] en attente de validation d'un responsable
+[28:02 -> 28:04] de deuxième niveau
+[28:06 -> 28:08] et puis sur responsable de deuxième niveau quand il agit
+[28:08 -> 28:10] eh bien il accepte
+[28:10 -> 28:12] où il refuse et là on
+[28:12 -> 28:14] donne un mail de notification
+[28:14 -> 28:16] au responsable
+[28:16 -> 28:18] de premier niveau qui a
+[28:18 -> 28:20] accepté la demande à l'initial
+[28:20 -> 28:22] et au collaborateur de l'événement
+[28:26 -> 28:28] en revanche
+[28:28 -> 28:30] si la saisie elle est faite
+[28:30 -> 28:32] par un responsable
+[28:32 -> 28:34] de premier niveau
+[28:34 -> 28:36] donc ça se circuit
+[28:36 -> 28:38] il va être appliqué sur des événements
+[28:38 -> 28:40] qui nécessitent 2 niveaux de validation
+[28:40 -> 28:42] le RESP et le RESP2
+[28:42 -> 28:44] si la demande
+[28:44 -> 28:46] l'absence elle est saisie
+[28:46 -> 28:48] directement par le responsable
+[28:48 -> 28:50] et pas par le collaborateur
+[28:50 -> 28:52] c'est pas la peine de se mettre en attente
+[28:52 -> 28:54] de validation d'un responsable
+[28:54 -> 28:56] c'est le responsable du collaborateur
+[28:56 -> 28:58] qui a réussi à saisir la demande
+[28:58 -> 29:00] parce qu'il est là dans son périmètre
+[29:00 -> 29:02] donc là
+[29:02 -> 29:04] j'envoie une notification au responsable
+[29:04 -> 29:06] de deuxième niveau et puis au collaborateur
+[29:06 -> 29:08] pour lui dire oui
+[29:08 -> 29:10] peut-être que c'est le responsable qui saisit la demande
+[29:10 -> 29:12] il n'aura pas accès à l'appli
+[29:12 -> 29:14] ou parce que je sais pas
+[29:14 -> 29:16] il lui a demandé à se servir ça
+[29:16 -> 29:18] donc il envoie aussi
+[29:18 -> 29:20] on envoie aussi un mail au collaborateur
+[29:20 -> 29:22] et on passe en attente directement
+[29:22 -> 29:24] en boîte d'attente du deuxième niveau
+[29:24 -> 29:26] de validation du profil de workflow
+[29:26 -> 29:28] RESP2
+[29:28 -> 29:30] et le RESP2
+[29:30 -> 29:32] il la sait si il refuse
+[29:32 -> 29:34] on envoie la notification
+[29:36 -> 29:38] et puis
+[29:38 -> 29:40] si
+[29:40 -> 29:42] si je suis
+[29:42 -> 29:44] ni RESP
+[29:44 -> 29:46] ni collab
+[29:46 -> 29:48] ça veut dire que là pour un coup je suis dans une saisie
+[29:48 -> 29:50] qui est faite par un autre responsable
+[29:50 -> 29:52] et comme j'ai vu
+[29:52 -> 29:54] sur l'écran précédent
+[29:54 -> 29:56] ça ne peut être qu'un admin
+[29:56 -> 29:58] ou qu'un RESP2
+[29:58 -> 30:00] dans la liste des profils
+[30:00 -> 30:02] de workflow autorisé
+[30:02 -> 30:04] donc si je suis admin ou RESP2
+[30:04 -> 30:06] eh bien là je notifie
+[30:06 -> 30:08] le n plus un et le collaborateur
+[30:08 -> 30:10] et ma demande
+[30:10 -> 30:12] enfin ma saisie est directement validée
+[30:14 -> 30:16] d'où
+[30:16 -> 30:18] l'intérêt
+[30:18 -> 30:20] vous voyez
+[30:20 -> 30:22] ces quatre profils qui sont là
+[30:22 -> 30:24] donc si je suis pareil, si je ne suis pas collab
+[30:24 -> 30:26] c'est forcément que je suis admin ou RESP2
+[30:26 -> 30:28] parce que sinon si j'arrive avec un autre profil
+[30:28 -> 30:30] de workflow je ne vais pas pouvoir rentrer dans le circuit
+[30:30 -> 30:32] il va me bloquer d'entrée
+[30:32 -> 30:34] et l'importance de mettre
+[30:34 -> 30:36] la priorité
+[30:36 -> 30:38] c'est quand même étant que j'arrive avec un utilisateur
+[30:38 -> 30:40] qui a à la fois pour le même périmètre
+[30:40 -> 30:42] pour les mêmes
+[30:42 -> 30:44] et les mêmes événements
+[30:44 -> 30:46] un profil de RESP2
+[30:46 -> 30:48] éventuellement même un profil
+[30:48 -> 30:50] d'admine
+[30:50 -> 30:52] ça peut être
+[30:52 -> 30:54] c'est un collaborateur de l'entreprise
+[30:54 -> 30:56] il peut avoir d'autres droits que les droits d'administration
+[30:56 -> 30:58] eh bien
+[30:58 -> 31:00] lequel je vais choisir
+[31:00 -> 31:02] si j'ai mes
+[31:02 -> 31:04] droits qui sont appliqués en même temps
+[31:04 -> 31:06] et donc mes profils de workflow
+[31:06 -> 31:08] je vais prendre le niveau le plus élevé
+[31:08 -> 31:10] et du coup
+[31:10 -> 31:12] si j'ai une saisie responsable
+[31:12 -> 31:14] même si mon utilisateur
+[31:14 -> 31:16] il est aussi
+[31:16 -> 31:18] RESP par son profil
+[31:18 -> 31:20] eh bien je vais passer dans cette branche
+[31:20 -> 31:22] et donc valider directement sa saisie
+[31:22 -> 31:24] plutôt que de passer dans celle-là
+[31:24 -> 31:26] et
+[31:26 -> 31:28] de mettre la demande dans la tente de validation
+[31:28 -> 31:30] d'un RESP2 qui est lui-même
+[31:32 -> 31:34] un profil
+[31:38 -> 31:40] donc au niveau des profils
+[31:40 -> 31:42] on indique, enfin au niveau des circuits
+[31:42 -> 31:44] on décrit le fonctionnement du circuit
+[31:44 -> 31:46] on décrit quels sont les profils
+[31:46 -> 31:48] de workflow autorisés à ce circuit
+[31:48 -> 31:50] dans un ordre
+[31:50 -> 31:52] décroissant
+[31:52 -> 31:54] du plus important au moins important
+[31:54 -> 31:56] en termes de droits de validation
+[31:56 -> 31:58] sur l'événement
+[31:58 -> 32:00] et on décrit
+[32:00 -> 32:02] le circuit
+[32:02 -> 32:04] qui doit valider
+[32:04 -> 32:06] dans les boîtes d'attente
+[32:06 -> 32:08] à qui on notifie
+[32:08 -> 32:10] on teste les débranchements pour savoir
+[32:10 -> 32:12] quel est le profil qui a saisi la demande
+[32:12 -> 32:14] qui est en train de saisir la demande
+[32:14 -> 32:16] est-ce que c'est un profil collaborateur
+[32:16 -> 32:18] est-ce que c'est un profil de RESP
+[32:18 -> 32:20] niveau 1 de validation
+[32:20 -> 32:22] ou est-ce que c'est un profil de niveau supérieur
+[32:22 -> 32:24] et à ce moment-là c'est valider directement
+[32:30 -> 32:32] donc là
+[32:32 -> 32:34] les acteurs
+[32:34 -> 32:36] roulent les profils
+[32:36 -> 32:38] donc là
+[32:38 -> 32:40] c'est ce que je vous ai mis
+[32:40 -> 32:42] le circuit
+[32:42 -> 32:44] il s'appuie
+[32:44 -> 32:46] sur des profils autorisés
+[32:46 -> 32:48] et dans le circuit
+[32:48 -> 32:50] on peut
+[32:50 -> 32:52] éventuellement
+[32:52 -> 32:54] tester des profils
+[32:54 -> 32:56] ou se mettre
+[32:56 -> 32:58] en attente de profils particuliers
+[32:58 -> 33:00] par ailleurs je peux avoir des circuits
+[33:00 -> 33:02] par exemple je vous prends le circuit
+[33:02 -> 33:04] sans validation
+[33:04 -> 33:06] un circuit
+[33:06 -> 33:08] sans validation
+[33:08 -> 33:10] c'est un circuit qui dit
+[33:10 -> 33:12] je
+[33:12 -> 33:14] saisis
+[33:14 -> 33:16] une demande
+[33:16 -> 33:18] elle est validée directement
+[33:18 -> 33:20] j'ai pas besoin de me mettre en attente
+[33:20 -> 33:22] c'est valider tout de suite en fait
+[33:24 -> 33:26] il n'empêche
+[33:26 -> 33:28] qu'il faut quand même
+[33:28 -> 33:30] dans ce circuit je ne teste rien
+[33:30 -> 33:32] je ne teste pas quel est le profil
+[33:32 -> 33:34] je n'ai pas de débranchement
+[33:34 -> 33:36] c'est directement valider
+[33:36 -> 33:38] il n'empêche qu'il faut quand même que je dise
+[33:38 -> 33:40] à quel profil de workflow
+[33:40 -> 33:42] ce circuit est autorisé
+[33:42 -> 33:44] et c'est pour ça que là on les a mis tous
+[33:44 -> 33:46] il n'y a pas le cc ou par exemple
+[33:48 -> 33:50] mais on les a mis tous par défaut
+[33:50 -> 33:52] parce que un profil en validation
+[33:52 -> 33:54] un circuit en validation
+[33:54 -> 33:56] c'est pas tout à fait qu'on pas souter le workflow
+[33:56 -> 33:58] c'est un circuit de workflow
+[33:58 -> 34:00] mais simplement ce circuit dit
+[34:00 -> 34:02] ok je valis tout de suite
+[34:12 -> 34:14] alors vous allez me dire à quoi ça sert
+[34:14 -> 34:16] de faire un circuit sans validation
+[34:16 -> 34:18] c'est quoi la différence entre
+[34:18 -> 34:20] un circuit
+[34:22 -> 34:24] appliqué à un circuit hors validation
+[34:24 -> 34:26] donc les événements sont validés directement
+[34:26 -> 34:28] donc c'est comme si j'avais pas de validation en fait
+[34:28 -> 34:30] dès que j'ai le droit de saisir l'événement
+[34:30 -> 34:32] il est validé
+[34:38 -> 34:40] dans ce circuit j'ai pas de notification
+[34:42 -> 34:44] mais je pourrais en mettre
+[34:44 -> 34:46] je pourrais très bien dire
+[34:46 -> 34:48] j'accepte, je fais un circuit sans validation
+[34:48 -> 34:50] mais avec notification
+[34:50 -> 34:52] c'est à dire que là
+[34:52 -> 34:54] j'ajouterai une boîte de notifications
+[34:54 -> 34:56] où je dis
+[34:56 -> 34:58] je notifie, j'envoie un mail systématiquement
+[34:58 -> 35:00] aux collaborateurs
+[35:00 -> 35:02] qui sont concernés par l'événement
+[35:02 -> 35:04] et elles sont rien de plus
+[35:04 -> 35:06] justement j'ai une question
+[35:06 -> 35:08] je ne sais pas c'est le contexte
+[35:10 -> 35:12] est-ce que les notifications
+[35:12 -> 35:14] quand on reçoit leur ordinate
+[35:14 -> 35:16] on se démoncontre
+[35:16 -> 35:18] pour signaler
+[35:18 -> 35:20] un manager
+[35:20 -> 35:22] qu'il y a décidé
+[35:22 -> 35:24] à valider ou des absences à valider
+[35:24 -> 35:26] et ce qu'il fait
+[35:26 -> 35:28] d'un circuit sans validation
+[35:28 -> 35:30] surtout pour les notifications
+[35:30 -> 35:32] je parle que d'une notification
+[35:32 -> 35:34] ah bah
+[35:34 -> 35:36] un circuit sans validation
+[35:36 -> 35:38] un circuit comme ça
+[35:38 -> 35:40] il n'enverra pas de notif
+[35:40 -> 35:42] il n'y a pas d'état demandé
+[35:42 -> 35:44] il n'y a personne qui ne doit valider
+[35:44 -> 35:46] c'est valider
+[35:46 -> 35:48] ah d'accord
+[35:48 -> 35:50] donc c'est pas limité par le délai
+[35:50 -> 35:52] pour dire tu es ainsi
+[35:52 -> 35:54] il n'y a personne qui répond
+[35:54 -> 35:56] dans quelques jours
+[35:56 -> 35:58] donc ça valide sans automatique
+[35:58 -> 36:00] non c'est pas cette notion de validation automatique
+[36:00 -> 36:02] on peut l'avoir ailleurs
+[36:02 -> 36:04] on peut l'avoir dans les circuits
+[36:04 -> 36:06] c'est à dire qu'on peut avoir
+[36:06 -> 36:08] si je prends ce circuit puis le DAQ
+[36:08 -> 36:10] il est un peu plus complexe
+[36:10 -> 36:12] il est autorisé
+[36:12 -> 36:14] à l'admine au responsable de premier niveau
+[36:14 -> 36:16] et au collaborateur
+[36:16 -> 36:18] et pour être un peu plus de détails
+[36:18 -> 36:20] si je suis modifié chez moi
+[36:20 -> 36:22] je vois que si je suis en saisie collaborateur
+[36:22 -> 36:24] ici
+[36:24 -> 36:26] j'envoie une notification, j'envoie un mail au responsable
+[36:26 -> 36:28] ça passe en attente de validation
+[36:28 -> 36:30] du responsable
+[36:30 -> 36:32] et puis là
+[36:32 -> 36:34] dans ce circuit on a fait
+[36:34 -> 36:36] deux boucles
+[36:36 -> 36:38] supplémentaires
+[36:38 -> 36:40] si le valideur
+[36:40 -> 36:42] en fonction de certains critères
+[36:42 -> 36:44] il n'a pas validé la demande
+[36:44 -> 36:46] je le relance
+[36:46 -> 36:48] le responsable
+[36:48 -> 36:50] je lui envoie un mail pour lui dire
+[36:50 -> 36:52] il y a des demandes dans l'attente de validation
+[36:52 -> 36:54] ces demandes doivent peut-être valider
+[36:54 -> 36:56] alors là en l'occurrence
+[36:56 -> 36:58] vous voyez dans la
+[36:58 -> 37:00] la branche
+[37:00 -> 37:02] de test
+[37:02 -> 37:04] on a mis si c'est une absence
+[37:04 -> 37:06] et que la date
+[37:06 -> 37:08] le début d'absence
+[37:08 -> 37:10] commence dans moins de 10 jours
+[37:10 -> 37:12] par rapport à la date du jour
+[37:12 -> 37:14] ou si c'est une régule
+[37:14 -> 37:16] et que la date
+[37:16 -> 37:18] de début de la régule
+[37:18 -> 37:20] commence dans moins de 10 jours
+[37:20 -> 37:22] ou que le badgeage etc
+[37:22 -> 37:24] bref on a fait un truc un peu
+[37:24 -> 37:26] c'est un peu bidon mais
+[37:26 -> 37:28] si l'absence commence
+[37:28 -> 37:30] en moins de 10 jours
+[37:30 -> 37:32] du coup j'envoie un mail le relance
+[37:32 -> 37:34] et là on met un déclencheur
+[37:34 -> 37:36] automatique
+[37:36 -> 37:38] alors les traitements de relance
+[37:38 -> 37:40] les mails de relance qui sont envoyés
+[37:40 -> 37:42] ils sont gérés dans les traitements de nuit
+[37:42 -> 37:44] dans les traitements de nuit
+[37:44 -> 37:46] on a un traitement qui s'appelle
+[37:46 -> 37:48] relance et rappel
+[37:48 -> 37:50] et où
+[37:50 -> 37:52] on fait des relances
+[37:52 -> 37:54] on génère éventuellement des mails
+[37:54 -> 37:56] si on a des boucles comme ça
+[37:56 -> 37:58] on génère des mails de relance au responsable
+[37:58 -> 38:00] s'ils n'ont pas validé
+[38:00 -> 38:02] des demandes qui étaient en attente
+[38:02 -> 38:04] dans un délai où on considère
+[38:04 -> 38:06] qu'il faudrait qu'il valide
+[38:06 -> 38:08] et puis si
+[38:08 -> 38:10] ce malageur
+[38:10 -> 38:12] se reste
+[38:12 -> 38:14] il n'y a personne qui se penche
+[38:14 -> 38:16] sur la validation de ces demandes
+[38:16 -> 38:18] parce que c'est souvent le cas
+[38:18 -> 38:20] souvent les clients nous disent que les malageurs
+[38:20 -> 38:22] ils ne valident pas
+[38:22 -> 38:24] on a mis en place un autre déclencheur
+[38:24 -> 38:26] ça aussi c'est des traitements de nuit
+[38:28 -> 38:30] ou ici
+[38:30 -> 38:32] là on n'a rien mis
+[38:32 -> 38:34] sur la transition elle-même
+[38:34 -> 38:36] mais par contre on en voit ça
+[38:36 -> 38:38] sur une règle
+[38:38 -> 38:40] ça c'est une boîte de traitement
+[38:42 -> 38:44] ici c'est une boîte de traitement
+[38:44 -> 38:46] c'est une tâche de traitement
+[38:46 -> 38:48] et où je fais appel
+[38:48 -> 38:50] à une règle de workflow
+[38:50 -> 38:52] et c'est dans la règle de workflow
+[38:54 -> 38:56] je vous la montre
+[39:00 -> 39:02] c'est celle-là
+[39:02 -> 39:04] et la règle de workflow
+[39:04 -> 39:06] elle dit
+[39:08 -> 39:10] voilà j'initialise
+[39:10 -> 39:12] une variable
+[39:12 -> 39:14] ok auto
+[39:14 -> 39:16] à non
+[39:16 -> 39:18] je dis
+[39:18 -> 39:20] je mets 10 dans le nombre
+[39:20 -> 39:22] dans le nombre WKFNB
+[39:22 -> 39:24] et si c'est une absence
+[39:24 -> 39:26] je recherche
+[39:26 -> 39:28] je fais une requête
+[39:28 -> 39:30] dans la table
+[39:30 -> 39:32] MA qui est la table des motifs d'absence
+[39:32 -> 39:34] parce que je vais chercher
+[39:34 -> 39:36] son groupe d'absence
+[39:36 -> 39:38] en fait rubrique c'est le groupe de l'absence
+[39:40 -> 39:42] c'est un rangement des absences
+[39:42 -> 39:44] en groupe
+[39:44 -> 39:46] ou abside c'est l'absence
+[39:46 -> 39:48] que je suis en train de regarder
+[39:48 -> 39:50] puisque là je suis sur un événement qui est en état de demande
+[39:50 -> 39:52] et ça concerne un motif d'absence
+[39:54 -> 39:56] et si mon groupe
+[39:56 -> 39:58] d'absence c'est c
+[39:58 -> 40:00] c'est-à-dire c'est une absence congé
+[40:00 -> 40:02] je passe
+[40:02 -> 40:04] j'initialise le WKFNB
+[40:04 -> 40:06] à 60
+[40:06 -> 40:08] et si ma date de demande
+[40:08 -> 40:10] plus
+[40:10 -> 40:12] mon nombre d'absence
+[40:12 -> 40:14] un congé
+[40:14 -> 40:16] ma date de demande
+[40:16 -> 40:18] plus 60 si c'est un congé
+[40:18 -> 40:20] est inférieur ou égal à la date du jour
+[40:20 -> 40:22] je dis
+[40:22 -> 40:24] que ok auto
+[40:24 -> 40:26] oui
+[40:26 -> 40:28] alors j'ai fait une demande
+[40:28 -> 40:30] je rajoute 60
+[40:30 -> 40:32] et je suis inférieur
+[40:34 -> 40:36] ou égal à la date du jour
+[40:36 -> 40:38] alors si
+[40:38 -> 40:40] cette règle
+[40:40 -> 40:42] je suis désolée elle est vraiment
+[40:42 -> 40:44] elle est pas très
+[40:44 -> 40:46] elle est très bizarre
+[40:46 -> 40:48] en fait
+[40:48 -> 40:50] peut-être que
+[40:50 -> 40:52] en fait ce qu'il faudrait dire tout simplement
+[40:52 -> 40:54] c'est WKF auto
+[40:54 -> 40:56] non
+[40:56 -> 40:58] et puis si ma date de début d'absence
+[40:58 -> 41:00] si c'est une absence et que ma date
+[41:00 -> 41:02] de début d'absence date
+[41:06 -> 41:08] supérieur
+[41:08 -> 41:10] à date jour
+[41:10 -> 41:12] on se laisse par exemple
+[41:12 -> 41:14] trois jours avant la date
+[41:14 -> 41:16] de début d'absence
+[41:16 -> 41:18] enfin c'est les règles du client
+[41:18 -> 41:20] donc date jour 0
+[41:20 -> 41:22] moins 3
+[41:22 -> 41:24] donc je prends
+[41:24 -> 41:26] ma date du jour
+[41:26 -> 41:28] là c'est la date au moment où je fais le traitement
+[41:28 -> 41:30] de test
+[41:30 -> 41:32] là c'est la date à laquelle je fais mon test
+[41:32 -> 41:34] ça c'est ma date du jour, j'enlève 3 jours
+[41:38 -> 41:40] et je regarde si ma date de début d'absence
+[41:42 -> 41:44] elle est supérieure
+[41:44 -> 41:46] à cette date là
+[41:46 -> 41:48] donc là
+[41:48 -> 41:50] dès que je suis comme ça
+[41:50 -> 41:52] dès que j'arrive à moins de 3 jours
+[41:52 -> 41:54] de ma date de début d'absence
+[41:54 -> 41:56] je mets un OK auto égal oui
+[41:58 -> 42:00] plus simplement
+[42:00 -> 42:02] et dans le circuit
+[42:06 -> 42:08] quand je sors de cette règle
+[42:08 -> 42:10] d'évaluation
+[42:10 -> 42:12] où j'ai mis à jour mon OK auto
+[42:12 -> 42:14] mon OK auto il est oui ou il est non
+[42:14 -> 42:16] est-ce que
+[42:16 -> 42:18] là
+[42:18 -> 42:20] si mon OK auto est resté à non
+[42:20 -> 42:22] c'est que je suis pas dans les conditions
+[42:22 -> 42:24] où il faut que je fasse de l'acceptation automatique
+[42:24 -> 42:26] et bien je repars en boîte d'attente
+[42:26 -> 42:28] par contre si mes règles
+[42:28 -> 42:30] mes conditions
+[42:30 -> 42:32] elles m'ont amené à faire un OK auto
+[42:32 -> 42:34] je vais arriver à le faire apparaître
+[42:34 -> 42:36] ah mais il y a une erreur dans ce circuit
+[42:36 -> 42:38] ah mais il y a une erreur dans le circuit
+[42:38 -> 42:40] parce que là il faut tester
+[42:40 -> 42:42] il faut tester aussi au
+[42:42 -> 42:44] OK auto égal oui
+[42:44 -> 42:46] et pas rien
+[42:46 -> 42:48] on teste rien
+[42:48 -> 42:50] là il y a une erreur dans le circuit
+[42:52 -> 42:54] quand ça se fait
+[43:06 -> 43:08] et puis de ce schéma
+[43:08 -> 43:10] de ce workflow
+[43:10 -> 43:12] où il y a
+[43:12 -> 43:14] il y a un paramètre
+[43:14 -> 43:16] qui dit que voilà
+[43:16 -> 43:18] celui qui est actif
+[43:18 -> 43:20] pour les autres morts
+[43:22 -> 43:24] tu m'as compris
+[43:24 -> 43:26] non je n'ai pas compris la question
+[43:26 -> 43:28] c'est-à-dire lorsqu'on fait la config
+[43:28 -> 43:30] d'un workflow
+[43:30 -> 43:32] j'ai vu qu'il y a révision
+[43:32 -> 43:34] il y a plusieurs versions
+[43:34 -> 43:36] laquelle on sait qu'elle est active
+[43:36 -> 43:38] dans le système
+[43:38 -> 43:40] il y a des modifs entre les précédentes
+[43:40 -> 43:42] voilà
+[43:42 -> 43:44] typiquement vous voyez
+[43:44 -> 43:46] là je suis sur les circuits
+[43:46 -> 43:48] de base
+[43:48 -> 43:50] je les ai tous en révision 1
+[43:50 -> 43:52] si je reviens sur mon circuit
+[43:52 -> 43:54] je fais modifier le schéma
+[43:54 -> 43:56] au passage vous voyez que cette révision
+[43:56 -> 43:58] elle est marquée intégrée
+[43:58 -> 44:00] c'est-à-dire que je vais en modification du schéma
+[44:00 -> 44:02] dès que je crée
+[44:02 -> 44:04] dès que je vais en modification du schéma
+[44:04 -> 44:06] ça me crée une révision 2
+[44:06 -> 44:08] je ne modifie jamais un workflow
+[44:08 -> 44:10] qui est
+[44:10 -> 44:12] à l'œuvre
+[44:12 -> 44:14] une révision qui est intégrée
+[44:14 -> 44:16] elle est exploité
+[44:16 -> 44:18] potentiellement
+[44:18 -> 44:20] et du coup dès que je veux la modifier je crée une nouvelle révision
+[44:20 -> 44:22] là
+[44:22 -> 44:24] je vais modifier mon circuit
+[44:24 -> 44:26] ici
+[44:26 -> 44:28] et je vais dire WKF auto
+[44:28 -> 44:30] je vais faire acceptation automatique
+[44:32 -> 44:34] WKF
+[44:34 -> 44:36] OK auto
+[44:36 -> 44:38] et Karigale A.W.
+[44:44 -> 44:46] voilà
+[44:46 -> 44:48] je gentifie
+[44:48 -> 44:50] pourquoi j'ai fait une acceptation automatique
+[44:50 -> 44:52] je gentifie le collab et le collaborateur
+[44:52 -> 44:54] j'enregistre
+[44:58 -> 45:00] et là tant que je n'ai pas intégré
+[45:00 -> 45:02] le circuit
+[45:02 -> 45:04] avec le bouton intégré
+[45:04 -> 45:06] il n'est pas opérationnel
+[45:06 -> 45:08] il n'est pas exploité
+[45:08 -> 45:10] par contre dès que je l'intègre
+[45:16 -> 45:18] c'est ça
+[45:18 -> 45:20] c'est comme le compilé
+[45:20 -> 45:22] je ne sais pas
+[45:22 -> 45:24] je l'intègre
+[45:24 -> 45:26] et du coup maintenant
+[45:26 -> 45:28] à partir de maintenant
+[45:28 -> 45:30] toute nouvelle demande qui va rentrer dans ce circuit
+[45:30 -> 45:32] qui doit rentrer dans ce circuit
+[45:32 -> 45:34] va utiliser automatiquement la révision 2
+[45:36 -> 45:38] et toutes les demandes
+[45:38 -> 45:40] qui étaient précisament rentrées dans le circuit
+[45:40 -> 45:42] et qui ne sont évidemment
+[45:42 -> 45:44] qui ne sont peut-être pas encore achevées
+[45:44 -> 45:46] elles sont peut-être
+[45:46 -> 45:48] quelque part dans les boîtes d'attente
+[45:48 -> 45:50] au niveau RESP ou au niveau RESP2
+[45:50 -> 45:52] et bien toutes les demandes qui sont toujours en cours
+[45:52 -> 45:54] elles vont continuer à suivre
+[45:54 -> 45:56] le circuit de la révision 1
+[45:56 -> 45:58] tel qu'il était au moment de la révision 1
+[46:02 -> 46:04] et ici en partie gauche
+[46:04 -> 46:06] vous voyez que je ne vois plus que la révision 2
+[46:06 -> 46:08] là en partie gauche
+[46:08 -> 46:10] mais j'ai un lien
+[46:10 -> 46:12] ici toutes les révisions
+[46:12 -> 46:14] et les révisions sont conservées
+[46:16 -> 46:18] et si je veux voir d'ailleurs la révision 1
+[46:18 -> 46:20] alors je pourrais voir
+[46:20 -> 46:22] que son image
+[46:22 -> 46:24] que l'état des lieux
+[46:24 -> 46:26] et que son image
+[46:26 -> 46:28] je ne pourrais pas avoir le détail de ce qu'il y a dans les transitions
+[46:28 -> 46:30] puisque je ne peux pas faire de survole
+[46:30 -> 46:32] mais je ne peux plus modifier le schéma
+[46:32 -> 46:34] je ne peux rien faire de dessus
+[46:34 -> 46:36] mais elle est toujours en exploitation
+[46:36 -> 46:38] s'il y a des demandes qui sont en cours
+[46:38 -> 46:40] elles vont continuer à suivre
+[46:40 -> 46:42] ce circuit-là
+[46:42 -> 46:44] et pour toutes les nouvelles
+[46:44 -> 46:46] elles vont suivre la deuxième révision
+[46:46 -> 46:48] et ensuite
+[46:48 -> 46:50] au fur et à mesure qu'on avance dans les révisions
+[46:50 -> 46:52] dès qu'elles sont intégrées
+[46:52 -> 46:54] elles passent en exploitation automatiquement
+[46:56 -> 46:58] et la prochaine révision
+[46:58 -> 47:00] la prochaine modification sera une nouvelle révision
+[47:04 -> 47:06] alors on a vu
+[47:08 -> 47:10] les rôles
+[47:10 -> 47:12] qui portent les profils de workflow sur les fonctionnalités
+[47:12 -> 47:14] qui sont concernées
+[47:14 -> 47:16] on a vu
+[47:16 -> 47:18] les circuits de workflow
+[47:18 -> 47:20] qui utilisent ces rôles
+[47:20 -> 47:22] pour autoriser déjà l'entrée dans le circuit
+[47:22 -> 47:24] et pour savoir quel des branchements
+[47:24 -> 47:26] quelle action, qu'est-ce qu'il doit faire
+[47:28 -> 47:30] maintenant
+[47:30 -> 47:32] pour les événements
+[47:32 -> 47:34] ou pour les types d'événements
+[47:34 -> 47:36] on repart en workflow
+[47:36 -> 47:38] ici on a aperçu les règles
+[47:38 -> 47:40] et on pilote
+[47:40 -> 47:42] le workflow
+[47:42 -> 47:44] pour chaque événement
+[47:44 -> 47:46] par ce tableau-là
+[47:46 -> 47:48] événement
+[47:50 -> 47:52] alors
+[47:52 -> 47:54] sur ce tableau
+[47:54 -> 47:56] en partie
+[47:56 -> 47:58] gauche
+[47:58 -> 48:00] en haut à gauche, vous avez les types d'événements
+[48:02 -> 48:04] qui peuvent être soumis à workflow
+[48:04 -> 48:06] sur cet environnement
+[48:06 -> 48:08] je les ai tous activés
+[48:12 -> 48:14] je voudrais vous montrer
+[48:14 -> 48:16] déjà la différence entre un workflow activé
+[48:16 -> 48:18] et un workflow non activé
+[48:18 -> 48:20] je vais aller dans mon équipe
+[48:32 -> 48:34] et moi je crois que j'avais pas mal d'absence
+[48:34 -> 48:36] j'avais pas mal de besoin
+[48:36 -> 48:38] si je regarde
+[48:38 -> 48:40] les régules
+[48:40 -> 48:42] j'avais pas de régule
+[48:42 -> 48:44] mais j'avais des absences
+[48:48 -> 48:50] non
+[48:50 -> 48:52] je vais pas faire comme ça
+[48:52 -> 48:54] euh
+[48:54 -> 48:56] je vais pas faire comme ça
+[48:56 -> 48:58] j'avais des absences
+[48:58 -> 49:00] ça va l'idée
+[49:00 -> 49:02] non et je vais plutôt tester des régules
+[49:02 -> 49:04] il y avait des gens qui avaient des régules
+[49:04 -> 49:06] attendez
+[49:06 -> 49:08] j'avais des gens qui avaient des régules
+[49:08 -> 49:10] parmi vous
+[49:10 -> 49:12] je sais plus qui
+[49:18 -> 49:20] Khalid
+[49:20 -> 49:22] Véronica
+[49:24 -> 49:26] Nicole
+[49:26 -> 49:28] Ossane
+[49:32 -> 49:34] L'annonceur
+[49:42 -> 49:44] alors
+[49:44 -> 49:46] je vais vous montrer autrement
+[49:46 -> 49:48] ici je vous montrer
+[49:48 -> 49:50] déjà au niveau des événements
+[49:50 -> 49:52] si je prends les régularisations
+[49:52 -> 49:54] le workflow est activé
+[50:10 -> 50:12] non et je dis
+[50:12 -> 50:14] j'ai mis des responsables directs
+[50:14 -> 50:16] systématiques pour tous
+[50:18 -> 50:20] bon c'est pas grave
+[50:20 -> 50:22] sur les régularisations le workflow est activé
+[50:22 -> 50:24] et j'attends un circuit
+[50:24 -> 50:26] validation par responsable direct sans notification
+[50:28 -> 50:30] si
+[50:30 -> 50:32] en tant que collaborateur
+[50:34 -> 50:36] je
+[50:36 -> 50:38] saisis une régule pour moi-même
+[50:38 -> 50:40] alors je sais pas ce que j'ai le droit de créer comme régule
+[50:40 -> 50:42] je vais mettre des heures de nuit
+[50:42 -> 50:44] pour le 18
+[50:44 -> 50:46] sur une période passée
+[50:46 -> 50:48] c'est quand même plus juste
+[50:48 -> 50:50] même pas
+[50:50 -> 50:52] allez la semaine dernière
+[50:52 -> 50:54] le 5 mai
+[50:54 -> 50:56] et je vais naître
+[50:56 -> 50:58] j'ai fait 2 heures
+[50:58 -> 51:00] allez
+[51:00 -> 51:02] 2 heures
+[51:02 -> 51:04] si j'enregistre
+[51:06 -> 51:08] elle est en état demandé
+[51:08 -> 51:10] parce que le circuit
+[51:10 -> 51:12] qui est associé
+[51:12 -> 51:14] au type d'événement régularisation
+[51:14 -> 51:16] est un circuit
+[51:20 -> 51:22] j'attends
+[51:22 -> 51:24] la validation du responsable direct sans notification
+[51:28 -> 51:30] du coup
+[51:30 -> 51:32] quand je reviens
+[51:32 -> 51:34] sur
+[51:34 -> 51:36] ma demande
+[51:36 -> 51:38] ici
+[51:38 -> 51:40] quand je regarde son historique
+[51:40 -> 51:42] ici je vois que ça a été demandé le lundi 10 mai
+[51:42 -> 51:44] par mois
+[51:50 -> 51:52] si je me mets
+[51:52 -> 51:54] en l'espace mon équipe
+[51:54 -> 51:56] en validation
+[51:56 -> 51:58] je vois que
+[51:58 -> 52:00] j'ai plusieurs rôles
+[52:00 -> 52:02] comme je suis là super administrateur GFI
+[52:02 -> 52:04] j'ai plusieurs rôles
+[52:04 -> 52:06] et je suis entre autres responsable d'équipe
+[52:06 -> 52:08] donc je vais prendre
+[52:08 -> 52:10] ce rôle et ce profil
+[52:10 -> 52:12] de workflow responsable d'équipe
+[52:12 -> 52:14] et je vois normalement
+[52:14 -> 52:16] non je la vois pas ma régule
+[52:16 -> 52:18] je la vois pas ma régule
+[52:18 -> 52:20] alors je vois pas ma régule
+[52:22 -> 52:24] je vois pas ma régule parce que
+[52:30 -> 52:32] je suis bien super administrateur GFI
+[52:32 -> 52:34] oui
+[52:34 -> 52:36] le profil super amine GFI
+[52:36 -> 52:38] il est appuyé
+[52:38 -> 52:40] sur le rôle administrateur général GFI
+[52:42 -> 52:44] le rôle administrateur général GFI
+[52:44 -> 52:46] complet
+[52:46 -> 52:48] il a ça
+[52:48 -> 52:50] mais sur gérer
+[52:50 -> 52:52] sur valider
+[52:52 -> 52:54] les demandes de régularisation
+[52:54 -> 52:56] j'ai un workflow
+[52:56 -> 52:58] admin
+[52:58 -> 53:00] j'ai un profil de workflow
+[53:00 -> 53:02] admin
+[53:04 -> 53:06] et dans mon circuit
+[53:06 -> 53:08] validation
+[53:08 -> 53:10] par responsable direct
+[53:10 -> 53:12] sans notification
+[53:12 -> 53:14] celui qui est affecté que je suis
+[53:14 -> 53:16] ma régule
+[53:16 -> 53:18] l'admine
+[53:18 -> 53:20] il peut saisir
+[53:20 -> 53:22] directement une demande
+[53:22 -> 53:24] mais par contre
+[53:24 -> 53:26] quand je suis en attente de validation
+[53:26 -> 53:28] quand je suis
+[53:28 -> 53:30] une saisie non collab
+[53:30 -> 53:32] ça va être validé direct
+[53:32 -> 53:34] mais si c'est saisie par le collaborateur
+[53:34 -> 53:36] ce que je viens de faire
+[53:36 -> 53:38] ici je me mets en attente
+[53:38 -> 53:40] d'un RESP et pas d'un admin
+[53:44 -> 53:46] donc comme je ne suis pas RESP
+[53:46 -> 53:48] en tant que super administrateur GFI
+[53:48 -> 53:50] je peux pas valider la demande
+[53:50 -> 53:52] par contre si je change mon profil
+[53:52 -> 53:54] ici
+[53:54 -> 53:56] et que je me mets en gestionnaire
+[53:56 -> 53:58] d'équipe
+[53:58 -> 54:00] peut-être que je vais y arriver comme ça
+[54:18 -> 54:20] non je ne l'ai pas
+[54:20 -> 54:22] parce que je ne sais pas comment gestionnaire d'équipe
+[54:26 -> 54:28] j'ai pas le temps
+[54:36 -> 54:38] ce qu'on va faire
+[54:38 -> 54:40] c'est qu'on va se remettre
+[54:42 -> 54:44] ici
+[54:44 -> 54:46] le super administrateur
+[54:46 -> 54:48] ce profil
+[54:48 -> 54:50] là
+[54:52 -> 54:54] avec filtre
+[54:56 -> 54:58] il est appuyé sur le rôle
+[54:58 -> 55:00] c'est le administrateur général
+[55:00 -> 55:02] complet
+[55:06 -> 55:08] c'est le administrateur général
+[55:08 -> 55:10] complet
+[55:10 -> 55:12] et là dans le fonctionnalité
+[55:12 -> 55:14] profil de workflow
+[55:14 -> 55:16] pour valider les demandes
+[55:16 -> 55:18] de régularisation
+[55:18 -> 55:20] ici lui aussi
+[55:20 -> 55:22] comme je suis travaillé par duplication il est admin
+[55:22 -> 55:24] mais je vais le mettre RESP
+[55:26 -> 55:28] responsable d'équipe
+[55:32 -> 55:34] et là maintenant
+[55:36 -> 55:38] je vais essayer comme ça
+[55:38 -> 55:40] je ne suis pas sûr que ça fonctionne
+[55:44 -> 55:46] il faut que je me déconnecte
+[55:46 -> 55:48] je me mets dans mon équipe
+[55:48 -> 55:50] validation
+[55:50 -> 55:52] non
+[55:52 -> 55:54] je n'ai pas plus
+[55:54 -> 55:56] un programme
+[56:16 -> 56:18] ici je vais mettre
+[56:18 -> 56:20] super administrateur exemple
+[56:20 -> 56:22] avec filtre
+[56:22 -> 56:26] Et là, maintenant, je devrais pouvoir me valider cette règule.
+[56:28 -> 56:29] Pas pour quoi.
+[56:40 -> 56:42] Il faut que je choisisse la rôle.
+[56:44 -> 56:45] Merci.
+[56:46 -> 56:47] C'est quand même...
+[56:47 -> 56:52] J'attendrai qu'il me donne la règule, qu'il me donne un pavé-règule.
+[56:55 -> 56:56] Le truc qui ne va pas, là.
+[56:57 -> 56:58] D'accord.
+[56:58 -> 57:01] Il devrait marquer un pavé-règule.
+[57:01 -> 57:06] Pourquoi à l'admire sans filtre, pourquoi le superadmire direct ?
+[57:07 -> 57:08] Pourquoi pas le superadmire ?
+[57:10 -> 57:11] Pardon ?
+[57:12 -> 57:16] Pourquoi tu ne réalises pas superadministrateur GFI Direct ?
+[57:16 -> 57:18] Parce que je n'ai pas modifié ce rôle-là,
+[57:18 -> 57:22] le rôle qui est utilisé par ce profil.
+[57:22 -> 57:25] J'ai modifié le rôle de ce profil-là.
+[57:27 -> 57:29] Et donc, il y a autre chose qui m'embête.
+[57:31 -> 57:33] Peut-être, Christine,
+[57:33 -> 57:37] peut-être, au niveau des groupes de fonctionnalité,
+[57:37 -> 57:39] il n'y a pas la notion de gérer les règules.
+[57:41 -> 57:43] Alors, on en sait.
+[57:43 -> 57:46] Alors, ici, je vais voir ce qui se passe sur les règules.
+[57:47 -> 57:49] Sur les règules.
+[57:51 -> 57:57] Ah, mais j'ai des dires ADM affectés utilisateurs.
+[58:01 -> 58:02] Des dires ADM.
+[58:02 -> 58:05] Ah oui, parce que j'ai un périmètre, en fait.
+[58:05 -> 58:08] J'ai un périmètre qui fait que je ne rentre pas, que moi, Corneille,
+[58:08 -> 58:10] je ne rentre pas dans ce périmètre-là
+[58:10 -> 58:12] parce que je suis affectée à dire prod.
+[58:12 -> 58:14] Et que là, je prends les gens qui sont affectés
+[58:14 -> 58:15] à la direction administrative.
+[58:15 -> 58:16] C'est pour ça.
+[58:18 -> 58:21] En fait, je vais rajouter...
+[58:31 -> 58:34] Ouais, mais si je me suis sortie du...
+[58:35 -> 58:36] Sauf moi.
+[58:37 -> 58:40] Sauf moi, Corneille, je vais tourner un rond-là
+[58:40 -> 58:42] parce que je suis connexionné.
+[58:42 -> 58:45] Il ne va pas vouloir que je me valide mon propre...
+[58:46 -> 58:49] Je ne vais pas me voir si je prends ce...
+[58:50 -> 58:52] Par contre, le rattaché,
+[58:52 -> 58:55] comme je ne me suis pas exclu du rattaché
+[58:55 -> 58:57] à mon élément d'affectation, là, ça va aller.
+[58:58 -> 59:00] Je vais pouvoir me voir dans le périmètre...
+[59:01 -> 59:04] Je rentre dans le périmètre accessible.
+[59:05 -> 59:07] Là, ça va fonctionner, je pense.
+[59:10 -> 59:12] Je vais juste me voir dans le périmètre.
+[59:25 -> 59:28] Ouais, j'avais un périmètre trop restrictif
+[59:28 -> 59:30] sur ce profil-là.
+[59:30 -> 59:33] Donc je prends ce profil-là, maintenant, ici,
+[59:34 -> 59:38] le superadmire-machin, et ici, voilà.
+[59:38 -> 59:53] voir les régularisations qui sont à valider. Là il va me demander mon rôle. Il me montre les heures de
+[59:53 -> 60:10] nuit, les deux heures, cette régularisation là. Donc si je l'accepte. Maintenant ce que je vous
+[60:10 -> 60:16] montrer c'est que ici quand je gère mes régules, moi pour mon propre compte, je vois que ma demande
+[60:16 -> 60:22] elle est acceptée et si je clique sur le détail de ma régule, ici je vois que ça a été
+[60:22 -> 60:28] demandé par moi le lundi et le dit bien et accepté effectivement par moi. Si ça avait été quelqu'un
+[60:28 -> 60:33] d'autre qui m'a validé je ferai le l'utilisateur qui m'a validé ma régule.
+[60:33 -> 60:46] Donc ici, je vais refaire les cours qui m'a voulu.
+[60:46 -> 61:09] Au passage, ce que je vous montrer aussi c'est que cette régule 80 dans le référentiel des
+[61:09 -> 61:16] motifs de régularisation. Quand je regarde les heures de nuit, la régule sur les heures de
+[61:16 -> 61:26] nuit, elle a un regroupement circuit de workflow annul. Et si j'ouvre, j'ai la liste des regroupements
+[61:26 -> 61:31] de circuit de workflow disponibles niveau 2, niveau 3, on va en reparler. Mais là je vois que c'est
+[61:31 -> 61:42] annul. Donc si je reviens sur le paramétrage de mon workflow au niveau des événements,
+[61:42 -> 61:50] par défaut, le workflow est activé sur les régularisations et par défaut, le circuit associé
+[61:50 -> 62:00] aux régularisations, c'est ce circuit-là. Donc quand c'est saisi par un collaborateur,
+[62:00 -> 62:06] sa part en attente de validation, ça doit être validé par un manager. Si par contre je saisis
+[62:06 -> 62:20] directement cette demande sur un collaborateur, sur moi par exemple, quand je saisis cette
+[62:20 -> 62:33] fois cette même régule 80, mais en temps là, pas mon espace responsable, je vais la mettre le 31,
+[62:34 -> 62:45] je vais mettre une heure. Elle passe pas en attente de validation, elle est directement validée.
+[62:45 -> 62:55] Et quand je clique dessus, quand je clique et que j'ouvre le détail de la régule,
+[62:55 -> 63:01] je vois apparaître là et quand je clique sur ce bouton, je vois apparaître l'historique
+[63:01 -> 63:15] du workflow. Et là je vois que ça a été saisi de lundi 10 mai par mois. Alors que si maintenant sur
+[63:15 -> 63:21] les événements régularisations, je double-clique ici et je dis non, je désactive le workflow,
+[63:21 -> 63:29] je veux pas de workflow sur les régularisations. Et bien maintenant,
+[63:31 -> 63:46] si je vais en suivi des collaborateurs et que je saisis de saisir une régule 80 ici,
+[63:46 -> 63:59] je vais mettre une porte, je vais mettre une 30. Elle est directement validée, ça change pas,
+[63:59 -> 64:03] je peux la saisir, elle est sans workflow. Si je l'avais saisie par l'espace mon compte,
+[64:03 -> 64:10] elle aurait été directement validée aussi. Si je laisse la possibilité de saisir des
+[64:10 -> 64:16] régules au collaborateur, elle aurait été validée tout pareil directement. Mais maintenant quand je
+[64:16 -> 64:25] clique et que j'ouvre le détail, je n'ai rien dans l'historique. Parce qu'elle n'est pas passée
+[64:25 -> 64:30] par le workflow et que l'information, si je veux savoir qui elle saisit à l'événement,
+[64:30 -> 64:35] à telle date, etc., et si je veux avoir l'information historique, il vaut mieux que
+[64:35 -> 64:44] j'active le workflow quitte à mettre un circuit hors validation. Là si je reviens ici et que sur ma
+[64:44 -> 64:57] régule maintenant j'active le workflow et que ce soit directement validé. Donc je vais lui mettre un
+[64:57 -> 65:02] circuit hors validation à partir d'aujourd'hui. Je peux pas passer à une date antérieure. C'est
+[65:02 -> 65:08] forcément une date au moins égale à la date du jour. Parce que comme je vous ai dit, tous les événements
+[65:08 -> 65:14] qui ont déjà été saisis, juste avant que je fasse cette modification, ils vont continuer à suivre
+[65:14 -> 65:20] le circuit tel que prévu. Donc au moment de leur saisir d'événement, je vais le mettre en circuit
+[65:20 -> 65:30] hors validation. Là je vais vous le faire par l'espace mon compte. Ici régularisation,
+[65:30 -> 65:46] si j'essaie de créer une régule des heures de nuit. Voilà, je suis dans l'espace mon compte.
+[65:46 -> 65:55] Elle est validée directement. Mais quand je regarde sa pop-up, son détail, maintenant j'ai accès à
+[65:55 -> 66:04] l'historique. Parce qu'en fait elle suit un workflow. Elle suit un workflow de validation direct, mais
+[66:04 -> 66:10] elle suit un workflow. Donc du coup j'ai accès à l'historique du workflow. Donc c'est pour ça que
+[66:10 -> 66:15] souvent on met les clients, ils ont besoin de savoir souvent mais quand est-ce que c'est arrivé,
+[66:15 -> 66:20] cette demande qui la saisit etc. C'est plus intéressant au niveau du paramétrage de ces
+[66:20 -> 66:27] événements là, du workflow, de dire j'active et quand je ne veux pas vraiment de workflow sur
+[66:27 -> 66:36] certains types d'événements, je mets un circuit sans validation. Pardon j'étais perdue sur les
+[66:36 -> 66:41] régularisations. Je mets un circuit sans validation mais ça me permettra quand même de garder
+[66:41 -> 66:55] une trace de qui a saisi l'événement. Donc partipes d'événements, j'active le workflow et je mets
+[66:55 -> 67:03] quel circuit doit être à l'oeuvre en face. Là par exemple, les autres événements,
+[67:03 -> 67:09] pour les événements génériques, j'utilise un circuit à niveau de validation mais par
+[67:09 -> 67:24] contre avec en voie de mail. Mais on peut considérer par exemple si je prends le circuit des absences. Là
+[67:24 -> 67:33] j'ai dit ça suit le circuit validation par responsable direct sans mail. Mais peut-être qu'il y a
+[67:34 -> 67:42] certains motifs d'absence qui attendent un deuxième valideur. Et dans ce cas-là, je crée en bas à gauche de
+[67:42 -> 67:48] mon tableau événement de workflow, je crée un code regroupement. C'est ce que j'ai fait ici. Je peux
+[67:48 -> 68:01] en créer un autre à la volée, je peux l'appeler CCO. Et en face de ce code regroupement,
+[68:01 -> 68:14] je peux associer un circuit. Et là c'est toujours à partir de la date du jour. Si je veux
+[68:14 -> 68:21] anticiper, je peux dire que à partir du 1er juin, les demandes de France 8, enfin j'applique ce
+[68:21 -> 68:29] circuit-là. Mais au plus tôt, c'est la date du jour. Je choisis parmi la liste des circuits
+[68:29 -> 68:33] proposés. Vous voyez qu'ils ne me proposent pas les révisions. Ils s'en fichent et vont me prendre la
+[68:33 -> 68:40] plus haute révision de chacun des circuits, enfin en fonction du circuit que je choisis. Donc je vais
+[68:40 -> 68:49] dire que ça doit suivre le responsable direct puis le N plus 2. Au passage, c'est ce que j'avais fait
+[68:49 -> 68:58] ici. Quand j'ai mis ce code niveau 2, voilà, j'ai mis le circuit et niveau 3. J'avais pas
+[68:58 -> 69:02] associé le circuit. Mais enfin, c'est pour vous montrer qu'on peut créer des codes regroupement
+[69:02 -> 69:10] vraiment à la demande en fonction du besoin client. Donc je prends ce circuit-là. Et maintenant,
+[69:10 -> 69:22] si je prends l'exemple de mes absences, elle doit suivre ce circuit par défaut. Mais si dans le
+[69:22 -> 69:27] référentiel gestion des temps, alors je vais aller voir les motifs de régularisation pour vous
+[69:27 -> 69:36] montrer le code régule qui était le code regroupement. Le regroupement circuit workflow ici. Tiens,
+[69:36 -> 69:43] je dois apparaître mon nouveau code regroupement là. Rien n'empêche de dire finalement maintenant,
+[69:43 -> 69:49] cette régule des heures de nuit, je veux qu'elle soit validée à deux niveaux. Si je passe en
+[69:49 -> 69:56] exemple formation ou en niveau 2, elle va suivre cette régule, elle suivra un deux
+[69:56 -> 70:04] niveaux de validation. Mais on a cette même information disponible sur les absences, absences
+[70:04 -> 70:12] motifs, donc chaque motif d'absence. Si je prends par exemple les congés, les décès par exemple,
+[70:13 -> 70:21] souvent les événements familiaux, la RH veut les valider aussi. Donc vous voyez, j'ai ce code là,
+[70:21 -> 70:27] regroupement circuit workflow. Je vois les trois mêmes codes regroupement. Je vais prendre l'exemple
+[70:27 -> 70:40] formation. Et quand je regarde l'absence mission par exemple, elle n'a pas de code regroupement.
+[70:40 -> 70:53] Donc ça veut dire que si je reviens ici sur les événements de barfos, sur ce pilotage là,
+[70:53 -> 71:01] l'absence mission qui n'a pas de code regroupement particulier sur sa codification de motifs,
+[71:01 -> 71:06] elle va suivre, elle va être en attente, elle va suivre ce circuit,
+[71:06 -> 71:11] puis une validation pas le responsable direct. Alors que l'absence décès,
+[71:11 -> 71:21] comme elle est rangée sous ce code regroupement pour le workflow, elle doit suivre ce circuit là.
+[71:21 -> 71:35] Donc je peux distinguer, ici au niveau général, je mets ce qui se passe si j'ai pas de précision
+[71:35 -> 71:43] particulière donnée sur les motifs d'absence. Mais par contre, si sur les motifs d'absence,
+[71:43 -> 71:47] j'ai indiqué un code regroupement particulier de circuit, et bien l'absence,
+[71:47 -> 71:56] l'événement va suivre le circuit qui est porté, qui est lié au code regroupement que j'ai indiqué
+[71:56 -> 71:56] sur le motifs.
+[71:56 -> 72:26] Maintenant, si je fais une absence,
+[72:26 -> 72:41] l'absence mission. Je vais mettre en mur.
+[72:56 -> 73:11] Pourquoi je la vois pas à l'état demandé ? Ah, c'était le 19 mai, pardon.
+[73:11 -> 73:24] Je vais mettre le 19 mai, elle est bien en état demandé.
+[73:24 -> 73:41] Je vais saisir.
+[73:41 -> 73:54] Au cas où j'ai mis un code regroupement à deux niveaux de validation,
+[73:54 -> 74:10] j'en sais rien encore. Ce n'est pas ça, je vais faire dans le passé plutôt, c'est plus logique.
+[74:10 -> 74:38] Je vais y arriver, pardon.
+[74:39 -> 74:50] Je n'en ai que le 3.
+[74:50 -> 74:57] Elle est en état demandé aussi.
+[74:57 -> 75:05] Maintenant, si je le mets en tant que gestionnaire, en appliquant le profil qui me permet de valider
+[75:05 -> 75:17] les absences sur un périmètre dans lequel j'appartiens, pour les absences, je vais mettre en responsable d'équipe.
+[75:17 -> 75:39] J'ai des filtres sur les absences sur ce profil.
+[75:40 -> 75:46] Ici, ce profil, c'est le super admine.
+[75:46 -> 75:53] Ici, il a des filtres absences congéformation.
+[75:54 -> 76:02] Ce filtre absences congéformation, il ne prend que les congés annuels et les RTT.
+[76:02 -> 76:13] Si je l'ouvre en validation d'absence, valider les demandes des collaborateurs,
+[76:13 -> 76:17] valider les demandes d'absence, il y a un filtre qui s'applique.
+[76:17 -> 76:34] Ce filtre absences congéformation, typiquement, c'est un cas où on peut considérer que je dois pouvoir valider autre chose.
+[76:35 -> 76:40] Je vais modifier le filtre absences congéformation.
+[76:40 -> 76:47] Je vais rajouter le décès et la mission pour pouvoir les valider.
+[76:47 -> 77:12] J'ai fait un épargner, donc ça se rajoute et là, je prends le décès.
+[77:12 -> 77:22] Ici, je prends le décès.
+[77:22 -> 77:32] Ici, je prends le décès.
+[77:32 -> 78:01] Dans les validations, j'ai des absences à valider avec un rôle de responsable d'équipe.
+[78:01 -> 78:10] Je vois le décès, la mission, le 19.
+[78:10 -> 78:14] Je vais refuser les deux autres.
+[78:14 -> 78:24] Je prends tout ça, je confirme.
+[78:24 -> 78:29] C'est ici qui vient commentaire.
+[78:30 -> 78:58] Maintenant, si je reviens sur mon compte et que je regarde mes absences en cours,
+[78:58 -> 79:27] je vois que la mission du 19 mai, qui doit suivre un circuit,
+[79:27 -> 79:36] puis un seul niveau, elle est acceptée définitivement.
+[79:36 -> 79:41] Parce qu'elle n'attend pas un deuxième niveau de validation.
+[79:41 -> 79:46] Sur la mission, je n'ai pas de code regroupement pour le circuit de workflow.
+[79:46 -> 79:53] Par contre, si je prends mon décès, la absence d'essais en cours,
+[79:53 -> 79:57] elle attend un autre valideur.
+[79:57 -> 80:04] Elle est acceptée, mais elle n'est pas encore acceptée définitivement.
+[80:04 -> 80:10] Maintenant, cette absence est où ?
+[80:10 -> 80:20] Quand on a perdu les événements dans les circuits, dans le menu workflow,
+[80:20 -> 80:28] on a les demandes en cours.
+[80:29 -> 80:32] On voit toutes les demandes qui sont encore dans les tuyaux,
+[80:32 -> 80:36] et qui ne sont pas allées à terme de leur circuit de validation.
+[80:36 -> 80:38] Quand elles arrivent à terme, elles ne sont plus là-dedans.
+[80:38 -> 80:43] Si on a beaucoup de choses là-dedans, et surtout si on a des choses historiquement
+[80:43 -> 80:47] dates de Matthew Zanem, c'est qu'il y a un problème.
+[80:47 -> 80:50] C'est qu'il y a des gens qui ne valident pas.
+[80:50 -> 80:54] Il y a des trucs qui sont restés en rad.
+[80:54 -> 81:03] Ce que je vois, c'est que cette absence, celle qui est en cours,
+[81:03 -> 81:06] je ne sais pas le motif d'absence.
+[81:06 -> 81:09] Je connais le circuit, je connais le demandeur,
+[81:09 -> 81:11] je connais l'utilisateur qui a fait la demande,
+[81:11 -> 81:13] je connais la date d'émission de la demande,
+[81:13 -> 81:16] mais je sais que ça concerne une absence,
+[81:16 -> 81:18] mais je n'ai pas le code du motif.
+[81:19 -> 81:22] Si je voulais l'historique de l'événement,
+[81:22 -> 81:26] ça a été demandé et accepté par Korn,
+[81:26 -> 81:28] l'utilisateur connecté.
+[81:28 -> 81:32] Et là, c'est en état les valideurs potentiels
+[81:32 -> 81:33] de cette demande.
+[81:33 -> 81:35] Maintenant, c'est un RESP2,
+[81:35 -> 81:37] parce qu'il est dans un état courant
+[81:37 -> 81:40] et tente de validation d'un RESP2.
+[81:40 -> 81:44] Donc là, il faut que j'ai au moins un profil d'utilisateur
+[81:45 -> 81:48] qui soit capable de valider des absences
+[81:48 -> 81:50] de ce niveau-là, enfin, à ce niveau-là.
+[81:52 -> 81:53] Et souvent,
+[81:55 -> 81:58] on utilise, et c'est pour ça qu'on a proposé ça,
+[81:58 -> 82:00] il me semble,
+[82:00 -> 82:02] le gestionnaire RH,
+[82:03 -> 82:06] il est appuyé sur le rôle gestionnaire RH.
+[82:06 -> 82:08] Et le gestionnaire RH,
+[82:08 -> 82:10] au niveau du rôle,
+[82:10 -> 82:12] dans les profits de workflow,
+[82:12 -> 82:15] ah oui, on l'a mis en RESP, c'est les anciens modèles.
+[82:16 -> 82:17] En fait,
+[82:17 -> 82:19] si je dis que...
+[82:23 -> 82:24] Comment dire ?
+[82:24 -> 82:26] Dans tous les profils que j'ai là, en ce moment,
+[82:28 -> 82:31] j'ai pas de profil d'utilisateur
+[82:31 -> 82:32] qui s'appuie sur un rôle,
+[82:32 -> 82:34] où j'ai des RESP2, je ne pense pas.
+[82:35 -> 82:37] Quand je regarde l'administrateur général complet,
+[82:37 -> 82:40] je suis boite mine au RESP.
+[82:40 -> 82:43] Quand je regarde l'administrateur général client,
+[82:43 -> 82:45] je suis admine partout.
+[82:46 -> 82:48] L'administrateur fonctionnal RH,
+[82:48 -> 82:52] lui, il n'a pas de fonctionnalité liée au workflow,
+[82:52 -> 82:54] parce qu'il n'a que des groupes
+[82:55 -> 82:57] de paramétrage, tout comme ça.
+[83:00 -> 83:03] Donc, j'aurais pensé que c'était
+[83:03 -> 83:05] le gestionnaire RH, mais souvent,
+[83:06 -> 83:08] en fait, quand on a deux niveaux de validations,
+[83:08 -> 83:09] c'est souvent le manager direct,
+[83:09 -> 83:11] en métropole, en tout cas, en France.
+[83:13 -> 83:14] C'est souvent manager direct.
+[83:14 -> 83:16] Et éventuellement, il faut une deuxième validation
+[83:16 -> 83:17] de la RH.
+[83:17 -> 83:18] C'est souvent ça.
+[83:18 -> 83:19] Donc, c'est souvent un profil
+[83:19 -> 83:21] qu'on appelle gestionnaire RH
+[83:21 -> 83:23] qui est vu comme un deuxième valideur,
+[83:23 -> 83:25] un valideur de deuxième niveau.
+[83:26 -> 83:28] Donc là, du bout, je dis
+[83:28 -> 83:30] si sur la validation des demandes,
+[83:31 -> 83:33] je suis RESP2 et non par RESP.
+[83:40 -> 83:42] Euh...
+[83:48 -> 83:49] Et que...
+[83:49 -> 83:50] Je ne suis toujours là,
+[83:50 -> 83:53] donc ici, je vais m'affecter
+[83:54 -> 83:56] aussi ce profil utilisateur-là,
+[83:56 -> 83:57] parce que...
+[83:58 -> 83:59] Je ne sais pas si je vais y arriver.
+[83:59 -> 84:01] Utilisateur, utilisateur...
+[84:01 -> 84:02] Alors...
+[84:06 -> 84:09] Je vais m'affecter aussi
+[84:09 -> 84:11] l'utilisateur gestionnaire RH.
+[84:31 -> 84:32] Voilà.
+[84:32 -> 84:34] Alors, et si je suis super amine,
+[84:34 -> 84:35] GFI,
+[84:35 -> 84:37] si je vais dans mon équipe
+[84:37 -> 84:39] validation
+[84:39 -> 84:41] RESP2,
+[84:41 -> 84:43] RESP2,
+[84:43 -> 84:45] RESP2,
+[84:45 -> 84:46] RESP2,
+[84:46 -> 84:47] RESP2,
+[84:47 -> 84:49] RESP2,
+[84:49 -> 84:50] RESP2,
+[84:50 -> 84:52] RESP2,
+[84:52 -> 84:53] RESP2,
+[84:53 -> 84:54] RESP2,
+[84:54 -> 84:55] RESP2,
+[84:55 -> 84:56] RESP2,
+[84:56 -> 84:57] RESP2,
+[84:57 -> 84:58] RESP2,
+[84:58 -> 84:59] RESP2,
+[84:59 -> 85:00] RESP2,
+[85:00 -> 85:09] J'ai pas de… en tant qu'administrateur, on n'a pas de demande en l'attente, on n'a
+[85:09 -> 85:16] pas de circuit en l'attente d'un valideur-administrateur et en tant qu'responsable d'équipe, j'ai
+[85:16 -> 85:21] une demande de Myramelle parce que le superan… bon, elle est restée… elle est avalidée,
+[85:21 -> 85:29] mais je ne vois pas ma demande d'absence pour d'essai dans ce lieu-là.
+[85:29 -> 85:38] On peut faire ici, si je me mets en superanmin exemple, je réparer, en tant qu'administrateur
+[85:38 -> 85:42] de toute façon, j'ai rien et en tant qu'administrateur d'équipe, je ne suis pas en
+[85:42 -> 85:47] l'attente d'un responsable d'équipe, je suis dans l'attente d'un RESP2, donc voilà.
+[85:47 -> 85:54] Et donc pour pouvoir apparaître, si je me mets en gestionnaire d'équipe, j'ai
+[85:54 -> 85:57] des élenements génériques à valider, c'est restant rad.
+[85:57 -> 86:06] En tant que mon équipe est tendu, je n'ai pas de demande, ah si, pardon, mais je n'ai
+[86:06 -> 86:07] pas d'absence.
+[86:07 -> 86:17] Par contre, si je me mets cette fois en gestionnaire RH, parce que j'ai un RESP2 en profil de
+[86:17 -> 86:23] workflow sur valider les absences, là je vais pouvoir arriver.
+[86:23 -> 86:31] Alors en tant qu'responsable d'équipe, j'ai rien, mais par contre, en tant qu'responsable
+[86:31 -> 86:39] N++2, là, j'ai les demandes que j'ai faites et notamment ma demande d'absence pour
+[86:39 -> 86:44] d'essai qui apparaît parce qu'elle est en attente de validation d'un RESP2.
+[86:47 -> 87:10] Asterix, Asterix, Asterix, Asterix, je ne sais jamais ce que c'est, c'est Asterix.
+[87:10 -> 87:31] Si il y a un commentaire derrière ? Ah ! Non, je n'ai pas de commentaire.
+[87:31 -> 87:47] Il y avait un piège joint, je pense ? Piage joint ? Peut-être ? Ah bah non parce que les
+[87:47 -> 87:54] pièges joints, elles sont là. Non ? Les pièges joints, elles sont là ? Ah, l'Asterix,
+[87:54 -> 88:05] je ne sais pas ce que c'est. Je ne sais pas ce que c'est. Mais vous m'avez déjà posé la
+[88:05 -> 88:09] question, il me semble. Je vous ai dit que j'avais regardé, mais je n'ai pas regardé.
+[88:09 -> 88:39] Validation. Je me demande si c'est pas, si c'est pas,
+[88:39 -> 88:46] lié au fait que ce soit une demande en cours. C'est-à-dire qu'il y a une validation intermédiaire.
+[88:46 -> 88:56] Parce que si je regarde le détail de celle-là qui n'a pas d'Asterix, cette naissance, voilà.
+[88:56 -> 89:05] J'ai pas le droit de la modifier, valider, etc. J'ai le droit de rien.
+[89:05 -> 89:20] Mais ça a été demandé par UX nommé d'utile. Et par contre, ce que je ne sais pas si ça a été
+[89:20 -> 89:26] demandé par UX nommé d'utile, non lié à un collaborateur ou lié à un collaborateur.
+[89:26 -> 89:30] Bref, je ne sais pas si elle a été saisie depuis mon compte ou depuis mon équipe. Mais si elle a été
+[89:30 -> 89:40] saisie depuis mon équipe, du coup, elle n'est pas en cours. Elle n'a jamais été validée par quelqu'un,
+[89:40 -> 90:00] en fait. Celle-ci, elle a été demandé le lundi 10 mai par vous-même.
+[90:00 -> 90:06] Alors typiquement, voilà. Mais c'est ça. C'est que ça, c'est une demande pour Véronique le 24 mai.
+[90:06 -> 90:15] J'ai saisie une motif naissance pour Véronique. On va le faire de toute façon. On va le faire d'emblée.
+[90:15 -> 90:24] On va vérifier ce qu'on raconte. Ici, je suis en gestionnaire RH formation. Donc je vais le mettre en
+[90:24 -> 90:38] gestionnaire celui-là. Celui-là, il est ce profil-là. Je vais pouvoir saisir une absence.
+[90:38 -> 90:59] Pour Christine. Et je vais le mettre. Alors on va vérifier un truc d'abord dans le référentiel.
+[90:59 -> 91:13] C'est que c'est une naissance. Donc absence motif naissance. On avait un code regroupement niveau 2.
+[91:13 -> 91:22] Donc sur le tableau des événements du workflow, on a vu que j'ai rajouté un code CCO,
+[91:22 -> 91:27] exemple formation. Mais en fait, j'ai rattaché un circuit à deux niveaux de validation. Et c'est
+[91:27 -> 91:33] comme si j'avais rattaché. Je fais la même chose que ce code regroupement niveau 2. C'est pareil.
+[91:33 -> 91:46] Puisque à ce code de regroupement niveau 2, on avait associé aussi ici. Voilà. On a aussi ce
+[91:46 -> 91:54] même circuit à l'oeuvre. Donc naissance doit suivre aussi les deux niveaux de validation. Et
+[91:54 -> 92:03] donc maintenant, si je saisis... Alors, un problème, c'est que je ne vais pas pouvoir
+[92:03 -> 92:18] mon profil. Il va me bloquer. Il va me bloquer en saisis. Alors, le filtre. Exemple, absence
+[92:18 -> 92:24] congéformation dans laquelle j'ai rajouté mes tests là. J'ai rajouté aussi la naissance.
+[92:24 -> 92:35] Donc maintenant,
+[92:48 -> 93:01] j'applique ce profil là.
+[93:01 -> 93:16] Véronique, je vais saisir sur son point d'ail. Je vais lui saisir une absence.
+[93:16 -> 93:29] Alors, la naissance, c'était le 1 de 4 mai, je vais mettre un autre jour. Une naissance trois jours.
+[93:46 -> 94:01] Ok, donc le 24-21. Et maintenant, si j'applique le gestionnaire RH, je vais dans l'espace
+[94:01 -> 94:13] mon équipe des demandes à valider. En tant que respect de... Je le vois pour Véronique, le 24-21.
+[94:14 -> 94:28] Bon alors, j'ai pas d'astérix. Alors que si je saisis en tant que moi, absence.
+[94:28 -> 94:55] Je prends le même motif, même date. Je suis en état demandé. Ici, je mets en tant que valideur de
+[94:55 -> 95:16] premier niveau. J'ai une absence à valider. En tant que responsable d'équipe. Cette naissance,
+[95:16 -> 95:23] le 24-21, je n'ai pas d'astérix. C'est là parce que c'est ma première validation. C'est ma
+[95:23 -> 95:26] validation intermédiaire. Donc c'est le manager qui est en train de valider la demande. Ok,
+[95:26 -> 95:35] donc j'ai pas d'astérix. Là, je ne la vois plus apparaître dans mon tableau. Ok,
+[95:35 -> 95:39] puisque je n'ai plus d'événements à valider. Mais si maintenant, je me mets en tant que gestionnaire
+[95:39 -> 95:43] RH pour pouvoir valider cette demande au deuxième niveau.
+[95:53 -> 96:05] Sur corneille des 24-21, je vois l'astérix. C'est ça. C'est qu'en fait, il y a eu une
+[96:05 -> 96:09] validation intermédiaire. Il y a déjà eu une validation avant de l'avoir arrivé dans mon
+[96:09 -> 96:22] poule. C'est tout ce que ça veut dire. Dicent, ce n'est pas une validation partielle. C'est ça.
+[96:22 -> 96:31] Ça a été validé partiellement. Alors que là, ça a été validé partiellement puisque de toute
+[96:31 -> 96:36] façon, c'est un manager de niveau 1 qui l'a saisi. Donc quelque part, c'est comme si le
+[96:36 -> 96:42] collaborateur l'avait saisi et que le manager l'avait validé. Mais là, ce n'est pas le cas.
+[96:42 -> 96:50] Ça a été directement saisi par le gestionnaire, par le manager, par le ne plus. C'est pour ça
+[96:50 -> 96:57] qu'on ne va pas l'astérix. C'est pas très... Christine, sur l'astérix des absences. Il n'y a pas
+[96:57 -> 97:09] moyen d'occepter les jours de repos. Non, non, non. Non, je sais qu'ils ont travaillé là-dessus.
+[97:09 -> 97:15] J'ai l'impression qu'il y a eu un travail là-dessus. Je vais me renseigner parce que c'était vraiment
+[97:15 -> 97:20] un sujet, mais je ne sais pas. Je sais parce qu'il y a des sujets qui sont évoqués et qu'on
+[97:20 -> 97:27] étudie en face de SFG, d'évolution. Et puis finalement, on se rend compte que ça peut
+[97:27 -> 97:34] pas rentrer dans le timing, compte tenu, décharge, etc. Et du coup qu'on sort, je sais que j'ai l'impression,
+[97:34 -> 97:39] j'ai entendu parler d'un travail sur le sujet, mais pour moi, ce n'est pas sorti. Pour moi,
+[97:39 -> 97:46] ce n'est pas fait encore. Mais je vais vérifier. D'accord. C'est un point qui est très important aussi.
+[97:46 -> 97:53] Oui, je sais, mais il y a eu des évolutions sur justement la priorité, absences, horaires,
+[97:53 -> 97:58] etc. La priorisation. Il y a eu un travail là-dessus et je ne sais pas si ça embarque ça.
+[97:58 -> 98:03] Donc je vais me renseigner. Je vais voir. Et je vais vous faire un retour là-dessus.
+[98:03 -> 98:23] D'accord, merci. J'enlève juste la main-game, Christine. Est-ce que pour les notifications,
+[98:23 -> 98:35] un valideur va notifier une activité à valider ou d'un collaborateur badger d'une omission de
+[98:35 -> 98:43] CISI? Est-ce qu'il a moyen d'être notifié, soit par message sur son workspace ou par email,
+[98:43 -> 98:49] ou sinon, c'est quoi les types de notifications qui sont standard dans le système?
+[98:50 -> 98:56] Là, tu me présentes une situation qui n'est pas tout à fait. Tu me dis,
+[98:56 -> 99:00] si un collaborateur devait saisir un événement et qu'il ne l'a pas fait?
+[99:00 -> 99:10] Oui, je dirais, cisément, quand tout type d'invénement, afin que ça lui aide ses rappels à la CISI ou
+[99:10 -> 99:15] quelque chose comme ça. Si un collaborateur devait saisir un événement dans l'espace
+[99:15 -> 99:24] mon compte et qu'il ne l'a pas fait. Ça, ce n'est pas géré par le workflow,
+[99:24 -> 99:33] c'est géré par des anomalies. Ça, c'est le calcul. Quand on va arriver à la date où le
+[99:33 -> 99:40] collaborateur devait saisir cet événement et qu'il ne l'a pas fait, on voit le message
+[99:40 -> 99:52] saisir un complète ou quelque chose comme ça. Par exemple, il devait pointer, il n'a pas pointé et
+[99:52 -> 99:58] il n'a pas justifié son absence. Par exemple, je ne sais pas quelle situation il faut des situations
+[99:58 -> 100:07] précises. En tout cas, ce type de choses, on va le gérer par des anomalies de calcul. On ne va pas
+[100:07 -> 100:14] pouvoir le faire. Comment dire ? Je n'ai pas trop le contexte. Donne-moi un exemple très précis.
+[100:14 -> 100:22] J'ai compris, c'est que pour moi, il y a un collaborateur badger. Normalement, il n'a pas saisi
+[100:22 -> 100:32] ses activités. Je ne peux pas donner un mot qui signifie autre chose. Et bien sûr, il y a un message,
+[100:32 -> 100:40] il y a une notification qu'il a informe qu'il doit faire sa saisie. Et il va avoir, ce jour-là,
+[100:40 -> 100:45] il va lui dire un badgeage. Alors s'il a oublié de badger une fois, ça va lui dire badgeage impère.
+[100:45 -> 100:53] S'il n'a pas badger du tout, ça veut dire absence non prévue, ça va lui donner une liste d'anomalies.
+[100:53 -> 101:10] Dans l'espace d'accueil, en fait, la notif peut-être, ça peut être, dans la personnalisation de l'espace
+[101:10 -> 101:22] d'accueil, de faire afficher les anomalies. Et si je fais afficher des anomalies, elles sont là.
+[101:22 -> 101:34] Voilà. Et éventuellement, je peux choisir les absences pendant plage fixe, par exemple. Bon,
+[101:34 -> 101:39] moi, c'est particulier, je crois que je ne sais plus en quel mode je suis là. Mais donc du coup,
+[101:39 -> 101:50] il aurait des anomalies, absence non prévue. D'accord, d'accord. Mais c'est pas un mail à ce niveau-là.
+[101:51 -> 101:52] D'accord. Donc la notion des emails.
+[101:52 -> 101:56] Oui, on va pas lui envoyer un mail pour lui dire où il devait faire ça.
+[101:56 -> 101:58] D'accord.
+[101:58 -> 102:03] Les mails, ils sont envoyés aux responsables. Les mails de relance, des anomalies à lever, des
+[102:03 -> 102:08] demandes à valider, des choses comme ça. Ces mails-là, ils sont toujours envoyés aux responsables.
+[102:08 -> 102:14] D'accord. On avait ces exemples sur le CRAT-35 ou plutôt sur Vichy-CRAT de notre côté.
+[102:14 -> 102:20] Lorsqu'il y a la date, avant l'envoi de facturation, il y a la date au niveau Time Sheet.
+[102:20 -> 102:25] Donc à la fin du mois, c'est une, enfin, si une semaine n'est pas si incomplète,
+[102:25 -> 102:31] il y a un message qui est envoyé. C'est pas automatique, mais c'est envoyé par le manager.
+[102:31 -> 102:39] Directement depuis l'application, notifiant le collaborateur qu'il a incisément compte.
+[102:39 -> 102:40] Oui.
+[102:40 -> 102:46] Dans le temps, on l'avait plein, un paramétre pour que ce soit automatique. Mais ce genre de
+[102:46 -> 102:51] choses, donc il y a, pour dire tel, vous avez tel semaine, la semaine 17, la semaine 20,
+[102:51 -> 102:55] la cise est incomplète. Veuillez régulariser votre situation ou veuillez compléter votre
+[102:55 -> 102:57] situation. Donc ce genre de message.
+[102:57 -> 103:00] Non, on n'a pas ça.
+[103:00 -> 103:09] D'accord. Et pour le valideur, lorsqu'il a des, en tant que manager, il a des activités
+[103:09 -> 103:15] décisées à valider. Est-ce qu'il n'a pas de notification pour gérer, enfin, qu'il
+[103:15 -> 103:19] n'y a pas d'hommission, pour que ça soit valider.
+[103:19 -> 103:20] Ah non.
+[103:20 -> 103:21] D'accord.
+[103:21 -> 103:24] On ne sait pas dire qu'il manque une saisie d'activité.
+[103:24 -> 103:25] D'accord.
+[103:25 -> 103:32] En tout cas, si on ne fait pas, si on ne fait pas des règles très particulières avec
+[103:32 -> 103:37] des anomalies, des choses comme ça, et puis ça passerait donc par du contrôle,
+[103:37 -> 103:47] par les règles de calcul de ce qui est saisie sur la journée, on génère une anomalie,
+[103:47 -> 103:53] éventuellement, grâce à la réglage de calcul, si on a trouvé des blancs, par exemple,
+[103:53 -> 103:57] si on voit qu'il n'y a pas d'activité ou qu'il n'y a pas d'absence et donc il
+[103:57 -> 104:01] n'y a rien de saisie, donc il y a un blanc, il y a quelque chose qui n'a pas été
+[104:01 -> 104:02] fait.
+[104:02 -> 104:11] On peut générer une anneau qui dit qu'il manque quelque chose, activité de saisie, mais
+[104:11 -> 104:17] cette anneau, et du coup, cette anneau, on va la rendre visible au collaborateur ici,
+[104:17 -> 104:21] sur son compte, sur son espace d'accueil, mais on ne lui rendra pas un mail au collaborateur.
+[104:21 -> 104:26] Le mail, si on rencontre des anneaux comme ça, peut-être qu'on va l'envoyer au
+[104:26 -> 104:27] manager du gars.
+[104:27 -> 104:28] D'accord.
+[104:28 -> 104:36] De toute façon, je vais clarifier ça pour différencer ce type de notification par rapport
+[104:36 -> 104:41] à ce qu'on peut faire au niveau de parametrage du workflow, en lieu d'aller chercher, de
+[104:41 -> 104:47] dire, je peux répondre à ça via workflow, de faire une force-piste, c'est ça ce que
+[104:47 -> 104:48] j'essaie de clarifier.
+[104:48 -> 104:52] Parce que souvent, on essaie de faire au workflow des choses pour lesquelles il n'est
+[104:52 -> 104:53] pas prévu d'être fait.
+[104:53 -> 104:54] Justement.
+[104:54 -> 104:55] Ok, merci.
+[104:55 -> 105:09] Par exemple, il ne faut pas confondre les contrôles en saisie qui peuvent être effectués, alors
+[105:09 -> 105:11] vous le verrez par les règles, j'espère que vous me verrez en formation aux règles de
+[105:11 -> 105:19] calcul, des contrôles en saisie, et puis des règles écrites dans le workflow qui dirait
+[105:19 -> 105:23] « je refuse automatiquement une demande si j'ai telle condition ».
+[105:23 -> 105:32] Parce que ça pourrait être le cas, on pourrait dire, ici dans un circuit de workflow, je ne
+[105:32 -> 105:40] vais pas vous montrer, mais on pourrait écrire une règle, on pourrait dans cette règle
+[105:40 -> 105:47] tester des tas de conditions qui correspondent aux contrôles de la saisie, en fait, et
+[105:47 -> 105:55] puis mettre un saisie ok ou non, et en sortie après cette règle d'évaluation, dire « si
+[105:55 -> 106:01] la saisie est ok, ok, je passe en boîte d'attente, et puis si la saisie n'est pas ok, je refuse
+[106:01 -> 106:02] automatiquement ».
+[106:02 -> 106:14] Mais le refus, alors on pourrait le faire, sauf que le refus, là il n'est pas une
+[106:14 -> 106:20] média, parce que l'évaluation ne se fera que dans les traitements de nuit, donc ça ne
+[106:20 -> 106:26] va pas bloquer sa saisie, la saisie de la personne qui fait une saisie qui n'est pas valable,
+[106:26 -> 106:30] qui va pas être acceptée de toute façon, ça va pas la bloquer instantanément quand
+[106:30 -> 106:32] elle va saisir sa demande.
+[106:32 -> 106:36] On va accepter sa demande, et puis dans les traitements de nuit, on va faire passer
+[106:36 -> 106:41] les règles d'évaluation pour déclencher un refus automatique, mais ça se fera
+[106:41 -> 106:42] que la nuit.
+[106:42 -> 106:49] Donc, si on veut bloquer une saisie directement au moment où la personne, elle saisit son
+[106:49 -> 106:53] événement sur des critères, je ne sais quoi, eh bien il faut faire des contrôles en saisie
+[106:53 -> 106:58] par des règles de calcul ou par des règles serveurs plus élaborées si on ne peut pas
+[106:58 -> 107:00] faire ça par des règles de calcul simples.
+[107:30 -> 107:42] Si vous voulez, je vous montre Rachid, si t'as deux secondes, je peux te montrer ? Eh ?
+[107:42 -> 107:44] Oui, je suis là, oui.
+[107:44 -> 107:51] Tu m'as demandé comment mettre en immédiat les envoies de mail aux responsables.
+[107:51 -> 107:59] Exactement, parce que c'est plus eulocité de mettre les notifications instantanées
+[107:59 -> 108:02] que de les avoir en temps différent.
+[108:02 -> 108:04] Voilà, ça se fait en base de données.
+[108:04 -> 108:25] Alors, je suis là, voilà, les tables, comment c'est un nouvel table ? Ah, pardon, c'est
+[108:25 -> 108:26] un truc gauche.
+[108:26 -> 108:27] Voilà.
+[108:27 -> 108:36] Ici dans l'appli, on a vu que quand on est, je vais appliquer un profil, Super Amid
+[108:36 -> 108:55] JV, workflow circuit, si je prends ce circuit-là par exemple, modifier le schéma, quand je
+[108:55 -> 109:00] prends la boîte de notification, notification au reste là, voilà, le collaborateur a saisi
+[109:00 -> 109:05] une demande, on arrive dans la boîte de notification qui va demander, qui va envoyer un mail aux
+[109:05 -> 109:07] responsables, là.
+[109:07 -> 109:11] Ici, c'est la pause du nouvel demande, par exemple, ça va prendre le modèle, pause
+[109:11 -> 109:13] du nouvel demande d'absence par le collaborateur.
+[109:13 -> 109:17] Eh bien, dans la base de données, il faut prendre la table.
+[109:17 -> 109:46] Je crois que c'est YNF modèle, YNF modèle, voilà, voilà, cette table.
+[109:46 -> 110:03] C'est cette table là, la table YNF modèle, cette table pour, donc elle a, elle comporte
+[110:03 -> 110:12] tous les modèles de mail qui sont envoyés, donc par exemple, si je fais, alors ça va
+[110:12 -> 110:30] être un call, quelque chose, non, on va trier par YNF modalité en croissant ici, call,
+[110:30 -> 110:38] voilà, pause du nouvel demande d'absence, par exemple, ce modèle-là.
+[110:38 -> 110:49] C'est envoyé en différé, parce que dans YNF RESP GRP ID, il y a suivi équipe, parce
+[110:49 -> 110:54] qu'on a mis un code de groupe, c'est-à-dire qu'on dit, bah tous les mails de ces mails
+[110:54 -> 111:02] qui sont issus d'une nouvelle demande d'absence par le collaborateur, ça va être regroupé
+[111:02 -> 111:07] au sein d'un groupe de mails qui arrivera en fin de journée, au moment où ça va
+[111:07 -> 111:09] être traité dans les traitements de nuit.
+[111:09 -> 111:15] Alors, ce n'est pas les traitements de nuit en fait, c'est autre chose.
+[111:15 -> 111:21] Donc ça va être regroupé et on utilise le code YNF RESP GRP ID.
+[111:21 -> 111:27] Si tu veux l'envoyer en immédiat, on enlève ce groupe-là, on le passe à nul,
+[111:27 -> 111:39] et ici, en déclencheur, au moment de déclenchement, là on met immédiat.
+[111:39 -> 111:52] Et là maintenant, dans ce cadre-là, les mails, ils partiront immédiatement aux responsables.
+[111:52 -> 112:05] Mais il faut faire attention, parce qu'un patch ou une mise à jour de l'environnement,
+[112:05 -> 112:09] ça viendra écraser cette modification que tu as faite.
+[112:09 -> 112:18] Ça te relivrera par contre un suivi équipe, c'est pour ça qu'on préconise de non pas utiliser
+[112:18 -> 112:27] les modèles standards, parce que ça c'est du standard, mais de dupliquer, de créer des modèles
+[112:27 -> 112:35] spécifiques. On ferait un nouveau modèle, on peut insérer un nouveau modèle YNF Model ID,
+[112:35 -> 112:41] on mettrai SP, Call them apps, Pose Nouvellement d'absence pour le client et on y mettrai les
+[112:41 -> 112:50] caractéristiques comme ça, pour ne pas être écrasé par un patch. Et si on crée un nouveau modèle,
+[112:50 -> 112:56] alors je ne vais pas faire la mise à jour de base ici, mais si on crée un nouveau modèle,
+[112:56 -> 113:05] si je vais le faire, pardon, je vais te montrer jusqu'au bout. Je vais rester en suivi équipe ici,
+[113:05 -> 113:21] en groupe, et je ne vais pas mettre rien là-dedans pour les envois en unitaires. Et je vais rajouter
+[113:21 -> 113:49] une nouvelle demande d'absence. Je vais la placer et je vais même prendre le modèle des messages,
+[113:50 -> 114:02] c'est-à-dire que je vais prendre le niveau 10. Ici je ne vais rien mettre dans les groupes. Ici je mets ADR Mail comme
+[114:02 -> 114:12] pour les autres. Ici je mets IMEDIA pour les envois aux responsables et aux collaborateurs.
+[114:12 -> 114:28] On va mettre I et ça on va mettre I. Voilà, on valide. Et maintenant dans l'application,
+[114:28 -> 114:39] alors je pense qu'il faut que je recharge, je ne suis pas sûr.
+[114:58 -> 115:10] Warkflow circuit. Si je reprends ce circuit-là et modification de schéma,
+[115:10 -> 115:17] je vais passer en révision 2 et là la notification responsable, on pose une nouvelle demande.
+[115:17 -> 115:31] Je devrais avoir accès à l'aspect, nouvelle demande d'absence. Et là si je prends ce modèle-là,
+[115:31 -> 115:38] qu'est-ce qu'il a ? Pourquoi il ne veut pas ?
+[115:48 -> 115:55] On a perdu la fichage. Vous avez perdu la fichage ? Oui.
+[116:01 -> 116:09] Vous avez vu ce que j'ai fait en base de l'ONU ? Oui, on avait juste l'heure de chargement de ce modèle.
+[116:09 -> 116:20] Pourquoi je n'arrive pas à faire ça ?
+[116:20 -> 116:40] Je devrais. Qu'est-ce qui se passe ? Tu es sur superadmine toujours ?
+[116:40 -> 116:47] Oui, oui, je suis sur superadmine.
+[116:47 -> 116:55] Peut-être que tu devrais fermer la table ? Peut-être qu'il est encore verrouillé ?
+[116:56 -> 117:01] Sur SQL ? Oui.
+[117:01 -> 117:11] Tu as fait un comique sur la table ? Oui, j'ai fait un comique parce que ma table, normalement, je la vois là.
+[117:11 -> 117:15] Je vais la voir tout à fait en fin de...
+[117:15 -> 117:20] Mon modèle s'appelle SP.
+[117:21 -> 117:25] Tu me parles, Sophie ?
+[117:25 -> 117:30] Ah, c'est que le démat nul.
+[117:30 -> 117:34] Il m'est dit un email immédiat, immédiat.
+[117:34 -> 117:38] Ah non, c'est là que je me suis dit, peut-être.
+[117:38 -> 117:42] À croqueux.
+[117:42 -> 117:46] Holden ups.
+[118:12 -> 118:21] Je ne comprends pas pourquoi.
+[118:21 -> 118:26] Qu'est-ce qu'il a fait un peu de GAI ? Oui.
+[118:26 -> 118:30] Il est 18h30.
+[118:30 -> 118:36] Bonne soirée.
+[118:36 -> 118:39] Merci.
+[118:40 -> 118:43] À plus.
+[118:43 -> 118:46] Je comprends bien pourquoi il ne veut pas.
+[118:46 -> 118:53] Qu'est-ce que c'est que cette histoire ?
+[118:53 -> 119:00] Si je supprime cette ligne,
+[119:00 -> 119:05] que je l'ajoute pour les absences
+[119:05 -> 119:10] sur la pose d'une nouvelle demande
+[119:10 -> 119:14] que je prends le modèle SP.
+[119:14 -> 119:16] Ah, il veut bien.
+[119:16 -> 119:20] Il ne veut pas faire de...
+[119:20 -> 119:22] Une duplication ?
+[119:22 -> 119:26] Oui. Il ne veut pas faire de modifications de...
+[119:26 -> 119:30] Je trouve bizarre,
+[119:30 -> 119:34] parce que ici,
+[119:34 -> 119:37] pour une nouvelle demande d'absence par le collaborateur,
+[119:37 -> 119:40] il ne veut pas.
+[119:40 -> 119:44] Pour moi, c'est un bug.
+[119:44 -> 119:51] Sinon, il ne faudrait pas proposer le double-click.
+[119:52 -> 119:55] Oui.
+[119:55 -> 119:59] Pour moi, c'est un problème.
+[119:59 -> 120:02] Enfin, l'idée, c'est ça.
+[120:02 -> 120:05] Maintenant, pour ce circuit,
+[120:05 -> 120:08] pour le client, c'est que quand il n'est pas saisir une absence,
+[120:08 -> 120:11] je l'ai fait pour la pose d'une nouvelle demande
+[120:11 -> 120:14] SP, nouvelle demande d'absence.
+[120:14 -> 120:17] J'ai fait ce modèle-là, mais évidemment,
+[120:17 -> 120:20] il va falloir dupliquer tous les modèles
+[120:20 -> 120:23] de demandes de suppression, etc.
+[120:23 -> 120:26] Les validations, éventuellement, je ne sais quoi,
+[120:26 -> 120:29] il faudrait modifier tous les modèles,
+[120:29 -> 120:32] faire des modèles spécifiques
+[120:32 -> 120:36] pour pouvoir les dupliquer dans cette fameuse table.
+[120:36 -> 120:39] D'une façon à ce que un patch ne crasse pas
+[120:39 -> 120:42] la modification de paramétrage qui aurait été faite.
+[120:42 -> 120:45] C'est une solution
+[120:45 -> 120:48] pour envoyer les...
+[120:48 -> 120:51] En standard, on a prévu d'envoyer des mails
+[120:51 -> 120:54] en différé au responsable
+[120:54 -> 120:57] parce que vous avez la plupart du temps, c'est les bandes qu'on a.
+[120:57 -> 121:00] Mais si les responsables veulent avoir les mails en immédiat, c'est possible.
+[121:00 -> 121:03] C'est possible comme ça.
+[121:03 -> 121:06] Et pour les anomalies, non.
+[121:06 -> 121:09] Les anomalies restent toujours l'envoi par email
+[121:09 -> 121:12] autant qu'il y ait le soir.
+[121:12 -> 121:15] Ah oui.
+[121:15 -> 121:18] Alors je vais vous montrer aussi, c'est que vous voyez
+[121:18 -> 121:21] quand j'envoie des mails groupés, je les emploie
+[121:21 -> 121:24] sur le groupe suivi équipe.
+[121:24 -> 121:27] Mais j'ai une table des groupes.
+[121:27 -> 121:30] Si je prends la table...
+[121:30 -> 121:33] Si je prends la table des groupes.
+[121:33 -> 121:36] Voilà.
+[121:36 -> 121:39] J'ai un groupe qui s'appelle suivi équipe.
+[121:39 -> 121:42] Et ce groupe, au groupe, on associe un déclencheur.
+[121:42 -> 121:46] Et donc le traitement de génération du mail
+[121:46 -> 121:50] qui se fait à partir de toutes les demandes
+[121:50 -> 121:53] et tous les mini-mails qui ont dû être générés en immédiat
+[121:53 -> 121:56] mais qu'on décide de regrouper pour un envoi global
+[121:56 -> 121:59] groupé en suivi équipe,
+[121:59 -> 122:02] eh bien ça se fait à 22h30.
+[122:02 -> 122:10] Et donc à 22h30, il faut que la base soit active,
+[122:10 -> 122:13] que l'environnement soit actif,
+[122:13 -> 122:18] et que le service message soit actif aussi.
+[122:18 -> 122:22] Ah donc ça n'est pas lié au traitement.
+[122:22 -> 122:25] Ah non, l'envoi des mails groupés n'est pas lié au traitement de nuit.
+[122:25 -> 122:27] D'accord.
+[122:27 -> 122:29] C'est à part.
+[122:29 -> 122:33] Donc c'est un skidiler qui est mis sur la table directement.
+[122:33 -> 122:36] Pardon ? C'est un ?
+[122:36 -> 122:42] En fait c'est une tâche qui est mis directement sur la table.
+[122:42 -> 122:43] Voilà.
+[122:43 -> 122:48] C'est à dire le 22h30, pour importe, à 22h30, on envoie à l'équipe.
+[122:48 -> 122:51] Voilà, à 22h30 on fait le traitement
+[122:51 -> 122:53] et c'est à 22h30 qu'on envoie le mail.
+[122:53 -> 122:56] Et donc si cette heure de 22h30 ne convient pas,
+[122:56 -> 123:00] parce que à cette heure là, le client fait ses travaux de nuit,
+[123:00 -> 123:04] il a arrêté tous les services, il fait ses sauvegarde, je ne sais quoi,
+[123:04 -> 123:09] et bien on peut modifier le code du déclencheur en fait.
+[123:09 -> 123:14] Là, on a mis un code du déclencheur à 22h30, mais on peut très bien mettre.
+[123:14 -> 123:17] On a une table de déclencheur par là.
+[123:23 -> 123:26] Des déclencheurs.
+[123:26 -> 123:32] Voilà, ce déclencheur à 22h30, et bien il se déclenche à 22h30.
+[123:33 -> 123:37] Mais on peut très bien changer d'en suivi équipe et de dire que finalement,
+[123:37 -> 123:41] c'est en début de journée.
+[123:41 -> 123:45] Et en début de journée, ça se fait à 7h du matin.
+[123:45 -> 123:46] D'accord.
+[123:49 -> 123:53] Christine, tu es où là directement sur une base SQL
+[123:53 -> 123:57] ou sur un environnement de dev?
+[123:57 -> 124:00] Là, je suis sur la base de données
+[124:00 -> 124:03] et de l'environnement sur lequel on travaille.
+[124:03 -> 124:05] D'accord, d'accord.
+[124:05 -> 124:08] C'est de l'oracle.
+[124:08 -> 124:10] D'accord.
+[124:10 -> 124:12] Parce que des fois, il y a un planificateur de tâche
+[124:12 -> 124:15] qui est séparé, lié à la base. D'accord.
+[124:15 -> 124:21] Oui, c'est vrai, mais là...
+[124:21 -> 124:26] Et quand les mails sont générés, ils sont envoyés dans une table
+[124:26 -> 124:29] Yénes Mesdistre.
+[124:32 -> 124:35] Et ça, ce sont tous les mails qui sont en attente de distribution.
+[124:35 -> 124:40] Alors, sur cet environnement, on n'a pas allié un SMTP
+[124:40 -> 124:45] et donc les mails, ils restent dans ce fichier là,
+[124:45 -> 124:47] dans cette table-là, je veux dire.
+[124:47 -> 124:49] Et là, on a tous les mails qui ont été générés
+[124:49 -> 124:52] par nos différentes demandes.
+[124:53 -> 124:58] Et on voit, si c'est un mail, le type groupé,
+[124:58 -> 125:02] là, c'est une demande d'événement générique.
+[125:02 -> 125:05] Le mail est censé être envoyé en groupé.
+[125:05 -> 125:07] Indéfinie.
+[125:07 -> 125:10] Alors là, puisqu'on a dans Indéfinie,
+[125:10 -> 125:11] je sais pas ce qu'on a dans Indéfinie.
+[125:11 -> 125:14] Ça doit être le mail, d'ailleurs, je sais pas trop.
+[125:15 -> 125:19] Demande indéfinie.
+[125:19 -> 125:22] Je sais pas ce qui arrive là.
+[125:22 -> 125:26] Là, on a le déclencheur.
+[125:26 -> 125:30] Et on a le matricule qui est concerné, la date d'envoi.
+[125:30 -> 125:37] Et on voit aussi si, ah, ici, on voit le statut du mail.
+[125:37 -> 125:41] Et tous ceux qui sont en erreur, là, qui sont en statut E,
+[125:41 -> 125:45] ceux-là, ils partiront jamais.
+[125:45 -> 125:49] Alors, ils sont en erreur pour différentes raisons.
+[125:49 -> 125:52] Mais là, quand ils sont en statut D,
+[125:52 -> 125:57] c'est qu'ils sont en attente de diffusion.
+[125:57 -> 126:02] Alors, si je prends celui-là par exemple,
+[126:02 -> 126:06] celui-là, celui-là.
+[126:11 -> 126:13] Voilà, il y en a en attente de diffusion.
+[126:13 -> 126:16] Par contre, il y en a qui sont en erreur au-dessus.
+[126:16 -> 126:18] Ils étaient en erreur.
+[126:18 -> 126:20] Pourquoi ils étaient en erreur ?
+[126:24 -> 126:27] Parce que, par exemple, l'adresse mail n'existe pas.
+[126:27 -> 126:31] Donc, quand l'adresse mail n'existe pas, ils sont en erreur.
+[126:31 -> 126:32] Ici, il y a une autre raison.
+[126:32 -> 126:35] Je sais pas pourquoi il y a un erreur, celui-là.
+[126:35 -> 126:38] Je vous d'absence.
+[126:38 -> 126:40] J'ai un mail.
+[126:41 -> 126:44] Sur l'équipe.
+[126:47 -> 126:50] Je sais pas pourquoi il y en a en erreur celui-là.
+[126:50 -> 126:52] Bon, là, c'est de l'expertise.
+[126:52 -> 126:54] Quand on rentre dans ces tables-là.
+[126:54 -> 126:55] Mais en tout cas, les messages,
+[126:55 -> 126:56] tant qu'ils ne sont pas envoyés,
+[126:56 -> 126:57] les mail, tant qu'ils ne sont pas envoyés,
+[126:57 -> 126:59] ils sont dans cette table.
+[126:59 -> 127:01] Et quand ils sont envoyés, ils passent,
+[127:01 -> 127:05] ils sont stockés, ils disparaissent de cette table-là.
+[127:05 -> 127:08] Et ils sont stockés en historique
+[127:08 -> 127:10] pour avoir une trace.
+[127:10 -> 127:14] Dans la table, il y a un FMS East.
+[127:14 -> 127:19] Et là, on trace tous les mails qui ont été envoyés.
+[127:19 -> 127:21] Alors, j'en ai un dans le FMS East.
+[127:21 -> 127:24] Alors, comment ça se fait que j'en ai un ?
+[127:24 -> 127:26] Alors, j'avais pas de SMTP.
+[127:26 -> 127:28] Je comprends pas.
+[127:29 -> 127:31] Bonjour, j'ai peut-être fait un essaye.
+[127:31 -> 127:33] Je sais pas.
+[127:34 -> 127:37] Vous avez, sur les environnements,
+[127:37 -> 127:39] vous avez des services.
+[127:39 -> 127:41] Vous avez le service de la base de données.
+[127:41 -> 127:45] Vous avez le service métier, serveur.
+[127:45 -> 127:48] Et vous avez le service Tomcat pour la partie web.
+[127:48 -> 127:50] Et puis, vous avez un autre service
+[127:50 -> 127:52] qui correspond au...
+[127:52 -> 127:54] Ils sont là, les services.
+[127:54 -> 127:56] Voilà.
+[127:56 -> 127:58] Pour un environnement, pour qui tourne.
+[127:58 -> 128:01] Vous avez ici,
+[128:01 -> 128:04] ici, je vois cette fenêtre.
+[128:04 -> 128:07] Et là, là.
+[128:07 -> 128:09] Il faut que la base soit démarrée.
+[128:09 -> 128:11] C'est ce service-là.
+[128:11 -> 128:13] Donc, elle est bien démarrée.
+[128:16 -> 128:20] Il faut démarrer le métier.
+[128:20 -> 128:23] Donc, le serveur.
+[128:23 -> 128:26] Et c'est dans cet ordre-là qu'il faut le faire.
+[128:26 -> 128:28] Ensuite, le Tomcat.
+[128:29 -> 128:31] Et pour que les messages, ils partent,
+[128:31 -> 128:34] il faut que le service-message soit démarré.
+[128:34 -> 128:37] Bon, là, il n'est pas démarré en occurrence.
+[128:37 -> 128:39] Ah, mais il y a Duburt aussi,
+[128:39 -> 128:42] qui est pluggé sur cet environnement.
+[128:42 -> 128:44] Je vais faire des tests.
+[128:44 -> 128:57] Qu'est-ce qu'il y a,
+[128:57 -> 128:59] qui illustre toutes ces informations
+[128:59 -> 129:01] sur ces tables-là?
+[129:01 -> 129:04] Qu'on vient de voir, là, du workflow.
+[129:04 -> 129:05] Du workflow?
+[129:05 -> 129:07] Ah bon, oui, il y a le support
+[129:07 -> 129:09] de formation externe.
+[129:09 -> 129:12] Pas le fonctionner juste,
+[129:12 -> 129:14] parce qu'on vient de toucher maintenant
+[129:14 -> 129:16] les tables.
+[129:16 -> 129:18] Ah, mais oui.
+[129:18 -> 129:20] Je peux vous envoyer le support
+[129:20 -> 129:22] de formation expert.
+[129:22 -> 129:24] Là, on montre les tables,
+[129:24 -> 129:26] ce qu'il faut faire dans les tables, etc.
+[129:26 -> 129:28] Très bien.
+[129:28 -> 129:30] Merci.
+[129:36 -> 129:38] Je vais vous abandonner.
+[129:38 -> 129:40] Merci pour tout, Christine,
+[129:41 -> 129:43] Oui, bien, j'espère que...
+[129:43 -> 129:45] Ce n'est pas plus perdu aujourd'hui,
+[129:45 -> 129:47] mais il faut que je regarde les docs.
+[129:47 -> 129:49] Après, c'est plus du fonctionnel,
+[129:49 -> 129:51] moi que de la technique, mais voilà.
+[129:51 -> 129:53] En tout cas, c'est intéressant, quand même,
+[129:53 -> 129:55] de savoir comment ça se paramètre.
+[129:55 -> 129:57] Oui, voilà.
+[129:57 -> 130:00] Puis, on va faire de la gestion de projets.
+[130:00 -> 130:02] Après, il y a d'autres aspects
+[130:02 -> 130:04] qu'on n'a pas du tout vu,
+[130:04 -> 130:06] qui sont des aspects très techniques
+[130:06 -> 130:08] et qui rendent parfois difficile
+[130:08 -> 130:10] l'utilisation d'un environnement sur un autre,
+[130:10 -> 130:12] parce qu'il y a des tas
+[130:12 -> 130:14] d'identifiants internes
+[130:14 -> 130:16] auto-infrémentés,
+[130:16 -> 130:18] qui peuvent poser problèmes.
+[130:18 -> 130:20] Mais bon, merci, quand même,
+[130:20 -> 130:22] parce que, du coup, en plus,
+[130:22 -> 130:24] à distance, c'est pas simple,
+[130:24 -> 130:26] tu ne nous vois pas tout ça, donc chapeau.
+[130:26 -> 130:28] Voilà.
+[130:28 -> 130:30] C'est dur, parce que je ne peux pas vous faire...
+[130:30 -> 130:32] Je voudrais vous faire pratiquer davantage,
+[130:32 -> 130:34] mais là, je ne peux pas, parce que...
+[130:34 -> 130:36] C'est trop compliqué.
+[130:36 -> 130:39] En tout cas, bonne continuation à tous.
+[130:39 -> 130:41] Et puis,
+[130:41 -> 130:43] bonne fin de ramadans
+[130:43 -> 130:45] pour nos amis marocains.
+[130:45 -> 130:47] Merci.
+[130:47 -> 130:49] Merci Vero.
+[130:49 -> 130:51] A bientôt.
+[130:51 -> 130:53] Je vais y aller, moi aussi.
+[130:53 -> 130:55] Merci.
+[130:55 -> 130:57] Je vous envirerai
+[130:57 -> 130:59] des filles d'évalvation à remplir
+[130:59 -> 131:01] que vous me renvoyez.
+[131:01 -> 131:03] D'accord.
+[131:03 -> 131:05] Vous me direz ce que vous en pensez.
+[131:05 -> 131:07] C'est trop facile, mais bon,
+[131:07 -> 131:09] vous dites ce que vous pensez.
+[131:09 -> 131:11] C'est pas un problème.
+[131:11 -> 131:13] On attend donc partie 2.
+[131:13 -> 131:15] Voilà.
+[131:15 -> 131:17] Donc, des formations expertes aux activités
+[131:17 -> 131:19] et on peut faire des formations expertes
+[131:19 -> 131:21] au workflow, parce que
+[131:21 -> 131:23] si vous devez créer des circuits de workflow,
+[131:23 -> 131:25] il faut
+[131:25 -> 131:27] faire passer un jour de la dessus.
+[131:27 -> 131:29] D'accord.
+[131:29 -> 131:31] Ok.
+[131:31 -> 131:33] Merci beaucoup.
+[131:33 -> 131:35] Bonne soirée.
+[131:35 -> 131:37] Vous pourrez donner le lien
+[131:37 -> 131:39] à Noédyne sur les enregistrements que tu as fait ?
+[131:39 -> 131:41] Oui, je vais
+[131:41 -> 131:43] essayer de regrouper.
+[131:43 -> 131:45] Je l'ai déjà partagé avec quelques-uns.
+[131:45 -> 131:47] Donc, je vais les regrouper et les envoyer par mail.
+[131:47 -> 131:49] Ok.
+[131:49 -> 131:51] Mais ce qu'ils sent, c'est qu'ils sont
+[131:51 -> 131:53] par
+[131:53 -> 131:55] par discussion.
+[131:55 -> 131:57] Parce que, comme tu sais,
+[131:57 -> 131:59] c'est pas toujours la même date.
+[131:59 -> 132:01] Donc, c'est pas toujours la même discussion.
+[132:01 -> 132:03] Donc, ils sont par regrouper.
+[132:03 -> 132:05] Voilà. Dans un sens repertoire,
+[132:05 -> 132:07] ils sont sur OneDrive.
+[132:07 -> 132:09] Donc, une fois, on clique
+[132:09 -> 132:11] toutes les personnes qui sont dans la discussion
+[132:11 -> 132:13] de
+[132:13 -> 132:15] normalement, devront avoir accès.
+[132:15 -> 132:17] Ah, ça veut dire que dans OneDrive
+[132:17 -> 132:19] je pourrais télécharger,
+[132:19 -> 132:21] c'est ça ?
+[132:21 -> 132:23] Oui, tu peux télécharger ou la visualiser directement.
+[132:23 -> 132:25] D'accord.
+[132:25 -> 132:27] Ok. Ça marche.
+[132:27 -> 132:29] Merci Noédyne.
+[132:29 -> 132:31] D'accord.
+[132:31 -> 132:33] Merci pour tes efforts.
+[132:33 -> 132:35] Je vous en prie.
+[132:35 -> 132:37] Bonne fin de semaine.
+[132:37 -> 132:39] Ok. Merci beaucoup Crécy.
+[132:39 -> 132:41] À bientôt.
+[132:41 -> 132:43] À bientôt. Merci Noédy.
+[132:43 -> 132:45] Merci à tous.
+[132:45 -> 132:47] Bonsoir à tous.

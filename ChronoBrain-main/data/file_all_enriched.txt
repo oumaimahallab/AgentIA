@@ -1,0 +1,171 @@
+Base de Connaissances : Chronotime (Module GT - Habilitations et Workflow)
+
+===========================================================================
+1. Concepts Fondamentaux et Architecture
+===========================================================================
+
+Environnement : Chrono-Time module GT (Gestion des Temps).
+
+Principes de gestion :
+Le système gère des profils utilisateurs liés à des fiches collaborateurs.
+Un utilisateur est inutilisable sans habilitations (profils, rôles, périmètres).
+Configuration de navigation : Obligatoire pour toute connexion, sinon erreur d'authentification.
+
+Hiérarchie des accès :
+Profil utilisateur : Combinaison de fonctionnalités (actions autorisées).
+Rôle : Regroupement de groupes de fonctionnalités.
+Périmètres : Définissent les ressources (collaborateurs) accessibles.
+Filtres : Définissent les données spécifiques accessibles au sein des ressources.
+
+===========================================================================
+2. Gestion des Habilitations (Paramétrage)
+===========================================================================
+
+Modèles (Astérisques) : Les profils/groupes préfixés par une astérisque (*) sont des modèles standards. Il est fortement déconseillé de les modifier directement. Il faut les dupliquer pour créer des versions spécifiques "Client".
+
+Fonctionnalités :
+Le "Gérer" est un prérequis pour voir les informations (ex: pour voir les horaires, il faut la fonctionnalité "Gérer les collaborateurs").
+NA (Non Applicable) : Indique que les notions d'ajout, modification ou suppression ne s'appliquent pas à cette fonctionnalité.
+
+Mise à jour post-patch : Les patchs n'écrasent pas les habilitations personnalisées. Les nouvelles fonctionnalités apportées par un patch doivent être ajoutées manuellement selon la procédure "Mise à jour manuelle des habilitations" (fournie par version).
+
+Procédure — Créer un profil utilisateur :
+Étape 1 — Aller dans le menu Habilitations, puis sélectionner Profils utilisateurs.
+Étape 2 — Dupliquer un profil modèle (préfixé par *) en cliquant sur Dupliquer.
+Étape 3 — Renommer le profil avec le préfixe client (ex : CL_NomDuProfil).
+Étape 4 — Dans le profil dupliqué, sélectionner les rôles souhaités via le bouton Ajouter un rôle.
+Étape 5 — Pour chaque rôle, définir les périmètres et filtres applicables.
+Étape 6 — Enregistrer le profil en cliquant sur Sauvegarder.
+
+Procédure — Affecter un profil à un utilisateur :
+Étape 1 — Aller dans le menu Utilisateurs et rechercher le collaborateur.
+Étape 2 — Ouvrir la fiche de l'utilisateur en cliquant sur son nom.
+Étape 3 — Dans l'onglet Profils, cliquer sur Ajouter un profil.
+Étape 4 — Sélectionner le profil souhaité dans la liste.
+Étape 5 — Renseigner les dates de début et de fin de validité (laisser vide pour une période infinie).
+Étape 6 — Vérifier que la Configuration de navigation est bien renseignée (obligatoire).
+Étape 7 — Enregistrer en cliquant sur Sauvegarder.
+
+===========================================================================
+3. Gestion des Filtres et Périmètres
+===========================================================================
+
+Filtres : Associés à des entités fonctionnelles (ex: Absence, Horaire Journalier).
+Comportement : L'ajout de plusieurs filtres sur une même entité déclenche une logique de type "OU" (cumul des résultats).
+Entités Fonctionnelles : Il est crucial de choisir la bonne entité pour filtrer une fonctionnalité (ex: pour filtrer la saisie d'horaires exceptionnels, utiliser l'entité HoraireExceptionnel et non HoraireJournalier).
+Périmètres Dynamiques : Permettent de gérer des populations variables (ex: "égal à mon élément d'affectation", "rattaché à mon élément d'affectation") sans créer des milliers de périmètres statiques.
+
+Procédure — Créer un filtre d'habilitation :
+Étape 1 — Aller dans le menu Habilitations, puis sélectionner Filtres.
+Étape 2 — Cliquer sur Créer un nouveau filtre.
+Étape 3 — Saisir un code et un libellé (ex : CL_AbsenceCP pour filtrer les congés payés).
+Étape 4 — Choisir l'entité fonctionnelle appropriée (ex : Absence pour filtrer les motifs d'absence).
+Étape 5 — Définir les critères du filtre (ex : Motif = CP pour ne garder que les congés payés).
+Étape 6 — Enregistrer le filtre en cliquant sur Sauvegarder.
+Étape 7 — Appliquer ensuite ce filtre dans le groupe de fonctionnalités concerné.
+
+===========================================================================
+4. Workflows et Circuits de Validation
+===========================================================================
+
+Profil de Workflow : Distinct du profil utilisateur. Indique la casquette de l'utilisateur dans le circuit (ex: RESP, ADMIN, COLLAB).
+Priorité des profils : Les profils autorisés dans un circuit sont lus par ordre de priorité décroissante (ADMIN > RESP2 > RESP > COLLAB). Si un utilisateur possède plusieurs profils, le système prend le plus haut niveau.
+
+Notifications :
+Les notifications par mail sont configurées dans les boîtes du circuit.
+Par défaut : Les mails sont regroupés et envoyés en mode différé (ex: 22h30).
+Mode immédiat : Nécessite une configuration spécifique dans la table YNF_MODELE (changement du groupe de mails et du déclencheur).
+Relances automatiques : Gérées par les traitements de nuit.
+
+Procédure — Valider une absence (rôle Responsable / Approbateur) :
+Étape 1 — Se connecter à Chronotime avec son profil Responsable d'équipe.
+Étape 2 — Aller dans le menu Mon Équipe, puis sélectionner Validation des demandes.
+Étape 3 — La liste des demandes en attente s'affiche. Cliquer sur la demande d'absence à traiter.
+Étape 4 — Consulter le détail : collaborateur, type d'absence, dates, commentaire éventuel.
+Étape 5 — Cliquer sur Valider pour approuver, ou sur Refuser en indiquant le motif.
+Étape 6 — L'absence est alors prise en compte dans le planning et les compteurs du collaborateur.
+Note : Pour voir les demandes, le profil doit disposer de la fonctionnalité "Valider les demandes d'absence" et du périmètre couvrant le collaborateur concerné.
+
+Procédure — Configurer le circuit de validation d'une absence :
+Étape 1 — Aller dans le menu Paramétrage, puis sélectionner Workflow.
+Étape 2 — Choisir le type d'événement concerné (ex : Absence).
+Étape 3 — Cliquer sur Créer un circuit ou ouvrir un circuit existant.
+Étape 4 — Ajouter les boîtes de validation : pour chaque niveau, sélectionner le profil de workflow (RESP, RESP2, ADMIN).
+Étape 5 — Pour chaque boîte, configurer les notifications mail si nécessaire.
+Étape 6 — Enregistrer le circuit.
+
+Procédure — Saisir une absence pour un collaborateur (rôle Gestionnaire) :
+Étape 1 — Aller dans le menu Mon Équipe et sélectionner le collaborateur.
+Étape 2 — Dans la vue journée ou le planning, cliquer sur la journée souhaitée.
+Étape 3 — Sélectionner Créer une absence.
+Étape 4 — Choisir le motif d'absence dans la liste déroulante.
+Étape 5 — Renseigner les dates de début et de fin.
+Étape 6 — Ajouter un commentaire si nécessaire, puis cliquer sur Enregistrer.
+Étape 7 — La demande est créée et part dans le circuit de validation configuré.
+
+===========================================================================
+5. Gestion des Événements et Calendriers
+===========================================================================
+
+Calendrier : Définit les jours fériés et exceptionnels.
+
+Priorisation des horaires :
+Horaire exceptionnel (manuel) — priorité la plus haute.
+Horaire de remplacement (type de jour du calendrier).
+Horaire de référence (programme hebdomadaire/cycle) — priorité la plus basse.
+
+Emploi du temps : Permet de générer des événements répétitifs (absences, activités) sur une période. Un emploi du temps doit être "Publié" pour être affectable.
+
+Procédure — Publier un emploi du temps :
+Étape 1 — Aller dans le menu Paramétrage, puis sélectionner Emplois du temps.
+Étape 2 — Ouvrir l'emploi du temps à publier.
+Étape 3 — Vérifier que les événements répétitifs sont correctement définis.
+Étape 4 — Cliquer sur le bouton Publier.
+Étape 5 — L'emploi du temps est désormais affectable aux collaborateurs.
+
+Procédure — Affecter un emploi du temps à un collaborateur :
+Étape 1 — Aller dans le menu Mon Équipe et sélectionner le collaborateur.
+Étape 2 — Aller dans l'onglet Planification ou Programme.
+Étape 3 — Cliquer sur Affecter un emploi du temps.
+Étape 4 — Sélectionner l'emploi du temps publié dans la liste.
+Étape 5 — Renseigner la période d'application (date de début, date de fin optionnelle).
+Étape 6 — Enregistrer en cliquant sur Valider.
+
+===========================================================================
+6. Calcul des Heures Supplémentaires (HSS / B_HS)
+===========================================================================
+
+Règle B_HS : Règle de calcul des heures supplémentaires dans Chronotime. Elle s'active en fin de semaine pour calculer le total des heures effectuées au-delà du seuil légal ou conventionnel.
+
+Fonctionnement du moteur de calcul des heures supplémentaires :
+Étape 1 — Le moteur calcule la durée totale travaillée sur la semaine (badgeages + saisies).
+Étape 2 — Il soustrait les absences justifiées (congés, RTT, maladie) si elles sont paramétrisées pour entrer dans le temps de travail effectif (champ PRT_EFF).
+Étape 3 — Il compare le total au seuil hebdomadaire défini dans le contrat ou la convention (ex : 35h).
+Étape 4 — Les heures au-delà du seuil sont qualifiées d'heures supplémentaires (HS).
+Étape 5 — Les HS sont ventilées par tranche selon les taux configurés (ex : HS à 25% pour les 8 premières, HS à 50% au-delà).
+Étape 6 — Le résultat est stocké dans les compteurs correspondants (ex : HS_25, HS_50).
+Note : La règle B_HS doit être paramétrée et activée dans les règles de calcul du moteur. Elle ne se déclenche qu'en fin de semaine (le lundi suivant).
+
+Procédure — Vérifier et relancer le calcul des heures supplémentaires :
+Étape 1 — Aller dans le menu Calcul, puis sélectionner Valorisation.
+Étape 2 — Choisir le collaborateur ou la population concernée.
+Étape 3 — Sélectionner la période de calcul (semaine concernée).
+Étape 4 — Cliquer sur Valoriser pour lancer ou relancer le calcul.
+Étape 5 — Consulter les résultats dans les compteurs du collaborateur (onglet Compteurs).
+Étape 6 — En cas d'anomalie, consulter le journal des anomalies pour identifier la cause.
+
+===========================================================================
+7. Outils de Visualisation (Planning & Agenda)
+===========================================================================
+
+Groupes de compteurs : Définissent les informations affichées dans les différents écrans. Le paramètre "Utilisé pour" est crucial pour déterminer l'emplacement (Vue journée, Planning, Agenda).
+Personnalisation : Les préférences d'affichage (multiligne, colonnes) peuvent être enregistrées au niveau utilisateur ou général.
+Saisie de masse : Mode de saisie en continu permettant d'enchaîner les événements sans repasser par le dossier collaborateur.
+
+Procédure — Configurer les groupes de compteurs affichés dans la vue journée :
+Étape 1 — Aller dans le menu Paramétrage, puis sélectionner Groupes de compteurs.
+Étape 2 — Créer ou ouvrir un groupe de compteurs existant.
+Étape 3 — Dans le champ "Utilisé pour", sélectionner Vue journée.
+Étape 4 — Ajouter les compteurs souhaités (ex : Heures travaillées, Solde CP, HS).
+Étape 5 — Enregistrer le groupe.
+Étape 6 — Affecter ce groupe de compteurs au profil utilisateur concerné.

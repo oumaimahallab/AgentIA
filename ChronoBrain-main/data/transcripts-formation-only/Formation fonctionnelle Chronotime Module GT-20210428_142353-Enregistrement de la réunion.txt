@@ -1,0 +1,1876 @@
+[00:00 -> 00:28] Donc le calcul, oui donc on va voir pourquoi moi je suis bloqué au 25 avril mais avant
+[00:28 -> 00:36] d'aller dans ce détail là, il faut que je réponde à Rallit qui m'a posé une question tout
+[00:36 -> 00:52] à l'heure sur les fiches collaborateurs et la photo. Le trombinot, il y a un paramètre par
+[00:52 -> 01:01] domaine, on y retourne. Le trombinot il fait joli pour les clients. Alors bien un paramètre,
+[01:01 -> 01:10] comment il s'appelle ce paramètre ? Surtout pour les clients qui ont un effectif intégrant.
+[01:10 -> 01:32] Est-ce que j'active ? C'est un paramètre qui s'appelle photo. Il faudra la liste Excel de ces
+[01:32 -> 01:42] paramètres par domaine afin de les maîtriser un petit peu. Oui, je vais vous fournir cette liste là.
+[01:42 -> 01:57] Donc il n'est pas activé par défaut ? Non. Ici. Je vois la même similitude avec le RP,
+[01:57 -> 02:01] il y a pas mal de fonctionnalités qui ne sont pas activées par défaut pour ne pas charger
+[02:01 -> 02:12] l'application. Donc c'est selon la demande. Là j'ai un problème parce que j'ai le même problème
+[02:12 -> 02:26] avec les photos que ce que j'ai avec les éditions parce que là en fait. Tu as réfléchi ? Oui j'ai
+[02:26 -> 02:32] réfléchi mais ça m'a planté, ça m'a mis une erreur après je pense qu'il ne sait pas où sont
+[02:32 -> 02:41] les photos sur le... Oui, ça il mise en place avec l'emplacement physique. Donc il ne s'est pas
+[02:41 -> 02:56] encore configuré je pense. C'est ça. Si ça se trouve dans les paramètres du système,
+[02:56 -> 03:02] il doit y avoir un endroit où on lui dit où stocker les fichiers, style photo ou des choses comme
+[03:02 -> 03:08] ça et ça doit pas être fait. Oui, alors je sais où c'est en fait. Je sais où c'est stocké mais par
+[03:08 -> 03:15] contre c'est le lien entre l'appli et le répertoire qui n'est pas fait. Alors ici si je fais ça,
+[03:15 -> 03:19] vous voyez, vous allez voir apparaître. Hop ! On a vu apparaître quelque chose là puis pas
+[03:19 -> 03:29] c'est reparti et je pense que c'était modifié photo. Comment ? Tu cliques sur un autre collab ?
+[03:29 -> 03:41] Ah non mais c'est sûr. Alors là maintenant il ne me le fait plus le bazar. Il est sur le bonhomme ?
+[03:42 -> 03:51] Non non non, il n'y a un problème de... Il ne s'est pas... De config ? Oui, il y a un problème de config.
+[03:51 -> 04:07] Ok. C'est tout bête. Du coup on a un bouton qui a ajouté photo et on va chercher dans le répertoire
+[04:07 -> 04:13] pour qu'il va bien la photo du collaborateur pour l'insérer et du coup sa photo arrive ici.
+[04:13 -> 04:21] Je vais vérifier le paramétrage, la configuration de cet environnement.
+[04:21 -> 04:47] Bon alors juste en ce moment là vous êtes connecté avec votre propre compte ?
+[04:47 -> 05:05] Ah non non, je suis connecté sur celui de ce matin. Voilà. Prenez la liste que vous connectez avec votre propre compte parce qu'à partir de demain on va commencer à jouer avec des personnalisations etc.
+[05:05 -> 05:18] Et on peut lui personnaliser... Enfin, il vaut mieux que vous ayez chacun votre propre compte. L'utilisateur. Donc déconnectez-vous et reconnectez-vous avec votre compte.
+[05:23 -> 05:32] Voilà, c'est une petite vérif. Et puis on va un petit peu s'amuser avec l'appli avant de voir les collaborateurs virtuels.
+[05:32 -> 05:40] Par contre, sur ton compte, Christine, j'ai vu qu'il y avait des anomalies quand on se connectait mais elles sont en date du 26.
+[05:40 -> 05:41] Oui c'est normal.
+[05:41 -> 05:47] Voilà, c'est forcément lié au fait que tu es activé le budget pour cette date-là.
+[05:47 -> 05:50] Et oui, j'ai dit que je budget et j'ai pas budget.
+[05:50 -> 05:53] Oui, donc il considère que tu es absente.
+[05:53 -> 05:55] Et oui, qu'est-ce qui se passe ?
+[05:55 -> 05:57] Elle n'a pas budget.
+[05:57 -> 06:04] Alors, je voulais vérifier... Je voulais vérifier quoi ?
+[06:04 -> 06:19] workflow, événement, absence, activité, régularisation.
+[06:20 -> 06:21] Ok.
+[06:24 -> 06:29] Alors maintenant, quand vous êtes connecté avec votre propre compte, vous allez dans l'espace en compte.
+[06:31 -> 06:33] Vous allez travailler pour vous-même.
+[06:33 -> 06:40] Vous allez, par exemple, si vous regardez votre agenda, à un moment vous vous êtes affecté un horaire.
+[06:40 -> 06:46] Quand vous avez créé votre fiche, vous avez créé toutes les informations, vous avez donné toutes les informations nécessaires
+[06:46 -> 06:54] pour que vous puissiez avoir déjà un agenda avec les horaires prévus, journée par journée.
+[06:56 -> 06:58] Est-ce que vous obtenez quelque chose comme ça ?
+[07:01 -> 07:02] Oui.
+[07:02 -> 07:12] Voilà. Et quand on survole, donc là, le liserie coloré avec les différentes plages montre le découpage des horaires de la journée.
+[07:13 -> 07:16] Vous avez peut-être pris un horaire à un programme différent, je ne sais pas.
+[07:17 -> 07:21] On va aller en détail sur le découpage horaire, ne vous inquiétez pas.
+[07:21 -> 07:26] Et ensuite, le liserie supplémentaire, le liserie gris, vous donne votre affectation.
+[07:31 -> 07:38] Sur cette agenda, vous avez votre plan de travail, votre plan de travail prévu pour la semaine en termes d'horaires.
+[07:39 -> 07:47] Et puis si vous allez sur la semaine suivante, pareil, vous avez la semaine de travail prévu, etc.
+[07:47 -> 07:52] Vous pouvez passer en mode en vue mensuelle de l'agenda.
+[07:52 -> 07:55] Là, la représentation est différente.
+[07:55 -> 08:00] On a les jours en colonne et puis on a les semaines en ligne pour pouvoir représenter le mois.
+[08:00 -> 08:13] Les cellules blanches sont les cellules du mois concerné et les jours travaillés, parce que les jours en repos sont grisés.
+[08:16 -> 08:24] Les surlignages comme ça, en vert jaune-verre, ce sont les jours ferriers qui sont mis en évidence.
+[08:24 -> 08:26] On verra avec les calendriers.
+[08:27 -> 08:37] Et vous n'avez pas sur cette agenda, vous avez la possibilité de saisir des actions.
+[08:37 -> 08:44] Il nous donne, il me met la zone scolaire en plus.
+[08:44 -> 08:48] Quand il y a des vacances, il me met des zones...
+[08:53 -> 08:55] C'est les vacances, oui?
+[08:55 -> 09:01] En fait, j'avais pas mis le mot de passe et là, j'essaye de rentrer et il me dit que je dois changer le mot de passe.
+[09:01 -> 09:04] Et quand je le renseigne, il me dit qu'il y a une erreur.
+[09:04 -> 09:09] Parce que tu ne mets pas suffisamment de caractère et de signe spéciaux.
+[09:09 -> 09:15] Moi, je l'avais fait à 100 points d'exclamation pour changer le compte.
+[09:15 -> 09:19] Tu vois, il faut des caractères, des chiffres et des caractères spéciaux.
+[09:26 -> 09:30] Donc là, il me met en évidence les vacances scolaires de la zone A.
+[09:30 -> 09:34] Parce que j'ai un calendrier de vacances scolaires qui traîne par là.
+[09:34 -> 09:36] On verra avec les calendriers.
+[09:38 -> 09:52] Et sur cette agenda, je peux très bien dire qu'il y a finalement, on est 28, le 29 et le 30, je vais me mettre en RTT.
+[09:52 -> 09:54] Je suis en RTT.
+[09:54 -> 10:01] Donc là, je ne peux pas le faire si je vais faire action possible.
+[10:04 -> 10:12] D'ailleurs, en parlant de calendriers, Christine, vu l'actualité récente et le fait qu'on est harmonisé
+[10:12 -> 10:19] toutes les régions sur le même calendrier au niveau des vacances de la PAC,
+[10:19 -> 10:23] ce genre de modification dans l'application, c'est qui qui l'est fait ?
+[10:23 -> 10:26] C'est l'administrateur du client.
+[10:26 -> 10:27] D'accord.
+[10:27 -> 10:28] C'est à la mémine.
+[10:28 -> 10:33] Non, mais c'est à charge du client de faire ce genre de modification.
+[10:37 -> 10:44] Alors sauf s'il est en TMA et que c'est l'équipe qui s'en occupe, mais c'est à la charge du client.
+[10:44 -> 10:52] Alors, ici, donc, on fait nouveau.
+[10:52 -> 10:55] Nouveau, on va créer en recurrence.
+[10:55 -> 11:02] Moi, je vais créer une absence et je vais dire que je veux...
+[11:02 -> 11:11] Alors, je vais me mettre en RTT le 29 et le 30 pour remplir.
+[11:12 -> 11:14] Voyons, saisis d'absence.
+[11:14 -> 11:15] Je peux joindre une pièce.
+[11:15 -> 11:16] Je peux indiquer l'origine.
+[11:16 -> 11:20] Alors, l'origine, l'information d'origine, c'est collaborateur ou hiérarchie.
+[11:20 -> 11:26] Vous allez voir ça, cette notion dans pratiquement toutes les saisis d'événement.
+[11:26 -> 11:29] En fait, c'est juste indicatif.
+[11:29 -> 11:34] Je pose deux RTT, là, mais c'est moi qui ai besoin de ces deux RTT,
+[11:34 -> 11:37] ou c'est ma hiérarchie qui m'a dit, bon, là, il faut le solderer tes trucs.
+[11:37 -> 11:39] Il n'y a pas de boulot, donc demain tu poses deux RTT.
+[11:42 -> 11:45] Ça reste moi qui saisis l'information, collaborateur.
+[11:45 -> 11:47] Mais peut-être que c'est la hiérarchie qui m'a demandé.
+[11:49 -> 11:51] Donc, en l'occurrence, là, je veux dire que c'est moi.
+[11:51 -> 11:53] Mais c'est informatif.
+[11:53 -> 11:56] On peut d'ailleurs enlever ce champ.
+[11:56 -> 11:57] Saisis impossible.
+[11:57 -> 11:59] Vos droits sont épuisés.
+[11:59 -> 12:03] Alors, on va pas s'enquiquiner avec ça.
+[12:03 -> 12:09] Je vais aller sur l'espace préférentiel.
+[12:09 -> 12:12] Je vais aller voir les motifs d'absence,
+[12:12 -> 12:15] ce que j'ai montré rapidement à rallye tout à l'heure.
+[12:17 -> 12:19] Et sur les motifs RTT.
+[12:20 -> 12:23] Donc ça, c'est le paramétrage des motifs et leurs comportements,
+[12:23 -> 12:28] tout ce qui, comment elles doivent être gérées, contrôlées, etc.
+[12:28 -> 12:30] Et je vais dire que je ne bloque pas la saisie.
+[12:30 -> 12:32] Si les droits sont insuffisants,
+[12:32 -> 12:36] j'aurai un message d'avertissement et l'utilisateur devra confirmer.
+[12:40 -> 12:43] Je vais faire la même chose pour les congés annuels.
+[12:49 -> 12:51] Voilà.
+[12:51 -> 12:56] Ici, et quand je rebonde mon compte, j'adore.
+[12:57 -> 12:58] Christine.
+[12:58 -> 12:59] Oui.
+[13:00 -> 13:04] Juste en se mettant sur l'onglet « événement validé ».
+[13:04 -> 13:05] Oui.
+[13:06 -> 13:08] J'ai ta saisie à valider.
+[13:09 -> 13:11] C'est juste informatif.
+[13:14 -> 13:16] Attends, c'est où là ?
+[13:17 -> 13:19] Sur les événements à valider.
+[13:19 -> 13:21] Ah oui, mais t'es sur une autre action.
+[13:24 -> 13:26] Dans les événements à valider, t'es sur une autre action.
+[13:26 -> 13:28] T'es pas dans l'espace mon compte ?
+[13:28 -> 13:29] Si, si.
+[13:32 -> 13:33] Ah oui, ah oui.
+[13:33 -> 13:35] Non, j'étais sur mon équipe.
+[13:35 -> 13:38] Pour te dire que l'événement...
+[13:39 -> 13:40] D'accord.
+[13:40 -> 13:42] J'arrive, j'arrive.
+[13:43 -> 13:45] Ici, je sais que c'est mon RTT.
+[13:46 -> 13:48] Toc, j'enregistre ça.
+[13:49 -> 13:52] Voilà, là, il me donne une alerte.
+[13:52 -> 13:54] Et il me dit, est-ce que vous voulez continuer ?
+[13:54 -> 13:55] Oui, je vais continuer.
+[13:55 -> 13:58] Je vais me retrouver avec un sort de négatif si c'est validé.
+[13:58 -> 14:00] Voilà, vous pouvez faire la même chose.
+[14:00 -> 14:02] Vous pouvez faire des choses sur votre agenda.
+[14:02 -> 14:04] C'est-à-dire des absences.
+[14:06 -> 14:07] Voilà.
+[14:07 -> 14:08] OK.
+[14:08 -> 14:09] Et là...
+[14:10 -> 14:11] C'est moche.
+[14:11 -> 14:13] C'est moche parce que c'est vert, on n'y voit pas très clair.
+[14:13 -> 14:15] Mais il y a un point d'interrogation devant
+[14:15 -> 14:18] qui montre que l'événement, il est en cours de...
+[14:18 -> 14:20] Il est en demande.
+[14:20 -> 14:23] Tu me dis que dans l'espace de mon équipe,
+[14:23 -> 14:25] dans les demandes à valider,
+[14:25 -> 14:28] tu as avoir les absences, c'est ça ?
+[14:28 -> 14:31] Oui, je vais faire ça, je croyais que ça demande une valide.
+[14:31 -> 14:32] Donc je vais vous le montrer,
+[14:32 -> 14:34] de la question de l'événement.
+[14:34 -> 14:36] Je ne vais pas faire ça.
+[14:36 -> 14:38] Alors, je vais vous le dire.
+[14:38 -> 14:39] Je vais vous le dire.
+[14:39 -> 14:40] Je vais vous le dire.
+[14:40 -> 14:42] Il y a une question de l'événement.
+[14:42 -> 14:43] Je vais vous le dire.
+[14:43 -> 14:44] Je vais vous le dire.
+[14:44 -> 14:45] D'accord.
+[14:45 -> 14:46] Je vais vous le dire.
+[14:46 -> 14:47] Je vais vous le dire.
+[14:47 -> 14:48] Je vais vous le dire.
+[14:48 -> 14:52] J'ai fait ça, je croyais que ça demande une validation pour qu'il n'y a pas d'erreur, d'accord.
+[14:52 -> 14:57] Mais ça concerne les absences et ça concerne le badgeage.
+[14:57 -> 15:01] En fait, c'est toutes les demandes sur cet espace d'accueil là.
+[15:01 -> 15:04] C'est toutes les demandes qui sont en cours, qui sont àvalidées.
+[15:04 -> 15:10] Et que moi, avec le profil que j'ai et qu'on a tous, puisqu'on s'est mis SuperAminGFI,
+[15:10 -> 15:13] on a la capacité de valider.
+[15:13 -> 15:17] En fait, on a l'habilitation de valider ces événements-là.
+[15:18 -> 15:20] C'est une action responsable.
+[15:20 -> 15:21] C'est ça.
+[15:21 -> 15:22] Ok.
+[15:22 -> 15:23] Je suis dans l'espace mon équipe.
+[15:23 -> 15:24] D'accord.
+[15:25 -> 15:30] Par contre, si je reviens sur mon compte, sur l'espace d'accueil mon compte,
+[15:30 -> 15:35] mes demandes, alors j'ai pas d'absence, mais il faut que je réfléchisse l'écran.
+[15:39 -> 15:40] Voilà.
+[15:40 -> 15:42] Maintenant, je suis sur mon espace mon compte.
+[15:42 -> 15:44] Et bien, j'ai une demande.
+[15:44 -> 15:47] Mes demandes, j'ai une demande en cours là.
+[15:47 -> 15:51] Et si je clique dessus, je peux voir que j'ai une demande de RTT,
+[15:51 -> 15:54] qui est à l'état demandé et qui attend une validation.
+[15:54 -> 15:58] Donc, tu ne peux pas la valider toi-même, même avec un SuperAmin.
+[15:58 -> 16:05] Alors si je peux, mais à partir, parce que je suis SuperAmin
+[16:05 -> 16:10] et parce que j'ai le dongle droit et que j'ai accès au suivi collaborateur
+[16:10 -> 16:13] et dans le suivi des collaborateurs, les événements à valider.
+[16:13 -> 16:18] Bien, sur les absences, choisir un rôle.
+[16:18 -> 16:19] J'ai plusieurs rôles.
+[16:19 -> 16:21] Je vais me mettre responsable d'équipe.
+[16:23 -> 16:24] Voilà.
+[16:24 -> 16:25] Je vois ma demande.
+[16:26 -> 16:27] Cornet.
+[16:28 -> 16:29] Ici et je vais.
+[16:29 -> 16:30] Je valide.
+[16:30 -> 16:31] Ok.
+[16:31 -> 16:33] On va accepter ici.
+[16:33 -> 16:35] Je la prends et ensuite je confirme.
+[16:38 -> 16:39] Je ne me souviens plus.
+[16:39 -> 16:42] Alors oui, comme je suis en train de valider une demande de RTT
+[16:42 -> 16:46] qui va me mettre mon soldat en négatif, il me le redit.
+[16:46 -> 16:51] Il me dit attention, si vous validez ça, il n'y a plus droit à RTT.
+[16:53 -> 16:54] Voilà.
+[16:57 -> 17:00] Et donc, j'ai pu valider ma propre demande.
+[17:00 -> 17:03] Et je pourrais valider la demande de Véronique.
+[17:03 -> 17:08] Je laisse Véronique le faire parce que je peux en sélectionner plusieurs.
+[17:08 -> 17:10] Je peux même les sélectionner tout en même temps.
+[17:10 -> 17:11] D'accord.
+[17:11 -> 17:16] Et éventuellement mettre un commentaire global pour valider.
+[17:16 -> 17:21] Et confirmer pour faire une validation facile.
+[17:23 -> 17:24] Je ne vais pas aller au bout.
+[17:24 -> 17:25] Je vais abandonner ça.
+[17:26 -> 17:27] Je te laisse valider Véronique.
+[17:30 -> 17:31] Puis j'ai une demande de Badgeage.
+[17:31 -> 17:33] Ça, c'est la demande que j'ai faite tout à l'heure.
+[17:33 -> 17:35] Alors, vous voyez la demande que j'ai faite tout à l'heure.
+[17:39 -> 17:44] Je ne vais pas aller trop vite non plus.
+[17:44 -> 17:45] Je ne vais pas vous perdre.
+[17:46 -> 17:47] Ça va ?
+[17:49 -> 17:52] C'est juste pour prendre un tout petit peu la main sur l'agenda
+[17:52 -> 17:56] et voir qu'on peut saisir des événements.
+[17:56 -> 17:59] Et ensuite, qu'est-ce que c'est qu'un collaborateur virtuel ?
+[17:59 -> 18:01] Et qu'est-ce que c'est que la fusion de dossiers ?
+[18:01 -> 18:06] Comme ça, on en aura à peu près terminé sur la fiche collaborateur,
+[18:06 -> 18:08] le dossier d'un collaborateur humain.
+[18:19 -> 18:24] Christine, tu peux rafraîchir un nouveau tapage chez toi
+[18:24 -> 18:27] juste pour voir si ça correspond bien.
+[18:28 -> 18:31] Ok, c'est ça.
+[18:38 -> 18:40] J'ai plus de demandes d'absence.
+[18:40 -> 18:43] Véronique a dû valider les siennes,
+[18:43 -> 18:45] ou ce n'est pas qu'il les a validées ?
+[18:47 -> 18:48] J'ai validé.
+[18:48 -> 18:49] Ok.
+[18:49 -> 18:50] Et la demande de Badgeage.
+[18:50 -> 18:52] Alors, cette demande de Badgeage,
+[18:52 -> 18:55] c'est la demande que j'ai faite...
+[18:56 -> 18:58] ...à ce point.
+[18:58 -> 19:01] Ah oui, mais alors là, c'est particulier parce que...
+[19:04 -> 19:05] Ce matin,
+[19:08 -> 19:10] quand vous m'avez posé la question sur les Badgeages,
+[19:10 -> 19:13] on a vu que je m'étais mis un profil de collaborateur Badgeur,
+[19:13 -> 19:16] donc ça me laissait la possibilité de faire une demande de Badgeage,
+[19:16 -> 19:19] alors que mon mode de Badgeage était ne Badge pas.
+[19:20 -> 19:23] Et ça m'a étonné et ça ne me plaisait pas.
+[19:23 -> 19:26] Donc j'ai fait cette demande de Badgeage
+[19:26 -> 19:29] quand je regarde la période.
+[19:29 -> 19:32] Ici, je le détaille des demandes que j'ai faites.
+[19:32 -> 19:37] En fait, on les affiche une ligne par semaine,
+[19:37 -> 19:41] et après, on clique dessus pour voir le détail des demandes de la semaine.
+[19:42 -> 19:45] Et j'ai fait une demande pour le mercredi 28 avril.
+[19:46 -> 19:47] Et je me disais,
+[19:47 -> 19:49] quand je vais valider cette demande de Badgeage,
+[19:49 -> 19:52] il va me jeter puisque je ne suis pas censée Badger.
+[19:53 -> 19:56] Sauf qu'entre temps, j'ai modifié mon mode de Badgeage
+[19:56 -> 19:58] et je me suis mis en Badge.
+[20:00 -> 20:02] Et donc maintenant, si je valide,
+[20:02 -> 20:06] il va être d'accord, il va bien.
+[20:10 -> 20:11] Voilà.
+[20:15 -> 20:17] Vous avez compris ?
+[20:19 -> 20:21] Oui, c'est le fait que...
+[20:22 -> 20:24] Tu as validé ton compte.
+[20:24 -> 20:27] Du coup, tu peux accéder à la demande et la valider.
+[20:27 -> 20:29] Oui, maintenant, la demande, je peux la valider
+[20:29 -> 20:31] puisque je vais accepter les Badgeages
+[20:31 -> 20:33] parce que justement, je suis censée Badger.
+[20:36 -> 20:38] Donc, si vous avez tous saisi,
+[20:38 -> 20:41] ou quelques-uns saisi quelques événements,
+[20:41 -> 20:43] quelques absences,
+[20:43 -> 20:45] on n'a pas énormément de choses.
+[20:45 -> 20:47] Enfin, dans l'agenda,
+[20:47 -> 20:49] si on peut saisir des absences,
+[20:49 -> 20:51] je vais passer par là.
+[20:51 -> 20:53] Agenda, il était là.
+[20:53 -> 20:54] Voilà.
+[20:54 -> 20:56] En création, je peux saisir une absence,
+[20:56 -> 20:58] des activités.
+[20:58 -> 21:00] Je peux saisir des demandes de Badgeage.
+[21:00 -> 21:02] Je peux créer des régularisations
+[21:02 -> 21:04] puisque ça, c'est d'autres événements,
+[21:04 -> 21:06] d'autres types d'événements
+[21:06 -> 21:08] dont je vous parlerai après.
+[21:12 -> 21:13] Bon.
+[21:14 -> 21:15] Voilà.
+[21:15 -> 21:17] J'ai un Badgeage, j'ai une absence.
+[21:18 -> 21:20] Alors, maintenant,
+[21:20 -> 21:22] ça, c'était juste
+[21:22 -> 21:24] pour avoir quelques événements
+[21:24 -> 21:26] sur un collaborateur
+[21:28 -> 21:30] et pour pouvoir
+[21:30 -> 21:32] faire d'autres exemples
+[21:32 -> 21:34] pour les collaborateurs virtuels.
+[21:35 -> 21:37] Une simple remarque.
+[21:38 -> 21:40] Sur la label, tu as agenda,
+[21:40 -> 21:41] moi, j'ai planin.
+[21:41 -> 21:43] C'est juste question de label.
+[21:43 -> 21:45] Ah non, c'est pas un bon endroit.
+[21:45 -> 21:46] Ah, d'accord.
+[21:46 -> 21:47] C'est justement
+[21:47 -> 21:49] que c'est un bon endroit.
+[21:52 -> 21:54] Là, c'est parce que tu es dans mon équipe.
+[21:55 -> 21:57] Oui, tout à fait.
+[21:57 -> 21:58] Le planning.
+[21:59 -> 22:01] Et là, tu n'es pas du tout sur le même écran,
+[22:01 -> 22:03] sur un écran de...
+[22:03 -> 22:04] Le planning.
+[22:04 -> 22:05] C'est bon.
+[22:05 -> 22:07] On peut aussi saisir des événements
+[22:07 -> 22:09] via le planning, évidemment.
+[22:09 -> 22:11] Là, je suis passée par l'agenda
+[22:11 -> 22:13] pour vous faire travailler un petit peu
+[22:13 -> 22:15] avec les collaborateurs.
+[22:15 -> 22:17] Bon, parce que le planning,
+[22:17 -> 22:19] je vais vous montrer aussi comment il fonctionne.
+[22:20 -> 22:21] Christine.
+[22:21 -> 22:22] Oui.
+[22:22 -> 22:24] Je suis en train de faire une demande
+[22:24 -> 22:26] de congé paternité
+[22:27 -> 22:28] concernant.
+[22:28 -> 22:29] Et en fait,
+[22:29 -> 22:30] il me dit que
+[22:30 -> 22:32] je n'ai pas les droits,
+[22:32 -> 22:33] mais normalement,
+[22:33 -> 22:34] le congé paternité,
+[22:34 -> 22:35] ce n'est pas 10 jours
+[22:35 -> 22:36] ou quelque chose comme ça.
+[22:36 -> 22:37] Ah ben oui,
+[22:37 -> 22:38] mais pour avoir droit
+[22:38 -> 22:39] au congé paternité,
+[22:39 -> 22:40] il faut...
+[22:40 -> 22:41] Il faut avoir travaillé
+[22:41 -> 22:42] un petit peu avant quand même.
+[22:42 -> 22:43] Il faut surtout avoir un enfant
+[22:43 -> 22:44] qui vient de l'être.
+[22:45 -> 22:46] Ah, c'est vrai.
+[22:46 -> 22:47] Ben oui.
+[22:47 -> 22:48] Il faut peut-être commencer par là.
+[22:48 -> 22:49] En effet.
+[22:50 -> 22:52] Il faut le saisir avant qu'il soit né.
+[22:53 -> 22:54] Ah oui.
+[22:54 -> 22:55] Ah oui.
+[22:55 -> 22:56] Il y a des tas de contrôles.
+[22:57 -> 22:58] Ben oui.
+[22:58 -> 22:59] Forcément.
+[23:01 -> 23:02] Non, mais c'est bien.
+[23:02 -> 23:03] Au moins, j'ai posé la question.
+[23:06 -> 23:07] OK.
+[23:08 -> 23:09] Bon.
+[23:09 -> 23:11] Donc, maintenant que vous avez...
+[23:11 -> 23:12] Voilà, quelques événements.
+[23:12 -> 23:13] Ce que je vais vous faire,
+[23:13 -> 23:14] ce que je vais vous demander,
+[23:14 -> 23:15] c'est que vous allez dans le suivi
+[23:15 -> 23:16] des collaborateurs.
+[23:16 -> 23:17] Et là,
+[23:17 -> 23:18] on va faire la création
+[23:18 -> 23:19] d'un collaborateur virtuel.
+[23:20 -> 23:21] Et vous allez tous créer
+[23:21 -> 23:22] un collaborateur virtuel.
+[23:26 -> 23:27] Alors là,
+[23:27 -> 23:28] en création,
+[23:29 -> 23:31] on va créer un collaborateur virtuel.
+[23:34 -> 23:36] C'est quoi l'utilité exactement
+[23:36 -> 23:38] de créer un collaborateur virtuel ?
+[23:38 -> 23:39] Alors oui, bien sûr.
+[23:39 -> 23:40] Qu'est-ce que c'est
+[23:40 -> 23:41] qu'un collaborateur virtuel ?
+[23:44 -> 23:45] Je suis une entreprise
+[23:45 -> 23:47] qui a une activité de production
+[23:48 -> 23:49] sur l'année.
+[23:49 -> 23:50] Et j'ai des périodes de charge
+[23:50 -> 23:51] très importantes.
+[23:51 -> 23:52] Par exemple,
+[23:52 -> 23:53] je suis dans la Grande Limentaire.
+[23:53 -> 23:54] J'ai des personnes de charge
+[23:54 -> 23:55] très importantes pour PAC
+[23:55 -> 23:56] et pour Noël.
+[23:58 -> 23:59] Bon.
+[24:00 -> 24:01] Et pour la période d'été.
+[24:01 -> 24:02] Bon, peu importe.
+[24:03 -> 24:04] Je sais qu'au mois de juillet
+[24:04 -> 24:05] et d'août,
+[24:05 -> 24:06] je vais avoir besoin
+[24:06 -> 24:07] de travailler.
+[24:07 -> 24:08] Je vais avoir besoin d'embaucher
+[24:08 -> 24:09] des intérimaires
+[24:09 -> 24:10] ou des CDD.
+[24:10 -> 24:11] Bref, j'ai besoin
+[24:11 -> 24:12] de renforcer mes équipes
+[24:13 -> 24:15] et j'ai besoin, par exemple,
+[24:15 -> 24:17] d'une cinquantaine de personnes
+[24:17 -> 24:18] en plus.
+[24:18 -> 24:19] On est de stagiaire, par exemple.
+[24:20 -> 24:21] Sur cette durée-là.
+[24:21 -> 24:22] Les stagiaires, c'est autre chose.
+[24:22 -> 24:23] Enfin, je sais pas.
+[24:25 -> 24:26] Le format stage
+[24:26 -> 24:27] en France,
+[24:27 -> 24:28] c'est quand même très,
+[24:28 -> 24:29] très particulier.
+[24:30 -> 24:31] Non, là,
+[24:31 -> 24:32] il s'agit d'équipe.
+[24:33 -> 24:34] Oui,
+[24:34 -> 24:35] si tu veux appeler ça,
+[24:35 -> 24:36] stagiaire.
+[24:36 -> 24:37] Donc,
+[24:37 -> 24:38] j'ai besoin de 50 personnes
+[24:38 -> 24:39] en plus.
+[24:39 -> 24:40] Et puis,
+[24:40 -> 24:41] quand je suis là,
+[24:41 -> 24:42] déjà,
+[24:42 -> 24:43] fin avril, début mai,
+[24:43 -> 24:44] il faut que je commence
+[24:44 -> 24:45] à préparer ma planification
+[24:45 -> 24:46] de juillet et d'autre.
+[24:46 -> 24:47] Comment je vais faire tourner
+[24:47 -> 24:48] mes équipes, etc.
+[24:49 -> 24:50] Et donc,
+[24:50 -> 24:51] j'ai besoin de préparer
+[24:51 -> 24:52] mes planings
+[24:52 -> 24:53] en incluant ces 50 personnes.
+[24:54 -> 24:55] Et ces 50 personnes,
+[24:55 -> 24:56] elles ne le sont pas encore là.
+[24:56 -> 24:57] Je sais qu'elles je vais
+[24:57 -> 24:58] les embaucher,
+[24:58 -> 24:59] mais je sais pas
+[24:59 -> 25:00] encore qui c'est,
+[25:00 -> 25:01] non plus.
+[25:01 -> 25:02] Donc,
+[25:02 -> 25:03] je crée
+[25:03 -> 25:04] une cinquantaine
+[25:04 -> 25:05] de collaborateurs virtuels.
+[25:05 -> 25:06] Avant,
+[25:06 -> 25:07] on appelait sa ressource
+[25:07 -> 25:08] et le terme
+[25:08 -> 25:09] n'a pas
+[25:10 -> 25:11] des débats.
+[25:11 -> 25:12] Bon,
+[25:12 -> 25:13] on a appelé sa collaborateur
+[25:13 -> 25:14] virtuelle maintenant.
+[25:14 -> 25:15] Mais je vais créer
+[25:15 -> 25:16] 50 collaborateurs
+[25:16 -> 25:17] avec 50 matricules
+[25:17 -> 25:18] différents.
+[25:18 -> 25:19] Chaque collaborateur
+[25:19 -> 25:20] va avoir sa fiche,
+[25:20 -> 25:21] etc.
+[25:21 -> 25:22] Et je vais utiliser
+[25:22 -> 25:23] chaque collaborateur
+[25:23 -> 25:24] comme étant
+[25:24 -> 25:25] le futur collaborateur
+[25:25 -> 25:26] embauché,
+[25:26 -> 25:27] quoi.
+[25:27 -> 25:28] Mais je sais pas
+[25:28 -> 25:29] encore son nom.
+[25:29 -> 25:30] Donc,
+[25:30 -> 25:31] bon, ça sera un virtuel 1,
+[25:31 -> 25:32] un virtuel 2,
+[25:32 -> 25:33] etc.
+[25:33 -> 25:34] Je sais pas quoi.
+[25:34 -> 25:35] Le fait
+[25:35 -> 25:36] de le planifier,
+[25:36 -> 25:37] ça veut dire
+[25:37 -> 25:38] que je vais lui mettre
+[25:38 -> 25:39] les horaires
+[25:39 -> 25:40] que j'attends de lui
+[25:40 -> 25:41] sur la période
+[25:41 -> 25:42] de juillet d'août.
+[25:44 -> 25:45] Donc,
+[25:45 -> 25:46] quelle horaire,
+[25:46 -> 25:47] comment il va tourner,
+[25:47 -> 25:48] par exemple,
+[25:48 -> 25:49] quelle semaine
+[25:49 -> 25:50] il va travailler de matin,
+[25:50 -> 25:51] quelle semaine d'après-midi,
+[25:51 -> 25:52] quelle semaine de nuit,
+[25:52 -> 25:53] etc.
+[25:53 -> 25:54] Bref,
+[25:54 -> 25:55] je vais éventuellement lui
+[25:55 -> 25:56] poser,
+[25:56 -> 25:57] lui mettre des absences.
+[25:57 -> 25:58] Bref,
+[25:58 -> 25:59] je vais lui constituer
+[25:59 -> 26:00] son plani.
+[26:00 -> 26:01] Mais,
+[26:01 -> 26:02] sous un matricule
+[26:02 -> 26:03] virtuel,
+[26:03 -> 26:04] c'est un collaborateur
+[26:04 -> 26:05] virtuel.
+[26:05 -> 26:06] Quand la vraie personne
+[26:06 -> 26:07] va arriver
+[26:07 -> 26:08] début juillet,
+[26:08 -> 26:09] elle va effectivement
+[26:09 -> 26:10] être embauchée
+[26:10 -> 26:12] et elle va d'abord
+[26:12 -> 26:13] être créée
+[26:13 -> 26:15] dans le système
+[26:15 -> 26:16] de paye
+[26:16 -> 26:17] dans le SIRH.
+[26:18 -> 26:19] De la plupart du temps,
+[26:19 -> 26:20] c'est comme ça.
+[26:21 -> 26:22] Quand elle arrive,
+[26:22 -> 26:23] en tout cas,
+[26:23 -> 26:24] j'ai bien son nom.
+[26:24 -> 26:25] Là,
+[26:25 -> 26:26] j'ai son vrai nom.
+[26:26 -> 26:27] Je sais qui c'est.
+[26:27 -> 26:28] Et donc,
+[26:28 -> 26:29] je vais créer
+[26:29 -> 26:30] le collaborateur
+[26:30 -> 26:31] réel,
+[26:31 -> 26:32] un nouveau collaborateur
+[26:32 -> 26:33] avec les informations
+[26:33 -> 26:35] de ce collaborateur.
+[26:36 -> 26:37] Mais,
+[26:37 -> 26:38] par contre,
+[26:38 -> 26:39] je veux qu'il récupère
+[26:39 -> 26:40] toutes les informations
+[26:40 -> 26:41] que j'ai portées
+[26:41 -> 26:42] sur le virtuel.
+[26:42 -> 26:43] Je veux qu'il récupère
+[26:43 -> 26:44] tôt.
+[26:44 -> 26:45] Elles sont l'horaire
+[26:45 -> 26:46] de référence,
+[26:46 -> 26:47] à quel élément
+[26:47 -> 26:48] de la structure je leur attache,
+[26:48 -> 26:49] quels sont les absences
+[26:49 -> 26:50] que j'ai prévues,
+[26:50 -> 26:51] quelles cycles
+[26:51 -> 26:52] ils voient suivre,
+[26:52 -> 26:53] quelles cycles
+[26:53 -> 26:54] ils voient suivre,
+[26:54 -> 26:55] etc.
+[26:55 -> 26:56] Donc,
+[26:56 -> 26:57] c'est là
+[26:57 -> 26:59] que je vais fusionner
+[26:59 -> 27:01] les deux matricules,
+[27:01 -> 27:02] le virtuel
+[27:02 -> 27:03] avec le réel.
+[27:05 -> 27:06] En rapportant
+[27:06 -> 27:07] sur le réel,
+[27:07 -> 27:08] tous les événements
+[27:09 -> 27:10] que j'ai pu
+[27:10 -> 27:12] prévoir sur le virtuel,
+[27:13 -> 27:14] je vais mettre ça
+[27:14 -> 27:17] sur le matricule réel.
+[27:17 -> 27:18] Et quand j'ai fini
+[27:18 -> 27:19] de faire la fusion,
+[27:19 -> 27:21] mon virtuel disparaît.
+[27:32 -> 27:33] Par exemple,
+[27:34 -> 27:35] ça va, c'est clair ?
+[27:38 -> 27:39] C'est clair.
+[27:40 -> 27:41] Admettons,
+[27:41 -> 27:42] je crée 5 virtuels.
+[27:43 -> 27:44] Alors, mon nom générique,
+[27:44 -> 27:45] ça c'est un paramètre
+[27:45 -> 27:46] par domaine,
+[27:46 -> 27:50] qui me donne la racine
+[27:50 -> 27:51] du nom
+[27:51 -> 27:52] du collaborateur virtuel.
+[27:52 -> 27:53] Donc, virtuel,
+[27:53 -> 27:54] on a mis ça,
+[27:54 -> 27:55] pour l'instant,
+[27:55 -> 27:56] on pourrait mettre autre chose,
+[27:56 -> 27:57] dans ce paramètre.
+[27:57 -> 27:58] Ça me plait fixe,
+[27:58 -> 27:59] on peut le modifier, c'est ça ?
+[27:59 -> 28:00] Oui, c'est ça.
+[28:00 -> 28:01] Ça me plait fixe,
+[28:01 -> 28:02] on peut le modifier.
+[28:03 -> 28:04] Selon quelle référence ?
+[28:04 -> 28:06] Alors, je peux donner une référence,
+[28:07 -> 28:09] dire, je veux créer les virtuels
+[28:10 -> 28:12] qui ressemblent très fort
+[28:14 -> 28:15] à le collaborateur
+[28:16 -> 28:17] corne, par exemple.
+[28:21 -> 28:22] Et là, il me donne,
+[28:22 -> 28:23] il me dit,
+[28:23 -> 28:24] avec quel collaborateur ?
+[28:24 -> 28:25] Qu'est-ce que vous voulez
+[28:25 -> 28:26] comme collaborateur modèle ?
+[28:31 -> 28:32] Là, par contre,
+[28:34 -> 28:36] pourquoi il m'avirait mes cinq ?
+[28:38 -> 28:40] Je vais les faire rentrer
+[28:40 -> 28:41] au 1er...
+[28:44 -> 28:45] au 1er juillet,
+[28:45 -> 28:46] je vais rester sur l'exemple.
+[28:48 -> 28:49] Je peux déjà le...
+[28:50 -> 28:51] Peut-être que je sais déjà
+[28:51 -> 28:52] que de toute façon,
+[28:52 -> 28:54] au 31 août,
+[28:56 -> 28:57] au 21 août, je vais les avoir récits.
+[28:57 -> 28:58] Donc, je peux déjà
+[28:58 -> 28:59] avoir à mettre une date de sortie.
+[29:00 -> 29:01] Éventuellement, je n'avais pas
+[29:01 -> 29:02] mis de métier, de calif,
+[29:02 -> 29:03] de niveau d'expertise, etc.
+[29:04 -> 29:05] Normalement,
+[29:05 -> 29:06] il m'a ramené
+[29:06 -> 29:07] l'horaire
+[29:08 -> 29:09] de Christine Corne,
+[29:09 -> 29:10] par défaut.
+[29:11 -> 29:12] Il m'a rattaché
+[29:13 -> 29:14] à la direction de production
+[29:15 -> 29:16] et puis,
+[29:17 -> 29:18] puis voilà, puis c'est tout.
+[29:25 -> 29:26] Et là, du coup,
+[29:26 -> 29:28] maintenant,
+[29:28 -> 29:29] j'ai...
+[29:30 -> 29:32] Alors, où est-ce qu'ils sont passés ?
+[29:32 -> 29:33] Alors,
+[29:33 -> 29:34] tiens, je ne les vois pas
+[29:34 -> 29:35] dans ma liste,
+[29:35 -> 29:37] même si je réfléchis,
+[29:37 -> 29:38] parce que...
+[29:39 -> 29:40] Pourquoi ?
+[29:40 -> 29:41] Qui sait qui me dit pourquoi
+[29:41 -> 29:42] ils ne apparaissent pas
+[29:42 -> 29:43] dans la liste ?
+[29:43 -> 29:44] On est au 27 août 4.
+[29:45 -> 29:46] Voilà.
+[29:47 -> 29:48] Il faut que j'inclue
+[29:48 -> 29:49] les noms présents.
+[29:53 -> 29:54] Voilà.
+[29:55 -> 29:56] Donc là, maintenant,
+[29:56 -> 29:57] je les vois arriver là.
+[29:58 -> 30:00] Bon, moi, j'en ai créé cinq.
+[30:00 -> 30:01] Il y a quelqu'un qui en a créé
+[30:01 -> 30:02] un autre,
+[30:02 -> 30:03] je ne sais pas qui c'est.
+[30:03 -> 30:04] Moi, je me l'ai créé un.
+[30:05 -> 30:06] Voilà.
+[30:06 -> 30:07] Donc, voilà,
+[30:07 -> 30:09] on a des collaborateurs virtuels
+[30:09 -> 30:10] qui sont positionnés
+[30:10 -> 30:11] sur cette période.
+[30:13 -> 30:14] Alors, c'est virtuel,
+[30:14 -> 30:15] évidemment,
+[30:15 -> 30:17] l'utilisateur n'est pas créé
+[30:17 -> 30:18] en lien
+[30:18 -> 30:19] avec ce virtuel,
+[30:19 -> 30:20] puisque
+[30:20 -> 30:21] par nature,
+[30:21 -> 30:22] ils n'existent pas.
+[30:22 -> 30:23] Je vais le vérifier,
+[30:23 -> 30:25] mais c'est pas des gens qui vont se connecter
+[30:25 -> 30:26] à l'appli,
+[30:26 -> 30:28] vu qu'ils sont pas là.
+[30:30 -> 30:32] Donc, il n'y a pas d'utilisateur
+[30:32 -> 30:33] créé en phase
+[30:33 -> 30:35] de ces collaborateurs virtuels.
+[30:38 -> 30:39] Ici,
+[30:39 -> 30:40] c'est suivi des collaborate.
+[30:40 -> 30:41] Et, par contre,
+[30:41 -> 30:43] bien sûr, c'est virtuel.
+[30:43 -> 30:44] Je peux,
+[30:46 -> 30:47] par exemple,
+[30:48 -> 30:49] ici,
+[30:49 -> 30:50] je vais le faire par,
+[30:50 -> 30:51] je vais le faire.
+[30:51 -> 30:52] Je peux le faire par là.
+[30:54 -> 30:56] Vous vous rappelez,
+[30:56 -> 30:57] je suis sur le dossier,
+[30:57 -> 30:58] là, du virtuel 11.
+[30:58 -> 30:59] Et ici,
+[30:59 -> 31:00] j'ai accès à tout le dossier.
+[31:00 -> 31:01] Et donc, j'ai accès,
+[31:01 -> 31:02] par exemple, à son agenda.
+[31:03 -> 31:04] Donc, je vais prendre
+[31:04 -> 31:06] son agenda mensuel.
+[31:20 -> 31:21] Voilà.
+[31:21 -> 31:22] Là, il est positionné
+[31:22 -> 31:23] sur le mois d'avril.
+[31:25 -> 31:26] Donc, tant qu'à le faire,
+[31:26 -> 31:27] je vais me mettre
+[31:27 -> 31:29] en juillet.
+[31:30 -> 31:31] En juillet,
+[31:31 -> 31:32] il a des horaires,
+[31:32 -> 31:33] il a des horaires prévues,
+[31:33 -> 31:34] comme ce qui est prévu
+[31:34 -> 31:35] pour FissingCorn,
+[31:35 -> 31:36] puisque je l'ai pris
+[31:36 -> 31:37] comme référence,
+[31:37 -> 31:38] mais j'aurais pu lui mettre
+[31:38 -> 31:39] autre chose.
+[31:39 -> 31:40] Et puis,
+[31:40 -> 31:41] je vais lui saisir
+[31:41 -> 31:42] des événements.
+[31:42 -> 31:43] Par exemple,
+[31:43 -> 31:44] je vais dire que
+[31:44 -> 31:45] le 9
+[31:46 -> 31:47] ici,
+[31:49 -> 31:50] je vais le mettre en RTT.
+[31:52 -> 31:53] Voilà.
+[32:03 -> 32:04] Et puis, je vais dire
+[32:04 -> 32:05] que, par exemple,
+[32:06 -> 32:07] le 2,
+[32:09 -> 32:10] il ne va pas avoir
+[32:10 -> 32:11] un horaire
+[32:11 -> 32:12] d'administratif.
+[32:13 -> 32:14] Ce jour-là,
+[32:14 -> 32:15] je vais le mettre
+[32:15 -> 32:16] de matin.
+[32:22 -> 32:23] Ça, c'est la pose
+[32:23 -> 32:24] d'un horaire exceptionnel.
+[32:25 -> 32:26] Je lui ai mis
+[32:26 -> 32:27] un horaire de référence
+[32:27 -> 32:28] qui va générer
+[32:28 -> 32:29] des jours administratifs
+[32:29 -> 32:30] sur les journées.
+[32:30 -> 32:31] Mais là,
+[32:31 -> 32:32] ce jour-là,
+[32:32 -> 32:33] particulièrement,
+[32:33 -> 32:34] je veux qu'il fasse
+[32:34 -> 32:35] un horaire de matin.
+[32:37 -> 32:38] Les couleurs sont horribles,
+[32:38 -> 32:39] on n'y voit rien.
+[32:39 -> 32:40] Ce verre,
+[32:40 -> 32:41] c'est une horaire.
+[32:43 -> 32:44] Bon, voilà.
+[32:44 -> 32:45] On voit cette horaire,
+[32:45 -> 32:46] il a une petite astérix
+[32:46 -> 32:47] parce que c'est un horaire
+[32:47 -> 32:48] exceptionnel.
+[32:48 -> 32:49] Parce que je l'ai posé
+[32:49 -> 32:50] de façon exceptionnelle.
+[32:50 -> 32:51] Il n'est pas issu
+[32:51 -> 32:52] de référence.
+[32:52 -> 32:53] On va y revenir.
+[32:55 -> 32:56] Voilà.
+[32:56 -> 32:57] Je lui mets des horaires.
+[32:57 -> 32:58] Et puis,
+[32:58 -> 32:59] peut-être que,
+[32:59 -> 33:00] tiens,
+[33:00 -> 33:01] j'aurai besoin de lui,
+[33:01 -> 33:02] je vais faire une réunion
+[33:02 -> 33:03] le jeudi,
+[33:03 -> 33:04] le premier,
+[33:04 -> 33:05] quand il arrive.
+[33:05 -> 33:06] Voilà.
+[33:07 -> 33:08] Et là,
+[33:08 -> 33:09] je vais dire que
+[33:09 -> 33:10] le matin,
+[33:10 -> 33:11] déjà,
+[33:11 -> 33:12] on va commencer
+[33:12 -> 33:13] par une réunion.
+[33:13 -> 33:14] Hop.
+[33:17 -> 33:18] Voilà.
+[33:18 -> 33:19] Je lui saisis
+[33:19 -> 33:20] des éléments.
+[33:22 -> 33:23] OK.
+[33:26 -> 33:27] Ensuite,
+[33:27 -> 33:28] au premier,
+[33:29 -> 33:30] quand le vrai collaborateur
+[33:30 -> 33:31] va arriver,
+[33:34 -> 33:35] collaborateur
+[33:36 -> 33:37] dont je veux qu'il hérite
+[33:37 -> 33:38] du planning de
+[33:39 -> 33:40] Virtuel 11,
+[33:42 -> 33:43] je vais créer un collaborateur.
+[33:44 -> 33:45] Alors,
+[33:45 -> 33:46] ici,
+[33:46 -> 33:47] je vais créer un nouveau.
+[33:48 -> 33:49] VLJtoto,
+[33:49 -> 33:50] c'est qui, ça ?
+[33:52 -> 33:53] C'est nous, ça ?
+[33:53 -> 33:54] C'est vous qui avez créé
+[33:54 -> 33:55] ce collaborateur ?
+[33:55 -> 33:56] Euh, pas moi.
+[33:58 -> 33:59] Non.
+[34:03 -> 34:04] Moi, c'est bizarre.
+[34:05 -> 34:06] C'est bizarre,
+[34:06 -> 34:07] je ne trouve pas celui que j'ai créé.
+[34:09 -> 34:10] C'est pas celui-là, des fois ?
+[34:11 -> 34:12] Non,
+[34:12 -> 34:13] je n'ai pas fait comme ça.
+[34:13 -> 34:14] Enfin, j'ai appelé Virtuel,
+[34:14 -> 34:16] mais j'ai mis mes initiales
+[34:16 -> 34:17] juste après Virtuel.
+[34:18 -> 34:19] Vraiment,
+[34:19 -> 34:20] je n'ai l'impression qu'il y a pas.
+[34:20 -> 34:21] Il n'y a pas beaucoup, mais...
+[34:23 -> 34:24] Alors...
+[34:26 -> 34:28] Attends, si je réfléchis...
+[34:46 -> 34:47] Et tu lui as mis quoi,
+[34:47 -> 34:48] quand on date de...
+[34:48 -> 34:50] 11, 12, 13, 14, 15...
+[34:50 -> 34:51] C'est le 16, non ?
+[34:51 -> 34:53] Non, c'est qui qui a créé celui-là ?
+[35:04 -> 35:05] On ne voit pas l'identifier
+[35:05 -> 35:06] en-dessus qui crée ?
+[35:07 -> 35:08] Non.
+[35:09 -> 35:10] Mais ça, c'est un champ.
+[35:10 -> 35:11] C'est un champ à activer.
+[35:11 -> 35:12] Oui.
+[35:13 -> 35:14] Exactement.
+[35:14 -> 35:16] Il faut journaliser les tables
+[35:17 -> 35:19] pour savoir qui a fait
+[35:19 -> 35:20] l'action de la création.
+[35:21 -> 35:22] Peut-être que toi, t'en avais créé 5 ?
+[35:23 -> 35:24] Moi, j'en ai créé 5.
+[35:25 -> 35:27] Alors moi, j'ai dû créer le premier,
+[35:27 -> 35:28] même le 9 avant.
+[35:28 -> 35:29] C'est ça ?
+[35:29 -> 35:31] Il y a quelqu'un qui a créé le 16 ?
+[35:32 -> 35:33] Peut-être moi, alors.
+[35:34 -> 35:35] Mais du coup, il n'a pas pris le nom
+[35:35 -> 35:36] que celui-là.
+[35:39 -> 35:40] J'avais pas mis le numéro, là,
+[35:40 -> 35:41] je ne sais pas.
+[35:41 -> 35:42] Ah non, le numéro,
+[35:42 -> 35:43] il le met tout seul ?
+[35:43 -> 35:44] Tout seul, oui.
+[35:44 -> 35:45] Ouais.
+[35:45 -> 35:46] Le numéro, il le met tout seul.
+[35:46 -> 35:47] Et par contre,
+[35:47 -> 35:49] le fait que tu as rajouté
+[35:49 -> 35:50] quelque chose derrière le nom,
+[35:50 -> 35:52] t'avais eu virtuel underscore,
+[35:52 -> 35:53] puis t'as rajouté quelque chose ?
+[35:54 -> 35:55] Non.
+[35:55 -> 35:56] J'ai mis virtuel,
+[35:56 -> 35:57] et j'ai rajouté avant l'underscore,
+[35:57 -> 35:58] j'ai mis mes initials.
+[35:59 -> 36:00] On aurait dû mettre virtuel
+[36:00 -> 36:02] DNJ, underscore et...
+[36:06 -> 36:07] Oui, mais je pense que...
+[36:07 -> 36:08] Peut-être qu'il n'accepte pas.
+[36:08 -> 36:09] Non.
+[36:09 -> 36:11] Il a dû s'appuyer sur la racine
+[36:11 -> 36:12] qu'il avait prévue,
+[36:12 -> 36:14] donc virtuel underscore,
+[36:14 -> 36:15] c'est tout.
+[36:15 -> 36:16] Et donc ça doit être
+[36:16 -> 36:17] toi le 16.
+[36:18 -> 36:19] Ok.
+[36:20 -> 36:21] Ouais.
+[36:21 -> 36:22] Je pense que c'est ça.
+[36:22 -> 36:23] Quand t'as lui, c'est...
+[36:25 -> 36:26] Donc du coup, là,
+[36:26 -> 36:27] je vais créer
+[36:27 -> 36:28] pour pas...
+[36:28 -> 36:29] pour pas batailler,
+[36:29 -> 36:30] je vais créer
+[36:30 -> 36:31] un nouveau collaborateur.
+[36:34 -> 36:35] Et oui.
+[36:40 -> 36:41] Et pourquoi ?
+[36:43 -> 36:44] Ben...
+[36:45 -> 36:47] Je comprends plus, là,
+[36:47 -> 36:48] ce qu'il fait.
+[36:48 -> 36:49] Pourquoi je suis passé ?
+[36:52 -> 36:54] Là, si je fais créer...
+[36:59 -> 37:01] un collaborateur
+[37:01 -> 37:02] A17.
+[37:05 -> 37:06] Et là, je vais l'appeler
+[37:06 -> 37:07] pour
+[37:07 -> 37:08] virtuel 11,
+[37:08 -> 37:09] mais en fait,
+[37:09 -> 37:10] c'est son vrai nom que je donne,
+[37:10 -> 37:11] mais d'accord.
+[37:13 -> 37:14] Un vrai nom.
+[37:15 -> 37:16] Hubert.
+[37:17 -> 37:18] Toc, toc.
+[37:18 -> 37:19] Date d'entrée,
+[37:19 -> 37:20] ben,
+[37:20 -> 37:21] tout ça, ça arrive de l'import.
+[37:21 -> 37:22] Parce que généralement,
+[37:22 -> 37:23] les...
+[37:23 -> 37:24] les collaborateurs,
+[37:24 -> 37:25] ils sont créés...
+[37:25 -> 37:26] ils sont créés dans le SRH,
+[37:26 -> 37:27] mais...
+[37:27 -> 37:28] elles mettent en tir entre
+[37:28 -> 37:30] le 1er...
+[37:30 -> 37:32] juillet, donc.
+[37:32 -> 37:33] Voilà.
+[37:33 -> 37:34] Avec une date de débugation
+[37:34 -> 37:35] au 1er juillet,
+[37:35 -> 37:37] et une date de sortie
+[37:37 -> 37:38] au 31 août.
+[37:39 -> 37:41] Avec un contrat,
+[37:41 -> 37:42] alors...
+[37:42 -> 37:44] ça va être un encadre,
+[37:44 -> 37:46] horaire de référence.
+[37:46 -> 37:47] Alors,
+[37:47 -> 37:49] je suis obligée d'en mettre un.
+[37:49 -> 37:51] Donc,
+[37:51 -> 37:52] je vais lui mettre
+[37:52 -> 37:53] autre chose
+[37:53 -> 37:55] que ce qui est issu.
+[37:55 -> 37:57] Pour l'instant,
+[37:57 -> 37:58] il a le virtuel,
+[37:58 -> 38:00] il a 7 admins.
+[38:02 -> 38:03] Parce que je crois que c'est...
+[38:03 -> 38:04] comme j'ai pris
+[38:04 -> 38:05] Corneille,
+[38:05 -> 38:07] Christine Corneille comme référence,
+[38:07 -> 38:08] il m'a mis l'horaire de...
+[38:08 -> 38:09] l'horaire de référence
+[38:09 -> 38:10] de Corneille.
+[38:10 -> 38:12] Mais là, je vais faire un test,
+[38:12 -> 38:14] je vais utiliser le test Philippe.
+[38:14 -> 38:16] Je vais dire qu'il a 7 horaires
+[38:16 -> 38:18] de référence, là.
+[38:18 -> 38:21] Avec un rattachement,
+[38:21 -> 38:23] alors...
+[38:23 -> 38:25] je vais le laisser à la prod.
+[38:25 -> 38:27] Parce que normalement,
+[38:27 -> 38:29] ça s'est connu,
+[38:29 -> 38:31] il n'y a pas de...
+[38:31 -> 38:33] pas ici, hop.
+[38:34 -> 38:36] Il n'a plus que l'existence.
+[38:36 -> 38:38] Ok, donc ça,
+[38:38 -> 38:40] évidemment,
+[38:40 -> 38:42] il y a des problèmes.
+[38:46 -> 38:48] Quand on est en création,
+[38:48 -> 38:50] en fait, on ne réserve pas le numéro
+[38:50 -> 38:52] et on fait plus un
+[38:52 -> 38:54] pour libérer la séquence, s'il vous plaît.
+[38:58 -> 39:00] Ça peut dire qu'il y a quelqu'un
+[39:00 -> 39:01] qui m'est passé devant,
+[39:01 -> 39:03] qui a créé un collaborateur 17.
+[39:03 -> 39:05] Et...
+[39:05 -> 39:07] je pense que c'est ironique, non?
+[39:07 -> 39:09] Ok.
+[39:09 -> 39:11] Je ne sais pas
+[39:11 -> 39:13] parce que je n'enregistre aucun.
+[39:13 -> 39:15] C'est moi qui a créé un collaborateur.
+[39:15 -> 39:17] Ah, c'est tout le monde.
+[39:17 -> 39:19] Je viens de cliquer sur enregistré,
+[39:19 -> 39:21] c'est donc...
+[39:21 -> 39:23] Donc,
+[39:23 -> 39:25] si j'inclus les noms présents,
+[39:25 -> 39:27] je vois maintenant
+[39:27 -> 39:29] mes virtuels
+[39:29 -> 39:31] et je vois
+[39:31 -> 39:33] celui que j'ai appelé
+[39:33 -> 39:35] pour virtuel 11.
+[39:35 -> 39:37] Donc, ça, c'est le collaborateur réel.
+[39:39 -> 39:41] Alors, j'ai deux façons de faire
+[39:41 -> 39:43] ou bien je me mets
+[39:43 -> 39:45] sur le collaborateur réel.
+[39:49 -> 39:51] Et je fusionne
+[39:53 -> 39:55] et il me dit
+[39:55 -> 39:57] est-ce que...
+[39:59 -> 40:01] Il me dit, collez dans ce dossier
+[40:01 -> 40:03] les informations concernant
+[40:03 -> 40:05] et là,
+[40:05 -> 40:07] il me donne
+[40:07 -> 40:09] les virtuels
+[40:09 -> 40:11] disponibles.
+[40:13 -> 40:15] Et donc là, je choisis
+[40:15 -> 40:17] par exemple en virtuel 11, j'applique.
+[40:17 -> 40:19] Et ensuite, il me pose
+[40:19 -> 40:21] plein de questions sur les éléments
+[40:21 -> 40:23] ou les informations que je souhaite que je colle.
+[40:23 -> 40:25] On va y en venir.
+[40:25 -> 40:27] Donc, je ne vais pas aller au bout
+[40:27 -> 40:29] de cette action-là.
+[40:29 -> 40:31] Ou bien je me mets sur le collaborateur réel
+[40:31 -> 40:33] avec lequel je veux fusionner.
+[40:33 -> 40:35] Ou bien je me mets sur le virtuel.
+[40:37 -> 40:39] Et là,
+[40:39 -> 40:41] je peux faire une fusion et il me dit
+[40:41 -> 40:43] vous voulez coller les informations
+[40:43 -> 40:45] de ce dossier dans le dossier 2
+[40:45 -> 40:47] et là, il me propose
+[40:47 -> 40:49] les collaborateurs réels.
+[40:49 -> 40:51] Et là, je vais prendre
+[40:51 -> 40:53] celui-là
+[40:53 -> 40:55] pour appliquer.
+[40:55 -> 40:57] Il supprime au fur et à mesure les virtuels.
+[40:57 -> 40:59] Oui.
+[40:59 -> 41:01] Et là, je vais faire la fusion
+[41:01 -> 41:03] quand elle a fini de faire
+[41:03 -> 41:05] complètement la fusion entre
+[41:05 -> 41:07] deux matricules.
+[41:07 -> 41:09] Il supprime le virtuel.
+[41:09 -> 41:11] Donc fusion 1 par 1.
+[41:11 -> 41:13] Il n'y a pas...
+[41:13 -> 41:15] Non.
+[41:15 -> 41:17] C'est 1 par 1, oui.
+[41:17 -> 41:19] D'accord.
+[41:19 -> 41:21] Et là, dans la fusion,
+[41:21 -> 41:23] vous voyez les informations à coller.
+[41:23 -> 41:25] Est-ce que je veux coller les informations
+[41:25 -> 41:27] d'un fiche collaborateur ?
+[41:27 -> 41:29] Parce que je pourrais très bien dire non, les informations
+[41:29 -> 41:31] d'un fiche,
+[41:31 -> 41:33] je veux pas.
+[41:33 -> 41:35] Là, je suis...
+[41:37 -> 41:39] C'est ça.
+[41:39 -> 41:41] Christine,
+[41:41 -> 41:43] à part le fait de...
+[41:43 -> 41:45] Je comprends bien tout ce qui concerne
+[41:45 -> 41:47] le planning, le fait de le prévoir
+[41:47 -> 41:49] à l'avance, mais
+[41:49 -> 41:51] c'est pas un peu quand même restrictif
+[41:51 -> 41:53] le fait de ne pas pouvoir justement
+[41:53 -> 41:55] associer
+[41:55 -> 41:57] ce qui arrive
+[41:57 -> 41:59] avec les virtuels qu'on a créés.
+[42:01 -> 42:03] Oui, mais ça reste
+[42:03 -> 42:05] le choix.
+[42:05 -> 42:07] La création de virtuel, c'est
+[42:07 -> 42:09] quelque chose qui est vraiment propre à la gestion
+[42:09 -> 42:11] des temps.
+[42:11 -> 42:13] La paix, elle, c'est absolument pas ça.
+[42:13 -> 42:15] Elle est au courant de rien encore.
+[42:15 -> 42:17] Elle sait pas. Elle sait rien.
+[42:17 -> 42:19] Elle sait pas les plannings qui ont été faits.
+[42:19 -> 42:21] Donc elle n'est pas capable de dire
+[42:21 -> 42:23] qu'à quel virtuel
+[42:23 -> 42:25] on va associer tel collaborateur.
+[42:25 -> 42:27] Oui, mais bon,
+[42:27 -> 42:29] à un moment donné, quand il est...
+[42:29 -> 42:31] Le besoin
+[42:31 -> 42:33] va être...
+[42:33 -> 42:35] Enfin, va sortir du domaine
+[42:35 -> 42:37] du virtuel, justement,
+[42:37 -> 42:39] et on va passer vraiment...
+[42:39 -> 42:41] On va embaucher les gens.
+[42:41 -> 42:43] On peut se dire...
+[42:43 -> 42:45] Je sais que c'est une liste de temps de virtuel
+[42:45 -> 42:47] qui a été créé dans l'application.
+[42:47 -> 42:49] Et à chaque...
+[42:49 -> 42:51] On veut dire ça,
+[42:51 -> 42:53] que le collaborateur virtuel
+[42:53 -> 42:55] j'associe
+[42:55 -> 42:57] tel matricule
+[42:57 -> 42:59] et tel
+[42:59 -> 43:01] de nouvelles personnes qui arrivent.
+[43:01 -> 43:03] Et comme ça,
+[43:03 -> 43:05] les fusions sont faites automatiquement.
+[43:05 -> 43:07] Oui, mais c'est pas du tout prévu comme ça.
+[43:07 -> 43:09] Oui, mais
+[43:09 -> 43:11] justement, ça me paraît
+[43:11 -> 43:13] un peu restrictif,
+[43:13 -> 43:15] parce que là,
+[43:15 -> 43:17] c'est une dizaine
+[43:17 -> 43:19] ou une cinquantaine de collaborateurs.
+[43:19 -> 43:21] C'est un peu plus pour des événements un peu plus gros.
+[43:21 -> 43:23] Enfin, voilà,
+[43:23 -> 43:25] c'est...
+[43:25 -> 43:27] Ça reste le choix du manager.
+[43:27 -> 43:29] D'accord.
+[43:29 -> 43:31] Celui qui a fait le planning,
+[43:31 -> 43:33] il a dit
+[43:33 -> 43:35] à la RH, j'ai besoin
+[43:35 -> 43:37] de tant de personnes qui ont telle compétence,
+[43:37 -> 43:39] tant d'autres personnes qui ont telle compétence, etc.
+[43:39 -> 43:41] Et puis,
+[43:41 -> 43:43] il a fait ses plannings,
+[43:43 -> 43:45] et c'est lui qui doit faire sa sauce.
+[43:45 -> 43:47] D'accord.
+[43:47 -> 43:49] Il n'y a que lui qui...
+[43:49 -> 43:51] qui est...
+[43:51 -> 43:53] Enfin, je pense
+[43:53 -> 43:55] qui peut être...
+[43:55 -> 43:57] parce qu'il va recevoir,
+[43:57 -> 43:59] par exemple, 5 personnes de même compétence,
+[43:59 -> 44:01] de même qui vont aller au même poste.
+[44:01 -> 44:03] Souvent, c'est des postes identiques
+[44:03 -> 44:05] et des postes
+[44:05 -> 44:07] pas forcément très qualifiés d'ailleurs.
+[44:07 -> 44:09] Et donc, il va choisir l'une
+[44:09 -> 44:11] ou l'autre, ou parmi les 3,
+[44:11 -> 44:13] de façon aléatoire.
+[44:13 -> 44:15] Mais quand même, par rapport
+[44:15 -> 44:17] à leur cursus,
+[44:17 -> 44:19] je ne sais pas en fait comment ça se passe,
+[44:19 -> 44:21] mais il me semble...
+[44:21 -> 44:23] Enfin, je ne vois pas bien comment
+[44:23 -> 44:25] c'est la RH qui peut dire
+[44:25 -> 44:27] un tel il va aller
+[44:27 -> 44:29] à telle compétence.
+[44:29 -> 44:31] Ah non, c'est pas...
+[44:31 -> 44:33] Enfin, c'est pas dans ce sens-là,
+[44:33 -> 44:35] mais je ne sais plus qui a posé la question
+[44:35 -> 44:37] de pouvoir faire de l'association
+[44:37 -> 44:39] automatique
+[44:39 -> 44:41] ou de faire de l'association automatique.
+[44:41 -> 44:43] Et puis,
+[44:43 -> 44:45] pour moi, ça me semble cohérent
+[44:45 -> 44:47] si on crée des profils virtuels
+[44:47 -> 44:49] et après qu'on doit les fusionner
+[44:49 -> 44:51] avec des personnes qui arrivent,
+[44:51 -> 44:53] pourquoi ne pas faire cette fusion-là
+[44:53 -> 44:55] par un import.
+[44:55 -> 44:57] Enfin, si c'est faisable en tout cas.
+[44:57 -> 44:59] Mais l'import, ça veut dire,
+[44:59 -> 45:01] mettre en relation,
+[45:01 -> 45:03] de toute façon,
+[45:03 -> 45:05] à minima, le travail de base
+[45:05 -> 45:07] à minima, c'est de faire une liste
+[45:07 -> 45:09] et de faire une liste
+[45:09 -> 45:11] et de faire une liste
+[45:11 -> 45:13] de faire une liste
+[45:13 -> 45:15] avec les virtuels
+[45:15 -> 45:17] dans la première colonne
+[45:17 -> 45:19] et les matriculérielles dans la deuxième.
+[45:19 -> 45:21] Et ensuite, apporter ça.
+[45:21 -> 45:23] Mais en fait,
+[45:23 -> 45:25] par rapport à ce que
+[45:25 -> 45:27] le manager a fait
+[45:27 -> 45:29] sur les virtuels, peut-être,
+[45:29 -> 45:31] d'ailleurs, que dans certains cas,
+[45:31 -> 45:33] il ne veut pas tout coller, tu vois,
+[45:33 -> 45:35] peut-être que...
+[45:35 -> 45:37] J'ai pas pris en compte l'histoire
+[45:37 -> 45:39] de ce que tu viens de dire,
+[45:39 -> 45:41] c'est vrai que si tu as...
+[45:41 -> 45:43] Je sais pas, moi, par exemple,
+[45:43 -> 45:45] 20 personnes qui arrivent
+[45:45 -> 45:47] sur un événement au stade de France
+[45:47 -> 45:49] où tu vas avoir une partie traiteur
+[45:49 -> 45:51] et donc tu as des personnes qui font le service,
+[45:51 -> 45:53] d'autres qui s'occupent de faire la mise
+[45:53 -> 45:55] en table,
+[45:55 -> 45:57] d'autres qui sont en cuisine, enfin, ce genre de choses.
+[45:57 -> 45:59] Donc forcément, c'est pas les mêmes profils.
+[45:59 -> 46:01] Et...
+[46:01 -> 46:03] Oui, donc ça, forcément,
+[46:03 -> 46:05] c'est géré au niveau des managers, en fait.
+[46:05 -> 46:07] Oui.
+[46:07 -> 46:09] C'est le planificateur qui fait ce job, quoi.
+[46:09 -> 46:11] C'est le manager qui fait ce job.
+[46:11 -> 46:13] OK.
+[46:17 -> 46:19] Et donc, là, on dit,
+[46:19 -> 46:21] quels sont les informations que je veux coller ?
+[46:21 -> 46:23] Est-ce que je veux aussi coller
+[46:23 -> 46:25] les informations de la fiche collaborateur ?
+[46:25 -> 46:27] Oui, non. Et si je veux coller
+[46:27 -> 46:29] les informations de la fiche collaborateur,
+[46:29 -> 46:31] donc du virtuel 11,
+[46:31 -> 46:33] ce que j'ai mis dans le virtuel 11,
+[46:33 -> 46:35] est-ce que je veux les coller ?
+[46:35 -> 46:37] Alors le contrat, sûrement que je veux pas.
+[46:37 -> 46:39] Je veux pas,
+[46:39 -> 46:41] parce que le contrat, il est sûrement
+[46:41 -> 46:43] il a sûrement été affecté d'un contrat,
+[46:43 -> 46:45] enfin, encore que, à voir.
+[46:45 -> 46:47] Il faudrait voir.
+[46:47 -> 46:49] Les rattachements, les activités,
+[46:49 -> 46:51] bon, c'est sans objet, là.
+[46:51 -> 46:53] Les emplois du temps, c'est sans objet.
+[46:53 -> 46:55] Et puis,
+[46:55 -> 46:57] je peux même ouvrir encore, là,
+[46:57 -> 46:59] au niveau des collaborateurs.
+[46:59 -> 47:01] Quand je vais coller les horaires,
+[47:01 -> 47:03] est-ce que je vais coller l'horaire de référence ?
+[47:06 -> 47:08] Ici, bon,
+[47:08 -> 47:10] je vais dire que je colle les fiches de la fiche,
+[47:10 -> 47:12] alors, je vais pas coller, non, je vais pas coller
+[47:12 -> 47:14] les informations de la fiche collaborateur.
+[47:14 -> 47:16] Par contre, les événements, oui,
+[47:16 -> 47:18] je veux coller les horaires exceptionnelles.
+[47:20 -> 47:22] Alors, il y a la notion de
+[47:22 -> 47:24] est-ce que je remplace, est-ce que j'ajoute
+[47:24 -> 47:26] ou est-ce que je ne fais rien ?
+[47:26 -> 47:28] Par exemple, si j'ai posé un horaire exceptionnel
+[47:28 -> 47:30] sur virtuel 11,
+[47:30 -> 47:32] ce que j'ai fait le 2 juillet,
+[47:33 -> 47:35] est-ce que je veux que ça remplace
+[47:35 -> 47:37] tous les horaires exceptionnels
+[47:37 -> 47:39] qui, éventuellement, ont déjà été posés
+[47:39 -> 47:41] sur le collaborateur réel ?
+[47:44 -> 47:46] On a prévu tous les cas de figure, en fait,
+[47:46 -> 47:48] de fusionner des dossiers
+[47:48 -> 47:50] avec des informations des vieilles existantes
+[47:50 -> 47:52] sur les réels.
+[47:52 -> 47:54] Donc là, je vais tout remplacer.
+[47:54 -> 47:56] Là, je vais juste
+[47:56 -> 47:58] faire de l'ajout.
+[47:58 -> 48:00] C'est-à-dire que je laisserai en place,
+[48:00 -> 48:02] déjà des horaires exceptionnelles
+[48:02 -> 48:04] sur le collaborateur réel,
+[48:04 -> 48:06] mais par contre, les horaires exceptionnelles
+[48:06 -> 48:08] qu'en plus je trouve sur le virtuel,
+[48:08 -> 48:10] je vais les rajouter.
+[48:10 -> 48:12] Pour les absences,
+[48:12 -> 48:14] par défaut, on initialise
+[48:14 -> 48:16] à ajout,
+[48:16 -> 48:18] pour la régularisation aussi.
+[48:18 -> 48:20] Production support, ça, c'est de l'activité.
+[48:20 -> 48:22] Donc on va ignorer ça.
+[48:24 -> 48:26] Les affectations, les disponibilités,
+[48:26 -> 48:28] tout ça, c'est des modules
+[48:28 -> 48:30] qu'on ne voit pas.
+[48:30 -> 48:32] Et puis les notes.
+[48:32 -> 48:34] Il y a les messages et les mémo.
+[48:34 -> 48:36] On va dire oui.
+[48:36 -> 48:38] Je ne vous ai pas expliqué encore ce que c'est.
+[48:38 -> 48:40] Donc du coup,
+[48:40 -> 48:42] je vais faire la fusion
+[48:42 -> 48:44] et après la fusion,
+[48:44 -> 48:46] est-ce que je veux lancer la valeur du dossier
+[48:46 -> 48:48] directement ?
+[48:48 -> 48:50] Alors, sur une période de futur,
+[48:50 -> 48:52] lancer la valorisation, ça ne va pas faire grand-chose
+[48:52 -> 48:54] puisque de toute façon,
+[48:54 -> 48:56] les dates ne sont pas atteintes.
+[48:56 -> 48:58] Bon, je ne vais pas lancer la valeur.
+[48:58 -> 49:00] Je vais au moins démarrer la fusion.
+[49:04 -> 49:06] Alors,
+[49:08 -> 49:10] qu'est-ce que c'est que ce soit épuisé ?
+[49:14 -> 49:16] Ce n'est pas par rapport à un événement
+[49:16 -> 49:18] parce que tu es basé sur le compte
+[49:18 -> 49:20] de Corne Christine, il me semble.
+[49:20 -> 49:22] Ah oui.
+[49:22 -> 49:24] Donc,
+[49:24 -> 49:26] il y a, je crois, une absence
+[49:26 -> 49:28] ou un truc comme ça que tu avais mis...
+[49:28 -> 49:30] Alors, sur le virtuel ?
+[49:30 -> 49:32] En fait, sur le virtuel,
+[49:32 -> 49:34] puisque je suis positionné sur lui,
+[49:34 -> 49:36] parce que quand je regarde ces absences,
+[49:36 -> 49:38] je peux y regarder par là,
+[49:38 -> 49:40] j'ai un RTT
+[49:40 -> 49:42] le vendredi 9 juillet.
+[49:42 -> 49:44] Le RTT.
+[49:44 -> 49:46] Voilà, on rentre
+[49:46 -> 49:48] dans des utilités.
+[49:48 -> 49:50] Je vérifie mais le RTT,
+[49:50 -> 49:52] je l'ai mis...
+[49:54 -> 49:56] Oui, tu avais mis pas
+[49:56 -> 49:58] d'alerte
+[49:58 -> 50:00] si
+[50:00 -> 50:02] ça dépasse le compteur.
+[50:02 -> 50:04] Voilà.
+[50:04 -> 50:06] Je laisse l'alerte mais je ne veux pas que ce soit bloquant.
+[50:06 -> 50:08] Alors, quand je fais la saisi
+[50:08 -> 50:10] unitaire de cette absence,
+[50:10 -> 50:12] ça ne m'a pas bloqué,
+[50:12 -> 50:14] j'ai pu passer outre,
+[50:14 -> 50:16] puisque j'ai pu poser ma demande
+[50:16 -> 50:18] et valider la demande.
+[50:18 -> 50:20] Mais par contre,
+[50:20 -> 50:22] dans tous les traitements
+[50:22 -> 50:24] de masse,
+[50:24 -> 50:26] on bloque
+[50:30 -> 50:32] Alors, est-ce qu'il n'y a pas un paramètre divers ?
+[50:36 -> 50:38] Qui gère ça ?
+[50:40 -> 50:42] Je ne la connais pas très bien la fusion.
+[50:46 -> 50:48] La fonctionnalité est active.
+[50:52 -> 50:54] Ça, c'est le fait
+[50:54 -> 50:56] qui me propose automatiquement
+[50:56 -> 50:58] le lancer la valorisation
+[50:58 -> 51:00] après la fusion.
+[51:02 -> 51:04] Mais j'ai pas...
+[51:06 -> 51:08] J'ai pas la notion
+[51:08 -> 51:10] de...
+[51:10 -> 51:12] Quand je fusionne,
+[51:12 -> 51:14] puisque je ne peux pas valider.
+[51:14 -> 51:16] Enfin, il ne m'avertit pas
+[51:16 -> 51:18] que je suis
+[51:18 -> 51:20] en sol...
+[51:20 -> 51:22] que je vais être en sol de négatif.
+[51:22 -> 51:24] Du coup, il bloque.
+[51:32 -> 51:34] Alors, si je reviens
+[51:34 -> 51:36] sur le suivi
+[51:36 -> 51:38] virtuel, celui-là, il a accepté.
+[51:38 -> 51:40] Je vais poser cet événement.
+[51:40 -> 51:42] Donc, il bloque.
+[51:42 -> 51:44] Il veut poser le RTT
+[51:44 -> 51:46] pour virtuel Hubert
+[51:46 -> 51:48] sur le réel.
+[51:48 -> 51:50] C'est là qu'il bloque.
+[51:52 -> 51:54] Donc, ce que je vais faire
+[52:02 -> 52:04] et je reprends ça
+[52:06 -> 52:08] au niveau de sa fiche.
+[52:12 -> 52:14] Vous voyez, maintenant, comme il a fait la fusion
+[52:14 -> 52:16] mais de façon partielle,
+[52:16 -> 52:18] il me propose de reprendre la fusion.
+[52:20 -> 52:22] Et si je reprend la fusion
+[52:22 -> 52:24] et que je la lance, de toute façon,
+[52:24 -> 52:26] il vient bloquer pour la même raison.
+[52:32 -> 52:34] Parce qu'il me dit, je n'ai pas assez de solde.
+[52:34 -> 52:36] Maintenant,
+[52:36 -> 52:38] pour virtuel,
+[52:38 -> 52:40] sur le réel,
+[52:40 -> 52:42] je vais lui donner des droits à RTT.
+[52:50 -> 52:52] Régularisation.
+[52:52 -> 52:54] Par les régularisations.
+[52:54 -> 52:56] Les régularisations, ce sont des leviers de gestion
+[52:56 -> 52:58] qui permettent
+[52:58 -> 53:00] d'alimenter, par exemple, automatiquement,
+[53:00 -> 53:02] des compteurs,
+[53:02 -> 53:04] de corriger des compteurs, des choses comme ça.
+[53:06 -> 53:08] Je vais créer, je vais lui mettre
+[53:08 -> 53:10] cette régularisation.
+[53:10 -> 53:12] Je vais chercher
+[53:12 -> 53:14] RTT.
+[53:16 -> 53:18] Je vais lui faire une régule
+[53:18 -> 53:20] de mise à jour de droits soldes
+[53:20 -> 53:22] de RTT,
+[53:22 -> 53:24] période en cours.
+[53:24 -> 53:26] Je vais lui mettre
+[53:26 -> 53:28] cette régule
+[53:28 -> 53:30] au 1er juillet.
+[53:34 -> 53:36] Et je vais lui mettre
+[53:36 -> 53:38] une régule de RTT.
+[53:38 -> 53:40] C'est n'importe quoi.
+[53:44 -> 53:46] C'est juste pour vous montrer
+[53:46 -> 53:48] que s'il a du solde,
+[53:48 -> 53:50] il va pouvoir faire la fusion
+[53:50 -> 53:52] jusqu'au bout.
+[54:00 -> 54:02] Maintenant, si je reviens...
+[54:02 -> 54:04] Par contre,
+[54:04 -> 54:06] cette demande de régularisation
+[54:06 -> 54:08] ne doit pas être acceptée avant.
+[54:10 -> 54:12] Alors,
+[54:12 -> 54:14] non, parce que je le fais
+[54:14 -> 54:16] en tant que...
+[54:16 -> 54:18] Je vais consulter son solde
+[54:18 -> 54:20] justement en virtuel,
+[54:20 -> 54:22] son solde d'absence.
+[54:22 -> 54:24] Par contre, il faut que je valorise.
+[54:24 -> 54:26] Ah oui, mais c'est pas grave.
+[54:28 -> 54:30] En fait, si je consulte
+[54:30 -> 54:32] son solde maintenant pour ce qu'elle a
+[54:32 -> 54:34] au 1er juillet,
+[54:38 -> 54:40] elle est automatiquement validée
+[54:40 -> 54:42] la régularisation, parce que je l'ai faite
+[54:42 -> 54:44] dans mon équipe avec un profil
+[54:44 -> 54:46] de gestionnaire.
+[54:46 -> 54:48] Donc, quand je saisis cette régule,
+[54:48 -> 54:50] elle est tout de suite validée, parce que j'ai
+[54:50 -> 54:52] une autorisation suffisante.
+[54:52 -> 54:54] C'est toi, en fait,
+[54:54 -> 54:56] qui va... Enfin, vu le profil
+[54:56 -> 54:58] que tu as,
+[54:58 -> 55:00] c'est comme si
+[55:00 -> 55:02] j'étais un gestionnaire RH,
+[55:02 -> 55:04] et du coup, si je saisis
+[55:04 -> 55:06] tel que j'ai construit les workflow
+[55:06 -> 55:08] dans cet environnement, pour l'instant,
+[55:08 -> 55:10] si c'est un responsable
+[55:10 -> 55:12] qui saisit la régule, elle est
+[55:12 -> 55:14] automatiquement validée.
+[55:14 -> 55:16] D'accord. Donc oui, ça fait partie
+[55:16 -> 55:18] des règles de workflow
+[55:18 -> 55:20] qui ont été mises en place
+[55:20 -> 55:22] à l'établissement
+[55:22 -> 55:24] de la mise en place
+[55:24 -> 55:26] de ce module chez le client.
+[55:26 -> 55:28] C'est ça.
+[55:28 -> 55:30] OK.
+[55:30 -> 55:32] Donc, vous voyez, son solde RTT,
+[55:32 -> 55:34] il est de 10 jours.
+[55:34 -> 55:36] Il est prendre 10 jours de droits
+[55:36 -> 55:38] et de solde. Et là,
+[55:38 -> 55:40] si je reviens
+[55:40 -> 55:42] sur ce collaborateur,
+[55:42 -> 55:44] que je sois sur le réel
+[55:44 -> 55:46] ou le virtuel, c'est pareil.
+[55:46 -> 55:48] Il propose le bouton de reprendre la fusion,
+[55:48 -> 55:50] parce qu'il sait qu'il y a un lien,
+[55:50 -> 55:52] il y a une fusion en cours entre ces deux-là.
+[55:52 -> 55:54] Et donc, je reprend la fusion.
+[55:55 -> 55:57] Je laisse les mêmes événements.
+[55:57 -> 55:59] Je démarre.
+[56:05 -> 56:06] Voilà.
+[56:06 -> 56:08] Et donc là, maintenant, c'est bon.
+[56:10 -> 56:12] Je peux fermer le volet de fusion.
+[56:12 -> 56:13] Du coup...
+[56:13 -> 56:14] Il a disparu.
+[56:14 -> 56:16] Je n'ai plus de virtuel 11.
+[56:16 -> 56:18] Et quand je consulte
+[56:18 -> 56:20] les absences
+[56:21 -> 56:23] du réel,
+[56:23 -> 56:24] il a
+[56:24 -> 56:26] le vert ET
+[56:26 -> 56:28] et il a la réunion,
+[56:28 -> 56:30] parce que j'avais mis sur le virtuel
+[56:30 -> 56:32] une réunion le jeudi matin.
+[56:34 -> 56:35] OK.
+[56:35 -> 56:37] Et si je regarde ces horaires...
+[56:37 -> 56:39] Alors,
+[56:39 -> 56:41] je n'ai pas des horaires exceptionnelles ici.
+[56:41 -> 56:43] Par contre,
+[56:43 -> 56:45] si je regarde son agenda,
+[56:46 -> 56:48] son agenda
+[56:48 -> 56:50] pour la période
+[56:50 -> 56:52] de Juliet
+[56:54 -> 56:56] Hebdo.
+[56:56 -> 56:58] Et puis, cette semaine-là,
+[56:58 -> 57:00] parce que l'horaire exceptionnelle,
+[57:00 -> 57:02] je l'ai mis le 2.
+[57:02 -> 57:04] Donc, j'ai la réunion du matin.
+[57:04 -> 57:06] Et ici,
+[57:06 -> 57:08] j'ai un horaire du matin.
+[57:08 -> 57:10] Et ici,
+[57:10 -> 57:12] j'ai un horaire du matin.
+[57:13 -> 57:15] J'ai un horaire du matin.
+[57:15 -> 57:17] Qu'est-ce que c'est que ces horaires-là?
+[57:22 -> 57:25] Par contre, la réunion, elle est sur le jeudi.
+[57:28 -> 57:30] Oui, mais ça, c'était normal.
+[57:30 -> 57:32] La réunion, je l'avais mis le jeudi matin.
+[57:32 -> 57:33] Oui, OK.
+[57:33 -> 57:35] Là, c'est d'accord.
+[57:35 -> 57:37] Le vendredi, par contre,
+[57:37 -> 57:39] j'avais mis un horaire exceptionnel de matin.
+[57:40 -> 57:42] Et là, c'est bon.
+[57:42 -> 57:44] Par contre,
+[57:44 -> 57:46] je n'avais pas modifié
+[57:46 -> 57:48] l'horaire exceptionnelle du jeudi.
+[57:50 -> 57:52] Alors ça, ça va bien être.
+[57:56 -> 57:58] Ah oui, c'est reclure.
+[57:58 -> 58:00] C'est le 9.
+[58:00 -> 58:02] Donc, on le voit Paul.
+[58:10 -> 58:12] Ah!
+[58:15 -> 58:17] Ah oui, mais...
+[58:20 -> 58:22] j'ai pas copié les données
+[58:22 -> 58:24] de la fiche personnelle
+[58:24 -> 58:26] dans la fusion.
+[58:28 -> 58:30] Donc, du coup,
+[58:30 -> 58:32] il a pris effectivement
+[58:32 -> 58:34] le programme que j'ai mis
+[58:34 -> 58:36] sur le collaborateur
+[58:36 -> 58:38] réel,
+[58:38 -> 58:40] qui était Test Philippe III.
+[58:40 -> 58:42] Et le Test Philippe III,
+[58:42 -> 58:44] l'horaire du jeudi,
+[58:44 -> 58:46] c'est un horaire de matin.
+[58:49 -> 58:51] C'est pour ça qu'il se retrouve de matin.
+[58:51 -> 58:53] Et ici, j'avais peur que ce soit la fusion
+[58:53 -> 58:55] qui bug, mais en fait, non.
+[58:55 -> 58:57] Là, maintenant,
+[58:57 -> 58:59] il est exactement...
+[58:59 -> 59:01] Vous voyez, il a un horaire
+[59:01 -> 59:03] de matin tous les jours,
+[59:03 -> 59:05] sauf le mercredi,
+[59:05 -> 59:07] où il est en journée.
+[59:07 -> 59:09] Et ça, ça correspond
+[59:09 -> 59:11] au programme de référence
+[59:11 -> 59:13] Test Philippe III
+[59:13 -> 59:15] que j'ai posé
+[59:15 -> 59:17] sur le réel.
+[59:19 -> 59:21] Et comme je n'ai pas copié
+[59:21 -> 59:23] les informations du virtuel,
+[59:23 -> 59:25] j'aurais dû me retrouver
+[59:25 -> 59:27] en copiant les informations du virtuel,
+[59:27 -> 59:29] je me serais retrouvée avec un horaire
+[59:29 -> 59:31] administratif
+[59:31 -> 59:33] en journée tous les jours.
+[59:33 -> 59:35] Excellent.
+[59:38 -> 59:40] Mais du coup,
+[59:40 -> 59:42] si je reviens sur la semaine précédente,
+[59:42 -> 59:44] c'est sûrement un horaire exceptionnel
+[59:44 -> 59:46] du moment de finir.
+[59:48 -> 59:50] D'ailleurs, dans un cas comme ça,
+[59:50 -> 59:52] si la personne se rend compte qu'elle s'est trompée
+[59:52 -> 59:54] pour exoïque racraison,
+[59:54 -> 59:56] elle peut quand même modifier
+[59:56 -> 59:58] le programme
+[59:58 -> 60:00] hebdomadaire
+[60:00 -> 60:02] dans la fiche du collaborateur.
+[60:02 -> 60:04] Ah oui. Oui, oui, oui.
+[60:08 -> 60:10] Vous voyez ici
+[60:12 -> 60:14] je vais demander
+[60:14 -> 60:16] une vue mensuelle pour voir le visuel.
+[60:16 -> 60:18] Du coup, j'ai l'impression
+[60:18 -> 60:20] qu'il a été intelligent.
+[60:20 -> 60:22] Sur mon virtuel,
+[60:22 -> 60:24] mon M1 avait une astérique se devant,
+[60:24 -> 60:26] parce que c'était
+[60:26 -> 60:28] un horaire exceptionnel que j'avais posé,
+[60:28 -> 60:30] je l'avais surchargé, en fait,
+[60:30 -> 60:32] avec un horaire journalier différent.
+[60:32 -> 60:34] Sur le virtuel.
+[60:34 -> 60:36] Là, il a été intelligent
+[60:36 -> 60:38] il a vu
+[60:38 -> 60:40] que
+[60:40 -> 60:42] par rapport à l'horaire exceptionnel posé
+[60:42 -> 60:44] il y avait un horaire exceptionnel
+[60:44 -> 60:46] mais c'était M1
+[60:46 -> 60:48] c'est le même horaire que celui issu
+[60:48 -> 60:50] de l'horaire de référence.
+[60:50 -> 60:52] Du coup,
+[60:52 -> 60:54] il a enlevé la notion d'horaire exceptionnelle.
+[60:54 -> 60:56] Il a mis ça
+[60:56 -> 60:58] qui est issu de l'horaire de référence,
+[60:58 -> 61:00] puisque là, tous mes vendredis sont en matin
+[61:02 -> 61:04] et il a enlevé la notion d'exceptionnel.
+[61:06 -> 61:08] Il a enlevé la notion d'exceptionnel.
+[61:08 -> 61:10] Il a enlevé la notion d'exceptionnel.
+[61:10 -> 61:12] Il a enlevé la notion d'exceptionnel.
+[61:12 -> 61:14] Et un de mes vendredis
+[61:18 -> 61:20] qui est issu de l'horaire exceptionnel
+[61:20 -> 61:22] de référence 실�pérophone
+[61:22 -> 61:24] de l'horaire.
+[61:24 -> 61:26] Alors, on pourrait faire un test
+[61:26 -> 61:28] Player,
+[61:28 -> 61:30] qui sait qui veut faire un test
+[61:30 -> 61:32] avec un autre matricule.
+[61:32 -> 61:47] j'ai déjà fait le virtuel 17 avec un autre avec du pensée le vie ça marchait donc c'est bon
+[61:47 -> 61:56] c'est bon les informations qui avaient été posées sur le virtuel 17 oui tu n'avais pas d'absence
+[61:56 -> 62:04] qu'est ce qu'il y avait de l'information ? j'ai juste vu sur la partie calendrier partagée
+[62:04 -> 62:11] enfin quelque chose que pour différencier que ça a été bien remonté c'est bon
+[62:11 -> 62:18] les informations de sa fiche collaborateur oui d'accord
+[62:18 -> 62:29] oui j'ai un futur vin
+[62:29 -> 62:35] l'affectation au niveau de la structure pour ressources humaines
+[62:35 -> 62:44] et la période de présence, pas la période de présence, l'horaire de référence voilà
+[62:44 -> 62:49] d'accord, j'ai des blocs matin soir donc c'était différent par rapport
+[62:49 -> 62:54] d'accord on t'a bien récupéré les infos, tout à fait oui
+[62:54 -> 63:16] est-ce que au niveau de la logique c'est compris ?
+[63:16 -> 63:30] vous n'est pas trop perdu ? non c'est une fonction à été très pratique c'est clair
+[63:30 -> 63:44] ah oui c'est intéressant c'est intéressant alors le truc bon alors quand j'ai posé une RTT
+[63:44 -> 63:54] sur des collaborateurs qui pour le coup évidemment n'ont pas encore de droits RTT
+[63:54 -> 64:02] vous avez vu que ça bloque systématiquement même si je dis que je ne bloque pas si j'ai un
+[64:02 -> 64:11] soldat suffisant mais dès que je fais des traitements automatisés comme ça en fait
+[64:11 -> 64:17] ça bloque c'est vrai pour la fusion c'est vrai aussi pour les traitements collectifs
+[64:17 -> 64:24] tout à l'heure je vous ai montré les traitements collectifs pour calculer
+[64:24 -> 64:30] pour effacer des dossiers mais je peux aussi en traitement collectif faire de la saisie d'absence
+[64:30 -> 64:38] et si je choisis le motif RTT et que je décide de mettre tout le monde en RTT
+[64:38 -> 64:56] le 30 avril par exemple je valide la saisie j'exécute
+[65:08 -> 65:29] il me refuse
+[65:29 -> 65:39] cet ajout pour dès qu'il a un soldat un soldat épuisé quand il n'a pas suffisamment de soldat il refuse
+[65:39 -> 65:49] ou si il trouve d'autres anomalies par exemple des plus gros chevaux d'absence des choses comme ça
+[65:49 -> 65:57] c'est juste pour vous montrer que alors que vous voyez si je vais sur du pensil vie et que je
+[65:57 -> 66:02] lui saisis un RTT il va m'envoyer un message à l'écran disant le soldat deviendrait négatif est-ce
+[66:02 -> 66:07] que vous voulez continuer oui je passe mais en traitement collectif je passe pas
+[66:07 -> 66:17] normalement pour du pensil vie pour avoir du soldat il faut qu'il y a de l'activité c'est ça
+[66:17 -> 66:26] qu'il y a de travail de jour de présence oui mais ça dépend en fait parce que ça dépend
+[66:26 -> 66:36] qu'est ce qu'on entend par RTT là telles qui sont conçues alors on va faire une petite
+[66:36 -> 66:47] présentation général de l'installation si vous voulez quand on valorise et tous les contrôles
+[66:47 -> 67:03] oui il y a une partie alors si je vous montre les références celles les contrôles et valorisation
+[67:03 -> 67:10] je suis ouvert contrôles et valorisation voilà dans ce menu contrôles et valorisation là
+[67:10 -> 67:18] ce qui intéresse les consultants inétonnes donc si je prends la table des compteurs ça c'est la
+[67:18 -> 67:27] définition des compteurs par défaut là dans cet environnement on a installé 200 compteurs je crois
+[67:27 -> 67:37] que l'après-coh maintenant c'est minimum 300 ou 400 bon on a la 200 compteurs dont
+[67:40 -> 67:49] 168 sont définis quand je dis définis c'est-à-dire qu'ils sont caractérisés on leur a mis un nom à
+[67:49 -> 67:58] libérer un type est-ce qu'on stoppe des nombres des heures minutes format et puis voilà les
+[67:58 -> 68:05] compteurs qui sont numérotés comme ça sans libérer ce sont des compteurs qui finalement ne sont pas
+[68:05 -> 68:12] utilisés dans dans cet environnement ils existent dans les tables ils peuvent être alimentés mais
+[68:12 -> 68:20] ils sont pas caractérisés en gros les règles les alimentent pas ce qu'il faut savoir c'est que
+[68:20 -> 68:32] quand on lance la valorisation on fait appel à plusieurs couches de calcul et la première c'est
+[68:32 -> 68:39] la couche standard alors ça c'est installé et dès qu'on installe un chrono time on installe ce
+[68:39 -> 68:48] qu'on appelle le moteur de calcul et donc ça c'est le standard sur les 200 compteurs le standard
+[68:48 -> 68:58] le moteur il alémente les 8 premiers par les 9 premiers de 0 à 8 donc on alimente automatiquement
+[68:58 -> 69:07] par le moteur le temps attendu le temps pointé ça c'est la différence entre les badges
+[69:07 -> 69:15] le temps validé c'est la différence entre le temps pointé et d'éventuelles ajustements qu'on
+[69:15 -> 69:23] a fait on va voir quand on va voir les la définition des horaires on calcule le débit crédit c'est la
+[69:23 -> 69:29] différence entre le temps validé et le tendu je devais faire 7 heures j'en ai fait 6 j'ai une heure de
+[69:29 -> 69:34] débit si j'en ai si j'ai fait 8 heures par contre mon temps validé c'est que j'ai une heure de crédit
+[69:34 -> 69:43] la pause réelle c'est les badges réels de ma pause les badges effectifs j'ai badger ma
+[69:43 -> 69:50] pause déjeuner de midi 10 à 1h30 j'ai 1h20 de pause réelle ma pause validée c'est cette
+[69:50 -> 69:56] pause éventuellement ajuster des paramètres toujours on positionne sur les horaires sur la
+[69:56 -> 70:04] définition des horaires j'ai mon temps de travail effectif c'est à minima c'est le temps validé plus
+[70:04 -> 70:11] d'éventuelles absences qui pourraient être des absences travaillées quand je suis en réunion par
+[70:11 -> 70:18] exemple ou en formation je ne suis pas je suis pas dans du temps validé éventuellement j'ai
+[70:18 -> 70:23] budget pour partir en réunion je suis sorti mais c'est du temps de travail effectif quand même
+[70:23 -> 70:32] c'est du temps qui m'est payé et on distingue deux temps d'absence différent le temps de mission ça
+[70:32 -> 70:39] c'est vraiment on comptabilise dans le temps de mission les absences qui sont travaillées ma
+[70:39 -> 70:44] fameuse réunion ben aussi j'ai une réunion de deux heures j'aurai deux heures dans ce temps
+[70:44 -> 70:48] on appelle le temps de mission mais on aurait pu appeler ça absence en absence travaillée
+[70:48 -> 70:57] et on a le temps d'absence le compteur c8 ça c'est son les absences réelles quand je suis en congé
+[70:57 -> 71:05] en rtt malade ou en congé paternité je suis pas au boulot donc je suis vraiment absent donc le
+[71:05 -> 71:11] moteur il alimente automatiquement à partir des paramètres rach qui sont faits aux rares motifs
+[71:11 -> 71:19] d'absence etc c'est 9 premiers compteurs ensuite quand on installe quand vous installez un client
+[71:19 -> 71:25] au maroc vous installez uniquement cette partie là vous n'installez pas ce qu'on appelle la couche
+[71:25 -> 71:34] chronopac et bien c'est vrai voilà alors là sur cet environnement nous quand on installe les
+[71:34 -> 71:38] clients en france la plupart du temps on installe aussi une sur couche qui est la couche qu'on
+[71:38 -> 71:49] appelle chronopac c'est un ensemble de règles de calcul qui sont relatives ou à la réglementation
+[71:49 -> 71:56] française parce que finalement chez tous les clients les droits aux absences les droits au rtt
+[71:56 -> 72:04] les droits au congé ça suit des règles identiques en fait des modes de calcul identiques donc on
+[72:04 -> 72:09] a prêt paramétré tout ça pour qu'on n'ait pas à récréhir à chaque fois comment les droits
+[72:09 -> 72:17] à congé sont alimentés comment les droits rtt sont alimentés etc et donc tout ça pour expliquer
+[72:17 -> 72:25] que le droit le rtt qui est géré là dans cet environnement on a sous les yeux c'est le droit
+[72:25 -> 72:37] français si j'ai droit à rtt les rtt je les acquiert par exemple chez nous chez Inetom on les
+[72:37 -> 72:45] acquiert en début d'exercice au 1er juin on a droit à 10 jours de rtt et ben on les acquiert
+[72:45 -> 72:53] au 1er juin on a nos 10 jours les congés c'est pas pareil les congés on les acquiert on acquiert
+[72:53 -> 73:07] 2 jours 208 jours par mois en fait il ya plusieurs méthodes d'acquisition des droits à absence et on a
+[73:07 -> 73:14] automatisé par la chronopaque les différentes méthodes donc quand quand je crois que c'est une
+[73:14 -> 73:19] reading qui posait la question qu'il peut pas prendre des rtt s'il n'est pas là
+[73:19 -> 73:27] pas forcément on pourrait très bien dire que finalement ces gens là on leur donne un droit alors
+[73:27 -> 73:33] c'est pas un bon exemple parce que les gens qui viennent travailler deux mois en contrat court comme
+[73:33 -> 73:40] ça ont ils ont pas des droits à rtt sur cette période de deux mois ils auront peut-être des
+[73:40 -> 73:48] droits à rtt en heure c'est à dire que s'ils font pendant leur période de travail trop de temps
+[73:48 -> 73:55] ils vont cumuler dans un compteur d'heures à récupérer des heures qui pourront lui permettre
+[73:55 -> 74:04] de leur permettre d'avoir une journée de récupération de rtt en heure mais c'est pas la même
+[74:04 -> 74:09] notion de rtt que celle qui est décrite là dans ce pack
+[74:09 -> 74:19] et les rtt en heure dans ce pack chronopaque elles ne sont pas gérées
+[74:19 -> 74:30] pour nous les rt en heure c'est le débit crédit en fait je cumule trop de crédit
+[74:30 -> 74:37] ben à un moment donné je vais devoir m'absenter enfin le manager peut décider que je vais
+[74:37 -> 74:43] il va me mettre au repos pour pouvoir faire descendre mon crédit
+[74:43 -> 74:56] je peux même avoir des compteurs d'heures supplémentaires à récupérer
+[74:56 -> 75:06] ça peut encore ça peut être autre chose encore c'est que quand je fais je dois faire 35 heures
+[75:06 -> 75:11] dans la semaine si j'en fais 40 j'ai cinq heures supplémentaires selon la législation française
+[75:11 -> 75:18] elles sont censées être majorées à 25% ces heures là donc être payé à 125% de la plupart du
+[75:18 -> 75:23] temps on veut pas les payer ces heures on veut pas qu'elle soit faite en fait on veut qu'elle
+[75:23 -> 75:28] soit récupérée un peu plus tard donc on les met dans un compteur d'heures supes à récupérer
+[75:28 -> 75:36] sauf que si j'ai fait cinq heures supplémentaires entre 35 et 40 heures comme ce sont des heures
+[75:36 -> 75:43] supes il faut que je génère non pas cinq heures à récupérer les cinq heures majorées de 25%
+[75:43 -> 75:51] donc cinq heures six heures et coeur il faut que je mette dans un compteur à récupérer six
+[75:51 -> 75:56] heures et quart et ce compteur d'heures à récupérer donc du coup je vais alimenter ce compteur au
+[75:56 -> 76:01] fur et à mesure du travail et à un moment donné le manager dira bon demain ou à la fin de la
+[76:01 -> 76:06] semaine là tu viens pas vendredi tu récupères et on ira prendre le temps non travaillé alors
+[76:06 -> 76:11] que il avait un temps dû on ira prendre le temps non travaillé dans le compteur des heures à
+[76:11 -> 76:23] récupérer pour réduire ce soldat là le but du jeu à la fin c'est que ce compteur est soit zéro
+[76:24 -> 76:25] idéalement
+[76:44 -> 76:52] donc la couche moteur si je regarde les règles de calcul sur ces compteurs la couche moteur c'est
+[76:52 -> 76:57] les 9 premiers compteurs le 16 euros assez vite les autres tous ceux qui sont caractérisés ici
+[76:57 -> 77:02] c'est un environnement installé avec une chronopaque c'est à dire qu'il n'y a pas de compteur rien de
+[77:02 -> 77:06] nous empêche ensuite de rajouter de caractériser d'autres compteurs si on veut faire si on veut
+[77:06 -> 77:11] faire des règles spécifiques pour le client si le client il a besoin d'autres compteurs que
+[77:11 -> 77:17] ça évidemment on lui caractérise ses propres compteurs tant qu'on peut s'appuyer sur
+[77:17 -> 77:20] des compteurs de la chronopaque et battant mieux c'est du travail en moins pour les
+[77:20 -> 77:30] consultants mais parfois les clients ils ont des besoins particuliers et il faut leur caractériser
+[77:30 -> 77:36] d'autres compteurs qui leur sont propres avec des règles de calcul pour les alimenter tel que les
+[77:36 -> 77:47] règles de gestion du client sont définies si je regarde les règles de calcul alors dans les
+[77:47 -> 77:53] contrôles et valeaux donc je les règle les règles de calcul donc ça c'est tout le travail
+[77:53 -> 77:58] des consultants on considère pas ça comme étant du spécifique les règles de calcul c'est du
+[77:58 -> 78:08] paramétrage c'est du paramétrage qui dans 98% des cas sont du ressort d'inétonnes
+[78:08 -> 78:15] mais parfois il y a certains clients qui veulent avoir accès qui veulent pouvoir faire leurs
+[78:16 -> 78:21] propres règles de calcul dans ce cas là il vaut mieux que ce soit des clients qui
+[78:21 -> 78:26] soient quand même blindés en termes d'équipe informatique parce que ça demande c'est de la
+[78:26 -> 78:32] programmation c'est un langage propriétaire interprété mais c'est quand même des gens
+[78:32 -> 78:39] câblés algorithmes quand même pour sur des règles de calcul et quand ils prennent en
+[78:39 -> 78:45] charge les règles de calcul des engages la difficulté c'est d'arriver contractuellement
+[78:45 -> 78:50] à voir où est la responsabilité de qui dès qu'il y a un dysfonctionnement dans les
+[78:50 -> 78:55] valorisations de compteur parce que dès que le client il prend charge ses règles nous on lui a
+[78:55 -> 79:01] fait un livrable avec des règles qui fonctionnaient et qui répondaient à son besoin tel que
+[79:01 -> 79:10] les charges avaient été établies et donc il fait la recette ok puis un moment donné il dit
+[79:10 -> 79:15] ouais moi je vais prendre la main donc la recette est ok ça marche il valide on passe
+[79:15 -> 79:20] en exploitation et puis quelques mois après il dit ouais il se rend compte que pour chaque évolution
+[79:20 -> 79:27] il faut qu'il demande on lui fait un devis enfin en fonction du contrat de matin ce qu'il a et on lui
+[79:27 -> 79:33] fait payer les quelques évolutions qu'il veut parce que il n'a pas tout dit au début et ça l'embête
+[79:33 -> 79:39] donc il dit ouais je voudrais prendre en charge les règles ok mais d'abord faut l'avertir
+[79:39 -> 79:45] que c'est du coup ça va être de sa responsabilité parce que la difficulté après c'est que dès qu'on
+[79:45 -> 79:50] a un dysfonctionnement dans les règles enfin un dysfonctionnement dans les dans les résultats
+[79:50 -> 79:59] attendus on c'est pas facile de savoir après coup si c'est lié à aux règles originales
+[79:59 -> 80:05] qui ont été livrées par nous ou si c'est des modifications faites par le client qui
+[80:05 -> 80:15] ont généré ces écarts donc on gêne le projet on évite d'y aller enfin mon perso je préfère
+[80:15 -> 80:21] mais il y a une excuse moi il y a quelque chose que je comprends pas dans ce que tu dis là si le
+[80:21 -> 80:28] si c'est lui qui fait ses propres règles de calcul c'est pas par rapport à des compteurs que lui-même
+[80:28 -> 80:38] aura mis en place pas forcément pas forcément il peut intervenir surtout
+[80:38 -> 80:43] dès qu'on lui met en place action de gestion des règles de calcul il fait ce qu'il veut
+[80:43 -> 80:54] ouais mais alors ça ok mais le fait justement de faire ses propres règles si on se rend compte
+[80:54 -> 80:57] que sur les sur les règles qui étaient déjà en place il n'y a pas d'erreur et que c'est
+[80:57 -> 81:04] simplement sur celle que lui gère au moins qu'il a qu'il a géré ou qu'il a modifié d'ailleurs
+[81:04 -> 81:14] qui a le problème c'est pas enfin oui mais imagine le temps de ce qui est difficile en fait c'est le
+[81:14 -> 81:19] temps d'analyse pour savoir dire ça le client il appelle il dit je comprends pas j'ai un compteur
+[81:19 -> 81:25] il est pas bon ok mais le compteur il peut être alimenté par une une ribe en balle de
+[81:25 -> 81:35] règles là d'accord un enchaînement de règles dont dont la plupart sont été écrits par nous mais il a
+[81:35 -> 81:40] rajouté un moment donné dans le plan de règles une règle particulière finalement qui change
+[81:40 -> 81:52] le une valorisation et enfin pour retrouver l'endroit là où ça où ça coince et après ensuite
+[81:52 -> 81:57] checker pour voir si c'est nous qui avons fixé cette règle là ou pas enfin ça demande un contrat
+[81:57 -> 82:05] de maintenance blindé à corps parce que c'est long quand le client il fait pas ses règles il nous dit
+[82:05 -> 82:12] j'ai un problème ok le support il prend il prend l'appel et il regarde il vérifie les règles
+[82:12 -> 82:16] il sait que c'est nous qui sont qui les avons écrites donc il a déjà du travail de recherche
+[82:16 -> 82:22] baisser notre responsabilité donc il n'y a pas de souci après il regarde par rapport à l'aspect
+[82:22 -> 82:28] à la sfd pour voir si effectivement c'était bien prévu par la sfd ou pas ce qui veut le client
+[82:28 -> 82:35] mais à partir de là bon il on n'a pas de souci dans la recherche normale qu'on qu'on ait cet aspect
+[82:35 -> 82:39] de recherche par contre je cherchais pendant des heures un dysfonctionnement qui est peut-être
+[82:39 -> 82:53] lié à quelque chose qui l'a fait lui c'est c'est cher quoi on n'a plus de maîtrise quoi enfin voilà
+[82:53 -> 83:01] bon il y a très peu de clients vous en avez raline au maroc des clients qui ont qui prennent
+[83:01 -> 83:07] leurs règles en charge non pas pour jusqu'à maintenant on n'a pas ce type de clients non
+[83:07 -> 83:18] enfin moi je d'ailleurs dans les les menus dans les profils je vous ai montré dans les profils
+[83:18 -> 83:24] des profils utilisateurs qu'on met à disposition on a fait un super admin gfi mais on a fait un super
+[83:24 -> 83:33] admin client et dans par défaut dans le super admin client on lui donne pas oui on lui donne pas les
+[83:33 -> 83:38] règles de calcul la définition des compteurs etc on lui dit dites nous ce que vous voulez et on vous le
+[83:38 -> 83:47] fait nous chez nos maroc on sait pas on fait la séparation entre un super admin technique et un super
+[83:47 -> 83:58] super admin fonctionnel et le client il a le super admin technique oui donc il a tout mais
+[83:58 -> 84:06] les normalement il n'utilise pas oui voilà donc si le client il est mais bon il y a des clients
+[84:06 -> 84:14] fouineurs les clients enfin moi je me suis retrouvé avec des clients où ils ont dit qu'ils ont
+[84:14 -> 84:19] d'emblée c'était un petit client il y avait un informaticien là qui voulait s'occuper de ça
+[84:19 -> 84:24] etc ils ont demandé l'information règle on leur a dit ok on vous forme un règles à ce moment nous
+[84:24 -> 84:30] on ne se porte plus quoi on ne se porte pas et au bout de fin il s'en est jamais sorti le gars
+[84:30 -> 84:35] et au bout de deux ans enfin le projet il est tout est tombé à l'eau enfin ils ont été en
+[84:35 -> 84:39] équipe avec tout mais ils ont pas ils ont pas exploité le produit parce que il s'en sortait
+[84:39 -> 84:47] pas le compte super admin technique qu'ils souvent utilisés par les consultants gfi oui oui
+[84:47 -> 84:51] surtout quand le cadre de maintenant oui
+[85:00 -> 85:02] euh donc
+[85:10 -> 85:15] voilà ça c'était pour la répondre à la question métier c'est de grande
+[85:15 -> 85:21] égression là qu'on a fait pour répondre à la question de nom édine sur sur l'acquisition des
+[85:21 -> 85:30] droits en fait et cette notion d'acquisition de droits mais c'est traité par les bases de calcul
+[85:30 -> 85:36] ces fameuses bases de calcul ici qu'on trouve dans les contrats type et que vous n'utilisez
+[85:36 -> 85:43] pas au maroc par exemple les droits aux absences les bases de calcul en exemple
+[85:44 -> 85:51] chaque base de calcul elle détermine comment on acquiert les congés par exemple ici on dit
+[85:51 -> 85:57] qu'on les acquiert de façon annuelle on acquiert 25 jours on l'acquiert au mois de juin et bien
+[85:57 -> 86:02] avec une base de calcul culture infecté dans un collaborateur ou un contrat
+[86:02 -> 86:11] au premier juin le calcul il va lui octroyer 25 jours de congés
+[86:14 -> 86:20] en début d'exercice en france dans la vraie vie c'est pas ça en fait on a une
+[86:20 -> 86:25] équisition mensuelle avec un droit à 25 jours et donc chaque jour qu'on acquiert
+[86:25 -> 86:30] deux jours et demi ou de 208 en fonction du nombre de jours aussi le client veut gérer un jour
+[86:30 -> 86:36] ouvrir ou un jour ouvrable ouvrir lundi vendredi ouvrable en rajoutant le samedi
+[86:36 -> 86:45] voilà et on dit on acquiert 25 jours et puis le mois de bascule c'est en juin donc le premier
+[86:45 -> 86:54] juin bascule ça veut dire que si j'ai pas soldé mes droits mes mon solde en fait si j'ai pas
+[86:54 -> 87:01] soldé mes congés au 31 mai bien le premier juin ils vont passer dans l'exercice précédent
+[87:01 -> 87:07] et dans l'exercice précédent je vais pouvoir je vais avoir le droit de reporter qu'un jour au maximum
+[87:07 -> 87:14] et tout ça ça se fait en automatique avec les règles de la chronopale donc si il me reste j'ai
+[87:14 -> 87:18] pas pratiquement pas pris de congés il me reste 20 jours de congés au 31 mai mais au premier juin
+[87:18 -> 87:24] on aurait perdu 5 ils vont ils vont me reporter seulement qu'un jour en droit solde dans l'exercice
+[87:24 -> 87:35] précédent pour l'exercice précédent et c'est qu'un jour là je dis que c'est mon le mois de
+[87:35 -> 87:41] remise à zéro c'est le mois de remise à zéro de l'exercice précédent c'est 15 jours de report j'ai
+[87:41 -> 87:44] en fait le mois de juillet pour les prendre j'ai le mois de juin pour les prendre au premier
+[87:44 -> 87:49] juillet je les remets à zéro tout de suite donc il faut que je solde sinon je les perds
+[87:49 -> 87:56] et puis on a les règles la période d'acquisition des congés été des congés divers pour calculer
+[87:56 -> 88:01] éventuellement les fractionnements et on a le calcul automatique d'abattement en fonction du nombre
+[88:01 -> 88:08] de jours d'absence pénalisante à partir de 14 jours d'absence je déduis un jour de congés
+[88:08 -> 88:19] pour mes droits solde ça joue mon revendettaille pour ceux qui qui qui travaillent sur sur la
+[88:19 -> 88:25] france la même chose pour les rtt là on a une acquisition d'un seul pour les rtt avec un
+[88:25 -> 88:31] droit annuel du 12 jours donc là bah tous chaque début de mois je vais acquérir un jour de rtt
+[88:31 -> 88:37] avec un mois de bascule en janvier et un mois de remise à zéro en février des cinq jours
+[88:37 -> 88:42] de report maximum que j'ai le droit de mettre dans l'exercice précédent
+[88:42 -> 88:51] mais ça c'est c'est lié c'est lié à la chronopaque et vous voyez ces règles de calcul
+[88:51 -> 88:58] toutes ces règles en bleu sont les règles de la chronopaque elles ne sont pas modifiables
+[88:58 -> 89:07] qu'on s'assure en fait que les règles et packages ne soient pas modifiées par contre elles peuvent
+[89:07 -> 89:15] être désactivées alors sur ces écrans là ici vous verrez ça dans les formations de
+[89:15 -> 89:19] règles sur ces écrans on a un petit levier sur la droite pour ouvrir la partie détaille
+[89:19 -> 89:34] donc on a la règle on peut la désactiver source voilà on a la source de la règle ça c'est la friture
+[89:34 -> 89:46] de la règle de calcul donc c'est du langage interprété et on peut désactiver cette règle
+[89:46 -> 89:56] alors cette règle par exemple là c'est anneau 2 jours ouvrable prix supérieur à 2 jours ouvrable si
+[89:56 -> 90:03] je supprime la règle en fait je ne vais pas la supprimer je ne veux plus utiliser cette règle
+[90:03 -> 90:10] prédéfinie c'est ça que ça veut dire donc là elle va repartir dans les règles prédéfinies
+[90:10 -> 90:15] qui ne sont pas activées sur cet environnement mais que je peux là je vais pouvoir réactiver
+[90:15 -> 90:35] cette règle voilà ça si je vais dire je l'utilise donc je vais la remettre dans mon plan de règle
+[90:35 -> 90:42] et on sait toutes ces règles là qui s'exécutent à chaque calcul à chaque ballon
+[90:42 -> 90:54] et le moteur l'alimentation des neufs premiers compteurs c'est cette r 0 1 qui est en bleu aussi
+[90:54 -> 91:01] mais là vous voyez je vois même pas le source parce que derrière il y a le moteur de calcul alors là
+[91:01 -> 91:09] c'est du c'est de la programmation c'est du esthérigine c'est c'est l'outil qui bosse et qui
+[91:09 -> 91:17] alimente les 8 premiers compteurs on a le plage âge des activités c'est aussi une règle du moteur et on
+[91:17 -> 91:33] a c'est tout c'est tout voilà parce que toutes ces règles là sont des règles pas 4g des règles qui
+[91:33 -> 91:38] ont été écrites par nos services par les consultants et qui sont pas 4g et qui sont
+[91:38 -> 91:46] installées sous la forme dans le cadre de la chronopac et pour la France on a aussi d'autres
+[91:46 -> 91:52] packs supplémentaires puisqu'on a fait un pack pour les collectivités territoriales
+[91:52 -> 92:01] qu'on appelle le pack collectivité c'est une surcharge de la chronopac c'est à dire que si on veut
+[92:01 -> 92:07] installer un pack collectivité on est installé évidemment le standard la chronopac plus le pack
+[92:07 -> 92:15] collectivité et dans le domaine de la santé c'est plus pour verronique et pour les consultants en
+[92:15 -> 92:27] France dans le domaine de la santé pour les hôpitaux on a un pack santé qui est une surcouche de la
+[92:27 -> 92:31] chronopac aussi c'est à dire que quand on veut installer un pack santé dans un hôpital on
+[92:31 -> 92:43] installe le standard la chronopac et le pack santé médical ou non médical parce que dans un hôpital
+[92:43 -> 92:53] pour la France on a une gestion différente dans un hôpital de des gens qui travaillent dans l'hôpital
+[92:53 -> 93:03] en tant qu'infirmière, aide soignante, personnel administratif, cadre de santé, ce sont des
+[93:03 -> 93:09] personnels qu'on considère non médicaux, même les infirmières et la gestion du temps médical c'est
+[93:09 -> 93:15] la gestion des médecins les médecins ont une gestion du temps très particulière et on leur
+[93:15 -> 93:23] a fait un pack dédié parce que dans les cibles c'est aussi les CHU et la gestion des médecins
+[93:23 -> 93:49] bon alors ça c'était l'approche un peu globale de chrono time aujourd'hui
+[93:49 -> 94:00] on a vu beaucoup de choses j'espère c'est pas trop tofu de toute façon on va revenir sur
+[94:00 -> 94:05] certaines notions qu'on a vu qu'on a vu très rapidement parce qu'on va les voir très en détail
+[94:05 -> 94:13] pour l'instant on s'est focalisé sur qu'est ce que c'est qu'un collaborateur et un utilisateur de
+[94:13 -> 94:22] chrono time on a vu que la création d'une fiche collaborateur en dehors des collaborateurs virtuels
+[94:22 -> 94:28] ça crée automatiquement le user l'utilisateur associé alors ça c'est vrai je ne vous l'ai pas dit
+[94:28 -> 94:54] parce que on a aussi un paramètre parce que ce paramètre là fp user il est actif c'est pour ça
+[94:54 -> 95:00] que dès que je crée un collaborateur je crée l'utilisateur associé s'il était à zéro je n'aurai pas
+[95:00 -> 95:11] cette création automatique ça fait partie des ajustements possible mais dans le plus Christian
+[95:11 -> 95:17] excuse moi tu peux juste reprendre ce que fait ce paramètre là j'ai pas bien compris ce paramètre
+[95:17 -> 95:26] c'est parce qu'il sa valeur est un oui que quand je crée un salarié un collaborateur je crée
+[95:26 -> 95:36] automatiquement le compte utilisateur il est associé c'est la valeur par défaut c'est un oui c'est un
+[95:36 -> 95:49] salarié un mais ça sous-entend que si on le désactive il faudrait en fait créer les utilisateurs
+[95:49 -> 96:00] associé aux utilisateurs associé au collaborateur il faudrait faire la création d'accord justement je
+[96:00 -> 96:06] sais pas c'est ça l'utilité parce que il y a il y a ceux qui importe leur compte de l'actif
+[96:06 -> 96:13] d'électorie d'un aici oui est-ce que justement parce que on veut pas on veut garder le
+[96:13 -> 96:23] collaborateur à part et l'utilisateur lié à la dé alors je suis désolé je ne saurais pas vous
+[96:23 -> 96:31] répondre d'accord maîtrise pas je vais pas savoir c'est le cas christen surtout pour notre client
+[96:31 -> 96:37] orange qui utilise held up donc on a désactivé ce paramètre pour pouvoir importer directement de
+[96:37 -> 96:45] l'actif de l'acteurie d'accord parce que ça permet de c'est comme si nos comptes initom de les
+[96:45 -> 96:52] importer bien sûr d'utiliser le mot de passe et le compte on c'est l'objectif c'est ça
+[96:52 -> 96:58] l'objectif voilà c'est ça je sais qu'il y a quelque chose qui se passe mais je sais pas comment
+[96:58 -> 97:07] c'est fait ok donc en clair le quanti à l'impôt held up qui est fait il prend toutes les informations
+[97:07 -> 97:15] du held up il les injecte dans dans chrono time et en fait en face il va créer automatiquement
+[97:15 -> 97:22] l'utilisateur alors si je comprends bien non parce que comment comment vous faites le lien avec le
+[97:22 -> 97:28] collaborateur avec l'affiche collab il faut bien que le compte held up soit relié au collaborateur
+[97:28 -> 97:37] vous le fais par exemple ça oui bien c'est bien ça enfin la laisser enfin excusez moi ceux qui
+[97:37 -> 97:45] ont pris la parole c'est bien le le quand le held up est importé ça crée les collaborateurs
+[97:45 -> 97:51] et une fois que les collaborateurs sont créés les users en face vont être créés et associés
+[97:51 -> 97:59] j'ai pas compris non c'est c'est il y a un importe des collaborateurs ça l'import des
+[97:59 -> 98:07] collaborateurs ça reste un importe de collaborateur mais je ne sais pas quand est-ce que vous faites
+[98:07 -> 98:16] le lien comment vous faites le lien rabiette entre ce collaborateur ce matric et le compte held up
+[98:16 -> 98:29] associé donc c'est un programme oui on vit à l'impôt toujours via l'impôt vous importez les
+[98:29 -> 98:32] utilisateurs là où vous importez les collaborateurs vous faites un importe de collaborateur parce que
+[98:32 -> 98:45] c'est un importe des utilisateurs mais l'import de l'utilisateur ne va ne
+[98:45 -> 98:50] va pas créer les fiches collab je veux dire non non ça ça n'a rien à voir avec les fiches collab
+[98:50 -> 98:58] et comment vous faites le lien après entre l'import des utilisateurs donc qui va vous créer
+[98:58 -> 99:08] vos comptes utilisateurs et la liste des matricules je pense que c'était manuel je pense parce que
+[99:08 -> 99:16] c'est pas moi qui l'a fait mais je pense que c'était manuel pour associer un compte held up
+[99:16 -> 99:25] une fiche une fiche collab parce que je crois qu'on peut le faire par je crois qu'on peut le faire
+[99:25 -> 99:31] par l'import mais à condition d'enseigner l'import en fait l'import des collaborateurs on peut dire
+[99:31 -> 99:37] que tel collaborateur il est associé à tel compte utilisateur donc si le trait que ça fait le lien
+[99:37 -> 99:51] là mais je sais pas d'habitude moi dans le sur la partie rp il y a tout tout est fait par template
+[99:51 -> 99:59] il y a le format d'un fichier excel au csv même même bien sûr c'est vrai que l'effet il prend en
+[99:59 -> 100:06] natif il prend l'intégration avec le l'actif d'électorie donc la nuire donc on fait un import il
+[100:06 -> 100:14] y a un champ qui qui fait la relation entre la table du collaborateur et parce que la table
+[100:14 -> 100:19] collaborateur est dans le monde il est rage et bien sûr l'utilisateur qui se connecte à
+[100:19 -> 100:25] ce système là donc il y a un champ qui qui définit la relation entre le collaborateur et les
+[100:25 -> 100:31] utilisateurs donc s'il est à oui ou non donc s'il est activé donc là on fait la liaison donc on
+[100:31 -> 100:37] importe en massif on peut une centaine d'utilisateurs et dans la partie colonne de collaborateur on a
+[100:37 -> 100:44] ce champ là si on l'active donc systématiquement par exemple si il vit du pan comme nom d'utilisateur
+[100:44 -> 100:50] il peut créer aussi s'il vit du pan en tant collaborateur si je veux modifier s'il vit du
+[100:50 -> 100:56] pan en mettant utilisateur x je dois le faire au niveau de ce ce modification là au niveau excel
+[100:56 -> 101:11] avant de l'importer oui ça c'est ça oui à voir mais ça semble ça semble intéressant en tout cas
+[101:14 -> 101:19] pour le référentiel il faut toujours trouver des solutions de transports macerancy non on va pas
+[101:19 -> 101:29] s'en sortir de le faire manuellement voilà donc on a vu le dossier du collaborateur on a vu comment
+[101:29 -> 101:36] créer une fiche on a vu comment accéder à sa fiche on a vu la fusion la renumérantation la suppression
+[101:36 -> 101:43] de dossier maintenant dans la fiche du collaborateur il y a des choses sur laquelle on va faire un
+[101:43 -> 101:49] focus parce que on a dit on affecte un horaire de référence on là on a fait un focus sur le
+[101:49 -> 101:54] contrat mais on n'a pas fait le focus sur l'horaire de référence on n'a pas fait le focus sur les
+[101:54 -> 102:01] emplois du temps et on n'a pas fait vraiment le focus sur la structure donc demain on va voir
+[102:01 -> 102:05] qu'est ce que c'est que les horaires de référence qu'est ce que c'est que les horaires en
+[102:05 -> 102:14] fait et qu'est ce que c'est que la structure voilà on va aller dans davantage dans le référentiel
+[102:14 -> 102:24] ok vous n'êtes pas trop perdu dans l'appli de vos petits
+[102:24 -> 102:31] non ça va c'est c'est vrai il n'y a pas il y a plusieurs notions donc il y a pas
+[102:31 -> 102:41] mal de choses à reviver vérifier au reviser voilà mais mais là c'est bon on arrive à
+[102:41 -> 102:47] prendre des choses donc on attend la suite en tout cas de mon côté
+[102:47 -> 102:51] oui
+[102:51 -> 103:00] Véronique oui ça va oui oui oui
+[103:00 -> 103:14] abdeshmat abdeshmat bon ralé de je pense qu'il n'y a pas de problème et même si ça va ça va
+[103:14 -> 103:23] bon demain on verra un autre paramétrage et il n'y a pas de question je vous libère
+[103:23 -> 103:31] pour pour pour les compteurs la gestion des compteurs ou la gestion des règles de calcul donc
+[103:31 -> 103:37] je pense que c'est un autre volet c'est une autre c'est un autre type de formation
+[103:37 -> 103:48] donc je pense que ça peut ça peut être pour la prochaine formation je pense
+[103:48 -> 104:03] c'est nous redine qui parle d'accord non oui non désolé c'est ralide non non c'est ralide
+[104:03 -> 104:09] c'est ralide d'accord oui oui ben oui c'est une autre formation la formation en règle de calcul
+[104:09 -> 104:15] mais justement ralide vous avez prévu d'en faire une vous êtes en mesure d'en faire une
+[104:15 -> 104:21] oui bien sûr oui c'est vous qui allez vous en charger parce que nous on est on est là pour le coup
+[104:21 -> 104:26] on est pauvre en ce moment en consultant capable de faire des formations en règle de calcul
+[104:26 -> 104:35] on a acquis pas mal d'expérience pour la gestion des règles de calcul vu les projets qu'on a réalisé
+[104:35 -> 104:45] mais quand même on demande toujours d'autres formations côté règle de calcul d'ailleurs
+[104:45 -> 104:54] j'ai une question par rapport à ça christine côté support on je sais plus si on est habilité
+[104:54 -> 105:03] ou pas modifié ou à investiguer sur ces règles de calcul je sais plus d'accord
+[105:03 -> 105:11] il faut que t'en aies une ok non non c'était pour savoir parce que je sais que mireille m'en avait parlé
+[105:11 -> 105:17] mais je sais plus si c'était dédié à une équipe en particulier ou si c'est nous qui le faisions
+[105:17 -> 105:23] directement donc les procès en fait les consultants en prenant de projet évidemment ils font des
+[105:23 -> 105:29] règles pour répondre vos inclients et faire la livraison du paramétrage mais ensuite quand
+[105:29 -> 105:34] c'est en exploitation il peut y avoir des problèmes de voilà qui n'a pas été vu ou bref
+[105:34 -> 105:40] il peut se passer des trucs et le support avec investi évidemment après je sais pas si au niveau
+[105:40 -> 105:48] de support il y a des consultants au support qui sont dédié ou habilité à modifier des règles
+[105:48 -> 105:54] je crois que c'est ce que j'ai compris justement c'est qu'il y a une équipe en particulier qui
+[105:54 -> 106:02] qui s'en occupe mais bon je veux reconfirmer ça avec mireille parce qu'on en a parlé il y a avant
+[106:02 -> 106:08] mon intégration lundi là ça fait un petit moment déjà donc j'avoue que les souvenirs sont un peu
+[106:08 -> 106:12] vagues sur le sujet mais en tout cas c'est super intéressant déjà ce qu'on a vu aujourd'hui
+[106:12 -> 106:19] ça moi pour moi ça me permet de prendre un peu pied sur ce que je vais devoir faire côté support
+[106:19 -> 106:26] voilà faut voir se savoir un peu l'étonnant les aboutissants alors qu'on retiendrait pas
+[106:26 -> 106:32] tout mais peut-être que vous vous souviendrez que vous avez vu quelque chose dans le genre quoi
+[106:32 -> 106:38] et concernant les exercices pratiques parce qu'il me semble qu'il y en a dans cette formation
+[106:38 -> 106:43] ça se passe comment bah là en fait ça se passe en live c'est à dire que je vais pas vous
+[106:43 -> 106:50] faire faire des exercices pendant une heure c'est à dire c'est ce que je j'essaye de faire et c'est
+[106:50 -> 106:57] compliqué justement quand on est en quand on est à distance comme ça c'est c'est de vous faire
+[106:57 -> 107:04] faire des des actions en même temps que moi c'est pour ça que quand je vous dis en même temps
+[107:04 -> 107:09] ou je vous guide et je vous demande de le faire et si je vous demande de le faire il faudrait
+[107:09 -> 107:13] vous le fassiez justement pour que éventuellement vous vous vous vous vous vous vous vous vous plantez
+[107:13 -> 107:19] et que vous vous vous rendez compte que justement oui bah oui ça je n'ai pas fait comme ça etc pour
+[107:19 -> 107:26] que vous manipuliez et que du coup je pense que moi ce que je vais faire parce que moi j'ai un
+[107:26 -> 107:32] problème enfin en tout cas moi j'ai le problème le mon souci c'est que l'écran du portable
+[107:32 -> 107:37] est trop petit je vois ce que tu fais mais c'est c'est trop fin donc il y a des moments je
+[107:37 -> 107:42] vois pas les détails et c'est compliqué donc je me mette un troisième écran parce que entre bien
+[107:42 -> 107:51] suivre bien faire mes manips et suivre ce que tu fais à l'écran c'est enfin en tout cas chez moi ça
+[107:51 -> 107:59] ça marche pas mais t'as deux écrans oui oui j'ai un deuxième écran en fait j'ai de 27 pouces
+[107:59 -> 108:05] et bah je vais juste l'installer c'est tout oui mais parce que tu dis un troisième avec
+[108:05 -> 108:12] deux tu t'en sort pas bah non justement l'écran du portable est trop petit voilà c'est ça c'est
+[108:12 -> 108:19] j'en ai bien deux mais le celui du portable moi ça enfin en tout cas niveau visuel ça
+[108:19 -> 108:25] ça me convient pas il faut un écran un peu plus grand pour pouvoir justement faire mes manips
+[108:25 -> 108:37] enfin que ça soit visible ou quoi je vais juste devoir vous abandonner à demain bonne soirée en
+[108:37 -> 108:45] tout cas merci kristine et on va voir enique à demain du coup 11h pareil ouais ok qui qu'elle
+[108:45 -> 109:02] en tout cas merci bonne soirée et voilà enfin faut que vous arriviez à manipuler pour prendre
+[109:02 -> 109:09] en main ce l'outil et pouvoir justement vous planter quoi voir que et c'est pour ça que si
+[109:09 -> 109:13] à un moment donné ça va trop vite vous avez du mal à suivre la limite moi je vous donne
+[109:13 -> 109:20] la main c'est vous qui portagez l'écran et c'est vous qui faites voyez de façon
+[109:20 -> 109:27] ce que demain on va faire comme ça quand on va faire merci beaucoup kristine oui justement
+[109:27 -> 109:34] ni un pour nicole c'est que j'ai le même souci mais le fait d'ouvrir l'application directement
+[109:34 -> 109:42] de revoir le même écran que qu'affiché kristine ça permet de mieux voir parce que sur le partage
+[109:42 -> 109:48] teams je passe en mode focus c'est à peine au qu'on arrive à voir là qu'il y a des textes
+[109:48 -> 109:54] surtout par exemple des paramétrages par domaines par exemple mais mais l'idéal c'est d'y aller
+[109:54 -> 109:59] rapidement sur le chemin et de voir ce qui est là il affiche directement et là on a le
+[109:59 -> 110:04] zoom on a on a les outils qu'on a sur la page web et ça c'est plus pratique c'est mieux d'avoir
+[110:04 -> 110:09] un autre écran c'est ce que j'utilise en tout cas c'est ça ce qui m'aide à bien suivre mais
+[110:09 -> 110:16] en fait moi mon souci j'insiste vraiment là dessus c'est vraiment au départ comme par rapport
+[110:16 -> 110:22] au 27 pouces et ça fait quoi aller un tiers de l'écran du portable qui fait un tiers de mon
+[110:22 -> 110:28] écran donc du coup ça compresse un peu plus les informations et j'avoue que sur certains points
+[110:28 -> 110:34] je suis perdu mais je vais régler ça demain je serai un peu un peu mieux installé et du
+[110:34 -> 110:40] coup je pourrais voir un peu mieux ce que j'ai à faire c'est un truc que je dois régler de mon côté
+[110:40 -> 110:47] tout simplement mais merci en tout cas pour les pour le conseil ok de façon il y a l'enregistrement
+[110:47 -> 110:55] on peut le partager pour répéter les les mêmes manœuvres voilà ok vous l'avez arrêté
+[110:55 -> 111:01] l'enregistrement d'ailleurs ou pas là là pas encore tu l'arrêtes

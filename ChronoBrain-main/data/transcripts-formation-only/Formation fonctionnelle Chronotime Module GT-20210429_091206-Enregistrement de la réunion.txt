@@ -1,0 +1,1143 @@
+[00:00 -> 00:13] Ou bien, quand on choisit le mode de batchage, on choisit le comportement du collaborateur
+[00:13 -> 00:21] par rapport au batchage et on a le choix entre quatre possibilités, ou bien la personne
+[00:21 -> 00:30] batch, elle doit batcher. Si elle a un horaire attendu et qu'elle ne batche pas dans le cadre de cette
+[00:30 -> 00:38] horaire, on considère qu'il y a une anomalie. Si elle n'a pas batché, c'est peut-être que où
+[00:38 -> 00:43] elle a oublié le batcher ou elle est absente. Et si elle est absente, ça veut dire qu'elle doit
+[00:43 -> 00:52] poser un motif ou alors pour justifier cette non-présence ou bien son manager doit saisir une
+[00:52 -> 00:58] absence pour son compte en disant je ne sais pas, un retard, absence non justifiée ou si il est au courant.
+[00:58 -> 01:09] Oui, la personne m'a appelé les malades par exemple. Ça c'est le batch obligatoire. Il
+[01:09 -> 01:14] y a le ne batche pas. Les cadres, nous par exemple, enfin au Maroc, je pense que vous ne batchez pas
+[01:14 -> 01:23] non plus, mais bon, nous, en France, on batche pas. Donc tant qu'on ne déclare pas une absence,
+[01:23 -> 01:31] on est considéré comme présent sur des horaires attendues. On a la possibilité de batcher en
+[01:31 -> 01:38] entrée seulement, c'est-à-dire que là, un top de présence suffit, notamment pour les cadres
+[01:38 -> 01:45] en fait, les quatre qui sont en forfait jour, on n'a pas à leur compter des heures de travail. On
+[01:45 -> 01:51] doit juste, on peut leur demander de batcher, mais juste pour dire, ok, aujourd'hui je suis là,
+[01:51 -> 02:00] mais quelle que soit l'heure à laquelle il batch, peu importe. Et un top suffit. Et puis le peu
+[02:00 -> 02:06] batcher, alors le peu batcher, on utilise ça beaucoup dans les phases de recettes et on passera dans
+[02:06 -> 02:13] ce mode quand on va faire plutôt de la consultation des compteurs, etc. Le mode peu batcher, c'est
+[02:13 -> 02:22] si je ne batche pas, j'ai un horaire attendu, je dois faire 9h30, 14h18, j'ai un horaire attendu,
+[02:22 -> 02:30] je ne batche pas, ça va me générer automatiquement les batchages. Alors j'ai le choix de dire ou bien
+[02:30 -> 02:37] je génère les batchages automatiquement au plage fixe de mon horaire ou bien je les génère
+[02:37 -> 02:41] au tendu de mon horaire, parce que mon horaire peut avoir des plages fixes ou des plages variables. On
+[02:41 -> 02:47] va le voir justement ce matin. Et donc cette génération de batchage, elle peut se faire
+[02:47 -> 02:53] selon deux modes ou bien sur les plages fixe ou bien sur le tendu. En entrée, ça va générer le
+[02:53 -> 03:03] batchage de la sortie ? Oui. Ah non, le batchage en entrée ? Tu parles de quel mode là ? Deuxième
+[03:03 -> 03:10] mode, batch en entrée. Oui. Alors le batch en entrée dans le système, c'est pas très très bien fait
+[03:10 -> 03:18] dans le chronotain, c'est que si je batch un entrée, ça va générer automatiquement un batchage de
+[03:18 -> 03:24] sortie. Et ça c'est pas top en fait, parce que c'est pas vraiment comme ça qu'on veut le gérer.
+[03:24 -> 03:36] Normalement un top de batchage pour un cadre, un top unique, ça doit être un événement, on devrait
+[03:36 -> 03:41] pouvoir accepter un batchage unique, sauf qu'on a des anomalies qui disent que si j'ai un nombre de
+[03:41 -> 03:45] batchage en pair, si je batch une entrée et que je batch pas la sortie, j'ai un nombre de
+[03:45 -> 03:56] batchage en pair, un pair et ça génère une anomalie. Bon après, dès que je dois gérer ça en fait,
+[03:56 -> 04:00] il faut faire des choses dans les règles de calcul parce que c'est pas très bien fait.
+[04:00 -> 04:13] C'est pas top. Le batchier, il va générer les deux batchages. Le batchier lui va générer autant
+[04:13 -> 04:19] de batchage que de plage fixe. Si j'ai par exemple une plage fixe 9h30 et une autre plage fixe à 14h18h
+[04:19 -> 04:24] et si je décide de générer les batchages au plage fixe, il va me générer une entrée à 9h00,
+[04:24 -> 04:27] une sortie à midi, une entrée à 14h00, une sortie à 18h00.
+[04:27 -> 04:34] Excuse moi Christine, mais est-ce qu'elle a l'intérêt du coup de faire ça ?
+[04:34 -> 04:41] Alors le peu batcher c'est intéressant je te disais en recette parce que en recette je vais avoir
+[04:41 -> 04:50] des dossiers, si je les mets en batch par exemple, je vais être bloqué, je vais devoir saisir tous
+[04:50 -> 04:56] les batchages sur mes collaborateurs dans la classe de recette et c'est lourdain, c'est pénible,
+[04:56 -> 05:04] ça m'intéresse pas. Par contre je veux pouvoir avoir des cas où je veux justement tester le
+[05:04 -> 05:13] résultat par rapport à des batchages et notamment je veux pouvoir faire batcher, avoir des batchages
+[05:13 -> 05:17] sur des collaborateurs qui me génèrent par exemple des heures supplémentaires ou du temps en plus
+[05:17 -> 05:25] etc ou du temps en moins. Donc si je mets en peu batcher ça me permet de ne pas m'occuper d'une période
+[05:25 -> 05:29] antérieure où la personne est en peu batcher du coup ça va générer automatiquement ces batchages
+[05:29 -> 05:34] et ça va calculer le collaborateur normalement et puis il y a un moment donné sur une semaine
+[05:34 -> 05:41] je prends la main et parce que si je batch, quand je suis en mode peu batcher, si je saisis un batchage,
+[05:41 -> 05:48] le batchage que je vais saisir va prendre du coup je prends la main, il n'y a plus la génération
+[05:48 -> 05:53] auto-optique ne se fait plus et ça me permet de saisir des batchages pour générer des heures
+[05:53 -> 05:59] supplémentaires etc. Et ça évite de générer des anneaux de manier. Voilà ça permet de calculer
+[05:59 -> 06:05] les dossiers, de faire avancer les dossiers normalement je dirais jusqu'à ce qu'à un moment donné on
+[06:05 -> 06:09] dise non mais là je prends la main enfin je vais faire des batchages un peu particuliers pour
+[06:09 -> 06:14] justement tester mes anneaux, ce qu'est-ce qui se passe si je rentre en plage fixe, si je
+[06:14 -> 06:19] batch en dehors des plages autorisés etc. Du coup c'est une option que plus d'utilisant
+[06:19 -> 06:27] recette alors. Oui c'est rarement utilisé en prod, ça peut arriver, ça peut arriver,
+[06:27 -> 06:40] c'est rare mais ça peut arriver dans certains cas. Christian, vous avez parlé de Burt, c'est pour
+[06:40 -> 06:56] la version X, c'est l'outil choisi pour les états spécifiques ? Oui c'est l'outil pour le reporting,
+[06:56 -> 07:08] les états particuliers ou clients. Donc pas de time report ? Alors a priori on est plutôt oui,
+[07:08 -> 07:17] on part sur Burt oui. Mais là je suis pas, je ne voudrais pas te dire de bêtises. Tu veux que je
+[07:17 -> 07:35] pose la question ? Je préfère oui, merci. Je pose la question. Christine, juste je sais pas c'est
+[07:35 -> 07:43] précoce, le mode de batchage ou le type de batchage. Là on parle que de la batcheuse,
+[07:43 -> 07:48] c'est ça, il n'y a pas via interface ou quelque chose comme ça. Quand on dit batcher, on parle de
+[07:48 -> 07:56] batcheuse physique, c'est bien ça. Ou d'écran ? Au d'écran, voilà. Un dispositif de batchage, il n'y
+[07:56 -> 08:04] a pas de batchage parce que comme un responsable peut batcher pour un cyclopérateur via portail,
+[08:04 -> 08:10] quelque chose comme ça pour valider ou pour justifier. Ça c'est autre chose. Disons que le
+[08:10 -> 08:21] manager, alors si le manager, pour que le manager puisse saisir un batchage ou valider un batchage,
+[08:21 -> 08:28] il faut de toute façon que le collaborateur concerne soit en mode de batchage, batch ou
+[08:28 -> 08:33] peut batcher ou batch en entrée. Il faut que son mode de batchage autorise la saisie de batchage.
+[08:34 -> 08:42] Autorise ou le batchage sur le terminal physique ou la saisie de batchage. Mais il faut que son
+[08:42 -> 08:49] mode autorise une ligne batchage à un moment donné, qu'elle arrive de n'importe quelle façon. Par exemple,
+[08:49 -> 08:55] si on importe des batchages, tu as parlé d'import, on peut très bien apporter des batchages sur
+[08:55 -> 09:00] des collaborateurs. Mais il faut que ces collaborateurs aient un mode de batchage,
+[09:00 -> 09:12] je batch ou je batch en entrée ou je peux batcher. D'accord. Je pense qu'on doit séparer entre le
+[09:12 -> 09:18] mode de batchage et le type de batchage. Je peux avoir plusieurs modes de batchage. Je peux batcher,
+[09:18 -> 09:24] ne batch pas par exemple. Mais le type de batchage, je parle de par exemple le batchage physique,
+[09:24 -> 09:32] batchage manuel, c'est ça. Alors ça, ça, ça, ce sont des habilitations. Par exemple,
+[09:32 -> 09:42] alors attendez, je vais voir le groupe de fonctionnalités. En fait, c'est par les habilitations qu'on donne
+[09:42 -> 09:51] le droit de batcher selon les différents terminaux. Vous voyez dans le groupe de fonctionnalités,
+[09:51 -> 09:56] donc gérer ces propres batchages, c'est là que je dis, est-ce que j'ai le droit de batcher via la
+[09:56 -> 10:01] mobilité ? Est-ce que j'ai le droit de batcher via l'application, c'est-à-dire vers l'écran,
+[10:01 -> 10:11] ou par des batches type Time to be ? Est-ce que j'ai le droit d'utiliser des touches de fonction
+[10:11 -> 10:20] à la batcheuse ou à l'écran ? Voilà. Si j'ai pas le droit de batcher via l'application,
+[10:20 -> 10:30] je ne pourrais pas faire du batchage via l'écran. Mais par défaut, si je suis autorisé à batcher,
+[10:30 -> 10:37] si j'ai un mode de batchage à batch, je peux batcher ou batcher à l'entrée, j'ai le droit de batcher sur
+[10:37 -> 10:44] un terminal physique. Par défaut, c'est ça. J'ai le droit de batcher sur un terminal physique.
+[10:44 -> 10:49] Et on rajoute en plus la possibilité de batcher via l'écran ou via la mobilité,
+[10:49 -> 10:50] via le smartphone.
+[10:50 -> 11:10] Tant que j'y suis, j'ai vérifié, là, on a vérifié les éditions.
+[11:10 -> 11:24] On a vérifié que les éditions fonctionnent maintenant et je voudrais vérifier les photos
+[11:24 -> 11:38] suivies collaborateurs. Alors, pour rajouter la photo, c'est sûr, le volet est à civil. Voilà.
+[11:39 -> 11:52] J'ai changé la photo, c'est sur le volet est à civil. Voilà. Là, je sélectionne la photo dans...
+[11:52 -> 12:03] Alors, il ne met pas ça au bon endroit. Mais l'idée, c'est d'aller dans le répertoire.
+[12:03 -> 12:22] Alors, j'ai pas accès. Quel format, Christine, du photo ? DGPG, non ? DGPG, DGPG, PNG, je crois.
+[12:22 -> 12:27] Il y a plusieurs formats et il y a plusieurs formats autorisés. Et il y a même une table
+[12:27 -> 12:37] qui permet de dire quel format j'autorise. Là, j'ai pas de photos, mais l'idée, c'est
+[12:37 -> 12:41] de... on les recherche dans le répertoire et on l'intègre ici. Alors, j'ai pas de photos,
+[12:41 -> 12:51] moi, ici. Non, je la chercherai tout à l'heure. Mais du coup, elle peut venir se positionner ici.
+[12:58 -> 13:12] Bon, alors. J'ai testé. Hier, ça ne marchait pas. La joue de la photo ? Oui. Attendez.
+[13:12 -> 13:22] J'ai partagé les messages d'erreur sur la discussion. Oui, effectivement, hier, ça ne marchait pas.
+[13:22 -> 13:29] Mais justement, là, ça devrait fonctionner. Alors, je ne sais plus où j'ai des photos.
+[13:30 -> 13:42] Je prends une image enregistrée. C'est quoi ça ? J'exime comme ça.
+[13:42 -> 14:00] Christine, nos comptes sont toujours existants, parce que j'ai essayé de me connecter. Ça a l'air que ça ne marche pas.
+[14:01 -> 14:12] C'est une erreur de ma part. On va essayer, parce que moi, j'ai l'impression que ça ne fonctionnait pas.
+[14:12 -> 14:24] En fait, j'aurais essayé. C'était bon. J'ai utilisé avec, ça m'est rentré, avec X2 nommettes.
+[14:25 -> 14:30] Et le mot passe, c'est la même chose avec une hysterix.
+[14:30 -> 14:33] Je voulais utiliser l'autre avec A200.
+[14:33 -> 14:35] Oui, utiliser ton compte.
+[14:35 -> 14:37] D'accord.
+[14:37 -> 14:40] Utilisez votre propre compte.
+[14:40 -> 14:45] Alors, ici, image enregistrée.
+[14:45 -> 14:48] Je vais essayer de prendre celle-là.
+[14:54 -> 15:02] Oui, ça fonctionne.
+[15:02 -> 15:04] D'accord.
+[15:04 -> 15:06] Oui, pardon.
+[15:06 -> 15:08] J'aime bien.
+[15:08 -> 15:10] D'accord.
+[15:10 -> 15:27] Et d'ailleurs, si je peux aussi modifier cette photo via l'espace MonCount.
+[15:27 -> 15:34] Moi, collaborateur pour moi-même, quand je vais consulter ma fiche collaborateur,
+[15:41 -> 15:46] j'ai toujours dans l'état civil.
+[15:46 -> 15:49] Je vois ma photo.
+[15:49 -> 15:55] Alors, pourquoi j'ai pas de bouton changé photo?
+[15:55 -> 15:58] Dans l'état civil.
+[15:58 -> 16:01] Ah oui, c'est toujours dans l'état civil.
+[16:01 -> 16:04] Oui, c'est toujours dans l'état civil. Je n'ai pas de réflexe.
+[16:04 -> 16:06] Et là, on peut le faire aussi.
+[16:06 -> 16:10] Voilà, c'est le collaborateur. Il peut charger sa propre photo.
+[16:10 -> 16:24] Là aussi, c'est une habilitation.
+[16:24 -> 16:30] Ça doit être d'engérer son propre compte.
+[16:30 -> 16:36] On a modifié ma photo.
+[16:36 -> 16:42] Donc, si on ne veut pas laisser la modification de sa photo accessible au collaborateur,
+[16:42 -> 16:44] on enlève cette habilitation.
+[16:44 -> 16:53] Enfin, on ne lui met pas cette habilitation-là.
+[16:53 -> 16:55] Oui, ça marche.
+[16:55 -> 17:03] Ok.
+[17:03 -> 17:08] Le groupe de fonctionnalité, c'est différent de paramétrage par domaine?
+[17:08 -> 17:09] Ah oui, oui, oui.
+[17:09 -> 17:14] Le paramétrage par domaine, c'est notre lot de paramètres divers et variés,
+[17:14 -> 17:17] qui ajustent le comportement de l'application.
+[17:17 -> 17:22] Ou de façon générale, ou pour certains utilisateurs, on va le voir.
+[17:23 -> 17:28] Mais des groupes de fonctionnalité, c'est vraiment la construction des habilitations.
+[17:28 -> 17:32] C'est les droits que je donne à chaque profil utilisateur,
+[17:32 -> 17:40] profils que je vais ensuite affecter aux collaborateurs qui sont concernés.
+[17:40 -> 17:41] D'accord.
+[17:41 -> 17:46] Et les habilitations, dont on les verra en détail le 10 mai.
+[17:46 -> 17:51] Donc, si je reviens sur cette fiche, je reviens à la situation.
+[17:52 -> 17:54] Donc, le mode de patchage.
+[17:54 -> 17:59] Alors, là, on va se focaliser sur les horaires de référence, ce matin.
+[17:59 -> 18:03] Vous avez vu que sur les collaborateurs que vous avez créés,
+[18:03 -> 18:09] vous avez été obligés de mettre un horaire de référence.
+[18:09 -> 18:12] Et que, du coup, quand vous consultez votre propre agenda,
+[18:12 -> 18:17] ou via le planning, quand vous consultez les collaborateurs que vous venez de créer,
+[18:17 -> 18:23] que vous avez créé hier, ils ont des horaires attendus sur des plages.
+[18:23 -> 18:26] Ça, c'est par l'affectation de l'horaire de référence.
+[18:26 -> 18:32] Alors, quand on affecte un horaire de référence, on l'affecte pour une période.
+[18:32 -> 18:39] Et ici, vous avez vu qu'on a le choix entre un type d'horaire.
+[18:39 -> 18:46] Alors, on a un choix sur le type d'horaire et ensuite un choix qui correspond au type d'horaire.
+[18:46 -> 18:53] Sur le type d'horaire, on aura toujours, alors, on aura, oui, par défaut,
+[18:53 -> 18:58] on a ce choix-là, c'est-à-dire, est-ce que j'affecte un programme hebdomadaire,
+[18:58 -> 19:03] un programme en jour, un cycle de semaine ou un cycle de programme en jour.
+[19:03 -> 19:07] Bon, un programme hebdomadaire, ça va être une séquence d'horaire,
+[19:07 -> 19:12] journalier, sur 7 jours, du lundi au dimanche.
+[19:13 -> 19:19] Si j'affecte un programme hebdomadaire qui dit je travaille du lundi au vendredi
+[19:19 -> 19:24] sur un horaire administratif et le samedi et le dimanche, je suis en repos,
+[19:24 -> 19:28] le fait d'affecter cet programme hebdomadaire à quelqu'un,
+[19:28 -> 19:36] du coup, il va automatiquement positionner les horaires qui correspondent au lundi, au mardi, etc.
+[19:37 -> 19:42] et sur toutes les semaines jusqu'à, en l'occurrence, l'infini,
+[19:42 -> 19:48] puisque je n'ai pas mis de date, je ne sais pas de date de fin de l'application d'horaire.
+[19:50 -> 19:54] Donc, un programme hebdomadaire, ça va être une séquence d'horaire journalier,
+[19:54 -> 19:59] de 7 horaires journaliers systématiquement positionnées du lundi au dimanche.
+[19:59 -> 20:03] Un programme en jour, ça va être une séquence d'horaire journalier,
+[20:03 -> 20:06] mais sur un nombre de jours variable que je vais décider,
+[20:06 -> 20:13] je peux faire des programmes de 10 jours, de 5 jours, de 30 jours, de 120 jours.
+[20:13 -> 20:18] Donc, je vais définir un nombre de jours pour mon programme, enfin mon programme en jour,
+[20:18 -> 20:23] c'est un nombre de jours défini et puis pour chacune des journées prévues,
+[20:23 -> 20:29] pour chacune des journées prévues, je vais positionner un horaire journalier.
+[20:30 -> 20:35] Et donc, j'établis une séquence d'horaire journalier sur un X jour.
+[20:38 -> 20:43] À partir de ces programmes hebdomadaires et de ces programmes en jour,
+[20:43 -> 20:47] on peut constituer aussi un programme hebdomadaire,
+[20:47 -> 20:50] si j'ai fait directement un programme hebdomadaire ou un programme en jour,
+[20:50 -> 20:52] à la fin du programme hebdomadaire de la première séquence,
+[20:52 -> 20:58] je renouvelle la même séquence sur les 7 jours suivants pour un programme hebdomadaire,
+[20:58 -> 21:03] etc. Et pour le programme en jour, à la fin de la séquence des N jours,
+[21:03 -> 21:09] je réapplique ma séquence de N jours, etc. Je boucle comme ça.
+[21:09 -> 21:14] Le ce que je peux faire, c'est utiliser des programmes hebdomadaires
+[21:14 -> 21:17] pour faire des cycles de semaines.
+[21:17 -> 21:21] Par exemple, je définis un cycle de programmes,
+[21:22 -> 21:27] je définis un programme hebdomadaire de matin ou le lundi,
+[21:27 -> 21:30] du lundi au vendredi, je travaille de 5 heures à midi.
+[21:30 -> 21:33] Et puis le samedi le dimanche, je suis en repos.
+[21:33 -> 21:36] Donc ça, c'est mon programme hebdomadaire du matin.
+[21:36 -> 21:39] Je peux définir un programme hebdomadaire d'après-midi
+[21:39 -> 21:45] ou du lundi au vendredi, je vais travailler de midi à 19 heures.
+[21:45 -> 21:49] Et puis, je peux définir un programme hebdomadaire de nuit,
+[21:49 -> 21:55] par exemple, ou du lundi au vendredi, je vais travailler de 19 heures
+[21:55 -> 21:58] à 3 heures du matin.
+[21:58 -> 22:03] Et à partir de ces trois programmes, je peux constituer un cycle.
+[22:03 -> 22:06] Ce que je vais appeler un cycle de semaine,
+[22:06 -> 22:09] un cycle de semaine, c'est un cycle de programmes hebdomadaires.
+[22:12 -> 22:15] Et puis de la même façon, je peux constituer des cycles de programmes en jour.
+[22:16 -> 22:19] Je peux lier entre eux un programme de 10 jours
+[22:19 -> 22:23] et puis avec un programme de 5 jours et après un programme de 20 jours.
+[22:23 -> 22:26] Je me retrouve avec une séquence de 3 programmes en jour.
+[22:26 -> 22:28] Ça me constitue un cycle.
+[22:28 -> 22:30] J'applique ce cycle à quelqu'un.
+[22:30 -> 22:40] Et du coup, il va prendre les horaires issus de ces séquences
+[22:41 -> 22:46] et il va ensuite boucler sur...
+[22:46 -> 22:49] Il va reproduire, à la fin du cycle de programme en jour,
+[22:49 -> 22:51] il va reproduire le même cycle de programmes
+[22:51 -> 22:54] à partir de la séquence de programmes que j'ai indiqué.
+[22:58 -> 23:00] On va voir dans le détail.
+[23:00 -> 23:03] C'est pour ça qu'il vous propose ces quatre modes.
+[23:03 -> 23:06] Toujours pareil, il y a un paramètre divers dans l'application,
+[23:06 -> 23:08] un paramètre par domaine,
+[23:08 -> 23:12] qui dit, est-ce que je gère les programmes en jour ou non.
+[23:12 -> 23:14] Si je ne gère pas les programmes en jour,
+[23:14 -> 23:16] je n'aurai pas ces deux options-là.
+[23:18 -> 23:21] Souvent, très souvent, les clients utilisent les programmes hebdots.
+[23:21 -> 23:23] Mais on a quand même beaucoup de clients
+[23:23 -> 23:25] qui utilisent des programmes en jour
+[23:25 -> 23:27] et des cycles, éventuellement, des programmes en jour.
+[23:30 -> 23:32] Alors, une fois que j'ai...
+[23:32 -> 23:34] Là, je parle de l'affectation.
+[23:34 -> 23:36] Une fois que j'ai affecté un programme hebdot,
+[23:37 -> 23:40] d'affecter un horaire de référence programme hebdomadaire,
+[23:40 -> 23:42] et le derrière,
+[23:42 -> 23:46] il va me proposer la liste des programmes hebdomadaire
+[23:46 -> 23:49] que j'ai préalablement défini dans le référentiel.
+[23:50 -> 23:52] Et j'en choisis un,
+[23:52 -> 23:54] et voilà, j'avais choisi ce même administratif.
+[23:57 -> 23:59] Je ne vais pas faire de modifications là-dessus.
+[24:01 -> 24:05] Si je choisis un type de programme en jour
+[24:05 -> 24:08] dans mon affectation, évidemment,
+[24:08 -> 24:11] il va me proposer la liste des programmes en jour.
+[24:11 -> 24:13] Si je choisis cycle de semaine,
+[24:13 -> 24:16] il va me proposer la liste du cycle de semaine, etc.
+[24:18 -> 24:21] Alors, comment on définit ces référentiels
+[24:21 -> 24:23] d'horaires ?
+[24:25 -> 24:27] Là, on va dans le référentiel
+[24:27 -> 24:29] et on va dans gestion des temps.
+[24:30 -> 24:32] Et on va dans horaire.
+[24:37 -> 24:40] Donc là, dans la définition des horaires,
+[24:40 -> 24:42] les actions qui sont proposées
+[24:42 -> 24:45] sont la définition des horaires journalier.
+[24:45 -> 24:48] Donc là, on part bien du découpage d'une journée.
+[24:49 -> 24:51] Les différentes plages sur une journée.
+[24:52 -> 24:54] Les programmes horaires.
+[24:54 -> 24:56] Quand on va vouloir constituer
+[24:56 -> 24:59] des séquences, justement, des programmes horaires,
+[24:59 -> 25:02] qui soit hebdomadaire ou des programmes en jour,
+[25:02 -> 25:04] les cycles,
+[25:04 -> 25:06] les horaires automatiques, je vous en parlerai après.
+[25:06 -> 25:09] Et puis, vous avez deux tables supplémentaires.
+[25:09 -> 25:12] Les familles, ça va permettre
+[25:12 -> 25:15] de classer les horaires par famille.
+[25:15 -> 25:17] Souvent, on utilise ça
+[25:17 -> 25:20] quand on a des sociétés multi-sites
+[25:20 -> 25:23] ou des groupes multi-sociétés,
+[25:23 -> 25:25] ou chaque site ou chaque...
+[25:25 -> 25:27] veut gérer ces horaires
+[25:27 -> 25:29] indépendamment des autres sites.
+[25:29 -> 25:32] Donc du coup, on les classe dans des familles,
+[25:32 -> 25:34] on fait une famille par site
+[25:34 -> 25:36] et ça permet de classer les horaires par famille
+[25:36 -> 25:39] et de pouvoir ensuite faire filtrer
+[25:39 -> 25:42] les horaires par site
+[25:42 -> 25:45] pour ne proposer que les horaires du site
+[25:45 -> 25:48] que l'utilisateur est en train de gérer.
+[25:48 -> 25:50] Du coup, Christine,
+[25:50 -> 25:52] ça veut dire que
+[25:52 -> 25:56] quand tu fais ce paramétrage par site,
+[25:56 -> 25:58] selon les habilitations que tu as
+[25:58 -> 26:00] ou les droits, enfin, pas importe,
+[26:00 -> 26:02] tu peux dire que ce site-là,
+[26:02 -> 26:04] enfin les utilisateurs de ce site-là
+[26:04 -> 26:06] ne verront, enfin ceux qui vont gérer
+[26:06 -> 26:08] les utilisateurs ne verront
+[26:08 -> 26:11] que les horaires attribués à ce site.
+[26:11 -> 26:13] C'est ça.
+[26:13 -> 26:15] C'est ça.
+[26:15 -> 26:17] Et je peux aussi faire une famille générale
+[26:17 -> 26:19] dans lequel je dis
+[26:19 -> 26:21] j'ai des horaires communs à tout le monde,
+[26:21 -> 26:23] un horaire de repos de journée, par exemple,
+[26:23 -> 26:25] un horaire férié repos,
+[26:25 -> 26:27] un horaire...
+[26:27 -> 26:29] Bon, là, c'est pas la peine d'en faire
+[26:29 -> 26:31] autant que de sites.
+[26:31 -> 26:33] Voilà, je peux avoir une liste
+[26:33 -> 26:35] d'horaires communs
+[26:35 -> 26:37] dans une famille commune
+[26:37 -> 26:39] et puis je peux ensuite avoir
+[26:39 -> 26:41] des sites,
+[26:41 -> 26:43] des sites,
+[26:43 -> 26:45] et puis je peux ensuite avoir
+[26:45 -> 26:47] des familles par site et je peux dire
+[26:47 -> 26:49] et bien
+[26:49 -> 26:51] un manager d'un site, enfin un gestionnaire
+[26:51 -> 26:53] de site, il aura accès,
+[26:53 -> 26:55] il pourra utiliser à la fois les horaires communs
+[26:55 -> 26:57] et seulement les horaires de son site.
+[26:59 -> 27:01] Et le site 2 pourra avoir
+[27:01 -> 27:03] accès aux horaires communs plus les horaires
+[27:03 -> 27:05] de son site 2.
+[27:06 -> 27:08] Voilà, je peux faire des...
+[27:08 -> 27:10] je peux mixer les filtres,
+[27:10 -> 27:12] je peux faire des choses
+[27:14 -> 27:16] précises, quoi.
+[27:16 -> 27:18] Donc ça, c'est la notion de famille
+[27:18 -> 27:20] et
+[27:20 -> 27:22] derrière aussi, quand on va faire
+[27:22 -> 27:24] les horaires, on va les horaires
+[27:24 -> 27:26] journaliers, on va les ranger
+[27:26 -> 27:28] potentiellement, on va les ranger dans des natures
+[27:28 -> 27:30] et dans les natures d'horaires.
+[27:30 -> 27:32] Alors là, les natures d'horaires, elles ont un impact
+[27:32 -> 27:34] puisque c'est elle qui définit,
+[27:34 -> 27:36] enfin, qui précise
+[27:36 -> 27:38] quand je veux mettre en évidence mes horaires
+[27:38 -> 27:40] de couleur, c'est la nature d'horaires
+[27:40 -> 27:42] qui porte la couleur.
+[27:42 -> 27:44] Donc en fonction de si je
+[27:44 -> 27:46] ranger tous mes horaires de matin
+[27:48 -> 27:50] dans une nature matin et leur donner
+[27:50 -> 27:52] une couleur rose, bah je vais
+[27:52 -> 27:54] voilà, je prévois la nature matin
+[27:54 -> 27:56] avec la couleur rose pour
+[27:56 -> 27:58] mettre en évidence
+[27:58 -> 28:00] dans les planines, les horaires
+[28:00 -> 28:02] de matin, les horaires d'après-midi,
+[28:02 -> 28:04] les horaires de journée, etc.
+[28:04 -> 28:06] Et puis je peux faire des totalisations
+[28:06 -> 28:08] si on regarde bien grâce à la nature.
+[28:08 -> 28:10] Excuse-moi, Christian, mais du coup
+[28:10 -> 28:12] le verre que tu aimais pas hier, il est pas
+[28:12 -> 28:14] là, là.
+[28:14 -> 28:16] Le verre?
+[28:16 -> 28:18] Oui, il y avait un verre qui était très foncé hier,
+[28:18 -> 28:20] qui était horrible à regarder
+[28:20 -> 28:22] et je le vois pas.
+[28:22 -> 28:24] C'était les absences.
+[28:28 -> 28:30] C'était les motifs d'absence.
+[28:30 -> 28:32] Les motifs d'absence,
+[28:32 -> 28:34] ils sont classés
+[28:34 -> 28:36] dans un groupe d'absences RTT.
+[28:36 -> 28:38] Et si je regarde
+[28:38 -> 28:40] le groupe d'absence, il porte
+[28:40 -> 28:42] la couleur des absences.
+[28:42 -> 28:44] C'est ce verre moche.
+[28:44 -> 28:46] T'as arrivé
+[28:46 -> 28:48] par où?
+[28:48 -> 28:50] Par où?
+[28:50 -> 28:52] Par là.
+[28:52 -> 28:54] Par là.
+[28:54 -> 28:56] Par là.
+[28:56 -> 28:58] Par là.
+[28:58 -> 29:00] Par là.
+[29:00 -> 29:02] Par là.
+[29:02 -> 29:04] Par où?
+[29:04 -> 29:06] Par là.
+[29:06 -> 29:08] Je suis arrivé toujours par le référentiel.
+[29:08 -> 29:10] Ils ont des temps absences.
+[29:10 -> 29:12] Et là,
+[29:12 -> 29:14] les groupes.
+[29:14 -> 29:16] On a les motifs d'absence qui sont classés
+[29:16 -> 29:18] dans des groupes.
+[29:18 -> 29:20] Et c'est ce groupe qui porte les couleurs
+[29:20 -> 29:22] des motifs d'absence.
+[29:22 -> 29:24] D'accord.
+[29:24 -> 29:26] Alors
+[29:30 -> 29:32] si je reviens
+[29:32 -> 29:34] sur les horaires,
+[29:34 -> 29:36] on va changer la couleur.
+[29:36 -> 29:38] Puisque c'est très moche,
+[29:38 -> 29:40] on va mettre du blanc sur du verre
+[29:40 -> 29:42] pour qu'on y voit plus clair.
+[29:48 -> 29:50] On y verra plus clair.
+[29:54 -> 29:56] Alors
+[29:58 -> 30:00] si je reviens
+[30:00 -> 30:02] sur mes horaires.
+[30:02 -> 30:04] Donc voilà.
+[30:04 -> 30:06] Là, c'est l'étable
+[30:06 -> 30:08] de base
+[30:08 -> 30:10] pour préciser les informations
+[30:10 -> 30:12] sur les différentes horaires.
+[30:12 -> 30:14] Et donc là, on va
+[30:14 -> 30:16] regarder
+[30:16 -> 30:18] les découpages journaliers.
+[30:18 -> 30:20] Mais vous aurez un journalier.
+[30:24 -> 30:26] Alors, ce que je vous propose,
+[30:26 -> 30:28] c'est que vous allez
+[30:28 -> 30:30] vous allez en créer un direct
+[30:30 -> 30:32] et vous allez voir ce qui se passe
+[30:32 -> 30:34] en création d'un horaire.
+[30:36 -> 30:38] Et je vais
+[30:38 -> 30:40] vous guider
+[30:40 -> 30:42] dans la création et vous allez vous poser
+[30:42 -> 30:44] des questions au fur et à mesure
+[30:44 -> 30:46] en fait un des différents champs.
+[30:46 -> 30:48] Et on va y répondre
+[30:48 -> 30:50] plutôt que de faire un discours.
+[30:50 -> 30:52] Voilà.
+[30:52 -> 30:54] On va vous créer un horaire
+[30:54 -> 30:56] de journée
+[30:56 -> 30:58] avec
+[31:00 -> 31:02] vous allez
+[31:02 -> 31:04] faire un 9h30
+[31:08 -> 31:10] un 14h18h
+[31:12 -> 31:14] avec
+[31:14 -> 31:16] une plage variable
+[31:16 -> 31:18] de 8h
+[31:18 -> 31:20] à 9h
+[31:22 -> 31:24] une plage variable
+[31:24 -> 31:26] de 18h à 19h
+[31:30 -> 31:32] donc la pause
+[31:32 -> 31:34] la coupure déjeuner sera entre 12h30
+[31:34 -> 31:36] et 14h
+[31:36 -> 31:38] et on va dire
+[31:38 -> 31:40] que sur cette plage
+[31:40 -> 31:42] il faut qu'on prenne au minimum une heure de pause.
+[31:48 -> 31:50] Quand vous créez l'horaire
+[31:50 -> 31:52] vous allez vous retrouver avec le même problème
+[31:52 -> 31:54] que ce qu'on a eu en création de matricule
+[31:54 -> 31:56] c'est à dire qu'il vous donne
+[31:56 -> 31:58] il vous propose un identifiant
+[31:58 -> 32:00] voilà le premier qui va
+[32:00 -> 32:02] faire enregistrer à gagner
+[32:02 -> 32:04] les autres ils vont retrouver le message
+[32:04 -> 32:06] à la création
+[32:06 -> 32:08] le code est déjà utilisé.
+[32:14 -> 32:16] Ok ça marche
+[32:20 -> 32:22] donc
+[32:32 -> 32:34] donc j'ai 18h9h en variable
+[32:34 -> 32:36] 9h12h30
+[32:36 -> 32:38] en plage fixe
+[32:38 -> 32:40] 14h18h
+[32:40 -> 32:42] en plage fixe
+[32:42 -> 32:44] et 18h19h en variable
+[32:46 -> 32:48] donc on commence par y mettre
+[32:48 -> 32:50] un code, un identifiant
+[32:50 -> 32:52] et ensuite derrière on a 4 abrégés
+[32:54 -> 32:56] 4 abrégés de longueurs différentes
+[32:56 -> 32:58] en fonction des
+[32:58 -> 33:00] des écrans sur lesquels apparaissent
+[33:00 -> 33:02] ces abrégés on prendra
+[33:02 -> 33:04] l'abrégé qui correspond
+[33:04 -> 33:06] à la place qu'on a
+[33:06 -> 33:08] mettez-y votre
+[33:08 -> 33:10] votre tryptique
+[33:10 -> 33:12] quand vous créez votre horaire
+[33:12 -> 33:14] c'est des vaux initiales
+[33:14 -> 33:16] pour qu'on vous repère
+[33:24 -> 33:26] dans un premier temps
+[33:26 -> 33:28] vous voyez le champ structure
+[33:30 -> 33:32] ce champ structure
+[33:32 -> 33:34] ne le saisissez pas
+[33:34 -> 33:36] il est pas obligatoire
+[33:36 -> 33:38] et ne le saisissez pas
+[33:38 -> 33:40] faites sans structure
+[33:40 -> 33:42] et je vous expliquerai après ce que c'est
+[33:50 -> 33:52] par contre j'ai pas compris c'est lequel
+[33:52 -> 33:54] qu'on choisit
+[33:54 -> 33:56] celui qu'on crée
+[33:56 -> 33:58] vous créez un horaire journalier
+[33:58 -> 34:00] oui
+[34:00 -> 34:02] et vous créez un code horaire
+[34:02 -> 34:04] un découpage journalier
+[34:04 -> 34:06] qui a les caractéristiques que je vous ai donné
+[34:06 -> 34:08] c'est à dire que
+[34:08 -> 34:10] vous pouvez voir imputivement
+[34:10 -> 34:12] comment vous
+[34:12 -> 34:14] vous adhérez à cet écran
+[34:16 -> 34:18] donc le découpage journalier
+[34:18 -> 34:20] c'est entre 8h et 9h
+[34:20 -> 34:22] c'est un horaire de journée
+[34:22 -> 34:24] entre 8h et 9h j'ai une plage variable
+[34:26 -> 34:28] entre 9h et 10h30 j'ai une plage fixe
+[34:32 -> 34:34] entre 14h et 18h j'ai une nouvelle plage fixe
+[34:34 -> 34:36] donc j'ai une plage de pause
+[34:36 -> 34:38] entre 12h30 et 14h
+[34:38 -> 34:40] et entre 18h et 19h j'ai à nouveau une plage variable
+[35:02 -> 35:04] c'est pas évident du premier cours
+[35:04 -> 35:06] non justement c'est pour ça que je veux
+[35:06 -> 35:08] vous faire batailler avec l'écran
+[35:08 -> 35:10] parce que
+[35:10 -> 35:12] vous allez vous poser
+[35:12 -> 35:14] des questions et on va y répondre
+[35:14 -> 35:16] au fur et à mesure
+[35:16 -> 35:18] moi c'est la saisie qui me passe problème
+[35:18 -> 35:20] la saisie
+[35:20 -> 35:22] je comprends pas la logique
+[35:28 -> 35:30] j'arrive pas à rentrer
+[35:30 -> 35:32] il faut rentrer le temps du
+[35:32 -> 35:34] temps du amplitude etc
+[35:34 -> 35:36] alors c'est obligatoire
+[35:36 -> 35:38] pour l'instant
+[35:38 -> 35:40] pour l'instant c'est pas la peine de le mettre
+[35:40 -> 35:42] je peux le mettre après
+[35:48 -> 35:50] même ça c'est la même
+[35:50 -> 35:52] le même problème
+[35:52 -> 35:54] partage son écran
+[36:02 -> 36:04] partage
+[36:14 -> 36:16] en fait c'est à ce niveau là
+[36:16 -> 36:18] comment on fait pour rentrer
+[36:18 -> 36:20] les heures
+[36:20 -> 36:22] et pas les minutes
+[36:22 -> 36:24] alors
+[36:26 -> 36:28] on saisit
+[36:28 -> 36:30] si ta plage variable commence
+[36:30 -> 36:32] à 8h
+[36:32 -> 36:34] ce que j'ai dit
+[36:34 -> 36:36] tu saisis 8, 0, 0
+[36:38 -> 36:40] mais je saisis où
+[36:40 -> 36:42] à partir d'où c'est ça
+[36:52 -> 36:54] en cliquant
+[36:54 -> 36:56] ça t'a mis automatiquement 8h
+[36:56 -> 36:58] dans la fin de plage précédente
+[37:01 -> 37:03] donc la fin de plage variable
+[37:03 -> 37:05] elle est à 9h
+[37:10 -> 37:12] ça t'a inscrit automatiquement
+[37:12 -> 37:14] le début de plage fixe à 9h
+[37:14 -> 37:16] ok
+[37:16 -> 37:18] la fin de plage fixe elle est à 12h30
+[37:24 -> 37:26] ça t'a inscrit 12h30
+[37:31 -> 37:33] non non non
+[37:33 -> 37:35] j'ai dit la 2ème plage fixe
+[37:35 -> 37:37] elle est de 14h à 18h
+[37:37 -> 37:39] donc du coup c'est forcément 14h
+[37:39 -> 37:41] ta fin de plage de pause
+[37:47 -> 37:49] c'est 18h
+[38:00 -> 38:02] ok
+[38:06 -> 38:08] si tu fais enregistré
+[38:08 -> 38:10] alors
+[38:10 -> 38:12] si tu fais enregistré
+[38:12 -> 38:14] il va sûrement te donner des champs
+[38:14 -> 38:16] en erreur
+[38:16 -> 38:18] parce qu'on n'a pas saisit le temps du
+[38:18 -> 38:20] le temps du de la journée
+[38:20 -> 38:22] doit être supérieur ou égal
+[38:22 -> 38:24] à la somme des plages fixe
+[38:27 -> 38:29] comme tu as fait
+[38:29 -> 38:31] ta différence de plage fixe
+[38:31 -> 38:33] c'est 3h30 le matin
+[38:33 -> 38:35] t'as 3h30 de plage fixe
+[38:35 -> 38:37] et t'en as 80 à l'après-midi
+[38:37 -> 38:39] ça doit être supérieur ou égal
+[38:39 -> 38:41] peut-être que dans ta journée
+[38:41 -> 38:43] tu dois faire 7h30
+[38:43 -> 38:45] si tu travailles davantage
+[38:45 -> 38:47] ce sera du crédit
+[38:51 -> 38:53] d'ailleurs
+[38:53 -> 38:55] du coup le
+[38:55 -> 38:57] le temps
+[38:57 -> 38:59] d'utiliser là c'est le
+[38:59 -> 39:01] le temps
+[39:01 -> 39:03] journalier
+[39:03 -> 39:05] oui c'est le temps du journalier
+[39:05 -> 39:07] c'est le temps de référence de la journée
+[39:07 -> 39:09] je dois faire 7h30
+[39:11 -> 39:13] parce que
+[39:13 -> 39:15] il a mis repos
+[39:15 -> 39:17] ah
+[39:27 -> 39:29] la préservation
+[39:35 -> 39:37] est que
+[39:45 -> 39:47] je resonates
+[39:47 -> 39:49] alors moi il me demande
+[39:49 -> 39:51] que je remplisse
+[39:51 -> 39:53] les champs qui sont
+[39:53 -> 39:55] dans la plage fixe
+[39:55 -> 40:03] et midi 30 14 18 et en fait il me fait un il me demande de remplir les deux zones suivantes
+[40:03 -> 40:14] ça correspond à quoi le les deux zones suivantes c'est à dire t'as saisi 14 18 dans la deuxième
+[40:14 -> 40:24] plage fixe dans la première j'ai saisit 9 12h30 puis derrière il ya deux cases donc là il me dit
+[40:24 -> 40:29] tous les chambres obligatoires ne sont pas renseignées quand tu dis derrière c'est la ligne plage de
+[40:29 -> 40:38] pause je pense que c'est sur la gauche sur la droite pardon sur la droite oui c'est les zones où il est
+[40:38 -> 40:44] dessus nicole ah bon t'as dû t'as dû je sais pas ce que t'as fait mais normalement c'est pas
+[40:44 -> 40:57] obligatoire de saisir des delta tu vas partager ton écran alors je comment dire juste pour finir
+[40:57 -> 41:09] avec on tient alors pour finir avec l'écran là puisque nicole il est dessus et ensuite il partage
+[41:09 -> 41:20] son écran là au niveau des coches donc le si on revient sur les coches tu as coché enfin c'est
+[41:20 -> 41:27] par défaut c'est coché utilisé pour les collaborateurs donc ça tout à fait en haut si l'utilisable
+[41:27 -> 41:30] pour les collaborateurs ça va permettre de constituer des horaires de référence et on
+[41:30 -> 41:34] pourra utiliser ces horaires pour les affecter en tant qu'exemple courant exceptionnel ou
+[41:35 -> 41:39] référence aux collaborateurs on est une coche pour les activités parce que sur cet
+[41:39 -> 41:42] environnement on a le module activité on peut aussi faire des horaires qui sont
+[41:42 -> 41:50] utilisables quand on fait des quand on croit des activités quand on pose une activité
+[41:50 -> 41:56] pour l'instant laisse tomber le tendu on a vu c'est le tendu de la journée l'amplitude c'est
+[41:56 -> 42:03] le début entre la première plage variable enfin c'est la différence entre la première
+[42:03 -> 42:08] plage variable et la fin de la dernière plage variable donc là on a une amplitude entre 8 heures
+[42:08 -> 42:21] et 19 heures on a 11 heures d'amplitude et le maximum de la journée alors en la législation en
+[42:21 -> 42:26] France on peut pas faire plus que 10 heures par jour c'est pour ça que par défaut c'est positionné
+[42:26 -> 42:32] à 10 ce qu'il faut savoir c'est que si sur cette puisque j'ai une amplitude de 11 heures ça
+[42:32 -> 42:37] veut dire que je vais être autorisé quelque part à badger jusqu'à 11 heures de travail
+[42:37 -> 42:47] là mais j'ai un maximum jour à 10 heures et bien le moteur de calcul va si je si j'ai 10h30
+[42:47 -> 42:56] validé il va me ajuster mon temps réel validé à 10 heures je vais perdre une demi heure en fait
+[42:56 -> 43:04] il va faire un écrétage automatique on va voir on va le laisser comme ça on va voir là ce que
+[43:04 -> 43:14] ça donnera en calcul donc ici voilà tu mets dans la nature journée alors je reviens sur les
+[43:14 -> 43:22] caractéristiques de présence les coches là les coches vous avez une ligne après le tendu
+[43:22 -> 43:27] amplitude et maximum jour vous avez les caractéristiques de présence journée matin après-midi
+[43:27 -> 43:38] demi repos nicol tu as choisi de cocher journée alors c'est particulier sur cet environnement on a
+[43:38 -> 43:47] activé un paramètre d'hiver qui autorise cette caractéristique de présence journée j'avais
+[43:47 -> 43:53] pas prévu de vous en parler maintenant mais c'est pas grave sur cette horaire je préfère que tu
+[43:53 -> 44:05] coches matin et après-midi parce que en fait j'ai une présence qui est demandée le matin j'ai une
+[44:05 -> 44:09] présence qui est demandée l'après-midi au bout du compte ça va faire un horaire de journée
+[44:10 -> 44:17] mais la différence avec la coche journée c'est que ça a été fait notamment pour les hôpitaux et
+[44:17 -> 44:23] pour les infirmières qui travaillent souvent en journée continue qui ont des postes par exemple
+[44:23 -> 44:30] elles font 10 heures 20 heures c'est des postes en journée mais sans coupure déjeuner ce sont
+[44:30 -> 44:35] des elles ont des pauses mais dépose dépose d'un quart d'heure quoi non pas coupure déjeuner
+[44:35 -> 44:43] ce sont des horaires continu de en journée et dans ce cas là il voulait avoir la possibilité de
+[44:43 -> 44:51] faire la distinction entre un horaire de journée type administratif avec je présente le matin je vais
+[44:51 -> 44:59] déjeuner chez moi ou ailleurs et je reviens l'après-midi avec des horaires continu de journée
+[45:00 -> 45:08] et c'est si si le paramètre divers qui dit j'active ou pas l'indicateur journée c'est ce qui
+[45:08 -> 45:14] permet de faire la différence entre les horaires en continu et les horaires avec une plage médial
+[45:14 -> 45:21] de pouces d'accord mais du coup l'intitulé enfin
+[45:21 -> 45:32] enfin pour moi c'est là pour moi c'est continue justement ce jour on est continue ça aurait été
+[45:32 -> 45:40] beaucoup plus simple en fait ouais c'est comme ça tu vois dans la liste des horaires dans la liste
+[45:40 -> 45:48] à gauche dans la colonne présence on a des horaires qui sont indiqués journée m plus à matin
+[45:48 -> 45:56] plus après-midi et on a des horaires le l'avant dernier là le 55 il est journée journée tout court
+[45:56 -> 46:02] ah oui d'accord et c'est ce qui permet de faire la différence entre en restitution d'accord
+[46:02 -> 46:09] voilà donc là un horaire tel qu'il est construit ce serait plutôt un horaire matin plus après
+[46:09 -> 46:21] midi ok ok donc tu peux enregistrer on va passer je suis une dernière chose là je présume que
+[46:21 -> 46:28] les intitulés qui sont là correspondent au coche que j'ai fait ici oui d'accord non enfin ce que je veux
+[46:28 -> 46:36] dire c'est ce que je coche ici ça va traduire dans la table qui présente ces informations ça
+[46:36 -> 46:43] va me donner ça en fait c'est ça ok si tu l'enregistre
+[46:43 -> 46:55] tu partages son écran et onique et on a un erreur dans le découpage de la journée alors pourquoi
+[46:55 -> 47:06] ah oui parce que la dernière ligne on a une erreur dans le découpage je vous dis parce que la
+[47:06 -> 47:10] dernière ligne enfin l'avant dernière ligne plage de tolérance dans le découpage
+[47:10 -> 47:22] voilà elle va de 19 heures à 0 heures il faut que tu mettes si tu n'as pas de tolérance je
+[47:22 -> 47:26] vous explique ce que ça veut dire tu me dis d'accord
+[47:26 -> 47:33] voilà et si tu enregistre on va voir que le découpage de la journée
+[47:33 -> 47:42] ah mais t'as pas fait création
+[47:42 -> 47:52] c'est ça ok j'ai pris le premier qui était là et j'ai créé
+[47:52 -> 47:59] tu vois annule et refais ta ta saisie refi en arrière t'as une fois à côté d'enregistrer
+[47:59 -> 48:06] t'as un petit voilà annule voilà c'est là tu étais en train de modifier l'horaire est
+[48:06 -> 48:14] créé un horaire je vais le faire maintenant c'est comment ça fonctionnait
+[48:14 -> 48:17] il partage son écran et onique oui
+[48:17 -> 48:26] tu vois alors qu'est ce que c'est cette histoire
+[48:26 -> 48:27] il s'intifiant
+[48:33 -> 48:42] remonte pour voir 7h30 laborateur majeur matin après midi
+[48:42 -> 48:54] alors mes zéro zéro mes zéro ici ouais
+[48:54 -> 49:06] ah ouais il veut faire en fait ouais ça doit sortir les les mises les valeurs
+[49:06 -> 49:13] c'est pas hors début de référence parce que c'était tât du vu de fin
+[49:13 -> 49:25] c'est bon j'ai pas compris nous redis juste la première partie heure de début de référence
+[49:25 -> 49:33] ouais oui ça doit être par enseigné non alors le l'heure début de référence et l'heure de fin
+[49:33 -> 49:40] de référence qu'on a en début et en fin de plage là en gros dans chrono time quand on fait
+[49:40 -> 49:45] de la gestion des temps ben on aime bien savoir ce qui se passe à n'importe quelle minute de la journée
+[49:45 -> 49:53] on veut pouvoir tout décrire un horaire de jour ben on veut savoir qu'est ce qui se passe entre 0h
+[49:53 -> 50:00] et 23h59 sur la totalité de la journée calendaire c'est pour ça qu'on a un horaire de une heure
+[50:00 -> 50:06] de début de référence qui est positionné par défaut à 0 et une heure de fin à 23h59 par
+[50:06 -> 50:11] défaut quand on va faire un horaire de nuit on aura une heure de début de référence différente
+[50:11 -> 50:19] c'est pas on n'est pas obligé de faire du 0h 23h59 mais c'est pour nous donner un cadre voyons
+[50:19 -> 50:25] c'est quoi la plage totale que je suis en train de définir là en fait et au résultat ce qu'on
+[50:25 -> 50:33] voit c'est que là après avec l'enregistrement cafévéronique on voit que entre 0h et 8h du
+[50:33 -> 50:40] matin j'ai une plage verte et si tu survols la plage verte normalement ça donne un petit une infobule
+[50:40 -> 50:48] voilà ça te dit la plage de tolérance elle est entre 0h et 8h ensuite la plage jaune jaune
+[50:48 -> 50:55] claire c'est une plage variable de 8 à 9 ensuite on a la plage fixe ensuite en bleu on a la plage
+[50:55 -> 51:05] de pause à nouveau la plage fixe la plage variable et derrière si tu survols la partie blanche après
+[51:05 -> 51:14] 19 heures t'as pas beaucoup de place mais tu dois pouvoir voir ça te dit rien non ça donne en gros une
+[51:14 -> 51:21] plage neutralisé c'est à dire qu'entre 19h et 23h59 il ne doit rien se passer
+[51:25 -> 51:35] alors si je peux te rendre la main non tu peux la garder tu peux la garder
+[51:35 -> 51:47] juste juste pour compléter sur une plage de sur une plage neutralisé c'est à dire entre 19h et
+[51:47 -> 51:58] 23h59 si la personne qui a cette horaire badge entre le 19h et 23h59 j'aurai une anomalie badge
+[51:58 -> 52:07] urbaine je ne suis pas censée badger entre 19h et 23h59 je n'en aurais pas le badge
+[52:07 -> 52:17] là je personne sur une plage variable donc entre 18h et 19h ou entre 8h et 9h
+[52:17 -> 52:25] sur une plage variable le badge âge il va être pris à l'heure exacte où il intervient si je
+[52:25 -> 52:32] badge à 8h25 et bien mon temps sera pris mon temps de travail sera pris à compter de 8h25
+[52:32 -> 52:41] là je n'ai pas d'erreur je n'ai rien le temps est pris le badge sur une plage variable
+[52:41 -> 52:50] quand je badge dans une plage fixe je suis censé être là une plage fixe c'est une plage obligatoire
+[52:50 -> 52:58] en fait je dois être là si je badge à 9h10 c'est que je suis en retard c'est que je suis absente
+[52:58 -> 53:09] entre 9h et 9h10 donc par défaut on met le moteur l'anomalie on déclenche une anomalie qui dit
+[53:09 -> 53:19] badge en plage fixe donc il faut justifier de t'est ce que j'ai fait entre 9h et 9h10 je suis
+[53:19 -> 53:30] absente voilà alors on peut rendre cette anomalie non bloquante et à ce moment là on gérnera du
+[53:30 -> 53:35] débit c'est à dire que je n'ai pas travaillé suffisamment par rapport à ce que j'aurais dû faire
+[53:35 -> 53:41] alors que je badge à l'entrée ou que je badge en sortie dans une plage fixe j'ai pas le droit
+[53:41 -> 53:48] en fait de rentrer ou de sortir dans une plage fixe normalement sur la plage de pause
+[53:48 -> 53:55] entre 12h et 14h 12h30 et 14h00 là je peux badger quand je veux dans cette plage
+[53:55 -> 54:03] c'est ce dos plage variable quoi j'ai pas d'anomalie quand je badge dans la plage de pause
+[54:03 -> 54:10] j'ai pas de soucis avec ça en revanche le fait de dire que je veux 60 minutes de pause
+[54:10 -> 54:16] minimum vous voyez dans la partie droite la pause de 60 minutes j'ai dit je badge
+[54:16 -> 54:22] je m'apporte des genoux je la prends entre midi et demi et 14h00 et au minimum je dois prendre une heure
+[54:22 -> 54:31] on va faire le décompte c'est ce que j'ai indiqué hier quand je parlais du compteur de la pause
+[54:31 -> 54:41] réelle et de la pause validée si la personne badge à 13h00 elle sort de son poste à 13h00 et
+[54:41 -> 54:54] elle revient à 13h30 je vais avoir une pause réelle badger donc entre 13h00 et 13h30 c'est à dire 30
+[54:54 -> 55:01] minutes mais comme mon horaire dit que ma pause minimum elle est de 60 minutes et bien ma
+[55:01 -> 55:07] pause validée sera 60 minutes et je vais ajuster mon temps de travail mon temps de travailler
+[55:07 -> 55:18] réellement je vais dire que c'est mes badges de pointage plus 30 minutes puisque je rajoute
+[55:18 -> 55:23] j'ajuste avec 30 minutes supplémentaires la pause que je n'ai pas prise mais que j'aurais dû prendre
+[55:23 -> 55:34] tu veux dire que le temps qui n'est pas pris pour la pause va s'ajouter automatiquement sur le temps
+[55:34 -> 55:49] du temps de pause le pause validé je vois mais j'ai pas compris je dois je dois je pense qu'on
+[55:49 -> 55:54] va faire un exemple on va voir cette horaire sur quelqu'un on verra cette horaire sur quelqu'un
+[55:54 -> 55:58] et on va voir comment ce que ça donne le résultat à par rapport à des badges ce que je veux dire
+[55:58 -> 56:06] c'est que je go badger ma pause entre mes 10h30 et 14h00 et je dois prendre minimum une heure une heure
+[56:06 -> 56:17] de pause si je badge moins d'une heure de pause ma pause réelle sera mon temps réel badger mon temps
+[56:17 -> 56:21] vraiment badger en pause si j'ai pris que trois quarts d'heure 45 minutes de pause je
+[56:21 -> 56:27] aurais 45 minutes dans ma pause réelle mais ma pause validée sera à 60 minutes sera calculée à
+[56:27 -> 56:37] 60 minutes parce que c'est la pause minimum de cette horaire excusez-moi du coup par rapport aux
+[56:37 -> 56:44] horaires de l'après-midi ça va faire quoi ça va rajouter ces 15 minutes là dessus ou ça n'a rien à
+[56:44 -> 56:52] voir c'est que je comprends pas en fait si dans cette sur cette exemple je badge à 9h00 je
+[56:52 -> 57:03] badge à 13h15 en sortie et je rebadge à 14h00 et je rebadge à 18h00 donc j'ai quatre heures de
+[57:03 -> 57:12] temps de travail après-midi de temps pointé j'ai 45 minutes de pause réelle puisque c'est la
+[57:12 -> 57:20] pause que j'ai badger entre 13h15 et 14h00 et en temps pointé et validé entre 9h15 entre 9h00
+[57:20 -> 57:32] et 13h15 9h13 j'ai 4h15 de temps pointé donc de temps validé donc en temps validé en temps pointé
+[57:32 -> 57:42] j'ai 8h15 en fait entre mes badges 4h15 le matin et 4h00 l'après-midi mais comme ma pause
+[57:42 -> 57:48] je vais étendre je vais ajuster ma pause non pas en laissant à 45 minutes que elle a été faite
+[57:48 -> 57:58] mais je vais la passer à 60 et bah je vais dire que mon temps validé il est de 8h00 d'accord donc en
+[57:58 -> 58:10] clair un salarié qui qui ne respecte pas son temps de pause de 60 minutes le système va le
+[58:10 -> 58:17] volume en jeu automatiquement les 15 minutes qu'il n'a pas pris c'est ça d'accord
+[58:17 -> 58:27] et enfin juste pour comprendre c'est pourquoi c'est comme ça du coup parce qu'enfin pour moi
+[58:27 -> 58:34] ça aurait été beaucoup plus logique de garder ce qu'il a fait exactement quoi mais parce que en
+[58:34 -> 58:42] terme de c'est ça le client il veut que les gens prennent une heure de pause d'accord c'est une
+[58:42 -> 58:49] obligation ils veulent ils veulent ils veulent que les gens ils veulent pas que les gens travaillent entre
+[58:49 -> 58:52] midi et deux à tour de bras parce que ça fait des heures supe et qu'ils veulent pas payer des heures
+[58:52 -> 59:00] supe donc ils veulent que les gens bah voilà oui non ok une heure de débit crédit augmente augmente
+[59:00 -> 59:13] à tout va c'est toute la gestion du temps quoi ok c'est du métier hein là la question c'est un peu
+[59:13 -> 59:20] faire un peu de la gymnastique sur sur l'exemple de Véronique si on veut
+[59:20 -> 59:31] poser ses 60 minutes de pause d'avoir une une plage de je dirais de tolérance pour la pause
+[59:31 -> 59:38] oui c'est à dire moi je travaille c'est vrai que j'ai dans l'horaire que je dois m'arrêter à
+[59:38 -> 59:49] 12h30 selon le scamy Véronique je devrais prendre ma pause entre 12h30 et 14h00 et là j'ai des réunions
+[59:49 -> 60:03] du travail donc je voulais prendre ma pause à 14h30 par exemple hein et ça j'ai juste de mettre la
+[60:03 -> 60:09] pause dans une plage variable de pause ou comment faire pour ça dans ce cas là ça veut dire qu'il
+[60:09 -> 60:18] faut que l'horaire la plage de pause soit augmenté d'accord dire qu'on soit par exemple à 15h00 on
+[60:18 -> 60:23] peut considérer qu'on peut prendre la pause jusqu'à 15h00 et le début de pause éventuellement à
+[60:23 -> 60:36] midi d'accord en laissant une heure de pause minimum et puis puis puis voilà mais on peut mettre donc
+[60:36 -> 60:43] 12h00 enfin le début de la plage de pause mettre en dessous de la fin de la plage fixe du matin
+[60:43 -> 60:51] ben non puisque c'est c'est complètement lié dès que je modifie une valeur ça modifie le
+[60:51 -> 60:58] je peux pas avoir de trous dans les plages ou d'accord c'est vraiment une séquence donc ça va
+[60:58 -> 61:03] raccourcir la plage du matin alors la plage fixe du matin ouais ça raccourci la plage fixe du matin
+[61:03 -> 61:12] ou ça raccourci la plage fixe de la plage fixe en effet tu es si tu modifie le la plage enfin
+[61:12 -> 61:19] le début de l'horaire de pause tu le passes à 12h00 la plage fixe du matin bouge automatiquement
+[61:19 -> 61:33] elle passait 12h00 d'accord mais c'est déjà pas mal alors si je vais un petit peu plus loin sur
+[61:33 -> 61:39] cette pause déjeuner là voilà là on voit l'ouverture de la plage de pause plus ou moins
+[61:39 -> 61:46] grande parfois il ya des horaires si on veut qu'un horaire il soit fixe que la pause se
+[61:46 -> 61:52] face entre 13h00 et 14h00 et ben on est à la fin de plage fixe à 13h00 et le début de la deuxième
+[61:52 -> 61:58] plage fixe à 14h00 on est 60 minutes dans la pause mini et puis là on cadre quoi la pause
+[61:58 -> 62:05] elle est entre 13h00 et 14h00 ou bien on ouvre la plage pour laisser de plus de marge aux collaborateurs
+[62:05 -> 62:14] pour prendre leur pause et c'est le temps dû à 7h30 qui va contrôler quand même que
+[62:14 -> 62:17] au bout du compte j'ai bien fait le temps qui était attendu dans la journée
+[62:17 -> 62:25] parce que forcément puisque ma plage fixe est réduite je pourrais très bien j'aurais pas
+[62:25 -> 62:35] d'anomalie si je bâche à midi 10 à fin midi 15 dans l'exemple si je bâche à 14h40 mais
+[62:35 -> 62:44] il faut quand même que je fasse mon temps de la journée donc ça passera en débit si
+[62:44 -> 62:47] j'ai pas fait mon temps par rapport au temps du
+[62:47 -> 62:56] donc j'ai la plage de pause, j'ai la pause minimum et puis il y a une autre information sur la
+[62:56 -> 63:01] coupure des jeunais c'est que là encore c'est par les paramètres d'hiver, paramètres par
+[63:01 -> 63:08] domaine et là ça va, je parle un petit peu plus du métier pour éclairer peut-être davantage
+[63:08 -> 63:16] Nicole, des clients ils veulent que leur collaborateur ils battent la pause des jeunais parce que
+[63:16 -> 63:21] ils veulent obliger les gens à bâtir leur pause des jeunais, il y a pas mal d'organisations,
+[63:21 -> 63:26] il y a pas mal d'endroits où les gens ils ont tendance à ne pas bâtir leur pause des jeunais
+[63:26 -> 63:36] pour obliger, enfin pour contrôler ça il y a des systèmes qui sont un peu rudes mais qui
+[63:36 -> 63:42] voilà par les paramètres d'hiver on peut dire qu'est ce qui se passe si j'ai pas de badgeage dans la
+[63:42 -> 63:50] pause des jeunais et bien j'ai le choix entre est ce que j'enlève la pause minimum
+[63:50 -> 63:57] systématiquement même si la pause est pas badgeé ou bien est ce que j'enlève,
+[63:57 -> 64:01] j'ai le choix de dire est ce que j'enlève la totalité de la plage de pause
+[64:01 -> 64:09] c'est à dire que si j'ai une plage de deux heures de pause, la personne n'a pas du tout badger
+[64:09 -> 64:15] sa pause et bien j'enlève deux heures, même si j'ai une pause mini à une heure
+[64:15 -> 64:24] donc ça c'est des clients qui mettent ça en place pour pour fortement pénaliser les
+[64:24 -> 64:28] personnes qui ne battent pas leur pause et du coup ça les fait badger leur pause
+[64:28 -> 64:35] badger sa pause
+[64:45 -> 64:54] pardon, on attend la suite, non parce que le fait de badger sa pause pour moi puis si ça dépend de
+[64:54 -> 65:02] règles qui en a six je badge à chaque sortie donc je sais pas le fait de badger sa pause est-ce
+[65:02 -> 65:07] que ça implique qu'il y ait de resto au sein de la même boîte je sais pas j'essaie d'avoir des
+[65:07 -> 65:15] scénarios en tête mais badger sa pause c'est au niveau de sortie matin rentrée après midi
+[65:15 -> 65:26] c'est pas suffisant non ? si il sort il est en pause peu importe ce qu'il fait de l'autre
+[65:26 -> 65:35] voilà si il y a entré matin sorti matin et entré après midi bien sûr donc je peux calculer le temps
+[65:35 -> 65:43] de la pause c'est ça parce que là tu parles du cas où il y a des flexibilités des gens
+[65:43 -> 65:51] ils pausent ils badge quand le matin et à la sortie de la journée d'accord d'accord d'accord
+[65:51 -> 66:01] d'ailleurs ça me rappelle une situation c'est vrai que tu as des entreprises ou pour aller au
+[66:01 -> 66:09] restaurant d'entreprise tu passes pas forcément par par le par une badgeuse du coup c'est interne à
+[66:09 -> 66:21] l'entreprise tu sors pas du coup ça c'est pas forcément faisable dans ces entreprises là parce
+[66:21 -> 66:28] que ça c'est les entreprises qui choisissent leurs règles la façon dont ils gèrent ça
+[66:28 -> 66:35] oui mais c'est pour dire que en tout cas c'est un cas qui peut se présenter c'est à savoir que la
+[66:35 -> 66:40] personne ne rentre simplement enfin ne badge qu'à son entrée le matin quand elle arrive au bureau
+[66:40 -> 66:48] et elle va faire toute sa journée n'importe la pause qu'elle va avoir et elle aura badger simplement
+[66:48 -> 67:02] à sa sortie son horaire du soir alors quelqu'un d'autre partage son écran
+[67:02 -> 67:14] norédyne tu peux prendre la main si tu veux ? question concernant le paramétrage des
+[67:14 -> 67:23] delta de plage fixe c'est quoi c'est la même notion que le recalage
+[67:23 -> 67:31] j'ai pas compris ta question le paramétrage des delta est ce que tu peux nous expliquer
+[67:31 -> 67:45] j'en parle voilà je vais en parler maintenant justement tu me partages son écran norédyne
+[67:45 -> 67:56] ah oui presque le seul même exemple de verronique alors on va expliquer les delta et les tolérances
+[67:56 -> 68:17] vous arrivez à voir mon écran là ? moi je l'ai pas pour l'instant
+[68:17 -> 68:36] non moi je le vois pas aussi ça va ça a l'air d'aller là ? non on voit on voit ton
+[68:36 -> 68:50] ton t'as pas partagé le bon écran t'as partagé le scope enfin tims
+[68:50 -> 69:02] faut partager le bureau du coup oui je vais partager le bureau parce que je voulais revenir en
+[69:02 -> 69:11] arrière et ça marche pas là c'est bon en fait j'ai essayé de trouver le bon bouton sans raccrocher
+[69:11 -> 69:19] alors là tu as le même découpage tu as à peu près le même découpage genre tu n'as pas tout à fait
+[69:19 -> 69:26] ce qui m'a trigé c'est toujours cette date début de référence pour moi c'est comme un modèle de
+[69:26 -> 69:34] journée mais c'est ma compréhension l'hétérère du mot l'heure de référence je suis dit c'est le début
+[69:34 -> 69:43] de la plage de la plage totale de la journée totale que je vais décrire en fait si tu mets un
+[69:43 -> 69:47] heure de début de référence à cette heure et que ton horaire de la journée précédente
+[69:47 -> 69:52] s'arrête à minuit par exemple entre 0h et 7h je n'ai rien je ne sais pas ce qu'il y a en fait
+[69:53 -> 69:58] d'accord je ne sais pas dire c'est une plage de neutraliser je n'ai rien et j'aime pas ne rien
+[69:58 -> 70:07] avoir je préfère avoir quelque chose quand même c'est pas voilà c'est pas obligatoire obligatoire
+[70:07 -> 70:14] mais alors ce qu'on voit c'est que on a une plage de tolérance entre 0h et 8h là la plage
+[70:14 -> 70:22] de tolérance c'est si je batch entre 0h et 8h la personne qui a cet horaire si elle batch
+[70:22 -> 70:31] entre 0h et 8h son batchage il va être pris en compte j'aurai pas d'anomalie par contre le
+[70:31 -> 70:38] temps travaillé sera pris à compter de 8h c'est à dire j'admets que la personne batch dans cette
+[70:38 -> 70:41] plage là mais de toute façon son temps je ne lui contrerai qu'à partir de 8h
+[70:41 -> 70:52] et je ne modifierai pas la valeur du batchage c'est à dire son batchage il batch à 5h du matin
+[70:52 -> 70:58] je verrai batchage à 5h mais dans mon temps validé j'aurai un temps qui commencera à partir de 8h
+[70:58 -> 71:06] ça c'est vrai pour la tolérance avant et c'est vrai pour la tolérance après la dernière plage
+[71:06 -> 71:10] variable la deuxième plage de tolérance en bas là tu n'as pas de plage de tolérance entre
+[71:10 -> 71:25] puisque tu as mis 23h59 23h59 d'accord ? au passage ton horaire la deuxième plage variable là la plage
+[71:25 -> 71:33] variable en fin d'horaire elle est entre 18h et 23h59 c'était pas la demande on dit que
+[71:33 -> 71:39] on a une plage variable qui va jusqu'à 19h seulement pour là si je batch à 23h ça va me
+[71:39 -> 71:48] compter longtemps jusqu'à 23h voilà donc là du coup tu te retrouves avec une tolérance entre 19h et 23h59
+[71:48 -> 71:57] et peut-être que tu alors en général la tolérance chez les clients ce qu'on retrouve c'est que
+[71:57 -> 72:04] en général ils acceptent un quart d'heure avant un quart d'heure après mais pas plus ils veulent
+[72:04 -> 72:13] pas que les gens traînent sur le site on réduit en général on réduit la plage de
+[72:13 -> 72:17] tolérance c'est pour réduire la plage de tolérance du coup on va mettre un début de
+[72:17 -> 72:21] tolérance en début en première plage de tolérance à 7h45 par exemple
+[72:21 -> 72:35] si tu reviens sur la première plage de tolérance non rédine voilà voilà tu mets 7h45
+[72:35 -> 72:43] et là du coup ça va te faire quelque chose de plus de plus ajusté c'est à dire que bon
+[72:43 -> 72:48] tu vas autoriser les gens à batcher un peu avant si ils veulent prendre le café ou je ne sais
+[72:48 -> 72:53] quoi mais tu ne veux pas qu'ils arrivent sur le site à 5h du matin quand même et pour la plage
+[72:53 -> 72:59] de sortie en fin de fin d'horaire bah tu vas accepter une tolérance jusqu'à peut-être 19h30
+[72:59 -> 73:12] ou 19h15 mais pas 23h59 d'accord intéressant parce que sur la deuxième plage de tolérance là 19h
+[73:12 -> 73:21] 23h59 si la personne batch à 23h t'auras pas de t'auras pas d'anomalie le manager il va pas le savoir
+[73:21 -> 73:29] alors que si tu mets une tolérance à 19h15 ou 19h30 si la personne batch trop tard tu sauras qu'elle
+[73:29 -> 73:38] a traîné sur le site quoi ok donc ça c'est la tolérance maintenant au niveau des delta
+[73:38 -> 73:46] vous voyez qu'en face des plages fixes à droite des plages fixes j'ai quatre valeurs de delta
+[73:46 -> 73:53] delta début delta fin alors le delta début les deux champs delta début ce sont des valeurs de delta
+[73:53 -> 74:07] qui sont autour de l'entrée de la plage fixe à 9h00 et les deux dernières valeurs delta fin ce
+[74:07 -> 74:15] sont les delta autour de midi la fin de la plage fixe alors qu'est ce qu'on dit là on dit que si
+[74:15 -> 74:20] j'ai une plage fixe à 9h00 peut-être que en fonction des arrivages à la batcheuse enfin du
+[74:20 -> 74:27] nombre de personnes qui arrivent en même temps etc je dis que si elle arrive si la personne batch à
+[74:27 -> 74:32] 8h58 par exemple je veux pas lui compter deux minutes de temps de travail en plus je considère
+[74:32 -> 74:38] qu'elle est rentrée sur sa plage fixe à 9h00 donc je lui mets alors là on ne met pas l'heure
+[74:38 -> 74:48] d'entrée on met un nombre de minutes que l'on accepte avant et après donc je peux mettre deux minutes
+[74:48 -> 74:53] avant là là j'ai le le modèle le format comme un horaire normal
+[74:53 -> 75:10] tu mets 0 0 tu mets 2 tu mets 2 minutes voilà il faut mettre dans le dans le si tu veux accepter
+[75:10 -> 75:16] que les gens à partir de 8h58 on prend leur batchage tu saisit juste 2 tu vas voir ça va te mettre
+[75:16 -> 75:41] 2 minutes voilà c'est pas des secondes d'accord donc là c'est 2 minutes avant et peut-être que si la
+[75:41 -> 75:47] personne elle batch à 9h00 1 ou 9h00 2 bon je considère qu'elle est pas en retard quoi et peut-être
+[75:47 -> 75:53] qu'on peut accepter une ou deux minutes après 9h00 donc là c'est pareil je donne la valeur que je
+[75:53 -> 76:01] tolère enfin que j'accepte en delta de batchage donc là je vais peut-être mettre en général on
+[76:01 -> 76:05] met plutôt 5 minutes avant et 2 minutes après parce que on préfère que les gens soient à l'heure
+[76:06 -> 76:14] bon c'est un exemple ok et les delta fin c'est pareil si la personne elle part en pause à 11h58
+[76:14 -> 76:22] peut-être que bon allez c'est pas grave bon là tu as mis en 9h55 et delta fin
+[76:22 -> 76:31] là tu dis 10 minutes c'est à dire que si elle batch 10 minutes après tu lui compte pas de temps tu
+[76:31 -> 76:37] vas pas lui compter ses 10 minutes travailler en plus hein ouais c'est le temps d'en ramasser son sac
+[76:37 -> 76:47] ouais mais là elle s'est fait bouffer 10 minutes de temps voilà donc là la différence donc les
+[76:47 -> 76:56] delta si je batch à midi tel que tu as mis là à 10 minutes après si je batch à midi 8 et bien mon
+[76:56 -> 77:04] batchage réel sera toujours conservé à midi 8 mais mon batchage validé lui il va être validé à midi
+[77:04 -> 77:19] et donc mon temps validé va démarrer va s'arrêter à midi excuse moi ça j'ai pas bien compris là on
+[77:19 -> 77:24] a dit si je prends alors je reprends un partir des delta débuts 2 minutes avant 5 minutes après
+[77:24 -> 77:33] 9 heures encore si je batch à 8h58 à cause de mes deux minutes si je batch à 8h57 si je batch
+[77:33 -> 77:40] à 8h57 je suis pas dans les deux minutes autour de 9 heures donc du coup je vais garder son batch
+[77:40 -> 77:46] il batch dans la plage variable puisque il batch entre 8h et 9 heures à 8h57 du coup son temps
+[77:46 -> 77:54] validé va démarrer à partir de 8h57 il va faire 3 minutes en plus finalement que sa plage
+[77:54 -> 78:07] fixe quoi si il batch à 8h58 il est dans les deux minutes et bien là son batchage le réel va être
+[78:07 -> 78:15] conservé à 8h58 mais je vais valider son batchage à 9 heures je vais dire c'est comme s'il avait
+[78:15 -> 78:19] batché à 9 heures là je lui je lui mange ces deux minutes je lui ne veux pas lui compter deux
+[78:19 -> 78:22] minutes supplémentaires je considère que c'est comme s'il avait batché à 9 heures
+[78:25 -> 78:32] d'accord si je batch à 9h02 je suis dans les cinq minutes
+[78:32 -> 78:35] après
+[78:35 -> 78:41] dans les cinq minutes après 9 heures du coup je ramène son batchage à 9 heures je garde son
+[78:41 -> 78:47] batchage réel à 9h02 mais je ramène le batchage validé à 9 heures et je vais compter son temps
+[78:47 -> 78:54] à partir de 9 alors que si il batch à 9h06 je vais considérer là j'ai une anomalie je vais
+[78:54 -> 78:59] considérer qu'il est il batch en plage fixe et il faut qu'il faut expliquer le truc quoi
+[78:59 -> 79:10] éventuellement je vais calculer un retard je sais pas et c'est le même système autour de midi si je
+[79:10 -> 79:16] batch à 11 heures 58 je suis dans les cinq minutes avant du coup je vais conserver son batchage
+[79:16 -> 79:21] réel à 11 heures 58 je vais valider son batchage à midi et donc je vais lui lui dire et je lui
+[79:21 -> 79:28] faire cadeau des deux minutes qu'il n'a pas travaillé alors s'il batch à midi 5 il est dans les 10
+[79:28 -> 79:35] minutes après donc je vais lui ramener son batchage validé à midi et je vais arrêter son temps
+[79:35 -> 79:48] travaillé à midi en gros les delta c'est un peu comme la tolérance sauf que en plus de la tolérance
+[79:48 -> 79:55] ça ramène le batchage validé à la plage fixe autour de laquelle se situe le delta
+[79:55 -> 80:08] d'accord en fait christian ça fait un écretage alors
+[80:08 -> 80:16] ben pas forcément pas dans tous les cas ça dépend des fois c'est cadeau et des fois ça fait ça
+[80:16 -> 80:28] écrète en tout cas ça salise les heures d'arrivée les heures de départ ça correspond plus ça
+[80:28 -> 80:34] ça recale les heures d'arrivée je n'utilise pas le terminissage parce que le le lissage c'est une
+[80:34 -> 80:48] traction concernant les batchage ça recale donc voilà et juste pour finir sur les delta vous voyez vous
+[80:48 -> 80:54] avez un jeu de delta autour de la première plage fixe les champs qui sont possibles en saisie et ça
+[80:54 -> 81:00] vous reporte automatiquement ces valeurs dans autour de la deuxième plage fixe donc le comportement
+[81:00 -> 81:05] va être identique autour de 15 heures autour de 18 heures automatique de ce qu'il est à l'identique de ce
+[81:05 -> 81:12] qu'il est autour de 9 heures autour de midi ça s'agène certains clients mais alors c'est historique
+[81:12 -> 81:19] en fait en base de données on n'a qu'un jeu de delta on devrait avoir deux jeux de delta
+[81:19 -> 81:25] pouvoir différencer les comportements autour de la deuxième plage fixe le comportement pour
+[81:25 -> 81:31] la matinée un autre pour l'après-midi oui il y a certains clients que ça embelle donc là on
+[81:31 -> 81:37] oblige de faire des règles de calcul et des trucs un peu là du coup comme c'est le même champ c'est
+[81:37 -> 81:44] juste en fait en bas c'est juste informatif alors oui c'est ça c'est l'information on dit on va
+[81:44 -> 81:46] faire exactement la même chose autour de la plage fixe 2
+[81:46 -> 82:07] si on descend on a deux champs alors on a le champ donc ça met nature on a vu le champ équipe vous
+[82:07 -> 82:14] laissez tomber c'est un c'est un c'est historique le chrono gestor du produit d'origine il est
+[82:14 -> 82:19] plus utilisé vous pouvez utiliser pour faire d'autres choses les plus utilisés dans l'application
+[82:19 -> 82:24] et ensuite on a les temps d'absence qui correspondent alors les temps d'absence qui
+[82:24 -> 82:30] correspondent pour cette horaire et bien par exemple le le si je suis absent en unité jour
+[82:30 -> 82:36] sur cette horaire là quel est le temps je vais déconter quel est le temps d'absence donc
+[82:36 -> 82:41] si je suis en unité jour là on dit t'as mis 8 heures t'as vu quatre heures le matin et quatre
+[82:41 -> 82:45] heures si je suis en unité matin donc il y a quatre heures et si quatre heures si je suis en unité soir
+[82:45 -> 82:52] alors c'est un peu curieux d'avoir un temps d'absence sur un temps du 7h d'avoir un temps
+[82:52 -> 82:58] d'absence le jour de 8h c'est pas le c'est pas logique tu devrais avoir un temps d'absence
+[82:58 -> 83:04] jour de 7h c'est 7h d'accord ce sera cohérent
+[83:04 -> 83:20] désolé mais le matin ça correspond à quoi c'est pas la plage fixe enfin c'est pas le
+[83:20 -> 83:26] le délai enfin la durée de la plage fixe du matin faut remettre l'absence
+[83:26 -> 83:30] quand t'as des horaires avec que des plages fixe quand t'as un horaire avec que des plages fixe
+[83:30 -> 83:35] oui mais quand t'as un horaire avec des plages fixe et des plages variables là comme on a fait
+[83:35 -> 83:43] là ça peut aller au-delà de la plage fixe oui d'accord donc là on aurait plutôt un temps
+[83:43 -> 83:49] d'absence au jour en général quand on a un temps d'absence attendu comme ça on a une
+[83:49 -> 83:54] absence jour qui correspond tendu et généralement le matin on a un temps d'absence de la
+[83:54 -> 84:01] moitié c'est-à-dire 3h30 et 3h30 après midi et ça peut être différent en général c'est ça
+[84:01 -> 84:10] non non aussi on a l'habitude sur gira de faire timesheet sur gira donc on fait toujours les
+[84:10 -> 84:17] 8h oui avai les 7h mais toujours il faut 6h sinon la 6h élément compte si on ne
+[84:17 -> 84:26] m'y est pas 8h ça désolé mais je comprends pas cette notion là j'avoue là c'est c'est
+[84:26 -> 84:35] vraiment nouveau pour moi pourquoi 8 enfin pourquoi 4h c'est donc du coup on tient compte de la
+[84:35 -> 84:43] de la plage variable dans ce calcul là si tu si tu remontes si tu remontes un petit peu
+[84:43 -> 84:47] nos rédines sur l'écran voilà tu vois que ta première plage fixe ta première plage
+[84:47 -> 84:53] la plage du matin en gros si on prend variable plus fixe on démarre à 8h pour finir à midi
+[84:53 -> 85:03] midi ou ou plus ça dépend de la pause qu'on prend donc 8 et 4 12 au max et la deuxième plage fixe
+[85:03 -> 85:16] on a 15h 18h 19h 15h 18h voilà mais sur un temps du à 7h moi j'aurais tendance à mettre 3h30 le
+[85:16 -> 85:31] matin 3h30 l'après midi parce que en fait tu vois t'as 3h de plage fixe seulement le matin et t'as
+[85:31 -> 85:35] 3h de plage fixe seulement l'après midi donc quelque part le temps en plus que tu vas travailler
+[85:35 -> 85:42] pour accomplir ton temps t'entendu il va se prendre sur la pause ou sur les plages variables et
+[85:42 -> 85:47] surtout les plages variables parce que j'ai une page variable le matin 2h00 de matinée et
+[85:47 -> 85:56] en fin de journée oui mais sur la pause aussi parce que tu comme t'as qu'une heure de pause
+[85:56 -> 86:02] minimum et que t'as ouvert ta plage entre midi et 15h tu peux tu peux travailler sur cette plage
+[86:02 -> 86:07] là ton temps travaillé tu peux le faire sur cette plage là il n'y a pas de souci dans la
+[86:07 -> 86:19] midi limite des 60 minutes de pause que tu prends quand même que tu dois prendre donc pour être plus
+[86:19 -> 86:24] cohérent en fait il faudrait que ton temps d'absence matin et ton temps d'absence soir soit
+[86:24 -> 86:34] plutôt de l'ordre de 3h30 alors que tu as laissé 4h00 je modifie ici donc je dois
+[86:34 -> 86:36] comme modification ça doit devenir de
+[86:53 -> 86:59] Christine les valeurs en fait justement temps d'absence correspondant pour le matin et le soir
+[86:59 -> 87:05] ça doit pas quand on les additionne ça doit pas correspond à la autant d'absence de la
+[87:05 -> 87:12] jour du jour ben oui si c'est pour ça que je dis il vaudrait moi je mettrai 3h30 et 3h30
+[87:12 -> 87:20] parce que 3h30 plus 3h30 ça fait 7 heures et c'est le temps du d'accord et c'est aussi égale
+[87:20 -> 87:29] au temps du du coup oui ce soit cohérent oui oui mais c'est normal en fait le temps que tu
+[87:29 -> 87:37] dois c'est celui où t'es absent en fait enfin oui c'est ça c'est ça je peux je peux très bien avoir
+[87:37 -> 87:42] un horaire par exemple à des horaires complètement variable je peux avoir des horaires complètement
+[87:42 -> 87:51] variable avec un tendu à 7 heures peu importe comment je fais l'horaire alors peut-être un
+[87:51 -> 87:58] variable entre 9 heures et 20 heures par exemple et là dedans je dois faire je dois faire 7 heures
+[87:58 -> 88:06] de travail donc j'ai fait 30 minutes c'est bon 30 minutes additionnée 30 minutes la matinée
+[88:06 -> 88:13] et 30 minutes l'après-midi tu n'étais pas obligé tu pouvais laisser juste pour rester
+[88:13 -> 88:25] fidèle à se laisser tes exemples tu n'es pas obligé d'avoir une page fixe à 30 minutes à 3h30
+[88:25 -> 88:35] en fait c'est ça que je veux que tu comprennes mais oui non c'est juste pour rester avec d'accord
+[88:35 -> 88:52] alors c'est horaire on va aller de ça va tu au niveau des delta c'est plus clair pour toi
+[88:52 -> 89:06] ouais c'est bon c'est bien expliqué j'ai pas de nouvelles des samades d'hommes 6 je suis très
+[89:06 -> 89:18] inquiète vous allez bien je suis là oui est ce que vous suivez vous je suis là j'ai déjà
+[89:18 -> 89:24] j'ai déjà crié mon mon opère d'accord voir si vous vous voyez ça va c'est clair pour toi
+[89:24 -> 89:29] ok et abdeshamad
+[89:40 -> 89:42] on a perdu abdeshamad
+[89:42 -> 90:02] alors au niveau de ces horaires ce que je vais vous montrer c'est vous pouvez aussi
+[90:02 -> 90:11] créer un horaire on va faire vous allez faire une nouvelle création d'horaire et cette fois on va
+[90:11 -> 90:30] faire un horaire de matin une page fixe 4 heures 13 heures avec la tolérance avec pardon avec la
+[90:30 -> 90:42] tolérance j'ai pas compris est ce qu'on inclut la tolérance ou non avec la tolérance
+[90:42 -> 90:51] bon oui non ou comme vous voulez avec tolérance ou avec delta comme vous voulez on est égal enfin
+[90:51 -> 90:59] je veux juste une page fixe 4 heures 13 heures j'ai pas de pause c'est un horaire fixe de matin
+[91:01 -> 91:03] 4 heures du matin ouais
+[91:03 -> 91:19] sans utiliser la structure donc du coup on va avoir attendu à 9 heures entre 9 et 4 13
+[91:19 -> 91:36] pourquoi tu mets 4 heures je vous le dis le tendu c'est 4 heures non non le tendu c'est
+[91:36 -> 91:41] 9 heures je dois être présent entre 4 heures et 13 heures ah oui donc
+[91:49 -> 91:56] non j'ai attendu à 9 heures
+[91:56 -> 92:10] pour l'amplitude l'amplitude c'est pareil je vais avoir 9 heures d'amplitude et j'ai 9 heures de tendu
+[92:20 -> 92:26] ok donc c'est un horaire de matin ok et ensuite on va mettre des plages
+[92:26 -> 92:32] bah hors début de référence policy 0 la tolérance alors comme si vous ne voulez pas mettre de
+[92:32 -> 92:39] tolérance il faut que il faut démarrer la plage de tolérance à 4 heures voilà et la finir à 4 heures
+[92:39 -> 92:50] vous n'avez pas de plage variable donc on neutralise la plage variable en mettant 4 heures
+[92:50 -> 93:02] en fin de plage variable ok voilà donc j'ai ni plage de tolérance ni plage variable et là
+[93:02 -> 93:12] ma plage fixe je la finis à 13 heures alors derrière pour l'instant enfin tu peux mettre des
+[93:12 -> 93:21] des tas si tu veux parle pour là il n'y a pas de pause parce qu'il me génère systématiquement
+[93:21 -> 93:27] voilà donc il n'y a pas de pause donc là tu mets 13 heures la deuxième plage fixe il n'y en a pas
+[93:27 -> 93:42] non plus tu mets 13 heures tu descends tu descends parce que tu voilà alors tu vois là c'est pas bon
+[93:42 -> 93:47] voilà il faut que tu détrailles sa deuxième plage variable 13 heures la plage de tolérance
+[93:47 -> 93:56] 13 heures en fin de plage de tolérance et tu as ton heure de fin de référence 23h59 ça ça c'est
+[93:56 -> 94:05] bon tu peux ranger ton horaire dans une famille et dans une nature tu peux laisser une heure de fin
+[94:05 -> 94:17] de référence à 23h59 ok tu aurais une plage de tolérance et c'est un horaire de matin
+[94:17 -> 94:32] d'ailleurs Christy le temps d'absence tu buis 7 heures en jour en absence jour neuf heures
+[94:32 -> 94:41] pardon et comme t'as qu'une seule plage bien en unité matin en unité soir tu veux peut-être
+[94:41 -> 94:48] déduire aussi 9 heures en fait ou rien enfin ça n'aura pas de sens de faire une absence soir
+[94:48 -> 94:53] peut laisser 0 en absence soir et mettre 9 heures en absence matin parce que si je suis absent le matin
+[94:53 -> 95:04] je suis absent sur l'horaire et donc je suis absent pour 9 heures Christine ouais on garde toujours les
+[95:04 -> 95:13] mêmes notions de base pour pour faire la la séparation entre un profil ou un horaire type jour
+[95:13 -> 95:19] et un horaire type nuit c'est à dire un horaire type jour qui doit commencer de à partir de
+[95:19 -> 95:27] minuit et doit se terminer à minuit du lendemain par contre un horaire de nuit oui par contre
+[95:27 -> 95:35] un horaire nuit doit commencer à partir du midi et doit se terminer à midi du lendemain c'est ça
+[95:35 -> 95:43] c'est ça oui d'accord il n'y a pas de changement là dessus donc si tu mets pas de delta peu importe
+[95:43 -> 95:50] voilà tu peux enregistrer ton horaire là et c'est fait non t'as encore le bouton actif là
+[95:51 -> 96:01] oui dernière temps d'absence d'accord voilà alors vous voyez que quand on crée un horaire
+[96:01 -> 96:07] matin comme ça qui est très simple quoi je fais un 4 heures 13 heures 9 heures de tendu
+[96:07 -> 96:14] basta j'ai dû renseigner quand même tous les champs qui ne m'intéressaient pas la plage de la
+[96:14 -> 96:18] fin de plage de pause la fin de la deuxième plage fixe la deuxième plage variable c'était
+[96:18 -> 96:25] c'est un peu pénible c'est pour ça que on a introduit la notion de structure d'horaires
+[96:25 -> 96:32] et maintenant ce même horaire tu vas le créer en utilisant une structure tu refais une création
+[96:32 -> 96:41] on va prendre un autre horaire on va on va créer un 5 12 par exemple
+[96:41 -> 96:52] et là cette fois tu vas choisir un horaire et tu vas dire tiens je veux tu vas choisir dans
+[96:52 -> 97:00] les structures horaires qu'on propose tu veux un matin fixe sans tolérance sans rien voilà là
+[97:00 -> 97:08] tu renseigne pas l'étendu tu ne fais rien tu fais rien il va juste tu vois ça t'a réduit les
+[97:08 -> 97:14] plages que tu dois saisir tu le tu bouges pas l'horaire de référence début et fin et tu mets juste
+[97:14 -> 97:28] ta plage fixe 4 heures 13 heures 5 heures midi par temps et là si tu en gestes
+[97:28 -> 97:55] voilà ça t'a informé tout seul l'étendu l'amplitude et le maximum jour ça t'a laissé à 10 heures
+[97:55 -> 97:59] parce que c'est la valeur par défaut mais toute façon sur un horaire en plage fixe tu peux laisser
+[97:59 -> 98:09] comme ça c'est pas gênant ouais ça permet de gagner du temps voilà donc c'est à ça que
+[98:09 -> 98:15] faire les structures la structure c'est juste pour simplifier la création c'est une aide à la
+[98:15 -> 98:22] saisie pour pour faciliter la saisie des horaires peut dire que c'est un template ou un modèle
+[98:22 -> 98:31] prédéfinie au fer d'accord tu avais une question nicole tout à l'heure que je t'ai coupé
+[98:31 -> 98:41] en fait c'était sur l'écran d'avant mais parce que enfin j'ai remarqué que quand tu on mettait le
+[98:41 -> 98:51] tendu quand on le modifie en fait là on dire ça le système apparemment puis c'est automatiquement
+[98:51 -> 99:01] le jour le temps d'absence ce jour je sais pas si c'est oui oui c'est normal oui d'accord par contre
+[99:01 -> 99:06] vous voyez là en temps d'absence il n'a pas pris il y a on a laissé ça a laissé à zéro
+[99:06 -> 99:16] donc là il faut peut-être mettre un temps d'absence à 9 heures en jour et en matin pour que ce
+[99:16 -> 99:32] soit par la panneuse en 7 heures pardon et 7 heures matin voilà je ne mets rien dans la nature c'est
+[99:32 -> 99:43] bon il y aura un jour aura un matin oui c'est ça par contre il y a une chose que je comprends pas
+[99:43 -> 99:49] dans au niveau de la au-dessus de la plage fixe il y a heure de début de référence
+[99:49 -> 100:01] mais du coup ça devrait pas être 5 heures non lors des débuts de référence j'ai dit qu'on
+[100:01 -> 100:09] préfère avoir savoir ce qui se passe systématiquement sur la totalité de la journée donc un horaire
+[100:09 -> 100:16] qui doit se passer entre 5 heures et midi en plage fixe c'est un horaire pour la journée c'est
+[100:16 -> 100:22] pour ça que je donne un horaire de référence à zéro et une heure de fin de référence à 23h59
+[100:22 -> 100:36] et entre 0h et 5 heures du matin je ne veux qu'il se passe rien et entre midi et 23h59 je veux
+[100:36 -> 100:43] qu'il ne se passe rien ce sont des plages neutralisés d'accord si une personne se présente
+[100:43 -> 100:52] par exemple à 4 heures du matin qu'est ce que ça va se passer et bien on aura une anomalie elle va
+[100:52 -> 100:57] badger mais ça sortira en anomalie par le calcul et on aura une anomalie badge hors borne
+[100:57 -> 101:07] on pourra voir que la personne est la badger et la badger en dehors de l'horaire prévue
+[101:07 -> 101:14] mais le badger elle est acceptée il n'est pas interdit ah il n'est pas interdit à la badgeuse
+[101:14 -> 101:20] il badge la personne et badge mais ça sortira en anomalie de calcul donc c'est une plage
+[101:20 -> 101:29] neutralisé alors là on a dit on a fait un exemple d'horreur de matin pour un exemple d'horreur
+[101:29 -> 101:35] d'après midi on aurait le même principe on cocherait après midi pour un horaire de nuit
+[101:35 -> 101:43] pour faire un horaire de nuit alors on va faire on va on va faire la création d'un horaire de nuit
+[101:43 -> 101:54] tu veux que je cède la main à quelqu'un d'autre ? bon écoute oui à me dire si tu veux prendre la main
+[101:54 -> 102:23] non il n'est pas là en 6 ? je vais reprendre la main si vous voulez aller
+[102:23 -> 102:45] ici vous voyez mon écran et je vois
+[102:45 -> 103:03] dans quelle fichier on peut régler le paramètre concernant la durée d'expiration de la session
+[103:03 -> 103:22] c'est un fichier config dans tomcat config.ini oui il y a un paramètre time out on met le nom
+[103:22 -> 103:41] de minute d'accord alors référentiel horaire horaire si je crée un horaire cette fois je vais
+[103:41 -> 104:02] dire cco nuit ok tiens je vais prendre une structure nuit est ce que j'en ai après midi
+[104:02 -> 104:20] je n'ai pas de nuit donc là je vais dire que ce n'est pas un horaire d'après midi c'est un horaire de
+[104:20 -> 104:28] nuit et pas ce que je coche nuit vous voyez par défaut il me propose un horaire début de référence à
+[104:28 -> 104:34] 12 heures à midi et une heure de fin de référence à 11h59 alors au delà de lui fait que l'horaire
+[104:34 -> 104:40] j'ai coché nuit pour indiquer que je vais faire un horaire de nuit dans les calculs dans le moteur
+[104:40 -> 104:46] de calcul partout un horaire de nuit au bout du compte c'est un horaire qui démarre sur une
+[104:46 -> 104:56] journée et qui se termine le lendemain donc vous verrez dans les règles on teste que l'horaire
+[104:56 -> 105:03] de fin de référence est inférieur à l'heure de début de référence sur un horaire de jour c'est
+[105:03 -> 105:08] l'inverse je vais avoir une heure de fin de début de référence qui est toujours inférieur à l'heure
+[105:08 -> 105:15] de fin de référence je vais faire 0h2359 ou bien je vais faire une heure du matin 22h si je veux
+[105:15 -> 105:22] réduire la référence mais j'aurais toujours une heure de fin qui sera supérieur à l'heure de
+[105:22 -> 105:28] début de fin de référence l'heure de nuit c'est l'inverse j'aurais toujours une heure de fin qui
+[105:28 -> 105:33] sera inférieur à l'heure de début parce que c'est un horaire qui se termine le lendemain qui démarre
+[105:33 -> 105:39] sur une journée qui se termine le lendemain donc si je pars du principe bon ma référence
+[105:39 -> 105:48] démarre à midi en fait je vais avoir un horaire de nuit je commence par exemple à 21h00 pour
+[105:48 -> 105:56] finir à 6 heures du matin ben là je vais démarrer ma tolérance par exemple je vais dire que je commence
+[105:56 -> 106:03] je me mets qui commence à badger à 20h45 mais sans pour autant valider le temps entre 20h00 pardon
+[106:03 -> 106:12] 45 et 21h00 j'ai pas de plage variable donc je neutralise ma plage variable j'ai une plage
+[106:12 -> 106:19] fixe une première plage fixe qui va aller alors je vais faire mon horaire en deux plages fixe
+[106:19 -> 106:29] quand même je vais faire un 21h00 une heure du matin je vais avoir une plage de pause entre
+[106:29 -> 106:36] 1h00 et 1h30 et puis je vais finir mon horaire à 16h00 du matin
+[106:36 -> 106:44] je vais accepter je n'ai pas de plage variable en fin d'horaire
+[106:44 -> 106:50] j'admets une tolérance de 30 minutes en fin de poste
+[106:50 -> 107:01] voilà je ne vais pas mettre de delta si je vais mettre un delta non je ne vais pas mettre de
+[107:01 -> 107:11] delta je vais laisser en heure comme ça ici je vais mettre ça en horaire de nuit sur une famille
+[107:11 -> 107:20] générale quand je suis absent dans le journée alors qu'est ce que j'ai comme tendu là 21h00
+[107:20 -> 107:24] ah oui ma pause je veux qu'il prenne ces 30 minutes de pause
+[107:24 -> 107:41] et du coup ça me fait 21h34 4 et 4 et 4 8h30
+[107:41 -> 107:56] j'ai une amplitude 21h00 6h00 ça fait 3 ça fait 9h00 et à max ce jour je peux le laisser à 10h00
+[107:56 -> 108:05] ça me c'est pas grave ok donc quand je suis absent sur le 1er partie d'horaire je suis absent
+[108:05 -> 108:12] pour 4 heures si je suis absent en deuxième partie d'horaire sur la 2ème plage fixe je
+[108:12 -> 108:26] considère que je suis absent pour 4h30 voilà ça c'est en horaire de nuit
+[108:26 -> 108:45] ok alors sur cette création d'horaire journalier de découpage journalier on a fait le tour je
+[108:45 -> 108:50] veux quand même vous montrer vous voyez que quand on est dans les référentiels là on a un petit
+[108:50 -> 108:59] levier là à gauche de la barre de titre qui nous permet d'ouvrir d'autres volets alors là on est
+[108:59 -> 109:06] dans le volet des caractéristiques principales mais on a un volet autre caractéristique alors dans
+[109:06 -> 109:12] les autres caractéristiques des horaires journaliers on a des notions d'amplitude détaillées et de
+[109:12 -> 109:17] vacations alors ça je vous l'explique pas c'est historique au produit on les utilise pas
+[109:17 -> 109:23] moi je les ai jamais utilisés à la limite vous pouvez même les utiliser comme des champs
+[109:23 -> 109:29] libres si vous voulez mettre des choses à niveau projet ok mais bon je vais pas plus loin là dessus
+[109:29 -> 109:37] par contre ici vous avez les autres caractéristiques et ces autres caractéristiques hier on a vu
+[109:37 -> 109:42] qu'on pouvait paramétrer des champs complémentaires que ce soit pour le personnel sur les fiches
+[109:42 -> 109:47] personnelles l'information complémentaire historisée ou nonisonisée on a vu les champs
+[109:47 -> 109:52] complémentaires sur les contrats et ben on peut mettre des informations complémentaires pour préciser
+[109:52 -> 110:00] la définition des horaires journaliers alors ça ça se fait pour rappel dans le référentiel des
+[110:00 -> 110:09] paramètres la définition des caractéristiques paramétrables et là j'ai des groupes de
+[110:09 -> 110:23] caractéristiques horaires horaires journaliers j'ai à disposition une quinzaine de champs alpha
+[110:23 -> 110:30] et une quinzaine de champs numériques voilà et sur ces champs alpha et numériques ici on a
+[110:30 -> 110:36] caractérisé un champ ticket restaurant un champ prime panier et un champ tendestière c'est
+[110:36 -> 110:43] pour ça qu'on les retrouve ici en saisis possible pour préciser la définition de l'horaire
+[110:54 -> 110:57] bon est ce que vous avez des questions sur ces horaires journaliers
+[110:57 -> 111:05] pour l'instant bon on va les mettre en œuvre c'est à dire qu'on va les appliquer on va voir on va
+[111:05 -> 111:12] voir ce qui se passe pour le paramétrage des repos est ce qu'on est oblige de paramétrer des
+[111:12 -> 111:20] repos type jour et des d'autres repos type nuit pour éviter par exemple le chevauchement oui oui
+[111:20 -> 111:31] c'est mieux oui l'horaire de repos un horaire de repos c'est il écoche les repos et puis on
+[111:31 -> 111:36] a neutralisé ça c'est un horaire un horaire de repos journalier un jour et on a neutralisé toutes
+[111:36 -> 111:44] les pas toutes les plages entre 0 heure et 23 heures 59 et là on dit bien que sur toute la journée entre
+[111:44 -> 111:53] 0 heure et minuit je je veux rien si j'ai un badgeage qui intervient sur un horaire de repos j'aurais
+[111:53 -> 112:03] un badgeage non prévu en anomalie blocante et en temps d'absence j'ai 0
+[112:03 -> 112:08] c'est par contre sur un repos nuit
+[112:08 -> 112:17] voilà j'ai une heure début de référence à 12 heures 59 qu'est ce que c'est ça
+[112:17 -> 112:23] comment il a pu accepter ça
+[112:23 -> 112:33] ah oui d'accord ok
+[112:33 -> 112:45] 59 on démarre à 13 heures on termine à midi oui on aurait pu démarrer à 11 heures 59
+[112:45 -> 112:52] je comprends pas comment il est fait celui-là début de référence 12 59
+[112:52 -> 113:05] 59 12 heures donc sur cette horaire en fait je ne sais pas ce qui se passe
+[113:05 -> 113:18] pourquoi c'est pas coché que nuit pourquoi matin après midi
+[113:18 -> 113:25] ça c'est bien d'ailleurs là
+[113:25 -> 113:36] mais par contre ce que je comprends pas c'est pourquoi je démarre à 12 heures 59
+[113:36 -> 113:43] je finis à 11 heures 59 alors c'est juste mais je ne sais pas ce qui se passe entre midi et une heure en
+[113:43 -> 113:53] fait là vous voyez c'est un c'est décalé il est décalé mais c'est pas grave ça peut très bien
+[113:53 -> 113:59] fonctionner quand même mais voyez que c'est un heure début de référence il est à 12 heures 59
+[113:59 -> 114:13] je veux voir cette horaire là équipe de nuit d'accord ça c'est structure après midi fixe
+[114:14 -> 114:23] c'est un horaire de nuit heure début de référence 12 heures 20 heures alors c'est un environnement
+[114:23 -> 114:29] qui a servi à faire d'autres formations et c'est pour ça qu'on a des choses qui sont bon voilà
+[114:29 -> 114:41] équipe de nuit avec une structure après midi fixe oui oui ça peut fonctionner si j'enlève
+[114:41 -> 114:57] la structure là si c'est un 20 heures 6 heures oui si j'enlève la structure je vois la
+[114:57 -> 115:02] totalité des champs et je vois que c'est un horaire qui démarre à midi pour finir 11 heures 59 et que
+[115:02 -> 115:11] la plage fixe elle est c'est la deuxième plage fixe qui est informée là entre 20 heures et 6
+[115:11 -> 115:14] heures mais ça fonctionne aussi
+[115:14 -> 115:25] Christine est-ce qu'on a possibilité de rajouter d'autres plages fixe non
+[115:25 -> 115:33] non le schéma le schéma de le découpage des plages là quand j'enlève la structure et
+[115:33 -> 115:37] cette c'est plage là ça se découpage il est il est fixe
+[115:37 -> 115:46] non parce que ça gêne pardon ça gêne des clients
+[115:46 -> 115:55] on sait pas le faire directement par les modèles horaires
+[115:55 -> 116:06] ok et du coup on passe par quoi alors alors il y a des clients qui font en suisse par exemple
+[116:06 -> 116:11] ils sont passés par la gestion des activités en fait ils ont fait des modèles horaires qui
+[116:11 -> 116:16] signifie pas grand chose en fait parce que c'est pas c'est pas les horaires qui leur disent
+[116:16 -> 116:23] vraiment les plages sur lesquels ils sont attendus mais ils ont positionné des activités avec des
+[116:23 -> 116:31] heures débuts hors de fin et ce sont les activités qui ils ont fait des règles derrière qui vérifie
+[116:31 -> 116:38] que les batchages arrivent bien sur les plages prévues par les activités ou bien on ouvre
+[116:38 -> 116:43] complètement l'horaire et puis alors après on fait des règles de calcul pour vérifier avec des
+[116:43 -> 116:47] informations complémentaires on écrit les plages supplémentaires c'est compliqué
+[116:47 -> 116:51] d'accord il y a des choses à faire
+[116:51 -> 117:01] et ça c'est parce que le loutier à la base il est prévu pour travailler avec deux plages
+[117:01 -> 117:08] et historique historiquement le produit il est conçu comme ça et on ne s'a pas évolué on n'a pas
+[117:08 -> 117:16] fait évoluer ça et par rapport à gestor par exemple à gestor gestor peut gérer plusieurs plages
+[117:16 -> 117:24] fixe trois je sais pas s'il vous en gérer plus d'ailleurs le trois mais je sais que normalement
+[117:24 -> 117:31] ils peuvent en gérer au moins et gestor c'est quoi c'est un autre produit
+[117:31 -> 117:42] historique aussi de gfi mais qui a été développé à chauré alors qu'il lui le gère
+[117:42 -> 117:50] ouais mais en fait quand on est passé des produits historiques gestor chrono gestor
+[117:50 -> 117:56] gestor de chauré et chrono gestor d'hortes qui a été développé hortes quand on a
+[117:56 -> 118:01] quand on est passé sur chrono time vu les délais imparti pour sortir les nouvelles versions
+[118:01 -> 118:09] chrono time etc on s'est appuyé sur le moteur de chrono gestor donc conçu à partir de ces
+[118:09 -> 118:14] deux plages fixe etc on s'est appuyé sur le moteur de chrono gestor qui était qui était
+[118:14 -> 118:22] plus solide en fait et plus éprouvé que le moteur de gestor en fait le moteur de
+[118:22 -> 118:27] chrono gestor fait beaucoup plus de choses en automatique je connais pas gestor
+[118:27 -> 118:35] ce que j'ai entendu c'est que il y a beaucoup plus de choses à écrire quand on fait un projet de
+[118:35 -> 118:39] règles de calcul à écrire quand on fait un projet avec gestor qu'avec chrono gestor
+[118:40 -> 118:46] donc la base du produit chrono time s'est appuyé sur le moteur de chrono gestor c'est pour ça
+[118:46 -> 118:52] qu'on retrouve les mêmes les travers historiques quoi les manques historiques et ça n'a pas évolué
+[118:52 -> 119:01] après c'est pas fréquent qu'on se retrouve des clients qui ont besoin de plusieurs plages fixe
+[119:01 -> 119:07] de plus de deux plages fixe c'est bon dans la dans la reste je pense je pense notamment à la
+[119:07 -> 119:13] restauration rapide où tu as la possibilité par exemple de te rentrer le matin très tôt
+[119:13 -> 119:20] revenir après enfin tu fais deux trois heures pour la livraison par exemple tu reviens le
+[119:20 -> 119:29] midi pour faire le rush et tu tu peux revenir éventuellement le pour le rush du soir et
+[119:29 -> 119:36] potentiellement même enfin voilà c'est très fragmenté mais je suis enfin j'ai connu ça
+[119:36 -> 119:42] personnellement quand je travaillais en restauration rapide et du coup je enfin voilà je me posais la
+[119:42 -> 119:52] question ouais mais notre cible de clients nous c'est c'est des gros gros clients et on n'a peu
+[119:52 -> 119:57] quand même ce genre de demande ça peut arriver hein mais quand il y a ce genre de
+[119:57 -> 119:59] demande ben on oblige de faire quelque chose de très particulier
+[119:59 -> 120:09] ok pense que je vous propose c'est que on va on va déjeuner on va faire la pause déjeuner
+[120:09 -> 120:19] et on se retrouve à à 14h15 et on va mettre à ses horaires à ses horaires on va en faire des
+[120:19 -> 120:28] programmes on va en faire des programmes et puis où on les utilisera en exploitation directement
+[120:28 -> 120:34] pour voir l'impact que ça a justement sur les contrôles et les valorisations de compteur
+[120:34 -> 120:46] ok bon appétit on va tout à l'heure bon appétit à tout à l'heure salut

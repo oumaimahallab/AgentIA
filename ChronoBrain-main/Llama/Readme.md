@@ -1,0 +1,5 @@
+``` Llama-3.2-3B-Instruct-Q4_K_M.gguf 
+pip install huggingface-hub
+
+
+```

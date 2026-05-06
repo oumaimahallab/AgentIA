@@ -1,0 +1,22 @@
+ChronoBrain Cleaning Report
+==========================================
+Live — updated after every batch
+
+ID           STATUS       METHOD   CATEGORY     NOTES
+--------------------------------------------------------------------------------
+2e4fb84ea2   KEEP         llm                   JSON parse failed
+83c683f27e   KEEP         llm                   JSON parse failed
+8fe54ee4cf   KEEP         llm                   JSON parse failed
+ccb5845ba7   KEEP         llm                   JSON parse failed
+bfc53fee67   KEEP         llm                   JSON parse failed
+25eeaf1705   KEEP         llm                   JSON parse failed
+921fb2246e   KEEP         llm                   JSON parse failed
+1c47565cde   KEEP         llm                   JSON parse failed
+460e83f5b2   KEEP         llm                   JSON parse failed
+2face92a10   KEEP         llm                   JSON parse failed
+6d724cf87d   KEEP         llm                   JSON parse failed
+24ae33c4f0   KEEP         llm                   JSON parse failed
+a711e3045f   KEEP         llm                   JSON parse failed
+
+==========================================
+Total:13 Kept:13 Noise:0 Dupes:0 QA:0 LLM_calls:4 LLM_time:2584s

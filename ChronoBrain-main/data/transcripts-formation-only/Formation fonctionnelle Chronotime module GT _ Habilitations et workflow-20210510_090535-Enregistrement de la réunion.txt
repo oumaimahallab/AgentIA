@@ -1,0 +1,144 @@
+[00:00 -> 00:06] J'ai un client qui a demandé qu'il y ait un calcul particulier pour un second compteur
+[00:06 -> 00:08] mais relatif à un niveau hiarchique.
+[00:08 -> 00:15] Les personnes qui sont rattachées à un niveau, je peux même citer donc le numéro
+[00:15 -> 00:20] de site, le site qui est placé sur le niveau 1, donc quel que soit la personne qui est
+[00:20 -> 00:25] rattachée à ce site, le niveau 1 et quel que soit bien sûr donc les autres niveaux
+[00:25 -> 00:29] là où il est rattaché, je dois faire un calcul particulier.
+[00:29 -> 00:34] Aujourd'hui, donc je n'ai pas trop vu cette information, ni sur l'interprèteur, ni sur
+[00:34 -> 00:43] la documentation qui relative au calcul, ni aussi sur l'HM de l'application, donc
+[00:43 -> 00:47] on ne peut pas distinguer des règles du calcul par rapport à un niveau hiarchique.
+[00:47 -> 00:51] Je ne peux pas dire aujourd'hui, j'ai tel hôtel de règles du calcul qui va juste
+[00:51 -> 00:57] calculer par rapport à un niveau par exemple site égal à site particulier et ça c'est
+[00:57 -> 00:58] embêtant aussi.
+[00:58 -> 01:09] Bah ça en fait tu peux le faire que si tu fais que au moment du calcul, tu fais une
+[01:09 -> 01:16] requête pour savoir à quel rattachement appartient la personne et tu peux checker le niveau
+[01:16 -> 01:17] mais il faut le faire par des sélectes.
+[01:18 -> 01:24] Les sélectes on n'a jamais vraiment utilisé avec la règle du calcul.
+[01:24 -> 01:30] Voilà, c'est ça qu'il faut faire, c'est faire un ficelle sur la table, sur le rattachement
+[01:30 -> 01:33] du collab pour voir quel est le niveau du rattachement du collab.
+[01:33 -> 01:43] Avec les sélectes on va lire la base de données comme on veut mais par contre il faut
+[01:43 -> 01:46] faire attention aux temps de réponse parce que dès qu'on fait les requêtes dans les
+[01:46 -> 01:53] calculs ça peut plomber un petit peu les temps de réponse mais voilà on peut le faire
+[01:53 -> 01:54] que comme ça.
+[01:54 -> 02:02] Si vous ne les avez pas utilisé effectivement il faut peut-être utiliser ça.
+[02:02 -> 02:14] Si tu as un exemple, tu m'écris l'exemple précis si tu veux et tu dis que je peux
+[02:14 -> 02:19] transférer à quelqu'un qui donne la meilleure solution pour arriver à ça parce que là
+[02:19 -> 02:26] tu me dis c'est parce que les personnes sont rattachées à un niveau par exemple au premier
+[02:26 -> 02:34] niveau d'une structure ou s'ils sont rattachés à un élément, s'ils sont sur tel site c'est
+[02:34 -> 02:38] pas tout à fait pareil, c'est pas la même info.
+[02:38 -> 02:50] Si on doit chercher l'élément de rattachement ou le niveau de l'élément à lequel il est
+[02:50 -> 02:51] rattaché.
+[02:51 -> 03:00] Exactement parce que le but c'est qu'aujourd'hui j'ai un client qui en multi-site il y a
+[03:00 -> 03:06] plusieurs sociétés après il y a 30 sociétés d'accord et chaque société ils ont des calculs
+[03:06 -> 03:07] particuliers.
+[03:08 -> 03:13] Peu importe leur département, leur service etc les autres niveaux mais ce qui est important
+[03:13 -> 03:20] pour moi c'est de pouvoir dire que t'es le tel personne, il est quel que soit son niveau
+[03:20 -> 03:26] hiérgique il est quand même rattaché au site qui est placé sur le niveau 1.
+[03:26 -> 03:32] Aujourd'hui avec le calcul c'est un peu embêtant, c'est pas comme on le fait, comme on peut
+[03:32 -> 03:33] dire.
+[03:33 -> 03:42] Bon, typiquement tu vois c'est une question qu'il faut poser, je sais pas comment sont
+[03:42 -> 03:52] gérées le support qui vous est attribué par Inetone France là au niveau du support
+[03:52 -> 03:53] vous êtes géré par Mireille normalement.
+[03:54 -> 04:05] Je sais pas, mais bon, tu peux me poser ce genre de question et moi plus la question
+[04:05 -> 04:08] est précise, je peux vous faire une réponse très précise.
+[04:08 -> 04:20] Ce qu'on demande à part ce qu'il faut avoir des racides, ce qu'on demande c'est
+[04:20 -> 04:27] pas une autre formation, une autre initiation côté règles de calcul mais juste un accompagnement
+[04:27 -> 04:40] pour nous, est-ce qu'ils peuvent nous affecter quelques ressources pour nous accompagner côté
+[04:40 -> 04:41] règles de calcul ?
+[04:41 -> 04:50] Oui, oui, je comprends mais bien sûr je comprends, c'est ça vous avez besoin de l'expertise
+[04:50 -> 04:55] quand vous avez des questions très particulières, très précises pour répondre à un besoin
+[04:55 -> 04:57] et que vous ne savez pas forcément gérer.
+[04:57 -> 05:09] Je transmets, je vais et je reviens à ma formation aux activités ralide, tu as parlé la semaine
+[05:09 -> 05:18] dernière, cette formation aux activités, il va falloir faire la demande à Eric
+[05:18 -> 05:23] Hansard, qui sait qui l'a fait, c'est votre manager, c'est qui ces racides, parce
+[05:23 -> 05:29] que cette formation aux activités, ça va être pour nous Redine et peut-être pour d'autres
+[05:29 -> 05:30] personnes chez vous.
+[05:30 -> 05:33] Oui, tout à fait, oui.
+[05:33 -> 05:41] Donc peut-être que c'est comment il s'appelle votre manager, celui qui a demandé la
+[05:41 -> 05:43] formation, j'ai oublié son nom.
+[05:43 -> 05:55] C'est peut-être lui qui doit demander une formation aux activités.
+[05:55 -> 06:04] D'accord, donc on va transmettre le message, donc Hansard doit faire une demande à Eric
+[06:04 -> 06:05] Hansard.
+[06:05 -> 06:12] Oui, c'est ça, c'est mon chef et donc c'est lui qui met un problème qui se parle et
+[06:12 -> 06:17] on la met en place, toi, ce qui t'arrange à ralide, c'est le plus rapidement possible.
+[06:17 -> 06:19] En juin, ça tirait.
+[06:19 -> 06:20] Oui, oui.
+[06:20 -> 06:21] Ok.
+[06:21 -> 06:27] Pour nous Redine aussi, c'est plutôt possible, donc on essaiera de la caler en juin.
+[06:27 -> 06:29] C'est vraiment intéressant pour nous.
+[06:29 -> 06:30] Ok.
+[06:30 -> 06:31] Ok.
+[06:31 -> 06:32] Merci.
+[06:32 -> 06:36] Bonjour Christine, bonjour tout le monde.
+[06:36 -> 06:37] Bonjour Norédi.
+[06:38 -> 06:44] La demande pour cette formation-là a déjà été actée de mon côté, donc j'attends que
+[06:44 -> 06:46] ça soit planifié le plus tôt possible.
+[06:46 -> 06:47] D'accord.
+[06:47 -> 06:50] Elle a été actée par qui ?
+[06:50 -> 06:54] Par Sylvie Théroine, donc c'est déjà passé.
+[06:54 -> 06:55] D'accord.
+[06:55 -> 06:56] Ok.
+[06:56 -> 06:57] Ok.
+[06:57 -> 06:58] Ça marche.
+[06:58 -> 06:59] Ok.
+[07:00 -> 07:01] Ok.
+[07:01 -> 07:06] Il y aura combien de personnes pour les consultants marocains ?
+[07:06 -> 07:11] Bon, il resta de Samad, je l'ai appelé, donc il va se connecter très rapidement.
+[07:11 -> 07:13] Donc, on peut démarrer Christine, je pense.
+[07:13 -> 07:17] Non, non, mais il y aura combien de personnes pour la formation aux activités ?
+[07:17 -> 07:19] Cinq à six personnes.
+[07:19 -> 07:20] Cinq à six.
+[07:20 -> 07:21] Cinq à six ?
+[07:21 -> 07:22] Oui.
+[07:22 -> 07:23] Ok.
+[07:24 -> 07:25] Ok.
+[07:27 -> 07:29] Ça marche.
+[07:31 -> 07:34] Bon ben, on va démarrer.
+[07:34 -> 07:39] Ici, je vais partager mon écran.
+[07:41 -> 07:45] Alors, est-ce que vous avez le temps de regarder les supports ?
+[07:49 -> 07:50] Oui.
+[07:51 -> 07:54] Je vais même faire mieux.
+[07:54 -> 07:56] Je vais traiter un ticket.
+[07:56 -> 07:57] Bon.
+[07:57 -> 08:01] Et tu t'en as sorti ? Rien qu'avec le support pour traiter le ticket ?
+[08:01 -> 08:07] Ben, en fait, on a vérifié, c'était par rapport à l'édition des...
+[08:07 -> 08:10] Enfin non, c'était par rapport au paramètre d'hiver.
+[08:10 -> 08:12] Et c'est...
+[08:12 -> 08:17] En fait, il y avait plusieurs étacles que le client voulait éditer.
+[08:17 -> 08:21] Enfin, non, il y a un état en particulier qui voulait éditer.
+[08:21 -> 08:25] Et dans cette liste-là, il y en avait certains qui avaient le bouton export de disponibles.
+[08:25 -> 08:29] Et pour celui-là en particulier, que je ne me souviens plus,
+[08:29 -> 08:31] en fait, c'est une évolution.
+[08:31 -> 08:36] Donc c'est parti au service d'évolution, enfin.
+[08:37 -> 08:38] D'accord.
+[08:38 -> 08:40] C'est rien à voir avec le workflow aussi ?
+[08:40 -> 08:45] Ben, en fait, j'ai deux autres tickets pour le workflow à traiter là.
+[08:45 -> 08:46] D'accord.
+[08:48 -> 08:49] Bon.
+[08:51 -> 08:53] Alors, je vois que Abdellaboy et Adela.
+[08:53 -> 08:55] Bonjour.
+[08:56 -> 08:57] Bonjour.
+[08:58 -> 08:59] Ouais, merci.
+[08:59 -> 09:00] Ousam, pardon.
+[09:01 -> 09:02] Et puis...
+[09:04 -> 09:06] Et puis Jérôniq.
+[09:06 -> 09:07] Bonjour.
+[09:08 -> 09:11] Il nous manque... Il nous manque...
+[09:12 -> 09:13] Ah, peut-être ça m'aide.
+[09:14 -> 09:15] Ouais, c'est tout.
+[09:16 -> 09:17] Ok.
+[09:18 -> 09:23] Donc, à part Nicole, est-ce que vous avez le temps de prendre connaissance du support ?
+[09:26 -> 09:29] Moi, j'ai plus relué mes notes que pris connaissance du support,
+[09:29 -> 09:31] mais bon, j'en ai moins l'utilité.
+[09:31 -> 09:32] On va dire que...
+[09:32 -> 09:33] D'accord.
+[09:33 -> 09:34] ... de personne, quoi.
+[09:34 -> 09:35] Voilà.
+[09:39 -> 09:41] Bon, alors, ce qu'on va faire...
+[09:46 -> 09:49] Non, j'ai pas démarré par le workflow, quand même.
+[09:59 -> 10:01] L'habitation.
+[10:03 -> 10:04] Voilà.
+[10:04 -> 10:06] Donc, le support habitation.
+[10:06 -> 10:07] Oui.
+[10:08 -> 10:10] Je vais grandir pour...
+[10:11 -> 10:13] pour que vous y voyez un peu clair.
