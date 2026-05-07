@@ -209,26 +209,39 @@ RESPONSE:"""
         }
 
 
-# Test simple
 if __name__ == "__main__":
+    import os
     logging.basicConfig(level=logging.INFO)
     
-    print("Initializing Unified Agent...")
-    agent = UnifiedAgent()
-    
-    print("\n📊 System Status:")
-    status = agent.get_system_status()
-    print(f"  LLM: {status['llm']}")
-    print(f"  Indices: FAISS={status['indices']['faiss']['total_vectors']}, "
-          f"BM25={status['indices']['bm25']['total_documents']}")
-    
-    # Try answering a question
-    print("\n❓ Test question...")
-    question = "Qu'est-ce qu'une habilitation?"
+    print("\n" + "="*50)
+    print("🤖 UNIFIED AGENT - MODE CONSOLE")
+    print("="*50)
     
     try:
-        result = agent.answer(question)
-        print(f"\n✓ Answer ({result['llm_source']}):")
-        print(result['answer'][:300])
+        agent = UnifiedAgent()
+        print("\n✅ Système prêt ! (Tapez 'exit' pour quitter)")
+        
+        while True:
+            question = input("\n❓ Votre question : ")
+            if question.lower() in ['exit', 'quit', 'q']:
+                break
+            
+            if not question.strip():
+                continue
+                
+            print("\n🔄 L'agent réfléchit...")
+            result = agent.answer(question)
+            
+            print(f"\n✨ RÉPONSE ({result['llm_source']}):")
+            print("-" * 30)
+            print(result['answer'])
+            print("-" * 30)
+            
+            if result.get("sources"):
+                print("\n📚 SOURCES :")
+                for s in result["sources"][:3]:
+                    fname = os.path.basename(s.get('source_files', ['Inconnu'])[0])
+                    print(f"  - {fname}")
+                    
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"❌ Erreur critique : {e}")
