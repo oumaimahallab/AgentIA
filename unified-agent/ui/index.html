@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chronotime AI - Unified Agent</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="dark-mode">
-    <div class="app-container">
+    <!-- Login Overlay -->
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-card">
+            <div class="logo-container" style="margin-bottom: 30px; text-align: center;">
+                <div class="logo-main" style="justify-content: center;">
+                    <span class="logo-text">inetum</span>
+                    <div class="logo-symbol"></div>
+                </div>
+                <div class="logo-subtext">ChronoBrain</div>
+            </div>
+            <h2>Plateforme d'Agent Conversationnel</h2>
+            <p>Veuillez vous identifier pour accéder à l'agent.</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Email professionnel" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+                </div>
+                <button type="submit" class="login-btn">Se connecter</button>
+                <div class="login-footer">
+                    <span><i class="fas fa-shield-halved"></i> Connexion sécurisée SSO</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="app-container" id="appMain" style="display: none;">
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <button class="new-chat-btn">
-                    <i class="fas fa-plus"></i> Nouveau Chat
-                </button>
+            <div class="logo-container">
+                <div class="logo-main">
+                    <span class="logo-text">inetum</span>
+                    <div class="logo-symbol"></div>
+                </div>
+                <div class="logo-subtext">ChronoBrain</div>
             </div>
-            
+
+            <button class="new-chat-btn">
+                <i class="fas fa-plus"></i> New Chat
+            </button>
+
             <div class="history-section">
-                <p class="section-title">Récent</p>
+                <p class="section-title">RECENT HISTORY</p>
                 <div class="history-list">
-                    <div class="history-item active">
-                        <i class="far fa-message"></i>
-                        <span>C'est quoi une habilitation ?</span>
-                    </div>
-                    <div class="history-item">
-                        <i class="far fa-message"></i>
-                        <span>Calcul solde congés</span>
-                    </div>
-                    <div class="history-item">
-                        <i class="far fa-message"></i>
-                        <span>Procédure validation HS</span>
-                    </div>
+                    <!-- History items injected by JS -->
                 </div>
             </div>
 
             <div class="sidebar-footer">
                 <div class="user-profile" id="userProfile">
-                    <div class="avatar">C</div>
+                    <div class="avatar" id="userAvatar">JD</div>
                     <div class="user-info">
-                        <p class="user-name">Consultant AG</p>
-                        <p class="user-status">Mode Expert</p>
+                        <p class="user-name">Julien Dupont</p>
                     </div>
-                    <i class="fas fa-ellipsis-h"></i>
-                    
+                    <i class="fas fa-cog" style="color: var(--text-dim);"></i>
+
                     <!-- Dropdown Menu -->
                     <div class="profile-menu" id="profileMenu">
-                        <div class="menu-item" id="clearHistory">
-                            <i class="fas fa-trash-can"></i> Effacer l'historique
+                        <div class="menu-item" id="viewArchives">
+                            <i class="fas fa-box-archive"></i> Voir les archives
                         </div>
-                        <div class="menu-item">
-                            <i class="fas fa-circle-question"></i> Aide & Guide
+                        <div class="menu-item" id="clearHistory">
+                            <i class="fas fa-trash"></i> Effacer l'historique
                         </div>
                         <div class="menu-divider"></div>
-                        <div class="menu-item">
+                        <div class="menu-item" id="logoutBtn">
                             <i class="fas fa-right-from-bracket"></i> Déconnexion
                         </div>
                     </div>
@@ -64,90 +91,36 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <header class="chat-header">
-                <div class="model-selector">
-                    <span class="model-badge">
-                        <i class="fas fa-bolt"></i> Unified Agent v2 (Groq)
-                    </span>
-                </div>
-                <div class="header-actions">
-                    <i class="fas fa-share-nodes"></i>
-                    <i class="fas fa-circle-info"></i>
-                </div>
-            </header>
-
             <div class="chat-messages" id="chatMessages">
-                <!-- Welcome Message -->
-                <div class="message ai-message welcome">
-                    <div class="message-content">
-                        <h1>Bonjour, comment puis-je vous aider aujourd'hui ?</h1>
-                        <p>Je suis votre assistant intelligent Chronotime. Je peux répondre à vos questions sur les paramétrages, les habilitations ou effectuer des calculs RH complexes.</p>
-                        
-                        <div class="suggestions">
-                            <div class="suggestion-card">
-                                <i class="fas fa-shield-halved"></i>
-                                <span>Explique-moi les habilitations de validation</span>
-                            </div>
-                            <div class="suggestion-card">
-                                <i class="fas fa-calculator"></i>
-                                <span>Calcule mon solde de congés restants</span>
-                            </div>
-                            <div class="suggestion-card">
-                                <i class="fas fa-book"></i>
-                                <span>Procédure pour créer un profil utilisateur</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Example Conversation -->
-                <div class="message user-message">
-                    <div class="message-content">
-                        C'est quoi une habilitation ?
-                    </div>
-                </div>
-
-                <div class="message ai-message">
-                    <div class="message-content">
-                        <p>Une <strong>habilitation</strong> dans Chronotime est un droit d'accès ou une permission accordée à un utilisateur ou à un profil pour effectuer des actions spécifiques dans le logiciel.</p>
-                        <p>Voici les points clés à retenir :</p>
-                        <ul>
-                            <li><strong>Structure</strong> : Les habilitations sont regroupées par profils.</li>
-                            <li><strong>Niveaux</strong> : Elles déterminent ce qu'un utilisateur peut voir (Lecture) ou modifier (Écriture).</li>
-                            <li><strong>Héritage</strong> : Un utilisateur peut hériter des droits de son groupe de fonctionnalités.</li>
-                        </ul>
-
-                        <div class="sources-container">
-                            <p class="sources-title"><i class="fas fa-book-open"></i> Sources consultées :</p>
-                            <div class="sources-grid">
-                                <div class="source-tag">
-                                    <i class="far fa-file-pdf"></i> Guide_Habilitations.pdf (p.12)
-                                </div>
-                                <div class="source-tag">
-                                    <i class="far fa-comments"></i> Réunion_GT_2024 (Transcription)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Messages injected by JS -->
             </div>
 
             <footer class="chat-footer">
                 <div class="input-container">
-                    <textarea id="userInput" placeholder="Posez votre question sur Chronotime..." rows="1"></textarea>
+                    <i class="fas fa-upload input-btn" id="uploadBtn" title="Upload"></i>
+                    <input type="file" id="fileInput" style="display: none;" multiple>
+                    <textarea id="userInput" placeholder="Ask Unified anything..." rows="1"></textarea>
                     <div class="input-actions">
-                        <button id="micBtn" class="mic-btn" title="Interaction vocale">
-                            <i class="fas fa-microphone"></i>
-                        </button>
+                        <i class="fas fa-microphone input-btn" id="micBtn" title="Vocal interaction"></i>
                         <button id="sendBtn" class="send-btn">
-                            <i class="fas fa-paper-plane"></i>
+                            <i class="fas fa-arrow-up"></i>
                         </button>
                     </div>
                 </div>
-                <p class="disclaimer">L'IA peut faire des erreurs. Vérifiez toujours les sources citées.</p>
+                <div class="footer-status">
+                    <div class="status-item">
+                        <div class="status-dot-sm dot-green"></div>
+                        GPT-4 TURBO ENABLED
+                    </div>
+                    <div class="status-item">
+                        <div class="status-dot-sm dot-magenta"></div>
+                        ENTERPRISE SECURITY PROTOCOL ACTIVE
+                    </div>
+                </div>
             </footer>
         </main>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

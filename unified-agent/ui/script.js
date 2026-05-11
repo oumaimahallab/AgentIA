@@ -1,130 +1,400 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const loginOverlay = document.getElementById('loginOverlay');
+    const appMain = document.getElementById('appMain');
+    const loginForm = document.getElementById('loginForm');
+    const userNameDisplay = document.querySelector('.user-name');
+
+    // --- GESTION DE SESSION ---
+    function updateUserInfo(userData) {
+        if (!userData) return;
+        userNameDisplay.textContent = userData.name;
+        const userAvatar = document.getElementById('userAvatar');
+        if (userAvatar && userData.name) {
+            const names = userData.name.split(' ');
+            const initials = names.length > 1 
+                ? (names[0][0] + names[names.length - 1][0]).toUpperCase()
+                : names[0].substring(0, 2).toUpperCase();
+            userAvatar.textContent = initials;
+        }
+    }
+
+    function checkSession() {
+        const session = localStorage.getItem('user_session');
+        if (session) {
+            const userData = JSON.parse(session);
+            updateUserInfo(userData);
+            loginOverlay.style.display = 'none';
+            appMain.style.display = 'flex';
+            initializeChat();
+        }
+    }
+
+    if (loginForm) {
+        loginForm.onsubmit = async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            const submitBtn = loginForm.querySelector('.login-btn');
+
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authentification...';
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch('http://localhost:5000/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    const userData = {
+                        email: email,
+                        name: data.name
+                    };
+
+                    localStorage.setItem('user_session', JSON.stringify(userData));
+                    
+                    // Animation de sortie
+                    loginOverlay.style.opacity = '0';
+                    loginOverlay.style.transition = 'opacity 0.5s ease';
+                    
+                    setTimeout(() => {
+                        loginOverlay.style.display = 'none';
+                        appMain.style.display = 'flex';
+                        updateUserInfo(userData);
+                        initializeChat();
+                    }, 500);
+                } else {
+                    alert(data.message || "Email ou mot de passe incorrect");
+                    submitBtn.innerHTML = 'Se connecter';
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error("Login error:", error);
+                alert("Erreur de connexion au serveur d'authentification.");
+                submitBtn.innerHTML = 'Se connecter';
+                submitBtn.disabled = false;
+            }
+        };
+    }
+
+    checkSession();
+
+    function initializeChat() {
+        loadSessions();
+    }
+
     const userInput = document.getElementById('userInput');
     const sendBtn = document.getElementById('sendBtn');
     const chatMessages = document.getElementById('chatMessages');
     const newChatBtn = document.querySelector('.new-chat-btn');
-    const historyList = document.querySelector('.history-list');
 
-    // État de l'application
-    let sessions = JSON.parse(localStorage.getItem('chat_sessions')) || [];
+    // --- GESTION DES SESSIONS (Serveur + Local) ---
+    let sessions = [];
     let currentSessionId = null;
+    let isShowingArchives = false;
 
-    // Initialisation
-    renderHistory();
-    if (sessions.length > 0) {
-        loadSession(sessions[0].id);
-    } else {
-        createNewChat();
+    async function loadSessions() {
+        const userStr = localStorage.getItem('user_session');
+        if (!userStr) return;
+        const userData = JSON.parse(userStr);
+
+        try {
+            const response = await fetch(`http://localhost:5000/api/sessions?email=${userData.email}`);
+            sessions = await response.json();
+            
+            if (sessions.length > 0) {
+                loadSession(sessions[0].id);
+            } else {
+                createNewChat();
+            }
+        } catch (error) {
+            console.error("Erreur chargement sessions:", error);
+            renderHistory();
+        }
     }
 
-    // --- GESTION DES SESSIONS ---
+    async function saveCurrentSession() {
+        if (!currentSessionId) return;
+        const session = sessions.find(s => s.id === currentSessionId);
+        if (!session) return;
 
-    function createNewChat() {
-        const id = Date.now().toString();
-        const newSession = {
-            id: id,
-            title: "Nouveau Chat",
-            messages: [],
-            archived: false,
-            timestamp: new Date().toISOString()
-        };
-        sessions.unshift(newSession);
-        currentSessionId = id;
-        saveSessions();
-        renderHistory();
-        renderMessages();
-        userInput.focus();
-    }
+        const userStr = localStorage.getItem('user_session');
+        if (!userStr) return;
+        const userData = JSON.parse(userStr);
 
-    function saveSessions() {
-        localStorage.setItem('chat_sessions', JSON.stringify(sessions));
+        try {
+            await fetch('http://localhost:5000/api/sessions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: userData.email, session: session })
+            });
+        } catch (error) {
+            console.error("Erreur sauvegarde serveur:", error);
+        }
     }
 
     function renderHistory() {
+        const historyList = document.querySelector('.history-list');
+        if (!historyList) return;
         historyList.innerHTML = '';
-        // Filtrer pour ne montrer que les conversations non archivées
-        const activeSessions = sessions.filter(s => !s.archived);
 
-        activeSessions.forEach(session => {
+        const sectionTitle = document.querySelector('.section-title');
+        if (sectionTitle) {
+            sectionTitle.textContent = isShowingArchives ? 'CONVERSATIONS ARCHIVÉES' : 'HISTORIQUE RÉCENT';
+        }
+
+        // Filtrer les sessions selon le mode (archives ou actif)
+        const filteredSessions = sessions.filter(s => isShowingArchives ? s.isArchived : !s.isArchived);
+
+        filteredSessions.forEach(session => {
             const item = document.createElement('div');
-            item.className = `history-item ${session.id === currentSessionId ? 'active' : ''}`;
-            
+            item.className = `history-item ${session.id === currentSessionId ? 'active' : ''} ${session.isPinned ? 'pinned' : ''}`;
             item.innerHTML = `
-                <i class="far fa-message"></i>
-                <span class="session-title">${session.title}</span>
-                <button class="delete-session-btn" title="Archiver">
-                    <i class="fas fa-trash-alt"></i>
-                </button>
+                <i class="far fa-comment-dots"></i>
+                <span class="history-title">${session.title}</span>
+                ${session.isPinned ? '<i class="fas fa-thumbtack pinned-indicator"></i>' : ''}
+                <div class="history-options">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="history-dropdown" id="dropdown-${session.id}">
+                    <div class="dropdown-item rename-action"><i class="fas fa-pen"></i> Renommer</div>
+                    <div class="dropdown-item pin-action"><i class="fas fa-thumbtack"></i> ${session.isPinned ? 'Désépingler' : 'Épingler le chat'}</div>
+                    <div class="dropdown-item archive-action"><i class="fas fa-box-archive"></i> ${session.isArchived ? 'Désarchiver' : 'Archiver'}</div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-item delete" data-id="${session.id}"><i class="fas fa-trash-alt"></i> Supprimer</div>
+                </div>
             `;
-
-            // Cliquer sur le texte pour charger
+            
             item.onclick = (e) => {
-                if (e.target.closest('.delete-session-btn')) return;
-                loadSession(session.id);
-            };
+                const optionsBtn = e.target.closest('.history-options');
+                const deleteBtn = e.target.closest('.delete');
+                const renameBtn = e.target.closest('.rename-action');
+                const pinBtn = e.target.closest('.pin-action');
+                const archiveBtn = e.target.closest('.archive-action');
+                
+                if (optionsBtn) {
+                    e.stopPropagation();
+                    const dropdown = item.querySelector('.history-dropdown');
+                    const isActive = dropdown.classList.contains('active');
+                    
+                    document.querySelectorAll('.history-dropdown').forEach(d => d.classList.remove('active'));
+                    
+                    if (!isActive) {
+                        const rect = optionsBtn.getBoundingClientRect();
+                        
+                        // Pré-calculer la position pour éviter le débordement vertical
+                        dropdown.style.display = 'flex';
+                        dropdown.style.visibility = 'hidden';
+                        const dropdownHeight = dropdown.offsetHeight;
+                        dropdown.style.display = '';
+                        dropdown.style.visibility = '';
 
-            // Bouton archiver
-            const deleteBtn = item.querySelector('.delete-session-btn');
-            deleteBtn.onclick = (e) => {
-                e.stopPropagation();
-                if (confirm("Archiver cette conversation ? Elle sera masquée mais restera stockée pour la traçabilité.")) {
-                    session.archived = true;
-                    saveSessions();
-                    if (currentSessionId === session.id) {
-                        currentSessionId = null;
-                        if (sessions.filter(s => !s.archived).length > 0) {
-                            loadSession(sessions.filter(s => !s.archived)[0].id);
-                        } else {
-                            createNewChat();
+                        let topPos = rect.top;
+                        if (topPos + dropdownHeight > window.innerHeight) {
+                            topPos = window.innerHeight - dropdownHeight - 20;
                         }
+                        
+                        dropdown.style.top = `${topPos}px`;
+                        dropdown.style.left = `${rect.right + 10}px`;
+                        dropdown.classList.add('active');
                     }
-                    renderHistory();
+                } else if (deleteBtn) {
+                    e.stopPropagation();
+                    deleteSession(deleteBtn.getAttribute('data-id'));
+                } else if (renameBtn) {
+                    e.stopPropagation();
+                    renameSession(session.id);
+                } else if (pinBtn) {
+                    e.stopPropagation();
+                    togglePinSession(session.id);
+                } else if (archiveBtn) {
+                    e.stopPropagation();
+                    toggleArchiveSession(session.id);
+                } else if (e.target.closest('.dropdown-item')) {
+                    e.stopPropagation();
+                    item.querySelector('.history-dropdown').classList.remove('active');
+                } else {
+                    loadSession(session.id);
                 }
             };
-
             historyList.appendChild(item);
         });
     }
 
-    function loadSession(id) {
-        currentSessionId = id;
-        renderHistory();
-        renderMessages();
+    async function renameSession(id) {
+        const session = sessions.find(s => s.id === id);
+        if (!session) return;
+        
+        // Fermer le dropdown
+        document.querySelectorAll('.history-dropdown').forEach(d => d.classList.remove('active'));
+
+        // Trouver l'élément DOM correspondant
+        const historyItems = document.querySelectorAll('.history-item');
+        let targetItem = null;
+        historyItems.forEach(item => {
+            const dropdown = item.querySelector('.history-dropdown');
+            if (dropdown && dropdown.id === `dropdown-${id}`) {
+                targetItem = item;
+            }
+        });
+
+        if (!targetItem) return;
+
+        const titleSpan = targetItem.querySelector('.history-title');
+        const currentTitle = session.title;
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.className = 'history-title-input';
+        input.value = currentTitle;
+        
+        titleSpan.replaceWith(input);
+        input.focus();
+        input.select();
+
+        const finishRename = async () => {
+            const newTitle = input.value.trim();
+            if (newTitle && newTitle !== currentTitle) {
+                session.title = newTitle;
+                await saveSessionToBackend(session);
+            }
+            renderHistory();
+        };
+
+        input.onblur = finishRename;
+        input.onkeydown = (e) => {
+            if (e.key === 'Enter') {
+                input.onblur = null;
+                finishRename();
+            } else if (e.key === 'Escape') {
+                input.onblur = null;
+                renderHistory();
+            }
+        };
     }
 
-    function renderMessages() {
-        const session = sessions.find(s => s.id === currentSessionId);
-        chatMessages.innerHTML = '';
+    async function togglePinSession(id) {
+        const session = sessions.find(s => s.id === id);
+        if (!session) return;
+        session.isPinned = !session.isPinned;
+        
+        // Trier pour mettre les épinglés en haut
+        sessions.sort((a, b) => {
+            if (a.isPinned && !b.isPinned) return -1;
+            if (!a.isPinned && b.isPinned) return 1;
+            return new Date(b.timestamp) - new Date(a.timestamp);
+        });
+        
+        renderHistory();
+        saveSessionToBackend(session);
+    }
 
-        if (session.messages.length === 0) {
-            // Afficher le message de bienvenue si vide
-            chatMessages.innerHTML = `
-                <div class="message ai-message welcome">
-                    <div class="message-content">
-                        <h1>Bonjour, comment puis-je vous aider aujourd'hui ?</h1>
-                        <p>Je suis votre assistant intelligent Chronotime. Je peux répondre à vos questions sur les paramétrages ou les habilitations.</p>
-                        <div class="suggestions">
-                            <div class="suggestion-card" data-q="Explique-moi les habilitations">
-                                <i class="fas fa-shield-halved"></i>
-                                <span>Explique-moi les habilitations</span>
-                            </div>
-                            <div class="suggestion-card" data-q="Comment créer un profil ?">
-                                <i class="fas fa-user-plus"></i>
-                                <span>Comment créer un profil ?</span>
-                            </div>
+    async function toggleArchiveSession(id) {
+        const session = sessions.find(s => s.id === id);
+        if (!session) return;
+        session.isArchived = !session.isArchived;
+        
+        if (session.isArchived && currentSessionId === id) {
+            const nextSession = sessions.find(s => !s.isArchived);
+            if (nextSession) loadSession(nextSession.id);
+            else createNewChat();
+        }
+        
+        renderHistory();
+        saveSessionToBackend(session);
+    }
+
+
+    async function saveSessionToBackend(session) {
+        const userStr = localStorage.getItem('user_session');
+        if (!userStr) return;
+        const userData = JSON.parse(userStr);
+
+        try {
+            await fetch('http://localhost:5000/api/sessions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: userData.email, session: session })
+            });
+        } catch (error) {
+            console.error("Erreur sauvegarde serveur:", error);
+        }
+    }
+
+    async function deleteSession(id) {
+        if (!confirm("Supprimer définitivement cette conversation ?")) return;
+
+        const userStr = localStorage.getItem('user_session');
+        if (!userStr) return;
+        const userData = JSON.parse(userStr);
+
+        try {
+            await fetch(`http://localhost:5000/api/sessions/${id}?email=${userData.email}`, {
+                method: 'DELETE'
+            });
+            sessions = sessions.filter(s => s.id !== id);
+            if (currentSessionId === id) {
+                if (sessions.length > 0) loadSession(sessions[0].id);
+                else createNewChat();
+            } else {
+                renderHistory();
+            }
+        } catch (error) {
+            console.error("Erreur suppression:", error);
+        }
+    }
+
+    function createNewChat() {
+        const id = 'chat_' + Date.now();
+        const newSession = {
+            id: id,
+            title: "Nouvelle conversation",
+            messages: [],
+            timestamp: new Date().toISOString()
+        };
+        sessions.unshift(newSession);
+        loadSession(id);
+        saveCurrentSession();
+    }
+
+    function loadSession(id) {
+        currentSessionId = id;
+        const session = sessions.find(s => s.id === id);
+        chatMessages.innerHTML = '';
+        
+        if (session && session.messages.length > 0) {
+            session.messages.forEach(msg => {
+                displayMessage(msg.text, msg.sender || msg.type, false);
+            });
+        } else {
+            showWelcome();
+        }
+        renderHistory();
+    }
+
+    function showWelcome() {
+        chatMessages.innerHTML = `
+            <div class="message ai-message welcome fade-in">
+                <div class="message-content">
+                    <h1>Bonjour, comment puis-je vous aider ?</h1>
+                    <p>Votre assistant intelligent Inetum est prêt. Posez vos questions sur les paramétrages ou calculs.</p>
+                    <div class="suggestions">
+                        <div class="suggestion-card" data-q="Explique-moi les habilitations">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Explique-moi les habilitations</span>
+                        </div>
+                        <div class="suggestion-card" data-q="Procédure pour créer un profil">
+                            <i class="fas fa-book"></i>
+                            <span>Procédure pour créer un profil</span>
                         </div>
                     </div>
                 </div>
-            `;
-            // Ré-attacher les clics sur suggestions
-            attachSuggestionEvents();
-            return;
-        }
-
-        session.messages.forEach(msg => {
-            displayMessage(msg.text, msg.sender, false);
-        });
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+            </div>
+        `;
+        attachSuggestionEvents();
     }
 
     // --- MESSAGERIE ---
@@ -158,13 +428,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const msgDiv = document.createElement('div');
         msgDiv.className = `message ${sender}-message ${animate ? 'fade-in' : ''}`;
         
-        const contentDiv = document.createElement('div');
-        contentDiv.className = 'message-content';
-        contentDiv.innerHTML = text; // Permettre le HTML (sources)
+        let html = '';
+        if (sender === 'ai') {
+            html += `<div class="message-icon"><i class="fas fa-robot"></i></div>`;
+        }
+
+        let actionsHtml = '';
+        if (sender === 'ai' && !text.includes('welcome')) {
+            actionsHtml = `
+                <div class="message-actions">
+                    <button class="action-btn"><i class="fas fa-copy"></i> Copy Code</button>
+                    <button class="action-btn"><i class="fas fa-sync"></i> Regenerate</button>
+                </div>
+            `;
+        }
+
+        html += `<div class="message-content">${actionsHtml}${text}</div>`;
+        msgDiv.innerHTML = html;
         
-        msgDiv.appendChild(contentDiv);
         chatMessages.appendChild(msgDiv);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        
+        chatMessages.scrollTo({
+            top: chatMessages.scrollHeight,
+            behavior: animate ? 'smooth' : 'auto'
+        });
     }
 
     // --- VOIX & MULTIMODALITÉ ---
@@ -178,31 +465,46 @@ document.addEventListener('DOMContentLoaded', () => {
         recognition = new SpeechRecognition();
         recognition.lang = 'fr-FR';
         recognition.continuous = false;
-        recognition.interimResults = false;
+        recognition.interimResults = true; // Permettre les résultats intermédiaires pour plus de réactivité
 
         recognition.onstart = () => {
             isRecording = true;
             micBtn.classList.add('recording');
+            userInput.placeholder = "Écoute en cours...";
+            userInput.value = "";
         };
 
         recognition.onresult = (event) => {
-            const transcript = event.results[0][0].transcript;
+            const transcript = Array.from(event.results)
+                .map(result => result[0])
+                .map(result => result.transcript)
+                .join('');
+            
             userInput.value = transcript;
-            micBtn.classList.remove('recording');
-            isRecording = false;
-            sendMessage(); // Envoyer automatiquement après la voix
+            
+            if (event.results[0].isFinal) {
+                recognition.stop();
+                sendMessage(); // Envoyer automatiquement
+            }
         };
 
         recognition.onerror = (event) => {
             console.error("Erreur de reconnaissance vocale:", event.error);
-            micBtn.classList.remove('recording');
-            isRecording = false;
+            stopRecording();
+            if (event.error === 'not-allowed') {
+                alert("Microphone non autorisé. Veuillez activer les permissions.");
+            }
         };
 
         recognition.onend = () => {
-            micBtn.classList.remove('recording');
-            isRecording = false;
+            stopRecording();
         };
+    }
+
+    function stopRecording() {
+        isRecording = false;
+        micBtn.classList.remove('recording');
+        userInput.placeholder = "Ask Unified anything...";
     }
 
     micBtn.onclick = () => {
@@ -213,7 +515,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isRecording) {
             recognition.stop();
         } else {
-            recognition.start();
+            try {
+                recognition.start();
+            } catch (e) {
+                console.error("Recognition start error:", e);
+                recognition.stop();
+            }
         }
     };
 
@@ -232,6 +539,29 @@ document.addEventListener('DOMContentLoaded', () => {
         if (frenchVoice) utterance.voice = frenchVoice;
 
         window.speechSynthesis.speak(utterance);
+    }
+
+    function sendMessage() {
+        const text = userInput.value.trim();
+        if (!text) return;
+
+        // Ajouter au session state
+        const session = sessions.find(s => s.id === currentSessionId);
+        if (session) {
+            session.messages.push({ text: text, sender: 'user' });
+            // Mettre à jour le titre si c'est le premier message
+            if (session.messages.length === 1) {
+                session.title = text.substring(0, 30) + (text.length > 30 ? '...' : '');
+                renderHistory();
+            }
+            saveCurrentSession();
+        }
+
+        displayMessage(text, 'user');
+        userInput.value = '';
+        userInput.style.height = 'auto';
+        
+        getAIResponse(text);
     }
 
     async function getAIResponse(query) {
@@ -277,7 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (session) {
                 session.messages.push({ text: htmlResponse, sender: 'ai' });
-                saveSessions();
+                saveCurrentSession();
             }
             
             displayMessage(htmlResponse, 'ai');
@@ -295,6 +625,69 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- UPLOAD DE FICHIERS ---
+    const uploadBtn = document.getElementById('uploadBtn');
+    const fileInput = document.getElementById('fileInput');
+
+    if (uploadBtn && fileInput) {
+        uploadBtn.onclick = () => fileInput.click();
+        
+        fileInput.onchange = async (e) => {
+            const files = e.target.files;
+            if (files.length === 0) return;
+
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            displayMessage(`<i class="fas fa-spinner fa-spin"></i> Téléchargement de ${files.length} fichier(s)...`, 'user');
+
+            try {
+                const response = await fetch('http://localhost:5000/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    displayMessage(`<i class="fas fa-check-circle" style="color: #10b981;"></i> ${data.message}`, 'ai');
+                } else {
+                    throw new Error("Erreur lors de l'upload");
+                }
+            } catch (error) {
+                console.error("Upload error:", error);
+                displayMessage(`<i class="fas fa-times-circle" style="color: #ec4899;"></i> Erreur lors de l'upload des fichiers.`, 'ai');
+            }
+            fileInput.value = ''; // Reset
+        };
+    }
+
+    // --- ACTIONS DE MESSAGE ---
+    chatMessages.addEventListener('click', (e) => {
+        const btn = e.target.closest('.action-btn');
+        if (!btn) return;
+
+        const icon = btn.querySelector('i');
+        if (icon.classList.contains('fa-copy')) {
+            // Logique de copie
+            const content = btn.closest('.message-content').innerText.replace('Copy CodeRegenerate', '').trim();
+            navigator.clipboard.writeText(content).then(() => {
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => btn.innerHTML = originalText, 2000);
+            });
+        } else if (icon.classList.contains('fa-sync')) {
+            // Logique de régénération
+            const lastUserMsg = [...document.querySelectorAll('.user-message')].pop();
+            if (lastUserMsg) {
+                const text = lastUserMsg.querySelector('.message-content').innerText;
+                userInput.value = text;
+                sendMessage();
+            }
+        }
+    });
+
     // --- EVENTS ---
 
     sendBtn.addEventListener('click', sendMessage);
@@ -305,7 +698,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    newChatBtn.addEventListener('click', createNewChat);
+    newChatBtn.addEventListener('click', () => {
+        createNewChat();
+    });
 
     function attachSuggestionEvents() {
         document.querySelectorAll('.suggestion-card').forEach(card => {
@@ -326,6 +721,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userProfile = document.getElementById('userProfile');
     const profileMenu = document.getElementById('profileMenu');
     const clearHistoryBtn = document.getElementById('clearHistory');
+    const viewArchivesBtn = document.getElementById('viewArchives');
 
     if (userProfile) {
         userProfile.onclick = (e) => {
@@ -334,14 +730,37 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    if (viewArchivesBtn) {
+        viewArchivesBtn.onclick = (e) => {
+            e.stopPropagation();
+            isShowingArchives = !isShowingArchives;
+            viewArchivesBtn.innerHTML = isShowingArchives 
+                ? '<i class="fas fa-comment-dots"></i> Voir les chats actifs' 
+                : '<i class="fas fa-box-archive"></i> Voir les archives';
+            renderHistory();
+            profileMenu.classList.remove('active');
+        };
+    }
+
     document.addEventListener('click', () => {
         if (profileMenu) profileMenu.classList.remove('active');
+        document.querySelectorAll('.history-dropdown').forEach(d => d.classList.remove('active'));
     });
 
     if (clearHistoryBtn) {
         clearHistoryBtn.onclick = () => {
             if (confirm("Voulez-vous vraiment effacer tout l'historique des conversations ?")) {
-                localStorage.removeItem('agent_sessions');
+                localStorage.removeItem('chat_sessions');
+                location.reload();
+            }
+        };
+    }
+
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.onclick = () => {
+            if (confirm("Voulez-vous vous déconnecter ?")) {
+                localStorage.removeItem('user_session');
                 location.reload();
             }
         };
