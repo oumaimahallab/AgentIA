@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chronotime AI - Unified Agent</title>
+    <title>𝐂𝐡𝐫𝐨𝐧𝐨𝐁𝐫𝐚𝐢𝐧</title>
+    <link rel="shortcut icon" href="favicon.ico?v=4">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
@@ -33,6 +34,10 @@
                 <div class="input-group">
                     <i class="fas fa-lock"></i>
                     <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Se souvenir de moi</label>
                 </div>
                 <button type="submit" class="login-btn">Se connecter</button>
                 <div class="login-footer">
@@ -120,6 +125,24 @@
             </footer>
         </main>
     </div>
+
+    <!-- Custom Modal -->
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-question-circle"></i>
+                <h3 id="modalTitle">Confirmation</h3>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage">Voulez-vous vraiment effectuer cette action ?</p>
+            </div>
+            <div class="modal-actions">
+                <button id="modalCancel" class="modal-btn cancel">Annuler</button>
+                <button id="modalConfirm" class="modal-btn confirm">Confirmer</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

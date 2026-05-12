@@ -70,41 +70,46 @@ body {
 }
 
 /* The Symbol Container */
+/* Conteneur du symbole (Proportions fidèles au logo original) */
 .logo-symbol {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 24px;
-    /* Adjusted size to match 42px text height */
-    height: 24px;
-    margin-bottom: 4px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    display: block;
 }
 
-/* Creating the shapes using pseudo-elements to keep HTML clean */
-.logo-symbol::before {
-    content: '';
-    background-color: var(--accent-teal);
-    /* The bottom-left square */
-    grid-area: 3 / 1 / 4 / 2;
-}
-
+.logo-symbol::before,
 .logo-symbol::after {
     content: '';
+    position: absolute;
     background-color: var(--accent-teal);
-    /* The "L" shape (Top bar and Right bar) */
-    /* We use a clip-path to create the L-shape out of one block */
-    grid-area: 1 / 2 / 3 / 4;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
+}
+
+/* Petit carré en bas à gauche */
+.logo-symbol::before {
+    bottom: 2px;
+    left: 2px;
+    width: 7px;
+    height: 7px;
+}
+
+/* Forme en L épaisse en haut à droite */
+.logo-symbol::after {
+    top: 2px;
+    right: 2px;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 60% 40%, 0 40%);
 }
 
 .logo-subtext {
-    font-size: 11.5px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 800;
     color: var(--accent-teal);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
     margin-top: 10px;
     text-transform: none;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .new-chat-btn {
@@ -172,7 +177,8 @@ body {
 
 .history-item.pinned {
     border-left: 3px solid var(--accent-teal);
-    padding-left: 13px; /* Adjust for border */
+    padding-left: 13px;
+    /* Adjust for border */
 }
 
 .pinned-indicator {
@@ -203,7 +209,8 @@ body {
     font-size: 14px;
     font-family: inherit;
     outline: none;
-    width: 0; /* Let flex-grow handle it */
+    width: 0;
+    /* Let flex-grow handle it */
 }
 
 .history-options {
@@ -885,6 +892,29 @@ pre {
     background: rgba(15, 23, 42, 0.8);
 }
 
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding-left: 4px;
+    font-size: 14px;
+    color: var(--text-dim);
+    text-align: left;
+}
+
+.remember-me input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: var(--accent-teal);
+}
+
+.remember-me label {
+    cursor: pointer;
+    user-select: none;
+}
+
 .login-btn {
     width: 100%;
     padding: 14px;
@@ -924,4 +954,149 @@ pre {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Custom Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #1e293b;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-header i {
+    font-size: 24px;
+    color: var(--accent-teal);
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-body {
+    margin-bottom: 30px;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.modal-btn.cancel {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+}
+
+.modal-btn.cancel:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-btn.confirm {
+    background: var(--accent-teal);
+    color: white;
+}
+
+.modal-btn.confirm:hover {
+    filter: brightness(1.1);
+}
+
+/* Sources & Tags */
+.sources-container {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.sources-title {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.sources-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.source-tag {
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    color: var(--accent-teal);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+    cursor: default;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.source-tag:hover {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: var(--accent-teal);
+}
+
+.source-tag i {
+    font-size: 10px;
+    opacity: 0.8;
 }

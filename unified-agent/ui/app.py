@@ -1,45 +1,71 @@
 import os
 import sys
 import logging
-import sqlite3
+import psycopg2
+from psycopg2 import extras
 import json
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
+from dotenv import load_dotenv
+
+# Charger les variables d'environnement (recherche dans les dossiers parents si nécessaire)
+load_dotenv()
 
 # Configurer le logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-DATABASE = 'users.db'
+def get_db_connection():
+    try:
+        conn = psycopg2.connect(
+            host=os.getenv('DB_HOST', 'localhost'),
+            port=os.getenv('DB_PORT', '5432'),
+            database=os.getenv('DB_NAME', 'postgres'),
+            user=os.getenv('DB_USER', 'postgres'),
+            password=os.getenv('DB_PASSWORD', 'root'),
+            connect_timeout=5
+        )
+        return conn
+    except Exception as e:
+        logger.error(f"Database connection error: {e}")
+        return None
 
 def init_db():
-    conn = sqlite3.connect(DATABASE)
-    c = conn.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS users 
-                 (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE, name TEXT, password TEXT)''')
+    conn = get_db_connection()
+    if not conn:
+        logger.error("❌ Impossible de se connecter à PostgreSQL pour l'initialisation. Vérifiez si le serveur est lancé.")
+        return
     
-    c.execute('''CREATE TABLE IF NOT EXISTS sessions 
-                 (session_id TEXT PRIMARY KEY, user_email TEXT, title TEXT, messages TEXT, timestamp TEXT, is_pinned INTEGER DEFAULT 0, is_archived INTEGER DEFAULT 0)''')
-    
-    # Vérifier si les colonnes existent, sinon les ajouter (pour les bases existantes)
     try:
-        c.execute("ALTER TABLE sessions ADD COLUMN is_pinned INTEGER DEFAULT 0")
-    except: pass
-    try:
-        c.execute("ALTER TABLE sessions ADD COLUMN is_archived INTEGER DEFAULT 0")
-    except: pass
-    
-    # Ajouter des utilisateurs de test par défaut
-    users = [
-        ('admin@inetum.com', 'Oumaima Hallab', 'admin123'),
-        ('demo@inetum.com', 'Imane Benzegunine', 'demo123')
-    ]
-    for email, name, pwd in users:
-        c.execute("INSERT OR REPLACE INTO users (email, name, password) VALUES (?, ?, ?)", (email, name, pwd))
-    
-    conn.commit()
-    conn.close()
+        c = conn.cursor()
+        # Create users table
+        c.execute('''CREATE TABLE IF NOT EXISTS users 
+                     (id SERIAL PRIMARY KEY, email TEXT UNIQUE, name TEXT, password TEXT)''')
+        
+        # Create sessions table
+        c.execute('''CREATE TABLE IF NOT EXISTS sessions 
+                     (session_id TEXT PRIMARY KEY, user_email TEXT, title TEXT, messages TEXT, timestamp TEXT, is_pinned INTEGER DEFAULT 0, is_archived INTEGER DEFAULT 0)''')
+        
+        # Ajouter des utilisateurs de test par défaut
+        users = [
+            ('admin@inetum.com', 'Oumaima Hallab', 'admin123'),
+            ('demo@inetum.com', 'Imane Benzegunine', 'demo123')
+        ]
+        for email, name, pwd in users:
+            c.execute("""
+                INSERT INTO users (email, name, password) 
+                VALUES (%s, %s, %s) 
+                ON CONFLICT (email) DO UPDATE SET name = EXCLUDED.name, password = EXCLUDED.password
+            """, (email, name, pwd))
+        
+        conn.commit()
+        logger.info("✅ Base de données PostgreSQL initialisée avec succès.")
+    except Exception as e:
+        logger.error(f"❌ Erreur lors de l'initialisation de la DB: {e}")
+    finally:
+        conn.close()
 
+# Initialiser la base de données au démarrage
 init_db()
 
 # Initialiser Flask
@@ -60,10 +86,13 @@ def login():
     email = data.get('email')
     password = data.get('password')
     
+    conn = get_db_connection()
+    if not conn:
+        return jsonify({"success": False, "message": "Erreur de connexion à la base de données"}), 500
+        
     try:
-        conn = sqlite3.connect(DATABASE)
         c = conn.cursor()
-        c.execute("SELECT name, email FROM users WHERE email=? AND password=?", (email, password))
+        c.execute("SELECT name, email FROM users WHERE email=%s AND password=%s", (email, password))
         user = c.fetchone()
         conn.close()
         
@@ -80,10 +109,13 @@ def get_sessions():
     email = request.args.get('email')
     if not email: return jsonify([]), 400
     
+    conn = get_db_connection()
+    if not conn:
+        return jsonify([]), 500
+        
     try:
-        conn = sqlite3.connect(DATABASE)
         c = conn.cursor()
-        c.execute("SELECT session_id, title, messages, timestamp, is_pinned, is_archived FROM sessions WHERE user_email=? ORDER BY is_pinned DESC, timestamp DESC", (email,))
+        c.execute("SELECT session_id, title, messages, timestamp, is_pinned, is_archived FROM sessions WHERE user_email=%s ORDER BY is_pinned DESC, timestamp DESC", (email,))
         rows = c.fetchall()
         conn.close()
         
@@ -92,7 +124,7 @@ def get_sessions():
             sessions.append({
                 "id": row[0],
                 "title": row[1],
-                "messages": json.loads(row[2]),
+                "messages": json.loads(row[2]) if isinstance(row[2], str) else row[2],
                 "timestamp": row[3],
                 "isPinned": bool(row[4]),
                 "isArchived": bool(row[5])
@@ -109,11 +141,31 @@ def save_session_route():
     session = data.get('session')
     if not email or not session: return jsonify({"error": "Missing data"}), 400
     
+    conn = get_db_connection()
+    if not conn:
+        return jsonify({"error": "Database connection failed"}), 500
+        
     try:
-        conn = sqlite3.connect(DATABASE)
         c = conn.cursor()
-        c.execute("INSERT OR REPLACE INTO sessions (session_id, user_email, title, messages, timestamp, is_pinned, is_archived) VALUES (?, ?, ?, ?, ?, ?, ?)",
-                  (session['id'], email, session['title'], json.dumps(session['messages']), session['timestamp'], 1 if session.get('isPinned') else 0, 1 if session.get('isArchived') else 0))
+        c.execute("""
+            INSERT INTO sessions (session_id, user_email, title, messages, timestamp, is_pinned, is_archived) 
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+            ON CONFLICT (session_id) DO UPDATE SET 
+                user_email = EXCLUDED.user_email,
+                title = EXCLUDED.title,
+                messages = EXCLUDED.messages,
+                timestamp = EXCLUDED.timestamp,
+                is_pinned = EXCLUDED.is_pinned,
+                is_archived = EXCLUDED.is_archived
+        """, (
+            session['id'], 
+            email, 
+            session['title'], 
+            json.dumps(session['messages']), 
+            session['timestamp'], 
+            1 if session.get('isPinned') else 0, 
+            1 if session.get('isArchived') else 0
+        ))
         conn.commit()
         conn.close()
         return jsonify({"success": True})
@@ -126,10 +178,13 @@ def delete_session_route(session_id):
     email = request.args.get('email')
     if not email: return jsonify({"error": "Missing email"}), 400
     
+    conn = get_db_connection()
+    if not conn:
+        return jsonify({"error": "Database connection failed"}), 500
+        
     try:
-        conn = sqlite3.connect(DATABASE)
         c = conn.cursor()
-        c.execute("DELETE FROM sessions WHERE session_id=? AND user_email=?", (session_id, email))
+        c.execute("DELETE FROM sessions WHERE session_id=%s AND user_email=%s", (session_id, email))
         conn.commit()
         conn.close()
         return jsonify({"success": True})
@@ -218,11 +273,15 @@ def ask():
             for raw_file in files:
                 if not raw_file: continue
                 filename = os.path.basename(str(raw_file))
-                if filename not in seen_files and filename not in ["Document", "unknown", "None"]:
+                
+                # Nettoyage pour détection doublons plus stricte
+                base_name = filename.split('.')[0].lower()
+                
+                if base_name not in seen_files and filename not in ["Document", "unknown", "None"]:
                     formatted_sources.append({"source": filename, "location": ""})
-                    seen_files.add(filename)
+                    seen_files.add(base_name)
             
-            if len(formatted_sources) >= 5:
+            if len(formatted_sources) >= 4: # Limiter à 4 sources max
                 break
 
         return jsonify({

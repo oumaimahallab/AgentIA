@@ -3,6 +3,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const appMain = document.getElementById('appMain');
     const loginForm = document.getElementById('loginForm');
     const userNameDisplay = document.querySelector('.user-name');
+    
+    function getUserSession() {
+        const session = localStorage.getItem('user_session') || sessionStorage.getItem('user_session');
+        return session ? JSON.parse(session) : null;
+    }
+
+    // --- CUSTOM MODAL ---
+    function showConfirm(message, title = "Confirmation") {
+        return new Promise((resolve) => {
+            const modal = document.getElementById('customModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalMessage = document.getElementById('modalMessage');
+            const modalConfirm = document.getElementById('modalConfirm');
+            const modalCancel = document.getElementById('modalCancel');
+
+            modalTitle.textContent = title;
+            modalMessage.textContent = message;
+            modal.classList.add('active');
+
+            const onConfirm = () => {
+                modal.classList.remove('active');
+                cleanup();
+                resolve(true);
+            };
+
+            const onCancel = () => {
+                modal.classList.remove('active');
+                cleanup();
+                resolve(false);
+            };
+
+            const cleanup = () => {
+                modalConfirm.removeEventListener('click', onConfirm);
+                modalCancel.removeEventListener('click', onCancel);
+            };
+
+            modalConfirm.addEventListener('click', onConfirm, { once: true });
+            modalCancel.addEventListener('click', onCancel, { once: true });
+        });
+    }
 
     // --- GESTION DE SESSION ---
     function updateUserInfo(userData) {
@@ -19,7 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkSession() {
-        const session = localStorage.getItem('user_session');
+        // Pré-remplir l'email si mémorisé
+        const savedEmail = localStorage.getItem('remembered_email');
+        const emailInput = document.getElementById('loginEmail');
+        if (savedEmail && emailInput) {
+            emailInput.value = savedEmail;
+            const rememberCheckbox = document.getElementById('rememberMe');
+            if (rememberCheckbox) rememberCheckbox.checked = true;
+        }
+
+        const session = localStorage.getItem('user_session') || sessionStorage.getItem('user_session');
         if (session) {
             const userData = JSON.parse(session);
             updateUserInfo(userData);
@@ -34,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const email = document.getElementById('loginEmail').value;
             const password = document.getElementById('loginPassword').value;
+            const rememberMe = document.getElementById('rememberMe').checked;
             const submitBtn = loginForm.querySelector('.login-btn');
 
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authentification...';
@@ -54,7 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         name: data.name
                     };
 
-                    localStorage.setItem('user_session', JSON.stringify(userData));
+                    const storage = rememberMe ? localStorage : sessionStorage;
+                    storage.setItem('user_session', JSON.stringify(userData));
+                    
+                    // Mémoriser l'email si demandé
+                    if (rememberMe) {
+                        localStorage.setItem('remembered_email', email);
+                    } else {
+                        localStorage.removeItem('remembered_email');
+                    }
                     
                     // Animation de sortie
                     loginOverlay.style.opacity = '0';
@@ -97,9 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let isShowingArchives = false;
 
     async function loadSessions() {
-        const userStr = localStorage.getItem('user_session');
-        if (!userStr) return;
-        const userData = JSON.parse(userStr);
+        const userData = getUserSession();
+        if (!userData) return;
 
         try {
             const response = await fetch(`http://localhost:5000/api/sessions?email=${userData.email}`);
@@ -121,9 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const session = sessions.find(s => s.id === currentSessionId);
         if (!session) return;
 
-        const userStr = localStorage.getItem('user_session');
-        if (!userStr) return;
-        const userData = JSON.parse(userStr);
+        const userData = getUserSession();
+        if (!userData) return;
 
         try {
             await fetch('http://localhost:5000/api/sessions', {
@@ -309,9 +365,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     async function saveSessionToBackend(session) {
-        const userStr = localStorage.getItem('user_session');
-        if (!userStr) return;
-        const userData = JSON.parse(userStr);
+        const userData = getUserSession();
+        if (!userData) return;
 
         try {
             await fetch('http://localhost:5000/api/sessions', {
@@ -325,11 +380,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function deleteSession(id) {
-        if (!confirm("Supprimer définitivement cette conversation ?")) return;
+        const confirmed = await showConfirm("Supprimer définitivement cette conversation ?", "Supprimer le chat");
+        if (!confirmed) return;
 
-        const userStr = localStorage.getItem('user_session');
-        if (!userStr) return;
-        const userData = JSON.parse(userStr);
+        const userData = getUserSession();
+        if (!userData) return;
 
         try {
             await fetch(`http://localhost:5000/api/sessions/${id}?email=${userData.email}`, {
@@ -376,15 +431,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showWelcome() {
+        const userData = getUserSession();
+        let firstName = "";
+        if (userData && userData.name) {
+            firstName = userData.name.split(' ')[0];
+        }
+
         chatMessages.innerHTML = `
             <div class="message ai-message welcome fade-in">
                 <div class="message-content">
-                    <h1>Bonjour, comment puis-je vous aider ?</h1>
-                    <p>Votre assistant intelligent Inetum est prêt. Posez vos questions sur les paramétrages ou calculs.</p>
+                    <h1>Bonjour ${firstName}, comment puis-je vous aider ?</h1>
+                    <p>Votre assistant intelligent Inetum est prêt. Posez vos questions.</p>
                     <div class="suggestions">
-                        <div class="suggestion-card" data-q="Explique-moi les habilitations">
+                        <div class="suggestion-card" data-q="C'est quoi une habilitation">
                             <i class="fas fa-shield-halved"></i>
-                            <span>Explique-moi les habilitations</span>
+                            <span>C'est quoi une habilitation</span>
                         </div>
                         <div class="suggestion-card" data-q="Procédure pour créer un profil">
                             <i class="fas fa-book"></i>
@@ -595,11 +656,26 @@ document.addEventListener('DOMContentLoaded', () => {
             let htmlResponse = rawText.replace(/\n/g, '<br>');
             
             if (data.sources && data.sources.length > 0) {
+                // Déduplication intelligente côté client
+                const uniqueSources = [];
+                const seenNames = new Set();
+                data.sources.forEach(s => {
+                    const base = s.source.split('.')[0].toLowerCase().replace(/\s\(\d+\)$/, "");
+                    if (!seenNames.has(base)) {
+                        uniqueSources.push(s);
+                        seenNames.add(base);
+                    }
+                });
+
                 htmlResponse += `
                     <div class="sources-container">
-                        <p class="sources-title"><i class="fas fa-book-open"></i> Sources :</p>
+                        <p class="sources-title">Sources</p>
                         <div class="sources-grid">
-                            ${data.sources.map(s => `<div class="source-tag" title="${s.source} (${s.location})"><i class="far fa-file-alt"></i> ${s.source}</div>`).join('')}
+                            ${uniqueSources.slice(0, 4).map(s => `
+                                <div class="source-tag" title="${s.source}">
+                                    <i class="fas fa-file-lines"></i> ${s.source}
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 `;
@@ -748,8 +824,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (clearHistoryBtn) {
-        clearHistoryBtn.onclick = () => {
-            if (confirm("Voulez-vous vraiment effacer tout l'historique des conversations ?")) {
+        clearHistoryBtn.onclick = async () => {
+            const confirmed = await showConfirm("Voulez-vous vraiment effacer tout l'historique des conversations ?", "Effacer l'historique");
+            if (confirmed) {
                 localStorage.removeItem('chat_sessions');
                 location.reload();
             }
@@ -758,9 +835,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const logoutBtn = document.getElementById('logoutBtn');
     if (logoutBtn) {
-        logoutBtn.onclick = () => {
-            if (confirm("Voulez-vous vous déconnecter ?")) {
+        logoutBtn.onclick = async () => {
+            const confirmed = await showConfirm("Voulez-vous vous déconnecter ?", "Déconnexion");
+            if (confirmed) {
                 localStorage.removeItem('user_session');
+                sessionStorage.removeItem('user_session');
                 location.reload();
             }
         };
