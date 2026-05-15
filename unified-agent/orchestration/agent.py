@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Dispatcher - Route les requêtes vers le bon pipeline
-Orchestre l'ensemble du système
-"""
-
+import sys
+import os
+import time
 import logging
 from typing import Dict, List, Optional, Any
+
+# Add project root to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 logger = logging.getLogger(__name__)
 
@@ -35,8 +34,18 @@ class UnifiedAgent:
         self._init_indices()
         self._init_retrievers()
         self._init_llm()
+        self._init_evaluators()
         
-        logger.info("✅ Unified Agent initialized")
+        logger.info("Unified Agent initialized")
+    
+    def _init_evaluators(self):
+        """Initialize evaluators and trackers"""
+        from core.evaluator import ResponseEvaluator
+        from core.performance_tracker import PerformanceTracker
+        
+        self.evaluator = ResponseEvaluator(self.config)
+        self.tracker = PerformanceTracker(self.config)
+        logger.info("Evaluators and trackers initialized")
     
     def _init_embeddings(self):
         """Initialize embeddings manager"""
@@ -46,7 +55,7 @@ class UnifiedAgent:
             model_name=self.config.embeddings.MODEL_NAME,
             device=self.config.embeddings.DEVICE,
         )
-        logger.info("✓ Embeddings initialized")
+        logger.info("Embeddings initialized")
     
     def _init_indices(self):
         """Initialize vector indices"""
@@ -59,7 +68,7 @@ class UnifiedAgent:
         self.bm25 = BM25Manager(
             self.config.paths.BM25_INDEX_DIR,
         )
-        logger.info("✓ Indices initialized")
+        logger.info("Indices initialized")
     
     def _init_retrievers(self):
         """Initialize retrieval components"""
@@ -79,7 +88,7 @@ class UnifiedAgent:
         
         self.reranker = Reranker()
         
-        logger.info("✓ Retrievers initialized")
+        logger.info("Retrievers initialized")
     
     def _init_llm(self):
         """Initialize LLM orchestrator"""
@@ -87,18 +96,19 @@ class UnifiedAgent:
         
         self.llm = LLMOrchestrator()
         
-        logger.info("✓ LLM orchestrator initialized")
+        logger.info("LLM orchestrator initialized")
     
     def answer(self, question: str) -> Dict[str, Any]:
         """
-        Répond à une question
+        Répond à une question avec évaluation et tracking
         
         Args:
             question: La question de l'utilisateur
             
         Returns:
-            Dict avec réponse + métadonnées
+            Dict avec réponse + métadonnées + scores
         """
+        start_time = time.time()
         
         # 1. DETECT INTENT
         from core.intent_detector import IntentDetector, QueryIntent
@@ -109,7 +119,7 @@ class UnifiedAgent:
         logger.info(f"Intent: {intent_result.intent.value} ({intent_result.confidence:.0%})")
         
         # 2. EMBED QUERY
-        query_embedding = self.embeddings.embed(question)
+        query_embedding = self.embeddings.embed(question, is_query=True)
         
         # 3. HYBRID RETRIEVAL
         retrieval_results = self.retriever.search(
@@ -148,26 +158,34 @@ RESPONSE:"""
         
         # 8. GENERATE RESPONSE
         llm_result = self.llm.generate(final_prompt, system_prompt)
+        answer = llm_result["text"]
         
-        response_text = llm_result["text"]
-        llm_source = llm_result["source"]
+        # 9. EVALUATE (LLM-as-a-Judge)
+        logger.info("Evaluation de la reponse...")
+        scores = self.evaluator.evaluate(context, question, answer)
         
-        # 9. FORMAT FINAL ANSWER
-        answer = {
-            "question": question,
-            "answer": response_text,
-            "intent": intent_result.intent.value,
-            "intent_confidence": float(intent_result.confidence),
-            "llm_source": llm_source,
-            "sources": context_info["sources"],
-            "retrieval_count": len(retrieval_results),
-            "merged_count": len(merged_sources),
-            "context_chars": context_info["total_chars"],
+        # 10. TRACK PERFORMANCE
+        duration = time.time() - start_time
+        log_data = {
+            "Question": question,
+            "Answer": answer,
+            "Sources_Count": len(merged_sources),
+            "Duration_Sec": duration,
+            "Faithfulness_Score": scores.get("faithfulness", 0.0),
+            "Relevance_Score": scores.get("relevance", 0.0),
+            "Intent": intent_result.intent.value
         }
+        self.tracker.log_interaction(log_data)
         
-        logger.info(f"✓ Generated response ({len(response_text)} chars)")
-        
-        return answer
+        return {
+            "answer": answer,
+            "intent": intent_result.intent.value,
+            "confidence": intent_result.confidence,
+            "sources": [s.to_dict() for s in merged_sources],
+            "duration": duration,
+            "metrics": scores,
+            "model": llm_result.get("source", "unknown")
+        }
     
     def batch_answer(self, questions: List[str]) -> List[Dict[str, Any]]:
         """
@@ -175,7 +193,6 @@ RESPONSE:"""
         
         Args:
             questions: Liste de questions
-            
         Returns:
             Liste de réponses
         """
@@ -214,34 +231,34 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     
     print("\n" + "="*50)
-    print("🤖 UNIFIED AGENT - MODE CONSOLE")
+    print("UNIFIED AGENT - MODE CONSOLE")
     print("="*50)
     
     try:
         agent = UnifiedAgent()
-        print("\n✅ Système prêt ! (Tapez 'exit' pour quitter)")
+        print("\nSysteme pret ! (Tapez 'exit' pour quitter)")
         
         while True:
-            question = input("\n❓ Votre question : ")
+            question = input("\nVotre question : ")
             if question.lower() in ['exit', 'quit', 'q']:
                 break
             
             if not question.strip():
                 continue
                 
-            print("\n🔄 L'agent réfléchit...")
+            print("\nL'agent reflechit...")
             result = agent.answer(question)
             
-            print(f"\n✨ RÉPONSE ({result['llm_source']}):")
+            print(f"\nREPONSE ({result.get('model', 'unknown')}):")
             print("-" * 30)
             print(result['answer'])
             print("-" * 30)
             
             if result.get("sources"):
-                print("\n📚 SOURCES :")
+                print("\nSOURCES :")
                 for s in result["sources"][:3]:
-                    fname = os.path.basename(s.get('source_files', ['Inconnu'])[0])
+                    fname = os.path.basename(s.source_files[0] if s.source_files else 'Inconnu')
                     print(f"  - {fname}")
                     
     except Exception as e:
-        print(f"❌ Erreur critique : {e}")
+        print(f"Erreur critique : {e}")

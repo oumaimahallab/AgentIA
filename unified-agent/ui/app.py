@@ -202,16 +202,17 @@ except ImportError as e:
     logger.error(f"Erreur d'importation: {e}")
     sys.exit(1)
 
-# Initialiser l'agent globalement
+# Initialiser l'agent avec Lazy Loading
 agent = None
 
-def init_agent():
+def get_agent():
     global agent
     if agent is None:
-        logger.info("🚀 Chargement de l'Agent Unifié...")
+        logger.info("🚀 Chargement de l'Agent Unifié (Lazy Loading)...")
         config = get_config()
         agent = UnifiedAgent(config)
         logger.info("✅ Agent prêt !")
+    return agent
 
 # Dossier pour les uploads
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uploads')
@@ -240,7 +241,7 @@ def upload_file():
 
 @app.route('/api/ask', methods=['POST'])
 def ask():
-    init_agent() # S'assurer qu'il est prêt
+    current_agent = get_agent()
     
     data = request.json
     question = data.get('question')
@@ -252,7 +253,7 @@ def ask():
     
     try:
         # Demander à l'agent
-        result = agent.answer(question)
+        result = current_agent.answer(question)
         answer_text = result["answer"]
         
         # Nettoyage automatique des listes de sources/références en fin de texte
@@ -265,10 +266,10 @@ def ask():
         formatted_sources = []
         
         for merged_s in result.get("sources", []):
-            files = merged_s.get("source_files", [])
-            if not files and merged_s.get("primary_sources"):
-                p = merged_s["primary_sources"][0]
-                files = [p.get("source") or p.get("doc_name") or "Document"]
+            files = merged_s.get('source_files', [])
+            if not files and merged_s.get('primary_sources'):
+                p = merged_s.get('primary_sources')[0]
+                files = [p.get('source') or p.get('doc_name') or "Document"]
 
             for raw_file in files:
                 if not raw_file: continue
@@ -287,7 +288,8 @@ def ask():
         return jsonify({
             "answer": answer_text,
             "sources": formatted_sources,
-            "intent": result.get("intent", "unknown")
+            "intent": result.get("intent", "unknown"),
+            "metrics": result.get("metrics", {})
         })
     except Exception as e:
         logger.error(f"❌ Erreur lors de la génération: {e}")
@@ -295,12 +297,13 @@ def ask():
 
 @app.route('/api/status', methods=['GET'])
 def status():
-    init_agent()
-    return jsonify(agent.get_system_status())
+    current_agent = get_agent()
+    return jsonify(current_agent.get_system_status())
 
 if __name__ == '__main__':
-    init_agent()
+    # On n'initialise plus l'agent ici pour permettre un démarrage rapide
+    # Il sera chargé au premier appel API
     print("\n" + "="*50)
-    print("🌍 SERVEUR API LANCÉ SUR http://localhost:5000")
+    print("SERVEUR API LANCE SUR http://localhost:5000")
     print("="*50 + "\n")
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=5005, debug=False, threaded=True)

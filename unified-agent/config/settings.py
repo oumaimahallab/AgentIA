@@ -56,7 +56,7 @@ class EmbeddingConfig:
     """Configuration du modèle d'embedding"""
     
     # Modèle
-    MODEL_NAME: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    MODEL_NAME: str = "intfloat/multilingual-e5-small"
     EMBEDDING_DIM: int = 384
     
     # Performance

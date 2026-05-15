@@ -35,6 +35,31 @@ def rebuild():
     def get_fingerprint(text):
         return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
+    def chunk_text(text, max_chars=1500, overlap=200):
+        """Découpe un texte en morceaux de max_chars avec un chevauchement."""
+        if len(text) <= max_chars:
+            return [text]
+        
+        chunks_list = []
+        start = 0
+        while start < len(text):
+            end = start + max_chars
+            # On essaie de couper sur un espace pour ne pas couper de mots
+            if end < len(text):
+                last_space = text.rfind(' ', start, end)
+                if last_space != -1 and last_space > start + (max_chars // 2):
+                    end = last_space
+            
+            chunk = text[start:end].strip()
+            if len(chunk) > 20: # Évite les morceaux trop petits
+                chunks_list.append(chunk)
+                
+            start = end - overlap
+            if start >= len(text) - overlap:
+                break
+                
+        return chunks_list
+
     if DOCUMENTS_JSON.exists():
         with open(DOCUMENTS_JSON, encoding="utf-8") as f:
             data = json.load(f)
@@ -73,16 +98,24 @@ def rebuild():
                     else:
                         topic = source_name.split("-")[0].strip()
                 
-                full_text = f"Sujet: {topic}\n{text}" if topic and topic != "Error" else text
+                # On préfixe le texte avec le sujet pour aider la recherche sémantique
+                prefix = f"Sujet: {topic}\n" if topic and topic != "Error" else ""
                 
-                chunks.append({
-                    "chunk_id": f"transcript_{i}",
-                    "fingerprint": get_fingerprint(full_text),
-                    "content": full_text,
-                    "source": source_name,
-                    "type": "transcription",
-                    "location": topic
-                })
+                # Découpage en morceaux pour les transcriptions (souvent très longues)
+                text_chunks = chunk_text(text, max_chars=1200, overlap=300)
+                
+                for j, sub_text in enumerate(text_chunks):
+                    full_text = prefix + sub_text
+                    suffix = f"_{j}" if len(text_chunks) > 1 else ""
+                    
+                    chunks.append({
+                        "chunk_id": f"transcript_{i}{suffix}",
+                        "fingerprint": get_fingerprint(full_text),
+                        "content": full_text,
+                        "source": source_name,
+                        "type": "transcription",
+                        "location": topic
+                    })
     
     if not chunks:
         logger.error("No chunks found!")
@@ -92,7 +125,7 @@ def rebuild():
     
     # 3. Initialize components
     embeddings = EmbeddingsManager(config.embeddings.MODEL_NAME)
-    faiss_mgr = FAISSManager(config.paths.FAISS_INDEX_DIR)
+    faiss_mgr = FAISSManager(config.paths.FAISS_INDEX_DIR, embedding_dim=embeddings.get_embedding_dim())
     bm25_mgr = BM25Manager(config.paths.BM25_INDEX_DIR)
     
     # 4. Clear and Rebuild

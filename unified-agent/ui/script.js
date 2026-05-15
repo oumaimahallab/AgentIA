@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
 
             try {
-                const response = await fetch('http://localhost:5000/api/login', {
+                const response = await fetch('/api/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email, password })
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!userData) return;
 
         try {
-            const response = await fetch(`http://localhost:5000/api/sessions?email=${userData.email}`);
+            const response = await fetch(`/api/sessions?email=${userData.email}`);
             sessions = await response.json();
             
             if (sessions.length > 0) {
@@ -181,8 +181,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const userData = getUserSession();
         if (!userData) return;
 
+        // Mise à jour du timestamp pour que ça apparaisse en haut dans pgAdmin
+        session.timestamp = new Date().toISOString();
+
         try {
-            await fetch('http://localhost:5000/api/sessions', {
+            await fetch('/api/sessions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: userData.email, session: session })
@@ -369,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!userData) return;
 
         try {
-            await fetch('http://localhost:5000/api/sessions', {
+            await fetch('/api/sessions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: userData.email, session: session })
@@ -387,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!userData) return;
 
         try {
-            await fetch(`http://localhost:5000/api/sessions/${id}?email=${userData.email}`, {
+            await fetch(`/api/sessions/${id}?email=${userData.email}`, {
                 method: 'DELETE'
             });
             sessions = sessions.filter(s => s.id !== id);
@@ -635,7 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
 
         try {
-            const response = await fetch('http://localhost:5000/api/ask', {
+            const response = await fetch('/api/ask', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ question: query })
@@ -667,7 +670,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
+                let metricsHtml = '';
+                if (data.metrics && data.metrics.faithfulness !== undefined) {
+                    const f = Math.round(data.metrics.faithfulness * 100);
+                    const r = Math.round(data.metrics.relevance * 100);
+                    
+                    const fColor = f > 80 ? '#10b981' : (f > 50 ? '#f59e0b' : '#ef4444');
+                    const rColor = r > 80 ? '#10b981' : (r > 50 ? '#f59e0b' : '#ef4444');
+
+                    metricsHtml = `
+                        <div class="metrics-container">
+                            <span class="metric-badge" style="border-left: 3px solid ${fColor}">
+                                <i class="fas fa-check-double"></i> Fidélité: <strong>${f}%</strong>
+                            </span>
+                            <span class="metric-badge" style="border-left: 3px solid ${rColor}">
+                                <i class="fas fa-bullseye"></i> Pertinence: <strong>${r}%</strong>
+                            </span>
+                        </div>
+                    `;
+                }
+
                 htmlResponse += `
+                    ${metricsHtml}
                     <div class="sources-container">
                         <p class="sources-title">Sources</p>
                         <div class="sources-grid">
@@ -720,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayMessage(`<i class="fas fa-spinner fa-spin"></i> Téléchargement de ${files.length} fichier(s)...`, 'user');
 
             try {
-                const response = await fetch('http://localhost:5000/api/upload', {
+                const response = await fetch('/api/upload', {
                     method: 'POST',
                     body: formData
                 });

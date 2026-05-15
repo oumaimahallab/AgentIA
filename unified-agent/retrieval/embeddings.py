@@ -44,10 +44,18 @@ class EmbeddingsManager:
             from sentence_transformers import SentenceTransformer
             
             logger.info(f"Chargement {self.model_name}...")
-            self.model = SentenceTransformer(
-                self.model_name,
-                device=self.device,
-            )
+            try:
+                self.model = SentenceTransformer(
+                    self.model_name,
+                    device=self.device,
+                    local_files_only=True
+                )
+            except Exception as e:
+                logger.warning(f"Modèle non trouvé en local, tentative de téléchargement... ({e})")
+                self.model = SentenceTransformer(
+                    self.model_name,
+                    device=self.device
+                )
             logger.info(f"✓ Model chargé ({self.get_embedding_dim()} dims)")
         except ImportError:
             logger.error(
@@ -63,17 +71,21 @@ class EmbeddingsManager:
         
         return self.model.get_sentence_embedding_dimension()
     
-    def embed(self, text: str) -> np.ndarray:
+    def embed(self, text: str, is_query: bool = False) -> np.ndarray:
         """
         Génère un embedding pour un texte
         
         Args:
             text: Texte à embedder
+            is_query: Si True, ajoute le préfixe 'query: ' (pour E5)
             
         Returns:
             Array (embedding_dim,)
         """
-        
+        # Préfixe pour E5
+        if "e5" in self.model_name.lower():
+            text = f"query: {text}" if is_query else f"passage: {text}"
+            
         # Check cache
         text_hash = hash(text) % (10 ** 10)
         if text_hash in self.embedding_cache:
@@ -89,20 +101,29 @@ class EmbeddingsManager:
         
         return embedding
     
-    def embed_batch(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
+    def embed_batch(self, texts: List[str], batch_size: int = 32, is_queries: bool = False) -> np.ndarray:
         """
         Génère des embeddings batch
         
         Args:
             texts: Liste de textes
             batch_size: Taille du batch
+            is_queries: Si True, ajoute le préfixe 'query: ' (pour E5)
             
         Returns:
             Array (N, embedding_dim)
         """
-        
+        # Préfixe pour E5
+        if "e5" in self.model_name.lower():
+            processed_texts = [
+                f"query: {t}" if is_queries else f"passage: {t}"
+                for t in texts
+            ]
+        else:
+            processed_texts = texts
+            
         embeddings = self.model.encode(
-            texts,
+            processed_texts,
             batch_size=batch_size,
             convert_to_numpy=True,
             normalize_embeddings=True,
@@ -111,7 +132,7 @@ class EmbeddingsManager:
         
         embeddings = embeddings.astype(np.float32)
         
-        logger.info(f"✓ Embedded {len(texts)} texts")
+        logger.info(f"✓ Embedded {len(texts)} texts (as {'queries' if is_queries else 'passages'})")
         
         return embeddings
     
