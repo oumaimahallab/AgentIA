@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const session = sessions.find(s => s.id === currentSessionId);
             
             let rawText = data.answer || "Désolé, je n'ai pas pu générer de réponse.";
-            let htmlResponse = rawText.replace(/\n/g, '<br>');
+            let htmlResponse = marked.parse(rawText);
             
             if (data.sources && data.sources.length > 0) {
                 // Déduplication intelligente côté client
@@ -670,28 +670,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                let metricsHtml = '';
-                if (data.metrics && data.metrics.faithfulness !== undefined) {
-                    const f = Math.round(data.metrics.faithfulness * 100);
-                    const r = Math.round(data.metrics.relevance * 100);
-                    
-                    const fColor = f > 80 ? '#10b981' : (f > 50 ? '#f59e0b' : '#ef4444');
-                    const rColor = r > 80 ? '#10b981' : (r > 50 ? '#f59e0b' : '#ef4444');
-
-                    metricsHtml = `
-                        <div class="metrics-container">
-                            <span class="metric-badge" style="border-left: 3px solid ${fColor}">
-                                <i class="fas fa-check-double"></i> Fidélité: <strong>${f}%</strong>
-                            </span>
-                            <span class="metric-badge" style="border-left: 3px solid ${rColor}">
-                                <i class="fas fa-bullseye"></i> Pertinence: <strong>${r}%</strong>
-                            </span>
-                        </div>
-                    `;
-                }
-
                 htmlResponse += `
-                    ${metricsHtml}
                     <div class="sources-container">
                         <p class="sources-title">Sources</p>
                         <div class="sources-grid">
@@ -867,5 +846,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 location.reload();
             }
         };
+    }
+
+    // --- FAQ LOGIC ---
+    const faqModal = document.getElementById('faqModal');
+    const openFaqBtn = document.getElementById('openFaqBtn');
+    const closeFaqBtn = document.getElementById('closeFaqBtn');
+
+    if (faqModal && openFaqBtn && closeFaqBtn) {
+        openFaqBtn.addEventListener('click', () => {
+            faqModal.classList.add('active');
+        });
+
+        closeFaqBtn.addEventListener('click', () => {
+            faqModal.classList.remove('active');
+        });
+
+        // Fermer au clic à l'extérieur
+        faqModal.addEventListener('click', (e) => {
+            if (e.target === faqModal) {
+                faqModal.classList.remove('active');
+            }
+        });
+
+        // Gérer le clic sur une question FAQ
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const question = item.getAttribute('data-q');
+                if (question) {
+                    faqModal.classList.remove('active');
+                    userInput.value = question;
+                    sendMessage();
+                }
+            });
+        });
     }
 });

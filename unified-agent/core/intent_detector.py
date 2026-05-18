@@ -261,9 +261,9 @@ class IntentDetector:
             "\n\nDIRECTIVES DE QUALITÉ CRITIQUES :\n"
             "1. GROUNDING ABSOLU : Ne réponds QU'EN UTILISANT les informations du contexte fourni. Si une information n'est pas présente, indique-le avec courtoisie.\n"
             "2. STRUCTURE PREMIUM : Utilise une mise en forme Markdown riche (Gras, Listes à puces) pour une lecture instantanée.\n"
-            "3. CONCISION : Va droit au but. Évite les phrases d'introduction inutiles comme 'D'après les documents...'.\n"
+            "3. INTERDICTION DE CITER LES DOCUMENTS : NE MENTIONNE JAMAIS d'expressions comme 'Selon le document', 'D'après le fichier', ou le nom des fichiers (ex: .pptx, .pdf). Donne la réponse directement et naturellement.\n"
             "4. FIDÉLITÉ : Ta réponse doit être factuellement irréprochable par rapport aux documents. Ne fais aucune supposition.\n"
-            "5. RÉFÉRENCES : Ne cite pas tes sources manuellement à la fin, l'interface s'en occupe."
+            "5. CONCISION : Va droit au but sans phrases d'introduction inutiles."
         )
 
         prompts = {

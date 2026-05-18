@@ -202,16 +202,13 @@ except ImportError as e:
     logger.error(f"Erreur d'importation: {e}")
     sys.exit(1)
 
-# Initialiser l'agent avec Lazy Loading
-agent = None
+# Initialiser l'agent dès le démarrage (Eager Loading)
+logger.info("🚀 Chargement de l'Agent Unifié en cours au démarrage... (Patientez)")
+config = get_config()
+agent = UnifiedAgent(config)
+logger.info("✅ Agent prêt !")
 
 def get_agent():
-    global agent
-    if agent is None:
-        logger.info("🚀 Chargement de l'Agent Unifié (Lazy Loading)...")
-        config = get_config()
-        agent = UnifiedAgent(config)
-        logger.info("✅ Agent prêt !")
     return agent
 
 # Dossier pour les uploads
@@ -301,8 +298,7 @@ def status():
     return jsonify(current_agent.get_system_status())
 
 if __name__ == '__main__':
-    # On n'initialise plus l'agent ici pour permettre un démarrage rapide
-    # Il sera chargé au premier appel API
+    # L'agent est maintenant initialisé au démarrage pour éviter le retard sur la première question
     print("\n" + "="*50)
     print("SERVEUR API LANCE SUR http://localhost:5000")
     print("="*50 + "\n")

@@ -154,6 +154,8 @@ class UnifiedAgent:
 
 QUESTION: {question}
 
+RAPPEL IMPORTANT: Ne mentionne JAMAIS "Selon le document", "D'après le guide" ou le nom des fichiers (ex: .pptx, .pdf). Donne la réponse directement et naturellement.
+
 RESPONSE:"""
         
         # 8. GENERATE RESPONSE
