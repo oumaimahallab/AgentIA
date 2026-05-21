@@ -86,32 +86,22 @@ class PDFParser(DocumentParser):
     @staticmethod
     def parse(file_path: Path) -> Tuple[List[str], DocumentMetadata]:
         """Parse un PDF"""
-        import PyPDF2
-        import pdfplumber
+        import pymupdf
         
         chunks = []
         num_pages = 0
         
-        # Essaie pdfplumber d'abord (meilleur pour text extraction)
         try:
-            with pdfplumber.open(file_path) as pdf:
-                num_pages = len(pdf.pages)
-                for page in pdf.pages:
-                    text = page.extract_text()
-                    if text and text.strip():
-                        chunks.append(text)
+            doc = pymupdf.open(file_path)
+            num_pages = len(doc)
+            for page in doc:
+                text = page.get_text()
+                if text and text.strip():
+                    chunks.append(text)
+            doc.close()
         except Exception as e:
-            logger.warning(f"Erreur pdfplumber: {e}, basculant sur PyPDF2")
-            
-            # Fallback sur PyPDF2
-            with open(file_path, 'rb') as f:
-                reader = PyPDF2.PdfReader(f)
-                num_pages = len(reader.pages)
-                
-                for page in reader.pages:
-                    text = page.extract_text()
-                    if text and text.strip():
-                        chunks.append(text)
+            logger.warning(f"Erreur PyMuPDF: {e}")
+            raise
         
         # Crée metadata
         metadata = DocumentMetadata(
@@ -231,6 +221,45 @@ class TextParser(DocumentParser):
         return sha256_hash.hexdigest()
 
 
+class DocxParser(DocumentParser):
+    """Parser pour fichiers Word (.docx)"""
+    
+    @staticmethod
+    def parse(file_path: Path) -> Tuple[List[str], DocumentMetadata]:
+        import docx
+        
+        chunks = []
+        
+        doc = docx.Document(file_path)
+        for para in doc.paragraphs:
+            text = para.text.strip()
+            if text:
+                chunks.append(text)
+                
+        metadata = DocumentMetadata(
+            file_path=file_path,
+            source_type=SourceType.TEXT,
+            file_name=file_path.name,
+            file_size=file_path.stat().st_size,
+            file_hash=DocxParser._compute_hash(file_path),
+            created_at=str(file_path.stat().st_ctime),
+            modified_at=str(file_path.stat().st_mtime),
+            total_pages=1,
+        )
+        
+        logger.info(f"✓ DOCX parsé: {file_path.name}")
+        
+        return chunks, metadata
+        
+    @staticmethod
+    def _compute_hash(file_path: Path) -> str:
+        sha256_hash = hashlib.sha256()
+        with open(file_path, "rb") as f:
+            for byte_block in iter(lambda: f.read(4096), b""):
+                sha256_hash.update(byte_block)
+        return sha256_hash.hexdigest()
+
+
 class AudioTranscriber:
     """Transcripteur audio/vidéo (Whisper)"""
     
@@ -289,6 +318,7 @@ class UnifiedIngester:
         ".pptx": PowerPointParser,
         ".txt": TextParser,
         ".md": TextParser,
+        ".docx": DocxParser,
     }
     
     # Audio/Vidéo extensions

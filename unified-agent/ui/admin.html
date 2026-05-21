@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoBrain - Administration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js pour les graphiques -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .admin-container {
+            display: flex;
+            height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .admin-sidebar {
+            width: 260px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .admin-nav {
+            margin-top: 30px;
+            flex: 1;
+        }
+        .nav-item {
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-dim);
+        }
+        .nav-item:hover, .nav-item.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .admin-content {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+        .card {
+            background-color: var(--sidebar-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        .card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .table th {
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .status-ingere { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+        .status-encours { background: rgba(234, 179, 8, 0.2); color: #facc15; }
+        .status-erreur { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        
+        .upload-area {
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .upload-area:hover {
+            border-color: var(--primary-color);
+            background-color: rgba(99, 102, 241, 0.05);
+        }
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .metric-card {
+            background-color: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        .metric-label {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+        
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .toast {
+            background-color: #1e293b; /* Fond légèrement plus clair pour se détacher */
+            color: #f8fafc; /* Texte bien blanc */
+            border-left: 6px solid var(--primary-color); /* Bordure plus épaisse */
+            padding: 18px 24px; /* Plus d'espace */
+            border-radius: 10px; /* Bords un peu plus ronds */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.2); /* Ombre plus forte */
+            display: flex;
+            align-items: flex-start; /* Aligner en haut si le texte est long */
+            gap: 15px;
+            font-family: 'Inter', sans-serif;
+            min-width: 320px;
+            max-width: 500px;
+            animation: slideInRight 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        .toast.success { border-left-color: #4ade80; }
+        .toast.error { border-left-color: #ef4444; } /* Rouge plus vif */
+        .toast.info { border-left-color: #3b82f6; }
+        
+        .toast-icon {
+            font-size: 1.5rem; /* Icône plus grande */
+            margin-top: 2px;
+        }
+        .toast.success .toast-icon { color: #4ade80; }
+        .toast.error .toast-icon { color: #ef4444; }
+        .toast.info .toast-icon { color: #3b82f6; }
+        
+        .toast-content { flex: 1; }
+        .toast-title { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; letter-spacing: 0.3px; }
+        .toast-message { font-size: 0.95rem; color: #cbd5e1; line-height: 1.4; }
+        
+        .toast-close {
+            background: none;
+            border: none;
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        .toast-close:hover { color: var(--text-color); }
+        
+        @keyframes slideInRight {
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOutRight {
+            to { transform: translateX(100%); opacity: 0; }
+        }
+        .toast.hiding {
+            animation: slideOutRight 0.3s ease-in forwards;
+        }
+
+        /* Tabs Styling */
+        .tabs-header {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            background-color: rgba(0,0,0,0.15);
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+        }
+        .tab-btn {
+            flex: 1;
+            background: none;
+            border: none;
+            padding: 16px;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .tab-btn:hover {
+            color: var(--text-color);
+            background-color: rgba(255,255,255,0.03);
+        }
+        .tab-btn.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+            background-color: rgba(99, 102, 241, 0.08);
+        }
+        .tab-btn.tab-danger.active {
+            color: #ef4444;
+            border-bottom-color: #ef4444;
+            background-color: rgba(239, 68, 68, 0.08);
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .badge-count {
+            background-color: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .tab-btn.active .badge-count {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .tab-btn.tab-danger.active .badge-count {
+            background-color: #ef4444;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* LLM Status Grid */
+        .status-card {
+            background: rgba(0,0,0,0.2);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .status-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #6b7280;
+        }
+        .status-indicator.online {
+            background-color: #10b981;
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            animation: pulse-green 2s infinite;
+        }
+        .status-indicator.offline {
+            background-color: #ef4444;
+            box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        .status-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .status-info strong {
+            font-size: 0.95rem;
+            color: var(--text-color);
+        }
+        .status-info span {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="logo-container" style="justify-content: center; margin-bottom: 10px;">
+                <div class="logo-main">
+                    <span class="logo-text">inetum</span>
+                    <div class="logo-symbol"></div>
+                </div>
+                <div class="logo-subtext">Administration</div>
+            </div>
+            
+            <nav class="admin-nav">
+                <div class="nav-item active" data-target="docs">
+                    <i class="fas fa-folder-open"></i> Base de Connaissance
+                </div>
+                <div class="nav-item" data-target="transactions">
+                    <i class="fas fa-exchange-alt"></i> Transactions
+                </div>
+                <div class="nav-item" data-target="metrics">
+                    <i class="fas fa-chart-line"></i> Performances
+                </div>
+            </nav>
+            
+            <button class="login-btn" onclick="window.location.href='/'" style="margin-top: auto;">
+                <i class="fas fa-arrow-left"></i> Retour au Chat
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-content">
+            
+            <!-- SECTION DOCUMENTS -->
+            <section id="section-docs" class="admin-section">
+                <h2>Gestion de la Base de Connaissance</h2>
+                <p style="color: var(--text-dim); margin-bottom: 30px;">Ajoutez des documents, l'agent les ingérera dynamiquement sans redémarrage.</p>
+                
+                <div class="card">
+                    <div class="card-title"><i class="fas fa-cloud-upload-alt"></i> Importer un document</div>
+                    <input type="file" id="adminFileInput" style="display: none;">
+                    <div class="upload-area" id="dropZone">
+                        <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--text-dim); margin-bottom: 15px;"></i>
+                        <h3>Glissez-déposez un fichier ici</h3>
+                        <p style="color: var(--text-dim);">Supporte: PDF, TXT, DOCX, PPTX</p>
+                        <button class="login-btn" style="margin-top: 20px; width: auto; padding: 10px 20px;" onclick="document.getElementById('adminFileInput').click()">
+                            Sélectionner un fichier
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-list"></i> Documents Inscrits
+                        <button onclick="loadDocuments()" style="margin-left: auto; background:none; border:none; color:var(--text-dim); cursor:pointer;"><i class="fas fa-sync"></i></button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom du fichier</th>
+                                <th>Date d'ajout</th>
+                                <th>Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody id="docsTableBody">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION TRANSACTIONS -->
+            <section id="section-transactions" class="admin-section" style="display: none;">
+                <h2>Transactions des Utilisateurs</h2>
+                <p style="color: var(--text-dim); margin-bottom: 30px;">Surveillez l'historique complet des sessions d'intelligence artificielle.</p>
+                
+                <div class="card" style="padding: 0;">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" id="btn-tab-active" onclick="switchTab('active')">
+                            <i class="fas fa-comments"></i> Conversations Actives <span class="badge-count" id="countActive">0</span>
+                        </button>
+                        <button class="tab-btn tab-danger" id="btn-tab-deleted" onclick="switchTab('deleted')">
+                            <i class="fas fa-trash-alt"></i> Archives Supprimées <span class="badge-count" id="countDeleted">0</span>
+                        </button>
+                    </div>
+                    
+                    <div class="tab-content active" id="tab-active">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Session ID</th>
+                                    <th>Utilisateur</th>
+                                    <th>Sujet</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transTableBody">
+                                <!-- Injected by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tab-content" id="tab-deleted">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <p style="color: var(--text-dim); margin: 0; font-size: 0.9rem;">Sélectionnez les conversations à supprimer définitivement de la base de données.</p>
+                            <button id="btnDeleteSelected" onclick="deleteSelectedTransactions()" class="login-btn" style="width: auto; padding: 8px 16px; background-color: #ef4444; font-size: 0.9rem; display: none;">
+                                <i class="fas fa-trash-alt"></i> Supprimer la sélection
+                            </button>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;"><input type="checkbox" id="selectAllDeleted" onclick="toggleSelectAllDeleted(this)"></th>
+                                    <th>Session ID</th>
+                                    <th>Utilisateur</th>
+                                    <th>Sujet</th>
+                                    <th>Date d'archivage</th>
+                                </tr>
+                            </thead>
+                            <tbody id="deletedTransTableBody">
+                                <!-- Injected by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION METRICS -->
+            <section id="section-metrics" class="admin-section" style="display: none;">
+                <h2>Performances et Métriques</h2>
+                <p style="color: var(--text-dim); margin-bottom: 30px;">État de santé du système et statistiques d'utilisation.</p>
+                
+                <div class="metric-grid" style="margin-bottom: 30px;">
+                    <div class="metric-card">
+                        <div class="metric-value" id="valTotalUsers">-</div>
+                        <div class="metric-label">Utilisateurs inscrits</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="valTotalSessions">-</div>
+                        <div class="metric-label">Sessions de chat actives</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="valFaissDocs">-</div>
+                        <div class="metric-label">Vecteurs sémantiques (FAISS)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="valBm25Docs">-</div>
+                        <div class="metric-label">Documents (BM25)</div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-title"><i class="fas fa-server"></i> Santé de l'Orchestrateur LLM</div>
+                    <div class="llm-status-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+                        <div class="status-card" id="status-groq">
+                            <div class="status-indicator"></div>
+                            <div class="status-info">
+                                <strong>Groq API (Primary)</strong>
+                                <span class="status-text">Vérification...</span>
+                            </div>
+                        </div>
+                        <div class="status-card" id="status-ollama">
+                            <div class="status-indicator"></div>
+                            <div class="status-info">
+                                <strong>Ollama (Local)</strong>
+                                <span class="status-text">Vérification...</span>
+                            </div>
+                        </div>
+                        <div class="status-card" id="status-fallback">
+                            <div class="status-indicator"></div>
+                            <div class="status-info">
+                                <strong>Système Fallback</strong>
+                                <span class="status-text">Vérification...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-bottom: 30px;">
+                    <div class="card-title"><i class="fas fa-microchip"></i> Ressources Matérielles du Serveur</div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                        <!-- CPU -->
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-size: 0.9rem; color: var(--text-dim);">CPU Usage</span>
+                                <span id="txt-cpu" style="font-size: 0.9rem; font-weight: bold; color: var(--text-color);">0%</span>
+                            </div>
+                            <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                                <div id="bar-cpu" style="width: 0%; height: 100%; background: #6366f1; transition: width 0.5s, background-color 0.5s;"></div>
+                            </div>
+                        </div>
+                        <!-- RAM -->
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-size: 0.9rem; color: var(--text-dim);">Memory (RAM)</span>
+                                <span id="txt-ram" style="font-size: 0.9rem; font-weight: bold; color: var(--text-color);">0 GB / 0 GB</span>
+                            </div>
+                            <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                                <div id="bar-ram" style="width: 0%; height: 100%; background: #10b981; transition: width 0.5s, background-color 0.5s;"></div>
+                            </div>
+                        </div>
+                        <!-- DISK -->
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="font-size: 0.9rem; color: var(--text-dim);">Disk Storage</span>
+                                <span id="txt-disk" style="font-size: 0.9rem; font-weight: bold; color: var(--text-color);">0 GB / 0 GB</span>
+                            </div>
+                            <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                                <div id="bar-disk" style="width: 0%; height: 100%; background: #f59e0b; transition: width 0.5s, background-color 0.5s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+                    <div class="card">
+                        <div class="card-title"><i class="fas fa-chart-pie"></i> Base de Connaissance</div>
+                        <div style="height: 250px; display: flex; justify-content: center; align-items: center; position: relative;">
+                            <canvas id="kbChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title"><i class="fas fa-chart-bar"></i> Activité Globale</div>
+                        <div style="height: 250px; display: flex; justify-content: center; align-items: center; position: relative;">
+                            <canvas id="usageChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Transaction Modal -->
+    <div id="transactionModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; align-items: center; justify-content: center;">
+        <div class="modal-content card" style="width: 600px; max-width: 90%; max-height: 80vh; display: flex; flex-direction: column; padding: 0;">
+            <div style="padding: 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.15); border-radius: 8px 8px 0 0;">
+                <h3 id="modalTitle" style="margin: 0;">Détails de la conversation</h3>
+                <button onclick="closeTransactionModal()" style="background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 1.5rem;">&times;</button>
+            </div>
+            <div style="padding: 15px 20px; background: var(--bg-color); font-size: 0.9rem; border-bottom: 1px solid var(--border-color);">
+                <strong>Utilisateur:</strong> <span id="modalUser"></span><br>
+                <strong>Date:</strong> <span id="modalDate"></span>
+            </div>
+            <div id="modalChatHistory" style="padding: 20px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 15px; background: var(--sidebar-bg);">
+                <!-- Injected Chat Messages -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteneur pour les Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

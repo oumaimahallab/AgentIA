@@ -56,6 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 : names[0].substring(0, 2).toUpperCase();
             userAvatar.textContent = initials;
         }
+        
+        // Admin Panel Visibility
+        const adminBtn = document.getElementById('adminPanelBtn');
+        if (adminBtn) {
+            if (userData.email === 'admin@inetum.com') {
+                adminBtn.style.display = 'block';
+                adminBtn.onclick = () => window.location.href = '/admin.html';
+            } else {
+                adminBtn.style.display = 'none';
+            }
+        }
     }
 
     function checkSession() {

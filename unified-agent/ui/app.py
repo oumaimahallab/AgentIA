@@ -7,6 +7,10 @@ import json
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from dotenv import load_dotenv
+import threading
+from datetime import datetime
+import time
+import hashlib
 
 # Charger les variables d'environnement (recherche dans les dossiers parents si nécessaire)
 load_dotenv()
@@ -44,7 +48,17 @@ def init_db():
         
         # Create sessions table
         c.execute('''CREATE TABLE IF NOT EXISTS sessions 
-                     (session_id TEXT PRIMARY KEY, user_email TEXT, title TEXT, messages TEXT, timestamp TEXT, is_pinned INTEGER DEFAULT 0, is_archived INTEGER DEFAULT 0)''')
+                     (session_id TEXT PRIMARY KEY, user_email TEXT, title TEXT, messages TEXT, timestamp TEXT, is_pinned INTEGER DEFAULT 0, is_archived INTEGER DEFAULT 0, is_deleted INTEGER DEFAULT 0)''')
+                     
+        try:
+            c.execute("ALTER TABLE sessions ADD COLUMN is_deleted INTEGER DEFAULT 0")
+        except Exception:
+            pass # Column might already exist
+
+                     
+        # Create documents table for admin ingestion tracking
+        c.execute('''CREATE TABLE IF NOT EXISTS documents 
+                     (id SERIAL PRIMARY KEY, filename TEXT UNIQUE, status TEXT, error_msg TEXT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)''')
         
         # Ajouter des utilisateurs de test par défaut
         users = [
@@ -115,7 +129,7 @@ def get_sessions():
         
     try:
         c = conn.cursor()
-        c.execute("SELECT session_id, title, messages, timestamp, is_pinned, is_archived FROM sessions WHERE user_email=%s ORDER BY is_pinned DESC, timestamp DESC", (email,))
+        c.execute("SELECT session_id, title, messages, timestamp, is_pinned, is_archived FROM sessions WHERE user_email=%s AND is_deleted = 0 ORDER BY is_pinned DESC, timestamp DESC", (email,))
         rows = c.fetchall()
         conn.close()
         
@@ -184,7 +198,7 @@ def delete_session_route(session_id):
         
     try:
         c = conn.cursor()
-        c.execute("DELETE FROM sessions WHERE session_id=%s AND user_email=%s", (session_id, email))
+        c.execute("UPDATE sessions SET is_deleted = 1 WHERE session_id=%s AND user_email=%s", (session_id, email))
         conn.commit()
         conn.close()
         return jsonify({"success": True})
@@ -198,6 +212,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 try:
     from orchestration.agent import UnifiedAgent
     from config import get_config
+    from ingestion.unified_ingester import UnifiedIngester
+    from pathlib import Path
 except ImportError as e:
     logger.error(f"Erreur d'importation: {e}")
     sys.exit(1)
@@ -215,6 +231,249 @@ def get_agent():
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uploads')
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
+
+def background_ingest(filepath, filename, db_doc_id):
+    current_agent = get_agent()
+    try:
+        # Update status to processing
+        conn = get_db_connection()
+        if conn:
+            c = conn.cursor()
+            c.execute("UPDATE documents SET status='En cours' WHERE id=%s", (db_doc_id,))
+            conn.commit()
+            conn.close()
+
+        ingester = UnifiedIngester()
+        result = ingester.ingest(Path(filepath))
+        
+        if result:
+            chunks_text, metadata = result
+            # Prepare metadata dicts
+            metadatas = [
+                {"chunk_id": f"{filename}_{i}", "fingerprint": hashlib.sha256(text.encode('utf-8')).hexdigest(), "content": text, "source": filename, "type": "document", "location": "admin_upload"}
+                for i, text in enumerate(chunks_text)
+            ]
+            
+            # FAISS
+            embs = current_agent.embeddings.embed_batch(chunks_text, batch_size=32)
+            current_agent.faiss.add_embeddings(embs, metadatas)
+            current_agent.faiss.save()
+            
+            # BM25
+            current_agent.bm25.add_documents(chunks_text, metadatas)
+            current_agent.bm25.save()
+            
+            # Success
+            conn = get_db_connection()
+            if conn:
+                c = conn.cursor()
+                c.execute("UPDATE documents SET status='Ingéré' WHERE id=%s", (db_doc_id,))
+                conn.commit()
+                conn.close()
+            logger.info(f"✅ Ingestion de {filename} terminée et sauvegardée dans l'index.")
+        else:
+            raise Exception("Format non supporté ou erreur d'ingestion")
+    except Exception as e:
+        logger.error(f"Ingestion error: {e}")
+        conn = get_db_connection()
+        if conn:
+            c = conn.cursor()
+            c.execute("UPDATE documents SET status='Erreur', error_msg=%s WHERE id=%s", (str(e), db_doc_id))
+            conn.commit()
+            conn.close()
+
+@app.route('/api/admin/upload_and_ingest', methods=['POST'])
+def admin_upload_and_ingest():
+    email = request.form.get('email', '')
+    if email != 'admin@inetum.com':
+        return jsonify({"error": "Unauthorized"}), 403
+
+    if 'file' not in request.files:
+        return jsonify({"error": "Aucun fichier envoyé"}), 400
+        
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "Nom de fichier vide"}), 400
+
+    conn = get_db_connection()
+    if conn:
+        try:
+            c = conn.cursor()
+            c.execute("SELECT id FROM documents WHERE filename=%s", (file.filename,))
+            res = c.fetchone()
+            if res:
+                conn.close()
+                return jsonify({"error": f"Le fichier '{file.filename}' est déjà uploadé. L'ingestion est annulée."}), 409
+        except Exception as e:
+            logger.error(f"Erreur vérification doublon: {e}")
+
+    filepath = os.path.join(UPLOAD_FOLDER, file.filename)
+    file.save(filepath)
+    
+    # Save to DB
+    db_doc_id = None
+    if conn:
+        try:
+            c = conn.cursor()
+            c.execute("INSERT INTO documents (filename, status) VALUES (%s, 'En attente') RETURNING id", (file.filename,))
+            db_doc_id = c.fetchone()[0]
+            conn.commit()
+        except Exception as e:
+            conn.rollback()
+        finally:
+            conn.close()
+
+    # Start async thread
+    if db_doc_id:
+        thread = threading.Thread(target=background_ingest, args=(filepath, file.filename, db_doc_id))
+        thread.daemon = True
+        thread.start()
+        
+    return jsonify({"success": True, "message": "Fichier uploadé et ingestion démarrée en arrière-plan."})
+
+@app.route('/api/admin/documents', methods=['GET'])
+def get_admin_documents():
+    email = request.args.get('email', '')
+    if email != 'admin@inetum.com':
+        return jsonify({"error": "Unauthorized"}), 403
+        
+    conn = get_db_connection()
+    if not conn: return jsonify([]), 500
+    try:
+        c = conn.cursor()
+        c.execute("SELECT id, filename, status, error_msg, created_at FROM documents ORDER BY created_at DESC")
+        rows = c.fetchall()
+        docs = [{"id": r[0], "filename": r[1], "status": r[2], "error_msg": r[3], "created_at": r[4]} for r in rows]
+        return jsonify(docs)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        conn.close()
+
+@app.route('/api/admin/transactions', methods=['GET'])
+def get_admin_transactions():
+    email = request.args.get('email', '')
+    if email != 'admin@inetum.com':
+        return jsonify({"error": "Unauthorized"}), 403
+        
+    conn = get_db_connection()
+    if not conn: return jsonify([]), 500
+    try:
+        c = conn.cursor()
+        c.execute("SELECT session_id, user_email, title, timestamp, is_archived, is_deleted FROM sessions ORDER BY timestamp DESC LIMIT 50")
+        rows = c.fetchall()
+        trans = [{"id": r[0], "user_email": r[1], "title": r[2], "timestamp": r[3], "is_archived": r[4], "is_deleted": r[5]} for r in rows]
+        return jsonify(trans)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        conn.close()
+
+@app.route('/api/admin/transactions/<session_id>', methods=['GET'])
+def get_admin_transaction_details(session_id):
+    email = request.args.get('email', '')
+    if email != 'admin@inetum.com':
+        return jsonify({"error": "Unauthorized"}), 403
+        
+    conn = get_db_connection()
+    if not conn: return jsonify({"error": "Database error"}), 500
+    try:
+        c = conn.cursor()
+        c.execute("SELECT user_email, title, messages, timestamp FROM sessions WHERE session_id = %s", (session_id,))
+        row = c.fetchone()
+        if not row:
+            return jsonify({"error": "Transaction not found"}), 404
+            
+        return jsonify({
+            "id": session_id,
+            "user_email": row[0],
+            "title": row[1],
+            "messages": json.loads(row[2]) if isinstance(row[2], str) else row[2],
+            "timestamp": row[3]
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        conn.close()
+
+@app.route('/api/admin/transactions/delete', methods=['POST'])
+def admin_delete_transactions():
+    email = request.args.get('email', '')
+    if email != 'admin@inetum.com':
+        return jsonify({"error": "Unauthorized"}), 403
+        
+    data = request.json
+    if not data or not data.get('session_ids'):
+        return jsonify({"error": "No session_ids provided"}), 400
+        
+    session_ids = data['session_ids']
+    
+    conn = get_db_connection()
+    if not conn: return jsonify({"error": "Database error"}), 500
+    try:
+        c = conn.cursor()
+        format_strings = ','.join(['%s'] * len(session_ids))
+        c.execute(f"DELETE FROM sessions WHERE session_id IN ({format_strings})", tuple(session_ids))
+        conn.commit()
+        return jsonify({"success": True, "deleted": c.rowcount})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        conn.close()
+
+import psutil
+
+@app.route('/api/admin/metrics', methods=['GET'])
+def get_admin_metrics():
+    email = request.args.get('email', '')
+    if email != 'admin@inetum.com':
+        return jsonify({"error": "Unauthorized"}), 403
+        
+    current_agent = get_agent()
+    sys_status = current_agent.get_system_status()
+    
+    conn = get_db_connection()
+    total_users = 0
+    total_sessions = 0
+    if conn:
+        try:
+            c = conn.cursor()
+            c.execute("SELECT COUNT(*) FROM users")
+            total_users = c.fetchone()[0]
+            c.execute("SELECT COUNT(*) FROM sessions")
+            total_sessions = c.fetchone()[0]
+        except Exception:
+            pass
+        finally:
+            conn.close()
+            
+    # Récupération des métriques système réelles
+    cpu_percent = psutil.cpu_percent(interval=0.1)
+    ram = psutil.virtual_memory()
+    disk = psutil.disk_usage('/')
+    
+    hardware_metrics = {
+        "cpu": cpu_percent,
+        "ram": {
+            "percent": ram.percent,
+            "used": round(ram.used / (1024 ** 3), 2),
+            "total": round(ram.total / (1024 ** 3), 2)
+        },
+        "disk": {
+            "percent": disk.percent,
+            "used": round(disk.used / (1024 ** 3), 2),
+            "total": round(disk.total / (1024 ** 3), 2)
+        }
+    }
+            
+    return jsonify({
+        "system": sys_status,
+        "hardware": hardware_metrics,
+        "database": {
+            "total_users": total_users,
+            "total_sessions": total_sessions
+        }
+    })
 
 @app.route('/api/upload', methods=['POST'])
 def upload_file():
