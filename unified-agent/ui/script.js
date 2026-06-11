@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Admin Panel Visibility
         const adminBtn = document.getElementById('adminPanelBtn');
         if (adminBtn) {
-            if (userData.email === 'admin@inetum.com') {
+            if (userData.role === 'admin') {
                 adminBtn.style.display = 'block';
                 adminBtn.onclick = () => window.location.href = '/admin.html';
             } else {
@@ -69,7 +69,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function checkSession() {
+    async function enrichSessionRole(userData) {
+        if (userData.role) return userData;
+        try {
+            const response = await fetch(`/api/user/profile?email=${encodeURIComponent(userData.email)}`);
+            if (response.ok) {
+                const profile = await response.json();
+                userData.role = profile.role || 'user';
+                const storage = localStorage.getItem('user_session') ? localStorage : sessionStorage;
+                storage.setItem('user_session', JSON.stringify(userData));
+            }
+        } catch (e) {
+            console.warn('Impossible de charger le rôle utilisateur', e);
+        }
+        if (!userData.role) userData.role = 'user';
+        return userData;
+    }
+
+    async function checkSession() {
         // Pré-remplir l'email si mémorisé
         const savedEmail = localStorage.getItem('remembered_email');
         const emailInput = document.getElementById('loginEmail');
@@ -81,7 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const session = localStorage.getItem('user_session') || sessionStorage.getItem('user_session');
         if (session) {
-            const userData = JSON.parse(session);
+            let userData = JSON.parse(session);
+            userData = await enrichSessionRole(userData);
             updateUserInfo(userData);
             loginOverlay.style.display = 'none';
             appMain.style.display = 'flex';
@@ -89,13 +107,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function isInetumEmail(email) {
+        return (email || '').trim().toLowerCase().endsWith('@inetum.com');
+    }
+
     if (loginForm) {
         loginForm.onsubmit = async (e) => {
             e.preventDefault();
-            const email = document.getElementById('loginEmail').value;
+            const email = document.getElementById('loginEmail').value.trim();
             const password = document.getElementById('loginPassword').value;
             const rememberMe = document.getElementById('rememberMe').checked;
             const submitBtn = loginForm.querySelector('.login-btn');
+
+            if (!isInetumEmail(email)) {
+                alert('Accès réservé aux comptes @inetum.com (assistant interne Inetum).');
+                return;
+            }
 
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authentification...';
             submitBtn.disabled = true;
@@ -112,7 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (response.ok && data.success) {
                     const userData = {
                         email: email,
-                        name: data.name
+                        name: data.name,
+                        role: data.role || 'user'
                     };
 
                     const storage = rememberMe ? localStorage : sessionStorage;
@@ -136,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         initializeChat();
                     }, 500);
                 } else {
-                    alert(data.message || "Email ou mot de passe incorrect");
+                    alert(data.message || data.error || "Email ou mot de passe incorrect");
                     submitBtn.innerHTML = 'Se connecter';
                     submitBtn.disabled = false;
                 }
@@ -715,9 +743,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- UPLOAD DE FICHIERS ---
+    // --- UPLOAD DE FICHIERS AVEC POLLING TEMPS RÉEL ---
     const uploadBtn = document.getElementById('uploadBtn');
     const fileInput = document.getElementById('fileInput');
+    let pollIntervals = new Map(); // Tracker les pollings
 
     if (uploadBtn && fileInput) {
         uploadBtn.onclick = () => fileInput.click();
@@ -726,7 +755,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const files = e.target.files;
             if (files.length === 0) return;
 
+            const session = localStorage.getItem('user_session') || sessionStorage.getItem('user_session');
+            if (!session) {
+                alert('Veuillez vous connecter pour envoyer un fichier.');
+                return;
+            }
+            const userData = JSON.parse(session);
+
             const formData = new FormData();
+            formData.append('email', userData.email);
+            if (currentSessionId) {
+                formData.append('session_id', currentSessionId);
+            }
             for (let i = 0; i < files.length; i++) {
                 formData.append('files', files[i]);
             }
@@ -741,7 +781,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (response.ok) {
                     const data = await response.json();
-                    displayMessage(`<i class="fas fa-check-circle" style="color: #10b981;"></i> ${data.message}`, 'ai');
+                    
+                    if (data.success && data.files && data.files.length > 0) {
+                        displayMessage(`<i class="fas fa-check-circle" style="color: #10b981;"></i> ${data.message}`, 'ai');
+                        
+                        for (const file of data.files) {
+                            if (file.status === 'duplicate') {
+                                displayMessage(`<i class="fas fa-info-circle" style="color: #f59e0b;"></i> <strong>${file.filename}</strong> : déjà traité`, 'ai');
+                                continue;
+                            }
+                            if (file.id) {
+                                pollUploadStatus(file.id, file.filename);
+                            }
+                        }
+                    } else {
+                        displayMessage(`<i class="fas fa-exclamation-circle" style="color: #f59e0b;"></i> ${data.message}`, 'ai');
+                    }
                 } else {
                     throw new Error("Erreur lors de l'upload");
                 }
@@ -751,6 +806,132 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             fileInput.value = ''; // Reset
         };
+    }
+    
+    // Fonction de polling du statut d'ingestion
+    async function pollUploadStatus(docId, filename, attempts = 0) {
+        if (attempts > 120) { // 3 minutes max (120 * 1.5s)
+            displayMessage(`<i class="fas fa-hourglass-end" style="color: #f59e0b;"></i> Ingestion de <strong>${filename}</strong> : Timeout (>3 minutes)`, 'ai');
+            pollIntervals.delete(docId);
+            return;
+        }
+        
+        try {
+            const response = await fetch(`/api/documents/${docId}/ingestion-status`);
+            if (!response.ok) throw new Error('Erreur serveur');
+            
+            const doc = await response.json();
+            
+            if (!doc) {
+                // Retry
+                const timeout = setTimeout(() => pollUploadStatus(docId, filename, attempts + 1), 1500);
+                pollIntervals.set(docId, timeout);
+                return;
+            }
+            
+            // Get step icon based on progress
+            const getStepIcon = (step) => {
+                if (!step) return '⏳';
+                if (step.includes('Validation') || step.includes('Détection')) return '✓';
+                if (step.includes('Initialisation')) return '⚙️';
+                if (step.includes('Parsing') || step.includes('Extraction')) return '📂';
+                if (step.includes('Nettoyage')) return '🧹';
+                if (step.includes('Fragmentation')) return '🔀';
+                if (step.includes('Génération')) return '🧠';
+                if (step.includes('FAISS')) return '🔍';
+                if (step.includes('BM25')) return '📚';
+                if (step.includes('Finalisation')) return '✓';
+                if (step.includes('Ingéré')) return '✅';
+                if (step.includes('Erreur')) return '❌';
+                return '🔄';
+            };
+            
+            // Create detailed progress display
+            const createProgressDisplay = (percentage, step) => {
+                const icon = getStepIcon(step);
+                const progressWidth = Math.min(percentage, 100);
+                let statusColor = '#3b82f6'; // Blue
+                
+                if (percentage >= 90) statusColor = '#10b981'; // Green
+                else if (percentage >= 50) statusColor = '#f59e0b'; // Amber
+                
+                return `
+                <div style="margin: 10px 0; padding: 8px; background: #f3f4f6; border-left: 3px solid ${statusColor}; border-radius: 4px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                        <span style="font-size: 16px;">${icon}</span>
+                        <span style="font-weight: 500; color: #374151; flex-grow: 1;">${step || 'Préparation'}</span>
+                        <span style="font-size: 12px; font-weight: bold; color: ${statusColor};">${percentage}%</span>
+                    </div>
+                    <div style="width: 100%; background: #e5e7eb; border-radius: 3px; overflow: hidden; height: 6px;">
+                        <div style="width: ${progressWidth}%; background: linear-gradient(90deg, ${statusColor}, #1f2937); height: 100%; transition: width 0.3s ease;"></div>
+                    </div>
+                </div>`;
+            };
+            
+            // Afficher le statut actuel
+            switch(doc.status) {
+                case 'En attente':
+                    if (attempts === 0) {
+                        displayMessage(`⏳ <strong>${filename}</strong> : En attente...${createProgressDisplay(0, 'En attente')}`, 'ai');
+                    }
+                    break;
+                    
+                case 'En cours':
+                    // Show progress only every 2-3 attempts to avoid spam
+                    if (attempts === 0 || attempts % 2 === 0) {
+                        let statusMsg = `🔄 <strong>${filename}</strong> : Ingestion en cours\n`;
+                        statusMsg += createProgressDisplay(doc.progress_percentage, doc.progress_step);
+                        
+                        // Add detailed step info
+                        if (doc.progress_step) {
+                            const stepDescriptions = {
+                                'Validation fichier': 'Vérification du fichier',
+                                'Détection format fichier': 'Reconnaissance du format',
+                                'Initialisation ingester': 'Préparation du traitement',
+                                'Parsing du fichier': 'Lecture du contenu',
+                                'Extraction du texte': 'Extraction du texte brut',
+                                'Nettoyage du texte': 'Normalisation et nettoyage',
+                                'Fragmentation en chunks': 'Division en segments',
+                                'Génération embeddings (1/2)': 'Conversion en vecteurs (étape 1)',
+                                'Génération embeddings (2/2)': 'Conversion en vecteurs (étape 2)',
+                                'Indexation FAISS (démarrage)': 'Indexation vectorielle (démarrage)',
+                                'Indexation FAISS (sauvegarde)': 'Sauvegarde index FAISS',
+                                'Indexation BM25 (démarrage)': 'Indexation textuelle (démarrage)',
+                                'Indexation BM25 (sauvegarde)': 'Sauvegarde index BM25',
+                                'Finalisation et vérification': 'Vérification finale des indices'
+                            };
+                            
+                            const description = stepDescriptions[doc.progress_step] || doc.progress_step;
+                            statusMsg += `<div style="font-size: 11px; color: #6b7280; margin-top: 4px; padding-left: 24px;">→ ${description}</div>`;
+                        }
+                        
+                        displayMessage(statusMsg, 'ai');
+                    }
+                    break;
+                    
+                case 'Ingéré':
+                    let finalMsg = `✅ <strong>${filename}</strong> : Ingéré avec succès! (Document prêt pour les requêtes)`;
+                    finalMsg += createProgressDisplay(100, 'Ingéré avec succès');
+                    displayMessage(finalMsg, 'ai');
+                    pollIntervals.delete(docId);
+                    return;
+                    
+                case 'Erreur':
+                    displayMessage(`❌ <strong>${filename}</strong> : Erreur\n<div style="margin-top: 8px; padding: 8px; background: #fee2e2; border-left: 3px solid #ef4444; border-radius: 4px; font-size: 12px; color: #991b1b;">${doc.error_msg || 'Erreur inconnue'}</div>`, 'ai');
+                    pollIntervals.delete(docId);
+                    return;
+            }
+            
+            // Continuer le polling
+            const timeout = setTimeout(() => pollUploadStatus(docId, filename, attempts + 1), 1500);
+            pollIntervals.set(docId, timeout);
+            
+        } catch (error) {
+            console.error("Poll error:", error);
+            // Retry même en cas d'erreur
+            const timeout = setTimeout(() => pollUploadStatus(docId, filename, attempts + 1), 2000);
+            pollIntervals.set(docId, timeout);
+        }
     }
 
     // --- ACTIONS DE MESSAGE ---
@@ -886,8 +1067,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const question = item.getAttribute('data-q');
                 if (question) {
                     faqModal.classList.remove('active');
-                    userInput.value = question;
-                    sendMessage();
+                    // Créer un nouveau chat avant d'envoyer la question
+                    createNewChat();
+                    // Attendre que le nouveau chat soit créé, puis envoyer la question
+                    setTimeout(() => {
+                        userInput.value = question;
+                        sendMessage();
+                    }, 100);
                 }
             });
         });

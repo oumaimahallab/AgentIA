@@ -25,11 +25,11 @@
                 <div class="logo-subtext">ChronoBrain</div>
             </div>
             <h2>Plateforme d'Agent Conversationnel</h2>
-            <p>Veuillez vous identifier pour accéder à l'agent.</p>
             <form id="loginForm">
                 <div class="input-group">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" id="loginEmail" placeholder="Email professionnel" required>
+                    <input type="email" id="loginEmail" placeholder="prenom.nom@inetum.com" required
+                        pattern=".+@inetum\.com$" title="Adresse email @inetum.com obligatoire">
                 </div>
                 <div class="input-group">
                     <i class="fas fa-lock"></i>
@@ -59,7 +59,7 @@
             </div>
 
             <button class="new-chat-btn">
-                <i class="fas fa-plus"></i> New Chat
+                <i class="fas fa-plus"></i> Nouveau Chat
             </button>
             
             <button class="faq-btn" id="openFaqBtn">
@@ -110,9 +110,8 @@
 
             <footer class="chat-footer">
                 <div class="input-container">
-                    <i class="fas fa-upload input-btn" id="uploadBtn" title="Upload"></i>
                     <input type="file" id="fileInput" style="display: none;" multiple>
-                    <textarea id="userInput" placeholder="Ask Unified anything..." rows="1"></textarea>
+                    <textarea id="userInput" rows="1"></textarea>
                     <div class="input-actions">
                         <i class="fas fa-microphone input-btn" id="micBtn" title="Vocal interaction"></i>
                         <button id="sendBtn" class="send-btn">

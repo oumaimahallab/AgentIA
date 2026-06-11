@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload & Ingestion Temps Réel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        input[type="email"],
+        input[type="text"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        input[type="email"]:focus,
+        input[type="text"]:focus,
+        input[type="file"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            background: #f5f7ff;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: #764ba2;
+            background: #ede9f5;
+        }
+        
+        .upload-area p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .upload-area small {
+            color: #999;
+            display: block;
+            font-size: 12px;
+        }
+        
+        .buttons-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+            flex: 1;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 10px 20px rgba(108, 117, 125, 0.3);
+        }
+        
+        /* Status Display */
+        .status-container {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            display: none;
+        }
+        
+        .status-container.show {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .status-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .status-icon {
+            font-size: 24px;
+        }
+        
+        .status-text h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        
+        .status-text p {
+            color: #666;
+            font-size: 13px;
+        }
+        
+        /* Status Indicators */
+        .status-pending {
+            border-left: 4px solid #ffc107;
+            background: #fff8e1;
+        }
+        
+        .status-pending .status-icon {
+            color: #ffc107;
+        }
+        
+        .status-processing {
+            border-left: 4px solid #007bff;
+            background: #e7f3ff;
+        }
+        
+        .status-processing .status-icon {
+            color: #007bff;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .status-success {
+            border-left: 4px solid #28a745;
+            background: #e8f5e9;
+        }
+        
+        .status-success .status-icon {
+            color: #28a745;
+            animation: checkMark 0.6s ease-out;
+        }
+        
+        @keyframes checkMark {
+            0% { transform: scale(0) rotate(-45deg); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .status-error {
+            border-left: 4px solid #dc3545;
+            background: #ffebee;
+        }
+        
+        .status-error .status-icon {
+            color: #dc3545;
+        }
+        
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 3px;
+            animation: indeterminate 2s infinite;
+        }
+        
+        @keyframes indeterminate {
+            0% { width: 10%; }
+            50% { width: 70%; }
+            100% { width: 10%; }
+        }
+        
+        .progress-fill.complete {
+            width: 100%;
+            animation: none;
+        }
+        
+        /* Details */
+        .status-details {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            font-size: 13px;
+        }
+        
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .detail-label {
+            color: #666;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .detail-value {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        /* Alerts */
+        .alerts {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .alert {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: slideInRight 0.3s ease-out;
+            max-width: 300px;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .alert-success {
+            border-left: 4px solid #28a745;
+            color: #155724;
+        }
+        
+        .alert-error {
+            border-left: 4px solid #dc3545;
+            color: #721c24;
+        }
+        
+        .alert-info {
+            border-left: 4px solid #007bff;
+            color: #004085;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 22px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .upload-area {
+                padding: 30px 20px;
+            }
+            
+            button {
+                font-size: 12px;
+                padding: 10px 20px;
+            }
+            
+            .alerts {
+                right: 10px;
+                left: 10px;
+            }
+            
+            .alert {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📤 Upload & Ingestion Automatique</h1>
+            <p>Uploadez un fichier et regardez l'ingestion se faire en temps réel</p>
+        </header>
+        
+        <div class="content">
+            <!-- Input Form -->
+            <div class="form-group">
+                <label for="email">Email (utilisateur):</label>
+                <input type="email" id="email" placeholder="votre@email.com" value="demo@inetum.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="sessionId">ID Session (optionnel):</label>
+                <input type="text" id="sessionId" placeholder="session-uuid">
+            </div>
+            
+            <!-- Upload Area -->
+            <div class="form-group">
+                <label>Fichier à traiter:</label>
+                <div class="upload-area" id="uploadArea">
+                    <p>📁 Glissez-déposez un fichier ici ou cliquez pour sélectionner</p>
+                    <small>Formats supportés: PDF, PPT, DOCX, TXT, Images, Audio, Vidéo</small>
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+            </div>
+            
+            <!-- File Name Display -->
+            <div id="selectedFile" style="color: #667eea; font-weight: 600; margin: 10px 0; display: none;">
+                Fichier sélectionné: <span id="fileName"></span>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="buttons-row">
+                <button id="uploadBtn" onclick="uploadFile()">🚀 Upload & Ingérer</button>
+                <button class="btn-secondary" onclick="clearForm()">🔄 Réinitialiser</button>
+            </div>
+            
+            <!-- Status Display -->
+            <div class="status-container" id="statusContainer">
+                <div class="status-header">
+                    <span class="status-icon" id="statusIcon">⏳</span>
+                    <div class="status-text">
+                        <h3 id="statusTitle">Préparation...</h3>
+                        <p id="statusMessage">Initialisation du processus...</p>
+                    </div>
+                </div>
+                
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                
+                <div class="status-details" id="statusDetails">
+                    <div class="detail-item">
+                        <span class="detail-label">Fichier</span>
+                        <span class="detail-value" id="detailFilename">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Taille</span>
+                        <span class="detail-value" id="detailSize">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Chunks</span>
+                        <span class="detail-value" id="detailChunks">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Temps</span>
+                        <span class="detail-value" id="detailTime">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Alerts Container -->
+    <div class="alerts" id="alerts"></div>
+    
+    <script>
+        // State Management
+        let currentDocId = null;
+        let pollInterval = null;
+        let uploadStartTime = null;
+        
+        // Drag and Drop
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        
+        uploadArea.addEventListener('click', () => fileInput.click());
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            fileInput.files = e.dataTransfer.files;
+            updateFileDisplay();
+        });
+        
+        fileInput.addEventListener('change', updateFileDisplay);
+        
+        function updateFileDisplay() {
+            const file = fileInput.files[0];
+            if (file) {
+                document.getElementById('fileName').textContent = file.name;
+                document.getElementById('selectedFile').style.display = 'block';
+            }
+        }
+        
+        // Show Alert
+        function showAlert(message, type = 'info') {
+            const alertsDiv = document.getElementById('alerts');
+            const alertEl = document.createElement('div');
+            alertEl.className = `alert alert-${type}`;
+            alertEl.textContent = message;
+            alertsDiv.appendChild(alertEl);
+            
+            setTimeout(() => {
+                alertEl.style.animation = 'slideInRight 0.3s ease-out reverse';
+                setTimeout(() => alertEl.remove(), 300);
+            }, 5000);
+        }
+        
+        // Update Status Display
+        function setStatus(title, message, icon, statusClass) {
+            document.getElementById('statusTitle').textContent = title;
+            document.getElementById('statusMessage').textContent = message;
+            document.getElementById('statusIcon').textContent = icon;
+            
+            const container = document.getElementById('statusContainer');
+            container.className = `status-container show status-${statusClass}`;
+        }
+        
+        // Upload File
+        async function uploadFile() {
+            const file = fileInput.files[0];
+            const email = document.getElementById('email').value;
+            const sessionId = document.getElementById('sessionId').value;
+            
+            if (!file) {
+                showAlert('❌ Veuillez sélectionner un fichier', 'error');
+                return;
+            }
+            
+            if (!email) {
+                showAlert('❌ Veuillez entrer votre email', 'error');
+                return;
+            }
+            
+            // Show status
+            document.getElementById('statusContainer').classList.add('show');
+            setStatus('🔄 Upload en cours...', 'Envoi du fichier au serveur', '📤', 'pending');
+            uploadStartTime = Date.now();
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('email', email);
+            if (sessionId) formData.append('session_id', sessionId);
+            
+            try {
+                // Disable button
+                document.getElementById('uploadBtn').disabled = true;
+                
+                const response = await fetch('/api/user/upload_and_ingest', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `Erreur: ${response.statusText}`);
+                }
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    currentDocId = result.document_id;
+                    showAlert(`✅ Fichier uploadé! Ingestion en cours...`, 'success');
+                    
+                    // Update details
+                    document.getElementById('detailFilename').textContent = file.name;
+                    document.getElementById('detailSize').textContent = (file.size / 1024).toFixed(1) + ' KB';
+                    
+                    // Start polling
+                    pollStatus(email);
+                } else {
+                    throw new Error(result.error || 'Erreur inconnue');
+                }
+            } catch (error) {
+                showAlert(`❌ ${error.message}`, 'error');
+                setStatus('❌ Erreur', error.message, '❌', 'error');
+                document.getElementById('uploadBtn').disabled = false;
+            }
+        }
+        
+        // Poll Status
+        async function pollStatus(email, attempts = 0) {
+            if (attempts > 60) { // 2 minutes max
+                showAlert('⏱️ Timeout: ingestion trop longue', 'error');
+                setStatus('⏱️ Timeout', 'Ingestion trop longue (>2 min)', '⏱️', 'error');
+                clearPolling();
+                document.getElementById('uploadBtn').disabled = false;
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/user/documents/${currentDocId}?email=${email}`);
+                
+                if (!response.ok) throw new Error('Erreur serveur');
+                
+                const doc = await response.json();
+                const elapsed = Math.round((Date.now() - uploadStartTime) / 1000);
+                
+                // Update details
+                if (doc.total_chunks) document.getElementById('detailChunks').textContent = doc.total_chunks;
+                document.getElementById('detailTime').textContent = elapsed + 's';
+                
+                // Handle status
+                switch(doc.status) {
+                    case 'En attente':
+                        setStatus('⏳ En attente', 'Fichier en attente de traitement...', '⏳', 'pending');
+                        break;
+                        
+                    case 'En cours':
+                        setStatus('🔄 Ingestion en cours', `Extraction et traitement du contenu...`, '🔄', 'processing');
+                        document.getElementById('progressFill').style.animation = 'indeterminate 2s infinite';
+                        break;
+                        
+                    case 'Ingéré':
+                        setStatus('✅ Ingéré avec succès!', `${doc.total_chunks} chunks extraits`, '✅', 'success');
+                        document.getElementById('progressFill').classList.add('complete');
+                        showAlert(`✅ Document ingéré! ${doc.total_chunks} chunks • ${doc.processing_time?.toFixed(2)}s`, 'success');
+                        clearPolling();
+                        document.getElementById('uploadBtn').disabled = false;
+                        return;
+                        
+                    case 'Erreur':
+                        setStatus('❌ Erreur d\'ingestion', doc.error_msg || 'Une erreur s\'est produite', '❌', 'error');
+                        showAlert(`❌ Erreur: ${doc.error_msg}`, 'error');
+                        clearPolling();
+                        document.getElementById('uploadBtn').disabled = false;
+                        return;
+                }
+                
+                // Continue polling
+                pollInterval = setTimeout(() => pollStatus(email, attempts + 1), 1500);
+                
+            } catch (error) {
+                showAlert(`⚠️ Erreur polling: ${error.message}`, 'error');
+                pollInterval = setTimeout(() => pollStatus(email, attempts + 1), 2000);
+            }
+        }
+        
+        function clearPolling() {
+            if (pollInterval) {
+                clearTimeout(pollInterval);
+                pollInterval = null;
+            }
+        }
+        
+        function clearForm() {
+            fileInput.value = '';
+            document.getElementById('selectedFile').style.display = 'none';
+            document.getElementById('statusContainer').classList.remove('show');
+            clearPolling();
+            currentDocId = null;
+            document.getElementById('uploadBtn').disabled = false;
+        }
+    </script>
+</body>
+</html>

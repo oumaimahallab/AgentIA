@@ -1,12 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Basic Security Check
     const userStr = localStorage.getItem('user_session') || sessionStorage.getItem('user_session');
     if (!userStr) {
         window.location.href = '/';
         return;
     }
-    const user = JSON.parse(userStr);
-    if (user.email !== 'admin@inetum.com') {
+    let user = JSON.parse(userStr);
+    if (!user.role) {
+        try {
+            const response = await fetch(`/api/user/profile?email=${encodeURIComponent(user.email)}`);
+            if (response.ok) {
+                const profile = await response.json();
+                user.role = profile.role || 'user';
+                const storage = localStorage.getItem('user_session') ? localStorage : sessionStorage;
+                storage.setItem('user_session', JSON.stringify(user));
+            }
+        } catch (e) {
+            console.warn('Profil utilisateur indisponible', e);
+        }
+    }
+    if (user.role !== 'admin') {
         alert("Accès non autorisé. Redirection vers le chat.");
         window.location.href = '/';
         return;
@@ -155,16 +168,110 @@ document.addEventListener('DOMContentLoaded', () => {
                 else badgeClass += 'status-encours';
 
                 const tr = document.createElement('tr');
+                let statusCell = `<span class="${badgeClass}">${doc.status}</span>`;
+                
+                // Si erreur, ajouter un tooltip avec le message détaillé
+                if (doc.error_msg) {
+                    const errorMsg = doc.error_msg.replace(/"/g, '&quot;').substring(0, 200);
+                    statusCell += ` <span style="cursor: help; color: #f87171; font-weight: bold;" title="${errorMsg}">ⓘ</span>`;
+                }
+                
+                // Colonne progression (pipeline visuel)
+                let progressCell = '';
+                const progress = doc.progress_percentage || 0;
+                const step = doc.progress_step || 'En attente';
+                const pipelineStages = [
+                    { keys: ['Validation fichier', 'Détection format fichier', 'Initialisation ingester'], short: 'Validation', icon: 'fa-shield-alt' },
+                    { keys: ['Parsing du fichier', 'Extraction du texte', 'Nettoyage du texte', 'Fragmentation en chunks'], short: 'Extraction', icon: 'fa-file-alt' },
+                    { keys: ['Génération embeddings (1/2)', 'Génération embeddings (2/2)'], short: 'Embeddings', icon: 'fa-cogs' },
+                    { keys: ['Indexation FAISS (démarrage)', 'Indexation FAISS (sauvegarde)'], short: 'FAISS', icon: 'fa-project-diagram' },
+                    { keys: ['Indexation BM25 (démarrage)', 'Indexation BM25 (sauvegarde)'], short: 'BM25', icon: 'fa-search' },
+                    { keys: ['Finalisation et vérification', 'Ingéré avec succès'], short: 'Finalisation', icon: 'fa-flag-checkered' },
+                ];
+
+                const stageIndex = pipelineStages.findIndex(s => s.keys.some(k => step.startsWith(k)));
+
+                const renderPipeline = (activeIndex, doneAll = false) => {
+                    return pipelineStages.map((s, i) => {
+                        const isDone = doneAll || i < activeIndex;
+                        const isActive = !doneAll && i === activeIndex;
+                        const dotBg = isDone ? '#10b981' : (isActive ? '#f59e0b' : '#334155');
+                        const dotBorder = isActive ? '2px solid #fbbf24' : '1px solid #475569';
+                        const textColor = isDone ? '#a7f3d0' : (isActive ? '#fde68a' : '#94a3b8');
+                        const cardBg = isDone
+                            ? 'linear-gradient(180deg, rgba(16,185,129,.18), rgba(16,185,129,.08))'
+                            : (isActive
+                                ? 'linear-gradient(180deg, rgba(245,158,11,.22), rgba(245,158,11,.10))'
+                                : 'linear-gradient(180deg, rgba(51,65,85,.35), rgba(30,41,59,.25))');
+                        const cardBorder = isActive ? '#f59e0b' : (isDone ? '#10b981' : '#475569');
+                        const glow = isActive ? '0 0 0 1px rgba(245,158,11,.35), 0 0 14px rgba(245,158,11,.20)' : 'none';
+                        return `
+                            <div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:${cardBg};border:1px solid ${cardBorder};box-shadow:${glow};">
+                                <span style="width:9px;height:9px;border-radius:999px;background:${dotBg};border:${dotBorder};display:inline-block;"></span>
+                                <i class="fas ${s.icon}" style="font-size:0.68rem;color:${textColor};"></i>
+                                <span style="font-size:0.72rem;color:${textColor};white-space:nowrap;">${s.short}</span>
+                            </div>
+                            ${i < pipelineStages.length - 1 ? '<span style="width:8px;height:1px;background:#475569;display:inline-block;align-self:center;"></span>' : ''}
+                        `;
+                    }).join('');
+                };
+                
+                // Si ingéré, afficher 100%
+                if (doc.status === 'Ingéré') {
+                    progressCell = `
+                        <div style="display:flex; flex-direction:column; gap:8px; min-width:320px;">
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <div style="flex:1;height:6px;background:#374151;border-radius:3px;overflow:hidden;">
+                                    <div style="width:100%;height:100%;background:#10b981;transition:width 0.3s;"></div>
+                                </div>
+                                <span style="font-size: 0.85rem; color: var(--text-dim); white-space: nowrap;">100%</span>
+                                <span style="font-size: 0.75rem; color: var(--text-dim); max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Ingéré avec succès</span>
+                            </div>
+                            <div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">${renderPipeline(-1, true)}</div>
+                        </div>
+                    `;
+                } else if (progress > 0) {
+                    const barColor = progress < 50 ? '#3b82f6' : progress < 90 ? '#f59e0b' : '#10b981';
+                    const active = stageIndex >= 0 ? stageIndex : Math.min(pipelineStages.length - 1, Math.floor(progress / 20));
+                    progressCell = `
+                        <div style="display:flex; flex-direction:column; gap:8px; min-width:340px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="flex: 1; height: 6px; background: #374151; border-radius: 3px; overflow: hidden;">
+                                    <div style="width: ${progress}%; height: 100%; background: ${barColor}; transition: width 0.3s;"></div>
+                                </div>
+                                <span style="font-size: 0.85rem; color: var(--text-dim); white-space: nowrap;">${progress}%</span>
+                                <span style="font-size: 0.75rem; color: var(--text-dim); max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${step}">${step}</span>
+                            </div>
+                            <div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">${renderPipeline(active, false)}</div>
+                        </div>
+                    `;
+                } else {
+                    progressCell = `
+                        <div style="display:flex; flex-direction:column; gap:8px; min-width:340px;">
+                            <span style="color: var(--text-dim); font-size: 0.9rem;">En attente...</span>
+                            <div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">${renderPipeline(0, false)}</div>
+                        </div>
+                    `;
+                }
+                
+                const uploadedBy = doc.user_name
+                    ? `${doc.user_name} (${doc.user_email || ''})`
+                    : (doc.user_email || (doc.user_id ? `User #${doc.user_id}` : '—'));
+
                 tr.innerHTML = `
                     <td>#${doc.id}</td>
                     <td>${doc.filename}</td>
+                    <td>${uploadedBy}</td>
                     <td>${new Date(doc.created_at).toLocaleString()}</td>
-                    <td><span class="${badgeClass}">${doc.status}</span> ${doc.error_msg ? `<span style="font-size:0.8rem; color:red;">(${doc.error_msg})</span>` : ''}</td>
+                    <td>${statusCell}</td>
+                    <td>${progressCell}</td>
                 `;
                 tbody.appendChild(tr);
             });
         });
     }
+
+    // Auto-refresh removed per user request
 
     window.switchTab = function(tabName) {
         // Update Buttons

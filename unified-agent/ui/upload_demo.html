@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload & Ingestion Auto - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="file"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            background: #f5f7ff;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: #764ba2;
+            background: #ede9f5;
+        }
+        
+        .upload-area p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .upload-area small {
+            color: #999;
+            display: block;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .status-pending { background: #fff3cd; color: #856404; }
+        .status-processing { background: #cfe2ff; color: #084298; }
+        .status-success { background: #d1e7dd; color: #0f5132; }
+        .status-error { background: #f8d7da; color: #842029; }
+        
+        .document-item {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+        
+        .document-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .document-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .document-filename {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .document-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .meta-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
+        }
+        
+        .keywords {
+            margin-top: 15px;
+        }
+        
+        .keyword-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .entities {
+            margin-top: 15px;
+        }
+        
+        .entity-type {
+            font-weight: 600;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .entity-value {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-family: monospace;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #667eea;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-error {
+            background: #f8d7da;
+            color: #842029;
+            border: 1px solid #f5c2c7;
+        }
+        
+        .alert-success {
+            background: #d1e7dd;
+            color: #0f5132;
+            border: 1px solid #badbcc;
+        }
+        
+        .alert-info {
+            background: #cfe2ff;
+            color: #084298;
+            border: 1px solid #b6d4fe;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 10px 20px;
+            color: #666;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📤 Upload & Ingestion Automatique</h1>
+            <p>Extraction + Nettoyage + Indexation en arrière-plan</p>
+        </header>
+        
+        <div class="content">
+            <!-- Alerts -->
+            <div id="alerts"></div>
+            
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('upload')">📤 Upload</button>
+                <button class="tab-btn" onclick="switchTab('documents')">📋 Mes Documents</button>
+                <button class="tab-btn" onclick="switchTab('details')">🔍 Détails</button>
+            </div>
+            
+            <!-- TAB 1: Upload -->
+            <div id="upload" class="tab-content active">
+                <div class="section">
+                    <h2>Uploader un Fichier ou Vidéo</h2>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Utilisateur:</label>
+                        <input type="email" id="email" placeholder="user@example.com" value="demo@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sessionId">Session ID (optionnel):</label>
+                        <input type="text" id="sessionId" placeholder="session_123">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Fichier à uploader:</label>
+                        <div class="upload-area" id="uploadArea">
+                            <p>📁 Glissez votre fichier ici</p>
+                            <p>ou</p>
+                            <input type="file" id="fileInput" style="cursor: pointer;">
+                            <small>Formats supportés: PDF, PPT, DOCX, TXT, MP4, MP3, AVI, MOV</small>
+                        </div>
+                    </div>
+                    
+                    <button id="uploadBtn" onclick="uploadFile()">🚀 Upload & Ingérer</button>
+                </div>
+                
+                <div id="uploadStatus" style="display:none;">
+                    <div class="alert alert-info">
+                        <strong>⏳ Ingestion en cours...</strong>
+                        <div id="statusText" style="margin-top: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TAB 2: Documents -->
+            <div id="documents" class="tab-content">
+                <div class="section">
+                    <h2>Mes Documents Uploadés</h2>
+                    
+                    <div class="form-group">
+                        <label for="emailDocs">Email Utilisateur:</label>
+                        <input type="email" id="emailDocs" placeholder="user@example.com" value="demo@example.com">
+                    </div>
+                    
+                    <button onclick="loadDocuments()">🔄 Charger Documents</button>
+                    
+                    <div id="documentsList" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+            
+            <!-- TAB 3: Details -->
+            <div id="details" class="tab-content">
+                <div class="section">
+                    <h2>Détails Document</h2>
+                    
+                    <div class="form-group">
+                        <label for="emailDetails">Email Utilisateur:</label>
+                        <input type="email" id="emailDetails" placeholder="user@example.com" value="demo@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="docId">ID Document:</label>
+                        <input type="text" id="docId" placeholder="ex: 42">
+                    </div>
+                    
+                    <button onclick="loadDocumentDetails()">🔍 Charger Détails</button>
+                    
+                    <div id="detailsContent" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Tab switching
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Alert
+        function showAlert(message, type = 'info') {
+            const alertsDiv = document.getElementById('alerts');
+            const alertEl = document.createElement('div');
+            alertEl.className = `alert alert-${type}`;
+            alertEl.textContent = message;
+            alertsDiv.appendChild(alertEl);
+            
+            setTimeout(() => alertEl.remove(), 5000);
+        }
+        
+        // Drag & Drop
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        
+        uploadArea.addEventListener('click', () => fileInput.click());
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            fileInput.files = e.dataTransfer.files;
+        });
+        
+        // Upload File
+        async function uploadFile() {
+            const file = document.getElementById('fileInput').files[0];
+            const email = document.getElementById('email').value;
+            const sessionId = document.getElementById('sessionId').value;
+            
+            if (!file) {
+                showAlert('❌ Veuillez sélectionner un fichier', 'error');
+                return;
+            }
+            
+            if (!email) {
+                showAlert('❌ Veuillez entrer votre email', 'error');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('email', email);
+            if (sessionId) formData.append('session_id', sessionId);
+            
+            document.getElementById('uploadStatus').style.display = 'block';
+            document.getElementById('statusText').innerHTML = `<span class="loading"></span> Upload en cours...`;
+            
+            try {
+                const response = await fetch('/api/user/upload_and_ingest', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`Erreur: ${response.statusText}`);
+                }
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showAlert(`✅ ${result.message}`, 'success');
+                    document.getElementById('statusText').innerHTML = 
+                        `Document ID: <strong>${result.document_id}</strong><br>` +
+                        `Status: <span class="status-badge status-processing">Processing</span>`;
+                    
+                    // Poll status
+                    pollStatus(result.document_id, email);
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                showAlert(`❌ ${error.message}`, 'error');
+                document.getElementById('uploadStatus').style.display = 'none';
+            }
+        }
+        
+        // Poll Status
+        async function pollStatus(docId, email, attempts = 0) {
+            if (attempts > 30) {
+                showAlert('⏱️ Timeout: ingestion trop longue', 'error');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/user/documents/${docId}?email=${email}`);
+                const doc = await response.json();
+                
+                if (doc.status === 'Ingéré') {
+                    showAlert(`✅ Document ingéré! Keywords: ${doc.keywords.slice(0, 3).join(', ')}`, 'success');
+                    document.getElementById('statusText').innerHTML = 
+                        `<span class="status-badge status-success">✅ Ingéré</span>` +
+                        `<strong>${doc.total_chunks}</strong> chunks générés`;
+                    document.getElementById('uploadStatus').style.display = 'none';
+                } else if (doc.status === 'Erreur') {
+                    showAlert(`❌ Erreur: ${doc.error_msg}`, 'error');
+                    document.getElementById('uploadStatus').style.display = 'none';
+                } else {
+                    setTimeout(() => pollStatus(docId, email, attempts + 1), 2000);
+                }
+            } catch (error) {
+                showAlert(`❌ Erreur polling: ${error.message}`, 'error');
+            }
+        }
+        
+        // Load Documents
+        async function loadDocuments() {
+            const email = document.getElementById('emailDocs').value;
+            
+            if (!email) {
+                showAlert('❌ Veuillez entrer votre email', 'error');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/user/documents?email=${email}`);
+                const documents = await response.json();
+                
+                const listDiv = document.getElementById('documentsList');
+                
+                if (documents.length === 0) {
+                    listDiv.innerHTML = '<p style="color: #999;">Aucun document uploadé</p>';
+                    return;
+                }
+                
+                let html = '';
+                documents.forEach(doc => {
+                    const statusClass = `status-${doc.status.toLowerCase().replace(' ', '_')}`;
+                    html += `
+                        <div class="document-item">
+                            <div class="document-header">
+                                <span class="document-filename">📄 ${doc.filename}</span>
+                                <span class="status-badge ${statusClass}">${doc.status}</span>
+                            </div>
+                            <div class="document-meta">
+                                <div class="meta-item">
+                                    <span class="meta-label">Type</span>
+                                    ${doc.file_type}
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Taille</span>
+                                    ${(doc.file_size / 1024).toFixed(1)} KB
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Chunks</span>
+                                    ${doc.total_chunks || 'N/A'}
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Temps</span>
+                                    ${doc.processing_time ? doc.processing_time.toFixed(2) + 's' : 'N/A'}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                listDiv.innerHTML = html;
+            } catch (error) {
+                showAlert(`❌ ${error.message}`, 'error');
+            }
+        }
+        
+        // Load Document Details
+        async function loadDocumentDetails() {
+            const email = document.getElementById('emailDetails').value;
+            const docId = document.getElementById('docId').value;
+            
+            if (!email || !docId) {
+                showAlert('❌ Email et ID requis', 'error');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/user/documents/${docId}?email=${email}`);
+                
+                if (!response.ok) throw new Error('Document non trouvé');
+                
+                const doc = await response.json();
+                const detailsDiv = document.getElementById('detailsContent');
+                
+                let keywordsHtml = '';
+                if (doc.keywords && doc.keywords.length) {
+                    keywordsHtml = `
+                        <div class="keywords">
+                            <strong>🏷️ Keywords (Top 10):</strong>
+                            ${doc.keywords.slice(0, 10).map(kw => 
+                                `<span class="keyword-tag">${kw}</span>`
+                            ).join('')}
+                        </div>
+                    `;
+                }
+                
+                let entitiesHtml = '';
+                if (doc.extracted_entities) {
+                    const ents = doc.extracted_entities;
+                    let entContent = '';
+                    
+                    if (ents.emails && ents.emails.length) {
+                        entContent += `<div class="entity-type">Emails:</div>
+                            ${ents.emails.map(e => `<span class="entity-value">${e}</span>`).join('')}`;
+                    }
+                    if (ents.urls && ents.urls.length) {
+                        entContent += `<div class="entity-type">URLs:</div>
+                            ${ents.urls.map(u => `<span class="entity-value">${u}</span>`).join('')}`;
+                    }
+                    if (ents.phone_numbers && ents.phone_numbers.length) {
+                        entContent += `<div class="entity-type">Téléphones:</div>
+                            ${ents.phone_numbers.map(p => `<span class="entity-value">${p}</span>`).join('')}`;
+                    }
+                    
+                    if (entContent) {
+                        entitiesHtml = `<div class="entities">${entContent}</div>`;
+                    }
+                }
+                
+                let cleaningHtml = '';
+                if (doc.cleaning_stats) {
+                    const cs = doc.cleaning_stats;
+                    cleaningHtml = `
+                        <div style="margin-top: 20px; background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                            <strong>🧹 Stats Nettoyage:</strong>
+                            <div style="margin-top: 10px; font-size: 13px; color: #666;">
+                                <div>Original: <strong>${cs.original_length}</strong> chars</div>
+                                <div>Nettoyé: <strong>${cs.cleaned_length}</strong> chars</div>
+                                <div>Bruit supprimé: <strong>${cs.removed_chars}</strong> chars</div>
+                                <div>Ratio: <strong>${((cs.removed_chars / cs.original_length) * 100).toFixed(1)}%</strong></div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                detailsDiv.innerHTML = `
+                    <div class="document-item">
+                        <strong>📄 ${doc.filename}</strong>
+                        <div class="document-meta" style="margin-top: 15px;">
+                            <div class="meta-item">
+                                <span class="meta-label">Status</span>
+                                <span class="status-badge status-${doc.status.toLowerCase().replace(' ', '_')}">${doc.status}</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Chunks</span>
+                                ${doc.total_chunks}
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Langue</span>
+                                ${doc.language}
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Créé le</span>
+                                ${new Date(doc.created_at).toLocaleString('fr-FR')}
+                            </div>
+                        </div>
+                        ${keywordsHtml}
+                        ${entitiesHtml}
+                        ${cleaningHtml}
+                    </div>
+                `;
+            } catch (error) {
+                showAlert(`❌ ${error.message}`, 'error');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -3,14 +3,31 @@
 """
 Ingestion Unifiée - Traite Documents ET Transcriptions
 Support pour: PDF, PPT, Images, Audio, Vidéo, Texte
+Avec nettoyage automatique et extraction d'entités
 """
 
 import logging
 from pathlib import Path
-from typing import List, Dict, Optional, Any
+from typing import List, Dict, Optional, Any, Tuple
 from enum import Enum
 from dataclasses import dataclass
 import hashlib
+from datetime import datetime
+
+# Import text cleaner
+try:
+    from ingestion.text_cleaner import TextCleaner, BatchCleaner
+except ImportError:
+    from text_cleaner import TextCleaner, BatchCleaner
+
+# Import whisper at module level
+try:
+    import whisper
+    WHISPER_AVAILABLE = True
+except ImportError:
+    WHISPER_AVAILABLE = False
+    logger = logging.getLogger(__name__)
+    logger.warning("⚠ Module 'whisper' non trouvé. Installation: pip install openai-whisper")
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +45,7 @@ class SourceType(Enum):
 
 @dataclass
 class DocumentMetadata:
-    """Métadonnées d'un document"""
+    """Métadonnées enrichies d'un document"""
     file_path: Path
     source_type: SourceType
     file_name: str
@@ -39,7 +56,7 @@ class DocumentMetadata:
     language: str = "fr"
     encoding: str = "utf-8"
     
-    # Metadata additionnel
+    # Metadata document
     title: Optional[str] = None
     author: Optional[str] = None
     subject: Optional[str] = None
@@ -49,6 +66,16 @@ class DocumentMetadata:
     total_pages: int = 0
     total_chunks: int = 0
     processing_time: float = 0.0
+    
+    # Nettoyage
+    cleaning_stats: Optional[Dict[str, Any]] = None
+    extracted_entities: Optional[Dict[str, Any]] = None
+    
+    # Infos agent/session
+    user_email: Optional[str] = None
+    session_id: Optional[str] = None
+    agent_version: Optional[str] = None
+    ingestion_timestamp: Optional[str] = None
     
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -68,6 +95,12 @@ class DocumentMetadata:
             "total_pages": self.total_pages,
             "total_chunks": self.total_chunks,
             "processing_time": self.processing_time,
+            "cleaning_stats": self.cleaning_stats,
+            "extracted_entities": self.extracted_entities,
+            "user_email": self.user_email,
+            "session_id": self.session_id,
+            "agent_version": self.agent_version,
+            "ingestion_timestamp": self.ingestion_timestamp,
         }
 
 
@@ -84,7 +117,7 @@ class PDFParser(DocumentParser):
     """Parser pour fichiers PDF"""
     
     @staticmethod
-    def parse(file_path: Path) -> Tuple[List[str], DocumentMetadata]:
+    def parse(file_path: Path, progress_callback=None) -> Tuple[List[str], DocumentMetadata]:
         """Parse un PDF"""
         import pymupdf
         
@@ -94,10 +127,16 @@ class PDFParser(DocumentParser):
         try:
             doc = pymupdf.open(file_path)
             num_pages = len(doc)
-            for page in doc:
+            for page_idx, page in enumerate(doc, start=1):
                 text = page.get_text()
                 if text and text.strip():
                     chunks.append(text)
+                if progress_callback and num_pages:
+                    pct = 20 + int((page_idx / num_pages) * 20)
+                    try:
+                        progress_callback(f"Parsing PDF ({page_idx}/{num_pages})", min(40, pct))
+                    except Exception:
+                        pass
             doc.close()
         except Exception as e:
             logger.warning(f"Erreur PyMuPDF: {e}")
@@ -225,16 +264,23 @@ class DocxParser(DocumentParser):
     """Parser pour fichiers Word (.docx)"""
     
     @staticmethod
-    def parse(file_path: Path) -> Tuple[List[str], DocumentMetadata]:
+    def parse(file_path: Path, progress_callback=None) -> Tuple[List[str], DocumentMetadata]:
         import docx
         
         chunks = []
         
         doc = docx.Document(file_path)
-        for para in doc.paragraphs:
+        total_paragraphs = len(doc.paragraphs)
+        for para_idx, para in enumerate(doc.paragraphs, start=1):
             text = para.text.strip()
             if text:
                 chunks.append(text)
+            if progress_callback and total_paragraphs:
+                pct = 20 + int((para_idx / total_paragraphs) * 20)
+                try:
+                    progress_callback(f"Parsing DOCX ({para_idx}/{total_paragraphs})", min(40, pct))
+                except Exception:
+                    pass
                 
         metadata = DocumentMetadata(
             file_path=file_path,
@@ -264,20 +310,42 @@ class AudioTranscriber:
     """Transcripteur audio/vidéo (Whisper)"""
     
     @staticmethod
-    def transcribe(file_path: Path, model: str = "small") -> Tuple[str, DocumentMetadata]:
+    def transcribe(file_path: Path, model: str = "tiny") -> Tuple[str, DocumentMetadata]:
         """Transcribe un fichier audio/vidéo"""
-        import whisper
+        # Vérifier que whisper est disponible
+        if not WHISPER_AVAILABLE:
+            logger.error(f"✗ Erreur transcription [{file_path.name}]: Module whisper non disponible")
+            logger.error("  → Installer: pip install openai-whisper")
+            raise RuntimeError(
+                f"Module 'whisper' non trouvé. "
+                f"Installez-le avec: pip install openai-whisper"
+            )
         
-        logger.info(f"🎤 Transcription en cours: {file_path.name} (modèle: {model})")
+        logger.info(f"🎤 Transcription en cours: {file_path.name} (modèle: {model}, taille: {file_path.stat().st_size / 1024 / 1024:.1f}MB)")
         
         # Charge le modèle
-        model_obj = whisper.load_model(model)
+        try:
+            logger.info(f"  📥 Chargement modèle Whisper '{model}'...")
+            model_obj = whisper.load_model(model)
+            logger.info(f"  ✓ Modèle chargé")
+        except Exception as e:
+            logger.error(f"✗ Erreur chargement modèle Whisper [{model}]: {str(e)}")
+            raise RuntimeError(f"Impossible de charger le modèle Whisper: {e}") from e
         
         # Transcribe
-        result = model_obj.transcribe(str(file_path))
+        try:
+            logger.info(f"  🎙️ Transcription du fichier...")
+            result = model_obj.transcribe(str(file_path), language="fr", verbose=False)
+            logger.info(f"  ✓ Transcription réussie")
+        except Exception as e:
+            logger.error(f"✗ Erreur transcription Whisper: {str(e)}")
+            raise RuntimeError(f"Erreur lors de la transcription: {e}") from e
         
         # Extrait le texte
-        transcription = result["text"].strip()
+        transcription = result.get("text", "").strip()
+        if not transcription:
+            logger.warning(f"⚠ Transcription vide pour {file_path.name}")
+            transcription = "[Pas de contenu audio détecté]"
         
         # Détecte la langue
         detected_language = result.get("language", "fr")
@@ -294,7 +362,7 @@ class AudioTranscriber:
             total_pages=1,
         )
         
-        logger.info(f"✓ Transcription complète: {file_path.name} ({detected_language})")
+        logger.info(f"✓ Transcription complète: {file_path.name} ({detected_language}, {len(transcription)} chars)")
         
         return transcription, metadata
     
@@ -309,7 +377,9 @@ class AudioTranscriber:
 
 
 class UnifiedIngester:
-    """Ingestion unifiée pour tous les types de documents"""
+    """Ingestion unifiée pour tous les types de documents
+    Avec nettoyage auto, extraction d'entités et enrichissement métadonnées
+    """
     
     # Mapping d'extension à parser
     PARSERS = {
@@ -324,12 +394,49 @@ class UnifiedIngester:
     # Audio/Vidéo extensions
     AUDIO_VIDEO_EXTENSIONS = {".mp3", ".wav", ".m4a", ".mp4", ".avi", ".mov"}
     
-    def __init__(self):
+    def __init__(self, language: str = "fr", clean_text: bool = True, 
+                 extract_entities: bool = True, save_chunks_to_db: bool = False):
+        """
+        Initialize l'ingester
+        
+        Args:
+            language: Langue pour nettoyage (fr/en)
+            clean_text: Activer le nettoyage automatique
+            extract_entities: Activer l'extraction d'entités
+            save_chunks_to_db: Sauvegarder les chunks en PostgreSQL
+        """
         self.processed_files = []
         self.failed_files = []
+        self.language = language
+        self.clean_text_enabled = clean_text
+        self.extract_entities_enabled = extract_entities
+        self.save_chunks_to_db = save_chunks_to_db
+        self.text_cleaner = TextCleaner(language) if clean_text else None
+        self.batch_cleaner = BatchCleaner(language) if clean_text else None
+        
+        # Initialiser le ChunkManager si nécessaire
+        if save_chunks_to_db:
+            try:
+                from ingestion.chunk_manager import ChunkManager
+                self.chunk_manager = ChunkManager()
+            except ImportError:
+                logger.warning("ChunkManager non disponible, chunks ne seront pas sauvegardés")
+                self.chunk_manager = None
+        else:
+            self.chunk_manager = None
     
-    def ingest(self, file_path: Path) -> Optional[Tuple[List[str], DocumentMetadata]]:
-        """Ingère un fichier"""
+    def ingest(self, file_path: Path, user_email: Optional[str] = None, 
+               session_id: Optional[str] = None, progress_callback=None) -> Optional[Tuple[List[str], DocumentMetadata]]:
+        """
+        Ingère un fichier avec nettoyage et enrichissement
+        
+        Args:
+            file_path: Chemin du fichier
+            user_email: Email de l'utilisateur
+            session_id: ID de la session
+        """
+        import time
+        start_time = time.time()
         
         # Vérifie extension
         suffix = file_path.suffix.lower()
@@ -337,10 +444,41 @@ class UnifiedIngester:
         # Audio/Vidéo → Transcription
         if suffix in self.AUDIO_VIDEO_EXTENSIONS:
             try:
+                if progress_callback:
+                    try:
+                        progress_callback("Transcription audio/vidéo", 35)
+                    except Exception:
+                        pass
                 text, metadata = AudioTranscriber.transcribe(file_path)
                 metadata.source_type = SourceType.TRANSCRIPTION
+                
+                # Nettoyage
+                if self.clean_text_enabled:
+                    text = self.text_cleaner.clean_text(text)
+                    metadata.cleaning_stats = self.text_cleaner.get_stats()
+                
+                # Extraction entités
+                if self.extract_entities_enabled:
+                    metadata.extracted_entities = self.text_cleaner.extract_entities(text)
+                
+                # Enrichissement metadata
+                metadata.user_email = user_email
+                metadata.session_id = session_id
+                metadata.ingestion_timestamp = datetime.now().isoformat()
+                metadata.processing_time = time.time() - start_time
+                
+                # Sauvegarder les chunks en BD si demandé et que document_id est disponible
+                if self.chunk_manager and hasattr(metadata, 'document_id'):
+                    try:
+                        self.chunk_manager.save_chunks(metadata.document_id, [text])
+                        logger.info(f"✓ Transcription sauvegardée pour doc {metadata.document_id}")
+                    except Exception as e:
+                        logger.warning(f"⚠ Impossible de sauvegarder les chunks: {e}")
+                
                 self.processed_files.append(metadata)
+                logger.info(f"✓ Transcription ingérée: {file_path.name} ({len(text)} chars, nettoyé)")
                 return [text], metadata
+                
             except Exception as e:
                 logger.error(f"✗ Erreur transcription {file_path.name}: {e}")
                 self.failed_files.append((file_path, str(e)))
@@ -350,9 +488,57 @@ class UnifiedIngester:
         elif suffix in self.PARSERS:
             try:
                 parser_class = self.PARSERS[suffix]
-                chunks, metadata = parser_class.parse(file_path)
+                if progress_callback:
+                    try:
+                        progress_callback(f"Parsing {suffix.upper().lstrip('.')}", 25)
+                    except Exception:
+                        pass
+                chunks, metadata = parser_class.parse(file_path, progress_callback=progress_callback)
+                
+                # Nettoyage des chunks
+                if self.clean_text_enabled and chunks:
+                    chunks = self.batch_cleaner.process_pipeline(
+                        chunks,
+                        remove_stopwords=False,  # Garder les stopwords pour contexte
+                        deduplicate=True,
+                        progress_callback=progress_callback
+                    )
+                    metadata.cleaning_stats = self.text_cleaner.get_stats()
+                
+                # Extraction entités du premier chunk
+                if self.extract_entities_enabled and chunks:
+                    metadata.extracted_entities = self.text_cleaner.extract_entities(chunks[0])
+                
+                # Keywords
+                if chunks:
+                    all_text = " ".join(chunks)
+                    metadata.keywords = self.text_cleaner.extract_keywords(all_text, top_n=20)
+                
+                # Enrichissement metadata
+                metadata.user_email = user_email
+                metadata.session_id = session_id
+                metadata.ingestion_timestamp = datetime.now().isoformat()
+                metadata.processing_time = time.time() - start_time
+                metadata.total_chunks = len(chunks)
+
+                if progress_callback:
+                    try:
+                        progress_callback("Préparation indexation", 55)
+                    except Exception:
+                        pass
+                
+                # Sauvegarder les chunks en BD si demandé et que document_id est disponible
+                if self.chunk_manager and hasattr(metadata, 'document_id'):
+                    try:
+                        self.chunk_manager.save_chunks(metadata.document_id, chunks)
+                        logger.info(f"✓ {len(chunks)} chunks sauvegardés pour doc {metadata.document_id}")
+                    except Exception as e:
+                        logger.warning(f"⚠ Impossible de sauvegarder les chunks: {e}")
+                
                 self.processed_files.append(metadata)
+                logger.info(f"✓ Document ingéré: {file_path.name} ({len(chunks)} chunks, nettoyé)")
                 return chunks, metadata
+                
             except Exception as e:
                 logger.error(f"✗ Erreur parsing {file_path.name}: {e}")
                 self.failed_files.append((file_path, str(e)))
