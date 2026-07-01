@@ -1,1 +1,0 @@
-this folder has a new architechture of the project where i focus on the data cleaning
