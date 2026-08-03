@@ -31,10 +31,15 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__WEBSERVER__WEB_SERVER_WORKER_TIMEOUT=600
       - AIRFLOW__CORE__KILLED_TASK_CLEANUP_TIME=600
+      - UNIFIED_AGENT_DIR=/opt/airflow/unified-agent
+      - UNIFIED_INGEST_INPUT_DIR=/opt/airflow/data/documents
+      - UNIFIED_INGEST_STAGE_DIR=/opt/airflow/data/unified_stage
+      - PYTHONPATH=/opt/airflow/unified-agent
     volumes:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
       - ./data:/opt/airflow/data
+      - ../unified-agent:/opt/airflow/unified-agent:ro
     ports:
       - "8080:8080"
     # Initialisation de la DB Postgres, création de l'user et lancement

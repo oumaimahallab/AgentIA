@@ -238,6 +238,56 @@ class FAISSManager:
         
         logger.info("✓ Index rebuilt")
 
+    def update_chunk(self, source_file: str, chunk_index: int, new_text: str, new_embedding: np.ndarray) -> bool:
+        """Met à jour le vecteur d'embedding et les métadonnées d'un chunk spécifique"""
+        target_idx = -1
+        # Chercher le chunk dans la métadonnée par source et index
+        for i, meta in enumerate(self.metadata):
+            meta_source = meta.get("source") or ""
+            meta_chunk_id = meta.get("chunk_id") or ""
+            # Correspondance
+            if source_file.lower() in meta_source.lower() and (f"_{chunk_index}" in meta_chunk_id or meta_chunk_id.endswith(str(chunk_index))):
+                target_idx = i
+                break
+                
+        if target_idx == -1:
+            # Essai alternatif de correspondance plus tolérante sur le chunk_index
+            for i, meta in enumerate(self.metadata):
+                meta_source = meta.get("source") or ""
+                meta_chunk_id = meta.get("chunk_id") or ""
+                # Si le chunk_id se termine par l'index ou contient _index
+                if source_file.lower() in meta_source.lower() and (f"_{chunk_index}" in meta_chunk_id or meta_chunk_id.split('_')[-1] == str(chunk_index)):
+                    target_idx = i
+                    break
+
+        if target_idx == -1:
+            logger.warning(f"Chunk non trouvé dans FAISS: source={source_file}, index={chunk_index}")
+            return False
+            
+        # Mettre à jour le texte et l'empreinte dans la métadonnée
+        import hashlib
+        self.metadata[target_idx]["content"] = new_text
+        self.metadata[target_idx]["text"] = new_text
+        self.metadata[target_idx]["fingerprint"] = hashlib.sha256(new_text.encode("utf-8")).hexdigest()
+        
+        # Normaliser le nouvel embedding
+        new_embedding = new_embedding.astype(np.float32).reshape(1, -1)
+        norm = np.linalg.norm(new_embedding)
+        new_embedding = new_embedding / (norm + 1e-10)
+        
+        # Mettre à jour la matrice numpy d'embeddings
+        if self.embeddings is not None:
+            self.embeddings[target_idx] = new_embedding.flatten()
+            
+        # Réinitialiser et reconstruire l'index FAISS FlatIP
+        self.index.reset()
+        self.index.add(self.embeddings)
+        
+        # Sauvegarder sur disque
+        self.save()
+        logger.info(f"✓ Index FAISS mis à jour pour le chunk {chunk_index} de {source_file}")
+        return True
+
 
 # Test simple
 if __name__ == "__main__":

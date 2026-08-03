@@ -118,19 +118,21 @@ class PDFParser(DocumentParser):
     
     @staticmethod
     def parse(file_path: Path, progress_callback=None) -> Tuple[List[str], DocumentMetadata]:
-        """Parse un PDF"""
-        import pymupdf
-        
+        """Parse un PDF avec fallback robuste si PyMuPDF n'est pas disponible."""
         chunks = []
         num_pages = 0
-        
+        extracted_text = []
+        parser_used = "none"
+
         try:
+            import pymupdf
+            parser_used = "pymupdf"
             doc = pymupdf.open(file_path)
             num_pages = len(doc)
             for page_idx, page in enumerate(doc, start=1):
                 text = page.get_text()
                 if text and text.strip():
-                    chunks.append(text)
+                    extracted_text.append(text)
                 if progress_callback and num_pages:
                     pct = 20 + int((page_idx / num_pages) * 20)
                     try:
@@ -139,10 +141,36 @@ class PDFParser(DocumentParser):
                         pass
             doc.close()
         except Exception as e:
-            logger.warning(f"Erreur PyMuPDF: {e}")
-            raise
-        
-        # Crée metadata
+            logger.warning(f"PyMuPDF indisponible ou échec: {e}")
+            try:
+                from PyPDF2 import PdfReader
+                parser_used = "pypdf2"
+                reader = PdfReader(str(file_path))
+                num_pages = len(reader.pages)
+                for page_idx, page in enumerate(reader.pages, start=1):
+                    text = page.extract_text() or ""
+                    if text and text.strip():
+                        extracted_text.append(text)
+                    if progress_callback and num_pages:
+                        pct = 20 + int((page_idx / num_pages) * 20)
+                        try:
+                            progress_callback(f"Parsing PDF ({page_idx}/{num_pages})", min(40, pct))
+                        except Exception:
+                            pass
+            except Exception as pdf_error:
+                logger.warning(f"Fallback PyPDF2 échoué: {pdf_error}")
+                extracted_text = []
+
+        if extracted_text:
+            chunks = extracted_text
+        else:
+            # Fallback final: conserver un message explicite pour éviter l'ingestion vide
+            chunks = [
+                "[Contenu PDF non extrait automatiquement] Le document a été téléchargé mais son contenu texte n'a pas pu être lu. "
+                "Le système peut nécessiter un PDF textuel ou un scan avec OCR."
+            ]
+            logger.warning(f"PDF vide ou non lisible: {file_path.name}")
+
         metadata = DocumentMetadata(
             file_path=file_path,
             source_type=SourceType.PDF,
@@ -154,7 +182,7 @@ class PDFParser(DocumentParser):
             total_pages=num_pages,
         )
         
-        logger.info(f"✓ PDF parsé: {file_path.name} ({num_pages} pages)")
+        logger.info(f"✓ PDF parsé: {file_path.name} ({num_pages} pages, parser={parser_used})")
         
         return chunks, metadata
     

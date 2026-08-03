@@ -677,10 +677,36 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
 
         try {
+            const session = sessions.find(s => s.id === currentSessionId);
+            let historyMessages = (session && Array.isArray(session.messages))
+                ? [...session.messages]
+                : [];
+
+            // Éviter le doublon : le message courant est déjà dans la session
+            // mais sera aussi envoyé séparément via `question`
+            if (
+                historyMessages.length > 0 &&
+                historyMessages[historyMessages.length - 1].sender === 'user' &&
+                historyMessages[historyMessages.length - 1].text.trim() === query.trim()
+            ) {
+                historyMessages = historyMessages.slice(0, -1);
+            }
+
+            const history = historyMessages.map(msg => ({
+                role: msg.sender === 'ai' ? 'assistant' : 'user',
+                content: msg.sender === 'ai' ? (msg.rawText || msg.text) : msg.text,
+                text: msg.sender === 'ai' ? (msg.rawText || msg.text) : msg.text,
+                sender: msg.sender
+            }));
+
             const response = await fetch('/api/ask', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ question: query })
+                body: JSON.stringify({
+                    question: query,
+                    session_id: currentSessionId,
+                    history: history
+                })
             });
 
             if (!response.ok) {
@@ -692,7 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             chatMessages.removeChild(loadingDiv);
 
-            const session = sessions.find(s => s.id === currentSessionId);
+            const currentSession = sessions.find(s => s.id === currentSessionId);
             
             let rawText = data.answer || "Désolé, je n'ai pas pu générer de réponse.";
             let htmlResponse = marked.parse(rawText);
@@ -723,8 +749,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
 
-            if (session) {
-                session.messages.push({ text: htmlResponse, sender: 'ai' });
+            if (currentSession) {
+                currentSession.messages.push({ text: htmlResponse, rawText: rawText, sender: 'ai' });
                 saveCurrentSession();
             }
             

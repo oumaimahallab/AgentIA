@@ -17,3 +17,6 @@ COPY requirements.txt .
 
 # Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Install unified-agent ingestion dependencies
+RUN pip install --no-cache-dir python-dotenv PyPDF2 python-pptx Pillow

@@ -11,6 +11,7 @@ import threading
 from datetime import datetime
 import time
 import hashlib
+import re
 
 # Charger les variables d'environnement (recherche dans les dossiers parents si nécessaire)
 load_dotenv()
@@ -18,6 +19,15 @@ load_dotenv()
 # Configurer le logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+def _strip_html_from_text(text: str) -> str:
+    """Retire le balisage HTML des messages d'historique pour le contexte LLM."""
+    if not text:
+        return ""
+    cleaned = re.sub(r'<[^>]+>', ' ', text)
+    cleaned = re.sub(r'\s+', ' ', cleaned)
+    return cleaned.strip()
 
 def get_db_connection():
     try:
@@ -1385,16 +1395,38 @@ def upload_file():
 def ask():
     current_agent = get_agent()
     
-    data = request.json
+    data = request.json or {}
     question = data.get('question')
+    session_id = data.get('session_id') or request.args.get('session_id')
+    history = data.get('history') or []
     
     if not question:
         return jsonify({"error": "Question vide"}), 400
     
-    logger.info(f"❓ Question reçue: {question}")
+    logger.info(f"❓ Question reçue: {question} | session={session_id}")
     
     try:
-        # Demander à l'agent
+        if history:
+            # Éviter le doublon du message courant (déjà ajouté côté client)
+            trimmed_history = list(history[-10:])
+            if trimmed_history:
+                last_item = trimmed_history[-1]
+                last_role = last_item.get('role') or ('assistant' if last_item.get('sender') == 'ai' else 'user')
+                last_content = (last_item.get('content') or last_item.get('text') or '').strip()
+                if last_role == 'user' and last_content == str(question).strip():
+                    trimmed_history = trimmed_history[:-1]
+
+            current_agent.conversation_buffer.messages = []
+            for item in trimmed_history:
+                role = item.get('role') or ('assistant' if item.get('sender') == 'ai' else 'user')
+                content = item.get('content') or item.get('text') or ''
+                if role == 'assistant':
+                    content = _strip_html_from_text(str(content))
+                if role == 'user':
+                    current_agent.conversation_buffer.add_user_message(str(content))
+                elif role == 'assistant':
+                    current_agent.conversation_buffer.add_assistant_message(str(content))
+
         result = current_agent.answer(question)
         answer_text = result["answer"]
         
@@ -1431,7 +1463,8 @@ def ask():
             "answer": answer_text,
             "sources": formatted_sources,
             "intent": result.get("intent", "unknown"),
-            "metrics": result.get("metrics", {})
+            "metrics": result.get("metrics", {}),
+            "verified": result.get("metrics", {}).get("verified", False),
         })
     except Exception as e:
         logger.error(f"❌ Erreur lors de la génération: {e}")

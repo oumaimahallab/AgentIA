@@ -148,3 +148,25 @@ class ChunkManager:
             'created_at': chunks[0]['created_at'] if chunks else None,
             'last_chunk_date': chunks[-1]['created_at'] if chunks else None
         }
+
+    def update_chunk(self, chunk_id: int, new_text: str) -> bool:
+        """Met à jour le texte d'un chunk spécifique dans la base PostgreSQL"""
+        conn = self.get_connection()
+        cur = conn.cursor()
+        try:
+            text_hash = hashlib.sha256(new_text.encode()).hexdigest()
+            cur.execute("""
+                UPDATE document_chunks 
+                SET text = %s, text_length = %s, hash = %s, updated_at = NOW()
+                WHERE id = %s
+            """, (new_text, len(new_text), text_hash, chunk_id))
+            conn.commit()
+            return cur.rowcount > 0
+        except Exception as e:
+            logger.error(f"Error updating chunk {chunk_id}: {e}")
+            conn.rollback()
+            raise
+        finally:
+            cur.close()
+            conn.close()
+

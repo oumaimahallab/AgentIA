@@ -253,6 +253,43 @@ class BM25Manager:
         
         logger.info("✓ Index BM25 rebuilt")
 
+    def update_chunk(self, source_file: str, chunk_index: int, new_text: str) -> bool:
+        """Met à jour un document dans l'index BM25"""
+        from rank_bm25 import BM25Okapi
+        target_idx = -1
+        for i, meta in enumerate(self.metadata):
+            meta_source = meta.get("source") or ""
+            meta_chunk_id = meta.get("chunk_id") or ""
+            if source_file.lower() in meta_source.lower() and (f"_{chunk_index}" in meta_chunk_id or meta_chunk_id.endswith(str(chunk_index))):
+                target_idx = i
+                break
+                
+        if target_idx == -1:
+            # Essai alternatif de correspondance plus tolérante sur le chunk_index
+            for i, meta in enumerate(self.metadata):
+                meta_source = meta.get("source") or ""
+                meta_chunk_id = meta.get("chunk_id") or ""
+                if source_file.lower() in meta_source.lower() and (f"_{chunk_index}" in meta_chunk_id or meta_chunk_id.split('_')[-1] == str(chunk_index)):
+                    target_idx = i
+                    break
+
+        if target_idx == -1:
+            logger.warning(f"Chunk non trouvé dans BM25: source={source_file}, index={chunk_index}")
+            return False
+            
+        # Mettre à jour la métadonnée
+        self.metadata[target_idx]["content"] = new_text
+        self.metadata[target_idx]["text"] = new_text
+        
+        # Reconstruire le corpus BM25
+        self.corpus = [self._tokenize(meta.get("content") or meta.get("text") or "") for meta in self.metadata]
+        self.bm25 = BM25Okapi(self.corpus)
+        
+        # Sauvegarder sur disque
+        self.save()
+        logger.info(f"✓ Index BM25 mis à jour pour le chunk {chunk_index} de {source_file}")
+        return True
+
 
 # Test simple
 if __name__ == "__main__":
